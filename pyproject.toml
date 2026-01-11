@@ -1,0 +1,27 @@
+[project]
+name = "nlt"
+version = "0.1.0"
+description = "Natural Language Tools evaluation harness for Sage-hosted LLMs"
+authors = [{ name = "Startr", email = "team@startr.cloud" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+managed = true
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+include = '\.pyi?$'
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
