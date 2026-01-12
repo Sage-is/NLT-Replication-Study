@@ -38,9 +38,56 @@ python -m nlt.cli \
 - `--sample-limit`: run only the first N inputs (useful for smoke tests).
 - `--api-url` (default: `https://sage.startr.cloud/api/chat/completions`).
 
+## Batch Evaluation
+
+### Model Tracking (models.csv)
+Models are tracked in [models.csv](models.csv) with completion status:
+```csv
+run,model_id,provider,size,has_tool_calling,alex_nlt_done,alex_structured_done,sage_nlt_done,sage_structured_done,notes
+yes,llama-3.1-8b-instant,meta,8b,yes,no,no,no,no,Llama 3.1 with tool calling
+```
+
+- Set `run=yes` to include model in batch runs, `run=no` to skip
+- Status columns automatically update to `yes` after successful completion
+- Lines starting with `#` are comments
+
+### Running Batch Evaluations
+```bash
+make run-models         # Run all models where run=yes, skip completed
+make run-models-force   # Rerun all models where run=yes
+make run-models-quick   # Quick test with 2 inputs, 1 replicate
+```
+
+### Results Analysis
+Results are aggregated in `aggregated_results.csv` with accuracy/variance per (model, scenario, approach, perturbed).
+
+View summary statistics:
+```bash
+./analyze_results.py                    # Print summary to terminal
+./analyze_results.py --show-gains       # Include NLT vs Structured gains
+./analyze_results.py --export summary.csv  # Export to CSV
+```
+
 ## Documentation
 - [REPLICATION.md](docs/REPLICATION.md) - Complete guide to replicating the full NLT study
+- [DEVELOPMENT.md](docs/DEVELOPMENT.md) - Developer guide with tools, testing, and workflow
 - [DEVELOPMENT_WORKFLOW.md](docs/DEVELOPMENT_WORKFLOW.md) - Startr development standards
+
+## Makefile Targets
+
+```bash
+make setup               # Create venv and install dependencies
+make demo                # Quick NLT smoke test
+make demo-structured     # Quick structured tool calling test
+make run-models          # Batch evaluation (skip completed)
+make run-models-force    # Batch evaluation (rerun all)
+make run-models-quick    # Quick test (2 inputs, 1 replicate)
+make format              # Auto-format with black
+make test                # Run pytest suite
+make clean               # Remove build artifacts
+```
+
+See `make help` for full list.
 
 ## Notes
 - The harness uses only Python's standard library (urllib) for HTTP calls.

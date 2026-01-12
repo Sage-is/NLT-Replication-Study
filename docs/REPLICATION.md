@@ -40,13 +40,79 @@ curl -s https://sage.startr.cloud/api/models \
 
 ## Running the Full Study
 
-### Single Configuration Example
+### Quick Start with CSV Batch System
+### Manual Single Configuration
+
+For running individual configurations (useful for debugging):
+
 ```bash
 # NLT approach, Alex scenario, non-perturbed, 5 replicates
 .venv/bin/python -m nlt.cli \
   --scenario alex \
   --approach nlt \
   --model llama-3.1-8b-instant \
+  --replicates 5
+```
+
+### Legacy: Full Factorial Design Script
+**2. Run batch evaluation:**
+```bash
+# Run all models where run=yes, skip completed evaluations
+make run-models
+
+# Force rerun everything (ignores completion status)
+make run-models-force
+
+# Quick smoke test (2 inputs, 1 replicate, non-perturbed only)
+make run-models-quick
+```
+
+**3. Analyze results:**
+```bash
+# View summary statistics
+./analyze_results.py
+
+# Show NLT gains over structured approach
+./analyze_results.py --show-gains
+
+# Export summary to CSV
+./analyze_results.py --export summary.csv
+```
+
+**4. Track progress:**
+- `models.csv` - Shows which scenario/approach combinations are complete per model
+- `aggregated_results.csv` - All evaluation summaries in one file
+- `results/` directory - Individual JSON files with full details
+
+### Alternative: Shell Script Wrapper
+
+For a complete study run with automatic analysis:
+```bash
+# Full study (5 replicates, all perturbations)
+./run_study.sh
+
+# Quick test run
+./run_study.sh --quick
+
+# Force rerun everything
+./run_study.sh --force
+```
+
+This script:
+1. Runs all enabled models from models.csv
+2. Executes all 8 conditions per model (2×2×2 factorial)
+3. Aggregates results
+4. Generates summary statistics and exports to CSV
+
+### Manual Single Configuration
+```bash
+# NLT approach, Alex scenario, non-perturbed, 5 replicates
+.venv/bin/python -m nlt.cli \
+  --scenario alex \
+  --approach nlt \
+  --Legacy: Full Factorial Design Script
+
+> **Note**: The CSV batch system (above) is now the recommended approach. This manual script is provided for reference.stant \
   --replicates 5
 ```
 
@@ -97,31 +163,41 @@ echo "Study complete. Results saved to results/"
 
 **Usage**:
 ```bash
-chmod +x run_full_study.sh
-./run_full_study.sh
-```
+ch Results Organization
 
-**Expected runtime**: ~15-30 minutes per model (depends on API latency and rate limits)
+The batch system maintains three result locations:
 
-### Batch Evaluation with Multiple Models
-
-```bash
-# Test multiple models in one command
-.venv/bin/python -m nlt.cli \
-  --scenario alex \
-  --approach nlt \
-  --models llama-3.1-8b-instant google/gemini-2.5-flash-lite \
-  --replicates 5 \
-  --delay-seconds 0.5
-```
-
-## Results Organization
-
-Results auto-save to:
+### 1. Individual JSON Files
 ```
 results/
   {scenario}/          # alex or sage
     {approach}/        # nlt or structured
+      {perturbed}/     # perturbed or non_perturbed
+        {model}/       # sanitized model name
+          {timestamp}.json
+```
+
+### 2. Aggregated Results CSV
+
+`aggregated_results.csv` contains one row per (model, scenario, approach, perturbed) combination:
+```csv
+model_id,scenario,approach,perturbed,accuracy,variance,total,errors,timestamp,result_file
+llama-3.1-8b-instant,alex,nlt,no,0.7875,0.1673,80,0,20260112_120343,results/alex/nlt/non_perturbed/llama-3.1-8b-instant/20260112_120343.json
+```
+
+This file is automatically updated by `run_models.py` after each evaluation.
+
+### 3. Model Tracking CSV
+
+`models.csv` tracks completion status:
+```csv
+run,model_id,provider,size,has_tool_calling,alex_nlt_done,alex_structured_done,sage_nlt_done,sage_structured_done,notes
+yes,llama-3.1-8b-instant,meta,8b,yes,yes,yes,no,no,Llama 3.1 with tool calling
+```
+
+Status columns automatically update to `yes` after successful completion.
+
+### Individual {approach}/        # nlt or structured
       {perturbed}/     # perturbed or non_perturbed
         {model}/       # sanitized model name
           {timestamp}.json
@@ -146,18 +222,77 @@ Each JSON file contains:
   "results": [
     {
       "input_id": 1,
-      "expected_tools": ["Website information", "Past Purchases"],
-      "predicted_tools": ["Website information", "Past Purchases"],
-      "success": true,
-      "raw_output": "...",
-      "usage": {
-        "prompt_tokens": 500,
-        "completion_tokens": 120,
-        "total_tokens": 620
-      }
-    }
-  ]
-}
+    Using analyze_results.py (Recommended)
+
+### Manual Analysis with CSV
+
+Use standard CSV tools to analyze `aggregated_results.csv`:
+
+```bash
+# Filter to NLT results only
+grep ",nlt," aggregated_results.csv
+
+# Calculate mean accuracy for a specific model
+grep "llama-3.1-8b-instant" aggregated_results.csv | \
+  awk -F',' '{sum+=$5; count++} END {print sum/count}'
+
+# Find all errors
+awk -F',' '$8 > 0' aggregated_results.csv
+```
+
+### Manual Analysis with JSON Files
+
+For detailed inspection of individual runs:
+# Export to CSV for spreadsheet analysis
+./analyze_results.py --export summary.csv
+```
+
+**Output includes:**
+- Overall accuracy by approach (NLT vs Structured)
+- Per-model breakdown with both approaches
+- Per-scenario statistics
+- NLT accuracy gains (percentage point improvement over structured)
+
+**Example output:**
+```
+================================================================================
+SUMMARY BY APPROACH
+================================================================================
+
+NLT:
+  Evaluations: 8
+  Mean Accuracy: 78.8%
+  Mean Variance: 0.1673
+  Total Errors: 0
+
+STRUCTURED:
+  Evaluations: 8
+  Mean Accuracy: 62.5%
+  Mean Variance: 0.2341
+  Total Errors: 2
+Smoke Testing Before Full Run
+
+Always validate setup with a quick test:
+
+```bash
+# Quick test via Makefile (recommended)
+make run-models-quick
+
+# Or manual CLI test
+.venv/bin/python -m nlt.cli \
+  --scenario alex \
+  --approach nlt \
+  --model llama-3.1-8b-instant \
+  --sample-limit 2 \
+  --replicates 1
+```
+
+**Checklist before full run:**
+- [ ] `SAGE_AUTH_TOKEN` is set in `.env`
+- [ ] Virtual environment is activated
+- [ ] Quick test runs without errors
+- [ ] Results appear in `results/` directory
+- [ ] `models.csv` has correct models with `run=yes
 ```
 
 ## Analysis

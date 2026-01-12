@@ -1,8 +1,27 @@
-model_id,provider,size,has_tool_calling,alex_nlt_done,alex_structured_done,sage_nlt_done,sage_structured_done,notes
-llama-3.1-8b-instant,meta,8b,yes,no,no,no,no,Llama 3.1 with tool calling support
-google/gemini-2.5-flash-lite,google,unknown,yes,no,no,no,no,Gemini 2.5 Flash Lite
-deepseek/deepseek-r1-0528-qwen3-8b,deepseek,8b,yes,no,no,no,no,DeepSeek R1 reasoning model
-xiaomi/mimo-v2-flash:free,xiaomi,unknown,yes,no,no,no,no,Xiaomi Mimo v2
-mistralai/mistral-7b-instruct:free,mistral,7b,no,no,no,no,no,Mistral 7B without tool calling
-microsoft/phi-4,microsoft,14b,no,no,no,no,no,Phi-4 test model
-llama-3.3-70b-versatile,meta,70b,yes,no,no,no,no,Llama 3.3 70B
+# NLT Evaluation Models CSV
+# 
+# This file tracks which models to evaluate and their completion status.
+# Lines starting with # are comments and will be ignored by the parser.
+# 
+# Columns:
+#   run                    - yes/no toggle to include model in batch runs
+#   model_id              - Full model identifier for API calls
+#   provider              - Model provider (meta, google, deepseek, etc)
+#   size                  - Model parameter size (8b, 70b, etc)
+#   has_tool_calling      - yes/no whether model supports native tool calling
+#   alex_nlt_done         - Completion status for Alex scenario NLT approach
+#   alex_structured_done  - Completion status for Alex scenario Structured approach
+#   sage_nlt_done         - Completion status for Sage scenario NLT approach
+#   sage_structured_done  - Completion status for Sage scenario Structured approach
+#   notes                 - Additional information about the model
+# 
+# Set run=yes to include model in evaluations, run=no to skip
+# Status columns automatically update to 'yes' after successful completion
+# 
+run,model_id,provider,size,has_tool_calling,alex_nlt_done,alex_structured_done,sage_nlt_done,sage_structured_done,notes
+yes,llama-3.1-8b-instant,meta,8b,yes,yes,no,no,no,Llama 3.1 with tool calling support
+yes,google/gemini-2.5-flash-lite,google,unknown,yes,no,no,no,no,Gemini 2.5 Flash Lite
+no,deepseek/deepseek-r1-0528-qwen3-8b,deepseek,8b,yes,no,no,no,no,DeepSeek R1 reasoning model
+no,xiaomi/mimo-v2-flash:free,xiaomi,unknown,yes,no,no,no,no,Xiaomi Mimo v2
+no,mistralai/mistral-7b-instruct:free,mistral,7b,no,no,no,no,no,Mistral 7B without tool calling
+no,microsoft/phi-4,microsoft,14b,no,no,no,no,no,Phi-4 test model

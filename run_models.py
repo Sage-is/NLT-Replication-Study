@@ -14,7 +14,9 @@ def update_models_csv(csv_path: Path, model_id: str, scenario: str, approach: st
     """Update models.csv to mark a scenario/approach as done."""
     rows = []
     with open(csv_path) as f:
-        reader = csv.DictReader(f)
+        # Filter out comment lines
+        lines = [line for line in f if not line.strip().startswith('#')]
+        reader = csv.DictReader(lines)
         fieldnames = reader.fieldnames
         for row in reader:
             if row["model_id"] == model_id:
@@ -23,7 +25,16 @@ def update_models_csv(csv_path: Path, model_id: str, scenario: str, approach: st
                     row[col_name] = "yes"
             rows.append(row)
 
+    # Write back with comments preserved
+    comment_lines = []
+    with open(csv_path) as f:
+        comment_lines = [line for line in f if line.strip().startswith('#')]
+    
     with open(csv_path, "w", newline="") as f:
+        # Write comments first
+        for comment in comment_lines:
+            f.write(comment)
+        
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
@@ -199,13 +210,16 @@ def main():
 
     args = parser.parse_args()
 
-    # Read models CSV
+    # Read models CSV (skip comment lines starting with #)
+    # Only load models where run=yes - this filter applies even with --force
     models = []
     with open(args.csv) as f:
-        reader = csv.DictReader(f)
-        models = list(reader)
+        # Filter out comment lines
+        lines = [line for line in f if not line.strip().startswith('#')]
+        reader = csv.DictReader(lines)
+        models = [m for m in reader if m.get("run", "yes").lower() == "yes"]
 
-    print(f"Loaded {len(models)} models from {args.csv}")
+    print(f"Loaded {len(models)} models from {args.csv} (filtered by run=yes)")
 
     # Get completed evaluations
     completed = get_completed_models(Path(args.results_dir))
