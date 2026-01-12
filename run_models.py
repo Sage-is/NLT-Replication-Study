@@ -6,7 +6,107 @@ import csv
 import json
 import subprocess
 import sys
+from datetime import datetime
 from pathlib import Path
+
+
+def update_models_csv(csv_path: Path, model_id: str, scenario: str, approach: str):
+    """Update models.csv to mark a scenario/approach as done."""
+    rows = []
+    with open(csv_path) as f:
+        reader = csv.DictReader(f)
+        fieldnames = reader.fieldnames
+        for row in reader:
+            if row["model_id"] == model_id:
+                col_name = f"{scenario}_{approach}_done"
+                if col_name in row:
+                    row[col_name] = "yes"
+            rows.append(row)
+
+    with open(csv_path, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def update_aggregated_results(
+    csv_path: Path, model_id: str, scenario: str, approach: str, perturbed: bool, result_file: Path
+):
+    """Add or update entry in aggregated_results.csv."""
+    # Read result JSON
+    with open(result_file) as f:
+        data = json.load(f)
+
+    summary = data.get("summary", {})
+
+    # Prepare new row
+    new_row = {
+        "model_id": model_id,
+        "scenario": scenario,
+        "approach": approach,
+        "perturbed": "yes" if perturbed else "no",
+        "accuracy": summary.get("accuracy", 0.0),
+        "variance": summary.get("variance", 0.0),
+        "total": summary.get("total", 0),
+        "errors": summary.get("errors", 0),
+        "timestamp": data.get("timestamp", datetime.now().strftime("%Y%m%d_%H%M%S")),
+        "result_file": str(result_file),
+    }
+
+    # Read existing rows
+    rows = []
+    fieldnames = [
+        "model_id",
+        "scenario",
+        "approach",
+        "perturbed",
+        "accuracy",
+        "variance",
+        "total",
+        "errors",
+        "timestamp",
+        "result_file",
+    ]
+
+    if csv_path.exists():
+        with open(csv_path) as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
+
+    # Update or append
+    found = False
+    for i, row in enumerate(rows):
+        if (
+            row["model_id"] == model_id
+            and row["scenario"] == scenario
+            and row["approach"] == approach
+            and row["perturbed"] == new_row["perturbed"]
+        ):
+            rows[i] = new_row
+            found = True
+            break
+
+    if not found:
+        rows.append(new_row)
+
+    # Write back
+    with open(csv_path, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def get_latest_result_file(results_dir: Path, model_id: str, scenario: str, approach: str, perturbed: bool) -> Path | None:
+    """Find the latest result JSON file for a given configuration."""
+    perturb_str = "perturbed" if perturbed else "non_perturbed"
+    safe_model = model_id.replace("/", "_").replace(":", "_")
+    
+    result_path = results_dir / scenario / approach / perturb_str / safe_model
+    if not result_path.exists():
+        return None
+    
+    json_files = sorted(result_path.glob("*.json"), reverse=True)
+    return json_files[0] if json_files else None
 
 
 def get_completed_models(results_dir: Path) -> dict[tuple[str, str, str], bool]:
@@ -85,6 +185,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run evaluations from models CSV")
     parser.add_argument("--csv", default="models.csv", help="Path to models CSV file")
     parser.add_argument("--results-dir", default="results", help="Results directory to check for existing runs")
+    parser.add_argument("--aggregated-csv", default="aggregated_results.csv", help="Path to aggregated results CSV")
     parser.add_argument(
         "--force", action="store_true", help="Rerun all models even if they have results"
     )
@@ -125,6 +226,15 @@ def main():
                 if key in completed and not args.force:
                     print(f"SKIP: {model_id} | {scenario} | {approach} | non-perturbed (already completed)")
                     skipped_runs += 1
+                    
+                    # Still update aggregated results if file exists
+                    result_file = get_latest_result_file(
+                        Path(args.results_dir), model_id, scenario, approach, perturbed=False
+                    )
+                    if result_file:
+                        update_aggregated_results(
+                            Path(args.aggregated_csv), model_id, scenario, approach, False, result_file
+                        )
                 else:
                     success = run_evaluation(
                         model_id=model_id,
@@ -135,7 +245,19 @@ def main():
                         sample_limit=args.sample_limit,
                     )
                     total_runs += 1
-                    if not success:
+                    if success:
+                        # Update models.csv
+                        update_models_csv(Path(args.csv), model_id, scenario, approach)
+                        
+                        # Update aggregated results
+                        result_file = get_latest_result_file(
+                            Path(args.results_dir), model_id, scenario, approach, perturbed=False
+                        )
+                        if result_file:
+                            update_aggregated_results(
+                                Path(args.aggregated_csv), model_id, scenario, approach, False, result_file
+                            )
+                    else:
                         failed_runs += 1
 
                 # Perturbed
@@ -144,6 +266,15 @@ def main():
                     if key_perturbed in completed and not args.force:
                         print(f"SKIP: {model_id} | {scenario} | {approach} | perturbed (already completed)")
                         skipped_runs += 1
+                        
+                        # Still update aggregated results if file exists
+                        result_file = get_latest_result_file(
+                            Path(args.results_dir), model_id, scenario, approach, perturbed=True
+                        )
+                        if result_file:
+                            update_aggregated_results(
+                                Path(args.aggregated_csv), model_id, scenario, approach, True, result_file
+                            )
                     else:
                         success = run_evaluation(
                             model_id=model_id,
@@ -154,7 +285,19 @@ def main():
                             sample_limit=args.sample_limit,
                         )
                         total_runs += 1
-                        if not success:
+                        if success:
+                            # Update models.csv (same column, just marks scenario/approach done)
+                            update_models_csv(Path(args.csv), model_id, scenario, approach)
+                            
+                            # Update aggregated results
+                            result_file = get_latest_result_file(
+                                Path(args.results_dir), model_id, scenario, approach, perturbed=True
+                            )
+                            if result_file:
+                                update_aggregated_results(
+                                    Path(args.aggregated_csv), model_id, scenario, approach, True, result_file
+                                )
+                        else:
                             failed_runs += 1
 
     print(f"\n{'='*60}")
@@ -164,6 +307,7 @@ def main():
     print(f"Skipped: {skipped_runs}")
     print(f"Failed: {failed_runs}")
     print(f"Successful: {total_runs - failed_runs}")
+    print(f"\nResults aggregated in: {args.aggregated_csv}")
 
 
 if __name__ == "__main__":
