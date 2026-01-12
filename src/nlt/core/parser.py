@@ -3,6 +3,8 @@ from __future__ import annotations
 import re
 from collections.abc import Iterable
 
+from nlt.core.types import ToolCall
+
 YES_NO_PATTERN = re.compile(r"\b(YES|NO)\b", re.IGNORECASE)
 
 
@@ -30,18 +32,18 @@ def parse_nlt_output(output: str, tool_names: Iterable[str]) -> dict[str, bool]:
     return decisions
 
 
-def parse_structured_calls(output: str, function_names: dict[str, str]) -> set[str]:
-    """Parse function-name mentions and map them to tool names.
+def parse_tool_calls(tool_calls: list[ToolCall], function_names: dict[str, str]) -> set[str]:
+    """Parse OpenAI-style tool_calls and map to tool names.
 
-    We treat any occurrence of a function name (case-insensitive) as a tool selection.
+    Extracts function names from tool_calls and maps them to tool names.
     """
 
     predicted: set[str] = set()
-    lowered = output.lower()
 
-    for func_name, tool_name in function_names.items():
-        if func_name.lower() in lowered:
-            predicted.add(tool_name)
+    for tool_call in tool_calls:
+        func_name = tool_call.function.get("name", "")
+        if func_name in function_names:
+            predicted.add(function_names[func_name])
 
     return predicted
 

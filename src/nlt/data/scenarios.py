@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from nlt.core.types import Scenario, ScenarioInput
+from nlt.core.types import FunctionDefinition, Scenario, ScenarioInput, Tool
 
 ALEX_NLT_NON_PERTURBED = """
 You are an assistant to Alex, an AI customer service agent who handles bookings for a music venue called "Yes! Music". You will be given a message between Alex and a customer. They are texting one another.
@@ -380,6 +380,57 @@ ALEX_SCENARIO = Scenario(
         "check_past_purchases": "Past Purchases",
         "check_talk_to_a_human": "Talk to a Human",
     },
+    tool_schemas=[
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_recap_of_previous_conversation",
+                description="Check if the message asks about the most recent conversation between Alex and the customer (only the most recent conversation, not including conversations between the customer and others)",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_website_information",
+                description="Check if the message asks about the Yes! Music website: where to purchase tickets or merch, order tracking, policies, or how to use the site (this is distinct from social media)",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_recent_social_media_posts",
+                description="Check if the message mentions YouTube videos from the Yes! Music team, tweets and posts, blog posts (not general social media, only for explicit mentions about content directly from Yes! Music)",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_available_discounts",
+                description="Check if the message asks about promo codes, coupons, sales, loyalty/student/first-time offers, or price matching",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_list_of_upcoming_events",
+                description="Check if the message requests information on upcoming concerts, musicians, and performances",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_past_purchases",
+                description="Check if the message asks about previous orders, receipts, warranties, returns, or order lookups",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_talk_to_a_human",
+                description="Check if there are explicit requests to reach a live agent by chat/phone/email (not just questions about whether Alex is an AI)",
+            ),
+        ),
+    ],
 )
 
 
@@ -416,6 +467,64 @@ SAGE_SCENARIO = Scenario(
         "check_end_conversation": "End Conversation",
         "check_safety_call": "Safety Call",
     },
+    tool_schemas=[
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_most_recent_conversation",
+                description="Check if the message asks about the previous conversation between Sage and the client (only the most recent conversation, not including conversations between the client and others)",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_psychometric_quizzes",
+                description="Check if the message asks about tests/assessments/quizzes the user has taken or could take on the Sage platform (not to be confused with exams/tests in school)",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_sage_website_information",
+                description="Check if the message asks about the Sage platform or website, where they can subscribe, the privacy policy, blogs and other webpages, and how to find different features (this is distinct from social media)",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_sage_technology",
+                description="Check if the message contains technical questions about how Sage works, the AI models they use, or their capabilities",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_sage_company_info",
+                description="Check if the message contains explicit questions about who owns Sage, when was the company founded, who are the investors, when did they start, who built Sage, etc.",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_sage_social_media",
+                description="Check if the message mentions YouTube videos from Sage or the Sage team, social media tweets and posts, blog posts from either (not general social media, only for explicit mentions about content directly from the Sage team)",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_end_conversation",
+                description="Check if Sage should end the conversation, due to the user being abusive or hostile to Sage, or if the user is making requests that would make a reasonable mental health practitioner uncomfortable, such as illegal activity",
+            ),
+        ),
+        Tool(
+            type="function",
+            function=FunctionDefinition(
+                name="check_safety_call",
+                description="Check for indications of self harm, immediate and extreme duress, excessive drug use, or other serious safety issues for the client",
+            ),
+        ),
+    ],
 )
 
 

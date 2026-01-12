@@ -28,8 +28,11 @@ def run_single_trial(
     system_prompt = scenario.prompts[approach]["perturbed" if perturbed else "non_perturbed"]
     messages = build_messages(system_prompt=system_prompt, user_text=input_text)
 
+    # Structured approach always uses tool calling
+    tools = scenario.tool_schemas if approach == "structured" else None
+
     try:
-        response = client.chat_completion(messages=messages, model=model)
+        response = client.chat_completion(messages=messages, model=model, tools=tools)
         raw_output = response.content
     except Exception as exc:  # pragma: no cover - network
         return TrialResult(
@@ -53,7 +56,8 @@ def run_single_trial(
         decisions = parser.parse_nlt_output(raw_output, scenario.tools)
         predicted = {name for name, value in decisions.items() if value}
     else:
-        predicted = parser.parse_structured_calls(raw_output, scenario.structured_function_map)
+        # Structured approach uses OpenAI-style tool calling only
+        predicted = parser.parse_tool_calls(response.tool_calls, scenario.structured_function_map)
 
     expected = set(expected_tools)
     success = parser.exact_match(expected, predicted)

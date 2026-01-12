@@ -11,17 +11,57 @@ class Message:
 
 
 @dataclass
+class FunctionDefinition:
+    name: str
+    description: str
+    parameters: dict[str, Any] = field(default_factory=dict)
+
+    def to_wire(self) -> dict[str, Any]:
+        return {
+            "name": self.name,
+            "description": self.description,
+            "parameters": self.parameters,
+        }
+
+
+@dataclass
+class Tool:
+    type: str = "function"
+    function: FunctionDefinition | None = None
+
+    def to_wire(self) -> dict[str, Any]:
+        result = {"type": self.type}
+        if self.function:
+            result["function"] = self.function.to_wire()
+        return result
+
+
+@dataclass
+class ToolCall:
+    id: str
+    type: str
+    function: dict[str, Any]
+
+
+@dataclass
 class ChatCompletionRequest:
     model: str
     messages: list[Message]
     stream: bool = False
+    tools: list[Tool] | None = None
+    tool_choice: str | None = None
 
     def to_wire(self) -> dict[str, Any]:
-        return {
+        payload: dict[str, Any] = {
             "model": self.model,
             "stream": self.stream,
             "messages": [message.__dict__ for message in self.messages],
         }
+        if self.tools:
+            payload["tools"] = [tool.to_wire() for tool in self.tools]
+        if self.tool_choice:
+            payload["tool_choice"] = self.tool_choice
+        return payload
 
 
 @dataclass
@@ -36,6 +76,7 @@ class ChatCompletionResponse:
     content: str
     raw: dict[str, Any]
     usage: Usage = field(default_factory=Usage)
+    tool_calls: list[ToolCall] = field(default_factory=list)
 
 
 @dataclass
@@ -67,3 +108,4 @@ class Scenario:
     prompts: dict[str, dict[str, str]]
     inputs: list[ScenarioInput]
     structured_function_map: dict[str, str]
+    tool_schemas: list[Tool] = field(default_factory=list)

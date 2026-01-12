@@ -3,6 +3,14 @@
         "/^make format$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^make test$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^make format && make test$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }

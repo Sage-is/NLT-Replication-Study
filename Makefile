@@ -1,16 +1,22 @@
-.PHONY: setup demo eval help clean test format
+.PHONY: setup demo demo-structured compare-approaches test-phi-4 run-models run-models-force run-models-quick eval help clean test format
 
 # Default target
 all: help
 
 help:
 	@echo "Available commands:"
-	@echo "  make setup       - Create virtual environment and install dependencies"
-	@echo "  make demo        - Run a quick smoke test (Alex scenario, NLT approach)"
-	@echo "  make eval        - Run full evaluation (custom args supported)"
-	@echo "  make format      - Auto-format code with black"
-	@echo "  make test        - Run pytest test suite"
-	@echo "  make clean       - Remove build artifacts and virtual environment"
+	@echo "  make setup               - Create virtual environment and install dependencies"
+	@echo "  make demo                - Run a quick smoke test (Alex scenario, NLT approach)"
+	@echo "  make demo-structured     - Run a quick smoke test (Alex scenario, tool calling)"
+	@echo "  make compare-approaches  - Compare NLT vs structured on mistral-7b (no tool support)"
+	@echo "  make test-phi-4          - Test microsoft/phi-4 with both approaches"
+	@echo "  make run-models          - Run evaluations for models in CSV (skip completed)"
+	@echo "  make run-models-force    - Run all models in CSV (rerun completed)"
+	@echo "  make run-models-quick    - Quick test run (2 inputs, 1 replicate, no perturbed)"
+	@echo "  make eval                - Run full evaluation (custom args supported)"
+	@echo "  make format              - Auto-format code with black"
+	@echo "  make test                - Run pytest test suite"
+	@echo "  make clean               - Remove build artifacts and virtual environment"
 
 setup:
 	@echo "Creating virtual environment..."
@@ -21,8 +27,12 @@ setup:
 	uv pip install black pytest
 
 demo:
-	@echo "Running smoke test..."
+	@echo "Running smoke test (NLT approach)..."
 	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --replicates 1 --sample-limit 2
+
+demo-structured:
+	@echo "Running smoke test (tool calling approach)..."
+	.venv/bin/python -m nlt.cli --scenario alex --approach structured --replicates 1 --sample-limit 2
 
 eval:
 	@echo "Running evaluation..."
@@ -35,6 +45,36 @@ format:
 test:
 	@echo "Running pytest..."
 	.venv/bin/pytest
+
+compare-approaches:
+	@echo "Comparing NLT vs Structured on mistralai/mistral-7b-instruct:free (no native tool calling)..."
+	@echo ""
+	@echo "=== NLT Approach (text-based YES/NO parsing) ==="
+	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --model mistralai/mistral-7b-instruct:free --sample-limit 2 --replicates 1
+	@echo ""
+	@echo "=== Structured Approach (requires tool_calls - should get 0% accuracy) ==="
+	.venv/bin/python -m nlt.cli --scenario alex --approach structured --model mistralai/mistral-7b-instruct:free --sample-limit 2 --replicates 1
+
+test-phi-4:
+	@echo "Testing microsoft/phi-4 with both approaches..."
+	@echo ""
+	@echo "=== NLT Approach ==="
+	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --model microsoft/phi-4 --sample-limit 2 --replicates 1
+	@echo ""
+	@echo "=== Structured Approach ==="
+	.venv/bin/python -m nlt.cli --scenario alex --approach structured --model microsoft/phi-4 --sample-limit 2 --replicates 1
+
+run-models:
+	@echo "Running evaluations from models.csv (skip completed)..."
+	.venv/bin/python run_models.py
+
+run-models-force:
+	@echo "Running ALL evaluations from models.csv (rerun completed)..."
+	.venv/bin/python run_models.py --force
+
+run-models-quick:
+	@echo "Quick test run (2 inputs, 1 replicate, no perturbed)..."
+	.venv/bin/python run_models.py --sample-limit 2 --replicates 1 --skip-perturbed
 
 clean:
 	rm -rf .venv

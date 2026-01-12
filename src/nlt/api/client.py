@@ -5,7 +5,7 @@ import ssl
 from dataclasses import dataclass
 from urllib import error, request
 
-from nlt.core.types import ChatCompletionRequest, ChatCompletionResponse, Message, Usage
+from nlt.core.types import ChatCompletionRequest, ChatCompletionResponse, Message, Tool, ToolCall, Usage
 
 DEFAULT_API_URL = "https://sage.startr.cloud/api/chat/completions"
 DEFAULT_MODEL = "llama-3.1-8b-instant"
@@ -24,11 +24,15 @@ class SageClient:
         messages: list[Message],
         model: str | None = None,
         stream: bool = False,
+        tools: list[Tool] | None = None,
+        tool_choice: str | None = None,
     ) -> ChatCompletionResponse:
         payload = ChatCompletionRequest(
             model=model or self.default_model,
             messages=messages,
             stream=stream,
+            tools=tools,
+            tool_choice=tool_choice,
         ).to_wire()
 
         data = json.dumps(payload).encode("utf-8")
@@ -64,7 +68,20 @@ class SageClient:
             total_tokens=usage_dict.get("total_tokens"),
         )
 
-        return ChatCompletionResponse(content=content, raw=response_data, usage=usage)
+        # Parse tool_calls if present
+        tool_calls: list[ToolCall] = []
+        raw_tool_calls = response_data.get("choices", [{}])[0].get("message", {}).get("tool_calls", [])
+        if raw_tool_calls:
+            for tc in raw_tool_calls:
+                tool_calls.append(
+                    ToolCall(
+                        id=tc.get("id", ""),
+                        type=tc.get("type", "function"),
+                        function=tc.get("function", {}),
+                    )
+                )
+
+        return ChatCompletionResponse(content=content, raw=response_data, usage=usage, tool_calls=tool_calls)
 
     def simple_chat(self, user_message: str, model: str | None = None) -> str:
         response = self.chat_completion(messages=[Message(role="user", content=user_message)], model=model)

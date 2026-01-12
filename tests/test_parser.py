@@ -121,51 +121,53 @@ I hope that helps!
     }
 
 
-def test_parse_structured_calls_basic():
-    """Test structured function call parsing."""
-    output = """
-I need to check website information and past purchases.
-check_website_information
-check_past_purchases
-"""
+def test_parse_tool_calls_basic():
+    """Test tool_calls parsing."""
+    from nlt.core.types import ToolCall
+
+    tool_calls = [
+        ToolCall(id="1", type="function", function={"name": "check_website_information"}),
+        ToolCall(id="2", type="function", function={"name": "check_past_purchases"}),
+    ]
     function_map = {
         "check_website_information": "Website information",
         "check_past_purchases": "Past Purchases",
         "check_talk_to_a_human": "Talk to a Human",
     }
-    result = parser.parse_structured_calls(output, function_map)
+    result = parser.parse_tool_calls(tool_calls, function_map)
 
     assert result == {"Website information", "Past Purchases"}
 
 
-def test_parse_structured_calls_none():
-    """Test structured parsing when no functions are called."""
-    output = """
-Thinking: No tools needed for this request.
-The user is just saying thank you.
-"""
+def test_parse_tool_calls_none():
+    """Test tool_calls parsing when no tools are called."""
+    from nlt.core.types import ToolCall
+
+    tool_calls = []
     function_map = {
         "check_website_information": "Website information",
         "check_past_purchases": "Past Purchases",
     }
-    result = parser.parse_structured_calls(output, function_map)
+    result = parser.parse_tool_calls(tool_calls, function_map)
 
     assert result == set()
 
 
-def test_parse_structured_calls_case_insensitive():
-    """Test that function matching is case-insensitive."""
-    output = """
-Check_Website_Information
-CHECK_PAST_PURCHASES
-"""
+def test_parse_tool_calls_unknown_function():
+    """Test that unknown function names are ignored."""
+    from nlt.core.types import ToolCall
+
+    tool_calls = [
+        ToolCall(id="1", type="function", function={"name": "check_website_information"}),
+        ToolCall(id="2", type="function", function={"name": "unknown_function"}),
+    ]
     function_map = {
         "check_website_information": "Website information",
         "check_past_purchases": "Past Purchases",
     }
-    result = parser.parse_structured_calls(output, function_map)
+    result = parser.parse_tool_calls(tool_calls, function_map)
 
-    assert result == {"Website information", "Past Purchases"}
+    assert result == {"Website information"}
 
 
 def test_exact_match_success():
