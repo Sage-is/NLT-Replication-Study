@@ -1,2 +1,17 @@
 model_id,scenario,approach,perturbed,accuracy,variance,total,errors,timestamp,result_file
 llama-3.1-8b-instant,alex,nlt,no,0.7875,0.16734374999999987,80,0,20260112_121000,results/alex/nlt/non_perturbed/llama-3.1-8b-instant/20260112_121000.json
+llama-3.1-8b-instant,alex,nlt,yes,0.5375,0.24859375000000025,80,0,20260112_121111,results/alex/nlt/perturbed/llama-3.1-8b-instant/20260112_121111.json
+llama-3.1-8b-instant,alex,structured,no,0.3972602739726027,0.2394445486958153,80,7,20260112_121232,results/alex/structured/non_perturbed/llama-3.1-8b-instant/20260112_121232.json
+llama-3.1-8b-instant,alex,structured,yes,0.3466666666666667,0.22648888888888916,80,5,20260112_121355,results/alex/structured/perturbed/llama-3.1-8b-instant/20260112_121355.json
+llama-3.1-8b-instant,sage,nlt,no,0.375,0.234375,80,0,20260112_121508,results/sage/nlt/non_perturbed/llama-3.1-8b-instant/20260112_121508.json
+llama-3.1-8b-instant,sage,nlt,yes,0.2125,0.16734374999999985,80,0,20260112_121626,results/sage/nlt/perturbed/llama-3.1-8b-instant/20260112_121626.json
+llama-3.1-8b-instant,sage,structured,no,0.23076923076923078,0.17751479289940827,80,15,20260112_121745,results/sage/structured/non_perturbed/llama-3.1-8b-instant/20260112_121745.json
+llama-3.1-8b-instant,sage,structured,yes,0.34285714285714286,0.2253061224489795,80,10,20260112_121909,results/sage/structured/perturbed/llama-3.1-8b-instant/20260112_121909.json
+google/gemini-2.5-flash-lite,alex,nlt,no,0.825,0.1443750000000002,80,0,20260112_122107,results/alex/nlt/non_perturbed/google_gemini-2.5-flash-lite/20260112_122107.json
+google/gemini-2.5-flash-lite,alex,nlt,yes,0.8625,0.1185937500000002,80,0,20260112_122258,results/alex/nlt/perturbed/google_gemini-2.5-flash-lite/20260112_122258.json
+google/gemini-2.5-flash-lite,alex,structured,no,0.6375,0.23109374999999993,80,0,20260112_122442,results/alex/structured/non_perturbed/google_gemini-2.5-flash-lite/20260112_122442.json
+google/gemini-2.5-flash-lite,alex,structured,yes,0.8,0.15999999999999998,80,0,20260112_122651,results/alex/structured/perturbed/google_gemini-2.5-flash-lite/20260112_122651.json
+google/gemini-2.5-flash-lite,sage,nlt,no,0.7125,0.2048437499999999,80,0,20260112_122850,results/sage/nlt/non_perturbed/google_gemini-2.5-flash-lite/20260112_122850.json
+google/gemini-2.5-flash-lite,sage,nlt,yes,0.525,0.2493750000000003,80,0,20260112_123100,results/sage/nlt/perturbed/google_gemini-2.5-flash-lite/20260112_123100.json
+google/gemini-2.5-flash-lite,sage,structured,no,0.5125,0.2498437499999997,80,0,20260112_123321,results/sage/structured/non_perturbed/google_gemini-2.5-flash-lite/20260112_123321.json
+google/gemini-2.5-flash-lite,sage,structured,yes,0.575,0.24437499999999993,80,0,20260112_123534,results/sage/structured/perturbed/google_gemini-2.5-flash-lite/20260112_123534.json
