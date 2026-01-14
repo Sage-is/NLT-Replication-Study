@@ -10,7 +10,7 @@
 
 ## Abstract
 
-We present a systematic replication of the Natural Language Tools (NLT) framework originally proposed by Johnson et al. (2025). Using an independent implementation and evaluation harness, we assessed NLT's tool-calling performance across [#todo: MODEL_COUNT] frontier models spanning [#todo: TRIAL_COUNT] trials in customer service and mental health domains. Our replication validates the core findings: NLT improves tool-calling accuracy by [#todo: OVERALL_GAIN]pp over structured approaches ([#todo: STRUCTURED_ACCURACY]% → [#todo: NLT_ACCURACY]%), with open-weight models seeing larger gains ([#todo: OPEN_WEIGHT_GAIN]pp) compared to closed-weight models ([#todo: CLOSED_WEIGHT_GAIN]pp). We observe [#todo: VARIANCE_REDUCTION]% reduction in output variance and [#todo: TOKEN_REDUCTION]% reduction in total token usage. These results [confirm/partially confirm/diverge from] the original study's findings, with notable differences in [#todo: KEY_DIFFERENCES]. Our open-source implementation and complete evaluation data are available for further validation.
+We present a systematic replication of the Natural Language Tools (NLT) framework originally proposed by Johnson et al. (2025). Using an independent implementation and evaluation harness, we assessed NLT's tool-calling performance across 2 frontier models (llama-3.1-8b-instant and google/gemini-2.5-flash-lite) spanning 640 trials in customer service and mental health domains as a mini-replication. Early results show NLT improves tool-calling accuracy by +12.4pp over structured approaches (48.0% → 60.5%), with consistent gains across both models (+14.9pp for llama-3.1-8b, +10.0pp for gemini-2.5-flash-lite). We observe 12.5% reduction in output variance. **Full study with [#todo: FULL_MODEL_COUNT] models is planned.** These preliminary results partially confirm the original study's findings, though with smaller effect sizes in our mini-replication ([#todo: DISCUSS_AFTER_FULL_STUDY]). Our open-source implementation and complete evaluation data are available for further validation.
 
 **Keywords:** Large Language Models, Tool Calling, Function Calling, Agentic Systems, Replication Study
 
@@ -115,14 +115,24 @@ We used identical tool descriptions and user inputs from Johnson et al. (2025):
 
 ### 2.4 Model Selection
 
-**Primary Analysis Set (Like-for-Like with Original):**
-[#todo: LIST_MODELS_TESTED_THAT_MATCH_ORIGINAL]
+**Mini-Replication Set (2 models, 640 trials):**
+1. `llama-3.1-8b-instant` (Meta, 8B parameters, open-weight)
+   - Available via [inference provider]
+   - Supports parallel tool calling via function schemas
+2. `google/gemini-2.5-flash-lite` (Google, size unknown, closed-weight)
+   - Available via [inference provider]
+   - Supports parallel tool calling via function schemas
 
-**Extended Analysis Set (New Models):**
-[#todo: LIST_NEW_MODELS_TESTED]
+**[#todo: FULL_STUDY_MODEL_SET]**
+- Plan to test: [#todo: LIST_ADDITIONAL_MODELS]
+- Target total: [#todo: MODEL_COUNT] models
+- Target trials: [#todo: TRIAL_COUNT]
 
-**Excluded from Comparison:**
-[#todo: LIST_MODELS_FROM_ORIGINAL_NOT_TESTED_AND_WHY]
+**Models from Original Not Yet Tested:**
+- GPT-5, GPT-5-nano (OpenAI)
+- Claude Sonnet 4.0 (Anthropic)
+- DeepSeek-V3, Qwen3, Kimi-K2, etc.
+- Reason: Mini-replication phase to validate framework before full run
 
 ### 2.5 Prompt Design
 
@@ -160,48 +170,62 @@ We replicated the original prompts with minimal adaptations for API compatibilit
 
 [#todo: GENERATE_FIGURE_3_EQUIVALENT]
 
-**Summary Statistics:**
-- **Overall:** [#todo: NLT_ACCURACY]% NLT vs [#todo: STRUCTURED_ACCURACY]% Structured (Δ = [#todo: OVERALL_GAIN]pp)
-- **Open-weight:** [#todo: OPEN_NLT]% NLT vs [#todo: OPEN_STRUCTURED]% Structured (Δ = [#todo: OPEN_GAIN]pp)
-- **Closed-weight:** [#todo: CLOSED_NLT]% NLT vs [#todo: CLOSED_STRUCTURED]% Structured (Δ = [#todo: CLOSED_GAIN]pp)
+**Mini-Replication Results (2 models, 640 trials):**
+- **Overall:** 60.5% NLT vs 48.0% Structured (Δ = +12.4pp)
+- **llama-3.1-8b-instant (open-weight):** 47.8% NLT vs 32.9% Structured (Δ = +14.9pp)
+- **google/gemini-2.5-flash-lite (closed-weight):** 73.1% NLT vs 63.1% Structured (Δ = +10.0pp)
 
 **Comparison to Original Study:**
 - Original overall gain: +18.4pp (69.1% → 87.5%)
-- Our replication: [#todo: COMPARISON_NARRATIVE]
+- Our mini-replication: +12.4pp (48.0% → 60.5%)
+- Effect confirmed but smaller magnitude (possibly due to limited model sample)
+
+**[#todo: UPDATE_AFTER_FULL_STUDY_WITH_MORE_MODELS]**
 
 ### 3.2 Per-Model Performance
 
 [#todo: GENERATE_FIGURE_4_EQUIVALENT]
 
-**Notable Findings:**
+**Mini-Replication Findings (2 models):**
 
-**Models with Largest NLT Gains:**
-1. [#todo: MODEL_1]: +[#todo: GAIN_1]pp ([#todo: STRUCTURED]% → [#todo: NLT]%)
-2. [#todo: MODEL_2]: +[#todo: GAIN_2]pp ([#todo: STRUCTURED]% → [#todo: NLT]%)
-3. [#todo: MODEL_3]: +[#todo: GAIN_3]pp ([#todo: STRUCTURED]% → [#todo: NLT]%)
+**Models Tested:**
+1. **llama-3.1-8b-instant**: +14.9pp (32.9% → 47.8%)
+   - NLT variance: 0.2044, Structured variance: 0.2172
+   - Structured had 37 API/parsing errors vs 0 for NLT
+2. **google/gemini-2.5-flash-lite**: +10.0pp (63.1% → 73.1%)
+   - NLT variance: 0.1793, Structured variance: 0.2213
+   - No errors in either approach
 
-**Models with Smallest NLT Gains:**
-1. [#todo: MODEL_1]: +[#todo: GAIN_1]pp ([#todo: STRUCTURED]% → [#todo: NLT]%)
-2. [#todo: MODEL_2]: +[#todo: GAIN_2]pp ([#todo: STRUCTURED]% → [#todo: NLT]%)
-3. [#todo: MODEL_3]: +[#todo: GAIN_3]pp ([#todo: STRUCTURED]% → [#todo: NLT]%)
+**Key Observations:**
+- Both models show consistent NLT gains
+- Open-weight model (llama) shows larger gain (+14.9pp) than closed-weight (gemini, +10.0pp)
+- Pattern aligns with original study's finding that open-weight benefits more
+- Gemini achieves higher absolute accuracy in both approaches
 
-[#todo: COMPARE_WITH_ORIGINAL_FIGURE_4_RANKINGS]
+**[#todo: EXPAND_WITH_FULL_MODEL_SET_RANKINGS_AND_COMPARISON_TO_ORIGINAL_FIGURE_4]**
 
 ### 3.3 Variance Analysis
 
 [#todo: GENERATE_FIGURE_5_EQUIVALENT]
 
-**Variance Reduction:**
-- **Structured variance:** [#todo: VALUE] (SD = [#todo: VALUE]pp)
-- **NLT variance:** [#todo: VALUE] (SD = [#todo: VALUE]pp)
-- **Reduction:** [#todo: PERCENT]%
+**Mini-Replication Variance Results:**
+- **Structured variance:** 0.2193 (SD = 46.8pp)
+- **NLT variance:** 0.1919 (SD = 43.8pp)
+- **Reduction:** 12.5%
 
 **Comparison to Original:**
-- Original: 0.0411 → 0.0121 (70% reduction)
-- Our replication: [#todo: COMPARISON]
+- Original: 0.0411 → 0.0121 (70% reduction, SD: 20.28pp → 10.99pp)
+- Our mini-replication: 0.2193 → 0.1919 (12.5% reduction, SD: 46.8pp → 43.8pp)
+- **Note:** Higher variance in our mini-replication likely due to:
+  - Small model sample (n=2 vs n=10)
+  - One model (llama) had high error rate in structured approach (37 errors)
+  - Different model selection
 
-**Models with Greatest Variance Reduction:**
-[#todo: LIST_TOP_3_WITH_STATS]
+**Per-Model Variance Reduction:**
+1. **llama-3.1-8b-instant:** 0.2172 → 0.2044 (5.9% reduction)
+2. **google/gemini-2.5-flash-lite:** 0.2213 → 0.1793 (19.0% reduction)
+
+**[#todo: UPDATE_WITH_FULL_MODEL_SET_FOR_MORE_ROBUST_VARIANCE_ANALYSIS]**
 
 ### 3.4 Perturbation Robustness
 
@@ -223,16 +247,24 @@ We replicated the original prompts with minimal adaptations for API compatibilit
 ### 3.5 Domain Comparison (Alex vs Sage)
 
 **Alex (Customer Service):**
-- Overall accuracy: [#todo: VALUE]%
-- NLT vs Structured: [#todo: NLT]% vs [#todo: STRUCTURED]% (Δ = [#todo: GAIN]pp)
+- Overall accuracy: 64.9%
+- NLT vs Structured: 75.3% vs 54.5% (Δ = +20.8pp)
+- NLT variance: 0.1697, Structured variance: 0.2143
+- Structured errors: 12 API/parsing failures
 
 **Sage (Mental Health):**
-- Overall accuracy: [#todo: VALUE]%
-- NLT vs Structured: [#todo: NLT]% vs [#todo: STRUCTURED]% (Δ = [#todo: GAIN]pp)
+- Overall accuracy: 43.6%
+- NLT vs Structured: 45.6% vs 41.5% (Δ = +4.1pp)
+- NLT variance: 0.2140, Structured variance: 0.2243
+- Structured errors: 25 API/parsing failures
 
 **Comparison to Original:**
-- Original showed higher accuracy for Alex vs Sage
-- Our replication: [#todo: COMPARISON]
+- Original showed higher accuracy for Alex vs Sage ✓ **Confirmed**
+- Our mini-replication shows same pattern: Alex (64.9%) > Sage (43.6%)
+- Alex shows much larger NLT gain (+20.8pp) than Sage (+4.1pp)
+- Sage structured approach had significantly more errors (25 vs 12)
+
+**[#todo: INVESTIGATE_WHY_SAGE_NLT_GAIN_IS_SMALL_WITH_LARGER_MODEL_SET]**
 
 ### 3.6 Token Usage
 
