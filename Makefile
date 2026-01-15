@@ -1,4 +1,4 @@
-.PHONY: setup demo demo-structured compare-approaches test-phi-4 run-models run-models-force run-models-quick eval help clean test format
+.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval help clean test format
 
 # Default target
 all: help
@@ -10,9 +10,12 @@ help:
 	@echo "  make demo-structured     - Run a quick smoke test (Alex scenario, tool calling)"
 	@echo "  make compare-approaches  - Compare NLT vs structured on mistral-7b (no tool support)"
 	@echo "  make test-phi-4          - Test microsoft/phi-4 with both approaches"
+	@echo "  make test-deepseek-r1    - Test deepseek/deepseek-r1 with extended timeout"
+	@echo "  make test-deepseek-r1-debug - Test deepseek/deepseek-r1 with full debug output"
 	@echo "  make run-models          - Run evaluations for models in CSV (skip completed)"
 	@echo "  make run-models-force    - Run all models in CSV (rerun completed)"
 	@echo "  make run-models-quick    - Quick test run (2 inputs, 1 replicate, no perturbed)"
+	@echo "  make run-models-debug    - Run evaluations with verbose debug output"
 	@echo "  make eval                - Run full evaluation (custom args supported)"
 	@echo "  make format              - Auto-format code with black"
 	@echo "  make test                - Run pytest test suite"
@@ -64,17 +67,33 @@ test-phi-4:
 	@echo "=== Structured Approach ==="
 	.venv/bin/python -m nlt.cli --scenario alex --approach structured --model microsoft/phi-4 --sample-limit 2 --replicates 1
 
+test-deepseek-r1:
+	@echo "Testing deepseek/deepseek-r1 with extended timeout (10 minutes)..."
+	@echo ""
+	@echo "=== NLT Approach (DeepSeek R1 is very large - may take several minutes) ==="
+	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --model deepseek/deepseek-r1 --sample-limit 1 --replicates 1 --timeout 600
+
+test-deepseek-r1-debug:
+	@echo "Testing deepseek/deepseek-r1 with DEBUG output enabled..."
+	@echo ""
+	@echo "=== NLT Approach with full debug logging ==="
+	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --model deepseek/deepseek-r1 --sample-limit 1 --replicates 1 --timeout 600 --debug --verbose
+
 run-models:
 	@echo "Running evaluations from models.csv (skip completed)..."
-	.venv/bin/python run_models.py
+	.venv/bin/python run_models.py --timeout 600 --verbose
 
 run-models-force:
 	@echo "Running ALL evaluations from models.csv (rerun completed)..."
-	.venv/bin/python run_models.py --force
+	.venv/bin/python run_models.py --force --timeout 600 --verbose
 
 run-models-quick:
 	@echo "Quick test run (2 inputs, 1 replicate, no perturbed)..."
-	.venv/bin/python run_models.py --sample-limit 2 --replicates 1 --skip-perturbed
+	.venv/bin/python run_models.py --sample-limit 2 --replicates 1 --skip-perturbed --timeout 300
+
+run-models-debug:
+	@echo "Running evaluations with DEBUG output (verbose logging)..."
+	.venv/bin/python run_models.py --force --timeout 600 --debug --verbose
 
 clean:
 	rm -rf .venv
