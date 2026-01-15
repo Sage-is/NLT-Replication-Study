@@ -27,6 +27,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--delay-seconds", type=float, default=0.0, help="Sleep between requests to avoid rate limits")
     parser.add_argument("--output-dir", default="results", help="Directory to save results")
     parser.add_argument("--no-save", action="store_true", help="Skip saving results to disk")
+    parser.add_argument("--timeout", type=int, default=300, help="API timeout in seconds (default: 300)")
+    parser.add_argument("--verbose", "-v", action="store_true", help="Enable verbose output")
+    parser.add_argument("--debug", action="store_true", help="Enable debug logging (includes API requests/responses)")
     return parser.parse_args()
 
 
@@ -90,7 +93,7 @@ def main() -> None:
         models = [DEFAULT_MODEL]
 
     scenario = SCENARIOS[args.scenario]
-    client = SageClient(auth_token=auth_token, api_url=args.api_url)
+    client = SageClient(auth_token=auth_token, api_url=args.api_url, timeout=args.timeout, debug=args.debug)
 
     all_summaries = []
 
@@ -108,6 +111,7 @@ def main() -> None:
             model=model,
             sample_limit=args.sample_limit,
             delay_seconds=args.delay_seconds,
+            verbose=args.verbose,
         )
 
         summary: dict[str, Any] = evaluator.summarize(results)

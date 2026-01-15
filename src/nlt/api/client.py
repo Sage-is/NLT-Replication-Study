@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import ssl
+import sys
 from dataclasses import dataclass
 from urllib import error, request
 
@@ -18,6 +19,7 @@ class SageClient:
     default_model: str = DEFAULT_MODEL
     timeout: int = 60
     verify_tls: bool = True
+    debug: bool = False
 
     def chat_completion(
         self,
@@ -35,6 +37,12 @@ class SageClient:
             tool_choice=tool_choice,
         ).to_wire()
 
+        if self.debug:
+            print(f"[DEBUG] Making API request to: {self.api_url}", file=sys.stderr)
+            print(f"[DEBUG] Model: {model or self.default_model}", file=sys.stderr)
+            print(f"[DEBUG] Timeout: {self.timeout}s", file=sys.stderr)
+            print(f"[DEBUG] Request payload: {json.dumps(payload, indent=2)}", file=sys.stderr)
+
         data = json.dumps(payload).encode("utf-8")
         headers = {
             "Content-Type": "application/json",
@@ -51,14 +59,31 @@ class SageClient:
 
         context = None if self.verify_tls else ssl._create_unverified_context()
 
+        if self.debug:
+            import time
+            print(f"[DEBUG] Starting API request at {time.strftime('%H:%M:%S')}", file=sys.stderr)
+            
         try:
             with request.urlopen(req, context=context, timeout=self.timeout) as response:
+                if self.debug:
+                    print(f"[DEBUG] Got response with status: {response.status}", file=sys.stderr)
                 response_data = json.loads(response.read().decode("utf-8"))
+                if self.debug:
+                    print(f"[DEBUG] Response completed at {time.strftime('%H:%M:%S')}", file=sys.stderr)
+                    print(f"[DEBUG] Response data: {json.dumps(response_data, indent=2)}", file=sys.stderr)
         except error.HTTPError as exc:  # pragma: no cover - network
+            if self.debug:
+                print(f"[DEBUG] HTTP Error {exc.code}: {exc.reason}", file=sys.stderr)
             body = exc.read().decode("utf-8", errors="replace")
             raise RuntimeError(f"HTTP {exc.code}: {body}") from exc
         except error.URLError as exc:  # pragma: no cover - network
+            if self.debug:
+                print(f"[DEBUG] URL Error: {exc.reason}", file=sys.stderr)
             raise RuntimeError(f"Network error: {exc.reason}") from exc
+        except Exception as exc:
+            if self.debug:
+                print(f"[DEBUG] Unexpected error: {type(exc).__name__}: {exc}", file=sys.stderr)
+            raise
 
         content = response_data.get("choices", [{}])[0].get("message", {}).get("content", "")
         usage_dict: dict[str, int] = response_data.get("usage", {}) or {}

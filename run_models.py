@@ -159,6 +159,8 @@ def run_evaluation(
     replicates: int = 5,
     perturbed: bool = False,
     sample_limit: int | None = None,
+    timeout: int | None = None,
+    args = None,
 ) -> bool:
     """Run evaluation for a model/scenario/approach combination."""
     cmd = [
@@ -179,14 +181,26 @@ def run_evaluation(
         cmd.append("--perturbed")
     if sample_limit:
         cmd.extend(["--sample-limit", str(sample_limit)])
+    
+    # Add timeout for large models
+    if timeout:
+        cmd.extend(["--timeout", str(timeout)])
+    
+    # Add timeout for large models
+    if timeout:
+        cmd.extend(["--timeout", str(timeout)])
 
     print(f"\n{'='*60}")
     print(f"Running: {model_id} | {scenario} | {approach} | {'perturbed' if perturbed else 'non-perturbed'}")
     print(f"{'='*60}\n")
 
     try:
-        result = subprocess.run(cmd, check=True, capture_output=False)
+        # Use longer timeout for large models (30 minutes)
+        result = subprocess.run(cmd, check=True, capture_output=False, timeout=1800)
         return result.returncode == 0
+    except subprocess.TimeoutExpired:
+        print(f"ERROR: Evaluation timed out after 30 minutes", file=sys.stderr)
+        return False
     except subprocess.CalledProcessError as e:
         print(f"ERROR: Evaluation failed with exit code {e.returncode}", file=sys.stderr)
         return False
@@ -207,6 +221,15 @@ def main():
     parser.add_argument("--replicates", type=int, default=5, help="Number of replicates per input")
     parser.add_argument("--sample-limit", type=int, help="Limit number of inputs (for testing)")
     parser.add_argument("--skip-perturbed", action="store_true", help="Only run non-perturbed prompts")
+    parser.add_argument(
+        "--timeout", type=int, default=600, help="API timeout in seconds for individual model calls (default: 600)"
+    )
+    parser.add_argument(
+        "--verbose", "-v", action="store_true", help="Enable verbose output"
+    )
+    parser.add_argument(
+        "--debug", action="store_true", help="Enable debug logging (includes API requests/responses)"
+    )
 
     args = parser.parse_args()
 
@@ -257,6 +280,8 @@ def main():
                         replicates=args.replicates,
                         perturbed=False,
                         sample_limit=args.sample_limit,
+                        timeout=args.timeout,
+                        args=args,
                     )
                     total_runs += 1
                     if success:
@@ -297,6 +322,8 @@ def main():
                             replicates=args.replicates,
                             perturbed=True,
                             sample_limit=args.sample_limit,
+                            timeout=args.timeout,
+                            args=args,
                         )
                         total_runs += 1
                         if success:

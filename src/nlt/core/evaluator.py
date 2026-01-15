@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import sys
 import time
 from collections.abc import Iterable
 
@@ -24,17 +25,28 @@ def run_single_trial(
     expected_tools: Iterable[str],
     model: str | None,
     delay_seconds: float,
+    verbose: bool = False,
 ) -> TrialResult:
     system_prompt = scenario.prompts[approach]["perturbed" if perturbed else "non_perturbed"]
     messages = build_messages(system_prompt=system_prompt, user_text=input_text)
+
+    if verbose:
+        print(f"[VERBOSE] Starting trial with model: {model or 'default'}", file=sys.stderr)
+        print(f"[VERBOSE] Input text: {input_text[:100]}{'...' if len(input_text) > 100 else ''}", file=sys.stderr)
 
     # Structured approach always uses tool calling
     tools = scenario.tool_schemas if approach == "structured" else None
 
     try:
+        if verbose:
+            print(f"[VERBOSE] Making API call...", file=sys.stderr)
         response = client.chat_completion(messages=messages, model=model, tools=tools)
         raw_output = response.content
+        if verbose:
+            print(f"[VERBOSE] Got response: {len(raw_output)} characters", file=sys.stderr)
     except Exception as exc:  # pragma: no cover - network
+        if verbose:
+            print(f"[VERBOSE] API call failed: {exc}", file=sys.stderr)
         return TrialResult(
             scenario=scenario.name,
             approach=approach,
@@ -85,12 +97,23 @@ def evaluate(
     model: str | None = None,
     sample_limit: int | None = None,
     delay_seconds: float = 0.0,
+    verbose: bool = False,
 ) -> list[TrialResult]:
     results: list[TrialResult] = []
     inputs = scenario.inputs[:sample_limit] if sample_limit else scenario.inputs
+    
+    if verbose:
+        total_trials = len(inputs) * replicates
+        print(f"[VERBOSE] Starting evaluation: {total_trials} total trials ({len(inputs)} inputs × {replicates} replicates)", file=sys.stderr)
 
-    for scenario_input in inputs:
-        for _ in range(replicates):
+    for i, scenario_input in enumerate(inputs, 1):
+        if verbose:
+            print(f"[VERBOSE] Processing input {i}/{len(inputs)}: {scenario_input.text[:50]}{'...' if len(scenario_input.text) > 50 else ''}", file=sys.stderr)
+        
+        for rep in range(replicates):
+            if verbose:
+                print(f"[VERBOSE] Replicate {rep + 1}/{replicates}", file=sys.stderr)
+            
             trial = run_single_trial(
                 client=client,
                 scenario=scenario,
@@ -99,8 +122,7 @@ def evaluate(
                 input_text=scenario_input.text,
                 expected_tools=scenario_input.expected_tools,
                 model=model,
-                delay_seconds=delay_seconds,
-            )
+                delay_seconds=delay_seconds,                verbose=verbose,            )
             trial.input_id = scenario_input.id
             results.append(trial)
 
