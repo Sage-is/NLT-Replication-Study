@@ -186,9 +186,11 @@ def run_evaluation(
     if timeout:
         cmd.extend(["--timeout", str(timeout)])
     
-    # Add timeout for large models
-    if timeout:
-        cmd.extend(["--timeout", str(timeout)])
+    # Add verbose/debug flags if present
+    if args and args.verbose:
+        cmd.append("--verbose")
+    if args and args.debug:
+        cmd.append("--debug")
 
     print(f"\n{'='*60}")
     print(f"Running: {model_id} | {scenario} | {approach} | {'perturbed' if perturbed else 'non-perturbed'}")
