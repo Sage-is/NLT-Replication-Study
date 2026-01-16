@@ -1,4 +1,4 @@
-.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval help clean test format
+.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval analyze help clean test format
 
 # Default target
 all: help
@@ -17,6 +17,7 @@ help:
 	@echo "  make run-models-quick    - Quick test run (2 inputs, 1 replicate, no perturbed)"
 	@echo "  make run-models-debug    - Run evaluations with verbose debug output"
 	@echo "  make eval                - Run full evaluation (custom args supported)"
+	@echo "  make analyze             - Analyze aggregated results and show NLT gains"
 	@echo "  make format              - Auto-format code with black"
 	@echo "  make test                - Run pytest test suite"
 	@echo "  make clean               - Remove build artifacts and virtual environment"
@@ -93,8 +94,10 @@ run-models-quick:
 
 run-models-debug:
 	@echo "Running evaluations with DEBUG output (verbose logging)..."
-	.venv/bin/python run_models.py --force --timeout 600 --debug --verbose
-
+	.venv/bin/python run_models.py --timeout 600 --debug --verbose
+analyze:
+	@echo "Analyzing results..."
+	.venv/bin/python analyze_results.py --show-gains
 clean:
 	rm -rf .venv
 	rm -rf *.egg-info
