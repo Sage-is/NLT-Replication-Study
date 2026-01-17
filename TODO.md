@@ -1,13 +1,18 @@
-## 🔥 This Week (January 12, 2026)
+## 🔥 This Week (January 16, 2026)
 
-### 🔥 In Progress: Mini Replication Study
-- [ ] **Mini Replication Study**: Run evaluation with llama-3.1-8b and gemini-2.5-flash across all conditions
-  - [x] Configure models.csv with test models
-  - [x] Fix CSV comment parsing in run_models.py
-  - [ ] Complete llama-3.1-8b evaluation (4/8 conditions done)
-  - [ ] Complete gemini-2.5-flash evaluation
-  - [ ] Analyze mini replication results
-  - [ ] Compare with original paper findings
+### 🔥 In Progress: Fix Data Quality Issues
+- [x] **Issue 1 - Misleading stats when all trials error**: Fixed accuracy/variance reporting
+  - [x] When all trials error (valid_trials=0), accuracy/variance now report as `None` instead of 0.0
+  - [x] Added `valid_trials` and `aborted` fields to summary and aggregated results
+  - [x] Updated analysis scripts to handle None values correctly
+  - [x] Updated tests for new behavior
+- [ ] **Issue 2 - Early abort on repeated errors**: Implemented early stopping to save money/tokens
+  - [x] Added `MAX_CONSECUTIVE_ERRORS = 5` threshold
+  - [x] Evaluator now returns `(results, aborted)` tuple
+  - [x] When 5+ consecutive errors occur, evaluation stops and reports "aborted"
+  - [x] Aborted flag stored in aggregated results for tracking
+  - [ ] Run tests and validate behavior in real evaluation
+  - [ ] Monitor first run to ensure abort logic works correctly
 
 ### ✅ CSV Tracking & Batch Evaluation System - COMPLETE
 - [x] **CSV Tracking System**: Build model tracking and aggregated results system

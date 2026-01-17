@@ -102,7 +102,7 @@ def main() -> None:
         print(f"Evaluating model: {model}", file=sys.stderr)
         print(f"{'=' * 60}\n", file=sys.stderr)
 
-        results = evaluator.evaluate(
+        results, aborted = evaluator.evaluate(
             client=client,
             scenario=scenario,
             approach=args.approach,
@@ -114,7 +114,7 @@ def main() -> None:
             verbose=args.verbose,
         )
 
-        summary: dict[str, Any] = evaluator.summarize(results)
+        summary: dict[str, Any] = evaluator.summarize(results, aborted=aborted)
         summary.update(
             {
                 "scenario": scenario.name,

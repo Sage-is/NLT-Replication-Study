@@ -3,7 +3,7 @@
 import pytest
 from unittest.mock import Mock, patch
 from nlt.core import evaluator
-from nlt.core.types import ChatCompletionResponse, Message, Usage
+from nlt.core.types import ChatCompletionResponse, Message, TrialResult, Usage
 
 
 @pytest.fixture
@@ -129,7 +129,7 @@ def test_run_single_trial_api_error(mock_scenario):
 def test_evaluate_basic(mock_scenario, mock_response):
     """Test basic evaluation with mocked API."""
     with patch("nlt.api.client.chat_completion", return_value=mock_response):
-        results = evaluator.evaluate(
+        results, aborted = evaluator.evaluate(
             scenario=mock_scenario,
             approach="nlt",
             model="test-model",
@@ -140,14 +140,15 @@ def test_evaluate_basic(mock_scenario, mock_response):
 
     # Should have 2 inputs × 2 replicates = 4 results
     assert len(results) == 4
-    assert all("input_id" in r for r in results)
-    assert all("success" in r for r in results)
+    assert all(hasattr(r, "input_id") for r in results)
+    assert all(hasattr(r, "success") for r in results)
+    assert aborted is False
 
 
 def test_evaluate_sample_limit(mock_scenario, mock_response):
     """Test evaluation with sample limit."""
     with patch("nlt.api.client.chat_completion", return_value=mock_response):
-        results = evaluator.evaluate(
+        results, aborted = evaluator.evaluate(
             scenario=mock_scenario,
             approach="nlt",
             model="test-model",
@@ -159,15 +160,24 @@ def test_evaluate_sample_limit(mock_scenario, mock_response):
 
     # Should have 1 input × 2 replicates = 2 results
     assert len(results) == 2
+    assert aborted is False
 
 
 def test_summarize():
     """Test summarize function."""
     results = [
-        {"input_id": 1, "success": True, "error": None},
-        {"input_id": 1, "success": True, "error": None},
-        {"input_id": 2, "success": False, "error": None},
-        {"input_id": 2, "success": True, "error": None},
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=1, expected_tools=set(), predicted_tools=set(),
+                    success=True, raw_output="", error=None),
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=1, expected_tools=set(), predicted_tools=set(),
+                    success=True, raw_output="", error=None),
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=2, expected_tools=set(), predicted_tools=set(),
+                    success=False, raw_output="", error=None),
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=2, expected_tools=set(), predicted_tools=set(),
+                    success=True, raw_output="", error=None),
     ]
 
     summary = evaluator.summarize(results)
@@ -175,37 +185,67 @@ def test_summarize():
     assert summary["accuracy"] == 0.75  # 3/4 success
     assert summary["total"] == 4
     assert summary["errors"] == 0
+    assert summary["valid_trials"] == 4
+    assert summary["aborted"] is False
 
 
 def test_summarize_with_errors():
     """Test summarize with API errors."""
     results = [
-        {"input_id": 1, "success": True, "error": None},
-        {"input_id": 1, "success": False, "error": "API Error"},
-        {"input_id": 2, "success": False, "error": "Timeout"},
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=1, expected_tools=set(), predicted_tools=set(),
+                    success=True, raw_output="", error=None),
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=1, expected_tools=set(), predicted_tools=set(),
+                    success=False, raw_output="", error="API Error"),
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=2, expected_tools=set(), predicted_tools=set(),
+                    success=False, raw_output="", error="Timeout"),
     ]
 
     summary = evaluator.summarize(results)
 
-    assert summary["accuracy"] == 1 / 3  # Only 1 success
+    assert summary["accuracy"] == 1.0  # 1/1 valid trial succeeded
     assert summary["total"] == 3
     assert summary["errors"] == 2
+    assert summary["valid_trials"] == 1
 
 
 def test_summarize_empty():
     """Test summarize with empty results."""
     summary = evaluator.summarize([])
 
-    assert summary["accuracy"] == 0.0
-    assert summary["variance"] == 0.0
+    assert summary["accuracy"] is None  # No valid trials = N/A
+    assert summary["variance"] is None
     assert summary["total"] == 0
     assert summary["errors"] == 0
+    assert summary["valid_trials"] == 0
+
+
+def test_summarize_all_errors():
+    """Test summarize when all trials are errors."""
+    results = [
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=1, expected_tools=set(), predicted_tools=set(),
+                    success=False, raw_output="", error="API Error"),
+        TrialResult(scenario="test", approach="nlt", perturbed=False, model="test",
+                    input_id=2, expected_tools=set(), predicted_tools=set(),
+                    success=False, raw_output="", error="API Error"),
+    ]
+
+    summary = evaluator.summarize(results)
+
+    assert summary["accuracy"] is None  # N/A when all trials errored
+    assert summary["variance"] is None
+    assert summary["total"] == 2
+    assert summary["errors"] == 2
+    assert summary["valid_trials"] == 0
 
 
 def test_evaluate_perturbed(mock_scenario, mock_response):
     """Test evaluation with perturbed prompts."""
     with patch("nlt.api.client.chat_completion", return_value=mock_response):
-        results = evaluator.evaluate(
+        results, aborted = evaluator.evaluate(
             scenario=mock_scenario,
             approach="nlt",
             model="test-model",
@@ -216,4 +256,5 @@ def test_evaluate_perturbed(mock_scenario, mock_response):
         )
 
     assert len(results) == 2  # 2 inputs, 1 replicate each
+    assert aborted is False
     # Would verify perturbed prompts were used, but that requires inspecting the API call

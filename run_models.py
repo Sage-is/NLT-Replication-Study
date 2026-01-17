@@ -49,6 +49,14 @@ def update_aggregated_results(
         data = json.load(f)
 
     summary = data.get("summary", {})
+    
+    # Handle None accuracy/variance (indicates all trials errored - not applicable)
+    accuracy = summary.get("accuracy")
+    variance = summary.get("variance")
+    
+    # Store as empty string if None to indicate N/A in CSV
+    accuracy_str = "" if accuracy is None else accuracy
+    variance_str = "" if variance is None else variance
 
     # Prepare new row
     new_row = {
@@ -56,10 +64,12 @@ def update_aggregated_results(
         "scenario": scenario,
         "approach": approach,
         "perturbed": "yes" if perturbed else "no",
-        "accuracy": summary.get("accuracy", 0.0),
-        "variance": summary.get("variance", 0.0),
+        "accuracy": accuracy_str,
+        "variance": variance_str,
         "total": summary.get("total", 0),
         "errors": summary.get("errors", 0),
+        "valid_trials": summary.get("valid_trials", 0),
+        "aborted": "yes" if summary.get("aborted", False) else "no",
         "timestamp": data.get("timestamp", datetime.now().strftime("%Y%m%d_%H%M%S")),
         "result_file": str(result_file),
     }
@@ -75,6 +85,8 @@ def update_aggregated_results(
         "variance",
         "total",
         "errors",
+        "valid_trials",
+        "aborted",
         "timestamp",
         "result_file",
     ]
