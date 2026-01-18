@@ -15,8 +15,10 @@
 
 set -euo pipefail
 
+# Get project root (two levels up from this script)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$SCRIPT_DIR"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+cd "$PROJECT_ROOT"
 
 # Parse arguments
 FORCE=""
@@ -64,7 +66,7 @@ echo "  Quick mode: ${QUICK:-no (full study)}"
 echo ""
 
 # Run evaluations using the batch runner
-./run_models.py $FORCE $QUICK
+python src/scripts/run_models.py $FORCE $QUICK
 
 # Analyze results
 echo ""
@@ -74,7 +76,7 @@ echo "========================================="
 echo ""
 
 if [ -f "aggregated_results.csv" ]; then
-    ./analyze_results.py --show-gains --export study_summary.csv
+    python src/scripts/analyze_results.py --show-gains --export study_summary.csv
     
     echo ""
     echo "========================================="
