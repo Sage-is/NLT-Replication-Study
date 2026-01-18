@@ -1,4 +1,4 @@
-.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval analyze help clean test format
+.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval analyze clean-results help clean test format
 
 # Default target
 all: help
@@ -18,6 +18,7 @@ help:
 	@echo "  make run-models-debug    - Run evaluations with verbose debug output"
 	@echo "  make eval                - Run full evaluation (custom args supported)"
 	@echo "  make analyze             - Analyze aggregated results and show NLT gains"
+	@echo "  make clean-results       - Remove results for specific models (use MODELS=model1,model2)"
 	@echo "  make format              - Auto-format code with black"
 	@echo "  make test                - Run pytest test suite"
 	@echo "  make clean               - Remove build artifacts and virtual environment"
@@ -32,72 +33,90 @@ setup:
 
 demo:
 	@echo "Running smoke test (NLT approach)..."
-	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --replicates 1 --sample-limit 2
+	uv run python -m nlt.cli --scenario alex --approach nlt --replicates 1 --sample-limit 2
 
 demo-structured:
 	@echo "Running smoke test (tool calling approach)..."
-	.venv/bin/python -m nlt.cli --scenario alex --approach structured --replicates 1 --sample-limit 2
+	uv run python -m nlt.cli --scenario alex --approach structured --replicates 1 --sample-limit 2
 
 eval:
 	@echo "Running evaluation..."
-	.venv/bin/python -m nlt.cli $(ARGS)
+	uv run python -m nlt.cli $(ARGS)
 
 format:
 	@echo "Formatting code with black..."
-	.venv/bin/black src tests
+	uv run black src tests
 
 test:
 	@echo "Running pytest..."
-	.venv/bin/pytest
+	uv run pytest
 
 compare-approaches:
 	@echo "Comparing NLT vs Structured on mistralai/mistral-7b-instruct:free (no native tool calling)..."
 	@echo ""
 	@echo "=== NLT Approach (text-based YES/NO parsing) ==="
-	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --model mistralai/mistral-7b-instruct:free --sample-limit 2 --replicates 1
+	uv run python -m nlt.cli --scenario alex --approach nlt --model mistralai/mistral-7b-instruct:free --sample-limit 2 --replicates 1
 	@echo ""
 	@echo "=== Structured Approach (requires tool_calls - should get 0% accuracy) ==="
-	.venv/bin/python -m nlt.cli --scenario alex --approach structured --model mistralai/mistral-7b-instruct:free --sample-limit 2 --replicates 1
+	uv run python -m nlt.cli --scenario alex --approach structured --model mistralai/mistral-7b-instruct:free --sample-limit 2 --replicates 1
 
 test-phi-4:
 	@echo "Testing microsoft/phi-4 with both approaches..."
 	@echo ""
 	@echo "=== NLT Approach ==="
-	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --model microsoft/phi-4 --sample-limit 2 --replicates 1
+	uv run python -m nlt.cli --scenario alex --approach nlt --model microsoft/phi-4 --sample-limit 2 --replicates 1
 	@echo ""
 	@echo "=== Structured Approach ==="
-	.venv/bin/python -m nlt.cli --scenario alex --approach structured --model microsoft/phi-4 --sample-limit 2 --replicates 1
+	uv run python -m nlt.cli --scenario alex --approach structured --model microsoft/phi-4 --sample-limit 2 --replicates 1
 
 test-deepseek-r1:
 	@echo "Testing deepseek/deepseek-r1 with extended timeout (10 minutes)..."
 	@echo ""
 	@echo "=== NLT Approach (DeepSeek R1 is very large - may take several minutes) ==="
-	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --model deepseek/deepseek-r1 --sample-limit 1 --replicates 1 --timeout 600
+	uv run python -m nlt.cli --scenario alex --approach nlt --model deepseek/deepseek-r1 --sample-limit 1 --replicates 1 --timeout 600
 
 test-deepseek-r1-debug:
 	@echo "Testing deepseek/deepseek-r1 with DEBUG output enabled..."
 	@echo ""
 	@echo "=== NLT Approach with full debug logging ==="
-	.venv/bin/python -m nlt.cli --scenario alex --approach nlt --model deepseek/deepseek-r1 --sample-limit 1 --replicates 1 --timeout 600 --debug --verbose
+	uv run python -m nlt.cli --scenario alex --approach nlt --model deepseek/deepseek-r1 --sample-limit 1 --replicates 1 --timeout 600 --debug --verbose
 
 run-models:
 	@echo "Running evaluations from models.csv (skip completed)..."
-	.venv/bin/python run_models.py --timeout 600 --verbose
+	uv run python run_models.py --timeout 600 --verbose
 
 run-models-force:
 	@echo "Running ALL evaluations from models.csv (rerun completed)..."
-	.venv/bin/python run_models.py --force --timeout 600 --verbose
+	uv run python run_models.py --force --timeout 600 --verbose
 
 run-models-quick:
 	@echo "Quick test run (2 inputs, 1 replicate, no perturbed)..."
-	.venv/bin/python run_models.py --sample-limit 2 --replicates 1 --skip-perturbed --timeout 300
+	uv run python run_models.py --sample-limit 2 --replicates 1 --skip-perturbed --timeout 300
 
 run-models-debug:
 	@echo "Running evaluations with DEBUG output (verbose logging)..."
-	.venv/bin/python run_models.py --timeout 600 --debug --verbose
+	uv run python run_models.py --timeout 600 --debug --verbose
 analyze:
 	@echo "Analyzing results..."
-	.venv/bin/python analyze_results.py --show-gains
+	uv run python analyze_results.py --show-gains
+
+clean-results:
+	@if [ -z "$(MODELS)" ]; then \
+		echo "Error: MODELS variable not set"; \
+		echo "Usage: make clean-results MODELS='model1,model2'"; \
+		exit 1; \
+	fi
+	@echo "Removing results for models: $(MODELS)"
+	@cp aggregated_results.csv aggregated_results.csv.bak
+	@for model in $(subst comma, ,$(MODELS)); do \
+		echo "Cleaning $$model..."; \
+		safe_model=$$(echo "$$model" | tr '/:' '__'); \
+		find results -type d -name "*$$safe_model*" -exec rm -rf {} + 2>/dev/null || true; \
+		grep -F -v "$$model" aggregated_results.csv > aggregated_results.csv.tmp && mv aggregated_results.csv.tmp aggregated_results.csv; \
+	done
+	@rm -f aggregated_results.csv.bak
+	@echo "Done. You can now run 'make run-models' to re-evaluate or 'make analyze' to regenerate analysis."
+
 clean:
 	rm -rf .venv
 	rm -rf *.egg-info

@@ -8,35 +8,100 @@ from collections import defaultdict
 from pathlib import Path
 
 
+def clean_results(results: list[dict]) -> list[dict]:
+    """Clean edge cases in results data.
+    
+    Rules:
+    1. If error_rate > 75% (only 25% valid trials), report accuracy=0.0 (doesn't work)
+    2. If accuracy=1.0 and variance=0.0 (too few valid trials all succeeded), treat as 0.0
+    """
+    cleaned = []
+    for row in results:
+        row = row.copy()  # Don't modify original
+        
+        try:
+            total = int(row.get("total", 0))
+            errors = int(row.get("errors", 0))
+            accuracy = row.get("accuracy", "")
+            variance = row.get("variance", "")
+            
+            if total > 0:
+                error_rate = errors / total
+                
+                # Rule 1: If error rate is very high (>75%), mark as not applicable
+                if error_rate > 0.75:
+                    row["accuracy"] = "0.0"
+                    row["variance"] = "0.0"
+                else:
+                    # Rule 2: If accuracy=1.0 and variance=0.0, treat as 0.0
+                    try:
+                        acc_float = float(accuracy) if accuracy else None
+                        var_float = float(variance) if variance else None
+                        if acc_float == 1.0 and var_float == 0.0:
+                            row["accuracy"] = "0.0"
+                            row["variance"] = "0.0"
+                    except (ValueError, TypeError):
+                        pass
+        except (ValueError, TypeError):
+            pass  # Leave as is if can't convert
+        
+        cleaned.append(row)
+    
+    return cleaned
+
+
 def load_aggregated_results(csv_path: Path) -> list[dict]:
-    """Load aggregated results CSV."""
+    """Load aggregated results CSV and clean edge cases."""
     if not csv_path.exists():
         return []
     
     with open(csv_path) as f:
         reader = csv.DictReader(f)
-        return list(reader)
+        results = list(reader)
+    
+    # Clean edge cases (accuracy=1.0, variance=0.0 -> treat as 0.0)
+    results = clean_results(results)
+    return results
 
 
 def analyze_by_approach(results: list[dict]) -> dict:
     """Compute statistics grouped by approach."""
-    stats = defaultdict(lambda: {"accuracies": [], "variances": [], "errors": []})
+    stats = defaultdict(lambda: {"accuracies": [], "variances": [], "variances_exclusive": [], "errors": [], "aborted": 0})
     
     for row in results:
         approach = row["approach"]
-        stats[approach]["accuracies"].append(float(row.get("accuracy", 0.0)))
-        stats[approach]["variances"].append(float(row.get("variance", 0.0)))
+        # Skip rows with empty/None accuracy (all trials errored)
+        accuracy = row.get("accuracy", "")
+        variance = row.get("variance", "")
+        if accuracy != "" and accuracy is not None:
+            acc_val = float(accuracy)
+            stats[approach]["accuracies"].append(acc_val)
+            
+            if variance != "" and variance is not None:
+                var_val = float(variance)
+                stats[approach]["variances"].append(var_val)
+                # Exclusive variance: Only include if accuracy > 0 (excludes failed approaches)
+                if acc_val > 0:
+                    stats[approach]["variances_exclusive"].append(var_val)
+                    
         stats[approach]["errors"].append(int(row.get("errors", 0)))
+        if row.get("aborted", "no") == "yes":
+            stats[approach]["aborted"] += 1
     
     # Compute means
     summary = {}
     for approach, data in stats.items():
-        n = len(data["accuracies"])
+        n_acc = len(data["accuracies"])
+        n_var = len(data["variances"])
+        n_var_ex = len(data["variances_exclusive"])
         summary[approach] = {
-            "count": n,
-            "mean_accuracy": sum(data["accuracies"]) / n if n > 0 else 0.0,
-            "mean_variance": sum(data["variances"]) / n if n > 0 else 0.0,
+            "count": len(data["errors"]),  # Total evaluations
+            "valid_count": n_acc,  # Evaluations with valid accuracy
+            "mean_accuracy": sum(data["accuracies"]) / n_acc if n_acc > 0 else None,
+            "mean_variance": sum(data["variances"]) / n_var if n_var > 0 else None,
+            "mean_variance_exclusive": sum(data["variances_exclusive"]) / n_var_ex if n_var_ex > 0 else None,
             "total_errors": sum(data["errors"]),
+            "aborted_count": data["aborted"],
         }
     
     return summary
@@ -44,26 +109,45 @@ def analyze_by_approach(results: list[dict]) -> dict:
 
 def analyze_by_model(results: list[dict]) -> dict:
     """Compute statistics grouped by model."""
-    stats = defaultdict(lambda: defaultdict(lambda: {"accuracies": [], "variances": [], "errors": []}))
+    stats = defaultdict(lambda: defaultdict(lambda: {"accuracies": [], "variances": [], "variances_exclusive": [], "errors": [], "aborted": 0}))
     
     for row in results:
         model = row["model_id"]
         approach = row["approach"]
-        stats[model][approach]["accuracies"].append(float(row.get("accuracy", 0.0)))
-        stats[model][approach]["variances"].append(float(row.get("variance", 0.0)))
+        # Skip rows with empty/None accuracy (all trials errored)
+        accuracy = row.get("accuracy", "")
+        variance = row.get("variance", "")
+        if accuracy != "" and accuracy is not None:
+            acc_val = float(accuracy)
+            stats[model][approach]["accuracies"].append(acc_val)
+            
+            if variance != "" and variance is not None:
+                var_val = float(variance)
+                stats[model][approach]["variances"].append(var_val)
+                # Exclusive variance: Only include if accuracy > 0
+                if acc_val > 0:
+                    stats[model][approach]["variances_exclusive"].append(var_val)
+                    
         stats[model][approach]["errors"].append(int(row.get("errors", 0)))
+        if row.get("aborted", "no") == "yes":
+            stats[model][approach]["aborted"] += 1
     
     # Compute means
     summary = {}
     for model, approaches in stats.items():
         summary[model] = {}
         for approach, data in approaches.items():
-            n = len(data["accuracies"])
+            n_acc = len(data["accuracies"])
+            n_var = len(data["variances"])
+            n_var_ex = len(data["variances_exclusive"])
             summary[model][approach] = {
-                "count": n,
-                "mean_accuracy": sum(data["accuracies"]) / n if n > 0 else 0.0,
-                "mean_variance": sum(data["variances"]) / n if n > 0 else 0.0,
+                "count": len(data["errors"]),
+                "valid_count": n_acc,
+                "mean_accuracy": sum(data["accuracies"]) / n_acc if n_acc > 0 else None,
+                "mean_variance": sum(data["variances"]) / n_var if n_var > 0 else None,
+                "mean_variance_exclusive": sum(data["variances_exclusive"]) / n_var_ex if n_var_ex > 0 else None,
                 "total_errors": sum(data["errors"]),
+                "aborted_count": data["aborted"],
             }
     
     return summary
@@ -71,26 +155,45 @@ def analyze_by_model(results: list[dict]) -> dict:
 
 def analyze_by_scenario(results: list[dict]) -> dict:
     """Compute statistics grouped by scenario."""
-    stats = defaultdict(lambda: defaultdict(lambda: {"accuracies": [], "variances": [], "errors": []}))
+    stats = defaultdict(lambda: defaultdict(lambda: {"accuracies": [], "variances": [], "variances_exclusive": [], "errors": [], "aborted": 0}))
     
     for row in results:
         scenario = row["scenario"]
         approach = row["approach"]
-        stats[scenario][approach]["accuracies"].append(float(row.get("accuracy", 0.0)))
-        stats[scenario][approach]["variances"].append(float(row.get("variance", 0.0)))
+        # Skip rows with empty/None accuracy (all trials errored)
+        accuracy = row.get("accuracy", "")
+        variance = row.get("variance", "")
+        if accuracy != "" and accuracy is not None:
+            acc_val = float(accuracy)
+            stats[scenario][approach]["accuracies"].append(acc_val)
+            
+            if variance != "" and variance is not None:
+                var_val = float(variance)
+                stats[scenario][approach]["variances"].append(var_val)
+                # Exclusive variance: Only include if accuracy > 0
+                if acc_val > 0:
+                    stats[scenario][approach]["variances_exclusive"].append(var_val)
+                    
         stats[scenario][approach]["errors"].append(int(row.get("errors", 0)))
+        if row.get("aborted", "no") == "yes":
+            stats[scenario][approach]["aborted"] += 1
     
     # Compute means
     summary = {}
     for scenario, approaches in stats.items():
         summary[scenario] = {}
         for approach, data in approaches.items():
-            n = len(data["accuracies"])
+            n_acc = len(data["accuracies"])
+            n_var = len(data["variances"])
+            n_var_ex = len(data["variances_exclusive"])
             summary[scenario][approach] = {
-                "count": n,
-                "mean_accuracy": sum(data["accuracies"]) / n if n > 0 else 0.0,
-                "mean_variance": sum(data["variances"]) / n if n > 0 else 0.0,
+                "count": len(data["errors"]),
+                "valid_count": n_acc,
+                "mean_accuracy": sum(data["accuracies"]) / n_acc if n_acc > 0 else None,
+                "mean_variance": sum(data["variances"]) / n_var if n_var > 0 else None,
+                "mean_variance_exclusive": sum(data["variances_exclusive"]) / n_var_ex if n_var_ex > 0 else None,
                 "total_errors": sum(data["errors"]),
+                "aborted_count": data["aborted"],
             }
     
     return summary
@@ -104,9 +207,13 @@ def analyze_nlt_gains(results: list[dict]) -> dict:
     for row in results:
         key = (row["model_id"], row["scenario"], row["perturbed"])
         approach = row["approach"]
-        accuracy = float(row.get("accuracy", 0.0))
+        accuracy = row.get("accuracy", "")
         
-        paired_data[key][approach] = accuracy
+        # Skip if accuracy is empty/None (all trials errored)
+        if accuracy == "" or accuracy is None:
+            continue
+            
+        paired_data[key][approach] = float(accuracy)
     
     # Compute gains
     gains = []
@@ -134,10 +241,19 @@ def print_approach_summary(stats: dict):
     
     for approach, data in sorted(stats.items()):
         print(f"\n{approach.upper()}:")
-        print(f"  Evaluations: {data['count']}")
-        print(f"  Mean Accuracy: {data['mean_accuracy']:.1%}")
-        print(f"  Mean Variance: {data['mean_variance']:.4f}")
+        print(f"  Evaluations: {data['count']} ({data['valid_count']} with valid results)")
+        if data['mean_accuracy'] is not None:
+            print(f"  Mean Accuracy: {data['mean_accuracy']:.1%}")
+        else:
+            print(f"  Mean Accuracy: N/A (all trials errored)")
+        if data['mean_variance'] is not None:
+            var_ex_str = f" (excl. failed: {data['mean_variance_exclusive']:.4f})" if data['mean_variance_exclusive'] is not None else ""
+            print(f"  Mean Variance: {data['mean_variance']:.4f}{var_ex_str}")
+        else:
+            print(f"  Mean Variance: N/A")
         print(f"  Total Errors: {data['total_errors']}")
+        if data['aborted_count'] > 0:
+            print(f"  Aborted Runs: {data['aborted_count']}")
 
 
 def print_model_summary(stats: dict):
@@ -149,8 +265,21 @@ def print_model_summary(stats: dict):
     for model, approaches in sorted(stats.items()):
         print(f"\n{model}:")
         for approach, data in sorted(approaches.items()):
-            print(f"  {approach:12} - Accuracy: {data['mean_accuracy']:6.1%} | "
-                  f"Variance: {data['mean_variance']:.4f} | Errors: {data['total_errors']}")
+            acc_str = f"{data['mean_accuracy']:6.1%}" if data['mean_accuracy'] is not None else "  N/A "
+            var_val = data['mean_variance']
+            var_ex = data['mean_variance_exclusive']
+            
+            if var_val is not None:
+                if var_ex is not None and abs(var_val - var_ex) > 0.0001:
+                    var_str = f"{var_val:.4f} ({var_ex:.4f})"
+                else:
+                    var_str = f"{var_val:.4f}       "
+            else:
+                var_str = "N/A          "
+                
+            aborted_str = f" [ABORTED:{data['aborted_count']}]" if data['aborted_count'] > 0 else ""
+            print(f"  {approach:12} - Accuracy: {acc_str} | "
+                  f"Variance: {var_str} | Errors: {data['total_errors']}{aborted_str}")
 
 
 def print_scenario_summary(stats: dict):
@@ -162,8 +291,21 @@ def print_scenario_summary(stats: dict):
     for scenario, approaches in sorted(stats.items()):
         print(f"\n{scenario.upper()}:")
         for approach, data in sorted(approaches.items()):
-            print(f"  {approach:12} - Accuracy: {data['mean_accuracy']:6.1%} | "
-                  f"Variance: {data['mean_variance']:.4f} | Errors: {data['total_errors']}")
+            acc_str = f"{data['mean_accuracy']:6.1%}" if data['mean_accuracy'] is not None else "  N/A "
+            var_val = data['mean_variance']
+            var_ex = data['mean_variance_exclusive']
+            
+            if var_val is not None:
+                if var_ex is not None and abs(var_val - var_ex) > 0.0001:
+                    var_str = f"{var_val:.4f} ({var_ex:.4f})"
+                else:
+                    var_str = f"{var_val:.4f}       "
+            else:
+                var_str = "N/A          "
+            
+            aborted_str = f" [ABORTED:{data['aborted_count']}]" if data['aborted_count'] > 0 else ""
+            print(f"  {approach:12} - Accuracy: {acc_str} | "
+                  f"Variance: {var_str} | Errors: {data['total_errors']}{aborted_str}")
 
 
 def print_nlt_gains(gains: list[dict]):
