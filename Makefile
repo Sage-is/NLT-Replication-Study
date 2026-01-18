@@ -83,22 +83,22 @@ test-deepseek-r1-debug:
 
 run-models:
 	@echo "Running evaluations from models.csv (skip completed)..."
-	uv run python run_models.py --timeout 600 --verbose
+	uv run python src/scripts/run_models.py --timeout 600 --verbose
 
 run-models-force:
 	@echo "Running ALL evaluations from models.csv (rerun completed)..."
-	uv run python run_models.py --force --timeout 600 --verbose
+	uv run python src/scripts/run_models.py --force --timeout 600 --verbose
 
 run-models-quick:
 	@echo "Quick test run (2 inputs, 1 replicate, no perturbed)..."
-	uv run python run_models.py --sample-limit 2 --replicates 1 --skip-perturbed --timeout 300
+	uv run python src/scripts/run_models.py --sample-limit 2 --replicates 1 --skip-perturbed --timeout 300
 
 run-models-debug:
 	@echo "Running evaluations with DEBUG output (verbose logging)..."
-	uv run python run_models.py --timeout 600 --debug --verbose
+	uv run python src/scripts/run_models.py --timeout 600 --debug --verbose
 analyze:
 	@echo "Analyzing results..."
-	uv run python analyze_results.py --show-gains
+	uv run python src/scripts/analyze_results.py --show-gains
 
 clean-results:
 	@if [ -z "$(MODELS)" ]; then \

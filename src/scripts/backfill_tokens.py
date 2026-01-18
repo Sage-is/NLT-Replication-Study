@@ -16,7 +16,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 def update_aggregated_results(csv_path: Path):
     """Scan results directory and rebuild/update the aggregated CSV."""
-    results_dir = Path("results")
+    results_dir = PROJECT_ROOT / "results"
     if not results_dir.exists():
         print("No results directory found.")
         return
@@ -139,4 +139,4 @@ def update_aggregated_results(csv_path: Path):
     print("Done.")
 
 if __name__ == "__main__":
-    update_aggregated_results(Path("aggregated_results.csv"))
+    update_aggregated_results(PROJECT_ROOT / "aggregated_results.csv")

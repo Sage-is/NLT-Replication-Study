@@ -467,7 +467,7 @@ def main():
     parser = argparse.ArgumentParser(description="Analyze aggregated NLT evaluation results")
     parser.add_argument(
         "--csv",
-        default="aggregated_results.csv",
+        default=str(PROJECT_ROOT / "aggregated_results.csv"),
         help="Path to aggregated results CSV"
     )
     parser.add_argument(
