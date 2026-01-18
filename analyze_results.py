@@ -348,6 +348,7 @@ def print_scenario_summary(stats: dict):
             var_ex = data['mean_variance_exclusive']
             
             if var_val is not None:
+                if var_ex is not None and abs(var_val - var_ex) > 0.0001:
                     var_str = f"{var_val:.4f} ({var_ex:.4f})"
                 else:
                     var_str = f"{var_val:.4f}       "
