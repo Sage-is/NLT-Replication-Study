@@ -74,6 +74,24 @@ def update_aggregated_results(
         "result_file": str(result_file),
     }
 
+    # Extract token usage if available
+    total_tokens = 0
+    prompt_tokens = 0
+    completion_tokens = 0
+    
+    results_list = data.get("results", [])
+    if results_list:
+        for res in results_list:
+            usage = res.get("usage", {})
+            if usage:
+                total_tokens += usage.get("total_tokens", 0)
+                prompt_tokens += usage.get("prompt_tokens", 0)
+                completion_tokens += usage.get("completion_tokens", 0)
+    
+    new_row["total_tokens"] = total_tokens
+    new_row["prompt_tokens"] = prompt_tokens
+    new_row["completion_tokens"] = completion_tokens
+
     # Read existing rows
     rows = []
     fieldnames = [
@@ -89,6 +107,9 @@ def update_aggregated_results(
         "aborted",
         "timestamp",
         "result_file",
+        "total_tokens",
+        "prompt_tokens",
+        "completion_tokens",
     ]
 
     if csv_path.exists():

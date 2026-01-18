@@ -7,6 +7,10 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+# Token cost constants (approximate - purely for estimation if needed)
+COST_PER_1K_INPUT = 0.0001
+COST_PER_1K_OUTPUT = 0.0002
+
 
 def clean_results(results: list[dict]) -> list[dict]:
     """Clean edge cases in results data.
@@ -66,7 +70,10 @@ def load_aggregated_results(csv_path: Path) -> list[dict]:
 
 def analyze_by_approach(results: list[dict]) -> dict:
     """Compute statistics grouped by approach."""
-    stats = defaultdict(lambda: {"accuracies": [], "variances": [], "variances_exclusive": [], "errors": [], "aborted": 0})
+    stats = defaultdict(lambda: {
+        "accuracies": [], "variances": [], "variances_exclusive": [], "errors": [], "aborted": 0,
+        "total_tokens": 0, "prompt_tokens": 0, "completion_tokens": 0
+    })
     
     for row in results:
         approach = row["approach"]
@@ -87,6 +94,10 @@ def analyze_by_approach(results: list[dict]) -> dict:
         stats[approach]["errors"].append(int(row.get("errors", 0)))
         if row.get("aborted", "no") == "yes":
             stats[approach]["aborted"] += 1
+            
+        stats[approach]["total_tokens"] += int(row.get("total_tokens", 0) or 0)
+        stats[approach]["prompt_tokens"] += int(row.get("prompt_tokens", 0) or 0)
+        stats[approach]["completion_tokens"] += int(row.get("completion_tokens", 0) or 0)
     
     # Compute means
     summary = {}
@@ -102,6 +113,9 @@ def analyze_by_approach(results: list[dict]) -> dict:
             "mean_variance_exclusive": sum(data["variances_exclusive"]) / n_var_ex if n_var_ex > 0 else None,
             "total_errors": sum(data["errors"]),
             "aborted_count": data["aborted"],
+            "total_tokens": data["total_tokens"],
+            "prompt_tokens": data["prompt_tokens"],
+            "completion_tokens": data["completion_tokens"],
         }
     
     return summary
@@ -233,6 +247,38 @@ def analyze_nlt_gains(results: list[dict]) -> dict:
     return gains
 
 
+def analyze_perturbation_robustness(results: list[dict]) -> dict:
+    """Analyze impact of perturbations on accuracy."""
+    stats = defaultdict(lambda: {"non_perturbed": [], "perturbed": []})
+    
+    for row in results:
+        approach = row["approach"]
+        accuracy = row.get("accuracy", "")
+        perturbed = row["perturbed"] == "yes"
+        
+        if accuracy != "" and accuracy is not None:
+            val = float(accuracy)
+            key = "perturbed" if perturbed else "non_perturbed"
+            stats[approach][key].append(val)
+            
+    summary = {}
+    for approach, data in stats.items():
+        np_vals = data["non_perturbed"]
+        p_vals = data["perturbed"]
+        
+        np_mean = sum(np_vals) / len(np_vals) if np_vals else 0
+        p_mean = sum(p_vals) / len(p_vals) if p_vals else 0
+        
+        summary[approach] = {
+            "non_perturbed_accuracy": np_mean,
+            "perturbed_accuracy": p_mean,
+            "drop": np_mean - p_mean,
+            "n_non_perturbed": len(np_vals),
+            "n_perturbed": len(p_vals)
+        }
+    return summary
+
+
 def print_approach_summary(stats: dict):
     """Print approach-level summary."""
     print("\n" + "="*80)
@@ -254,6 +300,12 @@ def print_approach_summary(stats: dict):
         print(f"  Total Errors: {data['total_errors']}")
         if data['aborted_count'] > 0:
             print(f"  Aborted Runs: {data['aborted_count']}")
+        
+        # Token usage
+        print(f"  Token Usage:")
+        print(f"    Total: {data['total_tokens']:,}")
+        print(f"    Input: {data['prompt_tokens']:,}")
+        print(f"    Output: {data['completion_tokens']:,}")
 
 
 def print_model_summary(stats: dict):
@@ -296,7 +348,6 @@ def print_scenario_summary(stats: dict):
             var_ex = data['mean_variance_exclusive']
             
             if var_val is not None:
-                if var_ex is not None and abs(var_val - var_ex) > 0.0001:
                     var_str = f"{var_val:.4f} ({var_ex:.4f})"
                 else:
                     var_str = f"{var_val:.4f}       "
@@ -306,6 +357,19 @@ def print_scenario_summary(stats: dict):
             aborted_str = f" [ABORTED:{data['aborted_count']}]" if data['aborted_count'] > 0 else ""
             print(f"  {approach:12} - Accuracy: {acc_str} | "
                   f"Variance: {var_str} | Errors: {data['total_errors']}{aborted_str}")
+
+
+def print_perturbation_summary(stats: dict):
+    """Print perturbation robustness summary."""
+    print("\n" + "="*80)
+    print("PERTURBATION ROBUSTNESS")
+    print("="*80)
+    
+    for approach, data in sorted(stats.items()):
+        print(f"\n{approach.upper()}:")
+        print(f"  Non-perturbed Accuracy: {data['non_perturbed_accuracy']:.1%} (n={data['n_non_perturbed']})")
+        print(f"  Perturbed Accuracy:     {data['perturbed_accuracy']:.1%} (n={data['n_perturbed']})")
+        print(f"  Performance Drop:       {data['drop']:.1%} points")
 
 
 def print_nlt_gains(gains: list[dict]):
@@ -411,6 +475,11 @@ def main():
         action="store_true",
         help="Show NLT accuracy gains over structured approach"
     )
+    parser.add_argument(
+        "--show-perturbation",
+        action="store_true",
+        help="Show perturbation robustness analysis"
+    )
     
     args = parser.parse_args()
     
@@ -443,6 +512,10 @@ def main():
     if args.show_gains:
         gains = analyze_nlt_gains(results)
         print_nlt_gains(gains)
+
+    if args.show_perturbation or True:  # Always show for now
+        pert_stats = analyze_perturbation_robustness(results)
+        print_perturbation_summary(pert_stats)
     
     # Export if requested
     if args.export:
