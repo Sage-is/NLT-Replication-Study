@@ -1,4 +1,12 @@
-## 🔥 This Week (January 16, 2026)
+# 🔥 This Week (January 16, 2026)
+
+### 🔥 Planned: Reporting & Visualization Improvements
+- [ ] **Add analysis notebook for visuals**: Build Jupyter notebook to plot per-approach/model metrics and gains
+  - [ ] Generate accuracy and variance box/violin plots for NLT vs structured
+  - [ ] Plot error counts and aborted runs per model
+  - [ ] Export charts for reports/README/REPLICATION_STUDY
+  - [ ] Test/verify step (notebook runs cleanly)
+  - [ ] Documentation update (link notebook in README/docs)
 
 ### 🔥 In Progress: Fix Data Quality Issues
 - [x] **Issue 1 - Misleading stats when all trials error**: Fixed accuracy/variance reporting
