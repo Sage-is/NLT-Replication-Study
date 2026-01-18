@@ -1,4 +1,13 @@
-# 🔥 This Week (January 16, 2026)
+# 🔥 This Week (January 18, 2026)
+
+### 🔥 In Progress: Repository Cleanup & Reorganization
+- [ ] **Clean up repository structure**: Move scripts to src/, keep only essential files in root
+  - [ ] Move analyze_results.py, run_models.py, backfill_tokens.py, run_study.sh to src/
+  - [ ] Move test_cleaning.py, validate_cleaning.py to tests/
+  - [ ] Update Makefile to reference new script locations
+  - [ ] Keep in root: Makefile, models.csv, aggregated_results.csv, CONVENTION.instructions.md, README.md, TODO.md, pyproject.toml
+  - [ ] Test all Makefile targets work correctly
+  - [ ] Update documentation with new structure
 
 ### 🔥 Planned: Reporting & Visualization Improvements
 - [ ] **Add analysis notebook for visuals**: Build Jupyter notebook to plot per-approach/model metrics and gains

@@ -7,6 +7,9 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+# Get project root (two levels up from this script)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+
 # Token cost constants (approximate - purely for estimation if needed)
 COST_PER_1K_INPUT = 0.0001
 COST_PER_1K_OUTPUT = 0.0002

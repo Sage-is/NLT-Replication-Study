@@ -11,6 +11,9 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+# Get project root (two levels up from this script)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+
 def update_aggregated_results(csv_path: Path):
     """Scan results directory and rebuild/update the aggregated CSV."""
     results_dir = Path("results")

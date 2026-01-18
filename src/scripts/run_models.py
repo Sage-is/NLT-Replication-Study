@@ -9,6 +9,9 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+# Get project root (two levels up from this script)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+
 
 def update_models_csv(csv_path: Path, model_id: str, scenario: str, approach: str):
     """Update models.csv to mark a scenario/approach as done."""
@@ -243,9 +246,9 @@ def run_evaluation(
 
 def main():
     parser = argparse.ArgumentParser(description="Run evaluations from models CSV")
-    parser.add_argument("--csv", default="models.csv", help="Path to models CSV file")
-    parser.add_argument("--results-dir", default="results", help="Results directory to check for existing runs")
-    parser.add_argument("--aggregated-csv", default="aggregated_results.csv", help="Path to aggregated results CSV")
+    parser.add_argument("--csv", default=str(PROJECT_ROOT / "models.csv"), help="Path to models CSV file")
+    parser.add_argument("--results-dir", default=str(PROJECT_ROOT / "results"), help="Results directory to check for existing runs")
+    parser.add_argument("--aggregated-csv", default=str(PROJECT_ROOT / "aggregated_results.csv"), help="Path to aggregated results CSV")
     parser.add_argument(
         "--force", action="store_true", help="Rerun all models even if they have results"
     )
