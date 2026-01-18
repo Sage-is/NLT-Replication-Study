@@ -21,9 +21,11 @@ We present a systematic replication of the Natural Language Tools (NLT) framewor
 
 ### 1.1 Background
 
-Generative AI, beginning with models like GPT-3 in 2020, marked a significant shift in natural language processing, enabling large language models (LLMs) to generate coherent text and perform complex inferred reasoning tasks. While early applications originally focused on text generation, efforts soon expanded to agentic systems where LLMs interact with external tools to accomplish goals, such as retrieving data or executing actions. Tool calling—allowing LLMs to invoke functions or APIs—became a cornerstone of these systems, often implemented using structured formats such as JSON schemas to ensure reliability and parseability.
+Generative AI, with models like GPT-3 in 2020, marked a significant shift in natural language processing, enabling large language models (LLMs) to generate coherent text and perform complex inferred reasoning tasks. While early applications originally focused on text generation, efforts soon expanded to agent based systems where LLMs interact with external tools to accomplish goals, such as retrieving data or executing actions. Tool calling (allowing LLMs to invoke functions or APIs) became a cornerstone of these systems, often implemented using structured formats such as JSON schemas to ensure reliability and parse-ability.
 
-However, we theorize that structured tool calling imposes a cognitive trade-off that degrades performance on domain-specific reasoning tasks. The issue is not that LLMs cannot adhere to JSON schemas—modern models demonstrate strong code generation capabilities. Rather, requiring schema adherence appears to divert the model's representational capacity away from the primary task. Our hypothesis is that this occurs because schema formatting forces the model to activate disparate regions of its learned distribution: JSON generation patterns are predominantly trained on coding corpora, while tasks like customer service or mental health support draw from entirely different training domains. This distribution mismatch may fragment the model's attention, reducing its effectiveness at the core reasoning task even when it successfully produces syntactically valid output.
+However, we theorize that structured tool calling imposes a cognitive trade-off that degrades performance on most domain-specific reasoning tasks. The issue is not that LLMs are un adhere to JSON schemas, as modern models demonstrate strong code generation capabilities. Rather, requiring schema adherence diverts the model's representational capacity away from the primary task. 
+
+Our hypothesis is that this occurs because schema formatting forces the model to activate disparate regions of its learned distribution: JSON generation patterns are predominantly trained on coding corpora, while tasks like customer service or mental health support draw from entirely different training domains. This distribution mismatch fragments the model's attention, reducing its effectiveness at the core reasoning task even when it successfully produces syntactically valid output.
 
 Johnson et al. (2025) demonstrated that replacing programmatic JSON tool calling with natural language (Natural Language Tools, or NLT) significantly improved LLM tool-calling accuracy. Their findings showed an 18.4 percentage point gain across 10 models and 6,400 trials, alongside substantial variance reduction and token savings.
 
@@ -428,17 +430,17 @@ make run-models
 
 ### A.1 Summary Table
 
-| Model | NLT Accuracy | Structured Accuracy |
-| :--- | :---: | :---: |
-| deepseek/deepseek-chat-v3-0324 | 90.0% | 69.7% |
-| deepseek/deepseek-r1 | 55.0% | 31.0% |
-| google/gemini-2.5-flash-lite | 73.1% | 63.1% |
-| llama-3.1-8b-instant | 47.8% | 32.9% |
-| mistralai/mistral-7b-instruct | 39.4% | 0.0% |
-| moonshotai/kimi-k2 | 67.2% | 67.8% |
-| openai/gpt-oss-120b:free | 42.6% | 49.0% |
-| openai/gpt-oss-20b:free | 42.7% | 39.3% |
-| qwen/qwen3-vl-235b-a22b-thinking | 33.8% | 0.0% |
+| Model                            | Structured Accuracy | NLT Accuracy |
+| :------------------------------- | :-----------------: | :----------: |
+| deepseek/deepseek-chat-v3-0324   |        69.7%        |    90.0%     |
+| deepseek/deepseek-r1             |        31.0%        |    55.0%     |
+| google/gemini-2.5-flash-lite     |        63.1%        |    73.1%     |
+| llama-3.1-8b-instant             |        32.9%        |    47.8%     |
+| mistralai/mistral-7b-instruct    |        0.0%         |    39.4%     |
+| moonshotai/kimi-k2               |        67.8%        |    67.2%     |
+| openai/gpt-oss-120b:free         |        49.0%        |    42.6%     |
+| openai/gpt-oss-20b:free          |        39.3%        |    42.7%     |
+| qwen/qwen3-vl-235b-a22b-thinking |        0.0%         |    33.8%     |
 
 ### A.2 Raw Result Files
 
