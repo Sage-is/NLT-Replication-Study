@@ -4,10 +4,12 @@ Natural Language Tools: A Replication Study
 Validating NLT Performance Covering 9 Models
 ---------------------------------------------------------------------
 
-Authors: A Somma, I Plante, E Forni
+```
+Authors: A. Somma, I. Plante, E. Fournier-Tombs
 Affiliation: Sage.is AI
 Date: January 16, 2026
 Status: DRAFT - Replication in Progress
+```
 
 * * * * *
 
