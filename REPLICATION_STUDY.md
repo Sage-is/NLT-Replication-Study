@@ -471,7 +471,7 @@ Appendix C: Implementation Details
 
 ### C.1 Code Architecture
 
-See [DEVELOPMENT.md](http://docs/DEVELOPMENT.md) for complete documentation.
+See [DEVELOPMENT.md](./docs/DEVELOPMENT.md) for complete documentation.
 
 Key Modules:
 
