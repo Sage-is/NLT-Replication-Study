@@ -92,9 +92,9 @@ def update_aggregated_results(
         for res in results_list:
             usage = res.get("usage", {})
             if usage:
-                total_tokens += usage.get("total_tokens", 0)
-                prompt_tokens += usage.get("prompt_tokens", 0)
-                completion_tokens += usage.get("completion_tokens", 0)
+                total_tokens += int(usage.get("total_tokens") or 0)
+                prompt_tokens += int(usage.get("prompt_tokens") or 0)
+                completion_tokens += int(usage.get("completion_tokens") or 0)
     
     new_row["total_tokens"] = total_tokens
     new_row["prompt_tokens"] = prompt_tokens
