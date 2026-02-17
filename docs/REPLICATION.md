@@ -84,6 +84,13 @@ make run-models-quick
 - `aggregated_results.csv` - All evaluation summaries in one file
 - `results/` directory - Individual JSON files with full details
 
+**5. Clean up bad runs (if needed):**
+```bash
+make clean-aborted        # Dry-run: see what's broken
+make clean-aborted-apply  # Fix it: delete bad files + update CSV
+make run-models           # Re-queue cleaned conditions
+```
+
 ### Alternative: Shell Script Wrapper
 
 For a complete study run with automatic analysis:
@@ -387,7 +394,9 @@ done
 
 ## Troubleshooting
 
-### Model Not Found
+### Cleaning Up Failed Runs
+
+If API outages (e.g. Cloudflare blocks) or interrupted runs leave bad data:\n\n```bash\n# Preview what would be cleaned (safe, no changes)\nmake clean-aborted\n\n# Delete aborted/incomplete files, fix aggregated CSV, prune empty dirs\nmake clean-aborted-apply\n```\n\nThis detects:\n- **Aborted runs** — `summary.aborted=True` (all trials errored)\n- **Incomplete runs** — test/smoke results with `total < 80` trials\n- **Orphan CSV rows** — `aggregated_results.csv` entries with missing files\n\nAfter cleanup, `make run-models` will re-queue the cleaned conditions.\n\n### Model Not Found
 - Check available models via Sage API
 - Verify model name format (provider/model-name)
 

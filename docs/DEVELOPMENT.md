@@ -208,6 +208,13 @@ Auto-updated by `run_models.py` after each evaluation.
 - Skips unless `--force` is used
 - Still updates `aggregated_results.csv` for skipped runs (pulls from existing JSON)
 
+**clean_aborted.py** handles result hygiene:
+- Scans all result JSONs for `summary.aborted=True` (API failures)
+- Detects incomplete test runs (`total < 80` trials)
+- Removes bad files, cleans `aggregated_results.csv`, prunes empty dirs
+- Always dry-run by default; pass `--apply` to execute
+- Use `--expected-total N` to override the 80-trial threshold
+
 ## Results Analysis
 
 **analyze_results.py** generates:
@@ -262,6 +269,10 @@ make format
 
 # Inspect individual result
 cat results/alex/nlt/non_perturbed/model-name/*.json | jq '.results[] | select(.error != null)'
+
+# Clean up aborted runs (e.g. after Cloudflare outage)
+make clean-aborted       # Preview what would be cleaned
+make clean-aborted-apply # Delete aborted files + fix aggregated CSV
 ```
 
 ### CSV tracking issues
@@ -269,7 +280,9 @@ cat results/alex/nlt/non_perturbed/model-name/*.json | jq '.results[] | select(.
 # Manually check completion status
 cat models.csv | grep -v "^#"
 
-# Rebuild aggregated results (not implemented - would scan all JSON files)
+# Clean up aborted/incomplete results and fix CSV
+make clean-aborted       # Dry-run first to see what would be removed
+make clean-aborted-apply # Actually delete + update aggregated_results.csv
 ```
 
 ### Model not running

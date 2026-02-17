@@ -58,6 +58,19 @@ make run-models-force   # Rerun all models where run=yes
 make run-models-quick   # Quick test with 2 inputs, 1 replicate
 ```
 
+### Cleaning Up Bad Results
+If runs are interrupted (e.g. API outages, Cloudflare blocks) or stale test/smoke runs remain:
+```bash
+make clean-aborted       # Dry-run — shows what would be cleaned
+make clean-aborted-apply # Actually delete bad files + update CSV
+```
+
+This removes:
+- **Aborted runs** — all trials errored (`summary.aborted=True`)
+- **Incomplete runs** — test/smoke runs with `total < 80` trials
+- **Orphan CSV rows** — entries pointing to deleted result files
+- **Empty directories** — leftover from deleted results
+
 ### Results Analysis
 Results are aggregated in `aggregated_results.csv` with accuracy/variance per (model, scenario, approach, perturbed).
 
@@ -82,6 +95,8 @@ make demo-structured     # Quick structured tool calling test
 make run-models          # Batch evaluation (skip completed)
 make run-models-force    # Batch evaluation (rerun all)
 make run-models-quick    # Quick test (2 inputs, 1 replicate)
+make clean-aborted       # Dry-run: show aborted/incomplete results to clean
+make clean-aborted-apply # Delete bad results, clean CSV, prune dirs
 make format              # Auto-format with black
 make test                # Run pytest suite
 make clean               # Remove build artifacts
