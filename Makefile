@@ -1,4 +1,4 @@
-.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval analyze clean-results help clean test format
+.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval analyze clean-results clean-aborted help clean test format
 
 # Default target
 all: help
@@ -19,6 +19,8 @@ help:
 	@echo "  make eval                - Run full evaluation (custom args supported)"
 	@echo "  make analyze             - Analyze aggregated results and show NLT gains"
 	@echo "  make clean-results       - Remove results for specific models (use MODELS=model1,model2)"
+	@echo "  make clean-aborted       - Remove aborted results, orphan CSV rows, empty dirs (dry-run)"
+	@echo "  make clean-aborted-apply - Actually apply cleanup (delete files)"
 	@echo "  make format              - Auto-format code with black"
 	@echo "  make test                - Run pytest test suite"
 	@echo "  make clean               - Remove build artifacts and virtual environment"
@@ -116,6 +118,14 @@ clean-results:
 	done
 	@rm -f aggregated_results.csv.bak
 	@echo "Done. You can now run 'make run-models' to re-evaluate or 'make analyze' to regenerate analysis."
+
+clean-aborted:
+	@echo "Scanning for aborted results (dry run)..."
+	uv run python src/scripts/clean_aborted.py -v
+
+clean-aborted-apply:
+	@echo "Cleaning up aborted results..."
+	uv run python src/scripts/clean_aborted.py --apply -v
 
 clean:
 	rm -rf .venv
