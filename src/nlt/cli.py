@@ -7,10 +7,22 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 from nlt.api.client import DEFAULT_API_URL, DEFAULT_MODEL, SageClient
 from nlt.core import evaluator
 from nlt.data.scenarios import SCENARIOS
+
+
+def _is_local_api(url: str) -> bool:
+    """Return True if the URL points to a localhost-style endpoint."""
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return False
+
+    host = parsed.hostname or ""
+    return host in {"localhost", "127.0.0.1"} or host.startswith("127.")
 
 
 def parse_args() -> argparse.Namespace:
@@ -80,8 +92,13 @@ def main() -> None:
     args = parse_args()
 
     auth_token = args.auth_token or os.getenv("SAGE_AUTH_TOKEN")
-    if not auth_token:
-        print("Missing auth token. Pass --auth-token or set SAGE_AUTH_TOKEN.", file=sys.stderr)
+    is_local_api = _is_local_api(args.api_url)
+
+    if not auth_token and not is_local_api:
+        print(
+            "Missing auth token. Pass --auth-token, set SAGE_AUTH_TOKEN, or use --api-url http://localhost:...",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     # Determine models to evaluate
@@ -93,7 +110,12 @@ def main() -> None:
         models = [DEFAULT_MODEL]
 
     scenario = SCENARIOS[args.scenario]
-    client = SageClient(auth_token=auth_token, api_url=args.api_url, timeout=args.timeout, debug=args.debug)
+    client = SageClient(
+        auth_token=auth_token or None,
+        api_url=args.api_url,
+        timeout=args.timeout,
+        debug=args.debug,
+    )
 
     all_summaries = []
 

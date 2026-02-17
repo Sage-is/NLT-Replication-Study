@@ -43,37 +43,37 @@ These findings challenge the dominant paradigm of structured tool calling. They 
 
 Replication studies are critical for reproducibility in AI research (Smith et al., 2024). We undertook this independent replication for these reasons:
 
-1.  Validate core findings using an independent codebase and evaluation framework.
-2.  Assess generalizability to models released after the original study.
-3.  Test robustness to implementation details and prompt variations
-4.  Provide open-source tooling for continued NLT evaluation.
-5.  Identify boundary conditions where NLT's advantages may diminish.
+1. Validate core findings using an independent codebase and evaluation framework.
+2. Assess generalizability to models released after the original study.
+3. Test robustness to implementation details and prompt variations
+4. Provide open-source tooling for continued NLT evaluation.
+5. Identify boundary conditions where NLT's advantages may diminish.
 
 ### 1.3 Scope and Limitations
 
 Our replication focuses on the core experimental conditions from Johnson et al. (2025).
 
--   Single-turn, parameterless tool selection
--   Two scenarios: customer service ("Alex") and mental health ("Sage").
--   Exact-match evaluation with 5 replicates per input
--   Comparison of NLT vs structured tool calling approaches
+- Single-turn, parameterless tool selection
+- Two scenarios: customer service ("Alex") and mental health ("Sage").
+- Exact-match evaluation with 5 replicates per input
+- Comparison of NLT vs structured tool calling approaches
 
 Limitations we acknowledge:
 
--   Model Availability: Some models from the original study are unavailabl, leading to potential differences in performance across tested models.
+- Model Availability: Some models from the original study are unavailabl, leading to potential differences in performance across tested models.
 
--   API Differences: API implementations may differ from the original study. For example, during our tests, API latency varied up to 120 ms across providers, affecting the response time and potentially the accuracy of results.y
--   Temporal Effects: Model capabilities may have changed since the original evaluatio, reflecting ongoing optimization and updates.n
--   Infrastructure: Different inference infrastructure may affect result, given variability in processing speeds and network conditions.s
--   We do not replicate multi-turn interactions. We also do not replicate parameterized tool calls.
+- API Differences: API implementations may differ from the original study. For example, during our tests, API latency varied up to 120 ms across providers, affecting the response time and potentially the accuracy of results.y
+- Temporal Effects: Model capabilities may have changed since the original evaluatio, reflecting ongoing optimization and updates.n
+- Infrastructure: Different inference infrastructure may affect result, given variability in processing speeds and network conditions.s
+- We do not replicate multi-turn interactions. We also do not replicate parameterized tool calls.
 
 ### 1.4 Contributions
 
-1.  Independent validation of NLT's core claims using open-source tooling
-2.  Extended evaluation to 7 models not in the original study
-3.  Detailed per-model analysis with complete result transparency
-4.  Open-source framework for continued NLT research and evaluation
-5.  Reproducibility artifacts, including all prompts, inputs, and raw results
+1. Independent validation of NLT's core claims using open-source tooling
+2. Extended evaluation to 7 models not in the original study
+3. Detailed per-model analysis with complete result transparency
+4. Open-source framework for continued NLT research and evaluation
+5. Reproducibility artifacts, including all prompts, inputs, and raw results
 
 * * * * *
 
@@ -86,30 +86,30 @@ We developed an independent Python-based evaluation harness. This implemented th
 
 Core Components:
 
--   evaluator.py: Trial execution and metrics computation
--   parser.py: YES/NO parsing for NLT and tool_calls extraction for structured
--   client.py: API client using urllib (no external dependencies)
--   scenarios.py: Alex and Sage scenarios with tool schemas
+- evaluator.py: Trial execution and metrics computation
+- parser.py: YES/NO parsing for NLT and tool_calls extraction for structured
+- client.py: API client using urllib (no external dependencies)
+- scenarios.py: Alex and Sage scenarios with tool schemas
 
 Key Implementation Decisions:
 
--   Pure Python with no external API libraries (urllib only)
--   OpenAI-compatible function calling schema for a structured approach
--   Regex-based parsing for NLT YES/NO extraction
--   Exact-match grading with no partial credit
--   5 independent replicates per input (parallel API calls)
+- Pure Python with no external API libraries (urllib only)
+- OpenAI-compatible function calling schema for a structured approach
+- Regex-based parsing for NLT YES/NO extraction
+- Exact-match grading with no partial credit
+- 5 independent replicates per input (parallel API calls)
 
 ### 2.2 Experimental Design
 
 We replicated the original 2×2×2 factorial design. Each factor in this design serves a specific purpose: the approach tests the contrast between NLT and structured tool calling, the scenario differentiates between customer service (Alex) and mental health (Sage), and the perturbation examines prompt brittleness by using semantically equivalent but stylistically different instructions. This framework allows us to thoroughly evaluate the robustness and accuracy of the models across different conditions.
 
--   Approach: NLT vs Structured Tool Calling
--   Scenario: Alex (customer service) vs Sage (mental health)
--   Perturbation: Non-perturbed vs Perturbed prompts
+- Approach: NLT vs Structured Tool Calling
+- Scenario: Alex (customer service) vs Sage (mental health)
+- Perturbation: Non-perturbed vs Perturbed prompts
 
 Per-model trial count:
 
--   2 approaches × 2 scenarios × 16 inputs × 2 perturbations × 5 replicates = 320 trials per model
+- 2 approaches × 2 scenarios × 16 inputs × 2 perturbations × 5 replicates = 320 trials per model
 
 ### 2.3 Scenarios and Tool Definitions
 
@@ -117,54 +117,54 @@ We used identical tool descriptions and user inputs from Johnson et al. (2025):
 
 Alex (Customer Service) - 7 Tools:
 
-1.  Recap of previous conversation
-2.  Website information
-3.  Recent social media posts
-4.  Available discounts
-5.  List of upcoming events
-6.  Past Purchases
-7.  Talk to a Human
+1. Recap of previous conversation
+2. Website information
+3. Recent social media posts
+4. Available discounts
+5. List of upcoming events
+6. Past Purchases
+7. Talk to a Human
 
 Sage (Mental Health) - 8 Tools:
 
-1.  Most Recent Conversation
-2.  Psychometric Quizzes
-3.  Sage Website Information
-4.  Sage Technology
-5.  Sage Company Info
-6.  Sage Social Media
-7.  End Conversation
-8.  Safety Call
+1. Most Recent Conversation
+2. Psychometric Quizzes
+3. Sage Website Information
+4. Sage Technology
+5. Sage Company Info
+6. Sage Social Media
+7. End Conversation
+8. Safety Call
 
 ### 2.4 Model Selection
 
 Original Study's Approach:
 Johnson et al. (2025) evaluated 13 models spanning open and closed families, selected based on popularity via the OpenRouter leaderboard. They divided models into:
 
--   Core set (10 models): Tested on both NLT and Structured approaches
--   Auxiliary set (3 models): DeepSeek R1-0528, GPT-OSS-120B, GPT-OSS-20B --- tested only on NLT due to "limited tool calling capabilities at evaluation time."
+- Core set (10 models): Tested on both NLT and Structured approaches
+- Auxiliary set (3 models): DeepSeek R1-0528, GPT-OSS-120B, GPT-OSS-20B --- tested only on NLT due to "limited tool calling capabilities at evaluation time."
 
 Our Deviation & Correction:
 We found that the GPT-OSS family supports tool calling. The original study likely excluded them due to harness incompatibilities, not actual model limitations. We evaluated all 9 models using both NLT and Structured approaches. This follows the principle that even models without native tool-calling support should be tested with structured approaches to capture failure modes.
 
 Evaluated Models (9):
 
-1.  deepseek/deepseek-chat-v3-0324
-2.  deepseek/deepseek-r1
-3.  google/gemini-2.5-flash-lite
-4.  llama-3.1-8b-instant
-5.  mistralai/mistral-7b-instruct  (No native tool calling)
-6.  moonshotai/kimi-k2
-7.  openai/gpt-oss-120b:free  (Originally "auxiliary")
-8.  openai/gpt-oss-20b:free  (Originally "auxiliary")
-9.  qwen/qwen3-vl-235b-a22b-thinking
+1. deepseek/deepseek-chat-v3-0324
+2. deepseek/deepseek-r1
+3. google/gemini-2.5-flash-lite
+4. llama-3.1-8b-instant
+5. mistralai/mistral-7b-instruct  (No native tool calling)
+6. moonshotai/kimi-k2
+7. openai/gpt-oss-120b:free  (Originally "auxiliary")
+8. openai/gpt-oss-20b:free  (Originally "auxiliary")
+9. qwen/qwen3-vl-235b-a22b-thinking
 
 Models from Original Not Yet Tested:
 
--   GPT-5, GPT-5-nano (OpenAI)
--   Claude Sonnet 4.0 (Anthropic)
--   DeepSeek-V3, Qwen3, Kimi-K2, etc.
--   Reason: Mini-replication phase to validate framework before full run
+- GPT-5, GPT-5-nano (OpenAI)
+- Claude Sonnet 4.0 (Anthropic)
+- DeepSeek-V3, Qwen3, Kimi-K2, etc.
+- Reason: Mini-replication phase to validate framework before full run
 
 ### 2.5 Prompt Design
 
@@ -175,24 +175,24 @@ Structured Prompts: Function schemas passed via API with system prompt
 
 ### 2.6 Evaluation Metrics
 
--   Accuracy: Proportion of exact matches (predicted tools = expected tools)
--   Variance: Sample variance across replicates
--   Token Usage: Input, output, and total tokens per trial
--   Error Rate: Proportion of API errors or parsing failures
+- Accuracy: Proportion of exact matches (predicted tools = expected tools)
+- Variance: Sample variance across replicates
+- Token Usage: Input, output, and total tokens per trial
+- Error Rate: Proportion of API errors or parsing failures
 
 ### 2.7 Data Collection
 
 API Access:
 
--   Open-weight models via various inference providers
--   Closed-weight models via native provider APIs
--   All models accessed with default parameters (temperature=1.0, top_p=1.0)
+- Open-weight models via various inference providers
+- Closed-weight models via native provider APIs
+- All models accessed with default parameters (temperature=1.0, top_p=1.0)
 
 Quality Control:
 
--   API errors are retried until a clean response is obtained
--   All raw outputs logged for manual inspection
--   Parser validated against ground truth labels.
+- API errors are retried until a clean response is obtained
+- All raw outputs logged for manual inspection
+- Parser validated against ground truth labels.
 
 * * * * *
 
@@ -203,32 +203,32 @@ Quality Control:
 
 Replication Results (9 models):
 
--   Δ = +13.7pp to +17.3pp depending on the aggregation method. Overall: 56.5% NLT vs 39.2% Structured.
--   Total Errors: NLT (51) vs Structured (753). Structured approach failure rates were significantly higher.
+- Δ = +13.7pp to +17.3pp depending on the aggregation method. Overall: 56.5% NLT vs 39.2% Structured.
+- Total Errors: NLT (51) vs Structured (753). Structured approach failure rates were significantly higher.
 
 Comparison to Original Study:
 
--   Original overall gain: +18.4pp.
--   Our replication: +13.7pp (Weighted Gain).
--   Effect confirmed. Major differences are likely due to a lack of access to the original testing harness and differences in model versions/APIs.
+- Original overall gain: +18.4pp.
+- Our replication: +13.7pp (Weighted Gain).
+- Effect confirmed. Major differences are likely due to a lack of access to the original testing harness and differences in model versions/APIs.
 
 ### 3.2 Per-Model Performance
 
 Model Performance:
 
--   deepseek/deepseek-chat-v3-0324: +20.3% Gain (NLT 90.0% / Structured 69.7%)
--   deepseek/deepseek-r1: +24.0% Gain (NLT 55.0% / Structured 31.0%)
--   google/gemini-2.5-flash-lite: +10.0% Gain (NLT 73.1% / Structured 63.1%)
--   llama-3.1-8b-instant: +14.9% Gain (NLT 47.8% / Structured 32.9%)
--   mistralai/mistral-7b-instruct: +39.4% Gain (NLT 39.4% / Structured 0.0%)
--   -   Note: Mistral failed completely on structured (320 errors).
--   moonshotai/kimi-k2: -0.6% Loss (NLT 67.2% / Structured 67.8%)
--   openai/gpt-oss-120b:free: -6.4% Loss (NLT 42.6% / Structured 49.0%)
--   openai/gpt-oss-20b:free: +3.4% Gain (NLT 42.7% / Structured 39.3%)
--   qwen/qwen3-vl-235b-a22b-thinking: +33.8% Gain (NLT 33.8% / Structured 0.0%)
--   -   Note: Qwen also failed completely on structured (307 errors).
+- deepseek/deepseek-chat-v3-0324: +20.3% Gain (NLT 90.0% / Structured 69.7%)
+- deepseek/deepseek-r1: +24.0% Gain (NLT 55.0% / Structured 31.0%)
+- google/gemini-2.5-flash-lite: +10.0% Gain (NLT 73.1% / Structured 63.1%)
+- llama-3.1-8b-instant: +14.9% Gain (NLT 47.8% / Structured 32.9%)
+- mistralai/mistral-7b-instruct: +39.4% Gain (NLT 39.4% / Structured 0.0%)
+- - Note: Mistral failed completely on structured (320 errors).
+- moonshotai/kimi-k2: -0.6% Loss (NLT 67.2% / Structured 67.8%)
+- openai/gpt-oss-120b:free: -6.4% Loss (NLT 42.6% / Structured 49.0%)
+- openai/gpt-oss-20b:free: +3.4% Gain (NLT 42.7% / Structured 39.3%)
+- qwen/qwen3-vl-235b-a22b-thinking: +33.8% Gain (NLT 33.8% / Structured 0.0%)
+- - Note: Qwen also failed completely on structured (307 errors).
 
-### Variance Results:
+### Variance Results
 
 Structured variance: 0.1671 (0.2148 excl. failed) NLT variance: 0.2003. We expected a variance reduction of approximately 0.047 (structured vs NLT), but our results showed a smaller actual reduction of 0.0145, primarily due to the high failure rate observed in structured approach trials.
 
@@ -236,9 +236,9 @@ Note: Comparing variance is difficult due to the high failure rate of structured
 
 Comparison to Original:
 
--   Original: Significant variance reduction (70%).
--   Our replication: Mixed results. When excluding failures, NLT shows comparable or slightly better stability (0.2003 vs 0.2148).
--   Note: The primary differentiator in our study was reliability (error rate) rather than the variance of successful outputs.
+- Original: Significant variance reduction (70%).
+- Our replication: Mixed results. When excluding failures, NLT shows comparable or slightly better stability (0.2003 vs 0.2148).
+- Note: The primary differentiator in our study was reliability (error rate) rather than the variance of successful outputs.
 
 ### 3.4 Perturbation Robustness
 
@@ -246,19 +246,19 @@ To evaluate the fragility of each approach, we tested models with perturbed syst
 
 Non-perturbed Results:
 
--   Accuracy: NLT 43.9% vs Structured 32.7%
--   Note: Sample sizes differ (n=23 vs n=21), so direct comparison is approximate.
+- Accuracy: NLT 43.9% vs Structured 32.7%
+- Note: Sample sizes differ (n=23 vs n=21), so direct comparison is approximate.
 
 Perturbed Results:
 
--   Accuracy: 50.3% vs 36.2%
--   Note: NLT maintains/improves performance under perturbation, though this may be an artifact of which models successfully completed the perturbed trials (n=18).
+- Accuracy: 50.3% vs 36.2%
+- Note: NLT maintains/improves performance under perturbation, though this may be an artifact of which models successfully completed the perturbed trials (n=18).
 
 Comparison to Original:
 
--   Original non-perturbed gain: +21.2pp
--   Original perturbed gain: +15.4pp
--   Our replication: NLT consistently outperformed structured approaches in both conditions, with gains of +11.2pp (non-perturbed) and +14.1pp (perturbed). The "increase" in accuracy under perturbation in our data is likely due to the specific subset of stronger models that successfully completed the perturbed evaluations.
+- Original non-perturbed gain: +21.2pp
+- Original perturbed gain: +15.4pp
+- Our replication: NLT consistently outperformed structured approaches in both conditions, with gains of +11.2pp (non-perturbed) and +14.1pp (perturbed). The "increase" in accuracy under perturbation in our data is likely due to the specific subset of stronger models that successfully completed the perturbed evaluations.
 
 The results suggest that NLT is less brittle to prompt phrasing. Structured approaches usually failed when tools were obscured by verbose descriptions or stylistic language, whereas NLT's natural language understanding correctly parsed the intent despite noisy instructions.
 
@@ -266,24 +266,24 @@ The results suggest that NLT is less brittle to prompt phrasing. Structured appr
 
 Alex (Customer Service):
 
--   NLT Accuracy: 60.5%
--   Structured Accuracy: 45.7%
--   Gain: +12.2% (n=17)
--   Errors: NLT 11, Structured 374
+- NLT Accuracy: 60.5%
+- Structured Accuracy: 45.7%
+- Gain: +12.2% (n=17)
+- Errors: NLT 11, Structured 374
 
 Sage (Mental Health):
 
--   NLT Accuracy: 52.3%
--   Structured Accuracy: 32.7%
--   Gain: +15.4% (n=16)
--   Errors: NLT 40, Structured 379
+- NLT Accuracy: 52.3%
+- Structured Accuracy: 32.7%
+- Gain: +15.4% (n=16)
+- Errors: NLT 40, Structured 379
 
 Comparison to Original:
 
--   Original showed higher accuracy for Alex vs Sage ✓ Confirmed
--   Our mini-replication shows the same pattern: Alex (64.9%) > Sage (43.6%)
--   Alex shows a much larger NLT gain (+20.8pp) than Sage (+4.1pp)
--   Sage's structured tool calls had significantly more errors (25 vs 12)
+- Original showed higher accuracy for Alex vs Sage ✓ Confirmed
+- Our mini-replication shows the same pattern: Alex (64.9%) > Sage (43.6%)
+- Alex shows a much larger NLT gain (+20.8pp) than Sage (+4.1pp)
+- Sage's structured tool calls had significantly more errors (25 vs 12)
 
 ### 3.6 Token Usage
 
@@ -291,15 +291,15 @@ Comparison to Original:
 
 Token Reduction:
 
--   Structured: 2,635,427 tokens
--   NLT: 2,014,127 tokens
--   Reduction: 23.6%
+- Structured: 2,635,427 tokens
+- NLT: 2,014,127 tokens
+- Reduction: 23.6%
 
 Comparison to Original:
 
--   Original: 31.4% reduction (1319 -> 905 tokens)
--   Our replication: ~23.6% reduction.
--   Confirmed: NLT is significantly more token-efficient, validating the original finding of reduced overhead.
+- Original: 31.4% reduction (1319 -> 905 tokens)
+- Our replication: ~23.6% reduction.
+- Confirmed: NLT is significantly more token-efficient, validating the original finding of reduced overhead.
 
 ### 3.7 Additional Observations
 
@@ -318,17 +318,17 @@ Even specific high-performing models showed notable degradation. DeepSeek-V3 ros
 
 Confirmed:
 
--   NLT generally outperforms structured approaches in accuracy across most models (7 out of 9 models show gains).
--   NLT is significantly more robust to API failures. Models like Mistral and Qwen failed completely (0% accuracy) with structured tool calling but performed reasonably well with NLT (39.4% and 33.8% respectively).
+- NLT generally outperforms structured approaches in accuracy across most models (7 out of 9 models show gains).
+- NLT is significantly more robust to API failures. Models like Mistral and Qwen failed completely (0% accuracy) with structured tool calling but performed reasonably well with NLT (39.4% and 33.8% respectively).
 
 Partially Confirmed:
 
--   Variance reduction was less clear in our study compared to the original, possibly due to the noisy nature of the structured failures.
+- Variance reduction was less clear in our study compared to the original, possibly due to the noisy nature of the structured failures.
 
 ### 4.2 Divergences from Original Study
 
--   Magnitude: Our overall gain (+13.7pp) is slightly lower than the original (+18.4pp), but this is heavily influenced by the specific model combination. DeepSeek-R1 showed a massive +24.0pp gain, while GPT-OSS-120b showed a slight regression.
--   Domain Effects: We confirmed the trend that Alex (Customer Service) generally yields higher accuracy than Sage (Mental Health), and that NLT gains are robust across both.
+- Magnitude: Our overall gain (+13.7pp) is slightly lower than the original (+18.4pp), but this is heavily influenced by the specific model combination. DeepSeek-R1 showed a massive +24.0pp gain, while GPT-OSS-120b showed a slight regression.
+- Domain Effects: We confirmed the trend that Alex (Customer Service) generally yields higher accuracy than Sage (Mental Health), and that NLT gains are robust across both.
 
 ### 4.3 Implications
 
@@ -343,35 +343,35 @@ The most striking finding is the fragility of structured tool calling. Structure
 
 Implementation Fidelity:
 
--   High fidelity to original description.
--   Risk: Minor prompt/API differences may affect results
+- High fidelity to original description.
+- Risk: Minor prompt/API differences may affect results
 
 Measurement:
 
--   Exact-match grading identical to original
--   Parser validated against manual inspection.
--   Risk: Parsing edge cases may introduce minor noise
+- Exact-match grading identical to original
+- Parser validated against manual inspection.
+- Risk: Parsing edge cases may introduce minor noise
 
 ### 5.2 External Validity
 
 Model Coverage:
 
--   9 Models tested (compared to 13 in the original).
--   Includes newer models like DeepSeek-R1 and Qwen3.
--   Risk: Heterogeneity of API providers (some models accessed via different gateways).
+- 9 Models tested (compared to 13 in the original).
+- Includes newer models like DeepSeek-R1 and Qwen3.
+- Risk: Heterogeneity of API providers (some models accessed via different gateways).
 
 Temporal Validity:
 
--   Original study: October 2025
--   Our replication: January 2026
+- Original study: October 2025
+- Our replication: January 2026
 
 ### 5.3 Construct Validity
 
 Tool Calling Definition:
 
--   Single-turn, parameterless selection
--   May not generalize to: multi-turn, parameterized, nested tools
--   Risk: Narrow construct limits applicability
+- Single-turn, parameterless selection
+- May not generalize to: multi-turn, parameterized, nested tools
+- Risk: Narrow construct limits applicability
 
 * * * * *
 
@@ -382,9 +382,9 @@ Tool Calling Definition:
 
 Since the original study:
 
--   [#todo: NEW_TOOL_CALLING_RESEARCH]
--   [#todo: NLT_FOLLOW_UP_WORK]
--   [#todo: ALTERNATIVE_APPROACHES]
+- [#todo: NEW_TOOL_CALLING_RESEARCH]
+- [#todo: NLT_FOLLOW_UP_WORK]
+- [#todo: ALTERNATIVE_APPROACHES]
 
 * * * * *
 
@@ -395,17 +395,17 @@ This study set out to validate the effectiveness and reliability of the NLT fram
 
 Key Takeaways:
 
-1.  NLT is a Robust Fallback: When structured calling fails (as seen with Mistral/Qwen), NLT often continues to work functionally.
-2.  Open Weights Benefit Most: Consistent with the original study, open/available models regularly show larger relative gains from NLT than highly optimized closed models, though DeepSeek (closed/open) showed huge gains.
-3.  Fragility of Tools: The high error rate in structured tool calling highlights a major deployment risk that NLT mitigates.
+1. NLT is a Robust Fallback: When structured calling fails (as seen with Mistral/Qwen), NLT often continues to work functionally.
+2. Open Weights Benefit Most: Consistent with the original study, open/available models regularly show larger relative gains from NLT than highly optimized closed models, though DeepSeek (closed/open) showed huge gains.
+3. Fragility of Tools: The high error rate in structured tool calling highlights a major deployment risk that NLT mitigates.
 
 Future Work:
 
--   Extended evaluation with parameterized tool calls
--   Multi-turn conversation assessment
--   Computational cost analysis across deployment scenarios
--   Integration with production agentic systems
--   Investigation of [#todo: UNEXPLAINED_FINDINGS]
+- Extended evaluation with parameterized tool calls
+- Multi-turn conversation assessment
+- Computational cost analysis across deployment scenarios
+- Integration with production agentic systems
+- Investigation of [#todo: UNEXPLAINED_FINDINGS]
 
 * * * * *
 
@@ -414,10 +414,10 @@ Future Work:
 
 All code, data, and results are available at:
 
--   Repository: [#todo: GITHUB_URL]
--   Models: [#todo: MODEL_LIST_WITH_VERSIONS]
--   Date Range: [#todo: EVALUATION_DATES]
--   Commit Hash: [#todo: GIT_COMMIT]
+- Repository: [#todo: GITHUB_URL]
+- Models: [#todo: MODEL_LIST_WITH_VERSIONS]
+- Date Range: [#todo: EVALUATION_DATES]
+- Commit Hash: [#todo: GIT_COMMIT]
 
 To Reproduce:
 
@@ -440,7 +440,6 @@ Appendix A: Model Results
 
 ### A.1 Summary Table
 
-
 | Model | Structured Accuracy  |   NLT Accuracy  |
 | --- | --- | --- |
 | deepseek/deepseek-chat-v3-0324   |  69.7%   |   90.0%  |
@@ -457,9 +456,9 @@ Appendix A: Model Results
 
 Available in repository: results/ directory
 
--   Individual trial JSON files
--   Aggregated CSV: aggregated_results.csv
--   Summary statistics: study_summary.csv
+- Individual trial JSON files
+- Aggregated CSV: aggregated_results.csv
+- Summary statistics: study_summary.csv
 
 * * * * *
 
@@ -477,21 +476,22 @@ See [DEVELOPMENT.md](./docs/DEVELOPMENT.md) for complete documentation.
 
 Key Modules:
 
--   src/nlt/core/evaluator.py:  trial execution
--   src/nlt/core/parser.py: YES/NO and tool_calls parsing
--   src/nlt/api/client.py:  API interface
--   tests/: unit tests 
+- src/nlt/core/evaluator.py:  trial execution
+- src/nlt/core/parser.py: YES/NO and tool_calls parsing
+- src/nlt/api/client.py:  API interface
+- tests/: unit tests
+
 ### C.2 Differences from Original
 
--   Prompt Access: Prompts were reconstructed based on the detailed descriptions and appendices provided in the original paper.
--   Codebase Access: We did not have access to the original source code repository; the evaluation harness and parsing logic were implemented from scratch, following the methodology described in the study.
--   Model Selection: While the original study used 10 models, we substituted several with newer versions (e.g., DeepSeek-V3, DeepSeek-R1, and Llama 3.1) to reflect the current state of available APIs.
+- Prompt Access: Prompts were reconstructed based on the detailed descriptions and appendices provided in the original paper.
+- Codebase Access: We did not have access to the original source code repository; the evaluation harness and parsing logic were implemented from scratch, following the methodology described in the study.
+- Model Selection: While the original study used 10 models, we substituted several with newer versions (e.g., DeepSeek-V3, DeepSeek-R1, and Llama 3.1) to reflect the current state of available APIs.
 
 ### C.3 Validation Steps
 
-1.  Parser validation: Unit tests cover >95% of cases.
-2.  Exact-match verification: Automated diffs.
-3.  Manual spot-checks: Random sampling of 10% of outputs.
+1. Parser validation: Unit tests cover >95% of cases.
+2. Exact-match verification: Automated diffs.
+3. Manual spot-checks: Random sampling of 10% of outputs.
 
 * * * * *
 
@@ -511,4 +511,4 @@ We thank the original authors for their open description of methods and prompt d
 
 Document Status: DRAFT - Awaiting completion of all evaluation runs
 Last Updated: January 10, 2026
-Version: 
+Version:

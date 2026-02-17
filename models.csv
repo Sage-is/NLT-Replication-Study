@@ -4,31 +4,46 @@
 # Lines starting with # are comments and will be ignored by the parser.
 # 
 # Columns:
-#   run                    - yes/no toggle to include model in batch runs
-#   model_id              - Full model identifier for API calls
-#   provider              - Model provider (meta - google - deepseek - etc)
-#   size                  - Model parameter size (8b - 70b - etc)
-#   has_tool_calling      - yes/no whether model supports native tool calling
-#   alex_nlt_done         - Completion status for Alex scenario NLT approach
-#   alex_structured_done  - Completion status for Alex scenario Structured approach
-#   sage_nlt_done         - Completion status for Sage scenario NLT approach
-#   sage_structured_done  - Completion status for Sage scenario Structured approach
-#   notes                 - Additional information about the model
+#   run                  - yes/no toggle to include model in batch runs
+#   model_id             - Full model identifier for API calls
+#   provider             - Model provider (meta - google - deepseek - etc)
+#   size                 - Model parameter size (8b - 70b - etc)
+#   has_tool_calling     - yes/no whether model supports 
+#                          native tool calling
+#   alex_nlt_done        - Completion status for 
+#                          Alex scenario NLT approach
+#   alex_structured_done - Completion status for 
+#                          Alex scenario Structured approach   
+#   sage_nlt_done        - Completion status for 
+#                          Sage scenario NLT approach
+#   sage_structured_done - Completion status for 
+#                          Sage scenario Structured approach
+#   notes                - Additional information about the model
+#   api_url              - Optional override for the chat completion 
+#                          endpoint (leave blank for default Sage API)
 # 
 # Set run=yes to include model in evaluations ordering run=no to skip
+#
 # Status columns automatically update to 'yes' after successful completion
 # 
-run,model_id,provider,size,has_tool_calling,alex_nlt_done,alex_structured_done,sage_nlt_done,sage_structured_done,notes
-no,llama-3.1-8b-instant,meta,8b,yes,yes,yes,yes,yes,Llama 3.1 with tool calling support
-no,google/gemini-2.5-flash-lite,google,unknown,yes,yes,yes,yes,yes,Gemini 2.5 Flash Lite
-no,deepseek/deepseek-r1,685b,no,no,yes,yes,yes,yes,
-no,deepseek/deepseek-r1-0528-qwen3-8b,deepseek,8b,yes,no,no,no,no,DeepSeek R1 distilled reasoning model
-no,xiaomi/mimo-v2-flash:free,xiaomi,unknown,yes,no,no,no,no,Xiaomi Mimo v2
-no,mistralai/mistral-7b-instruct,mistral,7b,no,yes,yes,yes,yes,Mistral 7B without tool calling
-no,microsoft/phi-4,microsoft,14b,no,no,no,no,no,Phi-4 test model
-no,deepseek/deepseek-chat-v3-0324,,,,yes,yes,yes,yes,
-no,openai/gpt-oss-120b:free,,,,yes,yes,yes,yes,
-no,openai/gpt-oss-20b:free,,,,yes,yes,yes,yes,
-no,qwen/qwen3-vl-235b-a22b-thinking,,,,yes,yes,,yes,
-no,moonshotai/kimi-k2:free,,,,yes,yes,,,
-yes,moonshotai/kimi-k2,,,,yes,yes,yes,yes,
+run,model_id,provider,size,has_tool_calling,alex_nlt_done,alex_structured_done,sage_nlt_done,sage_structured_done,notes,api_url
+no,llama-3.1-8b-instant,meta,8b,yes,yes,yes,yes,yes,Llama 3.1 with tool calling support,
+no,google/gemini-2.5-flash-lite,google,unknown,yes,yes,yes,yes,yes,Gemini 2.5 Flash Lite,
+yes,google/gemini-2.5-pro,google,unknown,yes,no,no,no,no,Gemini 2.5 Pro via Sage,
+yes,google/gemini-2.0-flash-001,google,unknown,yes,no,no,no,no,Gemini 2.0 Flash 001 via Sage,
+no,deepseek/deepseek-r1,deepseek,685b,no,yes,yes,yes,yes,,
+no,deepseek/deepseek-r1-0528-qwen3-8b,deepseek,8b,yes,no,no,no,no,DeepSeek R1 distilled reasoning model,
+no,xiaomi/mimo-v2-flash:free,xiaomi,unknown,yes,no,no,no,no,Xiaomi Mimo v2,
+no,mistralai/mistral-7b-instruct,mistral,7b,no,yes,yes,yes,yes,Mistral 7B without tool calling,
+no,microsoft/phi-4,microsoft,14b,no,no,no,no,no,Phi-4 test model,
+no,deepseek/deepseek-chat-v3-0324,deepseek,unknown,yes,yes,yes,yes,,,
+no,openai/gpt-oss-120b:free,openai,120b,yes,yes,yes,yes,yes,,
+no,openai/gpt-oss-20b:free,openai,20b,yes,yes,yes,yes,yes,,
+no,qwen/qwen3-vl-235b-a22b-thinking,qwen,235b,yes,yes,yes,,yes,,
+no,moonshotai/kimi-k2:free,moonshotai,unknown,yes,yes,yes,,,Baseline Kimi free tier,
+no,moonshotai/kimi-k2,moonshotai,unknown,yes,yes,yes,yes,yes,Original Kimi-K2 target,
+yes,anthropic/claude-sonnet-4,anthropic,unknown,yes,yes,yes,yes,yes,Anthropic Claude Sonnet 4 via localhost proxy,http://localhost:3456/v1/chat/completions
+yes,openai/gpt-5,openai,unknown,yes,no,no,no,no,Original study core model placeholder,
+yes,openai/gpt-5-nano,openai,unknown,yes,no,no,no,no,Original study auxiliary model placeholder,
+no,deepseek/deepseek-v3,deepseek,unknown,yes,no,no,no,no,Original study DeepSeek-V3 placeholder,
+no,qwen/qwen3,qwen,unknown,yes,no,no,no,no,Original study Qwen3 placeholder,

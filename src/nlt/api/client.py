@@ -14,7 +14,7 @@ DEFAULT_MODEL = "llama-3.1-8b-instant"
 
 @dataclass
 class SageClient:
-    auth_token: str
+    auth_token: str | None = None
     api_url: str = DEFAULT_API_URL
     default_model: str = DEFAULT_MODEL
     timeout: int = 60
@@ -47,8 +47,10 @@ class SageClient:
         headers = {
             "Content-Type": "application/json",
             "Accept": "application/json",
-            "Authorization": f"Bearer {self.auth_token}",
         }
+
+        if self.auth_token:
+            headers["Authorization"] = f"Bearer {self.auth_token}"
 
         req = request.Request(
             self.api_url,

@@ -62,6 +62,11 @@ def update_aggregated_results(
     variance_str = "" if variance is None else variance
 
     # Prepare new row
+    try:
+        relative_result_file = result_file.relative_to(PROJECT_ROOT)
+    except ValueError:
+        relative_result_file = result_file
+
     new_row = {
         "model_id": model_id,
         "scenario": scenario,
@@ -74,7 +79,7 @@ def update_aggregated_results(
         "valid_trials": summary.get("valid_trials", 0),
         "aborted": "yes" if summary.get("aborted", False) else "no",
         "timestamp": data.get("timestamp", datetime.now().strftime("%Y%m%d_%H%M%S")),
-        "result_file": str(result_file),
+        "result_file": str(relative_result_file),
     }
 
     # Extract token usage if available
@@ -196,6 +201,7 @@ def run_evaluation(
     perturbed: bool = False,
     sample_limit: int | None = None,
     timeout: int | None = None,
+    api_url: str | None = None,
     args = None,
 ) -> bool:
     """Run evaluation for a model/scenario/approach combination."""
@@ -221,6 +227,9 @@ def run_evaluation(
     # Add timeout for large models
     if timeout:
         cmd.extend(["--timeout", str(timeout)])
+
+    if api_url:
+        cmd.extend(["--api-url", api_url])
     
     # Add verbose/debug flags if present
     if args and args.verbose:
@@ -293,6 +302,7 @@ def main():
 
     for model in models:
         model_id = model["model_id"]
+        api_url = model.get("api_url") or None
 
         for scenario in args.scenarios:
             for approach in args.approaches:
@@ -319,6 +329,7 @@ def main():
                         perturbed=False,
                         sample_limit=args.sample_limit,
                         timeout=args.timeout,
+                            api_url=api_url,
                         args=args,
                     )
                     total_runs += 1
@@ -361,6 +372,7 @@ def main():
                             perturbed=True,
                             sample_limit=args.sample_limit,
                             timeout=args.timeout,
+                            api_url=api_url,
                             args=args,
                         )
                         total_runs += 1
