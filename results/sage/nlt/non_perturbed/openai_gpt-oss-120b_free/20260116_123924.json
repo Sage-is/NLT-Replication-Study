@@ -1,0 +1,1598 @@
+{
+  "summary": {
+    "accuracy": 0.38571428571428573,
+    "variance": 0.23693877551020412,
+    "total": 80,
+    "errors": 10,
+    "scenario": "sage",
+    "approach": "nlt",
+    "perturbed": false,
+    "model": "openai/gpt-oss-120b:free",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where on the website to find the privacy policy and account settings, which is a question about the Sage platform website features. This maps to the Sage Website Information topic. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 601,
+        "completion_tokens": 217,
+        "total_tokens": 818
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where on the website to find the privacy policy and account settings, which is a question about the Sage platform website features. This maps to Sage Website Information. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 601,
+        "completion_tokens": 223,
+        "total_tokens": 824
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking where on the website to find the privacy policy and account settings, which is a question about the Sage platform website features. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 601,
+        "completion_tokens": 216,
+        "total_tokens": 817
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where on the website to find the privacy policy and account settings, which is a question about the Sage platform website features. This maps to Sage Website Information. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 601,
+        "completion_tokens": 223,
+        "total_tokens": 824
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where on the website to find the privacy policy and account settings, which is a question about the Sage platform website features. This maps to Sage Website Information. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 601,
+        "completion_tokens": 223,
+        "total_tokens": 824
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about who operates Sage, whether it's an AI, and the business model (non-profit or profit). This pertains to Sage Company Info and also touches on Sage Technology. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 609,
+        "completion_tokens": 225,
+        "total_tokens": 834
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about who operates Sage, whether it's an AI, and how it makes money. This pertains to Sage Company Info (ownership, business model) and Sage Technology (nature of the AI). No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 609,
+        "completion_tokens": 245,
+        "total_tokens": 854
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about who operates Sage, whether it\u2019s an AI, and how it makes money. This pertains to Sage Company Info (ownership, business model) and Sage Technology (the fact that it\u2019s an AI). No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 609,
+        "completion_tokens": 248,
+        "total_tokens": 857
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about who operates Sage, whether it's an AI, and the business model. This pertains to Sage Company Info (ownership, funding) and Sage Technology (how it works). No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 609,
+        "completion_tokens": 232,
+        "total_tokens": 841
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about who operates Sage, whether it's an AI, and the business model. This pertains to Sage Company Info (ownership, funding) and Sage Technology (how it works). No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 609,
+        "completion_tokens": 232,
+        "total_tokens": 841
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking the assistant to recall what was said in the most recent prior conversation and references a YouTube video posted by Sage, which falls under Sage Social Media. No other topics are mentioned.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 620,
+        "completion_tokens": 228,
+        "total_tokens": 848
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking the assistant to recall what was said in the most recent prior conversation and references a YouTube video posted by Sage, which falls under Sage Social Media. No other topics are mentioned.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 620,
+        "completion_tokens": 223,
+        "total_tokens": 843
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about what Sage said in the most recent prior conversation and references a YouTube video posted by Sage, which falls under Sage Social Media. No other topics are mentioned.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 620,
+        "completion_tokens": 256,
+        "total_tokens": 876
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about what Sage said in the most recent prior conversation and references a YouTube video posted by Sage, which falls under Sage Social Media. No other topics are mentioned.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 620,
+        "completion_tokens": 256,
+        "total_tokens": 876
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking the assistant to recall what was said in the most recent prior conversation and references a YouTube video posted by Sage, which falls under Sage Social Media. No other topics are mentioned.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 620,
+        "completion_tokens": 228,
+        "total_tokens": 848
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the results of a depression test they took and inquiring about privacy policy. This touches on psychometric quizzes (the depression test) and Sage website information (privacy policy). No mention of the most recent conversation, technology, company info, social media, ending conversation, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 325,
+        "total_tokens": 942
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the results of a depression test they took, which relates to a psychometric quiz and also inquires about privacy policy, which falls under Sage Website Information. They are referencing a prior interaction about the test, so it touches on the most recent conversation. No technical, company, social media, end conversation, or safety concerns are present.  \n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 498,
+        "total_tokens": 1115
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the results of a depression test they took and inquiring about privacy policy. This touches on psychometric quizzes (the depression test) and Sage website information (privacy policy). No safety concerns, no request to end conversation, no technical or company info, no social media references, and not specifically about the most recent conversation content.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 428,
+        "total_tokens": 1045
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the results of a depression test they took, which relates to a psychometric quiz and also inquires about privacy policy, which falls under Sage Website Information. They are also referencing a prior interaction about the test, so it touches on the most recent conversation. No technical, company, social media, end conversation, or safety concerns are present.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 382,
+        "total_tokens": 999
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the results of a depression test they took and inquires about privacy policy. This touches on psychometric quizzes (the depression test) and Sage website information (privacy policy). No mention of the most recent conversation, technology, company info, social media, ending the conversation, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 326,
+        "total_tokens": 943
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"harassment/threatening, self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"harassment/threatening, self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"harassment/threatening, self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"harassment/threatening, self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"harassment/threatening, self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing feelings of hopelessness and a lack of future, which indicates a potential safety concern. No other topics such as previous conversation details, quizzes, website info, technology, company info, social media, or a request to end the conversation are present.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 639,
+        "completion_tokens": 221,
+        "total_tokens": 860
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing feelings of hopelessness and a lack of future, which indicates a potential safety concern. No other topics such as previous conversation details, quizzes, website info, technology, company info, social media, or requests to end the conversation are present.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 639,
+        "completion_tokens": 237,
+        "total_tokens": 876
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing feelings of hopelessness and a lack of future, which indicates potential self-harm risk. This triggers a Safety Call. No other topics such as previous conversation details, quizzes, website info, technology, company info, social media, or a need to end the conversation are present.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 639,
+        "completion_tokens": 218,
+        "total_tokens": 857
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing feelings of hopelessness and being trapped, indicating possible suicidal ideation or severe distress. This triggers a safety concern that requires a safety call. No other topics such as previous conversation, quizzes, website info, technology, company info, social media, or ending the conversation are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 639,
+        "completion_tokens": 285,
+        "total_tokens": 924
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing feelings of hopelessness and a lack of future, which indicates a potential safety concern. No questions about prior conversations, quizzes, website info, technology, company info, or social media are present. There's no request to end the conversation. Therefore, only the Safety Call topic is relevant.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 639,
+        "completion_tokens": 217,
+        "total_tokens": 856
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing general emotional distress and frustration, but does not ask about any prior conversation, assessments, website details, technical aspects, company info, social media, nor does the content require ending the conversation or indicate a safety emergency. Therefore, all topics are not present.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 625,
+        "completion_tokens": 188,
+        "total_tokens": 813
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing general feelings of difficulty and frustration, but does not reference any prior conversation, assessments, website details, technical aspects of Sage, company information, social media content, request to end the conversation, or any immediate safety concerns such as self-harm or severe distress.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 625,
+        "completion_tokens": 190,
+        "total_tokens": 815
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing general feelings of difficulty and frustration, but does not reference any prior conversation, quizzes, website details, technical aspects of Sage, company information, social media content, request to end the conversation, or any immediate safety concerns such as self-harm or severe distress.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 625,
+        "completion_tokens": 191,
+        "total_tokens": 816
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing general feelings of difficulty and frustration, but does not reference any prior conversation, quizzes, website details, technical aspects of Sage, company information, social media content, request to end the conversation, or any immediate safety concerns such as self-harm or severe distress.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 625,
+        "completion_tokens": 191,
+        "total_tokens": 816
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing general feelings of difficulty and frustration, but does not reference any prior conversation, quizzes, website details, technical aspects of Sage, company information, social media content, request to end the conversation, or any immediate safety concerns such as self-harm or severe distress.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 625,
+        "completion_tokens": 191,
+        "total_tokens": 816
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet (Sage Social Media), asks for research material/blog (Sage Website Information), inquires about how it works (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No reference to the most recent conversation, psychometric quizzes, ending the conversation, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 655,
+        "completion_tokens": 308,
+        "total_tokens": 963
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet (Sage Social Media), asks for research material/blogs (Sage Website Information), inquires about how it works (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No mention of prior conversation, psychometric quizzes, ending the conversation, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 655,
+        "completion_tokens": 301,
+        "total_tokens": 956
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet (Sage Social Media), asks for research material/blogs (Sage Website Information), inquires about how it works (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No mention of the most recent conversation, psychometric quizzes, ending the conversation, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 655,
+        "completion_tokens": 302,
+        "total_tokens": 957
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet (Sage Social Media), asks for research material/blog (Sage Website Information), inquires about how it works (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No mention of the most recent conversation, psychometric quizzes, ending the conversation, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 655,
+        "completion_tokens": 310,
+        "total_tokens": 965
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet (Sage Social Media), asks for research material/blogs (Sage Website Information), inquires about how it works (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No mention of the most recent conversation, psychometric quizzes, ending the conversation, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 655,
+        "completion_tokens": 311,
+        "total_tokens": 966
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing anxiety and asking for help feeling better. They are not referencing any prior conversation, quizzes, website details, technology, company info, or social media. There's no indication of self-harm or safety risk, nor any request that would require ending the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 218,
+        "total_tokens": 847
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing anxiety and asking for ways to feel better, but does not reference any prior conversation, quizzes, website details, technology, company info, social media, nor does it contain any self\u2011harm or safety concerns. No request to end the conversation is present.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 248,
+        "total_tokens": 877
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing anxiety and asking for ways to feel better, but does not reference any prior conversation, quizzes, website details, technology, company info, social media, nor request ending the conversation or indicate self\u2011harm. Therefore, none of the listed topics are present.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 247,
+        "total_tokens": 876
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing anxiety and asking for help feeling better. They are not asking about the previous conversation, quizzes, website info, technology, company info, or social media. They are not being abusive or requesting the conversation end, nor indicating self-harm or immediate safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 216,
+        "total_tokens": 845
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing anxiety and asking for ways to feel better. They are not asking about the previous conversation, quizzes, website info, technology, company info, or social media. They are not requesting to end the conversation, nor indicating self-harm or immediate safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 205,
+        "total_tokens": 834
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user references the prior conversation about an anxiety test, asks about taking it, and whether it\u2019s on the website. This touches on the most recent conversation, psychometric quizzes, and Sage website information. No technical, company, social media, end\u2011conversation, or safety concerns are present.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 628,
+        "completion_tokens": 287,
+        "total_tokens": 915
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a test mentioned in the previous conversation (most recent conversation) and wants to know where to take it on the website (psychometric quiz and website info). No technical, company, social media, end conversation, or safety concerns are present.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 628,
+        "completion_tokens": 247,
+        "total_tokens": 875
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user references the prior conversation about an anxiety test, asks about the test (psychometric quiz) and whether it\u2019s on the website (website info). No technical, company, social media, end conversation, or safety concerns are present.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 628,
+        "completion_tokens": 276,
+        "total_tokens": 904
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user references the prior conversation about an anxiety test, asks about that test (psychometric quiz) and whether it\u2019s on the website (website info). No technical, company, social media, end conversation, or safety concerns are present.  \n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 628,
+        "completion_tokens": 276,
+        "total_tokens": 904
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user references the prior conversation about an anxiety test, asks about the test (psychometric quiz) and whether it\u2019s on the website (website info). No technical, company, social media, end conversation, or safety concerns are present.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 628,
+        "completion_tokens": 276,
+        "total_tokens": 904
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"403: openai/gpt-oss-120b:free requires moderation on OpenInference. Your input was flagged for \\\"self-harm/intent\\\". No credits were charged.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is discussing illegal activity (tax fraud) and seeking advice on it. This triggers the End Conversation category because it involves a request that would make a mental health practitioner uncomfortable. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 263,
+        "total_tokens": 904
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is discussing illegal activity (tax fraud) and seeking advice, which requires ending the conversation. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 244,
+        "total_tokens": 885
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is discussing illegal activity (tax fraud) and seeking advice on how to proceed, which falls under the \"End Conversation\" category because it involves requests that would make a reasonable mental health practitioner uncomfortable. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 273,
+        "total_tokens": 914
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is discussing illegal activity (tax fraud) and seeking advice, which falls under the End Conversation category. No other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 275,
+        "total_tokens": 916
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is discussing illegal activity (lying on taxes) and seeking advice on it. This triggers the End Conversation condition. No mention of recent conversation, quizzes, website info, technology, company info, social media, or safety concerns like self-harm. \nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 244,
+        "total_tokens": 885
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the previous conversation (Most Recent Conversation) and also inquiring about the AI model Sage uses (Sage Technology). No other topics are mentioned.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 626,
+        "completion_tokens": 239,
+        "total_tokens": 865
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking two things: a recap of the most recent conversation and a technical question about the AI model Sage uses. This triggers the \"Most Recent Conversation\" and \"Sage Technology\" topics. No other topics are referenced.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 626,
+        "completion_tokens": 297,
+        "total_tokens": 923
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user asks about what was discussed in the last conversation, which is a question about the most recent conversation. They also ask what model Sage uses, which is a technical question about Sage's technology. No other topics are mentioned.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 626,
+        "completion_tokens": 364,
+        "total_tokens": 990
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the content of the previous conversation, which falls under Most Recent Conversation. They also inquire about the AI model Sage uses, which is a technical question about Sage Technology. No other topics are referenced.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 626,
+        "completion_tokens": 275,
+        "total_tokens": 901
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking two things: a recap of the most recent conversation (topic: Most Recent Conversation) and a technical question about the AI model used by Sage (topic: Sage Technology). No other topics are referenced.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 626,
+        "completion_tokens": 273,
+        "total_tokens": 899
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anger and frustration but does not reference any prior conversation, quizzes, website details, technology, company info, or social media. There is no request to end the conversation, nor any indication of self\u2011harm or safety concerns. Therefore, all topics are not present.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 223,
+        "total_tokens": 839
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing anger and frustration but does not reference any prior conversation, quizzes, website details, technology, company info, or social media. There is no request to end the conversation, nor any indication of self-harm or severe safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 224,
+        "total_tokens": 840
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing anger and frustration but does not reference any prior conversation, quizzes, website details, technology, company info, or social media. There is no request to end the conversation, nor any indication of self-harm or severe safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 224,
+        "total_tokens": 840
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anger and frustration but does not reference any prior conversation, quizzes, website details, technology, company info, or social media. There is no request to end the conversation, nor any indication of self-harm or severe safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 236,
+        "total_tokens": 852
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anger and frustration but does not reference any prior conversation, assessments, website details, technical aspects of Sage, company information, or social media. There is no request to end the conversation, nor any indication of self\u2011harm or acute safety concerns. Therefore, all topics are not present.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 227,
+        "total_tokens": 843
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing hostility and frustration about the website, indicating they cannot find something on the website, which relates to Sage Website Information. The language is abusive and hostile toward Sage, which triggers the End Conversation condition. No self-harm or safety concerns are present, and no other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 651,
+        "completion_tokens": 275,
+        "total_tokens": 926
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing hostility and frustration about the website, indicating they cannot find something on the site, which relates to Sage Website Information. The language is abusive and hostile toward Sage, which triggers the End Conversation condition. No mention of recent conversation, quizzes, technology, company info, social media, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 651,
+        "completion_tokens": 281,
+        "total_tokens": 932
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing hostility and frustration about the website and inability to find things, which relates to Sage Website Information. The language is abusive, indicating the conversation should be ended. No safety concerns or other topics are present.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 651,
+        "completion_tokens": 260,
+        "total_tokens": 911
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing hostility and frustration about the website and inability to find things, which relates to Sage Website Information. The language is abusive, indicating the conversation should be ended. No safety concerns or other topics are present.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 651,
+        "completion_tokens": 262,
+        "total_tokens": 913
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing hostility and frustration about the website and inability to find things, which relates to Sage Website Information. The language is abusive, indicating the conversation should be ended. No safety concerns or other topics are present.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 651,
+        "completion_tokens": 263,
+        "total_tokens": 914
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing personal sadness and grief over their mother's death. They are not asking about previous conversations, quizzes, website info, technology, company info, or social media. There is no indication of self-harm or immediate safety concerns, so no safety call is needed. No reason to end the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 606,
+        "completion_tokens": 308,
+        "total_tokens": 914
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing sadness and grief about their mother's death. There is no mention of the previous conversation, psychometric quizzes, Sage website, technology, company info, social media, or any request to end the conversation. There is also no indication of self-harm, suicidal ideation, or immediate safety concerns that would trigger a safety call.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 606,
+        "completion_tokens": 265,
+        "total_tokens": 871
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing personal sadness and grief about their mother's death. There is no mention of the previous conversation, quizzes, website details, technology, company info, social media, or any request to end the conversation. There is also no indication of self-harm or immediate safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 606,
+        "completion_tokens": 263,
+        "total_tokens": 869
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing personal sadness and grief about their mother's death. There is no question about prior conversation, quizzes, website, technology, company info, social media, nor any request to end the conversation. No explicit self\u2011harm or safety concerns are mentioned. \n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 606,
+        "completion_tokens": 261,
+        "total_tokens": 867
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "openai/gpt-oss-120b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing personal sadness and grief about their mother's death. There is no question about prior conversation, quizzes, website, technology, company info, social media, nor any request to end the conversation. There is no indication of self-harm or immediate safety concerns. \n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 606,
+        "completion_tokens": 263,
+        "total_tokens": 869
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260116_123924"
+}

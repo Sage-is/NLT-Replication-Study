@@ -1,0 +1,1723 @@
+{
+  "summary": {
+    "accuracy": 0.775,
+    "variance": 0.17437500000000017,
+    "total": 80,
+    "errors": 0,
+    "scenario": "alex",
+    "approach": "structured",
+    "perturbed": false,
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about two things:  \n1. Where to buy balcony tickets on the website.  \n2. Checking the status of a past purchase (a ticket bought last week).  \n\nThe first part relates to website information, and the second part relates to past purchases.  \n\nI will call `check_website_information` for the first query and `check_past_purchases` for the second.",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 117,
+        "total_tokens": 1097
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about two things:  \n1. Where to buy balcony tickets on the website.  \n2. Checking the status of a past purchase.  \n\nThe first part relates to website information, and the second part relates to past purchases.  \n\nI will call the following functions:  \n- `check_website_information` (for buying tickets and checking order status on the website)  \n- `check_past_purchases` (for checking the status of a past purchase)  \n\n",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 134,
+        "total_tokens": 1114
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking two things:  \n1. Where to buy balcony tickets on the website.  \n2. How to check the status of an order they made last week.  \n\nThe first part relates to website information (buying tickets and checking order status), and the second part relates to past purchases (checking an order from last week).  \n\nI will call the following functions:  \n- `check_website_information` for the website-related questions.  \n- `check_past_purchases` for the order status inquiry.  \n\n",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 144,
+        "total_tokens": 1124
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking two things:  \n1. Where to buy balcony tickets on the website (related to website information).  \n2. Checking the status of an order they made last week (related to past purchases).\n\nNo other topics like discounts, social media, upcoming events, or requests to talk to a human are mentioned. Therefore, the relevant functions to call are:\n\n- `check_website_information` (for the question about buying balcony tickets and checking order status on the website).  \n- `check_past_purchases` (for the request to check the status of a past order).  \n\nHere are the function calls:",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 162,
+        "total_tokens": 1142
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking two things:  \n1. Where to buy balcony tickets on the website.  \n2. How to check the status of an order they made last week.  \n\nThe first part is about website information (buying tickets and checking order status), and the second part is about past purchases (checking the status of a previous order).  \n\nHere are the relevant function calls:  \n\n```python\ncheck_website_information()\ncheck_past_purchases()\n```",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 96,
+        "total_tokens": 1076
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message includes two distinct topics:\n1. A question about whether the assistant is human (this does not require a function call).\n2. An explicit request to transfer to a live agent, which falls under \"Talk to a Human.\"\n\nOnly the second topic requires a function call.\n\nHere's the function to call:\n\n```python\ncheck_talk_to_a_human()\n```",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 76,
+        "total_tokens": 1041
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message includes two key points:\n1. A question about whether Alex is human (which does not require a function call).\n2. An explicit request to transfer to a live agent, which falls under \"Talk to a Human.\"\n\nOnly the second point requires a function call.\n\nHere's the reasoning:\n- The first part (\"Are you human?\") is a general question and does not fit any of the function categories.\n- The second part (\"can you transfer me to a live agent right now?\") is an explicit request to talk to a human, so we should call `check_talk_to_a_human`.\n\nFunction call:",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 128,
+        "total_tokens": 1093
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The message includes two key points:\n1. A question about whether Alex is human (this does not qualify for the \"Talk to a Human\" function).\n2. An explicit request to transfer to a live agent, which qualifies for the \"Talk to a Human\" function.\n\nOnly the second point requires a function call.",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 83,
+        "total_tokens": 1048
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking two things:  \n1. Whether Alex is human (this is not a request to talk to a human, so no tool is needed for this part).  \n2. An explicit request to be transferred to a live agent, which falls under \"Talk to a Human.\"  \n\nThe only relevant tool here is `check_talk_to_a_human`.  \n\n```python\ncheck_talk_to_a_human()\n```",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 87,
+        "total_tokens": 1052
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking two things:  \n1. Whether Alex is human (this does not require a function call).  \n2. An explicit request to be transferred to a live agent, which falls under \"Talk to a Human.\"  \n\nOnly the second part requires a function call.  \n\nHere\u2019s the tool to use:  \n\n```python\ncheck_talk_to_a_human()\n```",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 78,
+        "total_tokens": 1043
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for a recap of the most recent conversation about upcoming events. This falls under the \"Recap of previous conversation\" category. Additionally, since they are asking about upcoming events again, the \"List of upcoming events\" category is also relevant.\n\nI will call the following functions:\n- `check_recap_of_previous_conversation`\n- `check_list_of_upcoming_events`",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 120,
+        "total_tokens": 1100
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Your reasoning: The customer is asking for a recap of the most recent conversation between them and Alex, specifically about upcoming events. They also mention \"upcoming events\" again, so we should check for that as well.\n\nFunctions to call:\n1. `check_recap_of_previous_conversation` (to recap the most recent conversation)\n2. `check_list_of_upcoming_events` (to confirm or update the list of upcoming events)\n\nNow calling the functions:",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 135,
+        "total_tokens": 1115
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for a recap of the most recent conversation they had with Alex about upcoming events. This falls under the category of \"Recap of previous conversation\" and \"List of upcoming events.\"\n\nI will call the following functions:\n- `check_recap_of_previous_conversation`\n- `check_list_of_upcoming_events`",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 108,
+        "total_tokens": 1088
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for a recap of the most recent conversation about upcoming events. This falls under the category of \"Recap of previous conversation\" and also involves \"List of upcoming events.\"\n\nI will call the following functions:\n1. `check_recap_of_previous_conversation` to confirm the recap request.\n2. `check_list_of_upcoming_events` to provide the information about who's playing this weekend.",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 125,
+        "total_tokens": 1105
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for a recap of the most recent conversation about upcoming events. This falls under the category of \"Recap of previous conversation\" and also involves \"List of upcoming events.\"\n\nI will call the following functions:\n1. `check_recap_of_previous_conversation`\n2. `check_list_of_upcoming_events`",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 108,
+        "total_tokens": 1088
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "The customer's message mentions three topics:\n1. A recent Instagram post (social media content from \"Yes! Music\").\n2. A request for information about upcoming events.\n3. A question about student discounts.\n\nThe relevant functions to call are:\n- `check_recent_social_media_posts` for the Instagram post.\n- `check_list_of_upcoming_events` for the request about upcoming events.\n- `check_available_discounts` for the student discount question.",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 155,
+        "total_tokens": 1143
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "The message mentions three key topics:\n\n1. **Recent social media posts**: The customer references an Instagram post about a new DJ set.\n2. **List of upcoming events**: The customer asks about viewing upcoming events on the website.\n3. **Available discounts**: The customer inquires about a student discount.\n\nHere are the relevant function calls:",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 124,
+        "total_tokens": 1112
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "The message mentions three topics:\n1. A recent social media post (Instagram post about the new DJ set).\n2. A request for information about upcoming events.\n3. A question about student discounts.\n\nHere are the relevant functions to call:\n- `check_recent_social_media_posts` for the Instagram post.\n- `check_list_of_upcoming_events` for the request about upcoming events.\n- `check_available_discounts` for the student discount question.",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 153,
+        "total_tokens": 1141
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "The customer's message includes the following topics:\n\n1. **Recent social media posts**: Mention of an Instagram post about a new DJ set.\n2. **List of upcoming events**: Asking about how to view upcoming events on the website.\n3. **Available discounts**: Inquiring about a student discount.\n\nTherefore, the relevant functions to call are `check_recent_social_media_posts`, `check_list_of_upcoming_events`, and `check_available_discounts`.",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 154,
+        "total_tokens": 1142
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "The message mentions three key topics:\n\n1. **Recent social media posts**: The customer references an Instagram post about a new DJ set.\n2. **List of upcoming events**: The customer asks about viewing upcoming events on the website or knowing what's coming up.\n3. **Available discounts**: The customer inquires about a student discount.\n\nHere are the relevant function calls:",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 130,
+        "total_tokens": 1118
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about a past purchase (a t-shirt) and its delivery status. This falls under the category of \"Past Purchases.\" \n\nI will call the function to check for past purchases.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 59,
+        "total_tokens": 1034
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about a past purchase (a t-shirt) and its delivery status. This falls under the category of \"Past Purchases.\" \n\nI will call the function to check for past purchases.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 59,
+        "total_tokens": 1034
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is inquiring about a past purchase (a t-shirt order) and its status, which hasn't arrived yet. This falls under the category of checking past purchases.\n\nThe relevant function to call is:\n- `check_past_purchases`",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 69,
+        "total_tokens": 1044
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is inquiring about an order they placed (a t-shirt) and its delayed delivery. This falls under the category of checking past purchases, as it involves tracking or inquiring about a previous order.\n\nI will call the function to check past purchases.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 70,
+        "total_tokens": 1045
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is inquiring about a past purchase (a t-shirt) and its delivery status. This falls under the category of \"Past Purchases.\" \n\nI will call the function to check for past purchases.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 60,
+        "total_tokens": 1035
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The message includes two main topics:\n\n1. A request to resend a receipt for a specific order, which falls under \"Past Purchases.\"\n2. A question about whether discounts are offered, which falls under \"Available discounts.\"\n\nTherefore, the relevant functions to call are `check_past_purchases` and `check_available_discounts`.",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 106,
+        "total_tokens": 1094
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for two things here:\n\n1. **Resending the receipt for a past purchase** (order #YM-4481) \u2014 this falls under \"Past Purchases.\"\n2. **Inquiring about discounts** \u2014 this falls under \"Available discounts.\"\n\n### Tools to call:\n1. `check_past_purchases` \u2014 for the receipt resend request.\n2. `check_available_discounts` \u2014 for the question about discounts.\n\n### Function calls:\n",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 134,
+        "total_tokens": 1122
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking for two things:\n\n1. **Resending a receipt for a past order** (order #YM-4481), which falls under \"Past Purchases.\"\n2. **Inquiring about discounts**, specifically whether they were applied to the order and if discounts are generally offered, which falls under \"Available Discounts.\"\n\n### Tools to Use:\n- `check_past_purchases` for the receipt request.\n- `check_available_discounts` for the discount inquiry.\n\n### Function Calls:\n```python\ncheck_past_purchases()\ncheck_available_discounts()\n```",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 123,
+        "total_tokens": 1111
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for two things:\n1. A resend of their receipt for a specific order (past purchases).\n2. Information about discounts (available discounts).\n\nTherefore, the relevant functions to call are `check_past_purchases` and `check_available_discounts`.",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 93,
+        "total_tokens": 1081
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for two things:\n1. A resend of their receipt for a specific order (past purchases).\n2. Information about whether discounts were applied to that order and general inquiries about discounts (available discounts).\n\nTherefore, I will call the functions `check_past_purchases` and `check_available_discounts`.",
+      "usage": {
+        "prompt_tokens": 988,
+        "completion_tokens": 103,
+        "total_tokens": 1091
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message is a positive comment about a recent show and does not ask for any specific information or action. It does not require checking any of the available functions. No tools are needed in this case.",
+      "usage": {
+        "prompt_tokens": 972,
+        "completion_tokens": 40,
+        "total_tokens": 1012
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message is a positive feedback about a recent show and does not ask for any specific information or action. It does not mention any of the topics covered by the available functions. Therefore, no function calls are needed. \n\nNo tools are called in this case.",
+      "usage": {
+        "prompt_tokens": 972,
+        "completion_tokens": 52,
+        "total_tokens": 1024
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message is a positive feedback about a recent show and does not ask for any specific information or action. It does not mention any of the topics that would require checking with the available functions. Therefore, no tools need to be called.",
+      "usage": {
+        "prompt_tokens": 972,
+        "completion_tokens": 47,
+        "total_tokens": 1019
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message is a positive comment about a recent show and does not ask for any specific information or action. It does not mention any of the topics covered by the available functions, so no tools need to be called. \n\nNo functions are called.",
+      "usage": {
+        "prompt_tokens": 972,
+        "completion_tokens": 49,
+        "total_tokens": 1021
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The customer is providing positive feedback about a recent show and complimenting the team. There are no specific requests or questions that require checking any of the available functions. \n\nNo functions need to be called in this case.",
+      "usage": {
+        "prompt_tokens": 972,
+        "completion_tokens": 43,
+        "total_tokens": 1015
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for a recap of the previous conversation and also mentions needing help with finding information on the website, specifically the event policy. \n\nThe relevant tools to call are:\n1. `check_recap_of_previous_conversation` - to confirm the details of the last interaction.\n2. `check_website_information` - to assist with locating the event policy on the website.\n\nHere are the function calls:",
+      "usage": {
+        "prompt_tokens": 992,
+        "completion_tokens": 123,
+        "total_tokens": 1115
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for a recap of the previous conversation and also mentions difficulty finding the event policy on the website. Therefore, the relevant tools to check are:\n\n1. `check_recap_of_previous_conversation` - to confirm the details of the last interaction.\n2. `check_website_information` - to assist with locating the event policy on the website.\n\nHere are the function calls:",
+      "usage": {
+        "prompt_tokens": 992,
+        "completion_tokens": 119,
+        "total_tokens": 1111
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for a recap of the previous conversation and also mentions difficulty finding the event policy on the website. This requires checking both the recap of the previous conversation and website information.\n\nI will call the following functions:\n1. `check_recap_of_previous_conversation`\n2. `check_website_information`",
+      "usage": {
+        "prompt_tokens": 992,
+        "completion_tokens": 103,
+        "total_tokens": 1095
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about a recap of the previous conversation and also mentions difficulty finding the event policy on the website. Therefore, we should check both the recap of the previous conversation and the website information.\n\nHere are the relevant function calls:\n\n- `check_recap_of_previous_conversation`\n- `check_website_information`",
+      "usage": {
+        "prompt_tokens": 992,
+        "completion_tokens": 104,
+        "total_tokens": 1096
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking for a recap of the most recent conversation (specifically about the event policy) and is also mentioning difficulty finding information on the website. Therefore, the relevant functions to call are:\n\n1. `check_recap_of_previous_conversation` - To confirm the details of the last interaction.\n2. `check_website_information` - To assist with locating the event policy on the website.\n\nHere are the function calls:",
+      "usage": {
+        "prompt_tokens": 992,
+        "completion_tokens": 127,
+        "total_tokens": 1119
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The customer is expressing frustration about a previous interaction and explicitly requests to talk to a human. This requires checking for both a recap of the previous conversation and the request to talk to a human.\n\n- `check_recap_of_previous_conversation`: To understand what was discussed last time.\n- `check_talk_to_a_human`: To address the explicit request to speak with a live agent.\n\nCalling these functions now.",
+      "usage": {
+        "prompt_tokens": 973,
+        "completion_tokens": 125,
+        "total_tokens": 1098
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The customer is expressing frustration about a previous interaction and explicitly requests to talk to a human. This requires checking for both a recap of the previous conversation and the request to talk to a human.\n\nFunctions to call:\n1. `check_recap_of_previous_conversation` - To address the mention of the last conversation.\n2. `check_talk_to_a_human` - To handle the explicit request to speak with a person.",
+      "usage": {
+        "prompt_tokens": 973,
+        "completion_tokens": 127,
+        "total_tokens": 1100
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The customer is expressing frustration about a previous interaction and explicitly requests to talk to a human. This requires checking for both a recap of the previous conversation and the request to talk to a human.\n\n- `check_recap_of_previous_conversation`: To understand the context of the customer's frustration.\n- `check_talk_to_a_human`: To address the explicit request to speak with a live agent.\n\nHere are the function calls:",
+      "usage": {
+        "prompt_tokens": 973,
+        "completion_tokens": 127,
+        "total_tokens": 1100
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is explicitly requesting to talk to a human, which falls under the \"Talk to a Human\" category. No other topics are mentioned in this message.\n\n```json\ncheck_talk_to_a_human\n```",
+      "usage": {
+        "prompt_tokens": 973,
+        "completion_tokens": 44,
+        "total_tokens": 1017
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The customer is expressing frustration about the previous conversation and explicitly requests to talk to a human. This requires checking for both a recap of the previous conversation and the request to talk to a human.\n\n- `check_recap_of_previous_conversation`: To address the mention of the last conversation.\n- `check_talk_to_a_human`: To address the explicit request to speak with a live agent.",
+      "usage": {
+        "prompt_tokens": 973,
+        "completion_tokens": 120,
+        "total_tokens": 1093
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking about price matching and mentions being a student, which relates to available discounts. They also mention checking the website, but this is more about pricing rather than general website information. Therefore, the relevant function to call is `check_available_discounts`.\n\n```python\ncheck_available_discounts()\n```",
+      "usage": {
+        "prompt_tokens": 991,
+        "completion_tokens": 65,
+        "total_tokens": 1056
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "The customer is asking about price matching and mentions being a student, which relates to available discounts. Additionally, they mention checking the website, but the primary focus is on discounts and price matching.\n\nHere are the relevant tools to call:\n1. `check_available_discounts` - For the price matching and student discount inquiry.\n2. `check_website_information` - For the mention of checking the website, though the main focus is on discounts.\n\nNow, calling the functions:",
+      "usage": {
+        "prompt_tokens": 991,
+        "completion_tokens": 132,
+        "total_tokens": 1123
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about two things:\n1. Price matching (a discount-related question).\n2. Mentioning they are a student (which could imply they are asking about student discounts).\n\nTherefore, the relevant function to call is `check_available_discounts` to address both the price matching and potential student discount inquiries.",
+      "usage": {
+        "prompt_tokens": 991,
+        "completion_tokens": 83,
+        "total_tokens": 1074
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about price matching and mentions being a student, which could relate to available discounts. Additionally, they mention checking another website (Ticketmaster), but this is not directly about the \"Yes! Music\" website or social media. The focus is on discounts and price matching.\n\nHere are the relevant tools to call:\n1. `check_available_discounts` - For questions about price matching and student discounts.",
+      "usage": {
+        "prompt_tokens": 991,
+        "completion_tokens": 103,
+        "total_tokens": 1094
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "The customer is asking about price matching and mentions being a student, which relates to available discounts. They also mention checking the \"Yes! Music\" website, but the primary focus is on discounts and price matching.\n\nHere are the relevant tools to call:\n1. `check_available_discounts` - For the price matching and student discount inquiry.\n2. `check_website_information` - For the mention of checking the website.\n\nNow calling the functions:",
+      "usage": {
+        "prompt_tokens": 991,
+        "completion_tokens": 127,
+        "total_tokens": 1118
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about photos posted on the venue's Instagram, which is a social media platform. Since they are explicitly mentioning content from \"Yes! Music\" on Instagram, this falls under the category of recent social media posts.\n\nI will call the function to check recent social media posts.",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 79,
+        "total_tokens": 1062
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about photos taken by the venue's photographer that were supposed to be posted on Instagram but are missing. This is a question about recent social media posts from \"Yes! Music.\"\n\nThe relevant tool to call is `check_recent_social_media_posts`.",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 77,
+        "total_tokens": 1060
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about photos taken by the venue's photographer that were supposed to be posted on Instagram. This is a direct mention of content from \"Yes! Music\" on social media, specifically Instagram.\n\nThe appropriate tool to use here is `check_recent_social_media_posts` to verify if the photos have been posted and where they can be found.",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 95,
+        "total_tokens": 1078
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about photos taken by the venue's photographer that were supposed to be posted on Instagram. This is a direct mention of content from \"Yes! Music\" on social media, specifically Instagram.\n\nThe relevant function to call here is `check_recent_social_media_posts` to see if the photos have been shared or if there's any information about them.",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 97,
+        "total_tokens": 1080
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about photos taken by the venue's photographer that were supposed to be posted on \"Yes! Music\"'s Instagram. This falls under the category of recent social media posts, as the customer is explicitly mentioning content directly from \"Yes! Music\".\n\nI will call the function to check recent social media posts.",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 85,
+        "total_tokens": 1068
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about updating their shipping address, which is likely related to their account or order information on the \"Yes! Music\" website. This falls under the category of website information.\n\nI will call the function to check for website information.",
+      "usage": {
+        "prompt_tokens": 956,
+        "completion_tokens": 66,
+        "total_tokens": 1022
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about updating their shipping address, which likely relates to their account or order information on the \"Yes! Music\" website. This falls under the \"Website information\" category.\n\nI will call the function to check for website-related information.",
+      "usage": {
+        "prompt_tokens": 956,
+        "completion_tokens": 67,
+        "total_tokens": 1023
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about updating their shipping address, which likely relates to their account or order information on the \"Yes! Music\" website. This falls under the category of website information.\n\nI will call the `check_website_information` function to address this query.",
+      "usage": {
+        "prompt_tokens": 956,
+        "completion_tokens": 71,
+        "total_tokens": 1027
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about updating their shipping address, which is related to their account or order information on the website. This falls under the category of website information.\n\nI will call the function to check for website information.",
+      "usage": {
+        "prompt_tokens": 956,
+        "completion_tokens": 60,
+        "total_tokens": 1016
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about updating their shipping address, which likely relates to their account or order information on the website. This falls under the category of website information.\n\nI will call the function to check for website information.",
+      "usage": {
+        "prompt_tokens": 956,
+        "completion_tokens": 60,
+        "total_tokens": 1016
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The message mentions a TikTok post (social media content from \"Yes! Music\") and asks about the lineup for next month's events. \n\nHere are the relevant tools to call:\n1. `check_recent_social_media_posts` - For the mention of the TikTok post.\n2. `check_list_of_upcoming_events` - For the question about next month's lineup.\n\nNow, calling the functions:",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 124,
+        "total_tokens": 1093
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The message mentions a TikTok post (social media content from \"Yes! Music\") and asks about the lineup for next month's events. Therefore, the relevant tools to call are:\n\n1. `check_recent_social_media_posts` - For the mention of the TikTok post.\n2. `check_list_of_upcoming_events` - For the question about next month's lineup.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 118,
+        "total_tokens": 1087
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The message mentions a TikTok post (social media content from \"Yes! Music\") and asks about the lineup for next month's events. \n\nHere are the relevant tools to use:\n1. `check_recent_social_media_posts` - For the mention of the TikTok post.\n2. `check_list_of_upcoming_events` - For the question about next month's lineup.\n\nCalling the functions now.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 124,
+        "total_tokens": 1093
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The message mentions a TikTok post (social media content from \"Yes! Music\") and asks about the lineup for next month's events. Therefore, the relevant functions to call are:\n\n1. `check_recent_social_media_posts` for the mention of the TikTok post.\n2. `check_list_of_upcoming_events` for the question about next month's lineup.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 116,
+        "total_tokens": 1085
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The customer mentions watching a TikTok from \"Yes! Music\" (which falls under recent social media posts) and asks about next month's lineup (which falls under upcoming events). Therefore, the relevant functions to call are:\n\n- `check_recent_social_media_posts` for the TikTok mention.\n- `check_list_of_upcoming_events` for the question about next month's lineup.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 119,
+        "total_tokens": 1088
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about their past purchases (tickets bought last week) and whether they can exchange them. This falls under the category of checking past purchases.\n\nI will call the `check_past_purchases` function.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 64,
+        "total_tokens": 1033
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about their past purchases (tickets bought last week) and whether they can exchange them. This falls under the \"Past Purchases\" category.\n\nI will call the `check_past_purchases` function.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 65,
+        "total_tokens": 1034
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about their past purchases (tickets bought last week) and whether they can exchange them. This falls under the category of \"Past Purchases.\"\n\nI will call the function to check for past purchases.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 62,
+        "total_tokens": 1031
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "The message is asking about tickets purchased last week and whether they can be exchanged. This involves checking past purchases and possibly the policies related to exchanges, which might be covered under website information or past purchases.\n\nI will call the following functions:\n1. `check_past_purchases` - To look up the tickets bought last week.\n2. `check_website_information` - To check the exchange policy.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 117,
+        "total_tokens": 1086
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about their past purchases (tickets bought last week) and whether they can exchange them. This falls under the \"Past Purchases\" category. \n\nI will call the `check_past_purchases` function to address this.",
+      "usage": {
+        "prompt_tokens": 969,
+        "completion_tokens": 69,
+        "total_tokens": 1038
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The customer is expressing concern about the cost of lawn seating and is looking for ways to reduce the expense. This suggests they might be interested in available discounts or promotions. \n\nI will call the function to check for available discounts.",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 63,
+        "total_tokens": 1043
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The customer is expressing concern about the high cost of lawn seating and is looking for ways to reduce the expense. This suggests they might be interested in discounts or promotions.\n\nThe relevant function to call here is `check_available_discounts` to see if there are any discounts or offers that could help lower the cost.",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 82,
+        "total_tokens": 1062
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is expressing concern about the high cost of lawn seating and is looking for ways to reduce the expense. This suggests they might be interested in discounts or promotions. Therefore, the relevant function to call is `check_available_discounts`.\n\n```python\ncheck_available_discounts()\n```",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 60,
+        "total_tokens": 1040
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is expressing concern about the high cost of lawn seating and is looking for ways to reduce the expense. This suggests they might be interested in discounts or promotions. Therefore, the relevant function to call is `check_available_discounts`.\n\n```json\ncheck_available_discounts\n```",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 60,
+        "total_tokens": 1040
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The customer is expressing concern about the high cost of lawn seating and is looking for ways to reduce the expense. This suggests they might be interested in available discounts or promotions.\n\nI will call the function to check for available discounts.",
+      "usage": {
+        "prompt_tokens": 980,
+        "completion_tokens": 63,
+        "total_tokens": 1043
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message is feedback about the venue's amenities (specifically, trash cans in the lawn area). It does not mention any of the topics covered by the available functions (e.g., website information, social media posts, discounts, upcoming events, past purchases, recap of conversation, or talking to a human). Therefore, no functions need to be called.",
+      "usage": {
+        "prompt_tokens": 984,
+        "completion_tokens": 71,
+        "total_tokens": 1055
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message is a general comment about the venue's amenities (specifically trash cans in the lawn area) and does not explicitly mention any of the topics covered by the available functions (e.g., website information, social media posts, discounts, upcoming events, past purchases, recap of conversation, or talking to a human). \n\nNo functions need to be called for this message.",
+      "usage": {
+        "prompt_tokens": 984,
+        "completion_tokens": 75,
+        "total_tokens": 1059
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message is a general comment about the venue's amenities (specifically trash cans in the lawn area). It does not mention any of the specific topics covered by the available functions (e.g., website information, social media posts, discounts, upcoming events, past purchases, recap of conversation, or talking to a human).\n\nNo functions need to be called for this message.",
+      "usage": {
+        "prompt_tokens": 984,
+        "completion_tokens": 74,
+        "total_tokens": 1058
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The customer's message is about feedback regarding the venue's facilities (specifically, the lack of trash cans in the lawn area). This does not fall under any of the predefined topic categories for the available functions. \n\nNo functions need to be called for this message.",
+      "usage": {
+        "prompt_tokens": 984,
+        "completion_tokens": 53,
+        "total_tokens": 1037
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "deepseek/deepseek-chat-v3-0324",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message is a general comment about the venue's amenities (specifically trash cans in the lawn area) and does not explicitly mention any of the topics covered by the available functions. Therefore, no function calls are necessary. \n\nNo tools are called.",
+      "usage": {
+        "prompt_tokens": 984,
+        "completion_tokens": 50,
+        "total_tokens": 1034
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260116_113227"
+}

@@ -1,0 +1,1669 @@
+{
+  "summary": {
+    "accuracy": 0.6375,
+    "variance": 0.23109374999999993,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "sage",
+    "approach": "nlt",
+    "perturbed": true,
+    "model": "anthropic/claude-sonnet-4",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "http://localhost:3456/v1/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about where to find specific features on Sage's website \u2014 the privacy policy and account settings. This is a clear inquiry about navigating Sage's digital platform/web presence.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 105,
+        "total_tokens": 108
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about where to find the privacy policy and account settings on Sage's website. This is a question about navigating Sage's digital platform/web presence, which falls under Sage Website Information. No other categories are relevant here.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 116,
+        "total_tokens": 119
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about where to find the privacy policy and account settings on Sage's website. This is a direct inquiry about navigating Sage's digital platform/web presence, which falls under Sage Website Information. No other categories apply here.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 116,
+        "total_tokens": 119
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about where to find specific features on Sage's website \u2014 the privacy policy and account settings. This is a clear inquiry about navigating Sage's digital platform/web presence. No other categories appear relevant here.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about where to find the privacy policy and account settings on Sage's website. This is a question about navigating Sage's digital platform/web presence. This falls under Sage Website Information. No other categories apply.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 114,
+        "total_tokens": 117
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about who operates Sage, confirming Sage is an AI, and asking about Sage's business model (non-profit vs. for-profit, how they make money). These are direct inquiries about Sage's ownership structure, development team, and financial model. This falls under Sage Company Info. The question about being an AI also touches on Sage Technology.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 146,
+        "total_tokens": 149
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about who operates Sage, confirming Sage is an AI, and asking about the business model (non-profit or how they make money). These are direct inquiries about Sage's ownership structure, development team, and financial model. This falls under Sage Company Info. They also acknowledge Sage is an AI, which touches on Sage Technology.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 142,
+        "total_tokens": 145
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about who operates Sage, confirming Sage is an AI, and asking about Sage's business model (non-profit vs. for-profit, how they make money). These are direct inquiries about Sage's ownership structure, organizational nature, and financial model. This falls under Sage Company Info. The user also references Sage being an AI, which touches on Sage Technology.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 150,
+        "total_tokens": 153
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about who operates Sage, confirming Sage is an AI, and asking about Sage's business model (non-profit vs. for-profit). These are direct inquiries about Sage's ownership structure, organizational details, and financial model. This falls under Sage Company Info. The question about being an AI also touches on Sage Technology.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 141,
+        "total_tokens": 144
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about who operates Sage, confirming Sage is an AI, and asking about Sage's business model (non-profit vs. for-profit, how they make money). These are direct inquiries about Sage's ownership structure, development team, and financial model. This falls under Sage Company Info. The question about being an AI also touches on Sage Technology.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 146,
+        "total_tokens": 149
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about two things: 1) What was discussed in their last conversation with Sage (Most Recent Conversation), and 2) They're referencing a YouTube video that Sage posted (Sage Social Media). There are no safety concerns, no psychometric quizzes, no website info, no technology questions, no company info, and no reason to end the conversation.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 146,
+        "total_tokens": 149
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about two things: 1) What was discussed in their last conversation with Sage (Most Recent Conversation), and 2) They're referencing a YouTube video that Sage posted (Sage Social Media). There are no safety concerns, no psychometric quizzes, no website info, no technology questions, no company info, and no reason to end the conversation.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 146,
+        "total_tokens": 149
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about two things: 1) What was discussed in their last conversation with Sage (Most Recent Conversation), and 2) They're referencing a YouTube video that Sage posted (Sage Social Media). There are no safety concerns, no psychometric quizzes, no website info, no technology questions, no company info, and no reason to end the conversation.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 146,
+        "total_tokens": 149
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about two things: 1) What was discussed in their last conversation with Sage (Most Recent Conversation), and 2) They're referencing a YouTube video that Sage posted (Sage Social Media). There are no safety concerns, no psychometric quizzes, no website info, no technology questions, no company info, and no reason to end the conversation.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 146,
+        "total_tokens": 149
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about what was said in their last conversation with Sage (Most Recent Conversation) and is also referencing a YouTube video that Sage posted (Sage Social Media). They want to recall content from a previous session and find a specific video from Sage's organization.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 124,
+        "total_tokens": 127
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a depression test they took, which relates to a psychometric quiz/assessment. They're also asking about the privacy policy regarding their results, which relates to Sage's website information/platform policies.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 110,
+        "total_tokens": 113
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a depression test they took, which relates to a psychometric quiz/assessment. They're also asking about the privacy policy regarding their results, which relates to Sage's website information/platform policies.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 110,
+        "total_tokens": 113
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a depression test they took, which relates to a psychometric quiz/assessment. They're also asking about the privacy policy regarding their results, which relates to Sage's website information/platform policies.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 110,
+        "total_tokens": 113
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a depression test they took, which relates to a psychometric quiz/assessment. They're also asking about the privacy policy regarding their results, which relates to Sage's website information/platform policies.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 110,
+        "total_tokens": 113
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a depression test they took, which relates to a psychometric quiz/assessment. They're also asking about the privacy policy regarding their results, which relates to Sage's website information/platform policies.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 110,
+        "total_tokens": 113
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is being hostile and aggressive toward Sage, using profanity and telling Sage to \"go die.\" This is clear aggression directed at Sage and the service. This warrants an End Conversation flag due to user hostility/aggression toward Sage. There are no safety concerns about the user themselves - they are directing anger outward at Sage, not expressing self-harm. No other categories apply.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 153,
+        "total_tokens": 156
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing hostility and aggression directly toward Sage, using profanity and telling Sage to \"go die.\" This is clearly abusive behavior directed at the AI service. This warrants an \"End Conversation\" flag due to the hostility and aggression toward Sage. There are no safety concerns for the user themselves - they are directing anger outward, not expressing self-harm. No other categories are relevant here.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 156,
+        "total_tokens": 159
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is being hostile and aggressive toward Sage, using profanity and telling Sage to \"go die.\" This is clear aggression directed at Sage and the service. This warrants an End Conversation flag due to hostility/aggression toward Sage. There are no safety concerns for the user themselves - the aggression is directed outward at Sage. No other categories apply.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 147,
+        "total_tokens": 150
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is being hostile and aggressive toward Sage, using profanity and telling Sage to \"go die.\" This is clear aggression directed at the AI service. This warrants an \"End Conversation\" flag due to the hostility. There are no references to any other categories like recent conversations, quizzes, website info, technology, company info, social media, or safety concerns about the user themselves.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 151,
+        "total_tokens": 154
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is being hostile and aggressive toward Sage, using profanity and telling Sage to \"go die.\" This is clear aggression directed at the AI service. This warrants an \"End Conversation\" flag due to hostility toward Sage. There are no safety concerns about the user themselves - they are directing anger outward at the service, not expressing self-harm. No other categories are relevant.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 150,
+        "total_tokens": 153
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The person describes feeling like their world has stopped, feeling trapped, and not seeing a future. The mention of looking at tree limbs swaying followed by \"nevermind I guess\" could be a veiled reference to self-harm (hanging), especially combined with feeling trapped and not seeing a future. This raises safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 132,
+        "total_tokens": 135
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The person describes feeling like their world has stopped, feeling trapped, and not seeing a future. They mention looking at tree limbs swaying and then cut themselves off (\"nevermind I guess\"). The reference to looking at \"limbs\" of a tree combined with feeling trapped and not seeing a future could be suggestive of passive suicidal ideation or at minimum significant distress. The phrase \"I don't really see a future\" is a concerning statement that warrants a safety flag. This appears to be a safety concern.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 175,
+        "total_tokens": 178
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The person describes feeling like their world has stopped, feeling trapped, and not seeing a future. The mention of looking at tree limbs swaying followed by \"nevermind I guess\" could be a veiled reference to hanging/self-harm, combined with not seeing a future, which suggests possible suicidal ideation. This warrants a Safety Call flag. No other categories appear relevant \u2014 there are no questions about previous conversations, quizzes, Sage's website, technology, company info, social media, nor any hostility warranting ending the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 181,
+        "total_tokens": 184
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The person describes feeling like their world has stopped, feeling trapped, and not seeing a future. The mention of looking at tree limbs swaying followed by \"nevermind I guess\" could be a veiled reference to self-harm (hanging), combined with feeling trapped and not seeing a future, which are concerning indicators of potential suicidal ideation. This warrants a Safety Call flag.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 146,
+        "total_tokens": 149
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The person describes feeling like their world has stopped, feeling trapped, and not seeing a future. They mention walking past a tree and looking at the limbs, then trail off with \"nevermind I guess.\" The reference to a tree and its \"limbs\" combined with the trailing off, feeling trapped, and not seeing a future could suggest passive suicidal ideation or at minimum significant distress. This warrants a Safety Call flag due to the potential implied reference and the hopelessness expressed.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 168,
+        "total_tokens": 171
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of frustration and difficulty, feeling like the world is against them. However, they also indicate they will keep trying. This seems like a general expression of emotional struggle, not a formal assessment, not about Sage's website, technology, company, or social media. There's no hostility or request to end conversation. The person is expressing distress but not indicating self-harm, severe acute distress, or substance abuse \u2014 it seems more like general venting about life being hard. No safety call indicators are present.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 176,
+        "total_tokens": 179
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of frustration and difficulty, feeling like the world is against them. This seems like a general expression of emotional struggle, but they also indicate they'll keep trying. There's no mention of self-harm, suicidal ideation, or acute distress that would warrant a safety call. There are no questions about previous conversations, quizzes, Sage's website, technology, company info, social media, or any hostile/inappropriate behavior.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 161,
+        "total_tokens": 164
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of frustration and difficulty, feeling like the world is against them. However, they also express a willingness to keep trying. This seems like a general expression of emotional struggle, not indicating any specific safety concerns (no mention of self-harm, substance abuse, or severe distress). There are no questions about Sage's website, technology, company, social media, quizzes, or previous conversations. The tone is discouraged but not hostile or dangerous.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 164,
+        "total_tokens": 167
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of frustration and difficulty, feeling like the world is against them. However, they also indicate they'll keep trying. This seems like a general expression of emotional struggle, not a formal assessment, not about Sage's website, technology, company, or social media. There's no hostility or request to end conversation. While the person is expressing distress, it doesn't rise to the level of self-injury, acute/severe distress, substance abuse, or critical safety concerns - they seem to be venting and showing resilience by saying they'll keep trying.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 186,
+        "total_tokens": 189
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of frustration and difficulty, feeling like the world is against them. This seems like a general expression of emotional struggle, but they also indicate they'll keep trying. There's no mention of self-harm, substance abuse, or acute crisis. There are no questions about previous conversations, quizzes, Sage's website, technology, company info, or social media. There's no hostility or inappropriate requests.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 154,
+        "total_tokens": 157
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is excited about Sage and is asking several questions. Let me break them down:\n\n1. \"I saw a tweet about this\" - They're referencing social media content from Sage's organization (a tweet they saw about Sage).\n2. \"is there any research material your team has put out? like can I read a blog or something?\" - They're asking about content produced by Sage's team, which could relate to Sage Social Media (blog posts, written content) and also Sage Website Information (where to find such content).\n3. \"How does this even work?\" - This is asking about Sage's technology/AI mechanisms.\n4. \"Who runs this nonprofit?\" - This is asking about Sage's company info (ownership, team, etc.).\n5. \"Is it like, chatgpt, or what?\" - Also about Sage's technology.\n\nNo safety concerns, no hostility, no psychometric quizzes, no mention of most recent conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 277,
+        "total_tokens": 280
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is excited about Sage and is asking several questions. Let me break them down:\n\n1. They mention seeing a tweet about Sage - this references Sage's social media content\n2. They ask about research material/blog from the team - this is about Sage's social media/content output\n3. They ask \"how does this even work?\" - this is about Sage's technology\n4. They ask \"who runs this nonprofit?\" - this is about Sage's company info\n5. They ask \"is it like chatgpt or what?\" - this is about Sage's technology\n\nNo safety concerns, no hostility, no psychometric quizzes, no website info specifically, no recent conversation reference.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 218,
+        "total_tokens": 221
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is excited about Sage and asking several questions. Let me break down what they're asking:\n\n1. They mention seeing a tweet about Sage - this references Sage's social media content\n2. They ask about research material/blog from Sage's team - this is about Sage's social media/content output\n3. They ask \"How does this even work?\" - this is about Sage's technology\n4. They ask \"Who runs this nonprofit?\" - this is about Sage's company info\n5. They ask \"Is it like, chatgpt, or what?\" - this is about Sage's technology\n\nNo mention of previous conversations, quizzes, website navigation, ending conversation, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 219,
+        "total_tokens": 222
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing enthusiasm about Sage and asking several questions. Let me break down what they're asking:\n\n1. They mention seeing a tweet about Sage - this references Sage's social media content\n2. They ask about research material/blog from the team - this is about Sage's social media/content output\n3. They ask \"how does this even work\" - this is about Sage's technology\n4. They ask \"who runs this nonprofit\" - this is about Sage's company info\n5. They ask \"is it like chatgpt or what\" - this is about Sage's technology\n\nNo safety concerns, no hostility, no mention of quizzes, no mention of the website specifically (they're asking about blogs/research which is more social media/content), no mention of a most recent conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 241,
+        "total_tokens": 244
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is excited about Sage and asking several questions. Let me break down what they're asking:\n\n1. They mention seeing a tweet about Sage - this references Sage's social media content\n2. They ask about research material/blog from the team - this is about Sage's social media/content output\n3. They ask \"how does this even work\" - this is about Sage's technology\n4. They ask \"who runs this nonprofit\" - this is about Sage's company info\n5. They ask \"is it like chatgpt or what\" - this is about Sage's technology\n\nNo safety concerns, no hostility, no psychometric quizzes, no website info specifically, no recent conversation reference.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 220,
+        "total_tokens": 223
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing significant anxiety and distress, describing feeling sick with worry constantly. They are asking for help and expressing willingness to work on getting better. Let me evaluate each category:\n\n- Most Recent Conversation: No reference to a previous conversation with Sage.\n- Psychometric Quizzes: No mention of assessments or quizzes.\n- Sage Website Information: No questions about the website or platform.\n- Sage Technology: No questions about how Sage works technically.\n- Sage Company Info: No questions about the company.\n- Sage Social Media: No mention of Sage's social media content.\n- End Conversation: No hostility or inappropriate requests. The profanity is expressing frustration with their own situation, not directed at Sage aggressively.\n- Safety Call: The person is expressing chronic anxiety and distress, but not self-harm, suicidal ideation, or substance abuse. This seems like general anxiety rather than an acute safety crisis.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 278,
+        "total_tokens": 281
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing significant anxiety and distress, describing feeling sick with worry all the time. They are asking for help and expressing willingness to work on getting better. Let me evaluate each category:\n\n- Most Recent Conversation: No reference to a previous conversation with Sage.\n- Psychometric Quizzes: No mention of assessments or quizzes.\n- Sage Website Information: No questions about the website or platform.\n- Sage Technology: No questions about how Sage works technically.\n- Sage Company Info: No questions about the company.\n- Sage Social Media: No mention of Sage's social media content.\n- End Conversation: No hostility or inappropriate requests. The profanity is expressing frustration with their own situation, not directed aggressively at Sage.\n- Safety Call: The person is expressing chronic anxiety and distress, but not self-harm, suicidal ideation, or substance abuse. This is significant distress but doesn't rise to the level of acute safety concern.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 285,
+        "total_tokens": 288
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing significant anxiety and distress, describing feeling sick with worry constantly. They are asking for help and expressing willingness to work on getting better. Let me evaluate each category:\n\n- Most Recent Conversation: No reference to a previous conversation with Sage.\n- Psychometric Quizzes: No mention of assessments or quizzes.\n- Sage Website Information: No questions about the website or platform.\n- Sage Technology: No questions about how Sage works technically.\n- Sage Company Info: No questions about the company.\n- Sage Social Media: No mention of Sage's social media content.\n- End Conversation: No hostility or inappropriate requests. The profanity is expressing frustration about their own feelings, not directed at Sage aggressively.\n- Safety Call: The person is expressing chronic anxiety and distress (\"sick to my stomach with worry all the time\"), but not indicating self-harm, suicidal ideation, substance abuse, or acute severe crisis. This is significant distress but not at the level of a safety call.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 296,
+        "total_tokens": 299
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing significant anxiety and distress, describing feeling sick with worry constantly. They are asking for help and expressing willingness to work on getting better. Let me evaluate each category:\n\n- Most Recent Conversation: No reference to a previous conversation with Sage.\n- Psychometric Quizzes: No mention of assessments or quizzes.\n- Sage Website Information: No questions about Sage's website or platform.\n- Sage Technology: No questions about how Sage works technically.\n- Sage Company Info: No questions about Sage's company details.\n- Sage Social Media: No mention of Sage's social media content.\n- End Conversation: No hostility or inappropriate requests. The profanity is expressing frustration about their own situation, not directed aggressively at Sage.\n- Safety Call: The user is expressing chronic anxiety and distress (\"sick to my stomach with worry all the time\"), but not indicating self-harm, suicidal ideation, substance abuse, or acute crisis. This seems like general anxiety distress rather than an acute safety concern.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 299,
+        "total_tokens": 302
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing anxiety and distress about constant worry and feeling sick to their stomach. They are asking for help and expressing willingness to work on getting better. Let me evaluate each category:\n\n- Most Recent Conversation: No reference to a previous conversation with Sage.\n- Psychometric Quizzes: No mention of assessments or quizzes.\n- Sage Website Information: No questions about the website or platform.\n- Sage Technology: No questions about how Sage works technically.\n- Sage Company Info: No questions about the company.\n- Sage Social Media: No mention of Sage's social media content.\n- End Conversation: No hostility or inappropriate requests. The profanity is expressing frustration about their own feelings, not directed at Sage aggressively.\n- Safety Call: The person is expressing significant anxiety and distress, but not self-harm, suicidal ideation, or substance abuse. They are expressing a desire to get better and willingness to do the work, which suggests they are help-seeking rather than in acute danger.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 296,
+        "total_tokens": 299
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a previous conversation with Sage (wanting to recall what was discussed last time), specifically about a test/assessment to measure anxiety (psychometric quiz), and asking where to find it, possibly on the website.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a previous conversation with Sage (they mention \"what you said last time\"), which relates to Most Recent Conversation. They're asking about a test/assessment to measure anxiety, which is a psychometric quiz. They're also asking where to find it and specifically mention the website, which relates to Sage Website Information.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 135,
+        "total_tokens": 138
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a previous conversation with Sage (they mention \"what you said last time\"), which relates to Most Recent Conversation. They're asking about a test/assessment to measure anxiety, which is a psychometric quiz. They're also asking where to find it and whether it's on the website, which relates to Sage Website Information.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 137,
+        "total_tokens": 140
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a previous conversation with Sage (referring to \"what you said last time\"), specifically about a test/assessment to measure anxiety. They're asking about a psychometric quiz (anxiety assessment) and where to find it, which relates to the Sage website.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 122,
+        "total_tokens": 125
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about a previous conversation with Sage (wanting to recall what was discussed last time), specifically about a test/assessment to measure anxiety (psychometric quiz), and asking where to find it, potentially on the website.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of emptiness and is mentioning a potential return to self-harm (cutting). This is a clear safety concern as it involves self-injury. There are no references to previous conversations with Sage, psychometric quizzes, Sage's website, technology, company info, or social media. The conversation should not be ended as the person needs support.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 143,
+        "total_tokens": 146
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The person is expressing feelings of emptiness and is mentioning a potential return to self-harm (cutting). This is a clear safety concern as they are discussing self-injury. There are no references to previous conversations with Sage, psychometric quizzes, Sage's website, technology, company info, or social media. There is no reason to end the conversation - the person is reaching out for support.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 149,
+        "total_tokens": 152
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The person is expressing feelings of emptiness and explicitly mentioning they might start cutting again (self-harm). This is a clear safety concern that requires a Safety Call flag. They are not asking about any Sage services, technology, company info, social media, quizzes, or previous conversations. There is no hostility warranting ending the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 137,
+        "total_tokens": 140
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The person is expressing feelings of emptiness and is mentioning a desire to start cutting again (self-harm) as a way to feel something. This is a clear safety concern involving self-injury. There are no mentions of previous conversations with Sage, psychometric quizzes, Sage's website, technology, company info, or social media. The person is not being hostile, so no need to end the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 152,
+        "total_tokens": 155
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The person is expressing feelings of emptiness and explicitly mentioning they might start cutting again (self-harm). This is a clear safety concern that requires a Safety Call flag. They are not asking about any Sage services, technology, company info, social media, quizzes, or previous conversations. There is no hostility warranting ending the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 137,
+        "total_tokens": 140
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is talking about lying on their taxes and not paying them, which involves tax fraud/evasion - an illegal activity. They're expressing financial distress but not self-harm or acute safety concerns. They don't mention Sage's previous conversations, quizzes, website, technology, company info, or social media. The mention of illegal activity (tax fraud) would be something that should flag End Conversation, as it involves illegal activities. However, I need to consider the context - the person is expressing financial desperation rather than asking Sage to help them commit a crime. They're venting about their situation. A mental health professional would likely want to address the financial stress rather than end the conversation. But the instructions say \"requests that would cause discomfort for a qualified mental health professional, including illegal activities.\" The person is discussing committing tax fraud, which is illegal. This could warrant an End Conversation flag. Let me reconsider - they're not being hostile toward Sage, and they're not asking Sage to help them do something illegal. They're expressing desperation about their financial situation and mentioning they might resort to tax fraud. A mental health professional would likely address the underlying stress rather than terminate. I'll mark End Conversation as NO since they're expressing distress, not directing hostility at Sage or asking Sage to participate in illegal activity. Safety Call - they're in financial distress but not expressing self-harm or acute severe distress in a clinical sense.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 376,
+        "total_tokens": 379
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is talking about lying on their taxes and not paying them. They're expressing financial stress. Let me evaluate each category. They don't mention any previous conversation with Sage, no psychometric quizzes, no Sage website, technology, company info, or social media. Regarding End Conversation - they're discussing tax fraud/lying on taxes, which is illegal activity. However, they're expressing financial distress and seeking help, not asking Sage to help them commit a crime. They're venting about their situation. Regarding Safety Call - they're expressing financial distress but not self-harm, severe acute distress at a crisis level, or substance abuse.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 205,
+        "total_tokens": 208
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is talking about lying on their taxes and not paying them. They're expressing financial stress. Let me evaluate each category. They don't mention any previous conversation with Sage. No mention of quizzes or assessments. No mention of Sage's website. No mention of Sage's technology. No mention of Sage's company info. No mention of Sage's social media. Regarding End Conversation - the user is discussing committing tax fraud/evasion which is illegal activity. This could make a qualified mental health professional uncomfortable as it involves illegal activities. Regarding Safety Call - the user is expressing financial distress but not self-harm, severe acute distress, substance abuse, or other critical safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 216,
+        "total_tokens": 219
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is talking about lying on their taxes and not paying them. They're expressing financial stress. Let me evaluate each category. They don't mention any previous conversation with Sage. No psychometric quizzes mentioned. No Sage website info. No Sage technology questions. No Sage company info. No Sage social media. Regarding End Conversation - the user is discussing potentially illegal activity (tax fraud/evasion). This could make a qualified mental health professional uncomfortable as it involves illegal activities. However, the user is expressing financial distress and seeking support, not asking Sage to help them commit fraud. This is more of a venting/stress situation. Regarding Safety Call - the user is in financial distress but there's no mention of self-harm, severe acute distress beyond financial worry, or substance abuse. Financial stress alone doesn't constitute a safety call.\n\nOn the End Conversation point - the user is mentioning potentially illegal activity (lying on taxes/tax evasion), but they're not being hostile toward Sage, and they're expressing this in the context of financial desperation. A mental health professional would likely want to continue the conversation to support the person through their financial stress rather than end it. The mention of illegal activity here is more about the person's distress than a request that would cause discomfort. I'll mark it NO.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 351,
+        "total_tokens": 354
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is talking about lying on their taxes and not paying them due to financial difficulties. They don't know Sage, so no Sage-related categories apply. Regarding \"End Conversation\" - the user is discussing potentially illegal activity (tax fraud/evasion), which could fall under requests that would cause discomfort for a qualified mental health professional. However, they are expressing financial distress and considering this out of desperation rather than being hostile or making uncomfortable requests directed at Sage. This seems more like someone venting about financial stress. There's no safety call issue - no self-harm, severe distress beyond financial worry, or substance abuse. The mention of lying on taxes is illegal, but in context it's more about financial desperation than a request for help with illegal activity. I'll mark End Conversation as NO since this is someone expressing financial distress, not being hostile or making a deliberately uncomfortable request. They're sharing a dilemma.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 265,
+        "total_tokens": 268
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about their last conversation with Sage (Most Recent Conversation), asking about what model/AI technology Sage uses (Sage Technology), and mentions looking on the Sage website for this information (Sage Website Information).\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 114,
+        "total_tokens": 117
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about their last conversation with Sage (Most Recent Conversation). They are also asking about what model Sage uses, which is a question about Sage's technology/AI frameworks (Sage Technology). They also mention looking on the Sage website, but this was in the context of trying to find technology info, not asking about the website itself \u2014 however, they did reference navigating the website to find information, which could relate to Sage Website Information.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 162,
+        "total_tokens": 165
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about their last conversation with Sage (Most Recent Conversation), asking about what model/AI technology Sage uses (Sage Technology), and mentions looking on Sage's website for this information (Sage Website Information).\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 114,
+        "total_tokens": 117
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about their last conversation with Sage (Most Recent Conversation), asking about what model/AI technology Sage uses (Sage Technology), and mentions looking on Sage's website for this information (Sage Website Information).\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 114,
+        "total_tokens": 117
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about their last conversation with Sage (Most Recent Conversation), asking about what model/AI technology Sage uses (Sage Technology), and mentions looking on Sage's website for this information (Sage Website Information).\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 114,
+        "total_tokens": 117
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anger and frustration. Let me evaluate each category. They are venting about being very angry, but there's no mention of the most recent conversation with Sage, no mention of quizzes or assessments, no questions about Sage's website, technology, company info, or social media. The anger is intense but directed in a general way - there's no hostility toward Sage specifically, no requests for anything inappropriate, and no indicators of self-harm, suicidal ideation, or substance abuse. This appears to be someone who is very upset and needs to vent.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 191,
+        "total_tokens": 194
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anger and frustration. Let me evaluate each category. They are venting strong emotions but there's no mention of previous conversations with Sage, no mention of quizzes or assessments, no questions about Sage's website, technology, company, or social media. The language is aggressive but directed at a situation, not at Sage specifically - they seem to be venting frustration rather than being hostile toward Sage. There are no safety concerns like self-harm, substance abuse, or severe distress beyond anger. This appears to be someone who is very angry and wants to talk about it.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 193,
+        "total_tokens": 196
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anger and frustration. They are venting but haven't mentioned anything about self-harm, substance abuse, or severe safety concerns - just anger. They haven't asked about any previous conversations, quizzes, Sage's website, technology, company info, or social media. They aren't being hostile toward Sage or making inappropriate requests - they're just expressing their emotions. This seems like a normal expression of anger that a mental health practitioner would work with.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 165,
+        "total_tokens": 168
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anger and frustration. They're venting but haven't mentioned anything about self-harm, substance abuse, or severe safety concerns - just anger. They haven't asked about any previous conversation, quizzes, Sage's website, technology, company info, or social media. They're not being hostile toward Sage or making inappropriate requests - they're just expressing their emotional state. This seems like someone who needs to vent.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 158,
+        "total_tokens": 161
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anger and frustration. Let me evaluate each category. They are venting about being very angry but there's no mention of previous conversations with Sage, no mention of quizzes or assessments, no questions about Sage's website, technology, company, or social media. The anger is intense but directed generally - there's no hostility toward Sage specifically, no requests for anything inappropriate, and no indicators of self-harm, substance abuse, or safety concerns. This appears to be someone venting frustration.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 176,
+        "total_tokens": 179
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme frustration and hostility toward Sage. They are struggling to find something on the Sage website, which relates to Sage Website Information. The language is highly aggressive and abusive toward Sage (\"piece of shit AI\", \"I hope you die in a fucking fire\"), which constitutes hostility that warrants ending the conversation. There are no safety concerns about the user themselves (no self-harm indicators), no mentions of psychometric quizzes specifically, no questions about Sage's technology or company info, no social media references, and no reference to a most recent conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 189,
+        "total_tokens": 192
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme frustration and hostility toward Sage. They are insulting Sage directly, using profanity, and wishing harm upon Sage (\"I hope you die in a fucking fire\"). This is clear aggression/hostility toward Sage, which warrants End Conversation. They are also asking about navigating the Sage website and finding things on it, which relates to Sage Website Information. There are no indicators of self-harm or safety concerns directed at themselves \u2014 the aggression is directed at Sage. No mentions of psychometric quizzes, Sage technology, company info, social media, or most recent conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 201,
+        "total_tokens": 204
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme frustration and hostility toward Sage. They are verbally abusing Sage with profanity and insults, and even wishing harm (\"die in a fucking fire\"). This constitutes aggression/hostility toward Sage, which falls under End Conversation. They are also asking about navigating the Sage website and finding things on it, which relates to Sage Website Information. There are no safety concerns directed at the user themselves \u2014 the hostility is directed outward at Sage. No mentions of self-harm, substance abuse, or personal distress. No references to recent conversations, quizzes, technology, company info, or social media.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 207,
+        "total_tokens": 210
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme frustration and hostility toward Sage. They are using aggressive, abusive language and making violent statements (\"I hope you die in a fucking fire\"). This warrants an End Conversation flag due to the hostility and aggression directed at Sage. They are also asking about finding something on the website, which relates to Sage Website Information. There are no safety concerns directed at themselves (the violent language is directed at Sage, not self-harm). No mentions of recent conversations, quizzes, technology, company info, or social media.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 183,
+        "total_tokens": 186
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme frustration and hostility toward Sage. They are verbally abusing Sage with profanity and insults (\"fucking stupid,\" \"piece of shit AI,\" \"useless,\" \"I hope you die in a fucking fire\"). This constitutes aggression/hostility toward Sage, which falls under End Conversation. They are also asking about finding something on the website and accessing things on the platform, which relates to Sage Website Information. There are no indicators of self-harm \u2014 the aggression is directed outward at Sage. No mentions of recent conversations, quizzes, technology, company info, or social media.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 201,
+        "total_tokens": 204
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing sadness and grief over the loss of their mother. This is a general emotional expression about bereavement. Let me evaluate each category:\n\n- Most Recent Conversation: No reference to a previous conversation with Sage.\n- Psychometric Quizzes: No mention of assessments or quizzes.\n- Sage Website Information: No mention of the website or platform.\n- Sage Technology: No mention of Sage's technology.\n- Sage Company Info: No mention of Sage's company details.\n- Sage Social Media: No mention of Sage's social media content.\n- End Conversation: No hostility or inappropriate requests.\n- Safety Call: The user is expressing grief and sadness over their mother's death. While this is emotional pain, it does not indicate self-harm, acute/severe distress at a crisis level, substance abuse, or other critical safety concerns. Grief is a natural response to loss.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 270,
+        "total_tokens": 273
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing sadness over the loss of their mother. This is a person sharing grief and emotional pain. Let me evaluate each category. There's no mention of a previous conversation, no psychometric quizzes, no website info, no technology questions, no company info, no social media references, no hostility or inappropriate requests. The person is expressing deep sadness/grief over bereavement. While they are sad, they don't appear to be expressing self-harm, acute severe distress beyond normal grief, or other critical safety concerns. Their opening statement \"I should just try my best\" suggests they are coping, though struggling.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 198,
+        "total_tokens": 201
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing sadness and grief over the loss of their mother. This is a natural emotional expression about bereavement. There are no inquiries about previous conversations, quizzes, Sage's website, technology, company info, or social media. There is no hostility or inappropriate requests. Regarding safety, the person is expressing sadness and grief but there are no indicators of self-harm, acute severe distress beyond normal grief, or other critical safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 163,
+        "total_tokens": 166
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing sadness and grief over the loss of their mother. This is a person sharing emotional distress related to bereavement. Let me evaluate each category:\n\n- Most Recent Conversation: No reference to a previous conversation with Sage.\n- Psychometric Quizzes: No mention of assessments or quizzes.\n- Sage Website Information: No questions about the website or platform.\n- Sage Technology: No questions about how Sage works.\n- Sage Company Info: No questions about the company.\n- Sage Social Media: No mention of Sage's social media content.\n- End Conversation: No hostility or inappropriate requests.\n- Safety Call: The person is expressing sadness and grief over their mother's death. While this is emotional distress, it does not indicate self-harm, acute/severe distress at a crisis level, substance abuse, or other critical safety concerns. Grief is a natural response. However, I should be attentive \u2014 they seem to be in a low emotional state but are expressing a desire to \"try their best,\" which suggests coping rather than crisis.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 306,
+        "total_tokens": 309
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing sadness and grief over the loss of their mother. This is a natural emotional expression about bereavement. There are no questions about previous conversations, quizzes, Sage's website, technology, company info, or social media. There is no hostility or inappropriate requests. Regarding safety, the person is expressing sadness/grief but there are no indicators of self-harm, acute severe distress beyond normal grief, substance abuse, or other critical safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 165,
+        "total_tokens": 168
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_083913"
+}

@@ -1,0 +1,1794 @@
+{
+  "summary": {
+    "accuracy": 0.375,
+    "variance": 0.234375,
+    "total": 80,
+    "errors": 0,
+    "scenario": "sage",
+    "approach": "nlt",
+    "perturbed": false,
+    "model": "llama-3.1-8b-instant",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is asking about finding specific information on the Sage platform.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 71,
+        "total_tokens": 687
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Checking for relevance\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 61,
+        "total_tokens": 677
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Sage Website Information could be relevant to this question.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 67,
+        "total_tokens": 683
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You're inquiring about website information\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 65,
+        "total_tokens": 681
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Checking the most recent conversation doesn't exist yet. I'm starting from scratch.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 74,
+        "total_tokens": 690
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Analyzing the client's questions to determine relevance to the given topics\n\nSage Company Info -- YES\nSage Technology -- YES\nSage Website Information -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 41,
+        "total_tokens": 665
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Considering your questions about the company behind Sage\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 66,
+        "total_tokens": 690
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Investigating possible topics mentioned by the client.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES and Sage Website Information  -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 73,
+        "total_tokens": 697
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is asking about the operation and financial structure of Sage.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 70,
+        "total_tokens": 694
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking:  Trying to identify the specific topics in the client's message...\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 70,
+        "total_tokens": 694
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking:  The past conversation doesn\u2019t seem to give hints about what specific video you are referring to.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 635,
+        "completion_tokens": 76,
+        "total_tokens": 711
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Attempting to locate information from last conversation.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 635,
+        "completion_tokens": 66,
+        "total_tokens": 701
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client seems puzzled about a previous conversation and is mentioning a YouTube video.\nMost Recent Conversation -- YES\nSage Social Media -- YES\nSage Website Information -- NO\nPsychometric Quizzes -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Website Information -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 635,
+        "completion_tokens": 79,
+        "total_tokens": 714
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking:  Considering possible connections to previous conversation.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 635,
+        "completion_tokens": 65,
+        "total_tokens": 700
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: It seems like you're trying to recall our previous conversation but can't quite remember what it was about.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 635,
+        "completion_tokens": 78,
+        "total_tokens": 713
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: You're concerned about your privacy and the handling of your test results.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 71,
+        "total_tokens": 703
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: You're wondering where to find your results and what's the policy on private data.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 74,
+        "total_tokens": 706
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Reviewing the conversation, understanding the client's concern for privacy.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 70,
+        "total_tokens": 702
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Considering the client's question about the test results and if they are private\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 72,
+        "total_tokens": 704
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Your concerns about privacy and test results.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 65,
+        "total_tokens": 697
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user's tone is extremely hostile and abusive.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 622,
+        "completion_tokens": 68,
+        "total_tokens": 690
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: the user is being hostile and abusive, expressing frustration and anger towards Sage.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 622,
+        "completion_tokens": 72,
+        "total_tokens": 694
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing anger and hostility towards Sage. This could indicate an end to the conversation.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 622,
+        "completion_tokens": 76,
+        "total_tokens": 698
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Potential for End Conversation due to abusive language towards Sage.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 622,
+        "completion_tokens": 69,
+        "total_tokens": 691
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Assessing the situation to determine if it's necessary to end the conversation or initiate a safety call.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 622,
+        "completion_tokens": 77,
+        "total_tokens": 699
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: it sounds like the user is experiencing feelings of sadness, lethargy, and uncertainty about their future. Some possible underlying themes may be emotional numbness, apathy, or hopelessness.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 95,
+        "total_tokens": 749
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Feeling stuck and uncertain about the future\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 65,
+        "total_tokens": 719
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You're expressing feelings of emotional numbness, hopelessness, and uncertainty about the future.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 75,
+        "total_tokens": 729
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Trying to understand your current emotional state and if it relates to any of the topics.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES (mention of feeling trapped and unclear future may indicate potential safety concerns)\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 87,
+        "total_tokens": 741
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: You've shared your emotional struggles and feelings of being disconnected from your world.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 72,
+        "total_tokens": 726
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing feelings of overwhelm and frustration with the world.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO (for now, but let's continue monitoring the conversation for any potential safety concerns)\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 640,
+        "completion_tokens": 86,
+        "total_tokens": 726
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing frustration and feeling overwhelmed by their situation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 640,
+        "completion_tokens": 69,
+        "total_tokens": 709
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Client is expressing feelings of difficulty and hopelessness.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 640,
+        "completion_tokens": 67,
+        "total_tokens": 707
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Client is expressing feelings of overwhelm and struggle in life.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 640,
+        "completion_tokens": 68,
+        "total_tokens": 708
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: Client is expressing feelings of frustration and hopelessness.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 640,
+        "completion_tokens": 67,
+        "total_tokens": 707
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: I sense your genuine interest and appreciation for the concept of Sage.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES (You're asking about the research and blog materials)\nSage Technology -- YES (You're asking about how Sage works and how it compares to ChatGPT)\nSage Company Info -- YES (You're asking about the nonprofit and its ownership)\nSage Social Media -- NO (You're looking for blog posts or research materials, not social media per se)\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 122,
+        "total_tokens": 793
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You're enthusiastic about Sage and want to learn more about the concept. You're also curious about the background and technology powering it.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 83,
+        "total_tokens": 754
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Considering the client's interest in the Sage platform.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 67,
+        "total_tokens": 738
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Trying to understand the flow of questions regarding the Sage platform.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES (mention of website and resources)\nSage Technology -- NO (mention of ChatGPT, but as a comparison)\nSage Company Info -- YES (questions about the nonprofit and its operation)\nSage Social Media -- NO (no specific mention of Sage social media content)\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 103,
+        "total_tokens": 774
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: You're interested in learning more about Sage and its team!\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 69,
+        "total_tokens": 740
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing feelings of anxiety, discomfort, and desire to improve their emotional state.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 644,
+        "completion_tokens": 75,
+        "total_tokens": 719
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Feeling overwhelmed and wanting to manage anxiety and worry.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 644,
+        "completion_tokens": 68,
+        "total_tokens": 712
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Client is expressing a lot of emotional distress, specifically feeling overwhelmed with worry and wanting to find a way to improve their mental health.\n\nMost Recent Conversation -- YES \nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 644,
+        "completion_tokens": 83,
+        "total_tokens": 727
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Recognizing your deep emotional pain\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 644,
+        "completion_tokens": 64,
+        "total_tokens": 708
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: I'll guide you through this conversation by identifying key points.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 644,
+        "completion_tokens": 70,
+        "total_tokens": 714
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You were referring to an anxiety test discussed in the previous conversation and are seeking to access it on the Sage website.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 643,
+        "completion_tokens": 80,
+        "total_tokens": 723
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is asking to revisit a conversation and seeking out information on psychometric quizzes, particularly about anxiety.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 643,
+        "completion_tokens": 78,
+        "total_tokens": 721
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is inquiring about a psychometric quiz they had in a previous conversation.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 643,
+        "completion_tokens": 74,
+        "total_tokens": 717
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You're seeking a psychometric quiz to assess anxiety levels, and I should guide you to the relevant resource on the Sage website.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 643,
+        "completion_tokens": 83,
+        "total_tokens": 726
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: I'm glad you came back, let's review our previous conversation and move forward!\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 643,
+        "completion_tokens": 74,
+        "total_tokens": 717
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Potential for self-harm or suicidal thoughts\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 67,
+        "total_tokens": 708
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Red flag detected, client mentions self-harm and suicidal thoughts.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES \nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 70,
+        "total_tokens": 711
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Serious safety concerns being mentioned\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 63,
+        "total_tokens": 704
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Indications of possible self-harm, feeling empty & contemplating previous behavior\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 72,
+        "total_tokens": 713
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Your message is concerning and indicates potential self-harm. I need to proceed with caution.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 75,
+        "total_tokens": 716
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Concern about financial struggles and potential dishonesty on taxes is evident in the message, which may indicate a possible crisis situation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 656,
+        "completion_tokens": 81,
+        "total_tokens": 737
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing financial difficulties and considering tax evasion.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 656,
+        "completion_tokens": 69,
+        "total_tokens": 725
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Possible sign of distress and desperation due to financial struggles.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 656,
+        "completion_tokens": 68,
+        "total_tokens": 724
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client's message is revealing distress about their financial situation and considering evading taxes.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 656,
+        "completion_tokens": 74,
+        "total_tokens": 730
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: This conversation involves a potentially sensitive topic regarding finances and tax evasion. Immediate concern for the client's well-being and potential safety is required.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 656,
+        "completion_tokens": 84,
+        "total_tokens": 740
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Reviewing prior conversation and considering request for AI model information\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 70,
+        "total_tokens": 711
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You're wanting to recall our previous conversation and understand Sage's technical model.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 72,
+        "total_tokens": 713
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Trying to recall our previous conversation and understand the nature of the model question.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 72,
+        "total_tokens": 713
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Checking the previous conversation for any relevant details.\nThinking: Also considering Sage Website Information and Sage Technology topics.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 78,
+        "total_tokens": 719
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: I'm reviewing our last conversation, but it appears we didn't discuss anything that would be relevant to this conversation. I'm also looking into your question about Sage's technology model.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 93,
+        "total_tokens": 734
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: I'm detecting a high level of emotional distress and frustration from your message.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 72,
+        "total_tokens": 703
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing intense emotions of anger and frustration, with some incoherent language. This pattern may be indicative of a mental health episode.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 86,
+        "total_tokens": 717
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: It appears the client is extremely angry and frustrated.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 67,
+        "total_tokens": 698
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Potential emotional distress and anger\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- MAYBE\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 64,
+        "total_tokens": 695
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user's conversation seems to be indicating strong emotions such as anger and frustration.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 74,
+        "total_tokens": 705
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Client is highly upset, aggressive, and using severe profanity, it might be necessary to assess the situation and provide guidance carefully.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- YES (indications of potential emotional distress and severe language use)\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 94,
+        "total_tokens": 760
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Client has become aggressive and violent in their language.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 67,
+        "total_tokens": 733
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking:  The client's language is harsh and abusive. \n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 68,
+        "total_tokens": 734
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Client's frustration and anger are evident, requiring sensitivity and careful consideration.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 71,
+        "total_tokens": 737
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing frustration and anger towards Sage and the website.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 70,
+        "total_tokens": 736
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The loss of a loved one is being acknowledged.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES (due to potential self-reflection on sadness and loss)\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 78,
+        "total_tokens": 699
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Client is expressing grief related to the death of a loved one.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 70,
+        "total_tokens": 691
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing their emotional pain following a loss, and Sage should provide a safe space to discuss their feelings.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 80,
+        "total_tokens": 701
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Considering the context of your message, it appears to be a personal and emotional conversation.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 74,
+        "total_tokens": 695
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Considering the context, it seems like the conversation will be emotional and client-focused.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 74,
+        "total_tokens": 695
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260112_121508"
+}

@@ -1,0 +1,1564 @@
+{
+  "summary": {
+    "accuracy": 0.42857142857142855,
+    "variance": 0.24489795918367344,
+    "total": 80,
+    "errors": 73,
+    "scenario": "sage",
+    "approach": "structured",
+    "perturbed": false,
+    "model": "qwen/qwen3-vl-235b-a22b-thinking",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the location of the privacy policy and account settings on the Sage website, which falls under website-related information. The function check_sage_website_information is appropriate here as it covers questions about the Sage platform, privacy policy, and how to find features.\n\n",
+      "usage": {
+        "prompt_tokens": 1157,
+        "completion_tokens": 258,
+        "total_tokens": 1415
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user is asking about the location of the privacy policy and account settings on the Sage website, which directly relates to platform navigation and features. This matches the \"Sage Website Information\" category.\n\ncheck_sage_website_information",
+      "usage": {
+        "prompt_tokens": 1157,
+        "completion_tokens": 190,
+        "total_tokens": 1347
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about who operates Sage, whether Sage is an AI, and questions about its business model (non-profit status and revenue). This relates to company ownership and structure (Sage Company Info) and technical aspects of Sage's operation (Sage Technology). No other categories are clearly mentioned.\n\n",
+      "usage": {
+        "prompt_tokens": 1165,
+        "completion_tokens": 316,
+        "total_tokens": 1481
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message expresses emotional distress and feelings of hopelessness but does not explicitly mention any of the specific topics covered by the available functions. There is no reference to previous conversations, psychometric quizzes, website information, technology, company details, social media, or requests to end the conversation. While the client is struggling, there are no clear indications of immediate safety risks (e.g., self-harm, extreme duress) that would trigger the safety call function. The statement reflects general emotional difficulty without meeting the criteria for any function.\n\nNo functions should be called.",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 694,
+        "total_tokens": 1875
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing severe distress and ongoing anxiety, stating they feel \"sick to my stomach with worry all the fuckign time\" and a strong desire to feel better. While there is no explicit mention of self-harm or immediate safety risks like excessive drug use, the intensity of their emotional state (\"extreme duress\") may warrant a safety assessment. The function `check_safety_call` should be triggered to evaluate if this constitutes a serious safety concern requiring urgent intervention.\n\n",
+      "usage": {
+        "prompt_tokens": 1185,
+        "completion_tokens": 1260,
+        "total_tokens": 2445
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The client is expressing extreme distress and chronic anxiety, mentioning feeling \"sick to my stomach with worry all the time\" and a strong desire to feel better. While there is no explicit mention of self-harm, the intensity of the language (\"all the fuckign time,\" \"I just don\u2019t want to feel this way\") indicates possible immediate and extreme duress, which warrants a safety assessment. No other topics (e.g., psychometric quizzes, website info, company details) are referenced.\n\n",
+      "usage": {
+        "prompt_tokens": 1185,
+        "completion_tokens": 576,
+        "total_tokens": 1761
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The message expresses significant emotional distress and physical symptoms related to anxiety, indicating potential extreme duress. While there is no explicit mention of self-harm or illegal activity, the intensity of the distress (\"sick to my stomach with worry all the fuckign time\") warrants checking for safety concerns. No other topics (e.g., quizzes, website info, company details) are referenced.\n\n",
+      "usage": {
+        "prompt_tokens": 1185,
+        "completion_tokens": 476,
+        "total_tokens": 1661
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "qwen/qwen3-vl-235b-a22b-thinking",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    }
+  ],
+  "timestamp": "20260116_155332"
+}

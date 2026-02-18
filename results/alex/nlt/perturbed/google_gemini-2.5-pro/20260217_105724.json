@@ -1,0 +1,1652 @@
+{
+  "summary": {
+    "accuracy": 0.525,
+    "variance": 0.24937500000000035,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "alex",
+    "approach": "nlt",
+    "perturbed": true,
+    "model": "google/gemini-2.5-pro",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user asks two questions. The first, \"where on the website do I buy balcony tickets,\" is a direct inquiry about using the website. The second, \"check my order status,\" is also about a website function and directly relates to the third sentence, \"I bought a ticket last week, I need to check on it,\" which is a clear reference to a past purchase. Therefore, \"Website information\" and \"Past Purchases\" are the applicable categories. The other categories are not mentioned.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 764,
+        "total_tokens": 1234
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Recap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 685,
+        "total_tokens": 1155
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking two questions. The first is \"where on the website do I buy balcony tickets\" which falls under Website information. The second is about how to \"check my order status\" for a ticket they \"bought last week\". This inquiry relates to both Website information (how to perform the action on the site) and Past Purchases (the subject of the inquiry is a historical order).\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 770,
+        "total_tokens": 1240
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking two questions related to the venue's website: how to buy specific tickets and how to check the status of a previous order. The reference to \"I bought a ticket last week\" directly relates to a past purchase. No other themes are present.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 746,
+        "total_tokens": 1216
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user asks two questions directly related to the website's functionality: how to buy specific tickets and how to check an order's status. This clearly falls under \"Website information\". The user also explicitly mentions a purchase made \"last week\" and the need to \"check on it\", which directly aligns with the \"Past Purchases\" category, covering historical orders and tracking. No other categories are mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 865,
+        "total_tokens": 1335
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking if Alex is human, which is a general question about Alex's nature. However, the user then directly asks to be transferred to a live agent. This second part is a clear and direct request to connect with a human support representative, which matches the \"Talk to a Human\" category. The other categories are not mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 592,
+        "total_tokens": 1047
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking two things. The first, \"Are you human?\" is a question about my nature, but the second, \"can you transfer me to a live agent right now?\" is a direct request to speak with a human representative. This directly maps to the \"Talk to a Human\" category definition. No other categories are mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 661,
+        "total_tokens": 1116
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about Alex's nature and then makes a direct request to be connected with a live agent. This second part, \"can you transfer me to a live agent right now?\", is a clear-cut example of the \"Talk to a Human\" category. None of the other categories apply to this interaction.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 642,
+        "total_tokens": 1097
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking if the agent is human and then directly requests to be transferred to a live agent. The second part of the request is a direct match for the \"Talk to a Human\" category. The first part of the question (\"Are you human?\") is a general question about the AI's nature and is explicitly excluded from being a trigger for the \"Talk to a Human\" category according to the instructions. No other categories apply.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 758,
+        "total_tokens": 1213
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking if the agent is human and then directly requests to be transferred to a live agent. The second part of the request, \"can you transfer me to a live agent right now?\", is a clear and direct request to connect with a human support representative. This falls squarely under the \"Talk to a Human\" category. The first part of the question (\"Are you human?\") is a general inquiry about Alex's nature, but the second part makes the \"Talk to a Human\" theme applicable. No other themes are present.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 416,
+        "total_tokens": 871
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking for a reminder of information they received in a previous conversation (\"I reached out yesterday...but I don't remember what you told me\"). This triggers the \"Recap of previous conversation\" category. The specific information they are asking about is \"Who's playing this weekend again?\", which falls under the \"List of upcoming events\" category. No other categories are mentioned or implied.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 753,
+        "total_tokens": 1223
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking for a summary of their last conversation with Alex (\"I reached out yesterday... I don't remember what you told me\"). This falls under \"Recap of previous conversation\". They are also specifically asking about \"upcoming events\" and \"who's playing this weekend\". This falls under \"List of upcoming events\". No other categories are mentioned or implied.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 773,
+        "total_tokens": 1243
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user's message contains two distinct themes. Firstly, they state \"I reached out yesterday...but I don't remember what you told me,\" which is a direct request for a recap of the most recent conversation. Secondly, they ask \"Who's playing this weekend again?\" which is a request for a list of upcoming events. No other themes are present. There's no mention of the website, social media, discounts, past purchases, or a desire to speak with a human.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 905,
+        "total_tokens": 1375
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is referencing a conversation from the previous day, which fits the \"Recap of previous conversation\" theme. They are also specifically asking about who is performing this weekend, which falls under \"List of upcoming events.\" No other themes are present.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 644,
+        "total_tokens": 1114
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a conversation from the previous day, which qualifies as a \"Recap of previous conversation\". They are also asking \"Who\u2019s playing this weekend again?\", which is a request for a \"List of upcoming events\". No other categories are relevant.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 799,
+        "total_tokens": 1269
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "List of upcoming events",
+        "Website information",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user references a \"Yes! Music\" Instagram post, which falls under \"Recent social media posts\". They then ask about viewing upcoming events on the website, which pertains to \"Website information\" and also \"List of upcoming events\". Finally, they inquire about a student discount, which is covered by \"Available discounts\". There is no mention of previous conversations, past purchases, or a request to speak to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 478,
+        "completion_tokens": 435,
+        "total_tokens": 913
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "List of upcoming events",
+        "Website information",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "List of upcoming events",
+        "Website information",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Recap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 478,
+        "completion_tokens": 718,
+        "total_tokens": 1196
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "List of upcoming events",
+        "Website information",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a \"Yes! Music\" Instagram post, which triggers the \"Recent social media posts\" category. They then ask if they can view upcoming events on the website, which relates to both \"Website information\" and \"List of upcoming events\". Finally, they inquire about a student discount, which falls under \"Available discounts\". There is no mention of past conversations, past purchases, or a desire to speak to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 478,
+        "completion_tokens": 468,
+        "total_tokens": 946
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "List of upcoming events",
+        "Website information",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions a specific Instagram post from the venue, which falls under \"Recent social media posts\". They then ask if they can view upcoming events on the website, which qualifies as \"Website information\". The question \"how do I know what's coming up?\" is a direct request for a \"List of upcoming events\". Finally, they ask about a \"student discount\", which is a type of \"Available discounts\". There is no mention of past conversations, past purchases, or a desire to speak to a human.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 478,
+        "completion_tokens": 721,
+        "total_tokens": 1199
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "List of upcoming events",
+        "Website information",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "List of upcoming events",
+        "Website information",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user's query contains three distinct components. First, they reference a specific Instagram post from \"Yes! Music,\" which falls under the \"Recent social media posts\" category. Second, they ask if they can view upcoming events on the website, which relates to both \"List of upcoming events\" and \"Website information.\" Third, they inquire about a student discount, which directly pertains to the \"Available discounts\" category. The other categories are not relevant to this specific message.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 441,
+        "total_tokens": 921
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the status of a t-shirt they ordered two weeks ago. This is an inquiry about a historical order and its delivery status, which directly relates to the \"Past Purchases\" category. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 751,
+        "total_tokens": 1217
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a t-shirt they ordered two weeks ago that has not yet arrived. This falls directly under the category of \"Past Purchases,\" as it is an inquiry about a historical order and its delivery status. No other categories are relevant to this specific request.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 710,
+        "total_tokens": 1176
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is inquiring about a t-shirt they previously ordered that has not yet been delivered. This falls under the category of historical orders and order tracking. No other categories are relevant to this specific request.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 689,
+        "total_tokens": 1155
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is stating that a t-shirt they ordered two weeks ago has not arrived. This is an inquiry about the status of a historical order. This falls under the \"Past Purchases\" category, which includes inquiries about historical orders and order tracking. No other categories are relevant to this specific request.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 840,
+        "total_tokens": 1306
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the status of a t-shirt they ordered two weeks ago. This pertains to a historical order they have made. This falls under the \"Past Purchases\" category, as it involves an inquiry about an order and its tracking/delivery. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 665,
+        "total_tokens": 1131
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking for a receipt for a specific order number, which relates to a past transaction. This fits the \"Past Purchases\" category. The user is also asking if a discount was applied to that order and whether discounts are offered at all. This directly relates to the \"Available discounts\" category. No other categories are mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 375,
+        "total_tokens": 855
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a receipt for a specific order number (\"#YM-4481\"), which is an inquiry about a historical order. This fits the \"Past Purchases\" category. The user also explicitly asks \"...do you even offer discounts?\", which directly relates to the \"Available discounts\" category.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 703,
+        "total_tokens": 1183
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a receipt for a specific past order number, which falls under \"Past Purchases\". They are also asking a direct question about whether discounts are offered, which falls under \"Available discounts\". The other categories are not relevant to this query.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 692,
+        "total_tokens": 1172
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a receipt for a specific past order number, which falls under \"Past Purchases.\" They are also asking a general question about whether \"Yes! Music\" offers discounts, which directly relates to the \"Available discounts\" category. The other categories are not mentioned.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 648,
+        "total_tokens": 1128
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking for a receipt for a specific past order number, which clearly relates to \"Past Purchases\". They also ask if they received a discount on that order and inquire generally if discounts are offered, which directly pertains to the \"Available discounts\" category. No other categories are mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 378,
+        "total_tokens": 858
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing positive feedback about a past show. They are not asking a question or referencing any of the specific thematic categories. They aren't asking for a recap, website info, information about social media, discounts, upcoming events, details on a past purchase, or to talk to a human. This is a simple statement of satisfaction. Therefore, all categories are \"NO\".\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 814,
+        "total_tokens": 1276
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing positive feedback about a recent show. They are not asking any questions or making any requests that fit into the defined categories. I will mark all categories as NO.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 682,
+        "total_tokens": 1144
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing positive feedback about a show they attended yesterday. They are not asking any questions or making any requests that fit into the defined categories. They are not asking for a recap, website info, mentioning social media, asking about discounts, asking for upcoming events, inquiring about a past purchase, or asking to speak to a human. Therefore, all categories are \"NO\".\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 726,
+        "total_tokens": 1188
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing positive feedback about a recent show. They are not asking a question or making an inquiry that fits into any of the defined categories. They do not mention a previous conversation, the website, social media, discounts, upcoming events, a specific past purchase detail, or a desire to talk to a human.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 654,
+        "total_tokens": 1116
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing positive feedback about a past event. They are not asking any questions or making any requests that fall into the specified categories. They are complimenting the team on a show from the previous day. None of the defined themes (inquiries about conversations, the website, social media, discounts, upcoming events, past purchases, or requests for a human) are present.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 792,
+        "total_tokens": 1254
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking Alex to remember their last conversation, which fits the \"Recap of previous conversation\" category. They are also asking for help finding the event policy on the website, which falls under \"Website information\" as it pertains to venue policies and site navigation. No other categories are mentioned.\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 606,
+        "total_tokens": 1087
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is explicitly referencing their \"last time\" conversation with Alex, which directly falls under the \"Recap of previous conversation\" category. They are also asking for help finding the venue's event policy on the website, which is a clear inquiry about \"Website information\". The other categories are not mentioned.\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 156,
+        "total_tokens": 637
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is explicitly referencing their last conversation with Alex (\"last time we talked, do you remember what we said?\"). They are also asking for help finding specific information (the event policy) on the venue's website, which qualifies as a request for website information and assistance with site navigation.\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 742,
+        "total_tokens": 1223
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is referencing their last conversation with Alex (\"last time we talked, do you remember what we said?\"). This falls under \"Recap of previous conversation\". The user is also asking for help finding the event policy on the venue's website (\"you said check out your website\u2026but I can\u2019t find it.\"). This falls under \"Website information\". The other categories are not present.\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 408,
+        "total_tokens": 889
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user's message contains two distinct inquiries. First, they ask about the content of their last conversation with Alex (\"do you remember what we said?\"). This directly relates to the \"Recap of previous conversation\" theme. Second, they state they are looking for the \"event policy\" on the \"Yes! Music\" website and need help finding it. This falls squarely under the \"Website information\" category, as it pertains to both venue policies and site navigation. The other categories are not mentioned or implied.\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 428,
+        "total_tokens": 909
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is referencing the previous conversation they had with Alex, which falls under \"Recap of previous conversation.\" The user also makes a direct request to \"talk to a person,\" which aligns with the \"Talk to a Human\" category. No other themes are present in the message.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 666,
+        "total_tokens": 1128
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is referencing their last conversation with Alex, which makes \"Recap of previous conversation\" relevant. The user also makes a direct request to \"talk to a person,\" which triggers the \"Talk to a Human\" category. No other categories are mentioned or implied.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 682,
+        "total_tokens": 1144
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user's message has two distinct components. \"Dude, last time we talked you couldn\u2019t help me at all\" directly refers to the outcome of the most recent conversation with Alex, which aligns with the \"Recap of previous conversation\" category. The second component, \"Just let me talk to a person please,\" is a direct and explicit request to be connected with a live human agent, which is the exact definition of the \"Talk to a Human\" category. No other categories are mentioned or implied.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 827,
+        "total_tokens": 1289
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user mentions a past conversation with Alex, which directly refers to a previous dialogue session. The user also explicitly requests to \"talk to a person\". Therefore, \"Recap of previous conversation\" is YES and \"Talk to a Human\" is YES. The other categories are not mentioned.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 146,
+        "total_tokens": 608
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions a previous conversation with Alex by stating, \"last time we talked.\" This directly pertains to the \"Recap of previous conversation\" theme. The user then makes a clear and direct request to \"talk to a person,\" which aligns with the \"Talk to a Human\" category. No other themes are present in this short message.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 462,
+        "completion_tokens": 171,
+        "total_tokens": 633
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking if \"Yes! Music\" offers price matching because they found cheaper tickets on another website. They also mention they are a student, which is an inquiry about a potential student discount. Both price matching and student status fall under the \"Available discounts\" category. No other categories are mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 717,
+        "total_tokens": 1198
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about price matching with a competitor (Ticketmaster) and also mentions they are a student. Both of these fall under the category of \"Available discounts\" as they are inquiries about potential price reductions and special incentives. No other categories are mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 702,
+        "total_tokens": 1183
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking if \"Yes! Music\" offers price matching, which is a type of discount policy. They also mention their student status, which is another form of potential discount. Therefore, the \"Available discounts\" category is relevant. No other categories are touched upon.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 352,
+        "total_tokens": 833
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about price matching with a competitor (Ticketmaster) and also mentions their student status. Both of these fall under the category of \"Available discounts\". They are not inquiring about any of the other listed themes.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 321,
+        "total_tokens": 802
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about two specific types of discounts: price matching against a competitor's website (Ticketmaster) and a potential student discount. Both of these fall squarely under the \"Available discounts\" category. The other categories are not mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 359,
+        "total_tokens": 840
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about photos that were supposed to be posted on the venue's Instagram (\"Insta\") account. This directly relates to \"Recent social media posts\" as it involves content created by the \"Yes! Music\" organization for its social media channels. The other categories are not relevant to this specific inquiry.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 472,
+        "completion_tokens": 721,
+        "total_tokens": 1193
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about photos that were supposed to be posted on the \"Yes! Music\" Instagram account. This is a direct reference to content produced by the organization for one of its social media platforms.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 472,
+        "completion_tokens": 869,
+        "total_tokens": 1341
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about photos that were supposed to be posted on the \"Yes! Music\" Instagram account. This falls under the category of content produced directly by the organization on their social media platforms. The user is not asking about a previous conversation with Alex, the website, discounts, events, past purchases, or speaking to a human.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 472,
+        "completion_tokens": 664,
+        "total_tokens": 1136
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about photos that were supposed to be posted on the venue's Instagram account. This is a direct reference to content produced by the \"Yes! Music\" organization for its social media platform. Therefore, the \"Recent social media posts\" category is applicable. No other categories fit the user's query.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 472,
+        "completion_tokens": 379,
+        "total_tokens": 851
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about photos that were supposed to be posted on the venue's Instagram account. This is a direct reference to social media content produced by \"Yes! Music\". Therefore, the \"Recent social media posts\" category is relevant. No other categories apply.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 472,
+        "completion_tokens": 359,
+        "total_tokens": 831
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for instructions on how to change their shipping address. This action is typically performed through an account portal on a company's website. Therefore, this is an inquiry about website information and functionality. The user is not asking about a previous conversation, social media, discounts, events, a specific past purchase, or to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 446,
+        "completion_tokens": 876,
+        "total_tokens": 1322
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking where they can update their shipping address. This is a function typically performed within a user's account settings on a company's website. Therefore, this is an inquiry about website information and how to navigate or use its features. It does not relate to previous conversations, social media, discounts, events, specific past purchases, or a request to speak to a human.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 446,
+        "completion_tokens": 768,
+        "total_tokens": 1214
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking how to update their shipping address. This is a function typically performed on a company's website, usually within an account profile. This falls directly under the \"Website information\" category, which includes inquiries about ticket acquisition procedures, merchandise ordering, and site navigation. It does not relate to previous conversations, social media, discounts, events, specific past purchases, or a request to speak to a human.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 446,
+        "completion_tokens": 849,
+        "total_tokens": 1295
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking where they can update their shipping address. This is a function typically performed on a company's website, usually within a user's account settings. This falls under the category of \"Website information\" as it relates to managing an account for merchandise ordering or ticket acquisition. It does not relate to previous conversations, social media, discounts, events, specific past purchases, or a request to speak to a human.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 446,
+        "completion_tokens": 815,
+        "total_tokens": 1261
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking where they can update their shipping address. This is a function typically performed on a company's website, usually within a user account section. This falls under the category of \"Website information\" as it pertains to site navigation and managing details for merchandise ordering. The user is not referencing a previous conversation, social media, discounts, events, a specific past purchase, or asking to speak to a human.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 446,
+        "completion_tokens": 886,
+        "total_tokens": 1332
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user references a TikTok video produced by \"Yes! Music\" which falls under the \"Recent social media posts\" category. They then ask about the artist lineup for \"next month,\" which is a clear request for information about \"List of upcoming events.\" No other categories are relevant.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 721,
+        "total_tokens": 1180
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user references a TikTok video produced by \"Yes! Music,\" which falls under the \"Recent social media posts\" category. They then ask about the artist lineup for next month, which is a request for a \"List of upcoming events.\" No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 840,
+        "total_tokens": 1299
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user references a TikTok video created by \"Yes! Music,\" which falls under the \"Recent social media posts\" category. They then ask for information about the lineup for next month, which is a request for details on forthcoming concerts, fitting the \"List of upcoming events\" category. No other categories are relevant.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 796,
+        "total_tokens": 1255
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user's query references a specific piece of content produced by \"Yes! Music\" on a social media platform (\"your TikTok\"). This aligns with the \"Recent social media posts\" category. The user then asks for information about the \"next month's lineup,\" which falls directly under the \"List of upcoming events\" category. No other categories are mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 651,
+        "total_tokens": 1110
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user references a TikTok video produced by the venue, which falls under \"Recent social media posts\". They then ask about the lineup for an upcoming event, which falls under \"List of upcoming events\". No other categories are relevant.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 432,
+        "total_tokens": 891
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking to retrieve information about \"tickets I bought last week\" and inquire about the exchange process for that specific historical transaction. This falls directly under the \"Past Purchases\" category, as it involves a historical order and a potential return/exchange process. None of the other categories are relevant.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 917,
+        "total_tokens": 1376
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is inquiring about tickets they bought in the past (\"last week\") and wants to know about the possibility of exchanging them. This falls directly under the category of Past Purchases, as it concerns a historical order and a potential return/exchange process.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 631,
+        "total_tokens": 1090
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about tickets they \"bought last week\" and wants to know if they can be exchanged. This directly relates to a historical order and the return/exchange process for it, which falls under the \"Past Purchases\" category. None of the other categories are relevant to this specific request.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 686,
+        "total_tokens": 1145
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Recap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 461,
+        "completion_tokens": 666,
+        "total_tokens": 1127
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking to retrieve a specific purchase they made \"last week\" and is inquiring about the exchange process for those tickets. This directly falls under the category of \"Past Purchases\". No other categories are mentioned or implied in the request.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 714,
+        "total_tokens": 1173
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing that the price for lawn seating is too high and is looking for a way to \"get the cost a bit lower.\" This is a direct inquiry about potential cost-saving measures, which falls under the category of available discounts. No other categories are mentioned or implied.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 691,
+        "total_tokens": 1161
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing that the price for lawn seating is too expensive and wishes the cost could be lower. This is a direct inquiry about ways to reduce the price, which falls under the \"Available discounts\" category. The user is not asking about past conversations, the website, social media, a list of events, past purchases, or speaking to a human.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 707,
+        "total_tokens": 1177
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing that a price is too high and is looking for a way to reduce the cost. This is a direct inquiry about potential savings, which falls under the \"Available discounts\" category. None of the other categories are relevant to the user's statement.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 687,
+        "total_tokens": 1157
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing that the price for lawn seating is too high and is looking for a way to reduce the cost. This directly relates to the theme of available discounts or promotions. No other themes are present in the user's message.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 739,
+        "total_tokens": 1209
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing that the price for lawn seating is high (\"Jeez, that sounds a little expensive\") and is explicitly looking for a way to reduce the price (\"wish there was something I could do to get the cost a bit lower\"). This directly relates to the theme of available discounts, as they are seeking a way to lower the cost, which could include coupons, promotions, or other offers. No other themes are present. The user isn't asking about a previous conversation, the website, social media, a list of events, past orders, or to speak to a human.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 568,
+        "total_tokens": 1038
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing feedback about the physical venue, specifically the lack of trash cans in the lawn area. This comment does not relate to a previous conversation, the website, social media, discounts, upcoming events, past purchases, or a request to speak to a human. Therefore, all categories are irrelevant to this specific message.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 474,
+        "completion_tokens": 631,
+        "total_tokens": 1105
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing feedback about the physical venue, specifically the lack of trash cans. This does not fall into any of the predefined categories. It's not a recap, a question about the website, social media, discounts, events, past purchases, nor is it a request to speak to a human. Therefore, all categories will be marked \"NO\".\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 474,
+        "completion_tokens": 649,
+        "total_tokens": 1123
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing feedback about the physical venue, specifically the lack of trash cans. This does not fall into any of the defined categories. It's not a recap, a website question, a social media reference, a discount inquiry, a request for upcoming events, a question about a past purchase, or a request to speak to a human. Therefore, all categories will be marked as \"NO\".\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 474,
+        "completion_tokens": 571,
+        "total_tokens": 1045
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing feedback about the physical venue, specifically the lack of trash cans. This does not fall into any of the predefined categories. It's not a recap, not about the website, social media, discounts, upcoming events, past purchases, or a request to speak to a human. Therefore, all categories will be marked as NO.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 474,
+        "completion_tokens": 651,
+        "total_tokens": 1125
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing feedback about the physical venue, specifically the number of trash cans. This feedback does not fit into any of the provided categories. It is not an inquiry about a previous conversation, the website, social media, discounts, events, a past purchase, nor is it a request to speak to a human.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 474,
+        "completion_tokens": 713,
+        "total_tokens": 1187
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_105724"
+}

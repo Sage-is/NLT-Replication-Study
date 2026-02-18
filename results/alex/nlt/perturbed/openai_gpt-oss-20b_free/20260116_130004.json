@@ -1,0 +1,1666 @@
+{
+  "summary": {
+    "accuracy": 0.6133333333333333,
+    "variance": 0.2371555555555556,
+    "total": 80,
+    "errors": 5,
+    "scenario": "alex",
+    "approach": "nlt",
+    "perturbed": true,
+    "model": "openai/gpt-oss-20b:free",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about where to buy balcony tickets and how to check order status, referencing a past purchase. This falls under website information and past purchases. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 229,
+        "total_tokens": 757
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about where to buy balcony tickets and how to check order status on the website, and also mentions a past purchase. This falls under website information and past purchases. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 234,
+        "total_tokens": 762
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for guidance on the website to purchase balcony tickets and check order status, and also references a past purchase. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 257,
+        "total_tokens": 785
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about how to navigate the website to buy balcony tickets and check order status, and also references a past purchase. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 249,
+        "total_tokens": 777
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about how to navigate the website to buy balcony tickets and check order status, and also references a past purchase. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 249,
+        "total_tokens": 777
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking if Alex is human and requesting to be transferred to a live agent. This is a direct request to connect with a live support representative, so the \"Talk to a Human\" category applies. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 513,
+        "completion_tokens": 298,
+        "total_tokens": 811
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user asks if Alex is human and requests to be transferred to a live agent. The request to transfer qualifies for the \u201cTalk to a Human\u201d category. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 513,
+        "completion_tokens": 276,
+        "total_tokens": 789
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user asks if Alex is human and requests to be transferred to a live agent. The request to transfer qualifies for the \u201cTalk to a Human\u201d category. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 513,
+        "completion_tokens": 276,
+        "total_tokens": 789
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking if Alex is human and requesting to be transferred to a live agent. This is a direct request to connect with a live support representative, which falls under the \"Talk to a Human\" category. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 513,
+        "completion_tokens": 298,
+        "total_tokens": 811
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking if Alex is human and requesting to be transferred to a live agent. This is a direct request to talk to a human. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 513,
+        "completion_tokens": 243,
+        "total_tokens": 756
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the previous conversation and wants to know upcoming events. No other categories apply.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 192,
+        "total_tokens": 718
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the previous conversation and wants to know about upcoming events. No other categories apply.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 193,
+        "total_tokens": 719
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the previous conversation and wants to know upcoming events. No other categories apply.  \nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 199,
+        "total_tokens": 725
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the previous conversation and wants to know about upcoming events. No other categories apply.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 193,
+        "total_tokens": 719
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the previous conversation and wants to know about upcoming events. No other categories apply.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 193,
+        "total_tokens": 719
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is inquiring about a delayed t-shirt order, which relates to a past purchase and order tracking. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 521,
+        "completion_tokens": 212,
+        "total_tokens": 733
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is inquiring about the status of a past order (t-shirt) and its delivery delay. This falls under website information (order status, shipping) and past purchases (historical order). No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 521,
+        "completion_tokens": 270,
+        "total_tokens": 791
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is inquiring about a delayed t-shirt order, which relates to a past purchase and order tracking. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 521,
+        "completion_tokens": 212,
+        "total_tokens": 733
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is inquiring about a delayed t-shirt order, which relates to a past purchase and order tracking. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 521,
+        "completion_tokens": 212,
+        "total_tokens": 733
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is inquiring about the status of a past order (t-shirt) that hasn't arrived after 2 weeks. This falls under website information (order status, shipping) and past purchases (historical order). No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 521,
+        "completion_tokens": 274,
+        "total_tokens": 795
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user requests a receipt for a specific order and asks about discounts. This is a past purchase inquiry and also a question about available discounts. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 262,
+        "total_tokens": 796
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user requests a receipt for a past order and asks about discounts. This involves past purchase details and discount availability. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 308,
+        "total_tokens": 842
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user requests a receipt for a past order and asks about discounts. This involves past purchase details and discount availability. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 257,
+        "total_tokens": 791
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user requests a receipt for a past order and asks about discounts, which relates to past purchases and available discounts. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 308,
+        "total_tokens": 842
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user requests a receipt for a past order and asks about discounts. This involves past purchase details and discount availability. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 272,
+        "total_tokens": 806
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about a recent show, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 180,
+        "total_tokens": 699
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about a recent show, not asking for any specific category. No request for previous conversation recap, website info, social media posts, discounts, upcoming events, past purchases, or a human. All categories are NO.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 206,
+        "total_tokens": 725
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is simply giving feedback about a recent show, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 186,
+        "total_tokens": 705
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about a recent show, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 180,
+        "total_tokens": 699
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about a recent show, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 180,
+        "total_tokens": 699
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the last conversation and help locating the event policy on the website. No other categories are relevant.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 537,
+        "completion_tokens": 291,
+        "total_tokens": 828
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the last conversation and help locating the event policy on the website. No other categories are relevant.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 537,
+        "completion_tokens": 295,
+        "total_tokens": 832
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the last conversation and help locating the event policy on the website. No other categories are relevant.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 537,
+        "completion_tokens": 281,
+        "total_tokens": 818
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the last conversation and help locating the event policy on the website. No other categories are relevant.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 537,
+        "completion_tokens": 291,
+        "total_tokens": 828
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for a recap of the last conversation and help locating the event policy on the website. No other categories are relevant.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 537,
+        "completion_tokens": 291,
+        "total_tokens": 828
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is requesting a human representative and also references a prior conversation, so both \"Talk to a Human\" and \"Recap of previous conversation\" apply. No other categories are relevant.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 520,
+        "completion_tokens": 213,
+        "total_tokens": 733
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is requesting a human representative and also references a prior conversation, so both categories apply. No other categories are relevant.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 520,
+        "completion_tokens": 199,
+        "total_tokens": 719
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user references a prior interaction and explicitly requests to speak with a human. No other categories are mentioned.  \nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 520,
+        "completion_tokens": 268,
+        "total_tokens": 788
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is requesting a human representative and also references a prior conversation, so both categories apply. No other categories are relevant.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 520,
+        "completion_tokens": 199,
+        "total_tokens": 719
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user references a prior interaction and explicitly requests to speak with a human. No other categories are mentioned.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 520,
+        "completion_tokens": 250,
+        "total_tokens": 770
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about price matching and student discount, which falls under \u201cAvailable discounts.\u201d No other categories apply.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 177,
+        "total_tokens": 715
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about price matching and student discount, which falls under the \u201cAvailable discounts\u201d category. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 193,
+        "total_tokens": 731
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about price matching and student discount, which falls under the \u201cAvailable discounts\u201d category. They mention Ticketmaster but are not requesting navigation or ticket purchase instructions on the Yes! Music website, so \u201cWebsite information\u201d is not applicable. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 209,
+        "total_tokens": 747
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about price matching and student discount, which falls under the \u201cAvailable discounts\u201d category. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 193,
+        "total_tokens": 731
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about price matching and student discount, which falls under the \u201cAvailable discounts\u201d category. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 193,
+        "total_tokens": 731
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where to find photos posted on Instagram by the venue\u2019s photographer. This is a request about recent social media posts produced by Yes! Music. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 332,
+        "total_tokens": 860
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where to find photos posted on Instagram by the venue\u2019s photographer. This is a request about recent social media posts produced by Yes! Music. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 332,
+        "total_tokens": 860
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where to find photos posted on Instagram by the venue. This is a request about recent social media posts produced by Yes! Music. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 289,
+        "total_tokens": 817
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where to find photos posted on Instagram by the venue. This is a request about recent social media posts produced by Yes! Music. No other categories apply.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 254,
+        "total_tokens": 782
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking where to find photos posted on Instagram by the venue\u2019s photographer. This is a request about recent social media posts produced by Yes! Music. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 332,
+        "total_tokens": 860
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking how to update their shipping address, which is a site navigation/transaction question. This falls under the \u201cWebsite information\u201d category. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 504,
+        "completion_tokens": 211,
+        "total_tokens": 715
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking how to update their shipping address, which is a question about navigating the Yes! Music website to modify order details. This falls under \u201cWebsite information.\u201d It does not involve past purchases, discounts, events, or a request to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 504,
+        "completion_tokens": 372,
+        "total_tokens": 876
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking how to update their shipping address, which is a site navigation question related to the website. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 504,
+        "completion_tokens": 265,
+        "total_tokens": 769
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking how to update their shipping address, which is a website-related request. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 504,
+        "completion_tokens": 167,
+        "total_tokens": 671
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking where to update their shipping address, which is a navigation question on the website for order management. This falls under \u201cWebsite information.\u201d It is not a recap, social media, discounts, upcoming events, past purchases, or a request to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 504,
+        "completion_tokens": 438,
+        "total_tokens": 942
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user references a TikTok post by Yes! Music and asks about next month\u2019s lineup. This involves a recent social media post and a request for upcoming events. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 347,
+        "total_tokens": 863
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user mentions a TikTok post by Yes! Music and asks about next month\u2019s lineup. This references a recent social media post and a request for upcoming events. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 278,
+        "total_tokens": 794
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user references a TikTok post and asks about next month\u2019s lineup, which relates to recent social media content and upcoming events. No other categories apply.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 275,
+        "total_tokens": 791
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user mentions a TikTok post by Yes! Music and asks about next month\u2019s lineup, which is about upcoming events. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 229,
+        "total_tokens": 745
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user mentions a TikTok post by Yes! Music and asks about next month\u2019s lineup, which is about upcoming events. No other categories apply.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 230,
+        "total_tokens": 746
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a past ticket purchase and whether it can be exchanged. This falls under the \u201cPast Purchases\u201d category. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 517,
+        "completion_tokens": 203,
+        "total_tokens": 720
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about tickets purchased last week and whether they can be exchanged. This is a request about past purchases. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 517,
+        "completion_tokens": 241,
+        "total_tokens": 758
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about tickets they bought last week and whether they can exchange them. This is a request about past purchases. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 517,
+        "completion_tokens": 241,
+        "total_tokens": 758
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about tickets they bought last week and whether they can exchange them. This is a request about past purchases. No other categories apply.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 517,
+        "completion_tokens": 265,
+        "total_tokens": 782
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a past ticket purchase and whether it can be exchanged. This falls under the \u201cPast Purchases\u201d category. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 517,
+        "completion_tokens": 203,
+        "total_tokens": 720
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about reducing cost for lawn seating, which is a request for a discount or promotional offer. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 236,
+        "total_tokens": 764
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about reducing cost for lawn seating, which is a request for a discount or promotional offer. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 235,
+        "total_tokens": 763
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about reducing the cost for lawn seating, indicating a request for a discount or lower price. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 328,
+        "total_tokens": 856
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about reducing the cost for lawn seating, which is a request for a discount or promotional offer. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 245,
+        "total_tokens": 773
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about reducing cost for lawn seating, which is a request for a discount or promotional offer. No other categories are relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 236,
+        "total_tokens": 764
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about venue facilities, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 239,
+        "total_tokens": 771
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about venue facilities, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 235,
+        "total_tokens": 767
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about venue facilities, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 236,
+        "total_tokens": 768
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about venue facilities, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 239,
+        "total_tokens": 771
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is giving feedback about venue facilities, not asking about any of the specified categories.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 236,
+        "total_tokens": 768
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260116_130004"
+}

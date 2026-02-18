@@ -1,0 +1,1733 @@
+{
+  "summary": {
+    "accuracy": 0.17647058823529413,
+    "variance": 0.1453287197231834,
+    "total": 80,
+    "errors": 12,
+    "scenario": "sage",
+    "approach": "structured",
+    "perturbed": false,
+    "model": "llama-3.1-8b-instant",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "My thoughts are that based on the client's message, it's clear that they're asking about specific information related to the Sage website. Given this, I think the most relevant checking functions are 'check_sage_website_information' to confirm whether the message is directly related to the Sage platform or website, and 'check_sage_social_media' does not apply here as they're asking about specific website features. \n\nThe function to call would be:\n",
+      "usage": {
+        "prompt_tokens": 1508,
+        "completion_tokens": 112,
+        "total_tokens": 1620
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "My thoughts are that we need to call 'check_sage_website_information' to check if the message asks about the Sage platform or website, where they can subscribe, the privacy policy, blogs and other webpages, and how to find different features.\n\n",
+      "usage": {
+        "prompt_tokens": 1508,
+        "completion_tokens": 62,
+        "total_tokens": 1570
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "My thoughts are this user wants information from the Sage website specifically, and has explicitly mentioned the website by asking about privacy policy and account settings, which suggests we need two functions: 'check_sage_website_information' and no further relevant function is mentioned so this one should be called alone.",
+      "usage": {
+        "prompt_tokens": 1508,
+        "completion_tokens": 59,
+        "total_tokens": 1567
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, the client is asking about specific information and features on the Sage platform or website. In particular, they are looking for the privacy policy and account settings. \n\nI will call the check_sage_website_information function to check if this message requires an answer about the website features and information.\n\n\n\n",
+      "usage": {
+        "prompt_tokens": 1508,
+        "completion_tokens": 74,
+        "total_tokens": 1582
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "To address this message, it seems relevant to call functions that check information about the Sage website and account settings. \n",
+      "usage": {
+        "prompt_tokens": 1508,
+        "completion_tokens": 46,
+        "total_tokens": 1554
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "My thoughts are that the user is asking about the company behind Sage and how it operates. In this case, I should call check_sage_company_info, as the user is asking explicit questions about who owns Sage and how it operates.\n\n",
+      "usage": {
+        "prompt_tokens": 1516,
+        "completion_tokens": 59,
+        "total_tokens": 1575
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "The client is asking about the Sage company. This suggests that we should check for explicit questions about who owns Sage, when was the company founded, who are the investors, when did they start, who built Sage, etc.\n\n",
+      "usage": {
+        "prompt_tokens": 1516,
+        "completion_tokens": 57,
+        "total_tokens": 1573
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "The client is asking questions about Sage's company information and business model.\n\n",
+      "usage": {
+        "prompt_tokens": 1516,
+        "completion_tokens": 37,
+        "total_tokens": 1553
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "I will use the following functions to check the message: check_sage_company_info, check_psychometric_quizzes.\n\n",
+      "usage": {
+        "prompt_tokens": 1516,
+        "completion_tokens": 59,
+        "total_tokens": 1575
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "My thoughts are that based on the message, there are clear mentions about company-related information and the specifics about how Sage operates. \n\n",
+      "usage": {
+        "prompt_tokens": 1516,
+        "completion_tokens": 62,
+        "total_tokens": 1578
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1527,
+        "completion_tokens": 44,
+        "total_tokens": 1571
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1527,
+        "completion_tokens": 34,
+        "total_tokens": 1561
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "It seems you're asking about a YouTube video from me or the Sage team. I need to tell you about the Sage platform or website, where they can subscribe, the privacy policy, blogs and other webpages, and how to find different features. Please refer to https://sage.education for the latest content.\n \n",
+      "usage": {
+        "prompt_tokens": 1527,
+        "completion_tokens": 77,
+        "total_tokens": 1604
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1527,
+        "completion_tokens": 23,
+        "total_tokens": 1550
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1527,
+        "completion_tokens": 22,
+        "total_tokens": 1549
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "Based on the client's message, I think the relevant checking function is check_psychometric_quizzes. This function will help determine if the client is asking about tests/assessments/quizzes they've taken on the Sage platform. I also think we should call check_sage_website_information, as the client may be asking about how to access their results or where they can find this information.\n\n",
+      "usage": {
+        "prompt_tokens": 1524,
+        "completion_tokens": 105,
+        "total_tokens": 1629
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "I think the function to call is 'check_psychometric_quizzes' because this message clearly asks about a test the user has taken on the Sage platform.\n\n",
+      "usage": {
+        "prompt_tokens": 1524,
+        "completion_tokens": 78,
+        "total_tokens": 1602
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on this message, it seems like the client is inquiring about their results from a test/assessment they took on the Sage platform. This align with the check_psychometric_quizzes topic category, but also requires checking the privacy policy which corresponds to check_sage_website_information because the privacy policy falls under where people can look up the details of the information about Sage. Therefore, both functions should be called:<function>check_psychometric_quizzes</function><function>check_sage_website_information</function>",
+      "usage": {
+        "prompt_tokens": 1524,
+        "completion_tokens": 105,
+        "total_tokens": 1629
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "I would call check_psychometric_quizzes to check if the user is asking about the test results they took on the Sage platform, and check_sage_website_information to see if the user is curious about the platform's privacy policy.\n\n",
+      "usage": {
+        "prompt_tokens": 1524,
+        "completion_tokens": 71,
+        "total_tokens": 1595
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "I think I can call the following functions based on the message:\ncheck_psychometric_quizzes: The message clearly mentions taking a depression test, so checking for psychometric quizzes makes sense. \ncheck_sage_website_information: Although not explicitly mentioned, the user asks about the privacy policy of Sage, which could be related to the Sage website information. \n\n",
+      "usage": {
+        "prompt_tokens": 1524,
+        "completion_tokens": 95,
+        "total_tokens": 1619
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1514,
+        "completion_tokens": 11,
+        "total_tokens": 1525
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information",
+        "Sage Technology",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1514,
+        "completion_tokens": 45,
+        "total_tokens": 1559
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: tool call validation failed: attempted to call tool 'check_end_conversation /' which was not in request.tools\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1514,
+        "completion_tokens": 21,
+        "total_tokens": 1535
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1546,
+        "completion_tokens": 32,
+        "total_tokens": 1578
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Sage Social Media",
+        "End Conversation",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1546,
+        "completion_tokens": 54,
+        "total_tokens": 1600
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1546,
+        "completion_tokens": 33,
+        "total_tokens": 1579
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1546,
+        "completion_tokens": 22,
+        "total_tokens": 1568
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1532,
+        "completion_tokens": 12,
+        "total_tokens": 1544
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1532,
+        "completion_tokens": 43,
+        "total_tokens": 1575
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "It sounds like the user is expressing frustration and desperation. Based on this, I think it would be important to check for indications of self-harm or serious safety issues.\n\n",
+      "usage": {
+        "prompt_tokens": 1532,
+        "completion_tokens": 45,
+        "total_tokens": 1577
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I think I see a few topics that have been mentioned in the message.\n\nThe user is asking about research material and blog posts from the Sage team, which suggests that the user might be interested in the Sage platform or website, where they can subscribe, the privacy policy, blogs and other webpages, and how to find different features.\n\nThe user is also asking about the company behind Sage, which suggests that the user is interested in explicit questions about who owns Sage, when was the company founded, who are the investors, when did they start, who built Sage, etc.\n\nMoreover, the user is inquiring about how Sage works and the technology behind it, which suggests that the user has technical questions about how Sage works, the AI models they use, or their capabilities.\n\nThe user also mentions that they saw a tweet about this, which suggests that the user is interested in the social media content of the Sage team, including tweets and posts from the Sage team or YouTube videos from Sage.\n\ncheck_sage_website_information></function>\n\ncheck_sage_company_info></function>\n\ncheck_sage_technology></function>\n\ncheck_sage_social_media></function>",
+      "usage": {
+        "prompt_tokens": 1563,
+        "completion_tokens": 232,
+        "total_tokens": 1795
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "It looks like the user has asked specific questions about the Sage platform and its team. I should call functions for Sage Website Information and Sage Company Info.\n\n",
+      "usage": {
+        "prompt_tokens": 1563,
+        "completion_tokens": 64,
+        "total_tokens": 1627
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "My thoughts are that the best functions to call are check_sage_social_media to check if the message mentions YouTube videos from Sage or the Sage team, social media tweets and posts, blog posts from either \u2014 not general social media, only for explicit mentions about content directly from the Sage team. Also check_sage_website_information to check questions about the Sage platform or website, where they can subscribe, the privacy policy, blogs and other webpages, and how to find different features \u2014 this is distinct from social media.\n",
+      "usage": {
+        "prompt_tokens": 1563,
+        "completion_tokens": 149,
+        "total_tokens": 1712
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Based on the message the client sent, the following functions should be called:\n\ncheck_sage_website_information>  \ncheck_sage_company_info>  \ncheck_sage_technology>  \n\n",
+      "usage": {
+        "prompt_tokens": 1563,
+        "completion_tokens": 72,
+        "total_tokens": 1635
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "My thoughts on which functions to use:\nThe client is asking about the Sage platform, specifically referring to the team's work, and asking if it's a nonprofit. This client is inquiring about the Sage website and its features, the company behind Sage, as well as its technology. To match this interest and find relevant information, I should call the Sage Website Information function.\n\n\n",
+      "usage": {
+        "prompt_tokens": 1563,
+        "completion_tokens": 109,
+        "total_tokens": 1672
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I'd call <function=check_safety_call></function> first to ensure the client isn't experiencing any immediate safety risks. \n\n",
+      "usage": {
+        "prompt_tokens": 1536,
+        "completion_tokens": 38,
+        "total_tokens": 1574
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Safety Call",
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, it seems that the client is expressing feelings of distress and a desire to improve their mental health. This suggests that the check_safety_call function should be called to assess for potential safety issues. \n\n",
+      "usage": {
+        "prompt_tokens": 1536,
+        "completion_tokens": 78,
+        "total_tokens": 1614
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "I should call check_safety_call to check if there are any indications of self harm or safety issues, and check_psychometric_quizzes to see if there's a possibility of finding quizzes or assessments that could help the client feel better.\n",
+      "usage": {
+        "prompt_tokens": 1536,
+        "completion_tokens": 71,
+        "total_tokens": 1607
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_psychometric_quizzes; check_sage_website_information</function>",
+      "usage": {
+        "prompt_tokens": 1535,
+        "completion_tokens": 16,
+        "total_tokens": 1551
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, my thought process is as follows: The client mentions a previous conversation about a test for anxiety, and now they are asking where it is located, which implies it might be related to the Sage platform. \n\nThis suggests I should call the 'check_most_recent_conversation' to see if they are referring to their previous conversation, and 'check_sage_website_information' to see if the client is asking about the location of the test/assessment/quizzes on the Sage website.\n\n I will call:\n",
+      "usage": {
+        "prompt_tokens": 1535,
+        "completion_tokens": 128,
+        "total_tokens": 1663
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "The messages clearly mention psychometric quizzes and the Sage website, so the relevant functions to call are:\n\n",
+      "usage": {
+        "prompt_tokens": 1535,
+        "completion_tokens": 44,
+        "total_tokens": 1579
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, I think it would be helpful to use the following tools:\n\ncheck_psychometric_quizzes, check_sage_website_information\n\n",
+      "usage": {
+        "prompt_tokens": 1535,
+        "completion_tokens": 53,
+        "total_tokens": 1588
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Based on the client's message, I think it's relevant to call \n\ncheck_psychometric_quizzes\ncheck_sage_website_information\n\n",
+      "usage": {
+        "prompt_tokens": 1535,
+        "completion_tokens": 53,
+        "total_tokens": 1588
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: tool call validation failed: attempted to call tool 'check_safety_call /' which was not in request.tools\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "/end_conversation{\"type\": \"abusive\"}; /check_safety_call{\"severity\": \"high\"}; /check_most_recent_conversation; /check_psychometric_quizzes",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 39,
+        "total_tokens": 1572
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 21,
+        "total_tokens": 1554
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 23,
+        "total_tokens": 1556
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_end_conversation</function>\ncheck_safety_call</function>",
+      "usage": {
+        "prompt_tokens": 1548,
+        "completion_tokens": 16,
+        "total_tokens": 1564
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: tool call validation failed: attempted to call tool 'check_safety_call /' which was not in request.tools\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I'm concerned about the client's situation. Calling 'check_safety_call'. \n\n",
+      "usage": {
+        "prompt_tokens": 1548,
+        "completion_tokens": 38,
+        "total_tokens": 1586
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_end_conversation\ncheck_safety_call {\"safety_call\": \"immediate_and_extreme_duress\"}",
+      "usage": {
+        "prompt_tokens": 1548,
+        "completion_tokens": 25,
+        "total_tokens": 1573
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_safety_call check_end_conversation\n(function=check_safety_call>{}</function)\n(function=check_end_conversation>{}</function)",
+      "usage": {
+        "prompt_tokens": 1548,
+        "completion_tokens": 30,
+        "total_tokens": 1578
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Sage Company Info",
+        "End Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "My first thought is that this user is making some clear requests for the Sage website, so they might be asking about our company or platform. I also think they have questions about the AI technology behind me, which is covered under the technical questions. So, I'm going to call the check_sage_company_info, check_sage_website_information, and check_sage_technology functions.\n\n",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 134,
+        "total_tokens": 1667
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "It seems like the topic of our previous conversation isn't mentioned in the current message, so no need to call most_recent_conversation. However, this message involves questions about Sage: the AI model used, and the website.\n\n",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 69,
+        "total_tokens": 1602
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Psychometric Quizzes",
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "I think you're looking for information about Sage's AI technology, which is used to power our conversations. \n\n",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 80,
+        "total_tokens": 1613
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the message, it seems we may need to call 'check_most_recent_conversation' to check if it's about the previous conversation, however it seems most likely we are going to call 'check_end_conversation' to check if the conversation about last conversation is suitable and 'check_safety_call' to ensure that the user's concerns about their mental health are acknowledged before considering if the conversation is suitable to continue, 'check_sage_technology' to confirm this is a tech-related question, 'check_sage_website_information' to ensure the user is looking for accurate and reliable information, 'check_sage_technology' and 'check_psychometric_quizzes' to clarify whether the model being asked about is related to psychometric quizzes and 'check_sage_company_info' for the model details, 'check_sage_website_information' to ensure they're looking for information about your website, not social media. The user is also looking for model info, which suggests we need to call 'check_sage_website_information'.\n\n=function=check_most_recent_conversation></function>\n=function=check_sage_technology></function>\n=function=check_end_conversation></function>\n=function=check_safety_call></function>\n=function=check_sage_website_information></function>\n=function=check_sage_technology></function>\n=function=check_sage_company_info></function>\n=function=check_psychometric_quizzes></function>",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 291,
+        "total_tokens": 1824
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "We talked about the previous conversation last time, and this time you're asking about the model I use. I'm going to look into that for you.\n\nI should call check_most_recent_conversation to check on the previous conversation. I should also call check_sage_website_information to see if you're looking to find more information about me on my website. And, I should call check_sage_technology because you're asking about the model I use.\n\n",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 127,
+        "total_tokens": 1660
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Based on this message, I think calling check_end_conversation and check_safety_call would be most relevant. The client is expressing intense anger and frustration which may be a sign for Sage to end the conversation if it becomes abusive, and also there is an indication of potential self-harm.\n\n",
+      "usage": {
+        "prompt_tokens": 1523,
+        "completion_tokens": 79,
+        "total_tokens": 1602
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "/check_end_conversation\n\n</function>\n\nI'm concerned about the hostile tone in your message. I want to make sure you're safe and supported. Would you like to talk about what's going on and help you calm down?",
+      "usage": {
+        "prompt_tokens": 1523,
+        "completion_tokens": 47,
+        "total_tokens": 1570
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, it seems like the client is extremely upset and in distress. The explicit language and unclear statement also raise concerns about safety. I think the following functions are relevant:\n\n",
+      "usage": {
+        "prompt_tokens": 1523,
+        "completion_tokens": 113,
+        "total_tokens": 1636
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "/check_safety_call\n\n\n</function>",
+      "usage": {
+        "prompt_tokens": 1523,
+        "completion_tokens": 10,
+        "total_tokens": 1533
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: tool call validation failed: attempted to call tool 'check_end_conversation /' which was not in request.tools\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The client's message includes explicit language and threats. The client is also expressing frustration with the website and seeking information about accessing features. It's likely that the client's intent is to find specific features on the website rather than to engage in conversation about safety or company information.\n\n <function=check_end_conversation /></function><function=check_sage_website_information /></function>",
+      "usage": {
+        "prompt_tokens": 1558,
+        "completion_tokens": 75,
+        "total_tokens": 1633
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1558,
+        "completion_tokens": 30,
+        "total_tokens": 1588
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1558,
+        "completion_tokens": 44,
+        "total_tokens": 1602
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is being abusive and hostile towards me. \nIt seems clear that they are asking about the Sage website and are frustrated with its navigation. I should use check_sage_website_information and check_end_conversation as the user's behavior is unacceptable and the conversation should be ended.\n\n",
+      "usage": {
+        "prompt_tokens": 1558,
+        "completion_tokens": 78,
+        "total_tokens": 1636
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The client appears to be being extremely hostile and abusive towards Sage and the Sage website. They're also mentioning difficulties in accessing information on the Sage website. In light of this, the following functions should be called:\n",
+      "usage": {
+        "prompt_tokens": 1558,
+        "completion_tokens": 74,
+        "total_tokens": 1632
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1513,
+        "completion_tokens": 99,
+        "total_tokens": 1612
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1513,
+        "completion_tokens": 32,
+        "total_tokens": 1545
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1513,
+        "completion_tokens": 55,
+        "total_tokens": 1568
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: tool call validation failed: attempted to call tool 'check_safety_call /' which was not in request.tools\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1513,
+        "completion_tokens": 30,
+        "total_tokens": 1543
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260112_115029"
+}

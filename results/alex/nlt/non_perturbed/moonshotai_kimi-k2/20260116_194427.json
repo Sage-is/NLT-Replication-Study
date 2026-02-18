@@ -1,0 +1,1745 @@
+{
+  "summary": {
+    "accuracy": 0.75,
+    "variance": 0.1875,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "alex",
+    "approach": "nlt",
+    "perturbed": false,
+    "model": "moonshotai/kimi-k2",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two direct questions: (1) where on the Yes! Music website they can buy balcony tickets, and (2) how to check their order status for a ticket they purchased last week. Both of these questions relate directly to website guidance and past purchases.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 106,
+        "total_tokens": 572
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks two clear questions: (1) where on the website to buy balcony tickets and check their order status, which explicitly concerns the Yes! Music website \u2013 that triggers \u201cWebsite information\u201d. (2) They also mention they purchased a ticket last week and want to check on it, which is about a previous order \u2013 that triggers \u201cPast Purchases\u201d. No mention is made of a prior conversation recap, social media, discounts/promos, upcoming event listings, or a request to speak with a human.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 154,
+        "total_tokens": 620
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer asks where on the website to buy balcony tickets and check order status, which clearly falls under Website information. They also mention buying a ticket last week and needing to check on it, which falls under Past Purchases. None of the other topics (Recap of previous conversation, Recent social media posts, Available discounts, List of upcoming events, Talk to a Human) have been mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 130,
+        "total_tokens": 596
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about where on the website to buy balcony tickets, which is website information. They also want to check order status and mention they bought a ticket last week - both of these relate to past purchases.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 94,
+        "total_tokens": 560
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is directly asking Alex where on the \"Yes! Music\" website to purchase balcony tickets and check order status, which clearly refers to the website's ticketing and order-tracking functionality. They also mention buying a ticket last week and needing to check on it, which qualifies as a question about past purchases (past order and status).\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 117,
+        "total_tokens": 583
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly asks if Alex is human (which implies awareness that Alex might be AI) and then directly requests to be transferred to a live agent. This satisfies the \"Talk to a Human\" criterion. None of the other listed topics (recap, website info, social-media posts, discounts, upcoming events, or past purchases) are mentioned or implied.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 451,
+        "completion_tokens": 123,
+        "total_tokens": 574
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer explicitly asks if Alex is human and then requests to be transferred to a live agent right now. That counts as a \"Talk to a Human\" mention. No other topics (recap, website details, recent posts, discounts, upcoming events, or past purchases) are referenced.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 451,
+        "completion_tokens": 109,
+        "total_tokens": 560
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly asked to be transferred to a live agent, so \"Talk to a Human\" is satisfied. The phrase \"Are you human?\" is not enough on its own, but the follow-up \"can you transfer me to a live agent right now?\" makes it clear. None of the other listed topics are mentioned or relevant.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 451,
+        "completion_tokens": 118,
+        "total_tokens": 569
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer explicitly asks if Alex is human and then requests to be transferred to a live agent. This directly satisfies the \u201cTalk to a Human\u201d topic. No other topics are mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 451,
+        "completion_tokens": 88,
+        "total_tokens": 539
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer explicitly asks \u201cCan you transfer me to a live agent right now?\u201d which is a direct request to speak to a human. The first question \u201cAre you human?\u201d alone doesn\u2019t clearly constitute asking to talk to a human, but the follow-up does. No other topics are referenced.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 451,
+        "completion_tokens": 110,
+        "total_tokens": 561
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly refers to the \u201cyesterday\u201d conversation (asking \"Who\u2019s playing this weekend again?\u201d which implies they want a recap of that most recent exchange). They are also requesting information about the \u201cupcoming events\u201d (specifically \u201cthis weekend\u201d). No mention is made of website details, brand-new social-media content from Yes! Music, discounts, any past purchase, or the need to speak to a human.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 464,
+        "completion_tokens": 136,
+        "total_tokens": 600
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly says they \u201creached out yesterday\u201d and references what Alex told them then, which is a direct request for a recap of the previous conversation. They also ask \"Who\u2019s playing this weekend again?\", which is a direct inquiry about upcoming events.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 464,
+        "completion_tokens": 103,
+        "total_tokens": 567
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly asks \u201cWho\u2019s playing this weekend again?\u201d (a request for upcoming events), mentions they \u201creached out yesterday about some of the upcoming events, but I don\u2019t remember what you told me\u201d (a reference to their most recent exchange with Alex). Neither website info, discounts, social-media posts, past purchases, nor a request to speak to a human appear.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 464,
+        "completion_tokens": 128,
+        "total_tokens": 592
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions they \u201creached out yesterday about some of the upcoming events\u201d (referring to their *most recent* conversation with Alex) and explicitly asks \u201cWho\u2019s playing this weekend again?\u201d \u2014 both a recap request and an endurance of the topic \u201cList of upcoming events.\u201d None of the other topics are present.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 464,
+        "completion_tokens": 116,
+        "total_tokens": 580
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer explicitly mentions they talked \"yesterday\" (a previous conversation with Alex) and asks to be reminded what was said. That activates Recap of previous conversation. They also re-ask \u201cWho\u2019s playing this weekend again?\u201d, which is direct curiosity about the shows scheduled for this coming weekend and thus List of upcoming events. No other topic appears.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 464,
+        "completion_tokens": 123,
+        "total_tokens": 587
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentioned an Instagram post (specifically from Yes! Music), so Recent social media posts is relevant. They asked about viewing upcoming events on the website and how to find what\u2019s coming up, which covers both Website information and List of upcoming events. They also asked about a student discount, so Available discounts is relevant. They did not mention anything about the recap of previous conversation, past purchases, or asking to speak to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 139,
+        "total_tokens": 612
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions \"your Instagram post about the new DJ set,\" which is a reference to a recent social media post from Yes!Music. They then ask \"how do I know what\u2019s coming up?\" which is a request for a list of upcoming events, and specifically mention viewing events on the website. Finally, they ask \"is there a student discount?\" which is about available discounts. The topics not mentioned are Recap of previous conversation, Past Purchases, and Talk to a Human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 150,
+        "total_tokens": 623
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentioned seeing an Instagram post about a new DJ set\u2014which pertains to \"Recent social media posts.\" They explicitly asked how to find upcoming events (\"List of upcoming events\") and whether to view them on the website (\"Website information\"). They also inquired about a student discount (\"Available discounts\"). None of the other topics\u2014Recap of previous conversation, Past Purchases, or Talk to a Human\u2014were mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 135,
+        "total_tokens": 608
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post about \"the new DJ set\" (Recent social media posts), asks about viewing upcoming events on the website (List of upcoming events and Website information), inquires if there's a student discount (Available discounts). No mention of Recap of previous conversation, Past Purchases, or Talk to a Human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 118,
+        "total_tokens": 591
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post from Yes! Music -- which counts as \u201cRecent social-media posts.\u201d They ask whether the website lists upcoming events or how to learn what\u2019s coming up; this triggers both \u201cWebsite information\u201d and \u201cList of upcoming events.\u201d Finally, they directly ask about \u201ca student discount,\u201d which falls under \u201cAvailable discounts.\u201d None of the remaining topics (Recap of previous conversation, Past Purchases, Talk to a Human) are mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 145,
+        "total_tokens": 618
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about an order they placed for a t-shirt that hasn\u2019t arrived yet (\u201cordered \u2026 still not here\u201d), so this clearly concerns a past purchase.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 84,
+        "total_tokens": 543
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about an order they placed for a t-shirt that has not arrived after two weeks. This clearly relates to a past purchase and involves checking order status or delivery details. The other provided topics are not mentioned or necessarily relevant to this question.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 102,
+        "total_tokens": 561
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about an order they placed for a t-shirt two weeks ago that hasn't arrived. This directly relates to questions about previous orders and shipping status, so \"Past Purchases\" is a clear YES. None of the other topics appear to be mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 104,
+        "total_tokens": 563
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about the status of a t-shirt order they placed two weeks ago and indicates it has not arrived. This is clearly about a previous purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 83,
+        "total_tokens": 542
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about a prior T-shirt order that has not arrived after two weeks. This directly concerns a previous purchase and its shipment status\u2014a past-purchase query. No mentions of recent conversations, website how-to, social media posts, discounts, upcoming events, or requests to speak to a human are present.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 114,
+        "total_tokens": 573
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking Alex to resend a receipt for a specific order (#YM-4481), which directly relates to \"Past Purchases\". They are also explicitly asking whether \"Yes! Music\" offers discounts, which clearly falls under \"Available discounts\". None of the other topics\u2014recap, website info, recent social media posts, upcoming events, or requesting a human\u2014are mentioned in this exchange.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 133,
+        "total_tokens": 606
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking for their receipt to be resent for order #YM-4481, which directly relates to past purchases. They also explicitly ask about discounts, both wondering if they got one on that order and whether discounts are offered generally.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 99,
+        "total_tokens": 572
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking Alex to re-send a receipt for a specific order number (#YM-4481). They also explicitly wonder if a discount was applied to that order and go on to ask if discounts are offered at all. These two points match \u201cPast Purchases\u201d (request about a previous order and its receipt) and \u201cAvailable discounts\u201d.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 121,
+        "total_tokens": 594
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer asks to resend a receipt for an order, which immediately brings up Past Purchases. They then ask if any discount was applied on that order, which is again Past Purchases, and also explicitly ask whether discounts are offered, which brings up Available discounts. None of the other topics\u2014previous conversation recap, website info, social-media posts, or talk-to-human request\u2014are touched on.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 132,
+        "total_tokens": 605
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about a past receipt (Past Purchases) and also explicitly questions whether there are any discounts (Available discounts). The other topics are not mentioned in this single message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 88,
+        "total_tokens": 561
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is simply giving positive feedback about yesterday's show and complimenting the team. None of the listed topics\u2014such as questions about previous conversations, website details, social media content, discounts, upcoming events, past purchases, or requests for human support\u2014are present in this message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 457,
+        "completion_tokens": 108,
+        "total_tokens": 565
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing feedback about a show from yesterday\u2014no mention of recap questions, website info, social-media posts, discounts, upcoming events, past purchases, or any request to speak with a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 457,
+        "completion_tokens": 92,
+        "total_tokens": 549
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing enjoyment about \"the show yesterday\" and complimenting the team's performance. They are not asking about anything previously discussed between Alex and themselves (only giving feedback), not mentioning the website or specific recent social-media content from Yes! Music, not seeking discounts, not requesting upcoming events, not inquiring about prior orders, and not asking for a live agent.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 457,
+        "completion_tokens": 125,
+        "total_tokens": 582
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is only providing positive feedback about yesterday\u2019s show and complimenting the team. They do not reference any prior conversation between themselves and Alex, ask about the website or any social posts, inquire about discounts, request upcoming-event details, look up past purchases, or ask to speak to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 457,
+        "completion_tokens": 111,
+        "total_tokens": 568
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is giving feedback about \"the show yesterday\" and praising the team, but they have not asked any questions or brought up any specific topics related to the venue's website, social media, discounts, upcoming events, past purchases, or talking to a human. There's also no mention of any previous conversation that needs to be recapped. Everything listed is simply unaddressed here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 457,
+        "completion_tokens": 129,
+        "total_tokens": 586
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking Alex about what was discussed in their last interaction (a recap) and explicitly mentions that the policy is on the website but they can\u2019t find it, which is a website-information question. No other topics are mentioned.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 475,
+        "completion_tokens": 98,
+        "total_tokens": 573
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer explicitly asks about what happened in their last conversation with Alex (recap), and also says they were told to check the website for the event policy but they can't find it (website information). No other topics are mentioned here.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 475,
+        "completion_tokens": 98,
+        "total_tokens": 573
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly asks about the \"last time we talked,\" referencing that they previously asked for the event policy and Alex told them to look on the website. This clearly brings up the Recap of previous conversation. They also say they can\u2019t find it on the website, which is a direct follow-up question about website information (specifically the event-policy section they were told about last time).\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 475,
+        "completion_tokens": 129,
+        "total_tokens": 604
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is explicitly asking about the details of a prior conversation and is also saying they cannot locate the event-policy web page after being directed there earlier. That covers two distinct topics.\n\nRecap of previous conversation -- YES  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 475,
+        "completion_tokens": 87,
+        "total_tokens": 562
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking if Alex \u201cremembers\u201d what was discussed in the most-recent previous exchange with them\u2014explicitly referencing that last conversation (\u201clast time we talked \u2026 I asked you \u2026\u201d and noting that Alex suggested visiting the website for the event policy). This is a direct reference to the most-recent conversation between Alex and this customer, so \u201cRecap of previous conversation\u201d is clearly YES. The customer also says \u201c\u2026check out your website\u2026but I can\u2019t find it,\u201d which is a follow-up question about navigating the Yes! Music website, so \u201cWebsite information\u201d is YES. None of the other listed topics are touched on.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 475,
+        "completion_tokens": 182,
+        "total_tokens": 657
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is explicitly referencing the last time they interacted with Alex (\u201clast time we talked you couldn\u2019t help me at all\u201d), which is a recap of the previous conversation. They are also explicitly asking to talk to a person (\u201clet me talk to a person\u201d), which is a direct request for a human agent. None of the other topics are mentioned.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 458,
+        "completion_tokens": 121,
+        "total_tokens": 579
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing \u201clast time we talked\u201d (most recent conversation) and explicitly says \u201clet me talk to a person please.\u201d These correspond to the topics \u201cRecap of previous conversation\u201d and \u201cTalk to a Human,\u201d while none of the other topics are mentioned.  \nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 458,
+        "completion_tokens": 107,
+        "total_tokens": 565
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The sentence \u201clast time we talked you couldn\u2019t help me at all\u201d refers back to the immediately-preceding exchange between the same two parties, so it counts as a recap of the previous conversation. The explicit phrase \u201cjust let me talk to a person please\u201d is a direct request to reach a human agent.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 458,
+        "completion_tokens": 115,
+        "total_tokens": 573
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly references \u201clast time we talked,\u201d which calls for checking if a recap of the previous conversation is brought up. They also directly request, \u201cJust let me talk to a person please,\u201d which is a clear \u201cTalk to a Human\u201d prompt. None of the other listed topics appears in the message.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 458,
+        "completion_tokens": 114,
+        "total_tokens": 572
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions \u201clast time we talked\u201d (a brief reference to a prior interaction with Alex) and explicitly asks to \u201ctalk to a person,\u201d which is a direct request to reach a human agent. None of the other specific topics are brought up.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 458,
+        "completion_tokens": 102,
+        "total_tokens": 560
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly asks whether we price-match tickets they found cheaper elsewhere on ticketmaster. They also explicitly mention they are a student in hopes of getting a discount. Neither the previous conversation nor the other topics have been referenced.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 476,
+        "completion_tokens": 95,
+        "total_tokens": 571
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human",
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions seeing cheaper tickets on a site like Ticketmaster and asks if \u201cprice matching\u201d is offered, which falls under \u201cAvailable discounts.\u201d They also bring up being a student, another discount-related inquiry. None of the other topics (recap of previous conversation, website info for Yes! Music, recent social media post, request for upcoming events, past purchases, or talk to a human) are referenced.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 476,
+        "completion_tokens": 134,
+        "total_tokens": 610
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions checking \u201ctheir website\u201d (clearly referring to Yes! Music\u2019s website) and asks about price matching. They also mention being a student, which could qualify as a student discount. The only other topic possibly implicated would be \u201cwebsite information,\u201d but their reference to \u201ctheir website\u201d is just background to help frame the discount question rather than an explicit request for site help or policy details\u2014so it doesn\u2019t count. No other topics appear in the message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 476,
+        "completion_tokens": 147,
+        "total_tokens": 623
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer explicitly mentions cheaper prices on Ticketmaster and then asks if \u201cYes! Music\u201d offers price-matching, which directly relates to \u201cAvailable discounts.\u201d They also indicate they\u2019re a student, which is another form of discount. The mention of checking Ticketmaster\u2019s site doesn\u2019t count toward the \u201cWebsite information\u201d category since the question is about the competitor\u2019s site, not Yes! Music's website itself. None of the other topics are raised.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \n\nAssessment finished",
+      "usage": {
+        "prompt_tokens": 476,
+        "completion_tokens": 140,
+        "total_tokens": 616
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer has asked about a price-matching policy and explicitly notes they are a student looking for discounts. They also briefly mention visiting the \"Yes! Music\" website (or at least ticketmaster\u2019s site) while checking prices, but the core focus is on price matching and a student discount, so \"Available discounts\" is clearly relevant. No other topics (recap, social-media posts, upcoming events, past purchases, or talking to a human) are mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES  \nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 476,
+        "completion_tokens": 145,
+        "total_tokens": 621
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about photos from the venue's photographer that were supposed to be posted on Instagram by \"Yes! Music\". This is a direct query about content posted to \"Yes! Music\"'s social media, specifically Instagram. It does not mention the website, discounts, upcoming events, past purchases, a human transfer, or a recap of any previous conversation.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 124,
+        "total_tokens": 591
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about photos of the venue that were mentioned to be posted on Instagram. This refers to \u201crecent social media posts.\u201d No other topic categories (recap, website info, discounts, upcoming events, past purchases, or talk to a human) are mentioned.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 106,
+        "total_tokens": 573
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about finding specific Instagram posts (photos of the venue taken last week). Since this is directly referencing content from @yesmusic's Instagram, it qualifies as \"Recent social media posts.\"\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 91,
+        "total_tokens": 558
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about the \u201cYes! Music\u201d Instagram account and photos taken at the venue last week, which falls under recent social media posts. They are specifically checking for posts on Instagram. No other topics appear to be mentioned.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 98,
+        "total_tokens": 565
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about Instagram posts that were promised to feature pictures from a recent venue shoot. This directly references recent social-media content explicitly produced by \"Yes! Music.\"\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 85,
+        "total_tokens": 552
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about updating their shipping address. This is a question about how to use the website (since address updates are typically handled through the website's account/order settings), so \"Website information\" would apply. None of the other topics are being discussed.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 442,
+        "completion_tokens": 103,
+        "total_tokens": 545
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer's message asks about updating their shipping address. This relates to using the website (where shipping address is typically managed), but does not concern any recap of the prior conversation, specific recent social media posts, discounts, upcoming events, past purchases, or a request to speak with a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 442,
+        "completion_tokens": 109,
+        "total_tokens": 551
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking where to update their shipping address. This question is about website functionality and account management, which falls under website information. The other topics (previous conversation recap, social media posts, discounts, upcoming events, past purchases, and talking to a human) have not been mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 442,
+        "completion_tokens": 109,
+        "total_tokens": 551
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking where they can update their shipping address. This question is directly about website functionality or account management on the \"Yes! Music\" site, which falls under Website information.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 442,
+        "completion_tokens": 88,
+        "total_tokens": 530
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about updating their shipping address. This appears to be related to making changes to an existing order or account information rather than the website's basic functionality. Since this involves managing account details or existing orders, it falls under Website information.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 442,
+        "completion_tokens": 100,
+        "total_tokens": 542
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking:  \nThe message mentions having watched \u201cyour TikTok,\u201d which is a social-media post directly from Yes! Music (\u201clast weekend\u2019s festival\u201d), so this counts as a reference to recent social-media posts.  \nThe customer also explicitly asks whether the upcoming lineup (\u201cnext month\u2019s\u201d) is similar, which is a request for information about upcoming events. None of the other listed topics appear in this brief exchange.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 454,
+        "completion_tokens": 131,
+        "total_tokens": 585
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly mentioned \u201cyour TikTok covering last weekend\u2019s festival,\u201d which qualifies as a recent social media post from the \u201cYes! Music\u201d team. They also asked \u201cDoes next month\u2019s lineup have similar artists?\u201d which is a clear request for information on upcoming concerts and performances, fitting the list of upcoming events. None of the other topics appear in this single message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 454,
+        "completion_tokens": 126,
+        "total_tokens": 580
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user mentions \"your TikTok covering last weekend\u2019s festival,\" which directly references social media content produced by Yes! Music. This qualifies as a mention of recent social media posts. The user then asks about \"next month\u2019s lineup,\" which is a direct request for information about upcoming events or concerts.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 454,
+        "completion_tokens": 111,
+        "total_tokens": 565
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer explicitly mentions \"your TikTok covering last weekend\u2019s festival,\" which qualifies as a recent social-media post from \"Yes! Music.\" They also ask about \"next month\u2019s lineup,\" which is a direct inquiry for the list of upcoming events. The other topics\u2014recap of previous conversation, website information, available discounts, past purchases, and talk to a human\u2014are not addressed in this single exchange.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 454,
+        "completion_tokens": 134,
+        "total_tokens": 588
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking if next month\u2019s lineup features artists similar to those seen in a recent Yes! Music TikTok video\u2014in other words, content explicitly produced by Yes! Music on social media\u2014and requesting information on upcoming concerts. No mention is made of previous conversations, the website, discounts, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 454,
+        "completion_tokens": 118,
+        "total_tokens": 572
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets they bought last week and whether they can be exchanged. This directly relates to their previous purchase and return/exchange inquiry. None of the other topics (recap, website info, social media posts, discounts, upcoming events, or talking to a human) are mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 111,
+        "total_tokens": 566
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is explicitly asking about a previous order (\"tickets I bought last week\") and whether they can exchange them. This directly corresponds to questions about past purchases.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 84,
+        "total_tokens": 539
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking Alex to look up tickets they purchased last week (\"pull up the tickets I bought last week\") and inquires about exchanging them (\"tell me if I can exchange them\"). This clearly falls under questions about previous orders and returns/warranties.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 103,
+        "total_tokens": 558
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets they bought last week and whether those tickets can be exchanged. This is a direct inquiry about their past purchases (previous order) and shows they want to know if returns or exchanges are possible. None of the other topics are touched on.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 104,
+        "total_tokens": 559
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets they bought last week \u2014 specifically whether they can be exchanged. This directly relates to questions about previous orders (Past Purchases). None of the other topics (Recap, Website, Social Media, Discounts, Upcoming Events, or Speaking to a Human) have been mentioned or are relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 117,
+        "total_tokens": 572
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer has commented on the price (\u201cthat sounds expensive\u201d), then explicitly expressed a desire to reduce the cost (\u201cI just wish there was something I could do to get the cost a bit lower\u201d). This is referencing the possibility of obtaining a discount or promo code, which falls under \u201cAvailable discounts.\u201d The other listed topics have not been mentioned at all.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 121,
+        "total_tokens": 587
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing that the price is high and wishes they could bring the cost down. This implies they\u2019re wondering if any discounts or promotions exist. They have not mentioned anything about recapping the last conversation, the website, social media posts, upcoming events, past purchases, or speaking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 112,
+        "total_tokens": 578
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is commenting on ticket prices for lawn seating and explicitly says they \u201cjust wish there was something I could do to get the cost a bit lower.\u201d This directly implies interest in any form of discount or price reduction, so \u201cAvailable discounts\u201d is relevant. The other topics (recap, website info, social media content, upcoming events list, past purchases, or talking to a human) have not been mentioned or implied in this single message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 141,
+        "total_tokens": 607
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is lamenting the ticket price for lawn seating and explicitly states they wish there was \u201csomething I could do to get the cost a bit lower.\u201d This clearly signals they\u2019re looking for discounts, promo codes, or any price-reduction options. No other topics are mentioned or hinted at.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 110,
+        "total_tokens": 576
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about reducing the cost of their purchase, which directly relates to available discounts, promo codes, or sales that might lower the price. No mention of any other topics in this single message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 92,
+        "total_tokens": 558
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is making a comment about the physical condition of the Yes! Music venue (lack of trash cans in the lawn area), but none of the listed topics are addressed. The message does not contain questions about previous conversations, the website, social media, discounts, future events, past purchases, or requesting a human agent.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 116,
+        "total_tokens": 586
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer's message is feedback about the venue itself \u2013 specifically a request for more trash cans in the lawn area. The customer does not mention or ask about any previous conversation, the website, social media, discounts, upcoming events, past purchases, or speaking to a human.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 105,
+        "total_tokens": 575
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is commenting about the physical venue layout (in particular that there aren\u2019t enough trash cans in the lawn area). Nothing in the statement relates to any of the six specified topics\u2014it\u2019s purely feedback about on-site facilities rather than tickets, previous chats, the website, social posts, discounts, events, prior purchases, or requesting a human agent. Therefore, all topics should be marked NO.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 130,
+        "total_tokens": 600
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is making a comment about the physical venue and wishing for more trash cans. None of the listed topics\u2014such as any reference to the previous conversation, website, social-media posts, discounts, upcoming events, past purchases, or talk-to-human requests\u2014are mentioned.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 106,
+        "total_tokens": 576
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is offering general feedback about the physical venue itself, specifically about trash cans in the lawn area. None of the seven listed topics (recap of previous conversation, website information, recent social media posts, available discounts, list of upcoming events, past purchases, Talk to a Human) are mentioned or relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 115,
+        "total_tokens": 585
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260116_194427"
+}

@@ -1,0 +1,1733 @@
+{
+  "summary": {
+    "accuracy": 0.7125,
+    "variance": 0.2048437499999999,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "alex",
+    "approach": "structured",
+    "perturbed": true,
+    "model": "openai/gpt-5-nano",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I will use two tools: check_website_information to guide you to where to buy balcony tickets on the Yes! Music site, and check_past_purchases to look up your recent order status. Proceeding to run both in parallel.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 755,
+        "total_tokens": 1528
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I'll use two checks: one to provide website navigation for purchasing balcony tickets, and another to assist with locating their past order. Proceeding to run check_website_information and check_past_purchases in parallel.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 1024,
+        "total_tokens": 1797
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I will use two checks: check_website_information to guide where to buy balcony tickets on the Yes! Music site, and check_past_purchases to locate the user's previous order status. Now invoking both tools in parallel.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 1035,
+        "total_tokens": 1808
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user asks about purchasing balcony tickets on the Yes! Music website and also wants to check the status of a recent order. These map to website navigation for ticket purchases and to past purchases/order tracking. I will invoke check_website_information for site navigation/purchasing guidance and check_past_purchases to look up the order status.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 975,
+        "total_tokens": 1748
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I will use two tools in parallel: one to confirm the Yes! Music website navigation for balcony ticket purchases, and another to look up your recent order status.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 970,
+        "total_tokens": 1743
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user explicitly asked to be connected to a live agent, so I should route them to a human support agent. Initiating the \"Talk to a Human\" flow now.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 1627,
+        "total_tokens": 2385
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user is requesting to transfer to a live agent, which clearly maps to the \"Talk to a Human\" category. I'll trigger the corresponding check_talk_to_a_human function to initiate live-agent escalation.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 1085,
+        "total_tokens": 1843
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user explicitly requests to be transferred to a live agent, which falls under connecting with a human support representative. Therefore, the appropriate tool is check_talk_to_a_human. I'll initiate that now.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 1025,
+        "total_tokens": 1783
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user requested to transfer to a live agent, which aligns with the \"Talk to a Human\" category. I will trigger the check_talk_to_a_human function to initiate escalation to a live support representative.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 841,
+        "total_tokens": 1599
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user explicitly requests to transfer to a live agent, so the appropriate action is to initiate the \"talk to a human\" flow. I'll trigger the check_talk_to_a_human function to connect them.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 1698,
+        "total_tokens": 2456
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking for the lineup for this weekend, which falls under \"upcoming events.\" I will query the system for the current list of upcoming events to provide who\u2019s playing this weekend.",
+      "usage": {
+        "prompt_tokens": 771,
+        "completion_tokens": 1271,
+        "total_tokens": 2042
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking for the lineup for this weekend, which falls under \"upcoming events\" information. I'll fetch the current list of upcoming events to confirm who is playing this weekend.",
+      "usage": {
+        "prompt_tokens": 771,
+        "completion_tokens": 838,
+        "total_tokens": 1609
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking about who is performing this weekend, which falls under upcoming events. I'll check the list of upcoming events to provide the exact lineup for this weekend.",
+      "usage": {
+        "prompt_tokens": 771,
+        "completion_tokens": 696,
+        "total_tokens": 1467
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user is asking who\u2019s performing this weekend and mentions a previous outreach. I should fetch (a) the recap of the previous conversation to refresh what was told yesterday, and (b) the latest list of upcoming events to identify this weekend's lineup. I'll run both checks in parallel.",
+      "usage": {
+        "prompt_tokens": 771,
+        "completion_tokens": 2037,
+        "total_tokens": 2808
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking for details about upcoming events and this weekend's performers, which aligns with retrieving the list of upcoming events. I will invoke the check_list_of_upcoming_events tool to pull the latest schedule.",
+      "usage": {
+        "prompt_tokens": 771,
+        "completion_tokens": 919,
+        "total_tokens": 1690
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "I will check two things in parallel: (1) how to view upcoming events on the website, and (2) whether student discounts are available.",
+      "usage": {
+        "prompt_tokens": 780,
+        "completion_tokens": 1132,
+        "total_tokens": 1912
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking about two clear topics: (1) how to view upcoming events on the Yes! Music website, and (2) whether there is a student discount. I'll query both the list of upcoming events and available discounts in parallel to provide a concise answer.",
+      "usage": {
+        "prompt_tokens": 780,
+        "completion_tokens": 1223,
+        "total_tokens": 2003
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "List of upcoming events",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "I will check three areas: upcoming events details, the Yes! Music website navigation for viewing events, and whether student discounts are available. Proceeding to query those functions in parallel.",
+      "usage": {
+        "prompt_tokens": 780,
+        "completion_tokens": 1499,
+        "total_tokens": 2279
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "List of upcoming events",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "I should query three relevant areas in parallel: upcoming events details, how to navigate/view events on the Yes! Music website, and any available discounts (including student offers).",
+      "usage": {
+        "prompt_tokens": 780,
+        "completion_tokens": 780,
+        "total_tokens": 1560
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking about upcoming events and whether there is a student discount. I should fetch both: the list of upcoming events and any available discounts. I can run these checks in parallel to respond faster.",
+      "usage": {
+        "prompt_tokens": 780,
+        "completion_tokens": 761,
+        "total_tokens": 1541
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: This is a request regarding a past purchase and order tracking. I should query past purchases to locate the t-shirt order and provide status, tracking, or next steps. Now I will run the relevant check.",
+      "usage": {
+        "prompt_tokens": 766,
+        "completion_tokens": 379,
+        "total_tokens": 1145
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: This is a shipment/tracking issue tied to a past order. I\u2019ll check your past purchases to pull up the order status and any tracking information for the t-shirt.",
+      "usage": {
+        "prompt_tokens": 766,
+        "completion_tokens": 546,
+        "total_tokens": 1312
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user is asking about a previously placed order (a t-shirt) and its delivery status. This aligns with past purchases and order tracking. I'll invoke the check_past_purchases tool to retrieve order details and tracking information.",
+      "usage": {
+        "prompt_tokens": 766,
+        "completion_tokens": 593,
+        "total_tokens": 1359
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: This is clearly a past-purchase inquiry seeking order status/tracking, so the appropriate action is to query Past Purchases to retrieve details about the T-shirt order.",
+      "usage": {
+        "prompt_tokens": 766,
+        "completion_tokens": 725,
+        "total_tokens": 1491
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "I will check your past purchases to retrieve the status of your t-shirt order and shipments.",
+      "usage": {
+        "prompt_tokens": 766,
+        "completion_tokens": 536,
+        "total_tokens": 1302
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 6,
+      "expected_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "I will check your past purchases to fetch and resend the receipt for order YM-4481, and I will also check if there were any discounts on that order or if any discounts are currently available.",
+      "usage": {
+        "prompt_tokens": 779,
+        "completion_tokens": 624,
+        "total_tokens": 1403
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 6,
+      "expected_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "I will check your past purchases to locate and resend the receipt for order YM-4481, and I will also verify whether discounts were applied on that order. So I'll start by querying Past Purchases.",
+      "usage": {
+        "prompt_tokens": 779,
+        "completion_tokens": 1938,
+        "total_tokens": 2717
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 6,
+      "expected_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "I'll check two things in parallel: (1) past purchases to locate and resend the receipt for order YM-4481, and (2) current available discounts so I can answer whether Yes! Music offers discounts and how they apply.",
+      "usage": {
+        "prompt_tokens": 779,
+        "completion_tokens": 881,
+        "total_tokens": 1660
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 6,
+      "expected_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: This user is requesting a past-purchase receipt (YM-4481) and wants to know about discounts. I should check past purchases to locate/resend the receipt, and I should also check available discounts to confirm whether discounts exist and whether one was applied to that order. Now I will run both checks in parallel.",
+      "usage": {
+        "prompt_tokens": 779,
+        "completion_tokens": 907,
+        "total_tokens": 1686
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 6,
+      "expected_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "I'll verify the user's past purchases to resend the receipt for order YM-4481 and also check whether Yes! Music currently offers any discounts.",
+      "usage": {
+        "prompt_tokens": 779,
+        "completion_tokens": 828,
+        "total_tokens": 1607
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Reasoning: The message is aPositive customer compliment about a show and does not map to any of the defined verification categories (no website inquiries, discounts, upcoming events details, past purchases, or requests to reach a human). No tool call is needed.\n\nResponse: Thank you so much for the kind words! We're thrilled you enjoyed yesterday's show. If you\u2019d like info on upcoming events, tickets, or merch, I\u2019m here to help. Have a great day!",
+      "usage": {
+        "prompt_tokens": 764,
+        "completion_tokens": 922,
+        "total_tokens": 1686
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Reasoning: There isn't a question or request that maps to any of the predefined verification tools. This is purely positive feedback, so no tool invocation is needed. I'll respond with a courteous acknowledgment and offer follow-up options.Thank you so much for the kind words! We\u2019re thrilled you enjoyed yesterday\u2019s show. If you have any favorite moments you\u2019d like to share, we\u2019d love to hear them. And if you\u2019d like updates on upcoming concerts or new merch, I can help set that up for you.",
+      "usage": {
+        "prompt_tokens": 764,
+        "completion_tokens": 1353,
+        "total_tokens": 2117
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "No tool call needed for this type of message. Here\u2019s a friendly reply you can send:\n\nThat\u2019s fantastic to hear\u2014thank you so much for the kind words! We\u2019re thrilled you enjoyed the show yesterday. If you have a favorite moment or any ideas for future events, we\u2019d love to hear them. And if you\u2019d like updates on upcoming performances or merch, I can help with that too.",
+      "usage": {
+        "prompt_tokens": 764,
+        "completion_tokens": 1028,
+        "total_tokens": 1792
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Assessment: No verification tools are applicable to this message. No tool calls needed.\n\nThank you so much for the kind words! We\u2019re thrilled you enjoyed yesterday\u2019s show. If you\u2019d like details on upcoming performances, tickets, or Yes! Music merch, I\u2019m happy to help.",
+      "usage": {
+        "prompt_tokens": 764,
+        "completion_tokens": 966,
+        "total_tokens": 1730
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "No tool is applicable here. This message is positive feedback with no questions or requests.\n\nResponse:\nThank you so much! We're thrilled you enjoyed yesterday's show. Your support means a lot to the team. If you have any favorite moments to share or questions about upcoming events, we'd love to hear from you!",
+      "usage": {
+        "prompt_tokens": 764,
+        "completion_tokens": 892,
+        "total_tokens": 1656
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I will run two parallel checks: one to see if there is a recap of our previous conversation, and another to fetch Yes! Music website information related to event policies and navigation.",
+      "usage": {
+        "prompt_tokens": 782,
+        "completion_tokens": 1315,
+        "total_tokens": 2097
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I will consult both the recap of our previous conversation to confirm the earlier guidance about the event policy, and the website information to locate the event policy page on the Yes! Music site.",
+      "usage": {
+        "prompt_tokens": 782,
+        "completion_tokens": 816,
+        "total_tokens": 1598
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I'll use two checks here: (1) recap of the previous conversation to confirm what we said earlier, and (2) website information to locate the event policy on the Yes! Music site. Proceeding to run both checks in parallel.",
+      "usage": {
+        "prompt_tokens": 782,
+        "completion_tokens": 853,
+        "total_tokens": 1635
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I will pull up our last conversation recap to confirm what was said, and simultaneously check the Yes! Music website information to locate the event policy page.",
+      "usage": {
+        "prompt_tokens": 782,
+        "completion_tokens": 780,
+        "total_tokens": 1562
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I will check two things in parallel: (1) whether there is a recap of the previous conversation, to confirm what was said, and (2) the Yes! Music website information to locate the event policy page.",
+      "usage": {
+        "prompt_tokens": 782,
+        "completion_tokens": 1042,
+        "total_tokens": 1824
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user explicitly requests to speak with a live agent. The appropriate action is to initiate a transfer to a human representative by triggering the check_talk_to_a_human function.",
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 746,
+        "total_tokens": 1511
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "I think you\u2019re asking to speak with a live agent. I\u2019ll route this to a human support representative now.",
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 676,
+        "total_tokens": 1441
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 2287,
+        "total_tokens": 3052
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user explicitly asks to speak with a live agent, which maps to the \"Talk to a Human\" category. I'll trigger the corresponding verification function to facilitate connecting them to a human agent.",
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 627,
+        "total_tokens": 1392
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is requesting to speak with a live agent, so I should trigger the \"Talk to a Human\" action to connect them with a human representative.",
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 1302,
+        "total_tokens": 2067
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user is asking about price matching and discounts, including student-specific offers. The relevant category is available discounts, so I will check what discounts or price-matching policies Yes! Music may have.",
+      "usage": {
+        "prompt_tokens": 783,
+        "completion_tokens": 593,
+        "total_tokens": 1376
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Thoughts: The user is asking about price matching and student discounts. I'll check both the discount offers and the website's price-matching/policy information to provide a precise answer. Now I will query for available discounts and website policies.",
+      "usage": {
+        "prompt_tokens": 783,
+        "completion_tokens": 704,
+        "total_tokens": 1487
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking about price matching and student discounts for tickets. I'll check Yes! Music's available discounts and any official website policies on price matching or student offers.",
+      "usage": {
+        "prompt_tokens": 783,
+        "completion_tokens": 1455,
+        "total_tokens": 2238
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "I'm going to check Yes! Music's current discount policies, including any price-matching, student/newcomer offers, and promo options.",
+      "usage": {
+        "prompt_tokens": 783,
+        "completion_tokens": 466,
+        "total_tokens": 1249
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user is asking about price matching and student discounts, which fall under available discounts and promotions. I'll check the Yes! Music discounts and offers policy to provide an accurate answer.",
+      "usage": {
+        "prompt_tokens": 783,
+        "completion_tokens": 556,
+        "total_tokens": 1339
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "I think this involves locating content published by Yes! Music on their official social media, specifically Instagram. I'll check the recent social media posts to see if the photographer's venue photos were posted there.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 686,
+        "total_tokens": 1459
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "I think this relates to recent social media posts from Yes! Music (specifically Instagram). I'll check Yes! Music's recent social media posts to locate where the photographer's venue photos were shared.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 692,
+        "total_tokens": 1465
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "I will check Yes! Music\u2019s recent social media posts for Instagram content related to the venue photos to provide the exact post or link.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 545,
+        "total_tokens": 1318
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "I should check recent social media posts to locate the Yes! Music venue photos referenced, as this pertains to content posted directly by Yes! Music on their official channels.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 715,
+        "total_tokens": 1488
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "I think the relevant tool is check_recent_social_media_posts, since the user is asking about Yes! Music's Instagram posts and other content from the Yes! Music team. I'll run that to pull up any recent posts matching the venue photos.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 637,
+        "total_tokens": 1410
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: This query is about website navigation for updating shipping information on Yes! Music, which falls under Website information. I'll check the appropriate Yes! Music website guidance.",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 592,
+        "total_tokens": 1341
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: This is a website-related question about updating shipping information on the Yes! Music platform, so the appropriate tool is check_website_information. I will invoke that now.",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 663,
+        "total_tokens": 1412
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: This question pertains to updating shipping information on the Yes! Music website, which falls under general website information and account/navigation guidance. I'll use the website information checker to provide official steps.",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 720,
+        "total_tokens": 1469
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "I will check the Yes! Music website information regarding how to update a shipping address.",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 1568,
+        "total_tokens": 2317
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: This is a Yes! Music website navigation question about updating shipping address. I'll use the Website Information checker to provide the correct steps.",
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 523,
+        "total_tokens": 1272
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "I'll check two things to answer accurately: (1) the list of upcoming events for next month to compare artist lineups, and (2) recent Yes! Music social media posts to see if similar artists were highlighted. Running both in parallel for speed.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 844,
+        "total_tokens": 1605
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Reasoning:\nTo answer whether next month\u2019s lineup includes artists similar to those from last weekend\u2019s festival, I should (a) check the upcoming events list for next month to see the billed artists, and (b) review Yes! Music\u2019s recent social content for notes about artist overlap or references to similar performers. I\u2019ll fetch both sources to provide a concise comparison. Now I\u2019ll run those checks.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 2054,
+        "total_tokens": 2815
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "I will check upcoming Yes! Music events to compare next month's lineup with last weekend's artists, and I\u2019ll also review recent Yes! Music social posts (TikTok coverage) for any notes on similar artists.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 911,
+        "total_tokens": 1672
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking about the lineup for next month and whether it includes similar artists to last weekend's festival. This is specifically about upcoming events and artist lineups, so the appropriate tool is check_list_of_upcoming_events. I'll invoke that function to retrieve current details about next month's lineup.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 686,
+        "total_tokens": 1447
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is asking about details of next month's lineup, which pertains to upcoming events. I'll query the upcoming events list for information on future concerts and artist lineups.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 1110,
+        "total_tokens": 1871
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "I will check your past purchases to locate the tickets you bought last week and determine exchange eligibility based on our exchange policies.",
+      "usage": {
+        "prompt_tokens": 762,
+        "completion_tokens": 779,
+        "total_tokens": 1541
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "I will retrieve your past purchases to locate last week's tickets and I will check the Yes! Music website for the exchange policy on tickets.",
+      "usage": {
+        "prompt_tokens": 762,
+        "completion_tokens": 952,
+        "total_tokens": 1714
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "I will check your past purchases to locate the tickets you bought last week, and then assess their exchange eligibility based on our policy and the ticket details.",
+      "usage": {
+        "prompt_tokens": 762,
+        "completion_tokens": 538,
+        "total_tokens": 1300
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "I'll look up your past purchases to locate the tickets you bought last week and verify whether they're eligible for an exchange.",
+      "usage": {
+        "prompt_tokens": 762,
+        "completion_tokens": 844,
+        "total_tokens": 1606
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "I will retrieve your recent purchase history to locate last week's tickets, and I will check venue policies to confirm whether exchanges are allowed for those tickets. I\u2019m proceeding to run both checks in parallel.",
+      "usage": {
+        "prompt_tokens": 762,
+        "completion_tokens": 904,
+        "total_tokens": 1666
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Rationale: This appears to be a pricing concern focused on finding any available discounts or promotions, so I'll check for available discounts (promo codes, loyalty offers, etc.).",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 1493,
+        "total_tokens": 2266
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user is expressing concern about price and asking if there are ways to lower lawn seating costs, which aligns with available discounts or promotions. I will check for any current discounts or promo offers.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 1049,
+        "total_tokens": 1822
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "I should check for any available discounts or promo offers that could reduce Lawn seating costs.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 563,
+        "total_tokens": 1336
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Reasoning: The user is expressing concern about price and asking if there are ways to reduce the cost. This aligns with discount or promotion information. I'll check for available discounts or offers first.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 424,
+        "total_tokens": 1197
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "I think the best tool to use here is check_available_discounts to see if there are any promo codes, sales, or special offers that could lower the lawn seating cost.",
+      "usage": {
+        "prompt_tokens": 773,
+        "completion_tokens": 575,
+        "total_tokens": 1348
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I don\u2019t see a tool here that fits a general venue-amenities feedback scenario. I\u2019ll respond directly and offer to escalate the suggestion to the venue ops team.\n\nThanks for the great feedback about the lawn area trash cans. I\u2019ll pass this along to our venue operations team to consider adding more trash cans in that space.\n\nIf you\u2019d like, I can also file a quick feedback ticket on your behalf. Would you like me to do that? If yes, feel free to share any details that might help (e.g., approximate area near the lawn you were in, date of the show, or how many extra cans you think would be useful). In the meantime, you can use the existing trash stations around the venue to dispose of waste.",
+      "usage": {
+        "prompt_tokens": 777,
+        "completion_tokens": 1603,
+        "total_tokens": 2380
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Reasoning: This is a facilities/venue amenity suggestion. It doesn\u2019t map to any of the explicit verification tools, so no tool call is needed here.\n\nThanks for the feedback\u2014we\u2019re glad you enjoy the venue. I\u2019ll pass your note about adding more trash cans in the lawn area to our facilities/operations team. If you\u2019d like, I can escalate this as a formal request. If so, please share:\n- Rough date or visit time\n- The lawn section or location you were in\n\nWould you also like to be contacted by a live agent to discuss this further?",
+      "usage": {
+        "prompt_tokens": 777,
+        "completion_tokens": 1573,
+        "total_tokens": 2350
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "Reasoning: The user is giving venue feedback about trash cans in the lawn area. This aligns with escalating a live agent or operations team to address facility concerns. I'll route this to a human agent for follow-up and possible action. Proceeding to initiate a \"Talk to a Human\" escalation.",
+      "usage": {
+        "prompt_tokens": 777,
+        "completion_tokens": 1643,
+        "total_tokens": 2420
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Reasoning: This message is a facility/amenities feedback item (trash cans in the lawn). None of the available checks directly cover general venue feedback, purchases, events, or discounts. The best move is to acknowledge and offer to escalate the feedback to on-site operations.\n\nThanks for the note\u2014your comfort matters to us. I can pass this along to our on-site operations team as a facilities feedback item.\n\nIf you\u2019d like, I can file a quick feedback ticket. A few details would help:\n- Which show/date you were at\n- The lawn area/section you were in (roughly)\n- How many extra trash cans you think would help\n- Any other ideas (e.g., recycling options, additional signage)\n\nWould you like me to log this feedback now? If you\u2019d prefer to speak with a live agent to discuss it further, I can connect you.",
+      "usage": {
+        "prompt_tokens": 777,
+        "completion_tokens": 1779,
+        "total_tokens": 2556
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "openai/gpt-5-nano",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Reasoning: There isn\u2019t a matching tool for general venue amenity feedback (like adding more trash cans). I won\u2019t trigger any verification functions. I\u2019ll acknowledge the input and offer to escalate it to venue operations.\n\nThanks for sharing that\u2014sounds frustrating, and we appreciate the feedback. I can pass this along to our venue operations team for review regarding trash can availability in the lawn area.\n\nIf you\u2019d like to help us escalate it, could you share:\n- The date of the event you attended (or when you noticed the issue)\n- The area or section of the lawn you were in (if you know it)\n- Any specific locations where you\u2019d suggest extra bins or more frequent emptying\n- Roughly how many additional cans you think would help\n\nI can include these details in the feedback to ensure it\u2019s clear to the team. If you\u2019d prefer to speak with a live agent about this, I can connect you as well.",
+      "usage": {
+        "prompt_tokens": 777,
+        "completion_tokens": 1798,
+        "total_tokens": 2575
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_160852"
+}

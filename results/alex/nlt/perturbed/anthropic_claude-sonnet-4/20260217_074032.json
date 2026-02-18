@@ -1,0 +1,1747 @@
+{
+  "summary": {
+    "accuracy": 0.7125,
+    "variance": 0.20484374999999994,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "alex",
+    "approach": "nlt",
+    "perturbed": true,
+    "model": "anthropic/claude-sonnet-4",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "http://localhost:3456/v1/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two things: (1) where on the website to buy balcony tickets and check order status \u2014 this is about website navigation and ticket purchasing, and (2) they mention they bought a ticket last week and need to check on it \u2014 this relates to a past purchase and order tracking.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 119,
+        "total_tokens": 122
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two things: (1) where on the website to buy balcony tickets, and (2) how to check their order status on the website. Both of these relate to website navigation and functionality. They also mention they bought a ticket last week and need to check on it, which relates to a past purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 124,
+        "total_tokens": 127
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking two things: (1) where on the website to buy balcony tickets and check order status \u2014 this is about website navigation and ticket purchasing, which falls under Website information; (2) they mention they bought a ticket last week and need to check on it \u2014 this relates to a previous purchase and checking its status, which falls under Past Purchases. No other categories are relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 139,
+        "total_tokens": 142
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two things: (1) where on the website to buy balcony tickets and check order status \u2014 this is website navigation/ticket acquisition/order tracking information, and (2) they mention they bought a ticket last week and need to check on it \u2014 this relates to a past purchase. There's no mention of previous conversation recap, social media posts, discounts, upcoming events, or wanting to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 146,
+        "total_tokens": 149
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about two things related to the website: where to buy balcony tickets and how to check order status. This falls under website information. They also mention they bought a ticket last week and need to check on it, which relates to a past purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 111,
+        "total_tokens": 114
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two things: 1) Whether Alex is human, which is a general question about Alex's artificial nature but not a direct request to connect with a live support representative. 2) They are explicitly requesting to be transferred to a live agent, which is a direct request to connect with a live support representative via chat/phone/email.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 128,
+        "total_tokens": 131
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two things: 1) Whether Alex is human, which is a general question about Alex's artificial nature but not a direct request to connect with a live support representative. 2) They are explicitly requesting to be transferred to a live agent, which is a direct request to connect with a live support representative via chat/phone/email.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 128,
+        "total_tokens": 131
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two things: 1) whether Alex is human, which is a general question about Alex's nature but not a direct request to connect with a live support representative, and 2) explicitly requesting to be transferred to a live agent, which is a direct request to connect with a live support representative via chat/phone/email.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 126,
+        "total_tokens": 129
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two things: 1) whether Alex is human, which is a general question about Alex's nature but not a direct request to connect with a live representative, and 2) explicitly requesting to be transferred to a live agent, which is a direct request to connect with a live support representative. The second part clearly falls under \"Talk to a Human.\" None of the other categories are relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 140,
+        "total_tokens": 143
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking two things: 1) Whether Alex is human, which is a general question about Alex's artificial nature but not a direct request to connect with a live support representative. 2) They are explicitly requesting to be transferred to a live agent, which is a direct request to connect with a live support representative.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 122,
+        "total_tokens": 125
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referring to a previous conversation they had with Alex about upcoming events. They want a recap of what was discussed, and they're also asking about upcoming events (who's playing this weekend).\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 96,
+        "total_tokens": 99
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing a previous conversation they had with Alex about upcoming events and wants a recap of what was discussed. They are also asking about upcoming events (who's playing this weekend).\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 94,
+        "total_tokens": 97
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing a previous conversation they had with Alex about upcoming events and wants a recap of what was discussed. They are also asking about upcoming events (who's playing this weekend).\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 94,
+        "total_tokens": 97
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referring to a previous conversation they had with Alex about upcoming events. They want a recap of what was discussed previously, and they're also asking about upcoming events (who's playing this weekend).\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 97,
+        "total_tokens": 100
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing a previous conversation they had with Alex about upcoming events and wants a recap of what was discussed. They are also asking about upcoming events (who's playing this weekend).\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 94,
+        "total_tokens": 97
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post about a new DJ set, which refers to social media content produced by \"Yes! Music.\" They ask about viewing upcoming events on the website, which touches on both website information and list of upcoming events. They also ask about a student discount, which falls under available discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 119,
+        "total_tokens": 122
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post about a new DJ set, which relates to social media content from \"Yes! Music\". They ask about viewing upcoming events on the website, which covers both website information and list of upcoming events. They also ask about a student discount, which falls under available discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 117,
+        "total_tokens": 120
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post about a new DJ set, which relates to social media content from \"Yes! Music\". They ask about viewing upcoming events on the website, which touches on both website information and upcoming events. They also ask about a student discount, which falls under available discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 116,
+        "total_tokens": 119
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post about a new DJ set, which refers to social media content from \"Yes! Music.\" They ask about viewing upcoming events on the website, which relates to both website information and upcoming events. They also ask about a student discount, which falls under available discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 116,
+        "total_tokens": 119
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Available discounts",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post about a new DJ set, which refers to social media content from \"Yes! Music\". They ask about viewing upcoming events on the website, which touches on both website information and list of upcoming events. They also ask about a student discount, which falls under available discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 118,
+        "total_tokens": 121
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about a past order (a t-shirt they purchased) and is inquiring about its delivery status. This relates to Past Purchases (historical orders, order tracking). They may also benefit from website information since shipment tracking could be done on the website, but the customer isn't directly asking about the website. They aren't asking about previous conversations, social media, discounts, upcoming events, or to speak with a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 147,
+        "total_tokens": 150
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about a past order (a t-shirt) that hasn't arrived yet. This relates to Past Purchases since they're inquiring about an order they previously made and its delivery status/order tracking. This could also relate to Website information since shipment tracking is mentioned as part of that category. They might need to track their shipment on the website.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 132,
+        "total_tokens": 135
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about a past order (a t-shirt) that hasn't arrived yet. This relates to Past Purchases since they're inquiring about an order they previously made and its delivery status/order tracking. This could also relate to Website information since shipment tracking might be done through the website, but the customer hasn't specifically asked about the website. They're expressing frustration but haven't asked to speak to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 145,
+        "total_tokens": 148
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about an order they placed (a t-shirt) that hasn't arrived yet. This relates to a past purchase and order tracking. They might also benefit from website information since shipment tracking could be done through the website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 111,
+        "total_tokens": 114
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about a t-shirt they ordered that hasn't arrived yet. This relates to a past purchase and order tracking. They want to know where their order is. This doesn't relate to previous conversation recap, website information, social media posts, discounts, upcoming events, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 120,
+        "total_tokens": 123
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about a specific past order (#YM-4481) and wants their receipt resent, which relates to past purchases. They also ask about whether a discount was applied to that order and whether discounts are offered in general, which relates to available discounts. No other categories are relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 120,
+        "total_tokens": 123
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about a specific past order (#YM-4481) and wants their receipt resent, which relates to past purchases. They also want to know if a discount was applied to that order and are asking whether discounts are offered in general, which relates to available discounts. No other categories are relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 123,
+        "total_tokens": 126
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about a specific past order (#YM-4481) and wants their receipt resent, which relates to past purchases. They also want to know if a discount was applied to that order and whether discounts are offered in general, which relates to available discounts. No other categories are relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 121,
+        "total_tokens": 124
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about a specific past order (#YM-4481) and wants their receipt resent, which relates to past purchases. They also want to know if a discount was applied to that order and are asking whether discounts are offered in general, which relates to available discounts. No other categories are relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 123,
+        "total_tokens": 126
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about a specific past order (#YM-4481) and wants their receipt resent, which relates to Past Purchases. They also ask about whether a discount was applied to that order and whether discounts are offered in general, which relates to Available discounts. No other categories are relevant here.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 121,
+        "total_tokens": 124
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing appreciation for a show they attended yesterday and complimenting the team. They are not asking about any previous conversation with Alex, not asking about the website, not referencing social media posts, not asking about discounts, not asking about upcoming events, not inquiring about past purchases, and not requesting to speak with a human agent.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 127,
+        "total_tokens": 130
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing appreciation for a show they attended yesterday and complimenting the team. They are not asking about any previous conversation with Alex, not inquiring about the website, not referencing social media posts, not asking about discounts, not requesting upcoming events, not asking about past purchases, and not requesting to speak with a human agent.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 126,
+        "total_tokens": 129
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing appreciation for a show they attended yesterday and complimenting the team. They are not asking about any previous conversation with Alex, not inquiring about the website, not referencing social media posts, not asking about discounts, not asking about upcoming events, not inquiring about past purchases, and not requesting to talk to a human. This is simply a compliment/feedback message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 137,
+        "total_tokens": 140
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing appreciation for a show they attended yesterday and complimenting the team. They are not asking about any previous conversation with Alex, not inquiring about the website, not referencing social media posts, not asking about discounts, not requesting upcoming events info, not asking about past purchases, and not requesting to talk to a human. This is simply a compliment/feedback message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 136,
+        "total_tokens": 139
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing appreciation for a show they attended yesterday and complimenting the team. They are not asking about any previous conversation with Alex, not inquiring about the website, not referencing social media posts, not asking about discounts, not requesting upcoming events, not asking about past purchases, and not requesting to talk to a human. This is simply a compliment/feedback message.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 135,
+        "total_tokens": 138
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about their previous conversation with Alex, referencing what was discussed last time. They mention that Alex told them to check the website for the event policy, but they can't find it. This touches on: 1) Recap of previous conversation - YES, they're explicitly asking about what was said last time. 2) Website information - YES, they're asking for help navigating the website to find the event policy. 3) The other categories don't apply.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 156,
+        "total_tokens": 159
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about their previous conversation with Alex, referencing what was discussed last time. They mention that Alex told them to check the website for the event policy, and now they need help finding it on the website. This touches on: 1) Recap of previous conversation - YES, they're explicitly asking about what was said last time. 2) Website information - YES, they're asking for help navigating the website to find the event policy. The other categories don't apply.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 157,
+        "total_tokens": 160
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about a previous conversation they had with Alex, referencing what was discussed last time \u2014 this is a recap of previous conversation. They also mention they were directed to the website to find the event policy but can't find it, which relates to website information/navigation assistance. No other categories are relevant here.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 121,
+        "total_tokens": 124
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about a previous conversation they had with Alex, referencing what was discussed last time. They also mention they were directed to the website to find the event policy but couldn't find it, so they need help navigating the website to locate that information.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 110,
+        "total_tokens": 113
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about a previous conversation they had with Alex, referencing what was discussed last time. They mention that Alex told them to check the website for the event policy, and now they need help finding it on the website. This touches on: 1) Recap of previous conversation - YES, they're asking about what was said last time. 2) Website information - YES, they're asking for help navigating the website to find the event policy. 3) The other categories don't apply.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 161,
+        "total_tokens": 164
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing their previous conversation with Alex, expressing frustration that they weren't helped. They are also explicitly requesting to speak with a live human representative.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 89,
+        "total_tokens": 92
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing their previous conversation with Alex, expressing frustration that they weren't helped. They are also explicitly requesting to speak with a live human representative.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 89,
+        "total_tokens": 92
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing their previous conversation with Alex, expressing frustration that they weren't helped. They are also explicitly requesting to speak with a live human representative.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 89,
+        "total_tokens": 92
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing their previous conversation with Alex, expressing frustration that Alex couldn't help them. They are also explicitly requesting to speak with a live human support representative.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 91,
+        "total_tokens": 94
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is referencing their previous conversation with Alex, expressing frustration that they weren't helped. They are also clearly requesting to be connected with a live human support representative.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 91,
+        "total_tokens": 94
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about price matching compared to another ticket vendor (Ticketmaster) and mentioning their student status, which relates to potential discounts. They mention checking out Ticketmaster's website, not the Yes! Music website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about price matching compared to another ticket seller (Ticketmaster) and mentioning their student status, which relates to potential discounts. They mention checking out Ticketmaster's website, not the Yes! Music website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about price matching compared to another ticket seller (Ticketmaster) and mentioning their student status, which relates to potential discounts. They mention checking out Ticketmaster's website, not the Yes! Music website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about price matching compared to another ticket seller (Ticketmaster) and mentioning their student status, which relates to potential discounts. They mention checking out Ticketmaster's website, not the Yes! Music website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about price matching compared to another ticket seller (Ticketmaster) and mentioning their student status, which relates to potential discounts. They mention checking out Ticketmaster's website, not the Yes! Music website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about photos taken by Yes! Music's photographer that were supposed to be posted on their Instagram. This relates to content produced by Yes! Music on their social media platforms. Let me evaluate each category:\n\n- Recap of previous conversation: No mention of a previous conversation with Alex.\n- Website information: They're asking about Instagram, not the website.\n- Recent social media posts: Yes, they're asking about photos taken by Yes! Music's photographer that were supposed to be posted on Yes! Music's Instagram. This is content produced directly by Yes! Music on social media.\n- Available discounts: No mention of discounts or promotions.\n- List of upcoming events: No mention of upcoming events.\n- Past Purchases: No mention of past orders or transactions.\n- Talk to a Human: No request to speak with a live representative.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 237,
+        "total_tokens": 240
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about photos taken by Yes! Music's photographer that were supposed to be posted on their Instagram (a social media platform). They're asking where to find these photos. This relates to content produced by Yes! Music (photos taken by their photographer) that was supposed to be shared on their social media. This falls under \"Recent social media posts\" since it's about content produced by Yes! Music shared on social media. It could also relate to \"Website information\" if the photos might be available on the website, but the customer is specifically asking about Instagram/social media, not the website.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 179,
+        "total_tokens": 182
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about photos taken by Yes! Music's photographer that were supposed to be posted on their Instagram (a social media platform). They're asking where to find these photos. This relates to content produced by Yes! Music (photos taken by their photographer) that was supposed to be shared on their social media. This falls under \"Recent social media posts\" since it's about content produced by Yes! Music shared on social media. They're also asking where to look, which could relate to website information if the photos might be on the website, but the primary ask is about social media content.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 177,
+        "total_tokens": 180
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about photos taken by the \"Yes! Music\" photographer that were supposed to be posted on their Instagram. This relates to social media content produced by \"Yes! Music\" (the venue's own photos posted on their social media). This is not about the website, and not about other categories. Let me evaluate each:\n\n- Recap of previous conversation: No mention of a previous conversation with Alex.\n- Website information: They're asking about Instagram, not the website.\n- Recent social media posts: Yes \u2014 they're asking about photos taken by the venue's photographer that were supposed to be posted on the venue's Instagram. This is content produced directly by \"Yes! Music\" on social media.\n- Available discounts: No mention of discounts or promotions.\n- List of upcoming events: No mention of upcoming events.\n- Past Purchases: No mention of past orders or transactions.\n- Talk to a Human: No request to speak with a live representative.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 261,
+        "total_tokens": 264
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about photos taken by Yes! Music's photographer that were supposed to be posted on their Instagram (a social media platform). They're asking where to find these photos. This relates to content produced by Yes! Music (photos taken by their photographer) that was supposed to be shared on their social media. This falls under \"Recent social media posts\" since it's about content produced by Yes! Music shared on social media. They're also asking where to look, which could relate to website information if the photos might be on the website, but the primary ask is about social media content from Yes! Music.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 181,
+        "total_tokens": 184
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about where they can update their shipping address. This relates to website/account functionality - specifically navigating the \"Yes! Music\" digital platform to manage their account or order details. It could also relate to a past purchase if they need to update shipping for an existing order.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 115,
+        "total_tokens": 118
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about where they can update their shipping address. This relates to website/account functionality - specifically navigating the \"Yes! Music\" digital platform to manage their account details. This could also relate to a past purchase if they need to update shipping for an existing order.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 113,
+        "total_tokens": 116
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about where they can update their shipping address. This relates to website/account functionality - specifically navigating the \"Yes! Music\" digital platform to manage their account details. This could also relate to a past purchase if they need to update shipping for an existing order.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 113,
+        "total_tokens": 116
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about where they can update their shipping address. This relates to website/account functionality - specifically navigating the \"Yes! Music\" digital platform to manage their account or order details. It could also relate to past purchases if they want to update shipping on an existing order.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 114,
+        "total_tokens": 117
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about where they can update their shipping address. This relates to account management on the website, as updating a shipping address would typically be done through the website's account settings or during the checkout process. This could also relate to a past purchase if they need to change the shipping address on an existing order.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 120,
+        "total_tokens": 123
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions watching a TikTok from \"Yes! Music\" covering last weekend's festival \u2014 this is a reference to social media content produced by the venue. They also ask about next month's lineup, which relates to upcoming events.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 105,
+        "total_tokens": 108
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions watching a TikTok from \"Yes! Music\" covering last weekend's festival \u2014 this is a reference to social media content produced by the venue. They also ask about next month's lineup, which relates to upcoming events.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 105,
+        "total_tokens": 108
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions watching a TikTok from \"Yes! Music\" covering last weekend's festival \u2014 this is a reference to social media content produced by the venue. They also ask about next month's lineup, which relates to upcoming events.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 105,
+        "total_tokens": 108
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions watching a TikTok from \"Yes! Music\" covering last weekend's festival \u2014 this is a reference to social media content produced by the venue. They also ask about next month's lineup, which relates to upcoming events.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 105,
+        "total_tokens": 108
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions watching a TikTok from \"Yes! Music\" covering last weekend's festival \u2014 this is a reference to social media content produced by the venue. They are also asking about next month's lineup, which relates to upcoming events.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 106,
+        "total_tokens": 109
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets they purchased last week (past purchase) and wants to know about exchanging them. This relates to Past Purchases (historical orders, return processes). They might also need website information if the exchange process involves the website, but they haven't specifically asked about the website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 122,
+        "total_tokens": 125
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets they purchased last week (a past purchase) and wants to know about exchanging them. This relates to Past Purchases (historical orders, return processes). They might also need website information if the exchange process involves the website, but they haven't specifically asked about the website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 123,
+        "total_tokens": 126
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets they purchased last week (a past purchase) and wants to know about exchanging them. This relates to Past Purchases (historical orders, return processes). They might also need website information if the exchange process involves the website, but they haven't specifically asked about the website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 123,
+        "total_tokens": 126
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets they purchased last week (a past purchase) and wants to know about exchanging them. This relates to Past Purchases (historical orders, return processes). They might also need website information if the exchange process involves the website, but they haven't specifically asked about the website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 123,
+        "total_tokens": 126
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets they purchased last week (past purchase) and wants to know about exchanging them. This relates to Past Purchases (historical orders, return processes). They might also need website information if the exchange process involves the website, but they haven't specifically asked about the website. Let me evaluate each category.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 122,
+        "total_tokens": 125
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is expressing concern about the price of lawn seating and is hinting that they would like a way to reduce the cost. This is a clear indication they are interested in any available discounts, promotional codes, coupons, or other ways to lower the price. Let me evaluate each category:\n\n- Recap of previous conversation: No, they are not asking about a previous conversation with Alex.\n- Website information: No, they are not asking about the website specifically.\n- Recent social media posts: No, no mention of Yes! Music social media content.\n- Available discounts: Yes, the customer is expressing a desire to lower the cost, which directly relates to discounts, promo codes, or any available deals.\n- List of upcoming events: No, they are not asking about upcoming events.\n- Past Purchases: No, they are not asking about previous orders.\n- Talk to a Human: No, they are not requesting to speak with a live representative.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 262,
+        "total_tokens": 265
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is expressing concern about the price of lawn seating and is hinting that they would like a way to reduce the cost. This is a clear indication they are interested in any available discounts, promotional codes, coupons, or other ways to lower the price. Let me evaluate each category:\n\n- Recap of previous conversation: No reference to a previous conversation with Alex.\n- Website information: No questions about the website, ticket purchasing process, or site navigation.\n- Recent social media posts: No mention of Yes! Music social media content or videos.\n- Available discounts: Yes, the customer is expressing a desire to lower the cost, which directly relates to discounts, promo codes, or special offers.\n- List of upcoming events: No request for upcoming events or concert listings.\n- Past Purchases: No mention of previous orders or transaction history.\n- Talk to a Human: No request to speak with a live representative.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 254,
+        "total_tokens": 257
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is expressing concern about the price of lawn seating and is hinting that they would like a way to reduce the cost. This is a clear indication they are interested in any available discounts, promotional codes, coupons, or other ways to lower the price. Let me evaluate each category:\n\n- Recap of previous conversation: No, they are not asking about a previous conversation with Alex.\n- Website information: No, they are not asking about the website specifically.\n- Recent social media posts: No, no mention of Yes! Music social media content.\n- Available discounts: Yes, the customer is expressing a desire to lower the cost, which directly relates to discounts, promo codes, or any available deals.\n- List of upcoming events: No, they are not asking about upcoming events.\n- Past Purchases: No, no mention of previous orders or transactions.\n- Talk to a Human: No, they are not requesting to speak with a live representative.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 262,
+        "total_tokens": 265
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing concern about the price of lawn seating and is hinting they want a way to reduce the cost. This is a clear indication they are looking for discounts, promotional codes, coupons, or any way to lower the price. Let me evaluate each category.\n\n- Recap of previous conversation: The customer references a previous discussion about pricing/lawn seating (\"that sounds a little expensive\"), but this is referring to the ongoing conversation, not asking about a previous session's recap. NO.\n- Website information: No questions about the website, ticket purchasing process, or site navigation. NO.\n- Recent social media posts: No mention of videos, blog posts, or social media content from Yes! Music. NO.\n- Available discounts: The customer is clearly expressing a desire to lower the cost, wishing there was \"something I could do to get the cost a bit lower.\" This is a strong signal they are interested in any available discounts, promo codes, or deals. YES.\n- List of upcoming events: No request for information about upcoming concerts or events. NO.\n- Past Purchases: No mention of previous orders, receipts, or transaction history. NO.\n- Talk to a Human: No request to speak with a live representative. NO.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 324,
+        "total_tokens": 327
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is expressing concern about the price of lawn seating and is hinting that they would like a way to reduce the cost. This is a clear indication they are interested in any available discounts, promotional codes, coupons, or other ways to lower the price. Let me evaluate each category:\n\n- Recap of previous conversation: No, they are not asking about a previous conversation with Alex.\n- Website information: No, they are not asking about the website specifically.\n- Recent social media posts: No, no mention of Yes! Music social media content or videos.\n- Available discounts: Yes, the customer is expressing a desire to lower the cost, which directly relates to discounts, promo codes, or any available deals.\n- List of upcoming events: No, they are not asking about upcoming events.\n- Past Purchases: No, they are not referencing any past orders or transactions.\n- Talk to a Human: No, they are not requesting to speak with a live representative.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 267,
+        "total_tokens": 270
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is providing feedback about the venue's physical facilities, specifically about wanting more trash cans in the lawn area. This is general feedback/suggestion about the venue experience. Let me evaluate each category:\n\n- Recap of previous conversation: No mention of any previous conversation with Alex.\n- Website information: No questions about the website, tickets, merchandise, shipping, or site navigation.\n- Recent social media posts: No mention of any Yes! Music videos, social media posts, or blog content.\n- Available discounts: No mention of discounts, promo codes, coupons, or sales.\n- List of upcoming events: No inquiry about future concerts or events.\n- Past Purchases: No mention of previous orders, receipts, or returns.\n- Talk to a Human: No request to speak with a live representative.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 231,
+        "total_tokens": 234
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is providing feedback about the venue's physical facilities, specifically about the need for more trash cans in the lawn area. This is general feedback/suggestion about the venue experience. Let me check each category:\n\n- Recap of previous conversation: No reference to any prior conversation with Alex.\n- Website information: No mention of the website, tickets online, merchandise ordering, or site navigation.\n- Recent social media posts: No mention of any Yes! Music videos, social media posts, or blog content.\n- Available discounts: No mention of promo codes, coupons, sales, or any discounts.\n- List of upcoming events: No inquiry about future concerts, lineups, or performances.\n- Past Purchases: No mention of previous orders, receipts, returns, or order tracking.\n- Talk to a Human: No request to speak with a live representative.\n\nThis is simply venue feedback about physical amenities (trash cans in the lawn area).\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 260,
+        "total_tokens": 263
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing feedback about the venue's facilities, specifically about the lack of trash cans in the lawn area. This is general feedback/suggestion and doesn't relate to any of the specific categories listed. It's not about a previous conversation, website info, social media posts, discounts, upcoming events, past purchases, or requesting to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 130,
+        "total_tokens": 133
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing feedback about the venue's facilities, specifically about the lack of trash cans in the lawn area. This is general feedback/suggestion and doesn't fall into any of the specific categories listed. Let me evaluate each one.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 104,
+        "total_tokens": 107
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing feedback about the venue's facilities, specifically about the need for more trash cans in the lawn area. This is general feedback/suggestion about the physical venue experience. Let me check each category to see if any apply. This isn't about a previous conversation, website info, social media posts, discounts, upcoming events, past purchases, or requesting a human agent. It's simply venue feedback.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 140,
+        "total_tokens": 143
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_074032"
+}

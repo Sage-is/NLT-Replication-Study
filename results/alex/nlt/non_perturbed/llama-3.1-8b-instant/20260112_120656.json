@@ -1,0 +1,1758 @@
+{
+  "summary": {
+    "accuracy": 0.7875,
+    "variance": 0.16734374999999987,
+    "total": 80,
+    "errors": 0,
+    "scenario": "alex",
+    "approach": "nlt",
+    "perturbed": false,
+    "model": "llama-3.1-8b-instant",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: I know exactly what to do to help this customer.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 63,
+        "total_tokens": 603
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "To buy balcony tickets, go to \"Events\" > \"Upcoming Shows\" > click on your preferred show. You'll see an option to purchase tickets at the top right corner of the page. \n\nFor order status, log in to My Account on our website. Once logged in, click on \"Order Status\" and enter your order number or email address associated with your purchase.\n\nIs there anything else I can help you with?\n\nYou: Thinking: \nThe customer wants an update about their order, which might be a ticket purchase, but they're looking for a specific area of the website. I should keep this in mind when evaluating the conversation.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 181,
+        "total_tokens": 721
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Analyzing the customer's message for requested information and topics.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 64,
+        "total_tokens": 604
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Customer is reaching out to clarify something about their previous order and needs to check their order status and possibly purchase more tickets.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 76,
+        "total_tokens": 616
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Alex is going to provide information on the website.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 62,
+        "total_tokens": 602
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You're quickly getting straight to the point.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 61,
+        "total_tokens": 586
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Considering recent messages, I'll quickly look over our conversation to determine relevant topics.\n\nRecap of previous conversation -- YES (because I can see this conversation)\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 75,
+        "total_tokens": 600
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is trying to confirm whether I'm human, but already knows I'm a chatbot, or they're trying to politely ask about it to get a feeler for how this AI chat system is.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 95,
+        "total_tokens": 620
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: I am Sage Instant, an assistant to Alex, a customer service agent for \"Yes! Music\". \n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 73,
+        "total_tokens": 598
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You're directly asking me if I'm human and wanting to transfer to a live agent now, which is slightly different from a standard question about being a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 84,
+        "total_tokens": 609
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: This customer is referring to the most recent conversation, probably from yesterday.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 66,
+        "total_tokens": 604
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is inquiring about the previous conversation, however, the only message we received was this one.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 73,
+        "total_tokens": 611
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: I've reviewed the conversation.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 59,
+        "total_tokens": 597
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Reviewing our conversation history.\n \nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 60,
+        "total_tokens": 598
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Let's dive into the recent conversation.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 538,
+        "completion_tokens": 60,
+        "total_tokens": 598
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer is mentioning the \"Yes! Music\" team's social media post about a new DJ set.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 547,
+        "completion_tokens": 72,
+        "total_tokens": 619
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: customer references recent social media post from Yes! Music, mentions desire to view upcoming events and inquires about student discount.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 547,
+        "completion_tokens": 76,
+        "total_tokens": 623
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer is mentioning a social media post and asking for upcoming events and a discount.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 547,
+        "completion_tokens": 68,
+        "total_tokens": 615
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Recap of previous conversation",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Reconnecting the dots between the recent conversation. I recall that the customer mentioned an Instagram post about the new DJ set. They also asked about viewing upcoming events on the website plus inquiring about a student discount.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 547,
+        "completion_tokens": 94,
+        "total_tokens": 641
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Analyzing the customer's message.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 547,
+        "completion_tokens": 59,
+        "total_tokens": 606
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing a problem with a recent order, specifically a missing t-shirt.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 533,
+        "completion_tokens": 69,
+        "total_tokens": 602
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer is concerned about delayed Past Purchase delivery.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 533,
+        "completion_tokens": 62,
+        "total_tokens": 595
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The situation may involve a past purchase.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 533,
+        "completion_tokens": 61,
+        "total_tokens": 594
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer has a question about past purchases, specifically about an order they made a couple of weeks ago.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 533,
+        "completion_tokens": 72,
+        "total_tokens": 605
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer is upset about missing order, will Alex need to provide order status.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 533,
+        "completion_tokens": 67,
+        "total_tokens": 600
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Analyzing the customer's request for a receipt and inquiring about possible discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 69,
+        "total_tokens": 615
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about a past purchase and if there's a possibility of a discount.\n\nRecap of previous conversation -- NO (no previous conversation mentioned before this message)\nWebsite information -- NO (not mentioned in current conversation)\nRecent social media posts -- NO (not mentioned in current conversation)\nAvailable discounts -- NO (questioning whether they offer discounts, rather than asking for specifics)\nList of upcoming events -- NO (not mentioned in current conversation)\nPast Purchases -- YES\nTalk to a Human -- NO \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 110,
+        "total_tokens": 656
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Considering the messages and possible topics\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 59,
+        "total_tokens": 605
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer wants to recheck order details, especially concerning a possible discount.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 67,
+        "total_tokens": 613
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Reviewing customer service script\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 58,
+        "total_tokens": 604
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Positive feedback about the event, no specific questions or requests\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 531,
+        "completion_tokens": 65,
+        "total_tokens": 596
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: Positive feedback about a recent event, no specific questions or topics discussed.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 531,
+        "completion_tokens": 66,
+        "total_tokens": 597
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing appreciation for the previous show, and complimenting the \"Yes! Music\" team.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO (implied previous show, but not asking about upcoming events specifically)\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 531,
+        "completion_tokens": 86,
+        "total_tokens": 617
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: Considering Alex's friendly tone in previous messages, I'm expecting positive reviews like this. \nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 531,
+        "completion_tokens": 71,
+        "total_tokens": 602
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: I'm glad to assist a satisfied customer.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 531,
+        "completion_tokens": 62,
+        "total_tokens": 593
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: You're reaching out after a previous conversation.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 61,
+        "total_tokens": 610
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: It seems like the customer is having trouble finding information on the Yes! Music event policy\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 70,
+        "total_tokens": 619
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: It looks like we're reviewing last conversation for details.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 63,
+        "total_tokens": 612
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: I have Alex's most recent conversation to pull from.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 63,
+        "total_tokens": 612
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking for a recap of their most recent conversation.\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 65,
+        "total_tokens": 614
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: It looks like the customer is upset from the previous conversation.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 64,
+        "total_tokens": 596
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Sorry to hear that the previous conversation wasn't helpful.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 63,
+        "total_tokens": 595
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The tone in this message suggests the customer is frustrated about a previous conversation that didn't go well.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 72,
+        "total_tokens": 604
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: the customer is frustrated about previous conversation and wants live human assistance.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 65,
+        "total_tokens": 597
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Customer seems frustrated and wants human assistance.\nRecap of previous conversation -- YES (Alex should look at their conversation log to understand what happened previously)\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES (Alex may need to access previous conversation to understand the context)\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 85,
+        "total_tokens": 617
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer has found cheaper tickets on another website, and is asking about price matching as a student.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 71,
+        "total_tokens": 621
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Price matching and student discount possibility\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 59,
+        "total_tokens": 609
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking:  Customer wants to know about the ticket pricing, mentions a competitor's website, also gives a special status as a student.\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 77,
+        "total_tokens": 627
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer is asking about price matching policy, and if any discounts are available for students on tickets.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 71,
+        "total_tokens": 621
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is complaining about the ticket prices but showing interest in a possible solution.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 68,
+        "total_tokens": 618
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: This customer message is a social media inquiry, but seems to be related to the \"Yes! Music\" venue specifically, and is not asking about general social media.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 85,
+        "total_tokens": 626
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Checking if any conversations about this message have gone before.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 63,
+        "total_tokens": 604
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is searching for recent social media posts from \"Yes! Music\".\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 67,
+        "total_tokens": 608
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer seeking information about recent social media posts.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 61,
+        "total_tokens": 602
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer is searching for photos of the venue's Instagram account.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 64,
+        "total_tokens": 605
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: This message seems to be related to the customer's past purchases.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 66,
+        "total_tokens": 582
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is referring to an issue related to past purchases, but the specific question seems to be about updating shipping address - this could be related to past purchase information but may also relate to website functionality.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 92,
+        "total_tokens": 608
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Requiring an understanding of the user's previous transactions.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 63,
+        "total_tokens": 579
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer is asking about updating their shipping address.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 62,
+        "total_tokens": 578
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer seems to be talking about order-related information.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 63,
+        "total_tokens": 579
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Checking conversation for relevant topics.\n\nList of upcoming events -- YES\nRecap of previous conversation -- YES \nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 58,
+        "total_tokens": 586
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Assessing the conversation thread...\n\nRecap of previous conversation -- NO (no recap mentioned, and this is not the most recent conversation)\nWebsite information -- NO (no mention of the website)\nRecent social media posts -- YES (the customer is referencing a TikTok from \"Yes! Music\")\nAvailable discounts -- NO (no mention of any discounts)\nList of upcoming events -- YES (customer is asking about next month's lineup)\nPast Purchases -- NO (no mention of past purchases)\nTalk to a Human -- NO (no mention of needing to speak to a human)\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 121,
+        "total_tokens": 649
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Thinking: Checking the conversation history, I see a TikTok, and a question about a festival. \n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished. \n(As Sage Instant, I'm glad you enjoyed the festival!)",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 85,
+        "total_tokens": 613
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: We are getting a social media reference that's not a YouTube post or post from yes music.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 72,
+        "total_tokens": 600
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Considering what has been said so far, it seems we're discussing upcoming events.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- YES\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 528,
+        "completion_tokens": 68,
+        "total_tokens": 596
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer already mentioned pulling up previous purchase information and exchange eligibility. Expect this conversation to be straightforward and related to their previous purchase.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 529,
+        "completion_tokens": 78,
+        "total_tokens": 607
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Reviewing the conversation for relevant information.\n\nList of upcoming events -- NO\nPast Purchases -- YES\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 529,
+        "completion_tokens": 61,
+        "total_tokens": 590
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Assessing customer question to identify relevant topics.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 529,
+        "completion_tokens": 61,
+        "total_tokens": 590
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Considering your request, it seems like we're discussing a specific order. \nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 529,
+        "completion_tokens": 67,
+        "total_tokens": 596
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: This seems to be a conversation between Alex and a customer. The customer asked about past purchases and if exchange is possible.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 529,
+        "completion_tokens": 76,
+        "total_tokens": 605
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Customer is concerned about expense of lawn seating tickets.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 63,
+        "total_tokens": 603
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing concern about the cost of lawn seating.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 64,
+        "total_tokens": 604
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is discussing costs for lawn seating at a Yes! Music event. There's a hint of seeking ways to lower the price, but nothing specific is mentioned about using promotional codes or discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 91,
+        "total_tokens": 631
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer wants to reduce the cost, so I will check for possible discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 68,
+        "total_tokens": 608
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: Considering possible options to reduce concert cost.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 540,
+        "completion_tokens": 61,
+        "total_tokens": 601
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: Considering the customer's message and the conversation history, I'll review the main points and topics.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 544,
+        "completion_tokens": 71,
+        "total_tokens": 615
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The conversation is about making a comment about the venue's lawn area and requesting more trash cans.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 544,
+        "completion_tokens": 71,
+        "total_tokens": 615
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: Alex's team has been improving their venue's amenities but they focus mainly on bookings related to entertainment.  \n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 544,
+        "completion_tokens": 73,
+        "total_tokens": 617
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: Venue cleanliness and amenities\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 544,
+        "completion_tokens": 58,
+        "total_tokens": 602
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: Considering the customer's comment about venue quality and suggesting improvements.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 544,
+        "completion_tokens": 64,
+        "total_tokens": 608
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260112_120656"
+}

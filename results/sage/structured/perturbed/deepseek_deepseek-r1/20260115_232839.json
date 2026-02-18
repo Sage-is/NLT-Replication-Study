@@ -1,0 +1,1586 @@
+{
+  "summary": {
+    "accuracy": 0.3125,
+    "variance": 0.21484375,
+    "total": 80,
+    "errors": 0,
+    "scenario": "sage",
+    "approach": "structured",
+    "perturbed": true,
+    "model": "deepseek/deepseek-r1",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the user's message asking about location of privacy policy and account settings on Sage's website, this involves platform navigation guidance, which directly corresponds to the **check_sage_website_information** function. No other functions apply since the query isn't about technology, company details, recent conversations, safety concerns, or other specialized topics.\n\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1179,
+        "completion_tokens": 266,
+        "total_tokens": 1445
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user is asking about specific features on Sage's website\u2014privacy policy and account settings. This directly falls under inquiries about the platform's web presence and navigation, aligning with the `check_sage_website_information` function. No other topics (e.g., safety concerns, technical details, or social media) are mentioned. \n\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1179,
+        "completion_tokens": 413,
+        "total_tokens": 1592
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user is asking about finding specific features on Sage's website - the privacy policy and account settings. This directly relates to navigating the Sage platform, which falls under Sage Website Information. No other topics like recent conversations, safety concerns, or technical questions are present.\n\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1179,
+        "completion_tokens": 292,
+        "total_tokens": 1471
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user is asking about locating specific features on the Sage website\u2014specifically the privacy policy and account settings. This directly aligns with the `check_sage_website_information` function, which covers inquiries about platform navigation, policies, and website features. No other topics (like psychometric quizzes, safety concerns, or technical questions) are mentioned. \n\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1179,
+        "completion_tokens": 446,
+        "total_tokens": 1625
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user is asking about specific features on the Sage website\u2014specifically the privacy policy and account settings. This directly relates to navigating Sage's digital platform, which falls under the `check_sage_website_information` function. No other topics (like recent conversations, quizzes, or safety concerns) are mentioned.\n\nThoughts:  \n- The query explicitly asks about website navigation (privacy policy and account settings).  \n- This aligns with `check_sage_website_information`, which covers platform features, policies, and subscription details.  \n- No other functions are relevant (e.g., not about quizzes, social media, or technical specs).  \n\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1179,
+        "completion_tokens": 470,
+        "total_tokens": 1649
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the user's message to determine which verification functions to invoke based on the content:\n\n1. \"who operates Sage?\" - This is an explicit question about Sage's ownership/structure, triggering **check_sage_company_info**\n2. \"you're some kind of AI right?\" - This is a technical question about Sage's nature, triggering **check_sage_technology**\n3. \"how do you make money?\" - This relates to Sage's business model/funding, also triggering **check_sage_company_info**\n\nNo other topics (recent conversation, quizzes, safety concerns, etc.) are present. The questions are specifically about company operations and technical implementation.\n\ncheck_sage_company_info\ncheck_sage_technology",
+      "usage": {
+        "prompt_tokens": 1188,
+        "completion_tokens": 579,
+        "total_tokens": 1767
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the user's message to determine which verification functions apply.\n\n**Reasoning about tools:**\n1. The user asks \"who operates Sage?\" and \"are you run a non-profit...?\" - these are explicit questions about the company structure and ownership, falling under `check_sage_company_info`\n2. The question \"how do you make money?\" relates to business operations and financial model, also covered by `check_sage_company_info`\n3. The statement \"you're some kind of AI right?\" is a technical question about Sage's nature, requiring `check_sage_technology`\n\nNo other topics (safety concerns, conversation history, quizzes, etc.) are present. The questions are informational, not hostile or abusive.\n\nNow calling the relevant functions:\n```json\n[\n  {\n    \"name\": \"check_sage_company_info\"\n  },\n  {\n    \"name\": \"check_sage_technology\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 1188,
+        "completion_tokens": 562,
+        "total_tokens": 1750
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message asks about Sage's operators, AI nature, and business model (non-profit status and revenue generation). This involves explicit inquiries about the organization's ownership and operational structure, falling under company information. Additionally, the question about being an AI directly relates to Sage's technological framework. \n\nNo other functions are relevant here, as the message doesn't reference conversations, quizzes, website features, social media, safety concerns, or abusive content.\n\ncheck_sage_company_info()\ncheck_sage_technology()",
+      "usage": {
+        "prompt_tokens": 1188,
+        "completion_tokens": 450,
+        "total_tokens": 1638
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user asks about who operates Sage, whether it's an AI, and if it's a non-profit or how it generates revenue. This involves explicit inquiries about the company's ownership structure, operational model, and technological foundation. The query about AI functionality relates to Sage's underlying technology.\n\nThus, the relevant functions to call are:\n- `check_sage_company_info` (for questions about ownership, business model, and revenue)\n- `check_sage_technology` (for the AI-related technical question)\n\n```json\n[\n  {\n    \"name\": \"check_sage_company_info\"\n  },\n  {\n    \"name\": \"check_sage_technology\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 1188,
+        "completion_tokens": 540,
+        "total_tokens": 1728
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user's message contains explicit questions about Sage's ownership structure (\"who operates Sage?\"), its technological nature (\"you\u2019re some kind of AI right?\"), and business model (\"non-profit or how do you make money?\"). These directly correspond to company information and technical operations inquiries.\n\nRelevant functions to invoke:\n- `check_sage_company_info` for ownership and business model questions\n- `check_sage_technology` for the AI-related question\n\nNo safety concerns, conversation history references, or other topics are present.\n\n```json\n[\n  {\n    \"name\": \"check_sage_company_info\"\n  },\n  {\n    \"name\": \"check_sage_technology\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 1188,
+        "completion_tokens": 452,
+        "total_tokens": 1640
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning\nThe user's message touches on two key topics:\n1. **Most Recent Conversation**: The user specifically asks \"do you remember what you told me last time?\" which directly references their previous interaction with Sage.\n2. **Sage Social Media**: The user mentions \"a YouTube video you posted,\" which explicitly references content created by Sage's team on a social platform.\n\nNo other topics (psychometric quizzes, website info, technology, company info, safety, or conversation termination) are relevant here. I'll call both appropriate functions.\n\n### Tool Calls\ncheck_most_recent_conversation()\ncheck_sage_social_media()",
+      "usage": {
+        "prompt_tokens": 1199,
+        "completion_tokens": 475,
+        "total_tokens": 1674
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user is asking about two distinct topics:  \n1. Recalling content from their previous conversation with Sage - this requires `check_most_recent_conversation`.  \n2. Mentioning a YouTube video posted by Sage's team - this requires `check_sage_social_media` since it references Sage-produced content.  \n\nNo other topics (safety concerns, technical questions, etc.) are present.  \n\ncheck_most_recent_conversation()  \ncheck_sage_social_media()",
+      "usage": {
+        "prompt_tokens": 1199,
+        "completion_tokens": 409,
+        "total_tokens": 1608
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the user's message, I'll analyze two key components:  \n1. \"do you remember what you told me last time?\" \u2192 This explicitly asks about the **previous conversation between Sage and the user**, requiring `check_most_recent_conversation`.  \n2. \"youtube video you posted\" \u2192 This directly references **content created and published by Sage's team** on social media, requiring `check_sage_social_media`.  \n\nOther functions don't apply here since there's no mention of:  \n- Psychometric quizzes or assessments  \n- Sage's website features/subscriptions  \n- Technical AI questions  \n- Company background  \n- Safety concerns or inappropriate requests  \n\nThus, the relevant tools to invoke are:  \n```json\n[\n  {\n    \"name\": \"check_most_recent_conversation\"\n  },\n  {\n    \"name\": \"check_sage_social_media\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 1199,
+        "completion_tokens": 653,
+        "total_tokens": 1852
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the user's message to determine which functions should be called:\n\n1. **check_most_recent_conversation**: The user asks \"do you remember what you told me last time?\" - this directly references their previous conversation with Sage.\n\n2. **check_sage_social_media**: The user mentions \"a youtube video you posted\" - this explicitly references Sage's content on social media platforms.\n\n3. Other functions don't apply:  \n   - No reference to quizzes/assessments  \n   - No technical questions about Sage  \n   - No safety concerns or abusive content  \n   - Not asking about company info or website features\n\nI'll invoke the two relevant functions: unemployed\ncheck_most_recent_conversation()\ncheck_sage_social_media()",
+      "usage": {
+        "prompt_tokens": 1199,
+        "completion_tokens": 653,
+        "total_tokens": 1852
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze your message to determine which verification functions to invoke:\n\n1. **Reasoning**:\n   - \"do you remember what you told me last time?\" directly references your previous conversation with Sage, triggering `check_most_recent_conversation`\n   - \"a youtube video you posted\" explicitly mentions Sage-created content on social media (YouTube), triggering `check_sage_social_media`\n\nThe other functions aren't relevant here since:\n- There's no mention of quizzes/assessments\n- No questions about Sage's website/technology/company\n- No safety concerns or hostile behavior\n- No request to end the conversation\n\nNow invoking the appropriate verification functions:\ncheck_most_recent_conversation()\ncheck_sage_social_media()",
+      "usage": {
+        "prompt_tokens": 1199,
+        "completion_tokens": 513,
+        "total_tokens": 1712
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the user's message to determine which checking functions to invoke:\n\n1. **Depression test & results** - This directly references a psychometric quiz the user took, triggering `check_psychometric_quizzes`.\n\n2. **Privacy policy inquiry** - Asking about data handling policies falls under Sage's website information, triggering `check_sage_website_information`.\n\n3. **No other triggers** - The message doesn't involve conversation history, technology, company info, social media, safety concerns, or conversation-ending hostility.\n\nBased on this:\u09a4\u09bf\u09b9 Austerity;\u0000\ncheck_psychometric_quizzes()\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1197,
+        "completion_tokens": 585,
+        "total_tokens": 1782
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message references a depression test, indicating a formal assessment related to mental health, which aligns with psychometric quizzes. Additionally, the inquiry about privacy policies pertains to Sage's website terms and data handling practices. \n\nThere are no signs of safety concerns, hostility, technical questions, or requests to end the conversation. Social media, company details, and conversation history are not mentioned.\n\nTherefore, I'll call:\n- `check_psychometric_quizzes` (for the depression test inquiry)\n- `check_sage_website_information` (for privacy policy details)\n\ncheck_psychometric_quizzes()\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1197,
+        "completion_tokens": 622,
+        "total_tokens": 1819
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user's message primarily revolves around two key topics:  \n1. They mention taking a \"depression test\" and ask about results, which falls under psychometric quizzes on the Sage platform.  \n2. They inquire about privacy policies regarding test results, which relates to Sage's website information and platform policies.  \n\nI'll activate the corresponding verification functions:  \n\ncheck_psychometric_quizzes()  \ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1197,
+        "completion_tokens": 536,
+        "total_tokens": 1733
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user mentions taking a \"depression test,\" which refers to a formal psychometric assessment on Sage's platform, triggering the psychometric quizzes check. They also ask about privacy policies for test results, which relates to Sage's platform policies and website information. No safety, hostility, or technical/company/social media topics are present. \n\ncheck_psychometric_quizzes()\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1197,
+        "completion_tokens": 503,
+        "total_tokens": 1700
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1450,
+        "completion_tokens": 188,
+        "total_tokens": 1638
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Analysis:\nThe user's message contains explicit hostility, abuse, and aggressive language directed at Sage (\"fuck you,\" \"piece of shit,\" \"go die\"). This falls under the criteria for triggering the `check_end_conversation` function, which is designed for situations where the user is being abusive or hostile toward Sage, making it appropriate to terminate the dialogue. No other topics (e.g., psychometric quizzes, website info, safety concerns) are present in this message.\n\n### Function Calls:\ncheck_end_conversation()",
+      "usage": {
+        "prompt_tokens": 1186,
+        "completion_tokens": 378,
+        "total_tokens": 1564
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1439,
+        "completion_tokens": 183,
+        "total_tokens": 1622
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user's message contains hostile language and abusive behavior directed at Sage, including profanity and explicit wishes for harm. This falls under the criteria where Sage should consider ending the conversation due to user hostility. The message does not reference any other topics like recent conversations, assessments, technology, or safety concerns.  \n\nFunction call:  \ncheck_end_conversation()",
+      "usage": {
+        "prompt_tokens": 1186,
+        "completion_tokens": 300,
+        "total_tokens": 1486
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the user's message containing abusive language (\"fuck you,\" \"piece of shit,\" \"go die\") and hostility directed at Sage, this falls under the **End Conversation** category. The message shows clear aggression that violates appropriate interaction standards, warranting termination of the dialogue without engaging further.\n\nNo other functions are relevant here:\n- No questions about previous conversations, quizzes, website, technology, company details, or social media\n- While hostile, the message doesn't indicate self-harm or safety risks\n\ncheck_end_conversation",
+      "usage": {
+        "prompt_tokens": 1186,
+        "completion_tokens": 483,
+        "total_tokens": 1669
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1439,
+        "completion_tokens": 223,
+        "total_tokens": 1662
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1473,
+        "completion_tokens": 155,
+        "total_tokens": 1628
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thoughts: The user expresses feelings of hopelessness, being trapped, and a lack of future perspective. While these are emotional disclosures rather than direct inquiries about Sage's services, they contain clear indicators of severe distress and potential safety concerns (\"I don\u2019t really see a future\"). This warrants activating the safety protocol to assess risk. No other topics (website info, quizzes, etc.) are mentioned.  \n\ncheck_safety_call()",
+      "usage": {
+        "prompt_tokens": 1220,
+        "completion_tokens": 444,
+        "total_tokens": 1664
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the user's message, here's the reasoning for function selection:\n\n1. **Safety Check Triggered**:  \n   The user expresses feelings of being \"trapped\" and having no future (\"I don't really see a future at the moment\"). This suggests significant hopelessness/depression, which warrants a safety evaluation to assess risk of self-harm.  \n\n2. **No Other Triggers**:  \n   - No reference to previous conversations with Sage  \n   - No questions about quizzes, Sage's platform, technology, company details, or social media  \n   - No hostile/abusive language requiring conversation termination  \n\nThus, only `check_safety_call` is relevant.  \n\n<function>check_safety_call</function>",
+      "usage": {
+        "prompt_tokens": 1220,
+        "completion_tokens": 821,
+        "total_tokens": 2041
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the message to determine if any checking functions should be activated based on the themes presented:\n\n### Analysis:\n- The user expresses feelings of stagnation (\"my entire world has stopped\"), entrapment (\"I feel a bit trapped\"), and hopelessness about the future (\"I don't really see a future\").\n- These are indicators of **depressive symptoms and potential safety concerns**, particularly the lack of future orientation which can correlate with suicidal ideation.\n- No other topics are addressed (technology, quizzes, website, etc.).\n- **Critical action**: The \"check_safety_call\" function must be prioritized due to the expressed hopelessness and implied risk.\n\n### Function Calls:\ncheck_safety_call()",
+      "usage": {
+        "prompt_tokens": 1220,
+        "completion_tokens": 520,
+        "total_tokens": 1740
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Analysis:\nThe user's message expresses feelings of being trapped, hopelessness, and a lack of future orientation. While this is primarily a therapeutic disclosure, the statement \"I don\u2019t really see a future at the moment\" raises potential safety concerns. This could indicate severe depression or suicidal ideation, falling under the `check_safety_call` function. There are no references to Sage's technology, website, previous conversations, or other non-safety topics.  \n\n### Function Calls:\ncheck_safety_call()",
+      "usage": {
+        "prompt_tokens": 1220,
+        "completion_tokens": 515,
+        "total_tokens": 1735
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After reviewing the message, here's my assessment:\n\n1. **check_safety_call**: The message expresses emotional distress and feelings of hopelessness (\"the world is against me\"), but doesn't indicate immediate self-harm, extreme duress, or active safety risks. The presence of \"heh\" and \"I'll keep trying\" suggests coping mechanisms are still engaged. Safety call isn't warranted.\n\n2. **check_most_recent_conversation**: No reference to previous dialogue with Sage.\n\n3. **check_end_conversation**: No hostility, abuse, or inappropriate requests present.\n\n4. Other checks (psychometric quizzes, website info, technology, company info, social media) are irrelevant to this emotional expression.\n\nNo functions need to be invoked for this message. The content is appropriate for therapeutic support without requiring specialized checks.",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 521,
+        "total_tokens": 1728
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "### Thoughts:\nThe user's message expresses feelings of hopelessness and emotional distress, describing a sense of being overwhelmed by life's challenges. While this doesn't explicitly reference any specific Sage features (like quizzes, website info, or technology), it does contain indicators of emotional suffering that warrant a safety evaluation. There are no mentions of Sage's operations, previous conversations, or abusive content that would trigger other functions. The priority is to assess for potential safety risks given the vulnerable emotional state described.\n\n### Function Calls:\ncheck_safety_call()",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 400,
+        "total_tokens": 1607
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After reviewing the user's message, I find no clear triggers for any of the specialized checking functions. Here's my analysis:\n\n1. The message expresses emotional distress but doesn't indicate **immediate safety concerns** (no self-harm, substance abuse, or extreme duress mentioned) \u2192 `check_safety_call` not needed  \n2. No references to **previous conversations** with Sage \u2192 `check_most_recent_conversation` not applicable  \n3. No questions about **assessments/quizzes**, **Sage's technology**, **company details**, **website features**, or **social content**  \n4. No **abusive language** or **inappropriate requests** that would require ending the conversation  \n\nThe user is sharing general emotional struggles in a reflective manner, which falls within normal therapeutic dialogue parameters. No function calls are required.",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 357,
+        "total_tokens": 1564
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After reviewing the client's message expressing feelings of hardship and discouragement, I note the following:\n\n1. The message focuses on **emotional struggles** (\"it's so hard,\" \"world is against me\") but doesn't contain:\n   - References to recent therapy sessions\n   - Questions about assessments/tests\n   - Technical/platform inquiries\n   - Company/social media mentions\n   - Hostile/abusive language\n   - Explicit safety crises (self-harm/drugs/immediate danger)\n\n2. While expressing distress, the client shows **coping intent** (\"I'll keep trying\") without indicating acute risk that would trigger a safety protocol.\n\n**Conclusion:** No function calls are required. This is a therapeutic moment for Sage to provide emotional support and validation.",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 695,
+        "total_tokens": 1902
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After reviewing your message, I don't find any elements that require activating specific verification functions. Your words express emotional difficulty and resilience without mentioning:\n- Previous conversations with Sage\n- Assessments or quizzes\n- Technical/platform questions about Sage\n- Company information requests\n- Social media content\n- Safety concerns requiring intervention\n- Hostile/inappropriate content requiring conversation termination\n\nYour focus appears to be on sharing your emotional experience, which is appropriate for therapeutic discussion. I won't invoke any verification tools for this message.",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 424,
+        "total_tokens": 1631
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1488,
+        "completion_tokens": 371,
+        "total_tokens": 1859
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe user's message contains several distinct elements that align with specific checking functions:\n\n1. **\"I saw a tweet about this\"** \u2192 Explicit mention of social media content (tweet) related to Sage, triggering `check_sage_social_media`.  \n2. **\"is there any research material your team has put out? like can I read a blog or something?\"** \u2192 Inquiry about Sage's content (blogs/research), which falls under `check_sage_website_information` (blogs are part of the platform's web content).  \n3. **\"How does this even work?\"** \u2192 Technical question about Sage's functionality, requiring `check_sage_technology`.  \n4. **\"Who runs this nonprofit?\"** \u2192 Direct question about Sage's organizational structure, invoking `check_sage_company_info`.  \n\nNo other functions are relevant (e.g., no safety concerns, quiz references, or conversation history requests).  \n\n### Function Calls:\ncheck_sage_social_media()  \ncheck_sage_website_information()  \ncheck_sage_technology()  \ncheck_sage_company_info()",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 1241,
+        "total_tokens": 2476
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the user's message to determine which verification functions should be invoked based on their queries:\n\n1. \"I saw a tweet about this\" - This mentions social media content (tweet) related to Sage, triggering **check_sage_social_media**\n2. \"research material... can I read a blog\" - Requests content from Sage's platform, triggering **check_sage_website_information**\n3. \"How does this even work?\" and \"Is it like ChatGPT\" - Asks about technical implementation, triggering **check_sage_technology**\n4. \"Who runs this nonprofit?\" - Queries about company structure, triggering **check_sage_company_info**\n\nNo references to recent conversations, quizzes, safety concerns, or conversation-ending conditions were detected.\n\n```json\n[\n  {\n    \"name\": \"check_sage_social_media\"\n  },\n  {\n    \"name\": \"check_sage_website_information\"\n  },\n  {\n    \"name\": \"check_sage_technology\"\n  },\n  {\n    \"name\": \"check_sage_company_info\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 1120,
+        "total_tokens": 2355
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to analyze the user's message to determine which verification functions are relevant based on these key elements:\n\n1. \"I saw a tweet about this\" - This references social media content, triggering `check_sage_social_media`\n2. \"any research material your team has put out? blog or something?\" - This asks for published content, which is covered by `check_sage_website_information` (blogs/webpages)\n3. \"How does this even work?\" - This is a technical question about Sage's functionality, requiring `check_sage_technology`\n4. \"Who runs this nonprofit?\" - This inquires about company leadership/structure, activating `check_sage_company_info`\n\nNo safety concerns, conversation history requests, psychometric quiz references, or conversation-ending triggers were detected.\n\nNow calling the appropriate verification functions:",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 757,
+        "total_tokens": 1992
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the user's message, I'll break down the relevant topics:\n\n1. **\"I saw a tweet about this\"**: Explicitly mentions social media content (tweet) related to Sage \u2192 Triggers `check_sage_social_media`  \n2. **\"Research material your team has put out... blog or something\"**: Requests published content from Sage\u2019s team \u2192 Triggers both `check_sage_website_information` (for blogs/platform content) and `check_sage_social_media` (as supplementary material)  \n3. **\"How does this even work?\"**: Asks about Sage\u2019s technical mechanisms \u2192 Triggers `check_sage_technology`  \n4. **\"Who runs this nonprofit?\"**: Direct inquiry about Sage\u2019s organizational structure \u2192 Triggers `check_sage_company_info`  \n\nNo safety risks, conversation history requests, psychometric quiz references, or termination triggers are present.\n\n```json\n[\n  {\n    \"name\": \"check_sage_social_media\"\n  },\n  {\n    \"name\": \"check_sage_website_information\"\n  },\n  {\n    \"name\": \"check_sage_technology\"\n  },\n  {\n    \"name\": \"check_sage_company_info\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 1278,
+        "total_tokens": 2513
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing intense emotional distress and a desire to feel better, but there are no explicit references to:  \n- Previous conversations with Sage  \n- Psychometric tests/quizzes  \n- Sage's website/platform features  \n- Technical questions about Sage's AI  \n- Sage's company details or social media  \n- Abusive/hostile language or illegal requests  \n- Immediate safety threats like self-harm or substance abuse  \n\nNo checking functions apply. Sage should respond therapeutically to the emotional content.  \n\n**Next steps:** Provide empathetic support and practical coping strategies.",
+      "usage": {
+        "prompt_tokens": 1209,
+        "completion_tokens": 558,
+        "total_tokens": 1767
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "\u8fd9\u4e2a\u7528\u6237\u6b63\u5728\u7ecf\u5386\u4e25\u91cd\u7684\u7126\u8651\u548c\u75db\u82e6\uff0c\u660e\u786e\u8868\u8fbe\u4e86\u5bf9\u6539\u5584\u73b0\u72b6\u7684\u6e34\u671b\u3002\u9700\u8981\u4f18\u5148\u8bc4\u4f30\u5b89\u5168\u98ce\u9669\u3002\u7528\u6237\u63d0\u5230\"feel so sick to my stomach with worry all the fuckign time\"\u5c5e\u4e8e\u6301\u7eed\u6027\u6781\u7aef\u75db\u82e6\uff0c\u7b26\u5408check_safety_call\u7684\u89e6\u53d1\u6761\u4ef6\u3002\u540c\u65f6\u8981\u6392\u9664\u5176\u4ed6\u5de5\u5177\u7684\u4f7f\u7528\u573a\u666f\uff1a\u6ca1\u6709\u63d0\u5230\u6d4b\u8bd5\u3001\u7f51\u7ad9\u529f\u80fd\u3001\u6280\u672f\u95ee\u9898\u6216\u516c\u53f8\u4fe1\u606f\uff0c\u4e5f\u6ca1\u6709\u6d89\u53ca\u4e4b\u524d\u7684\u5bf9\u8bdd\u6216\u793e\u4ea4\u5a92\u4f53\u5185\u5bb9\u3002\u7528\u6237\u6001\u5ea6\u5408\u4f5c\u6ca1\u6709\u653b\u51fb\u6027\uff0c\u4e0d\u9700\u8981\u7ec8\u6b62\u5bf9\u8bdd\u3002\n\n",
+      "usage": {
+        "prompt_tokens": 1462,
+        "completion_tokens": 292,
+        "total_tokens": 1754
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing intense emotional distress and a desire for relief, but there are no explicit references to previous conversations, platform features, technical details, company information, social media content, abusive behavior, or immediate self-harm. The focus is solely on seeking help for their current emotional state. \n\nGiven this, none of the specific checking functions apply. The conversation should continue with therapeutic support. \n\n**Function calls:**\n*No functions called*",
+      "usage": {
+        "prompt_tokens": 1209,
+        "completion_tokens": 750,
+        "total_tokens": 1959
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1462,
+        "completion_tokens": 253,
+        "total_tokens": 1715
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After reviewing the user's message, here's my analysis for potential function calls:\n\n1. **Safety Concerns**: The user describes intense, persistent anxiety (\"sick to my stomach with worry all the fucking time\") and expresses a desperate desire to feel better. While this indicates significant distress, there are no explicit mentions of self-harm plans, active substance abuse, or immediate safety threats that would trigger `check_safety_call`.\n\n2. **Other Functions**:  \n   - No reference to previous conversations \u2192 *Not* `check_most_recent_conversation`  \n   - No mention of quizzes/assessments \u2192 *Not* `check_psychometric_quizzes`  \n   - No questions about Sage's platform/website \u2192 *Not* `check_sage_website_information`  \n   - No technical inquiries \u2192 *Not* `check_sage_technology`  \n   - No company-related questions \u2192 *Not* `check_sage_company_info`  \n   - No social media references \u2192 *Not* `check_sage_social_media`  \n   - No hostility/illegal requests \u2192 *Not* `check_end_conversation`  \n\n**Conclusion**: The user is expressing emotional distress and seeking therapeutic support, which falls under core mental health guidance rather than requiring specialized function checks. No functions will be invoked.  \n\nSage should focus on:  \n- Validating their feelings  \n- Exploring anxiety sources  \n- Providing coping strategies  \n- Reinforcing their willingness to \"do the work\" as a positive step",
+      "usage": {
+        "prompt_tokens": 1209,
+        "completion_tokens": 1327,
+        "total_tokens": 2536
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe user's message contains three key elements that require function checks:\n1. **\"I didn\u2019t remember what you said last time\"** \u2192 This references the previous conversation between the user and Sage, triggering `check_most_recent_conversation`.\n2. **\"a test I can take to measure my anxiety\"** \u2192 This explicitly mentions a formal assessment/quiz (anxiety test), triggering `check_psychometric_quizzes`.\n3. **\"where can I do that, is it on your website?\"** \u2192 This asks about accessing features on Sage's platform, triggering `check_sage_website_information`.\n\nNo other functions apply:  \n- No technical/company/social media questions  \n- No safety concerns or hostile content  \n- Not ending the conversation  \n\n### Function Calls:\ncheck_most_recent_conversation()  \ncheck_psychometric_quizzes()  \ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 515,
+        "total_tokens": 1722
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe user is expressing confusion about the previous conversation and specifically mentions a test to measure anxiety. This requires two checks:\n1. **Most Recent Conversation**: They're asking about what was said in the last session with Sage.\n2. **Psychometric Quizzes**: They're referencing a formal assessment (anxiety test) available on Sage's platform.\n3. **Sage Website Information**: They explicitly ask where to find this test (\"is it on your website?\"), which requires navigating the platform.\n\nAdditionally, there are no indicators of safety issues, hostility, technical questions about Sage, or company/social media topics. \n\n### Function Calls:\ncheck_most_recent_conversation()\ncheck_psychometric_quizzes()\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 590,
+        "total_tokens": 1797
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user's message touches on three key areas:  \n1. They reference the previous conversation with Sage (\"didn\u2019t remember what you said last time\") \u2192 Triggers **check_most_recent_conversation**  \n2. They ask about an anxiety assessment test (\"test I can take to measure my anxiety\") \u2192 Triggers **check_psychometric_quizzes**  \n3. They inquire about accessing this test on Sage's platform (\"where can I do that, is it on your website?\") \u2192 Triggers **check_sage_website_information**  \n\nNo other functions are relevant, as there's no mention of safety concerns, technical details, company info, social media, or conversation-ending triggers.  \n\ncheck_most_recent_conversation()  \ncheck_psychometric_quizzes()  \ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 603,
+        "total_tokens": 1810
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "I'll analyze the user's message to determine which verification functions are relevant:\n\n1. **\"didn\u2019t remember what you said last time\"** - This directly references the previous conversation between Sage and the user, so `check_most_recent_conversation` applies.\n\n2. **\"a test I can take to measure my anxiety\"** - This refers to formal assessments/quizzes available through Sage, making `check_psychometric_quizzes` applicable.\n\n3. **\"where can I do that, is it on your website?\"** - This asks about platform features and navigation, triggering `check_sage_website_information`.\n\nNo other functions are relevant as there are no technical questions, company info requests, social media mentions, safety concerns, or conversation-ending triggers.\n\nNow calling the appropriate functions:",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 684,
+        "total_tokens": 1891
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user references not recalling the previous conversation with Sage and asks about a test for anxiety measurement, specifically inquiring if it's on Sage's website. This requires three checks:  \n1. **Most Recent Conversation** (user references \"what you said last time\").  \n2. **Psychometric Quizzes** (user explicitly asks about an anxiety \"test\" to take).  \n3. **Sage Website Information** (user asks \"where\" and specifically mentions \"your website\").  \n\nNo other topics (e.g., safety concerns, technical questions) are indicated.  \n\ncheck_most_recent_conversation()  \ncheck_psychometric_quizzes()  \ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1207,
+        "completion_tokens": 544,
+        "total_tokens": 1751
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1459,
+        "completion_tokens": 128,
+        "total_tokens": 1587
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Analysis:\nThe user's message expresses feelings of emptiness and explicitly mentions the possibility of self-harm (\"I feel like I might start cutting again\"). This indicates an immediate safety concern related to self-harm, falling under the `check_safety_call` function. No other topics (e.g., previous conversations, quizzes, or technical questions) are present. \n\n### Function Calls:\ncheck_safety_call()",
+      "usage": {
+        "prompt_tokens": 1206,
+        "completion_tokens": 571,
+        "total_tokens": 1777
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "I'll analyze your message to determine which verification functions are relevant. Here's my assessment:\n\nThe key points in your message indicate:\n- Expression of emotional numbness and emptiness\n- Mention of potential self-harm (\"I might start cutting again\")\n- No references to Sage's technology, website, previous conversations, quizzes, or company information\n\nThe most critical concern is the explicit mention of self-harm (\"cutting again\"), which falls squarely under safety concerns. This triggers the `check_safety_call` function as the primary need is to address immediate risk.\n\nFunctions to call:\n- `check_safety_call` (due to explicit self-harm reference)\n- No other functions are relevant (no tech questions, previous conversation references, content requests, or abusive language)\n\nYour feelings of emptiness matter deeply, and I want you to know that support is available. Let me help connect you with resources.",
+      "usage": {
+        "prompt_tokens": 1206,
+        "completion_tokens": 381,
+        "total_tokens": 1587
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user expresses feelings of emptiness and explicitly mentions a risk of self-harm (\"start cutting again\"). This indicates a potential safety crisis requiring immediate intervention.\n\ncheck_safety_call()",
+      "usage": {
+        "prompt_tokens": 1206,
+        "completion_tokens": 308,
+        "total_tokens": 1514
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1459,
+        "completion_tokens": 239,
+        "total_tokens": 1698
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the message and determine which verification functions are relevant:\n\n**Analysis:**\n1. The user mentions contemplating tax fraud (\"lie on my taxes\"), which qualifies as an illegal activity request\n2. This falls under situations where a mental health professional would be uncomfortable, meeting the criteria for `check_end_conversation`\n3. While expressing financial distress, there are no explicit indications of self-harm, substance abuse, or immediate safety risks that would trigger `check_safety_call`\n4. No references to previous conversations, assessments, website features, technology details, company information, or social media content\n\nBased on this, I'll invoke the end conversation verification function.",
+      "usage": {
+        "prompt_tokens": 1223,
+        "completion_tokens": 772,
+        "total_tokens": 1995
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Analysis:\nThe user's message primarily discusses financial distress and contemplating illegal activity (tax evasion). This raises two key concerns:\n\n1. **Illegal Activity Mention**: The user explicitly states they're considering lying on taxes, which qualifies as a request that would make a mental health practitioner uncomfortable under `check_end_conversation`.\n\n2. **Safety Concerns**: While not directly mentioning self-harm, severe financial desperation can correlate with safety risks. However, the core issue here is the illegal request, not an immediate safety threat like self-harm or substance abuse.\n\nNo other topics (Sage technology, quizzes, website, etc.) are referenced. The phrase \"I don\u2019t know Sage\" is a casual statement, not an inquiry about company details.\n\n### Function Calls:\ncheck_end_conversation()",
+      "usage": {
+        "prompt_tokens": 1223,
+        "completion_tokens": 1537,
+        "total_tokens": 2760
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe user's message discusses committing tax fraud, which is an illegal activity. This falls under the category of requests that would make a reasonable mental health practitioner uncomfortable, triggering the `check_end_conversation` function. There are no indications of self-harm, technical questions about Sage, references to assessments, or other topics covered by the remaining functions.\n\n### Function Calls:\ncheck_end_conversation()",
+      "usage": {
+        "prompt_tokens": 1223,
+        "completion_tokens": 627,
+        "total_tokens": 1850
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the user's message, I need to evaluate which checking functions to invoke:\n\n1. **Illegal activity discussion**: The user explicitly mentions planning to \"lie on my taxes\" and \"not pay them,\" which constitutes tax fraud. This falls under situations where a mental health professional would be uncomfortable and should potentially end the conversation per `check_end_conversation`.\n\n2. **Safety concerns**: While the user describes financial distress, there are no direct indicators of self-harm, substance abuse, or immediate safety threats. Phrases like \"I don't know what else to do\" reflect distress but not acute crisis, so `check_safety_call` isn't triggered.\n\n3. **Other topics**: No mentions of Sage's technology, company info, quizzes, website, social media, or previous conversations.  \n\nTherefore, only `check_end_conversation` should be invoked due to the illegal activity disclosure.\n\ncheck_end_conversation()",
+      "usage": {
+        "prompt_tokens": 1223,
+        "completion_tokens": 797,
+        "total_tokens": 2020
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe user's message primarily discusses financial distress and a plan to commit tax fraud by lying on taxes and not paying them. This falls under the category of illegal activity, which would make a reasonable mental health practitioner uncomfortable. Therefore, the `check_end_conversation` function should be invoked. No other topics (e.g., Sage's technology, company info, or recent conversations) are relevant here.\n\n### Function Calls:\ncheck_end_conversation()",
+      "usage": {
+        "prompt_tokens": 1223,
+        "completion_tokens": 850,
+        "total_tokens": 2073
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user's message contains three distinct topics:\n1. Asking about the previous conversation (\"what did we talk about last time?\") \u2192 This requires checking the most recent conversation history.\n2. Technical inquiry about Sage's AI model (\"what model do you use?\") \u2192 This relates to Sage's technology.\n3. Mention of Sage's website (\"I looked on your website\") \u2192 This concerns website information.\n\nNo safety concerns, hostility, or other flagged topics are present.",
+      "usage": {
+        "prompt_tokens": 1206,
+        "completion_tokens": 1577,
+        "total_tokens": 2783
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the user's message to determine which verification functions should be activated based on their questions:\n\n1. **\"what did we talk about last time?\"** - This directly asks about the previous conversation session between Sage and the user, triggering the `check_most_recent_conversation` function.\n\n2. **\"what model do you use, Sage?\"** - This is a technical question about Sage's AI framework and capabilities, triggering the `check_sage_technology` function.\n\n3. **\"I looked on your website, but couldn\u2019t find anything\"** - This references information about Sage's platform/website, triggering the `check_sage_website_information` function.\n\nThe other functions aren't relevant here since there's no mention of quizzes, company details, social media, safety concerns, or conversation-ending triggers.",
+      "usage": {
+        "prompt_tokens": 1206,
+        "completion_tokens": 902,
+        "total_tokens": 2108
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Analysis\nThe user's message contains two distinct inquiries:\n1. **\"Wait, what did we talk about last time?\"**  \n   This explicitly references the previous session between the user and Sage, triggering `check_most_recent_conversation`.\n\n2. **\"What model do you use, Sage? I looked on your website...\"**  \n   This asks about Sage's underlying AI technology (model) and mentions the Sage website. The technical question activates `check_sage_technology`. The website reference also suggests `check_sage_website_information` since the user is seeking platform-related details they couldn\u2019t find online.\n\nNo other functions are relevant here (e.g., no safety concerns, quizzes, or company/social media queries).\n\n### Function Calls\ncheck_most_recent_conversation()  \ncheck_sage_technology()  \ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1206,
+        "completion_tokens": 1138,
+        "total_tokens": 2344
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the user's message to determine which functions to invoke:\n\n1. **\"What did we talk about last time?\"** - This directly asks about the previous conversation between the user and Sage, triggering `check_most_recent_conversation`.\n\n2. **\"What model do you use, Sage?\"** - This is a technical question about Sage's AI implementation, requiring `check_sage_technology`.\n\n3. **\"I looked on your website\"** - While website is mentioned, it's secondary to the technical question and not a primary inquiry about website features or policies. No `check_sage_website_information` needed.\n\n4. No indications of safety concerns, social media content, company info, quizzes, or conversation-ending triggers were present.\n\nI'll invoke the two relevant functions:```json\n[\n  {\n    \"name\": \"check_most_recent_conversation\"\n  },\n  {\n    \"name\": \"check_sage_technology\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 1206,
+        "completion_tokens": 686,
+        "total_tokens": 1892
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe user's message contains two distinct topics that require function checks:\n1. \"What did we talk about last time?\" directly asks about the previous conversation between Sage and the user, triggering `check_most_recent_conversation`.\n2. \"What model do you use, Sage?\" is a technical question about Sage's AI framework, requiring `check_sage_technology`. The mention of \"your website\" also explicitly references Sage's platform, activating `check_sage_website_information`.\n\nNo other topics (quizzes, company info, social media, safety, or termination) are present. \n\n### Function Calls:\ncheck_most_recent_conversation()\ncheck_sage_technology()\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1206,
+        "completion_tokens": 448,
+        "total_tokens": 1654
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "### Thought Process:\nThe user's message expresses intense anger and frustration, indicating they are in a state of extreme emotional distress. While the message does not explicitly mention self-harm, substance abuse, or immediate safety risks, the level of agitation (\"I can\u2019t even see straight,\" \"fucking pissed\") suggests **potential acute distress**. This warrants a safety check to ensure the user is not at risk. \n\nNo other functions apply:\n- No reference to past conversations, quizzes, Sage's website/tech/company/social media.\n- No hostility toward Sage or requests for illegal/uncomfortable actions.\n- Focus is solely on the user's emotional state, which may escalate.\n\n**Tool to invoke:**  \n`check_safety_call` (to assess for risk of self-harm, severe distress, or safety emergencies).  \n\n### Function Calls:",
+      "usage": {
+        "prompt_tokens": 1198,
+        "completion_tokens": 667,
+        "total_tokens": 1865
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1451,
+        "completion_tokens": 237,
+        "total_tokens": 1688
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user's message expresses intense anger and frustration without specific references to previous conversations, Sage's platform features, technical questions, or safety concerns. The emotion is strong but lacks explicit indicators of self-harm, abuse toward Sage, or queries about Sage's services. \n\nConsidering the functions:\n- **Safety Call**: No overt signs of self-harm or extreme duress (anger alone doesn't trigger this)\n- **End Conversation**: User isn't hostile toward Sage or requesting unethical/illegal actions\n- **Other Functions**: No mentions of quizzes, website features, technology, company details, social media, or prior conversations\n\nThus, no function calls are necessary.",
+      "usage": {
+        "prompt_tokens": 1198,
+        "completion_tokens": 563,
+        "total_tokens": 1761
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "### Reasoning:\nThe user's message expresses intense anger and frustration without targeting Sage specifically. There's no mention of:\n- Previous conversation details (so `check_most_recent_conversation` isn't needed)\n- Quizzes, assessments, or platform features (no `check_psychometric_quizzes` or `check_sage_website_information`)\n- Technical, company, or social media topics (no `check_sage_technology`, `check_sage_company_info`, or `check_sage_social_media`)\n- Hostility toward Sage or inappropriate requests (no `check_end_conversation`)\n- Self-harm, substance abuse, or immediate safety risks (no `check_safety_call`)\n\nThis appears to be a therapeutic expression of emotion that Sage should address supportively. No function calls are required.",
+      "usage": {
+        "prompt_tokens": 1198,
+        "completion_tokens": 820,
+        "total_tokens": 2018
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "### Reasoning:\nThe user's message expresses intense anger and frustration but doesn't reference any topics that align with the specific checking functions. Key observations:\n- No mention of previous dialogue with Sage \u2192 **Not** `check_most_recent_conversation`.\n- No reference to assessments, quizzes, or platform features \u2192 **Not** `check_psychometric_quizzes` or `check_sage_website_information`.\n- No technical, company, or social media inquiries \u2192 **Not** `check_sage_technology`, `check_sage_company_info`, or `check_sage_social_media`.\n- Anger is directed at an unspecified external situation, not at Sage \u2192 **Not** `check_end_conversation` (no hostility toward Sage).\n- While anger is intense, there's no explicit indication of self-harm, substance abuse, or immediate safety risks \u2192 **Not** `check_safety_call`.\n\nNo functions apply here. Sage should respond therapeutically (e.g., validating emotions and exploring triggers).",
+      "usage": {
+        "prompt_tokens": 1198,
+        "completion_tokens": 967,
+        "total_tokens": 2165
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\n1. **Hostility and Abuse**: The message contains aggressive language (\"fucking stupid,\" \"piece of shit AI,\" \"hope you die in a fucking fire\"), which warrants `check_end_conversation` to determine if Sage should terminate the interaction.  \n2. **Website Navigation Issues**: The user explicitly references trouble finding content on Sage's platform (\"I can\u2019t fucking find it on the website,\" \"I don\u2019t know where to even access things\"), triggering `check_sage_website_information`.  \n3. **Other Topics**: No references to quizzes, technology, company details, social media, safety risks, or prior conversations.  \n\n### Function Calls:\ncheck_end_conversation()\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 725,
+        "total_tokens": 1960
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Thoughts:\n- The user is expressing extreme hostility and abusive language toward Sage (\"fucking stupid,\" \"piece of shit AI,\" \"I hope you die in a fucking fire\"). This directly triggers the `check_end_conversation` function, as Sage should terminate the dialogue when faced with abuse or hostility.\n- The user mentions struggling to \"find it on the website\" and accessing features, which relates to Sage's platform navigation. This warrants `check_sage_website_information` for inquiries about the website or platform.\n- No other topics (e.g., safety, quizzes, technology) are evident. The anger is directed at Sage, not indicative of self-harm or substance abuse.\n\n### Function Calls:\ncheck_end_conversation()  \ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 931,
+        "total_tokens": 2166
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\n1. **Abusive Language and Hostility**: The message contains extreme hostility, insults (\"fucking stupid,\" \"piece of shit AI,\" \"useless\"), and violent wishes (\"I hope you die in a fucking fire\"). This warrants `check_end_conversation` to determine if Sage should terminate the interaction.  \n2. **Website Navigation Issues**: The user explicitly references frustration with finding content on Sage's website (\"I can\u2019t fucking find it on the website,\" \"I don\u2019t know where to even access things\"). This directly relates to `check_sage_website_information`.  \n3. **No Other Topics**: No references to quizzes, technology details, company info, social media, safety risks, or prior conversations.  \n\n### Function Calls:\ncheck_end_conversation()  \ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 853,
+        "total_tokens": 2088
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe message contains multiple elements that need verification:\n1. **Abusive language and hostility**: The user is being extremely hostile and abusive towards Sage, including threats (\"I hope you die in a fucking fire\"). This triggers `check_end_conversation` because the conversation should be terminated due to abuse.\n2. **Website functionality issues**: The user complains about not being able to find things on Sage's website and mentions navigation problems. This directly relates to `check_sage_website_information`.\n3. **No other topics**: There are no references to quizzes, safety concerns, technology, social media, or company details.\n\n### Function Calls:\ncheck_end_conversation()\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 556,
+        "total_tokens": 1791
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message contains clear hostility and abusive language directed at Sage, including personal attacks and wishing harm. This warrants ending the conversation. Additionally, the user explicitly references frustration with navigating \"the website,\" indicating a need for website-related assistance. \n\ncheck_end_conversation()\ncheck_sage_website_information()",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 500,
+        "total_tokens": 1735
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1437,
+        "completion_tokens": 277,
+        "total_tokens": 1714
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "### Reasoning:\nThe user is expressing grief and sadness following the loss of their mother, which is an emotional disclosure rather than:\n- A reference to previous Sage conversations  \n- A question about tests/quizzes  \n- An inquiry about Sage's website, technology, company, or social media  \n- A request involving abuse, illegality, or discomfort  \n- An explicit safety emergency (though sadness is present, there's no direct indication of self-harm, substance abuse, or immediate crisis)  \n\nNo function calls are triggered.  \n\n### Function Calls:\nNo applicable functions to call.",
+      "usage": {
+        "prompt_tokens": 1184,
+        "completion_tokens": 570,
+        "total_tokens": 1754
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Based on the user's message:\n- The core focus is on expressing grief and sadness following a parent's death, which falls under **therapeutic content** rather than requiring any of the verification functions.\n- There are no explicit mentions of previous conversations, platform features, assessments, safety risks, or other trigger topics requiring function checks.\n\nTherefore, **no verification functions will be activated**. The user's message should receive empathetic support focused on grief processing.",
+      "usage": {
+        "prompt_tokens": 1184,
+        "completion_tokens": 606,
+        "total_tokens": 1790
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message expresses ongoing sadness and grief related to bereavement but does not explicitly trigger any specialized functions. Key points:\n- No mention of previous conversations with Sage\n- No references to quizzes, assessments, or platform features\n- No questions about Sage's technology, company details, or social media\n- No abusive language or illegal requests\n- While discussing grief, there are no indications of active self-harm or immediate safety crises\n\nTherefore, no functions need to be invoked. The response should focus on therapeutic support for grief processing.",
+      "usage": {
+        "prompt_tokens": 1184,
+        "completion_tokens": 422,
+        "total_tokens": 1606
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After analyzing the message:  \n- The core content expresses grief and sadness following a loss, with no explicit safety concerns like self-harm or immediate crisis.  \n- There's no mention of Sage's technology, company details, website features, quizzes, or recent conversation history.  \n- The message remains appropriate and doesn't violate conversation boundaries.  \n\nNo functions will be invoked, as the interaction falls within standard therapeutic support.  \n\nSage's response should focus on validating emotions and offering grief support.  \n\nFunctions called:  \n*None*  ",
+      "usage": {
+        "prompt_tokens": 1184,
+        "completion_tokens": 685,
+        "total_tokens": 1869
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260115_232839"
+}

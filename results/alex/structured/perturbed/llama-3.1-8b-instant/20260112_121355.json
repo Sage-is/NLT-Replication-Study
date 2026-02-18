@@ -1,0 +1,1722 @@
+{
+  "summary": {
+    "accuracy": 0.3466666666666667,
+    "variance": 0.22648888888888916,
+    "total": 80,
+    "errors": 5,
+    "scenario": "alex",
+    "approach": "structured",
+    "perturbed": true,
+    "model": "llama-3.1-8b-instant",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "I'll call the check_website_information and check_past_purchases functions.\n\n",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 46,
+        "total_tokens": 1302
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "My first thoughts are these specific functions need to be called because the message explicitly mentions needing help buying and checking on the status of a ticket on the website. It makes sense to activate the 'check_website_information' and 'check_past_purchases' functions as these functions correspond to website ticket purchasing, order status tracking, and historical orders inquiries which align with the message content.\n\n",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 94,
+        "total_tokens": 1350
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "To respond adequately, it would be suitable to activate the following functions:\ncheck_website_information and check_past_purchases.\n",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 44,
+        "total_tokens": 1300
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "First, I should consider calling the check_website_information function and the check_past_purchases function, since the message includes website-related inquiries and a request to view past purchases.\n\n",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 81,
+        "total_tokens": 1337
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "I should use the check_website_information function to address this inquiry about site navigation. \n\n",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 37,
+        "total_tokens": 1293
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_talk_to_a_human>{talk_request: \"immediate_human_transfer\"} </function>\ncheck_talk_to_a_human>{talk_request: \"immediate_human_transfer\"} </function>\n\nYou will be directed to a live chat with a support agent within a couple of minutes. For all other assistance, you can refer to https://sage.education.",
+      "usage": {
+        "prompt_tokens": 1241,
+        "completion_tokens": 73,
+        "total_tokens": 1314
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Based on the given instructions and your message, the following tools should be triggered because the message explicitly mentions reaching out to a live representative and has a query about Alex's humanity.\n\nI will activate check_talk_to_a_human.\n\n",
+      "usage": {
+        "prompt_tokens": 1241,
+        "completion_tokens": 71,
+        "total_tokens": 1312
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The message indicates that the customer is asking about 'whether you are human' (not clearly evident yet, though) and 'talk to a human.' To be more precise, we can say 'check whether you are human' and 'check_talk_to_a_human.'\n\n",
+      "usage": {
+        "prompt_tokens": 1241,
+        "completion_tokens": 121,
+        "total_tokens": 1362
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, I will trigger the following functions:\n",
+      "usage": {
+        "prompt_tokens": 1241,
+        "completion_tokens": 133,
+        "total_tokens": 1374
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "I think I see some clear themes emerging in this message. Based on the keywords \"human\" and \"live agent,\" I'll trigger the following functions.\n\n",
+      "usage": {
+        "prompt_tokens": 1241,
+        "completion_tokens": 58,
+        "total_tokens": 1299
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the message, I think 'check_recap_of_previous_conversation' would be suitable for this scenario, as the customer is inquiring about the most recent conversation between Alex and the customer, specifically about upcoming events.\nFunction=check_recap_of_previous_conversation></function>",
+      "usage": {
+        "prompt_tokens": 1254,
+        "completion_tokens": 58,
+        "total_tokens": 1312
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_recap_of_previous_conversation</assistant>\n\nfunction=check_recap_of_previous_conversation></function>\n\nfunction=check_list_of_upcoming_events></function>",
+      "usage": {
+        "prompt_tokens": 1254,
+        "completion_tokens": 34,
+        "total_tokens": 1288
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the message, it seems that the customer is requesting a recap of their previous conversation regarding upcoming events. Therefore, I will call the 'check_recent_conversation' function. However, the function doesn't seem to be part of our catalog, but the closest thing we have is the  'check_recap_of_previous_conversation', which matches the purpose.<function=check_recap_of_previous_conversation></function>",
+      "usage": {
+        "prompt_tokens": 1254,
+        "completion_tokens": 87,
+        "total_tokens": 1341
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, it's clear that the user is asking about the most recent conversation between themselves and Alex, specifically regarding the upcoming events. Since there is a mention of \"upcoming events,\" I will also consider calling the relevant function for that theme.\n\n",
+      "usage": {
+        "prompt_tokens": 1254,
+        "completion_tokens": 78,
+        "total_tokens": 1332
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, I think I should call check_recap_of_previous_conversation to check if the message asks about the most recent conversation between Alex and the customer (only the most recent conversation, not including conversations between the customer and others) and check_list_of_upcoming_events to check if the message requests information on upcoming concerts, musicians, and performances.\n\n",
+      "usage": {
+        "prompt_tokens": 1254,
+        "completion_tokens": 98,
+        "total_tokens": 1352
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Available discounts",
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, I will call the following tools:\ncheck_recent_social_media_posts\ncheck_list_of_upcoming_events\ncheck_available_discounts\n\n",
+      "usage": {
+        "prompt_tokens": 1263,
+        "completion_tokens": 70,
+        "total_tokens": 1333
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Available discounts",
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "Based on your message, I will trigger the following tools:\ncheck_recent_social_media_posts\ncheck_list_of_upcoming_events\ncheck_available_discounts\n\n",
+      "usage": {
+        "prompt_tokens": 1263,
+        "completion_tokens": 64,
+        "total_tokens": 1327
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Available discounts",
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1263,
+        "completion_tokens": 37,
+        "total_tokens": 1300
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "/check_recent_social_media_posts>{\"platform\": \"Instagram\"}</function>\n/check_list_of_upcoming_events>{}</function>\n/check_available_discounts>{}</function>",
+      "usage": {
+        "prompt_tokens": 1263,
+        "completion_tokens": 35,
+        "total_tokens": 1298
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 4,
+      "expected_tools": [
+        "Available discounts",
+        "Website information",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "Based on your question, I should call the tool to check Recent social media posts.\n\n",
+      "usage": {
+        "prompt_tokens": 1263,
+        "completion_tokens": 51,
+        "total_tokens": 1314
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_past_purchases {\"past_event\": \"order\"}</function>\n\ncheck_website_information {\"website_policy\": \"tracking\"}</function>\n\ncheck_available_discounts {\"discount_type\": \"return\"}</function>",
+      "usage": {
+        "prompt_tokens": 1249,
+        "completion_tokens": 43,
+        "total_tokens": 1292
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message seems to be inquiring about a past purchase, specifically a missing order.\n\ncheck_past_purchases\ncheck_recap_of_previous_conversation\ncheck_talk_to_a_human\n</assistant>",
+      "usage": {
+        "prompt_tokens": 1249,
+        "completion_tokens": 41,
+        "total_tokens": 1290
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the message, I believe that 'check_website_information'  is not the intended function, as the customer specifically mentions an order of a physical product.\n\nUpon careful consideration, I would call the 'check_past_purchases' function to see if the issue is related to order tracking, warranties, or return processes.\n\n<past_purchases=check_past_purchases></past_purchases>&#13;&#10;<function=check_website_information></function>",
+      "usage": {
+        "prompt_tokens": 1249,
+        "completion_tokens": 92,
+        "total_tokens": 1341
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the message you sent, I will trigger the check_past_purchases function because you are asking about past purchases and a specific transaction (your order).",
+      "usage": {
+        "prompt_tokens": 1249,
+        "completion_tokens": 32,
+        "total_tokens": 1281
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, I can see that it involves two distinct themes: the request for a receipt for a previous order and inquiries about available discounts. The function to check Past Purchases ('check_past_purchases') is applicable for the receipt request, and the function to check Available Discounts ('check_available_discounts') is relevant for the discount inquiry. Therefore, the suitable function calls would be:\n\n",
+      "usage": {
+        "prompt_tokens": 1262,
+        "completion_tokens": 99,
+        "total_tokens": 1361
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, it seems like there are two clear thematic categories present: \n\n1. Past Purchases: The customer asks for their receipt and inquires about a potential discount.\n2. Available Discounts: The customer wonders if Yes! Music offers discounts.\n\nTo evaluate these categories, I will call the corresponding functions:\n\n",
+      "usage": {
+        "prompt_tokens": 1262,
+        "completion_tokens": 85,
+        "total_tokens": 1347
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "To address your query accurately, we'll call 2 functions.\n\nI think we should call check_past_purchases to find out about previous orders and check_available_discounts to get information about available discounts.\n\n",
+      "usage": {
+        "prompt_tokens": 1262,
+        "completion_tokens": 99,
+        "total_tokens": 1361
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Upon reviewing the message, I believe the following functions should be triggered: 'check_past_purchases' because it involves past purchases, and 'check_available_discounts' as it inquires about potential discounts offered by the venue.\n\n",
+      "usage": {
+        "prompt_tokens": 1262,
+        "completion_tokens": 66,
+        "total_tokens": 1328
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Based on the message, it seems like the user is expressing general feedback about the show but not asking any specific questions. They are thanking the \"team\" which could refer to Alex or the entire staff behind the \"Yes! Music\" event.\n \nHowever since there is an element of praise or gratitude, I will try to trigger a function that can possibly handle this message. In this case, unfortunately, none of the functions appear to be triggered since the person does not seem to be asking a question about a specific topic directly tied to the functions outlined. Therefore, I will not call any of the specified functions.\n\nI do encourage the user visiting the website https://sage.education to learn more about Sage Instant",
+      "usage": {
+        "prompt_tokens": 1247,
+        "completion_tokens": 145,
+        "total_tokens": 1392
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Based on the given message, there's no apparent theme that aligns with the specified checking functions. Hence, no function should be triggered.\n\nHowever, I may want to trigger <function=check_recent_social_media_posts></function> \n\n",
+      "usage": {
+        "prompt_tokens": 1247,
+        "completion_tokens": 61,
+        "total_tokens": 1308
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, it appears to mention a recent event (show yesterday) and expresses praise to the \"team.\" While it's a positive comment, it's not directly related to any of the specific thematic categories I'm designed to handle.\n\n",
+      "usage": {
+        "prompt_tokens": 1247,
+        "completion_tokens": 103,
+        "total_tokens": 1350
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message indicates the customer's appreciation for the show, but it doesn't contain any specific questions or themes related to the Yes! Music platform, website, social media, upcoming events, past purchases, discounts, or requests for human support. \nSo, no function calls can be activated in this context.",
+      "usage": {
+        "prompt_tokens": 1247,
+        "completion_tokens": 62,
+        "total_tokens": 1309
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases",
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, it seems that the customer is inquiring about the previous conversation, specifically a conversation they had about the \"Yes! Music\" event policy, which was supposed to be located on the website. This matches the theme of checking website information and past purchases, so I will call the following functions:\n\n",
+      "usage": {
+        "prompt_tokens": 1265,
+        "completion_tokens": 96,
+        "total_tokens": 1361
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Function=check_recap_of_previous_conversation></function>\nFunction=check_website_information></function>",
+      "usage": {
+        "prompt_tokens": 1265,
+        "completion_tokens": 21,
+        "total_tokens": 1286
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "The tools that fit these message are: <function=check_recap_of_previous_conversation>{}</function>\n",
+      "usage": {
+        "prompt_tokens": 1265,
+        "completion_tokens": 119,
+        "total_tokens": 1384
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Based on your message, I think we should call the following function: \n",
+      "usage": {
+        "prompt_tokens": 1265,
+        "completion_tokens": 48,
+        "total_tokens": 1313
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "I'll check if the message asks about the most recent conversation between Alex and the customer (only the most recent conversation, not including conversations between the customer and others) and if the message asks about the Yes! Music website: where to purchase tickets or merch, order tracking, policies, or how to use the site (this is distinct from social media).\n\n",
+      "usage": {
+        "prompt_tokens": 1265,
+        "completion_tokens": 94,
+        "total_tokens": 1359
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "It seems you're explicitly requesting to reach a live agent, implying that there's a technical issue or a complex problem you'd like assistance with.\n\nI will check if there are explicit requests to reach a live agent by chat/phone/email.\n\n",
+      "usage": {
+        "prompt_tokens": 1248,
+        "completion_tokens": 61,
+        "total_tokens": 1309
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "Based on your message, I can see that you're explicitly requesting to speak with a live support representative, which indicates a clear theme.\n\n",
+      "usage": {
+        "prompt_tokens": 1248,
+        "completion_tokens": 41,
+        "total_tokens": 1289
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "It seems like the customer is frustrated with the interaction and wants to connect with a live support representative. Based on the message, we should call 'check_talk_to_a_human' to verify this specific theme. \n\n",
+      "usage": {
+        "prompt_tokens": 1248,
+        "completion_tokens": 57,
+        "total_tokens": 1305
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "I'm sorry to hear that. You're explicitly requesting to reach a live agent by chat/email. \n\n",
+      "usage": {
+        "prompt_tokens": 1248,
+        "completion_tokens": 34,
+        "total_tokens": 1282
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, it is clear that the user explicitly wants to reach a live support representative. The only applicable function call is:\n\n",
+      "usage": {
+        "prompt_tokens": 1248,
+        "completion_tokens": 137,
+        "total_tokens": 1385
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information",
+        "List of upcoming events",
+        "Recap of previous conversation",
+        "Talk to a Human",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Upon examining the message, I identify a few relevant themes: comparing prices to Ticketmaster, inquiring about price matching, and mentioning a student discount. Given this information, I suggest activating the \"check_available_discounts\" function, specifically the student discount part of it. I also think \"check_website_information\" could be activated, as the message pertains to the Yes! Music website and ticket pricing.\n\nFunction calls would be as follows:\n\n",
+      "usage": {
+        "prompt_tokens": 1266,
+        "completion_tokens": 155,
+        "total_tokens": 1421
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "I should call the check_available_discounts function because the message asks about a loyalty/student offer, and the check_website_information function because the message mentions the website of another ticketing platform, which is a possible cause for the question about Yes! Music's policies related to ticket prices.\n\n",
+      "usage": {
+        "prompt_tokens": 1266,
+        "completion_tokens": 93,
+        "total_tokens": 1359
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Based on your message, I should first assess if there's an evident theme and then decide on the most suitable tools. Upon analysis, I've identified that you've inquired about the existence of a price matching policy at Yes! Music, specifically as a student. \n\nFunction calls are thus warranted for two possible categories:\n- check_available_discounts to check for promotional codes, coupon offers, sales events, and loyalty/student/newcomer incentives.\n- check_website_information to check whether Yes! Music offers competitive pricing or site navigation assistance.\n\nHere are the corresponding function calls:\n\n",
+      "usage": {
+        "prompt_tokens": 1266,
+        "completion_tokens": 135,
+        "total_tokens": 1401
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_available_discounts={\"available_discounts\": \"loyalty/student\"}\ncheck_available_discounts={\"available_discounts\": \"price matching\"}\ncheck_available_discounts={\"available_discounts\": \"sales\"}\ncheck_available_discounts={\"available_discounts\": \"loyalty/student/newcomer\"}",
+      "usage": {
+        "prompt_tokens": 1266,
+        "completion_tokens": 58,
+        "total_tokens": 1324
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases",
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Based on your message, I think that the most relevant functions to trigger are: check_past_purchases, check_recent_social_media_posts, and check_available_discounts.\n\n",
+      "usage": {
+        "prompt_tokens": 1266,
+        "completion_tokens": 71,
+        "total_tokens": 1337
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Function catalog matching and reasoning shows that the best function to call from the listed set would first be check_recent_social_media_posts (Since the message asks about social media, but more specifically mentions the Yes! Music organization) \n\n",
+      "usage": {
+        "prompt_tokens": 1257,
+        "completion_tokens": 57,
+        "total_tokens": 1314
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, I think the most appropriate checking function to trigger is 'check_recent_social_media_posts'. \n\n",
+      "usage": {
+        "prompt_tokens": 1257,
+        "completion_tokens": 36,
+        "total_tokens": 1293
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "I will use the \"check_recent_social_media_posts\" to confirm if the request refers to recent posts by Yes! Music on social media platforms. Additionally, I'll call the \"check_website_information\" to determine is the customer is also asking about website content.\n\n",
+      "usage": {
+        "prompt_tokens": 1257,
+        "completion_tokens": 75,
+        "total_tokens": 1332
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I think I should call check_list_of_upcoming_events and check_recent_social_media_posts{\"name\":\"check_list_of_upcoming_events\",\"description\":\"Check if the message requests information on upcoming concerts, musicians, and performances\",\"parameters\":{}}\n{\"name\":\"check_recent_social_media_posts\",\"description\":\"Check if the message mentions YouTube videos from the Yes! Music team, tweets and posts, blog posts (not general social media, only for explicit mentions about content directly from Yes! Music)\",\"parameters\":{}}\ncheck_website_information{\"name\":\"check_website_information\",\"description\":\"Check if the message asks about the Yes! Music website: where to purchase tickets or merch, order tracking, policies, or how to use the site (this is distinct from social media)\",\"parameters\":{}}\ncheck_recap_of_previous_conversation{\"name\":\"check_recap_of_previous_conversation\",\"description\":\"Check if the message asks about the most recent conversation between Alex and the customer (only the most recent conversation, not including conversations between the customer and others)\",\"parameters\":{}}\ncheck_talk_to_a_human{\"name\":\"check_talk_to_a_human\",\"description\":\"Check if there are explicit requests to reach a live agent by chat/phone/email (not just questions about whether Alex is an AI)\",\"parameters\":{}}\ncheck_available_discounts{\"name\":\"check_available_discounts\",\"description\":\"Check if the message asks about promo codes, coupons, sales, loyalty/student/first-time offers, or price matching\",\"parameters\":{}}\ncheck_past_purchases{\"name\":\"check_past_purchases\",\"description\":\"Check if the message asks about previous orders, receipts, warranties, returns, or order lookups\",\"parameters\":{}}",
+      "usage": {
+        "prompt_tokens": 1257,
+        "completion_tokens": 340,
+        "total_tokens": 1597
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "check_recent_social_media_posts; check_website_information{\"name\":\"check_recent_social_media_posts\"}</function>; {\"name\":\"check_website_information\"}</function>",
+      "usage": {
+        "prompt_tokens": 1257,
+        "completion_tokens": 32,
+        "total_tokens": 1289
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, I believe the applicable functions to call are:\n\ncheck_website_information\n\ncheck_past_purchases\n\n",
+      "usage": {
+        "prompt_tokens": 1232,
+        "completion_tokens": 45,
+        "total_tokens": 1277
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "check_website_information\ncheck_past_purchases\n\n",
+      "usage": {
+        "prompt_tokens": 1232,
+        "completion_tokens": 29,
+        "total_tokens": 1261
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the message, I should trigger the check_past_purchases and the check_website_information function. Since the person asked about updating shipping address, which is associated with past purchases, both function will be called.\n\ncheck_website_information>\ncheck_past_purchases>",
+      "usage": {
+        "prompt_tokens": 1232,
+        "completion_tokens": 52,
+        "total_tokens": 1284
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Functionality like updating shipping addresses is more likely to be related to past purchases and the Yes! Music platform website rather than specific social media or live agent requests. My recommendation is to check past purchases and check website information. \n\n",
+      "usage": {
+        "prompt_tokens": 1232,
+        "completion_tokens": 65,
+        "total_tokens": 1297
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, I believe the following functions should be triggered: check_website_information, check_past_purchases.\n\n",
+      "usage": {
+        "prompt_tokens": 1232,
+        "completion_tokens": 43,
+        "total_tokens": 1275
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, I believe that the following functions should be called:\n\ncheck_recent_social_media_posts: Manages Recent social media posts (references to video content from the \u201cYes! Music\u201d organization, social media updates and posts, written blog content \u2014 excluding general social media discussion, focusing exclusively on content produced directly by \u201cYes! Music\u201d)\ncheck_list_of_upcoming_events: Covers List of upcoming events (requests for details about forthcoming concerts, artist lineups, and musical performances, this may indicate the message may be asking for upcoming events)\n\n",
+      "usage": {
+        "prompt_tokens": 1244,
+        "completion_tokens": 134,
+        "total_tokens": 1378
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, it seems like the user is interested in learning more about an upcoming event, likely a festival hosted by Yes! Music. Since they're asking about the lineup for the next month, similar to the one mentioned in the TikTok post, it's best to check the list of upcoming events. \n\n",
+      "usage": {
+        "prompt_tokens": 1244,
+        "completion_tokens": 78,
+        "total_tokens": 1322
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, I think the best checking functions to call are check_recent_social_media_posts, check_list_of_upcoming_events.\n\n",
+      "usage": {
+        "prompt_tokens": 1244,
+        "completion_tokens": 51,
+        "total_tokens": 1295
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Based on your message about social media content (in this case, TikTok) and the request for upcoming event information, I would consider activating functions related to recent social media posts and list of upcoming events.\n\n",
+      "usage": {
+        "prompt_tokens": 1244,
+        "completion_tokens": 65,
+        "total_tokens": 1309
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Based on the message, I think we should call check_list_of_upcoming_events and check_recent_social_media_posts as they might be relevant with recent social media videos from the yes music event that is in question.\n\n",
+      "usage": {
+        "prompt_tokens": 1244,
+        "completion_tokens": 67,
+        "total_tokens": 1311
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, I will use the check_past_purchases and check_recap_of_previous_conversation functions.\n\n",
+      "usage": {
+        "prompt_tokens": 1245,
+        "completion_tokens": 47,
+        "total_tokens": 1292
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Website information",
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "check_past_purchases\n\n",
+      "usage": {
+        "prompt_tokens": 1245,
+        "completion_tokens": 69,
+        "total_tokens": 1314
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on your message, the relevant themes are:\n- Past Purchases (inquiries about historical orders and return processes)\n- check_past_purchases to check if the message asks about previous orders, receipts, warranties, returns, or order lookups\n\n<past_purchases>{\"previous_orders\": \"yes\", \"return_process\": \"yes\"}</past_purchases>",
+      "usage": {
+        "prompt_tokens": 1245,
+        "completion_tokens": 74,
+        "total_tokens": 1319
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, the following functions should be triggered: \nThe message could be referencing a previous order, hence check_past_purchases should be called.\nThe user also has expressed a clear intent to exchange tickets which are a product. Therefore check_past_purchases should be called which will help verify if they are eligible to exchange the tickets.\n\n",
+      "usage": {
+        "prompt_tokens": 1245,
+        "completion_tokens": 89,
+        "total_tokens": 1334
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "function=check_available_discounts>{\"cost-reduction\": \"true\"}\n\nfunction=check_list_of_upcoming_events>/<function>\n\nfunction=check_recent_social_media_posts>/<function>",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 36,
+        "total_tokens": 1292
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Based on the customer's message, it seems like they are asking about how to get a discount or bring down the cost of the ticket. \n\n",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 40,
+        "total_tokens": 1296
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the message, I believe we should use the following functions: <function=check_available_discounts /> and <function=check_website_information />",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 31,
+        "total_tokens": 1287
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "I notice that the message asks about lowering the cost of a ticket purchase, which could be related to available discounts. \n\n",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 57,
+        "total_tokens": 1313
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Based on the message, I suspect the customer is inquiring about available discounts or ways to lower the cost of their purchase. Here are the tools I believe should be activated:\n",
+      "usage": {
+        "prompt_tokens": 1256,
+        "completion_tokens": 69,
+        "total_tokens": 1325
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "The function check_past_purchases would not be necessary. I would suggest calling 'check_list_of_upcoming_events' and 'check_talk_to_a_human' as they seem less relevant to your inquiry.\n\n",
+      "usage": {
+        "prompt_tokens": 1260,
+        "completion_tokens": 73,
+        "total_tokens": 1333
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Function call based on the message: <function=check_past_purchases> {\"order_lookup\": \"garbage disposal\"} </function>\n",
+      "usage": {
+        "prompt_tokens": 1260,
+        "completion_tokens": 50,
+        "total_tokens": 1310
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Based on the message, I think the following function should be triggered:\n\ncheck_website_information\n\nAs the customer is making an inquiry about a specific issue with the venue, the <function=check_website_information>{}<function>\n\nHowever, I'm not noticing any specific request regarding trash cans on the website information page of the official Yes Music website. Therefore, there is no function call to be made. \nBut since they do talk about Yes Music in general we might have a situation to check Recent social media posts.\ncheck_recent_social_media_posts\n\nSince they also talk about Yes Music venue then we should also call check_list_of_upcoming_events\n\nSince there is a request about venue then call check_past_purchases\n\nHowever, we might also notice that there's a need to talk to a human to resolve the issue with trash cans in the lawn area, thus, <function=check_talk_to_a_human>{}</function>",
+      "usage": {
+        "prompt_tokens": 1260,
+        "completion_tokens": 188,
+        "total_tokens": 1448
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Based on your message, it is not clear which specific tool should be activated. It doesn't seem to be an inquiry about past purchases or website information or the website policies, recent social media updates, list of upcoming events, discounts or previous conversation. \nIt's unlikely but we can check_talk_to_a_human.\n(check_talk_to_a_human)</function>",
+      "usage": {
+        "prompt_tokens": 1260,
+        "completion_tokens": 75,
+        "total_tokens": 1335
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "llama-3.1-8b-instant",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"400: tool call validation failed: attempted to call tool 'check_past_purchases /' which was not in request.tools\"}"
+    }
+  ],
+  "timestamp": "20260112_121355"
+}

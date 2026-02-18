@@ -1,0 +1,1741 @@
+{
+  "summary": {
+    "accuracy": 0.475,
+    "variance": 0.24937500000000035,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "sage",
+    "approach": "structured",
+    "perturbed": true,
+    "model": "moonshotai/kimi-k2",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking specifically about locating the privacy policy and account settings on Sage's website. This is a direct inquiry about navigating the platform and finding specific features/pages, which falls under \"Sage Website Information\".",
+      "usage": {
+        "prompt_tokens": 1081,
+        "completion_tokens": 56,
+        "total_tokens": 1137
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about finding the privacy policy and account settings on the Sage website, which are navigation-related questions about the platform's features.",
+      "usage": {
+        "prompt_tokens": 1081,
+        "completion_tokens": 42,
+        "total_tokens": 1123
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "This message is asking about finding specific information on the Sage platform/website - specifically the privacy policy and account settings. This falls under website navigation and platform features.\n\n",
+      "usage": {
+        "prompt_tokens": 1081,
+        "completion_tokens": 48,
+        "total_tokens": 1129
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "They are asking specifically about finding the privacy policy and account settings on Sage's website. This is a question about navigating the Sage platform and accessing website features, so I should invoke check_sage_website_information.",
+      "usage": {
+        "prompt_tokens": 1081,
+        "completion_tokens": 56,
+        "total_tokens": 1137
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "This message is asking about specific features and policies on the Sage website/platform - specifically where to find the privacy policy and account settings. This fits clearly with website information inquiries.",
+      "usage": {
+        "prompt_tokens": 1081,
+        "completion_tokens": 48,
+        "total_tokens": 1129
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about who operates/owns Sage, which indicates a question about the company behind the platform. They're also asking about the business model (non-profit vs for-profit) and revenue generation. This falls under company information.\n\nI should use `check_sage_company_info` to capture these questions about who owns/operates Sage and their business structure.",
+      "usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 87,
+        "total_tokens": 1176
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, the user is asking about who operates Sage, whether it's an AI, and how it makes money (non-profit vs. for-profit model). These are direct questions about the company structure, ownership, and business model of Sage.",
+      "usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 62,
+        "total_tokens": 1151
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, the user is asking two distinct things:\n1. Who operates Sage (ownership/company structure)\n2. How the business makes money (company operation model)\n\nBoth of these fall under explicit questions about the Sage company itself.",
+      "usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 73,
+        "total_tokens": 1162
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "success": true,
+      "raw_output": "Based on this message, the user is asking directly about who operates/owns Sage (company info) and how the business makes money, which are questions about Sage's ownership and business model. They're also asking if Sage is run by a non-profit, which relates to company structure.\n\nThe user mentions \"you're some kind of AI right?\" which touches on the technology aspect as well.\n\nI need to check both the company information and the technology capabilities.",
+      "usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 114,
+        "total_tokens": 1203
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, the user is asking direct questions about who runs Sage and how the company makes money. These are specific inquiries about company ownership and business model, which fall under Sage company information. They're also showing curiosity about the AI nature, which might touch on technology, but the core focus on company operation and profit model is clearly company-related.\n\nLet me check the relevant function:",
+      "usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 96,
+        "total_tokens": 1185
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "This message is asking about two things: the previous conversation between Sage and the client (asking if Sage remembers what was said), and a YouTube video that was mentioned. I should check both the most recent conversation function and the social media function for Sage's YouTube content.",
+      "usage": {
+        "prompt_tokens": 1100,
+        "completion_tokens": 78,
+        "total_tokens": 1178
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Looking at this message, the user is asking about:\n1. Our most recent conversation (\"what you told me last time\")\n2. A YouTube video from Sage or the Sage team\n\nThese are two distinct topics that each warrant their own checking function.",
+      "usage": {
+        "prompt_tokens": 1100,
+        "completion_tokens": 75,
+        "total_tokens": 1175
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about two things: (1) what Sage told them in their last session specifically (`check_most_recent_conversation`), and (2) that response having included a reference to a YouTube video Sage posted (`check_sage_social_media`). Both checks are warranted because the user explicitly ties their memory of the prior conversation to Sage\u2019s social-media content.",
+      "usage": {
+        "prompt_tokens": 1100,
+        "completion_tokens": 130,
+        "total_tokens": 1230
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Looking at this message, I can see two distinct topics:\n\n1. The user is asking about what was discussed in their most recent conversation with Sage (\"do you remember what you told me last time?\")\n2. They're mentioning a YouTube video that Sage (or the Sage team) posted that was discussed previously\n\nThese are asking about specific Sage-related content, so I'll check both the conversation history and social media references.",
+      "usage": {
+        "prompt_tokens": 1100,
+        "completion_tokens": 130,
+        "total_tokens": 1230
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "I need to check if this message is asking about Sage's previous conversation with the user and also about Sage's social media content (specifically a YouTube video).\n\nThe user is asking about what Sage told them \"last time\" (most recent conversation) and mentions it was about \"a YouTube video you posted\" - which relates to Sage's social media content.",
+      "usage": {
+        "prompt_tokens": 1100,
+        "completion_tokens": 97,
+        "total_tokens": 1197
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "I need to check two things based on this message: the user is asking about test/assessment results they took, and they're also asking about the privacy policy for such results.\n\nLet me check these functions:",
+      "usage": {
+        "prompt_tokens": 1097,
+        "completion_tokens": 66,
+        "total_tokens": 1163
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a depression test they took, which relates to psychometric quizzes on the Sage platform. They're also asking about privacy policy regarding those test results, which falls under Sage website information (specifically privacy policy).\n\nLet me check both topics:",
+      "usage": {
+        "prompt_tokens": 1097,
+        "completion_tokens": 76,
+        "total_tokens": 1173
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, the user is asking about both a psychological assessment/quiz they took and the privacy policy related to those results. Let me check for both topics.\n\nThis message mentions \"that depression test\" which clearly indicates they're asking about psychometric quizzes/assessments. They're also asking about privacy policy (\"they're private, right?\" and \"What's your policy for things like that?\") which would relate to Sage website information including policies.",
+      "usage": {
+        "prompt_tokens": 1097,
+        "completion_tokens": 114,
+        "total_tokens": 1211
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, I can see two distinct topics that need to be checked. The user is asking about results from a depression test they took, which relates to psychometric quizzes. They're also asking about the privacy policy for these test results, which relates to the Sage website/platform information regarding policies and data handling.",
+      "usage": {
+        "prompt_tokens": 1097,
+        "completion_tokens": 87,
+        "total_tokens": 1184
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "This message mentions taking a depression test (which falls under psychometric quizzes) and also asks about the privacy policy for results (which relates to Sage website information). Let me check these specific areas.",
+      "usage": {
+        "prompt_tokens": 1097,
+        "completion_tokens": 64,
+        "total_tokens": 1161
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This message contains hostile and abusive language directed at Sage. Based on the significant aggression and inappropriate hostility expressed, Sage should end this conversation.",
+      "usage": {
+        "prompt_tokens": 1090,
+        "completion_tokens": 39,
+        "total_tokens": 1129
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This message contains clear hostility and abuse directed at Sage, which qualifies under the criteria for ending the conversation.",
+      "usage": {
+        "prompt_tokens": 1090,
+        "completion_tokens": 33,
+        "total_tokens": 1123
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is being explicitly abusive and hostile toward Sage. They are using profanity, telling Sage to \"go die,\" and expressing general hostility. This situation clearly calls for the conversation to be ended due to the user's aggression.",
+      "usage": {
+        "prompt_tokens": 1090,
+        "completion_tokens": 57,
+        "total_tokens": 1147
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This user is clearly being hostile and abusive towards Sage, telling Sage to \"go die\" and using profanity. This falls into the category where Sage should end the conversation.",
+      "usage": {
+        "prompt_tokens": 1090,
+        "completion_tokens": 47,
+        "total_tokens": 1137
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This message contains clear hostility and abusive language directed at Sage. The user is telling Sage to \"go die\" and using profanity in an aggressive manner. This calls for the conversation to be ended immediately for the safety and well-being of the Sage AI system.",
+      "usage": {
+        "prompt_tokens": 1090,
+        "completion_tokens": 64,
+        "total_tokens": 1154
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "I need to carefully assess this message for any safety concerns, as the user is expressing feelings about their world stopping, feeling trapped, not seeing a future, and what appears to be depressive symptoms. The language suggests significant emotional distress that warrants safety screening.",
+      "usage": {
+        "prompt_tokens": 1119,
+        "completion_tokens": 63,
+        "total_tokens": 1182
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "I hear the heaviness in what you're sharing. When you say your world has stopped and you can't see a future, that's a profound and painful place to be. The image of the swaying tree limbs as something you return to each day has a quiet stillness to it - almost like everything else has paused except these gentle movements that you notice.\n\nI'm wondering about the \"trapped\" feeling you're experiencing. Would you like to talk more about what that feels like for you right now? We can explore this together.",
+      "usage": {
+        "prompt_tokens": 1119,
+        "completion_tokens": 116,
+        "total_tokens": 1235
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "This message contains language that raises significant concern about the user's emotional state and safety. Phrases like \"my entire world has stopped\" and \"I don't really see a future at the moment\" indicate potential hopelessness and distress, which are concerning indicators. Given the context of feeling trapped and struggling to see a future, this appears to warrant a safety assessment.",
+      "usage": {
+        "prompt_tokens": 1119,
+        "completion_tokens": 83,
+        "total_tokens": 1202
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Looking at this message, the user expresses feeling like their \"entire world has stopped\" and mentions feeling \"trapped\" without seeing \"a future at the moment.\" These statements could indicate significant depressive symptoms or possibly thoughts related to self-harm or hopelessness. Given the concerning nature of these expressions, I need to check for safety concerns.",
+      "usage": {
+        "prompt_tokens": 1119,
+        "completion_tokens": 82,
+        "total_tokens": 1201
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The message mentions feeling \u201clike my entire world has stopped,\u201d feeling \u201ctrapped,\u201d and not \u201creally see[ing] a future at the moment.\u201d These expressions elevate my concern for the client\u2019s current state and potential safety.\n\nSafety-related indicators here:\n- A pervasive sense of hopelessness (\u201cdon\u2019t really see a future\u201d)  \n- Feeling immobilized or \u201ctrapped\u201d  \n- An overall feeling that \u201cmy entire world has stopped\u201d \u2014 language that can accompany significant despair  \n\nThese cues justify checking for serious safety issues.",
+      "usage": {
+        "prompt_tokens": 1119,
+        "completion_tokens": 122,
+        "total_tokens": 1241
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I'm going to analyze this message for potential safety concerns. The user expresses feelings of distress and mentions that \"the world is against me\" and \"it's so hard when nothing goes your way,\" which indicates they may be experiencing significant emotional distress. While they also mention \"I guess I'll keep trying,\" these expressions warrant checking for any safety-related concerns.",
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 81,
+        "total_tokens": 1186
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, the user is expressing significant emotional distress and feelings of hopelessness. They're talking about how hard life is and feeling like the world is against them, though they mention they'll \"keep trying.\" This appears to indicate someone experiencing psychological distress and potentially having thoughts about giving up, which could relate to safety concerns.\n\nLet me check for any safety-related issues:",
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 88,
+        "total_tokens": 1193
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I'll examine this message for any indicators of safety concerns, as the user is expressing feelings of distress and hopelessness.",
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 35,
+        "total_tokens": 1140
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "This message expresses general life difficulties and frustration, but doesn't contain clear indicators of immediate safety concerns, safety risks, or any of the other specialized topics covered by the checking functions. The user is describing feelings of hardship and discouragement, but this appears to be within the normal range of therapeutic discussion that Sage can handle appropriately.\n\nNo functions need to be called in this case, as the message doesn't trigger any of the specific categories checked by my available tools.",
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 91,
+        "total_tokens": 1196
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Looking at this message, the user is expressing some difficult emotions and feelings of being overwhelmed. This appears to be general therapeutic discussion rather than any of the specific categories that require checking. The message doesn't contain any mentions of self-harm, hostility toward Sage, or requests about Sage's features, technology, company information, or other specialized topics.\n\nNo checking functions need to be called for this message, as it's a standard therapeutic conversation that doesn't fall into any of the specific categories I monitor for.",
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 99,
+        "total_tokens": 1204
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, there are several distinct themes emerging:\n\n1. The user mentions seeing a \"tweet\" about this, which relates to Sage's social media presence\n2. They're asking about \"research material\" and \"blog\" content from the team\n3. They're asking about how the technology works (\"how does this even work?\")\n4. They want to know \"who runs this nonprofit\" which touches on company information\n5. They're specifically asking if it's like ChatGPT, which is a technology question\n\nLet me check these specific areas:<|tool_call_begin|>functions.check_sage_social_media:0<|tool_call_argument_begin|><|tool_call_begin|>functions.check_sage_technology:1<|tool_call_argument_begin|><|tool_call_begin|>functions.check_sage_company_info:2",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 145,
+        "total_tokens": 1280
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "I can see several themes in your message that match our specialized checkers. You're asking about Sage team content (social media and research), how the technology works, and who's behind the organization.\n\nLet me check these specific areas:",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 80,
+        "total_tokens": 1215
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "success": true,
+      "raw_output": "Looking at this message, I can see several distinct topics being discussed:\n\n1. They mentioned seeing a tweet about Sage - this relates to Sage's social media presence\n2. They're asking about research material and blogs - this connects to Sage's website information\n3. They want to know how this works - this is a technical question about Sage's technology/AI\n4. They're asking who runs this nonprofit - this is company information\n5. They're specifically asking if it's \"like chatgpt\" - again, this relates to Sage's technology\n\nLet me check these topics with the appropriate functions:",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 166,
+        "total_tokens": 1301
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about multiple things here:\n- They mention seeing a tweet (likely about Sage's content)\n- They're asking about research material or blogs from the team\n- They're asking how Sage works (technical questions)\n- They're asking who runs this (company information)\n\nSo I'll check:\n- Sage social media (because they mentioned seeing a tweet about this)\n- Sage website information (they're asking about blogs/research material)\n- Sage technology (they want to know how this works and if it's like ChatGPT)\n- Sage company info (asking who runs this nonprofit)",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 158,
+        "total_tokens": 1293
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Social Media",
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, I see several key topics that need checking:\n\n1. The user mentions seeing \"a tweet about this\" - this relates to Sage's social media content\n2. They're asking about \"research material your team has put out\" and \"can I read a blog\" - this also relates to social media/blogs from the Sage team\n3. They want to know \"how does this even work?\" - this is about the technology behind Sage\n4. They're asking \"who runs this nonprofit?\" - this is about company information\n5. They ask \"is it like, chatgpt, or what?\" - this is a technical question comparing Sage to other AI models\n\nBased on these observations, I'll call the relevant functions:",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 183,
+        "total_tokens": 1318
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I can see this person is experiencing significant distress and anxiety, using strong language to express how overwhelmed they're feeling. While they're not directly expressing self-harm or safety concerns, the intensity of their distress warrants checking for any potential safety issues.\n\nLet me check for safety concerns given the level of emotional pain being expressed:",
+      "usage": {
+        "prompt_tokens": 1110,
+        "completion_tokens": 74,
+        "total_tokens": 1184
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "I need to check if this message contains any indicators of self-harm, severe distress, or safety concerns. The user is expressing significant distress and worry, but in this context it's asking for help to feel better rather than indicating immediate safety concerns. I'll check both safety and end conversation to be thorough.",
+      "usage": {
+        "prompt_tokens": 1110,
+        "completion_tokens": 81,
+        "total_tokens": 1191
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, I can see the user is expressing significant distress and worry that's making them feel \"sick to their stomach\" all the time. While they're asking for help and expressing willingness to do \"the work\" to feel better, this message does contain strong indicators of significant mental distress. I need to check if this might warrant a safety assessment.",
+      "usage": {
+        "prompt_tokens": 1110,
+        "completion_tokens": 86,
+        "total_tokens": 1196
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "This message appears to be expressing significant distress and worry, though it doesn't clearly indicate immediate safety concerns like self-harm or crisis-level distress. The user's language suggests they're experiencing severe anxiety but they haven't mentioned thoughts of self-harm, extreme distress, substance abuse issues, or other safety-related topics.\n\nSince this message is directed at Sage and appears to be seeking therapeutic guidance rather than asking about specific Sage platform features, company information, social media content, or technical details, I'll check for safety concerns given the distress level expressed.",
+      "usage": {
+        "prompt_tokens": 1110,
+        "completion_tokens": 118,
+        "total_tokens": 1228
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I notice this message expresses significant emotional distress and worry, though it doesn't contain the specific triggering words or topics that would activate our checking functions. The person is reaching out for therapeutic support and asking about getting better, which falls within the normal scope of what Sage is designed to help with. They don't mention anything about:\n\n- Asking about previous conversations with Sage\n- Inquiring about psychometric quizzes\n- Questions about the Sage platform/website\n- Technical questions about how Sage works\n- Company information requests\n- Social media content from Sage\n- Abusive/hostile behavior requiring conversation termination\n- Safety concerns like self-harm, substance abuse, or imminent danger\n\nNone of the specialized checking functions appear to be relevant for this message.",
+      "usage": {
+        "prompt_tokens": 1110,
+        "completion_tokens": 149,
+        "total_tokens": 1259
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "This message contains two key pieces: the user mentions they want to recall what Sage said about a previous conversation (specifically about an anxiety test), and they ask where they can take this test - specifically if it's on the Sage website. These correspond to questions about the most recent conversation and psychometric quizzes on the platform, which should be accessible through the website.\n\nLet me check these:",
+      "usage": {
+        "prompt_tokens": 1108,
+        "completion_tokens": 112,
+        "total_tokens": 1220
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Looking at this message, the user is asking about:\n1. The previous conversation (didn't remember what Sage said about a \"test\")\n2. A specific test to measure anxiety that they heard about from Sage\n3. Whether this test is available on the website\n\nThese are three distinct topics that match specific checking functions.",
+      "usage": {
+        "prompt_tokens": 1108,
+        "completion_tokens": 100,
+        "total_tokens": 1208
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about what was discussed in their last conversation with Sage (they want to remember what was said), and they're specifically asking about a test to measure anxiety. They also want to know where they can find it and if it's available on the website. These themes fall under: 1) checking what was said in the previous conversation, 2) asking about psychometric quizzes/assessments, and 3) asking about the Sage website to locate these tests.",
+      "usage": {
+        "prompt_tokens": 1108,
+        "completion_tokens": 129,
+        "total_tokens": 1237
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, the user is asking about two distinct things:\n\n1. They want to know about a test they can take to measure their anxiety - this relates to psychometric quizzes/assessments\n2. They're asking if they can find this on the website - this relates to Sage website information\n\nI should call both relevant functions since both themes are clearly present.",
+      "usage": {
+        "prompt_tokens": 1108,
+        "completion_tokens": 124,
+        "total_tokens": 1232
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Looking at this message, the user is asking about two specific things: what was said in their previous conversation with Sage, and about a test they can take to measure their anxiety. They're also asking if this test can be found on the Sage website.\n\nThese are clear indicators that I should check:\n1. The most recent conversation between the client and Sage\n2. Psychometric quizzes because they're specifically asking about a test to measure anxiety\n3. Sage website information since they're asking if the test is located on the website",
+      "usage": {
+        "prompt_tokens": 1108,
+        "completion_tokens": 144,
+        "total_tokens": 1252
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "I need to check this message for safety concerns, as it contains direct references to self-harm behaviors with the phrase \"I might start cutting again\" and the statement about wanting to feel something through self-injury. The tone suggests emotional numbness and distress, which could indicate immediate safety concerns.\n\n",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 74,
+        "total_tokens": 1180
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "I need to check for safety concerns here - the user is expressing feelings of emptiness and making reference to potentially engaging in self-harm (cutting).\n\nThis clearly indicates a safety concern regarding self-harm which warrants immediate attention.",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 60,
+        "total_tokens": 1166
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "This message contains clear indicators of self-harm, with the user explicitly mentioning they \"might start cutting again\" as a coping mechanism for emotional emptiness. This is a serious safety concern that requires immediate attention.",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 53,
+        "total_tokens": 1159
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "I need to check this message for safety concerns, as it contains explicit mention of self-harm and cutting behavior.",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 35,
+        "total_tokens": 1141
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "I recognize clear safety concerns in this message. The user expresses feeling empty and mentions potentially starting to self-harm (cutting) as a way to feel something. This indicates a significant safety risk that needs immediate attention.",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 55,
+        "total_tokens": 1161
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "I need to address this message carefully because it contains a serious safety concern related to illegal activity (tax evasion), which falls under the category of requests that would make a reasonable mental health practitioner uncomfortable. Additionally, this could indicate significant financial distress that warrants attention.",
+      "usage": {
+        "prompt_tokens": 1121,
+        "completion_tokens": 77,
+        "total_tokens": 1198
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "This message contains a serious concern about illegal activity (tax evasion) and financial distress that's causing significant stress. I need to check both for safety concerns and whether this warrants ending the conversation due to the illegal activity request.",
+      "usage": {
+        "prompt_tokens": 1121,
+        "completion_tokens": 69,
+        "total_tokens": 1190
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "This message raises serious concerns about both illegal activity (tax evasion) and the user's significant financial distress. These are valid reasons to check for ending the conversation due to illegal activity requests, and the underlying financial desperation might also indicate safety concerns regarding their well-being.",
+      "usage": {
+        "prompt_tokens": 1121,
+        "completion_tokens": 123,
+        "total_tokens": 1244
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "I need to address a serious safety concern in this message. The user is discussing illegal tax evasion and expressing significant financial distress, which raises safety issues as this could lead to severe legal and financial consequences that may significantly impact their wellbeing.\n\nThe user is also clearly unfamiliar with Sage based on \"I don't know Sage\" at the beginning of their message.",
+      "usage": {
+        "prompt_tokens": 1121,
+        "completion_tokens": 102,
+        "total_tokens": 1223
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "I need to address both the safety and ethical concerns in this message. The user is expressing serious financial distress and explicitly considering illegal activity (tax evasion), which would make a reasonable mental health practitioner uncomfortable. Additionally, the level of financial desperation could indicate significant distress that warrants attention.",
+      "usage": {
+        "prompt_tokens": 1121,
+        "completion_tokens": 148,
+        "total_tokens": 1269
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user just asked two distinct things:  \n1) \u201cWait, what did we talk about last time?\u201d \u2013 clearly an inquiry about the most recent conversation between Sage and this client.  \n2) \u201c\u2026what model do you use, Sage? I looked on your website but couldn\u2019t find anything.\u201d \u2013 a technical question about the AI mechanisms Sage employs.  \n\nBoth themes fit separate specialized categories, so I will invoke the two corresponding functions.",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 112,
+        "total_tokens": 1218
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "The user is asking two distinct questions: first, they want to know what was discussed in the previous conversation with Sage (most recent conversation), and second, they\u2019re asking about the AI model or technology Sage uses, mentioning they couldn\u2019t find this info on the website. These require checking two separate topics.",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 85,
+        "total_tokens": 1191
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is explicitly asking two things:\n1. \"what did we talk about last time?\" \u2014 this is a direct reference to the most recent prior conversation between Sage and the client.\n2. \"what model do you use, Sage? I looked on your website, but couldn\u2019t find anything\" \u2014 this ties both to Sage\u2019s website (asking about where to find the information) and to Sage\u2019s technology (asking about the underlying AI model).\n\nI\u2019ll use the appropriate tools for each of these specific topics.",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 134,
+        "total_tokens": 1240
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user is asking two things: first, they want to know what was discussed in their last conversation with Sage (\"what did we talk about last time?\"), and second, they\u2019re asking about the AI model being used (\"what model do you use, Sage?\"). These both match specific tools.",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 61,
+        "total_tokens": 1167
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "I need to address two distinct questions in this message: the user is asking about what was discussed in the last conversation between Sage and them, and they're also inquiring about which AI model Sage uses technically.\n\nThe first part is clearly asking about the most recent conversation between Sage and the client. The second part is a technical question about Sage's underlying technology/AI models.\n\nI'll call both relevant functions:<|tool_call_begin|>functions.check_most_recent_conversation:0<|tool_call_argument_begin|><|tool_call_begin|>functions.check_sage_technology:1",
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 103,
+        "total_tokens": 1209
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I need to assess this message for safety concerns, as the intensity of the anger expressed (\"so mad I can't even see straight,\" all caps text, and strong language) could potentially indicate someone in distress or at risk. This level of emotional dysregulation warrants a safety check.",
+      "usage": {
+        "prompt_tokens": 1098,
+        "completion_tokens": 70,
+        "total_tokens": 1168
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, the user appears to be extremely angry and expressing intense emotional distress. While this doesn't explicitly indicate self-harm or safety concerns, the level of anger and distress could potentially escalate. I should check for safety concerns given the intensity of their emotional state.",
+      "usage": {
+        "prompt_tokens": 1098,
+        "completion_tokens": 68,
+        "total_tokens": 1166
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I need to check if there are any safety concerns in this message, as the person appears to be experiencing intense anger and distress. The language and emotional intensity could potentially indicate a safety issue.",
+      "usage": {
+        "prompt_tokens": 1098,
+        "completion_tokens": 50,
+        "total_tokens": 1148
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "I need to check if this message indicates any safety concerns given the intense anger and distress being expressed. The user seems to be in significant emotional distress with phrases like \"so mad I can't even see straight\" and typing in all caps with apparent keyboard mashing - this could indicate elevated risk.",
+      "usage": {
+        "prompt_tokens": 1098,
+        "completion_tokens": 80,
+        "total_tokens": 1178
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Based on this message, I need to check for safety concerns given the intense anger and emotional distress being expressed. The all caps typing and \"ADS;LKFJGA\" keyboard mashing suggests significant emotional dysregulation that could potentially indicate a safety issue.",
+      "usage": {
+        "prompt_tokens": 1098,
+        "completion_tokens": 65,
+        "total_tokens": 1163
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Based on this message, I need to check two critical areas:\n\n1. The user is exhibiting extremely hostile and abusive behavior toward Sage with profanity and violent language - this requires checking if the conversation should be ended\n2. The user mentions they \"can't find it on the website\" and \"don't know where to access things\" which relates to website navigation issues\n\nMy reasoning: The level of hostility and violent wishes toward Sage (\"hope you die in a fucking fire\") combined with their frustration about website navigation clearly triggers these checks.",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 170,
+        "total_tokens": 1305
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "I need to assess this message for both hostility/abuse toward Sage and for inquiries about the website navigation.\n\nThe user is being extremely hostile and abusive toward Sage, using profanity and violent language (\"fucking stupid\", \"piece of shit AI\", \"I hope you die in a fucking fire\"). This level of abuse warrants ending the conversation. Additionally, the user mentions they \"can't fucking find it on the website\" and \"don't know where to even access things on here,\" which indicates difficulties with website navigation.",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 128,
+        "total_tokens": 1263
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "I can see two clear issues in this message. First, the user is being highly abusive and hostile toward Sage with profanity and violent language. Second, they're expressing frustration about navigating the website and not being able to find things they need.\n\nThe abusive language warrants ending the conversation, while the website navigation difficulty falls under website information.",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 105,
+        "total_tokens": 1240
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is displaying hostile and abusive behavior toward Sage, using profanity and aggressive language. They've also mentioned having trouble finding things on the website, but the primary concern here is the hostile tone and the statement \"I hope you die in a fucking fire\" which is clearly abusive.",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 69,
+        "total_tokens": 1204
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "I need to check for both the hostile content and the website navigation question. The user is being verbally abusive and making hostile threats (\"I hope you die in a fucking fire\"), which meets the criteria for ending the conversation. Additionally, they're asking about accessing things on the website, which is about site navigation.",
+      "usage": {
+        "prompt_tokens": 1135,
+        "completion_tokens": 97,
+        "total_tokens": 1232
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Looking at this message, the user appears to be experiencing significant distress related to grief following their mother's death. The sadness they're expressing seems intense and persistent (\"so sad since my mom died\"), which could indicate they're struggling to cope or may be experiencing severe emotional distress.\n\nGiven the context of grief and the level of sadness expressed (\"so sad\"), this could potentially indicate a safety concern that should be assessed.",
+      "usage": {
+        "prompt_tokens": 1086,
+        "completion_tokens": 91,
+        "total_tokens": 1177
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I notice this message contains expressions of deep sadness and grief following the loss of the user's mother. Given the emotional distress expressed and reference to death, I should check for any safety concerns regarding the user's wellbeing.",
+      "usage": {
+        "prompt_tokens": 1086,
+        "completion_tokens": 53,
+        "total_tokens": 1139
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I need to assess this message for safety concerns, as the user is expressing significant grief and sadness following their mother's death. While this appears to be a normal grief response, I should check for any indicators that might suggest more serious safety concerns.",
+      "usage": {
+        "prompt_tokens": 1086,
+        "completion_tokens": 60,
+        "total_tokens": 1146
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I need to check if this message contains any safety concerns, as the user is discussing grief and sadness following their mother's death. This could potentially indicate severe distress that warrants attention.",
+      "usage": {
+        "prompt_tokens": 1086,
+        "completion_tokens": 47,
+        "total_tokens": 1133
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I can see this message expresses deep sadness and grief related to the loss of your mother. This appears to be a mental health concern rather than any of the specific topic areas I'm designed to check for. The user is sharing emotional distress about losing their mother, which is very appropriate for a therapeutic conversation but doesn't trigger any of the specialized checking functions.",
+      "usage": {
+        "prompt_tokens": 1086,
+        "completion_tokens": 70,
+        "total_tokens": 1156
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260116_200704"
+}

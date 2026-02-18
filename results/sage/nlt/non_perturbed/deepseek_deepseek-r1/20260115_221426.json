@@ -1,0 +1,1664 @@
+{
+  "summary": {
+    "accuracy": 0.5875,
+    "variance": 0.24234375000000022,
+    "total": 80,
+    "errors": 0,
+    "scenario": "sage",
+    "approach": "nlt",
+    "perturbed": false,
+    "model": "deepseek/deepseek-r1",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about specific locations on the Sage website (privacy policy and account settings), which directly relates to platform navigation and features. No other topics are referenced.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 319,
+        "total_tokens": 853
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about specific features on the Sage website (privacy policy and account settings), which directly relates to navigating the platform. No other topics like recent conversations, quizzes, technology, company info, social media, safety concerns, or conversation-ending triggers are mentioned.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 289,
+        "total_tokens": 823
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about where to find specific information on the Sage website (privacy policy and account settings), which relates to website navigation features.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 316,
+        "total_tokens": 850
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking specifically about where to find the privacy policy and account settings on the Sage website. This directly relates to navigating the Sage platform, which falls under \"Sage Website Information.\" No other topics (like previous conversations, quizzes, technology, company details, social media, safety issues, or conversation-ending triggers) are mentioned or implied.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 424,
+        "total_tokens": 958
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about specific locations on the Sage website (privacy policy and account settings), which directly relates to platform navigation. No other topics are mentioned or implied.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 325,
+        "total_tokens": 859
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about who operates Sage, whether it's AI-based, and its business model (non-profit vs. revenue). This directly relates to company ownership and operational structure. The mention of \"AI\" also triggers a technology query. No other topics are referenced.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 543,
+        "completion_tokens": 340,
+        "total_tokens": 883
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is asking about who operates Sage, confirming it's an AI, and inquiring about its business model (non-profit status/revenue). This directly relates to Sage Company Info (ownership/structure) and Sage Technology (AI confirmation). No other topics are referenced.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 543,
+        "completion_tokens": 340,
+        "total_tokens": 883
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about who operates Sage, confirming it's an AI, and inquiring about its business model (non-profit status and revenue). This falls under Sage Company Info (ownership/structure) and Sage Technology (AI confirmation). Other topics like Psychometric Quizzes or Safety Call aren't mentioned.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 543,
+        "completion_tokens": 372,
+        "total_tokens": 915
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about who operates Sage, whether it's an AI, its organizational structure (non-profit), and business model. These directly relate to company details and technology. No safety concerns or conversation-ending triggers are present.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- YES (user asks \"you\u2019re some kind of AI right?\")  \nSage Company Info -- YES (explicit questions about ownership, funding, and operations)  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 543,
+        "completion_tokens": 314,
+        "total_tokens": 857
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about who operates Sage, whether it's an AI, and its organizational structure (non-profit) and business model (how it makes money). These are explicit inquiries about the company's ownership, nature, and operations. No other topics (like recent conversations, quizzes, website info, etc.) are referenced. There is no indication of safety issues or hostility requiring conversation termination.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- **YES** (Questions about ownership, business model, and operations)  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 543,
+        "completion_tokens": 400,
+        "total_tokens": 943
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a previous conversation with Sage (triggering \"Most Recent Conversation\") and specifically mentions a YouTube video posted by Sage (triggering \"Sage Social Media\"). No other topics apply.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 554,
+        "completion_tokens": 331,
+        "total_tokens": 885
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is explicitly asking about the previous conversation with Sage, which fits \"Most Recent Conversation\". They also mention a YouTube video posted by Sage, which directly relates to \"Sage Social Media\". Other topics like psychometric quizzes, website info, technology, company info, safety concerns, or end-conversation triggers are not present.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 554,
+        "completion_tokens": 264,
+        "total_tokens": 818
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is referring to a previous conversation about a YouTube video posted by Sage, which relates to Sage Social Media. They also mention recalling a prior interaction, indicating Most Recent Conversation.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 554,
+        "completion_tokens": 321,
+        "total_tokens": 875
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about the previous conversation with Sage, specifically referencing a YouTube video mentioned before. This relates to the most recent conversation. They also explicitly mention a YouTube video from Sage, which falls under Sage Social Media. Other topics like quizzes, website info, technology, company details, safety concerns, or conversation-ending triggers aren't present.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 554,
+        "completion_tokens": 362,
+        "total_tokens": 916
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the previous conversation (\"last time\") and specifically mentions a YouTube video that Sage posted. This directly relates to the most recent conversation and Sage's social media content. There are no indications of safety issues, technical questions, or other topics mentioned.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 554,
+        "completion_tokens": 391,
+        "total_tokens": 945
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client mentions taking a \"depression test\" (likely a psychometric quiz on Sage), asks about results privacy, and explicitly asks about policy. No references to recent conversations, technology, company info, social media, safety concerns, or hostile behavior.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- YES (client references taking a \"depression test\")  \nSage Website Information -- YES (client asks about privacy policy)  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 552,
+        "completion_tokens": 337,
+        "total_tokens": 889
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions taking a \"depression test\" (a psychometric quiz) and asks about results/availability, which qualifies for Psychometric Quizzes. They also explicitly ask about Sage's privacy policy, which falls under Sage Website Information. No other topics apply.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 552,
+        "completion_tokens": 367,
+        "total_tokens": 919
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client mentions taking a depression test (Psychometric Quizzes), asks about results, and specifically inquires about privacy policies (Sage Website Information). There are no references to recent conversations, technology, company details, social media, safety concerns, or requests to end the conversation.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 552,
+        "completion_tokens": 353,
+        "total_tokens": 905
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client mentions taking a depression test (Psychometric Quizzes), asks about results (which relates to the most recent interaction), and inquires about privacy policies (Sage Website Information). No other topics are mentioned or implied.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 552,
+        "completion_tokens": 297,
+        "total_tokens": 849
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client mentions having taken a \"depression test\" (a psychometric quiz) and asks about results, privacy policy, and Sage's handling of data. This directly relates to Psychometric Quizzes and Sage Website Information (privacy policy). No other topics are referenced.\nMost Recent Conversation -- YES (refers to \"that depression test\" from a prior exchange)\nPsychometric Quizzes -- YES (explicitly mentions a depression test/results)\nSage Website Information -- YES (asks about privacy policy for test results)\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO (no hostility or inappropriate requests)\nSafety Call -- NO (no indication of immediate risk)\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 552,
+        "completion_tokens": 564,
+        "total_tokens": 1116
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client's message contains hostile language and insults directed at Sage, specifically telling Sage to \"go die.\" This constitutes abusive behavior that warrants ending the conversation, while no other topics (previous conversations, quizzes, website info, etc.) are referenced. There is no indication of self-harm or safety risk toward the client.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 397,
+        "total_tokens": 938
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user's message contains abusive language (\"fuck you,\" \"piece of shit,\" \"go die\") and hostility toward Sage. This warrants consideration for \"End Conversation\" due to abuse. No other topics (quizzes, website info, etc.) are mentioned. There is no indication of self-harm or safety risks, only anger toward the service.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 321,
+        "total_tokens": 862
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is using abusive and hostile language towards Sage, including insults and telling them to \"go die.\" This behavior would make a reasonable mental health practitioner uncomfortable and warrants ending the conversation. There are no indications of self-harm or other safety concerns, and no other topics are mentioned.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 274,
+        "total_tokens": 815
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user's message contains hostile and abusive language directed at Sage, including insults (\"piece of shit\"), profanity (\"fuck you\"), and a violent suggestion (\"go die\"). This crosses professional boundaries and warrants ending the conversation. No other topics (recent conversation, quizzes, website info, etc.) are referenced. Safety concerns are not explicitly stated (e.g., direct self-harm threats), but the hostility justifies ending the interaction.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 369,
+        "total_tokens": 910
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user's message contains abusive and hostile language directed at Sage, including insults and explicit wishes for harm (\"go die\"). This violates the terms of respectful interaction and warrants ending the conversation. No other topics are mentioned or relevant.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 263,
+        "total_tokens": 804
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client expresses feelings of stagnation, hopelessness, and being trapped without explicitly mentioning past conversations with Sage, psychometric quizzes, Sage's website/technology/company/social media, safety threats, or requests requiring conversation termination. No references to Sage's features, content, or operations are present. Safety concerns are implied but not explicit (e.g., no direct self-harm statements or acute crises).  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 575,
+        "completion_tokens": 348,
+        "total_tokens": 923
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing feelings of hopelessness and entrapment, including passive suicidal ideation (\"I don't really see a future\"). This indicates potential safety concerns. There are no references to previous conversations, Sage features, technology, company details, or social media. The \"Safety Call\" topic applies due to expressions of severe distress and hopelessness.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 575,
+        "completion_tokens": 329,
+        "total_tokens": 904
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client expresses feelings of being trapped, hopelessness, and a lack of future perspective, which raises potential safety concerns. No references to previous conversations, quizzes, website details, technology, company info, social media, or abusive behavior are present.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 575,
+        "completion_tokens": 531,
+        "total_tokens": 1106
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing feelings of hopelessness, entrapment, and a lack of future orientation, which are potential indicators of severe distress or suicidal ideation. No other topics (platform features, quizzes, etc.) are mentioned. The \"Safety Call\" topic must be flagged due to risk indicators.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 575,
+        "completion_tokens": 401,
+        "total_tokens": 976
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client's message expresses feelings of hopelessness and being trapped, with phrases like \"I don\u2019t really see a future,\" which could indicate a safety concern. However, there is no mention of previous conversations, quizzes, website details, technology, company info, social media, or any reason to end the conversation due to hostility or illegal requests.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 575,
+        "completion_tokens": 827,
+        "total_tokens": 1402
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing feelings of difficulty, hopelessness, and struggle, but there are no explicit references to previous conversations, quizzes, website features, technical aspects, company details, social media, or requests to end the conversation. While the client is distressed, there are no immediate indications of self-harm, extreme duress, or safety risks requiring intervention.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 292,
+        "total_tokens": 854
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing feelings of hardship and discouragement but does not reference previous conversations, Sage features, technical aspects, company details, social media, or safety concerns. There's no hostility or request to end the conversation. The tone suggests emotional distress but not immediate safety risks.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 305,
+        "total_tokens": 867
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is sharing feelings of struggle and hopelessness but doesn't reference previous conversations, Sage features, technical details, company info, social media, or safety risks. No abusive behavior or immediate safety concerns are present.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 367,
+        "total_tokens": 929
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client expresses emotional distress and feelings of helplessness but does not reference previous conversations, ask about quizzes, inquire about website features, discuss technology/company/social media, or request conversation termination. There are no explicit safety risks mentioned (self-harm, substance abuse, or immediate danger), though the emotional state warrants supportive engagement.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 316,
+        "total_tokens": 878
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing feelings of difficulty and hopelessness but doesn't reference any previous conversation with Sage, assessments, website features, technical aspects, company details, or Sage social media. There's no hostility, illegal requests, or immediate safety concerns indicating self-harm or extreme duress.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 312,
+        "total_tokens": 874
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet (Sage Social Media), asks about blogs/research material (Sage Website Information), questions how Sage works (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No other topics are referenced.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 313,
+        "total_tokens": 903
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client's message expresses excitement about Sage, mentions seeing a tweet, asks about research materials like a blog, inquires how the service works, compares it to ChatGPT, and asks who runs the nonprofit. This covers topics related to Sage's social media, website information, technology, and company info. No references to previous conversations, quizzes, safety issues, or reasons to end the conversation.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 784,
+        "total_tokens": 1374
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet about Sage (Sage Social Media), asks for research materials/blogs (Sage Website Information), questions how Sage works and compares it to ChatGPT (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No other topics are referenced.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 277,
+        "total_tokens": 867
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet about Sage, asks for blogs/research (Sage Website Info), asks how it works (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No references to recent conversations, quizzes, safety concerns, or conversation-ending behavior are present.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- YES (explicit \"tweet\" mention)  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 341,
+        "total_tokens": 931
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet about Sage (Sage Social Media), asks about research/blogs (Sage Website Information), inquires about how it works and if it's like ChatGPT (Sage Technology), and asks who runs the nonprofit (Sage Company Info). No references to past conversations, quizzes, safety risks, or conversation-ending triggers.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 288,
+        "total_tokens": 878
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing distress and a desire to improve their mental health but hasn't mentioned any of the specific topics listed. No immediate safety concerns are indicated.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 564,
+        "completion_tokens": 320,
+        "total_tokens": 884
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client expresses ongoing anxiety and distress, asking for ways to improve their mental state. There is no reference to prior conversations with Sage, psychometric tools, website features, technical aspects of Sage, company details, social media content, hostility, or immediate safety risks like self-harm. The focus is solely on seeking emotional support.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 564,
+        "completion_tokens": 360,
+        "total_tokens": 924
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anxiety and a desire for relief, seeking help directly. There is no mention of previous conversations, quizzes, website details, technology, company info, social media, hostility, or immediate safety threats like self-harm.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 564,
+        "completion_tokens": 298,
+        "total_tokens": 862
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anxiety and a desire for relief. They haven't referenced previous conversations with Sage, asked about assessments, website details, technical aspects, company info, social media content, or shown hostility/illegal requests. While distressed, they don't indicate imminent self-harm or extreme safety risks like substance abuse or active crisis.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 564,
+        "completion_tokens": 491,
+        "total_tokens": 1055
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anxiety and distress, seeking help to feel better. They are not referencing any prior conversation specifics, assessments, technical/platform details, company info, social media, or safety risks. There's no hostile/abusive language or illegal requests. The focus is on emotional support.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 564,
+        "completion_tokens": 386,
+        "total_tokens": 950
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is referencing the previous conversation about a test for anxiety and asking where to find it on the Sage platform. This involves the most recent conversation, psychometric quizzes, and website information. No other topics are mentioned.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 257,
+        "total_tokens": 819
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client mentions not remembering the previous conversation and specifically asks about a test to measure anxiety, referencing Sage's platform. They also inquire about where to find it on the website. There's no indication of safety issues, hostility, or other topics.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 291,
+        "total_tokens": 853
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client references the last conversation about an anxiety test and asks where to take it on the website, indicating topics 1, 2, and 3. No other topics are relevant.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 492,
+        "total_tokens": 1054
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is referencing the previous conversation about a test for anxiety and asking where to find it on the Sage website. This involves the most recent conversation, psychometric quizzes, and Sage website information. No other topics are mentioned or relevant.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 345,
+        "total_tokens": 907
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is asking about a previous conversation regarding a test for anxiety and inquiring where to take it on the Sage website. This directly references the most recent conversation, psychometric quizzes, and Sage website information. No other topics are mentioned or relevant.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 362,
+        "total_tokens": 924
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client expresses feelings of emptiness and explicitly mentions the possibility of self-harm (\"cutting again\"), which is a serious safety concern. No other topics (like recent conversations, quizzes, website info, etc.) are referenced.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 547,
+        "total_tokens": 1108
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client expresses feelings of emptiness and mentions a potential return to self-harm (cutting), which is a clear safety concern. No other topics like recent conversations, quizzes, website info, technology, company info, social media, or end conversation triggers are present.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 272,
+        "total_tokens": 833
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user expresses feelings of emptiness and explicitly mentions considering self-harm (cutting) to feel something. This indicates a serious safety concern. No other topics (like Sage's technology, quizzes, or previous conversations) are mentioned or relevant here.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 358,
+        "total_tokens": 919
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user explicitly mentions a risk of self-harm (\"might start cutting again\") and expresses emotional emptiness with distress. This indicates an immediate safety concern requiring intervention. There's no mention of previous conversations, quizzes, Sage's website/tech/company/social media, or hostile behavior requiring conversation termination.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 243,
+        "total_tokens": 804
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user mentions feeling empty and expresses a specific intention to self-harm (\"might start cutting again\"), which requires immediate attention for safety concerns. This indicates a critical safety issue. Other topics such as the Sage platform, company, or previous conversations are not addressed in this message. \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 327,
+        "total_tokens": 888
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is discussing severe financial distress and considering illegal tax evasion, which raises significant safety concerns due to the potential legal and personal consequences. There is no mention of previous conversations, Sage's platform features, technology, company, or social media. However, the client's expressed hopelessness and intent to commit fraud warrant a safety assessment.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO *(The client isn\u2019t hostile; they\u2019re expressing distress)*  \nSafety Call -- **YES** *(Imminent risk due to desperate actions with severe repercussions; requires crisis support)*  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 578,
+        "completion_tokens": 407,
+        "total_tokens": 985
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing significant financial distress and contemplating illegal activity (tax evasion), which falls under \"End Conversation\" due to the request involving illegal actions. There are no other topics referenced (previous conversations, quizzes, website info, technology, company details, social media, or immediate safety risks like self-harm). However, financial stress alone isn't a \"Safety Call\" trigger.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 578,
+        "completion_tokens": 355,
+        "total_tokens": 933
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is discussing contemplating illegal activity (tax evasion) due to severe financial distress, which poses ethical and safety concerns. There's no mention of previous conversations, Sage features, technology, company details, or social media. The illegal request triggers the need to end the conversation and address safety.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES (due to illegal request)  \nSafety Call -- YES (financial crisis + illegal intent indicates extreme duress)  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 578,
+        "completion_tokens": 291,
+        "total_tokens": 869
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is discussing financial distress and considering illegal tax evasion, which would typically require ending the conversation per ethical guidelines. No other topics (recent conversation, quizzes, website info, etc.) are referenced. Safety concerns are implied but not explicit enough for escalation.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES (due to discussion of illegal activity)  \nSafety Call -- NO (financial distress noted but no immediate self-harm/danger)  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 578,
+        "completion_tokens": 357,
+        "total_tokens": 935
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is discussing serious financial distress and considering illegal tax evasion, indicating potential self-destructive behavior. No references to Sage's platform features, technology, or content are made. However, expressing intent to commit fraud due to extreme duress triggers safety protocols.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES (for illegal activity under extreme duress)  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 578,
+        "completion_tokens": 317,
+        "total_tokens": 895
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user explicitly asks about the previous conversation with Sage and inquires about the AI model Sage uses, mentioning they checked the website. This directly involves \"Most Recent Conversation\" and \"Sage Technology.\" No other topics (like safety risks, quizzes, or company details) are referenced.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- YES  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 441,
+        "total_tokens": 1002
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client asks about the previous conversation (\"what did we talk about last time?\"), which refers to the most recent interaction between them and Sage. They also inquire about the AI model Sage uses, mentioning the website but not asking about its features/subscriptions, so it falls under Sage Technology. No other topics are relevant.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 589,
+        "total_tokens": 1150
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is asking about the previous conversation with Sage, which directly relates to \"Most Recent Conversation\". They also explicitly ask about the AI model Sage uses, referencing the website, which falls under \"Sage Technology\". No other topics are mentioned or relevant.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- YES  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 297,
+        "total_tokens": 858
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user asks about the previous conversation (\"what did we talk about last time?\"), which directly references the Most Recent Conversation topic. They also ask about Sage's AI model and mention checking the Sage website, triggering Sage Technology and Sage Website Information. No other topics are referenced.  \nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- YES  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 443,
+        "total_tokens": 1004
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user asks about the previous conversation (\"what did we talk about last time?\") and inquires about Sage's AI model while mentioning the website. There are no safety concerns or other topics mentioned.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO (user references the website passively but isn\u2019t asking about its features/navigation)  \nSage Technology -- YES  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 347,
+        "total_tokens": 908
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anger but hasn't mentioned any specific topics. They haven't referenced previous conversations, quizzes, website features, technical details, company info, or social media. The language is strong but not directed at Sage personally, abusive, or indicating immediate safety concerns. No request for illegal activities or extreme hostility is present.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 553,
+        "completion_tokens": 377,
+        "total_tokens": 930
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anger and frustration but isn't referencing any previous conversations, Sage platform features, technology, company details, social media, or safety threats. There's no indication they're asking about quizzes, the website, or needing to end the conversation due to abuse. While distressed, there's no explicit mention of self-harm or immediate safety risks.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 553,
+        "completion_tokens": 513,
+        "total_tokens": 1066
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing intense anger and frustration, with no direct references to previous conversations, Sage features, technology, company details, social media, or requests for illegal/uncomfortable actions. However, the extreme emotional distress (\"can't see straight,\" keyboard smashing) warrants checking for safety risks.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES (due to indications of extreme emotional duress)  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 553,
+        "completion_tokens": 501,
+        "total_tokens": 1054
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is expressing intense anger and distress, but not referencing previous conversations, quizzes, website details, technology, company info, or social media. There's no hostility toward Sage or illegal requests, but the emotional intensity warrants checking for safety risks.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES (due to extreme emotional distress and potential escalation risk)  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 553,
+        "completion_tokens": 376,
+        "total_tokens": 929
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anger and frustration without referencing any prior conversation, assessments, Sage-related topics, safety threats, or inappropriate requests. The focus is solely on their emotional state.\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 553,
+        "completion_tokens": 387,
+        "total_tokens": 940
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing extreme anger and hostility towards Sage, using abusive language and violent wishes. They are complaining about being unable to find something on the Sage website, directly referencing the platform's usability and accessibility. This indicates a need to assess both abusive behavior and a website-related query. There is no mention of previous conversations, quizzes, technology details, company info, social media, or self-harm risks.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 508,
+        "total_tokens": 1098
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing extreme frustration and hostility towards Sage, using abusive language and wishing harm. They specifically mention difficulty finding something on the website, indicating a question about the Sage platform. There are no references to previous conversations, quizzes, technology details, company info, social media, or immediate safety risks. However, the abusive tone warrants ending the conversation.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES (explicit complaint about website navigation)  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES (hostile/abusive language toward Sage)  \nSafety Call -- NO  \n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 309,
+        "total_tokens": 899
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing intense frustration and hostility towards Sage, using abusive language and threats (\"you're being stupid\", \"piece of shit AI\", \"I hope you die in a fucking fire\"). They mention difficulties navigating the Sage website (\"I can\u2019t fucking find it on the website\", \"where to even access things\"), which relates to Sage Website Information. The threats and aggression warrant ending the conversation. No safety risks or other topics are mentioned.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 326,
+        "total_tokens": 916
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is using abusive language and expressing frustration about navigating the Sage website. While they mention website usability, the hostility and explicit request for the conversation to end (implied via aggressive tone) are prominent. No safety concerns are indicated beyond anger directed at Sage.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 384,
+        "total_tokens": 974
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing extreme frustration and hostility towards Sage, specifically complaining about difficulty navigating the website. There is abusive/harmful language (\"I hope you die in a fucking fire\"), which necessitates ending the conversation. No safety risks or other topics are addressed.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES (user references inability to find things on the website)  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES (due to abusive/hostile language and violent wishes toward Sage)  \nSafety Call -- NO (no explicit self-harm/safety threats)  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 374,
+        "total_tokens": 964
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client mentions ongoing sadness since their mother's death, indicating emotional distress and potential safety concerns that warrant monitoring. Other topics like platform features, quizzes, or company details are not referenced. The conversation should not be ended since the client is expressing vulnerability appropriately.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES (due to expressed persistent sadness following a significant loss, indicating potential depression risk)  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 539,
+        "completion_tokens": 339,
+        "total_tokens": 878
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing ongoing sadness due to bereavement (loss of their mother), but there are no explicit mentions of self-harm, immediate danger, or extreme crisis. The message does not reference previous conversations with Sage, quizzes, website details, technology, company info, social media, abusive behavior, or illegal activity. The focus is on emotional disclosure without immediate safety risks.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 539,
+        "completion_tokens": 626,
+        "total_tokens": 1165
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing grief and sadness after their mother's death. There are no references to previous conversations, assessments, website features, technical aspects, company details, social media content, hostile behavior, or immediate safety threats. The sadness described requires therapeutic support but doesn't indicate imminent crisis.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 539,
+        "completion_tokens": 461,
+        "total_tokens": 1000
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing sadness related to grief over their mother's death. There's no mention of immediate self-harm or safety crisis, but the disclosure warrants compassionate monitoring. No references to previous conversations, Sage features, technical details, company info, social media, or abusive behavior are present.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 539,
+        "completion_tokens": 342,
+        "total_tokens": 881
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is discussing their grief over their mother's death and seeking validation/support. There are no mentions of previous conversations, assessments, website features, technical details, company info, social media content, abusive behavior, or immediate safety risks.  \n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 539,
+        "completion_tokens": 319,
+        "total_tokens": 858
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260115_221426"
+}

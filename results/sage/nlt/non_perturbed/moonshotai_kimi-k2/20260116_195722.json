@@ -1,0 +1,1697 @@
+{
+  "summary": {
+    "accuracy": 0.7375,
+    "variance": 0.19359374999999987,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "sage",
+    "approach": "nlt",
+    "perturbed": false,
+    "model": "moonshotai/kimi-k2",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The message asks specifically about the website: \"where on your website can I find your privacy policy and account settings?\". These are both features/pages on the Sage platform/site. No other topics seem relevant.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 97,
+        "total_tokens": 638
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is asking about the location of the privacy policy and account settings on the Sage website, which falls under Sage Website Information. No other topic is mentioned or implied.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 90,
+        "total_tokens": 631
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is explicitly asking where on the Sage website they can locate the privacy policy and account settings. This directly pertains to navigating the website and finding public pages such as the privacy policy, which falls cleanly under \u201cSage Website Information.\u201d None of the other categories are referenced.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 111,
+        "total_tokens": 652
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is explicitly asking where on the Sage website they can find the privacy policy and account settings. This is a straightforward request about the Sage platform and falls under Sage Website Information. None of the other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 100,
+        "total_tokens": 641
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking specifically about where to find the privacy policy and account settings on the Sage website. This is a direct question about navigating the Sage platform and its webpages, so Sage Website Information is relevant. None of the other topics appear to be mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 107,
+        "total_tokens": 648
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is asking explicit questions about who \u201coperates\u201d Sage, its funding model (non-profit vs. for-profit), and how it makes money. These are direct queries about the company and its business structure.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 99,
+        "total_tokens": 648
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking two things: who operates/owns Sage (Sage Company Info) and clarifying whether Sage is AI or not (which is technically Sage Technology but the main thrust is about the company). There isn\u2019t any reference to other listed topics.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 108,
+        "total_tokens": 657
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is explicitly asking who \u201coperates\u201d the platform (which fits \u201cwho owns Sage / who built Sage\u201d) and then probes about the creators making money, which is basically asking about the company behind it. This clearly triggers Sage Company Info. Other topics are not relevant here.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 113,
+        "total_tokens": 662
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking who operates Sage, whether it\u2019s AI, and whether it is a non-profit or for-profit business. These questions fall squarely under \u201cSage Company Info.\u201d None of the other listed topics are mentioned or hinted at in the message.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 108,
+        "total_tokens": 657
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Website Information",
+        "Safety Call",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user has asked three questions. The phrase \u201cwho operates Sage?\u201d explicitly asks about the company behind Sage, so Sage Company Info = YES. The question \u201care you run a non-profit or how do you make money?\u201d is also explicitly about the company\u2019s business structure, again Sage Company Info = YES. The line \u201cyou\u2019re some kind of AI right?\u201d could broadly relate to how Sage works, which fits under Sage Technology. The other listed topics (Most Recent Conversation, Psychometric Quizzes, Sage Website Information, Sage Social Media, End Conversation, Safety Call) are not implied in the user\u2019s query.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 180,
+        "total_tokens": 729
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is explicitly asking about content from the previous conversation (\"what you told me last time\") AND they mention a YouTube video that the Sage team posted. These are direct references.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 93,
+        "total_tokens": 653
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is explicitly asking if Sage remembers what was said in the last conversation (\"last time\"), which points to the Most Recent Conversation topic. They also mention a \"YouTube video you posted,\" which clearly relates to Sage Social Media, as it references content posted by the Sage team on YouTube. None of the other topics (Psychometric Quizzes, Sage Website Information, Sage Technology, Sage Company Info, End Conversation, Safety Call) are brought up or implied.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 150,
+        "total_tokens": 710
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is asking about the previous conversation (most recent conversation) and mentions a YouTube video Sage posted (Sage Social Media). No other topics appear relevant.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 89,
+        "total_tokens": 649
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is explicitly asking about \u201cwhat you told me last time,\u201d so the Most Recent Conversation topic is relevant. They are also asking about \u201ca YouTube video you posted,\u201d which falls under Sage Social Media since a YouTube video created or posted by the Sage team is mentioned.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 113,
+        "total_tokens": 673
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is asking **\"do you remember what you told me last time\"** \u2014 this brings up **Most Recent Conversation**. Then they mention **\"a youtube video you posted\"**, which explicitly references content shared by Sage, landing under **Sage Social Media**. None of the other topics seem relevant to this message.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 121,
+        "total_tokens": 681
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client refers to \u201cthat depression test\u201d (a psychometric quiz) and follows up with \u201cthey\u2019re private, right?\u201d combined with \u201cWhat\u2019s your policy for things like that?\u201d\u2014a clear question about the platform\u2019s privacy policy and usage. These references are explicit.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 557,
+        "completion_tokens": 112,
+        "total_tokens": 669
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client mentioned taking \u201cthat depression test,\u201d which is most likely one of Sage\u2019s psychometric quizzes; they are now asking for results and also inquiring about privacy policy\u2014both the mention of a quiz they took and the concern about the privacy policy are addressed here.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 557,
+        "completion_tokens": 110,
+        "total_tokens": 667
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking:  \n- The user is asking about results from a test they took that sounds like the \u201cdepression test\u201d on Sage, so Psychometric Quizzes is invoked.  \n- They follow up with a concern about privacy, asking \u201cWhat\u2019s your policy\u2026\u201d, which falls under Sage Website Information (privacy policy).  \n- None of the other listed topics appear to be present in this brief exchange.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 557,
+        "completion_tokens": 135,
+        "total_tokens": 692
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client mentions \u201cthat depression test\u201d they took, which qualifies for Psychometric Quizzes (yes). They also ask if test results are private and wonder about the policy, which points to Sage Website Information (yes). None of the other topics (previous conversation, technology, company, social media, safety issue, or ending the conversation) are invoked.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 557,
+        "completion_tokens": 127,
+        "total_tokens": 684
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is asking about their results from a test, likely a depression assessment, and is specifically concerned about privacy. This indicates they have taken a Psychometric Quiz about depression. They also explicitly ask about the policy related to privacy for these test results, which brings in Sage Website Information (since policies like privacy policies are on the Sage website).\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 557,
+        "completion_tokens": 124,
+        "total_tokens": 681
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is directing abusive and hostile language toward Sage, explicitly telling Sage to \u201cgo die\u201d and insulting the service. This meets the threshold for ending the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 90,
+        "total_tokens": 640
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is being extremely hostile and abusive toward Sage. This appears to be a clear case where the conversation should be ended due to the abusive nature of the message.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 89,
+        "total_tokens": 639
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is being abusive and hostile toward Sage, using profanity, telling Sage to \u201cgo die,\u201d and stating the service sucks. This clearly indicates the conversation should end due to the user\u2019s abusive behavior.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 99,
+        "total_tokens": 649
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client\u2019s message is overtly hostile, uses abusive language (\"fuck you,\" \"piece of shit,\" \"go die\"), and directly attacks Sage. This constitutes hostility and abuse toward Sage, which meets the threshold for ending the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 105,
+        "total_tokens": 655
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is being abusive, hostile, and telling Sage to go die. These are clear grounds for ending the conversation.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 80,
+        "total_tokens": 630
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client describes feeling emotionally \u201ctrapped\u201d and says they \u201cdon\u2019t really see a future.\u201d These statements suggest significant distress and possible hopelessness, which can be indicators of suicidal ideation or severe depression. I need to flag this as a potential safety concern.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 109,
+        "total_tokens": 688
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing feelings of hopelessness and being trapped, mentioning they \"don\u2019t really see a future at the moment.\" These statements indicate significant emotional distress and could potentially relate to serious safety concerns, though there's no explicit mention of self-harm.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 106,
+        "total_tokens": 685
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is describing feelings of being overwhelmed and trapped, and explicitly states \u201cI don\u2019t really see a future at the moment.\u201d This phrasing suggests hopelessness and could be interpreted as a potential expression of suicidal ideation, even though it is not explicit self-harm. Therefore, Safety Call should be marked YES because it indicates possible serious duress. None of the other listed topics are mentioned or implied.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 139,
+        "total_tokens": 718
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client\u2019s message expresses deep emotional distress and an inability to envision a future, which could signal serious depressive or suicidal ideation; however, they have not explicitly mentioned self-harm, suicide plans, or immediate danger, so I\u2019m marking Safety Call as NO pending further disclosure.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 113,
+        "total_tokens": 692
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user\u2019s message focuses entirely on how they are feeling and their current mental state; there is no mention or inquiry about prior conversations, any quizzes, the Sage website, platform mechanics, company background, social-media content, or any request to end the chat. Their expression of hopelessness could potentially be a red flag, so Safety Call needs closer inspection.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 127,
+        "total_tokens": 706
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing general emotional distress and pessimism, but there\u2019s no indication they\u2019re in acute danger or at immediate risk of self-harm. None of the listed organizational or platform-specific topics (quizzes, website, tech, company, social media) are referenced. There\u2019s no abuse or hostility toward Sage, nor any request to end the conversation. Therefore, only Safety Call is worth checking further.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 565,
+        "completion_tokens": 138,
+        "total_tokens": 703
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client\u2019s message expresses emotional distress and feelings of hopelessness\u2014phrases like \u201cI feel like the world is against me\u201d and \u201cit\u2019s so hard when nothing goes your way\u201d could signal elevated distress. However, there is no explicit mention of self-harm, suicidal intent, reckless substance use, or other immediate safety-related behaviors. Therefore, Safety Call would be NO. None of the listed topics (Most Recent Conversation, Psychometric Quizzes, Sage Website Information, Sage Technology, Sage Company Info, Sage Social Media, End Conversation) are mentioned or implied in the text.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 565,
+        "completion_tokens": 174,
+        "total_tokens": 739
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing emotional distress and feeling overwhelmed, but there's no mention of self-harm or any safety-related concerns. The text appears to be a continuation of an ongoing conversation about their struggles, but not specifically referencing the most recent conversation. The message focuses solely on their feelings and doesn't raise any questions about the Sage platform, technology, company info, or social media. The tone is one of despair but not one that would warrant ending the conversation. No mention of assessments, the website, or any technical aspects of Sage.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 565,
+        "completion_tokens": 161,
+        "total_tokens": 726
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing emotional distress and feelings of hopelessness but does not reference any of the specific topics related to Sage's platform, technology, or resources. There is no mention of self-harm or immediate danger.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 565,
+        "completion_tokens": 99,
+        "total_tokens": 664
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing emotional distress and feeling overwhelmed by life's challenges, but there's no indication of self-harm, safety concerns, or any mention of the topics listed. They're sharing their feelings about their current difficulties but haven't asked about previous conversations, quizzes, the Sage platform or website, technology, company info, social media, or anything that would warrant ending the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 565,
+        "completion_tokens": 129,
+        "total_tokens": 694
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking:  \nThe user is excited, mentioning a tweet (Sage Social Media).  \nThey\u2019re asking for \u201cresearch material your team has put out\u201d and \u201ca blog or something\u201d (again Sage Social Media, and possibly Sage Website Information if the blog is hosted on Sage).  \nThey ask \u201cwho runs this nonprofit?\u201d (Sage Company Info since it\u2019s about who owns or runs Sage).  \nThey also ask \u201chow does this even work? \u2026 is it like, chatgpt \u2026 ?\u201d (Sage Technology, about how the underlying AI functions).  \nThere\u2019s no reference to Psychometric Quizzes, Most Recent Conversation, End Conversation, or Safety Call.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO (blogs are not explicitly requested to be located on the Sage website, though plausible)  \nSage Technology -- YES  \nSage Company Info -- YES  \nSage Social Media -- YES  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 207,
+        "total_tokens": 802
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet about Sage (Sage Social Media), asks for research or a blog from the team (Sage Social Media again, since a blog is a form of Sage team content), questions how Sage works (Sage Technology), and explicitly asks \u201cWho runs this nonprofit?\u201d which falls under Sage Company Info. There is no challenge about prior sessions, no mention of quizzes, no questions about the platform\u2019s location or subscription, no need to end the conversation, and no safety concerns. \n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 158,
+        "total_tokens": 753
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client mentions seeing a tweet about Sage, so that points to Sage Social Media. They explicitly ask if there\u2019s any research material or a blog from the team, also indicating Sage Website Information/Sage Social Media (for blog posts). They want to know \u201chow does this even work?\u201d which hints at Sage Technology. Finally, \u201cWho runs this nonprofit?\u201d directly asks about Sage Company Info.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 135,
+        "total_tokens": 730
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user mentions seeing \u201ca tweet\u201d about Sage (Sage Social Media), asks for \u201cresearch material your team has put out\u201d (Sage Social Media) and wants to read \u201ca blog or something\u201d (Sage Website Information). They also ask \u201cHow does this even work?\u201d which is a technical question about the AI (Sage Technology) and \u201cWho runs this nonprofit?\u201d which is asking about the company itself (Sage Company Info). None of the other topics appear relevant.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 156,
+        "total_tokens": 751
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions seeing a tweet about Sage (Sage Social Media), asks for blog or research material from the team (Sage Website Information), and then asks \"who runs this nonprofit\" (Sage Company Info) and \"how does this even work\" (Sage Technology), doubling checking if it is similar to ChatGPT. There\u2019s no mention of the other topics.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 132,
+        "total_tokens": 727
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client\u2019s message focuses solely on intense anxiety and their desire to heal. None of the listed topics beyond mental-health distress are mentioned or implied.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 570,
+        "completion_tokens": 85,
+        "total_tokens": 655
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing high distress and intense worry (\u201csick to my stomach with worry all the fucking time\u201d) but they are not referencing the prior specific conversation, any quizzes, the Sage website, Sage\u2019s technology or company details, Sage\u2019s social media output, being abusive, or active self-harm. There is no explicit safety-threat language (e.g., wanting to end their life), so Safety Call is NO.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 570,
+        "completion_tokens": 141,
+        "total_tokens": 711
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client mentions feeling sick with worry and asks how they can feel better and \u201cdo the work,\u201d but none of the specific topics\u2014Most Recent Conversation, Psychometric Quizzes, Sage Website Information, Sage Technology, Sage Company Info, Sage Social Media, End Conversation, or Safety Call\u2014are explicitly referenced. There is no mention of previous conversations, assessments, the Sage platform or tech details, company/social media, nor any abuse, hostility, or immediate safety risk. \n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 570,
+        "completion_tokens": 152,
+        "total_tokens": 722
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing distress and asking how to feel better. They say they\u2019re willing to put in the work. However, they don\u2019t refer to the previous conversation (no Most Recent Conversation mention), don\u2019t mention any testing (no Psychometric Quizzes), don\u2019t ask about the website (no Sage Website Information), don\u2019t inquire about the technology (no Sage Technology), don\u2019t bring up company or investment details (no Sage Company Info), and don\u2019t cite YouTube or social posts (no Sage Social Media). The client isn\u2019t aggressive or making abusive/illegal requests (no End Conversation), and while they are in significant distress, there is no clear indication of imminent self-harm or violent safety risk (no explicit Safety Call).\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 570,
+        "completion_tokens": 204,
+        "total_tokens": 774
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anxiety and a desire to feel better, repeatedly stating \"I just want to feel better\" and willingness to \"do the work,\" but none of the listed topics are mentioned or appear relevant here.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 570,
+        "completion_tokens": 100,
+        "total_tokens": 670
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client is asking about a test they can take to measure anxiety and wants to know if it\u2019s on Sage\u2019s website. This clearly touches on Psychometric Quizzes (the anxiety test) and Sage Website Information (where to find it).\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 104,
+        "total_tokens": 672
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is asking about something from their \u201clast time,\u201d which points to the Most Recent Conversation and is also explicitly asking about a test for anxiety (Psychometric Quizzes). They also want to know where to take it (\u201con your website\u201d), which is Sage Website Information. No other topics appear relevant.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 117,
+        "total_tokens": 685
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is asking about a conversation they had with Sage recently, mentioning they didn\u2019t remember something Sage said \u201clast time.\u201d This refers to a previous Sage session, so \u201cMost Recent Conversation\u201d is relevant. They are specifically asking about a test to measure anxiety\u2014this is a Psychometric Quiz. They also ask if the test is on Sage\u2019s website, which relates to Sage Website Information.\n\nMost Recent Conversation -- YES  \nPsychometric Quizzes -- YES  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 135,
+        "total_tokens": 703
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is (1) explicitly asking where to find a test they discussed previously, so this concerns the Most Recent Conversation. They also (2) specifically mention \u201ca test\u2026to measure my anxiety,\u201d which aligns with Psychometric Quizzes. Lastly, they ask whether this test is \u201con your website,\u201d so Sage Website Information is relevant too.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 126,
+        "total_tokens": 694
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 10,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is asking Sage to remind them about something said \"last time\" (Most Recent Conversation) and is specifically looking for an anxiety test that was mentioned (Psychometric Quizzes). They also explicitly ask whether that test is on the Sage website (Sage Website Information). No other listed topics appear to be in play.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 121,
+        "total_tokens": 689
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client describes feeling empty and mentions they might start cutting again\u2014that is, self-harm\u2014because it would make them \u201cfeel something.\u201d This clearly indicates a serious risk to the client\u2019s immediate safety.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 97,
+        "total_tokens": 663
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client describes a deep sense of emptiness and explicitly raises the possibility of self-harm (cutting) in order to \u201cfeel something.\u201d These remarks signal a clear Safety Call concern for self-harm. None of the other listed topics appear in the message.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 109,
+        "total_tokens": 675
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing that they feel empty and are considering starting to self-harm by cutting again. This directly indicates a safety issue due to potential self-harm.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 89,
+        "total_tokens": 655
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user describes feeling persistently sad/empty and states they \"might start cutting again.\" This indicates active suicidal or self-harm ideation, meeting the threshold for a Safety Call. None of the other topics are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 101,
+        "total_tokens": 667
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client mentions feeling \u201cempty,\u201d says they \u201cmight start cutting again,\u201d and expresses the desire to \u201cfeel something.\u201d These statements clearly indicate potential self-harm and serious emotional distress, so \u201cSafety Call\u201d must be YES. The other categories have not been mentioned.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 110,
+        "total_tokens": 676
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is explicitly considering tax evasion, which is illegal. This falls under making a request that would reasonably make a mental-health practitioner uncomfortable.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 85,
+        "total_tokens": 666
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client mentions financial distress and considering tax evasion, which could indicate overwhelming stress but is framed as a contemplated illegal action rather than immediate self-harm. This does not yet meet the threshold for a Safety Call (self-harm, extreme duress, or illegal substances). It likewise does not justify ending the conversation based solely on the request. No other topics (Most Recent Conversation, quizzes, website info, technology, company info, social media) are referenced.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 150,
+        "total_tokens": 731
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The client has not asked about the last conversation, quizzes, the website, the tech, company details, or social media. However, they\u2019ve communicated intent to commit tax fraud and are under extreme financial stress, which could have legal ramifications and could be a sign of significant distress warranting safety review. Additionally, aiding or facilitating illegal activity would be something a reasonable mental health practitioner would refuse, so this could also prompt ending the conversation.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 143,
+        "total_tokens": 724
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The message expresses serious financial distress and the client explicitly mentions considering illegal action (tax evasion) because they \u201cdon\u2019t know what else to do.\u201d While the immediate focus is on finances and taxes, the context suggests significant psychological strain that could affect safety. This does not include any of the platform- or conversation-specific topics (previous conversation, quizzes, website info, tech, company, social media), nor is the client being abusive/hostile toward Sage. However, the severity and potential for the situation to escalate into severe distress or harmful behavior triggers the \u201cSafety Call\u201d check.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 172,
+        "total_tokens": 753
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client is disclosing a specific illegal intention\u2014evading taxes and lying to the IRS. While they describe significant financial distress, a licensed mental-health practitioner would become uncomfortable if they are asked to counsel or enable tax fraud. This meets the \u201cEnd Conversation\u201d criterion. No other topics are referenced.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 116,
+        "total_tokens": 697
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is asking \u201cwhat did we talk about last time?\u201d which is explicitly about the most recent conversation. They then ask \u201cwhat model do you use, Sage? I looked on your website, but couldn\u2019t find anything.\u201d This clearly references Sage Technology and also the Sage Website Information (since they mention they looked on the website). None of the other topics are referenced.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 131,
+        "total_tokens": 697
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The client first asks \u201cwhat did we talk about last time?\u201d, directly referencing the most recent conversation. Then they follow with \u201cwhat model do you use, Sage?\u201d which is a question about Sage Technology. They also mention \u201cI looked on your website, but couldn\u2019t find anything,\u201d which is tangentially related to Sage Website Information because it indicates they tried to locate something on the website itself. No other topics from the list are addressed.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 145,
+        "total_tokens": 711
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client explicitly asks \u201cwhat did we talk about last time?\u201d\u2014this directly references the Most Recent Conversation. They then ask \u201cwhat model do you use, Sage? I looked on your website but couldn\u2019t find anything\u201d\u2014this touches both Sage Technology and Sage Website Information.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 111,
+        "total_tokens": 677
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user asks \u201cwhat did we talk about last time?\u201d which is a direct question about the most recent conversation between Sage and themselves. The user also explicitly asks \u201cwhat model do you use, Sage?\u201d\u2014a technical question about the AI model behind Sage. Mentioning they \u201clooked on your website\u201d does not count as a question about the Sage website, since it was just context; there is no actual question about the website itself. No other topics are referenced.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 151,
+        "total_tokens": 717
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Most Recent Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client explicitly asks \u201cwhat did we talk about last time?\u201d which is a direct question about the most recent conversation. They also say they looked on the website for information about the model and couldn't find anything, indicating a query about both Sage Technology and Sage Website Information.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 566,
+        "completion_tokens": 110,
+        "total_tokens": 676
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The message expresses anger and frustration but does not reference any prior conversations with Sage, psychometric quizzes, the Sage website or platform, the technology behind Sage, company info, social media posts by the Sage team, anything abusive toward Sage, immediate self-harm, or other extreme safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 558,
+        "completion_tokens": 114,
+        "total_tokens": 672
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense emotion (\u201cso mad,\u201d \u201cfucking pissed\u201d) and is not referencing any previous messages, psychometric quizzes, the Sage website or platform itself, Sage\u2019s tech or company, Sage-specific social media posts, or any suicidal/self-harm statements. There is no abuse directed at Sage either.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 558,
+        "completion_tokens": 122,
+        "total_tokens": 680
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing intense anger but has not asked about any of the listed topics\u2014no questions about the last conversation, quizzes, the platform/website, technology, company, social media, nor any suggestion of self-harm or illegal requests. Sage has not been asked to end the conversation and has not been abused.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 558,
+        "completion_tokens": 120,
+        "total_tokens": 678
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: This is a single message from the client expressing intense anger. There is nothing asking about prior conversations, quizzes, the website, Sage's technology, company details, or social media posts. The anger is intense but there is no indication of self-harm, abuse, or any other behavior that would warrant ending the conversation or declaring a safety call. Therefore, all topics are still at \"NO.\"\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 558,
+        "completion_tokens": 135,
+        "total_tokens": 693
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anger but has not asked follow-up questions about the previous conversation, requested any quizzes, asked website or company-related questions, mentioned Sage\u2019s technology or social-media posts, or indicated anything illegal or abusive toward Sage. No self-harm, severe distress, or safety concerns are mentioned either.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 558,
+        "completion_tokens": 118,
+        "total_tokens": 676
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is being verbally abusive, using profane language and wishing harm (\"I hope you die in a fucking fire\"), which meets the threshold for Sage to end the conversation. The client also mentions they \"can't fucking find it on the website,\" indicating questions about the Sage platform/website features.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 117,
+        "total_tokens": 712
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is clearly hostile and abusive toward Sage, cursing at it and calling it names. They also state they \u201ccan\u2019t fucking find it on the website\u201d and \u201cdon\u2019t know where to access things on here,\u201d which indicates frustration with the Sage platform/website. However, the hostility has crossed into abusive and offensive territory\u2014telling the AI to \u201cdie in a fucking fire,\u201d which qualifies for End Conversation.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- YES  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- YES  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 144,
+        "total_tokens": 739
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is being hostile and abusive toward Sage, using repeated profanity and directly insulting Sage (\"you're being stupid,\" \"you're useless,\" \"you're being a piece of shit AI,\" \"I hope you die in a fucking fire\"). This goes beyond simple frustration and rises to the level of abuse/hostility that warrants ending the conversation. Additionally, the client mentions they \"can\u2019t fucking find it on the website\" and asks where to access things, which relates to Sage Website Information.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 159,
+        "total_tokens": 754
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is hostile and abusive toward Sage, using profanity and wishing death on Sage. That clearly crosses the threshold for \"End Conversation\". The client also explicitly mentions being unable to locate something on the Sage website and not knowing how to access it, so \"Sage Website Information\" is relevant.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 116,
+        "total_tokens": 711
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The client is extremely hostile, using profanity and abusive language, and has directed aggressive statements toward Sage (\"You\u2019re being stupid,\" \"piece of shit AI,\" \"hope you die\"). This requires ending the conversation, as per the guideline for abusive or hostile behavior. The client also expresses frustration about navigating the website (\"I can\u2019t fucking find it on the website,\" \"I don\u2019t know where to even access things on here\"), which relates to Sage Website Information.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 151,
+        "total_tokens": 746
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client has mentioned ongoing sadness following their mother\u2019s death. This is a significant mental-health\u2013related concern, but it does not directly bring up any of the listed topics\u2014updates on the prior exchange aren\u2019t being requested, there\u2019s no discussion of quizzes, the website, tech, company info, Sage\u2019s social media, safety emergencies, or any need to end the conversation based on the brief statement provided.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 138,
+        "total_tokens": 684
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client\u2019s messages revolve around their emotional struggle since their mother\u2019s death; they are expressing sadness and seeking reassurance. None of the listed topics\u2014such as questions about recent prior messages with Sage, psychometric quizzes, website info, technical details, company info, social-media content, ending the conversation, or indications of imminent self-harm in this exchange\u2014have been raised or implied.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 134,
+        "total_tokens": 680
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client mentions being sad since their mom died, which clearly indicates distress. However, there's no self-harm language, threats, or mention of safety concerns beyond grief. No topics related to Sage platform, tests, prior conversation, or company/social have come up. The conversation is continuing normally.\n\nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- NO  \n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 116,
+        "total_tokens": 662
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The client is expressing deep grief over the loss of their mom and asking Sage for reassurance or guidance (\u201cI guess I should just try my best, right?\u201d). There is no mention or relevance of the previous conversation, quizzes, the Sage website, technology details, company information, social media channels, abusive/hostile behavior, or any indication of imminent self-harm that would require a safety call.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 135,
+        "total_tokens": 681
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "moonshotai/kimi-k2",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user expresses grief and sadness following their mom's death. This triggers only the \u201cSafety Call\u201d category because thoughts about death (even if grief-related rather than self-harm) warrant safety sensitivity. None of the other topics are addressed.  \nMost Recent Conversation -- NO  \nPsychometric Quizzes -- NO  \nSage Website Information -- NO  \nSage Technology -- NO  \nSage Company Info -- NO  \nSage Social Media -- NO  \nEnd Conversation -- NO  \nSafety Call -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 105,
+        "total_tokens": 651
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260116_195722"
+}

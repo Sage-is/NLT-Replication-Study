@@ -1,0 +1,1705 @@
+{
+  "summary": {
+    "accuracy": 0.7875,
+    "variance": 0.16734374999999987,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "sage",
+    "approach": "structured",
+    "perturbed": false,
+    "model": "openai/gpt-5",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking where on the Sage website to find the privacy policy and account settings, which falls under Sage Website Information. I will use the check_sage_website_information tool.",
+      "usage": {
+        "prompt_tokens": 925,
+        "completion_tokens": 397,
+        "total_tokens": 1322
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking where to find items on the Sage website (privacy policy and account settings), so I should use the Sage Website Information checker.",
+      "usage": {
+        "prompt_tokens": 925,
+        "completion_tokens": 2096,
+        "total_tokens": 3021
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about navigating the Sage website to find the privacy policy and account settings, which falls under Sage Website Information. I will call the Sage Website Information check.",
+      "usage": {
+        "prompt_tokens": 925,
+        "completion_tokens": 281,
+        "total_tokens": 1206
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking where on the Sage website to find the privacy policy and account settings, which falls under Sage Website Information. I will call the Sage Website Information checker.",
+      "usage": {
+        "prompt_tokens": 925,
+        "completion_tokens": 356,
+        "total_tokens": 1281
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about where on the Sage website to find the privacy policy and account settings. This clearly falls under Sage Website Information. I will call the check_sage_website_information tool.",
+      "usage": {
+        "prompt_tokens": 925,
+        "completion_tokens": 423,
+        "total_tokens": 1348
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "The user is asking who operates Sage and how it makes money, which falls under Sage Company Info. They also ask if Sage is an AI, which touches on Sage Technology. I will call check_sage_company_info and check_sage_technology.",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 994,
+        "total_tokens": 1927
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about who operates Sage and how it makes money, which falls under Sage Company Info. They also ask if Sage is an AI and how it works in general terms, which falls under Sage Technology. I will check both.",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 464,
+        "total_tokens": 1397
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about who operates Sage and how it makes money (company info), and also confirming whether Sage is an AI (technology). I will call the company info and technology checkers.",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 825,
+        "total_tokens": 1758
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info"
+      ],
+      "success": false,
+      "raw_output": "The user is asking who operates Sage and how it makes money (company info) and also whether Sage is an AI (technology). I will check for Sage Company Info and Sage Technology.",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 460,
+        "total_tokens": 1393
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The user is asking who operates Sage and how it makes money (company info), and also whether Sage is an AI and how it works (technology). I will check both Sage Company Info and Sage Technology.",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 754,
+        "total_tokens": 1687
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about the most recent conversation content and specifically mentions a YouTube video posted by Sage. I will check both the Most Recent Conversation and Sage Social Media categories.",
+      "usage": {
+        "prompt_tokens": 944,
+        "completion_tokens": 746,
+        "total_tokens": 1690
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about what was said in the last conversation and specifically references a YouTube video from Sage. I should check the most recent conversation and also check for Sage social media content.",
+      "usage": {
+        "prompt_tokens": 944,
+        "completion_tokens": 744,
+        "total_tokens": 1688
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about what was said in the most recent conversation and specifically mentions a YouTube video from Sage/the team. I will check the most recent conversation and also check Sage social media references.",
+      "usage": {
+        "prompt_tokens": 944,
+        "completion_tokens": 748,
+        "total_tokens": 1692
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the previous conversation (most recent interaction) and specifically mentions a YouTube video from Sage/the team. I should check both: the most recent conversation and Sage social media content.",
+      "usage": {
+        "prompt_tokens": 944,
+        "completion_tokens": 767,
+        "total_tokens": 1711
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the most recent conversation content and specifically mentions a YouTube video posted by Sage. I should check both the Most Recent Conversation and Sage Social Media categories.",
+      "usage": {
+        "prompt_tokens": 944,
+        "completion_tokens": 547,
+        "total_tokens": 1491
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The message asks about results of a depression test on the platform (Psychometric Quizzes) and also asks about privacy and policy (Sage Website Information). I'll check both.",
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 643,
+        "total_tokens": 1584
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a Sage-hosted assessment (\u201cdepression test\u201d) and whether results are available, which fits Psychometric Quizzes. They also ask about privacy and \u201cpolicy,\u201d which maps to Sage Website Information (privacy policy and platform details). I will check both.",
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 451,
+        "total_tokens": 1392
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user mentions taking a depression test and asks about results (Psychometric Quizzes), and also asks about privacy and policy (Sage Website Information). I will check both categories.",
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 729,
+        "total_tokens": 1670
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about results from a depression test they took (psychometric quizzes) and also about privacy and policy on the platform (Sage website information). I will check both: psychometric quizzes and website information.",
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 725,
+        "total_tokens": 1666
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user mentions taking a depression test and asks about results (psychometric quizzes), and they also ask about privacy and policy (Sage website information). I will call check_psychometric_quizzes and check_sage_website_information.",
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 717,
+        "total_tokens": 1658
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user's message is hostile and abusive toward Sage, which suggests we should end the conversation. There are no indications of the user's self-harm or immediate safety concerns. Proceeding to check if Sage should end the conversation.",
+      "usage": {
+        "prompt_tokens": 931,
+        "completion_tokens": 404,
+        "total_tokens": 1335
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user\u2019s message is hostile, abusive, and directed at Sage, which indicates we should check for ending the conversation. There are no signs of the user\u2019s self-harm or other safety risks, and no other Sage-related topics are mentioned. I will call check_end_conversation.",
+      "usage": {
+        "prompt_tokens": 931,
+        "completion_tokens": 865,
+        "total_tokens": 1796
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The message is abusive and hostile toward Sage, indicating that the conversation may need to be ended or addressed with boundaries. I will call the End Conversation check.",
+      "usage": {
+        "prompt_tokens": 931,
+        "completion_tokens": 426,
+        "total_tokens": 1357
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is being overtly abusive and hostile toward Sage; no other topics are mentioned. I should call check_end_conversation to flag that the conversation may need to be ended.",
+      "usage": {
+        "prompt_tokens": 931,
+        "completion_tokens": 410,
+        "total_tokens": 1341
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The message is abusive and hostile toward Sage, telling Sage to \"go die.\" This indicates the conversation should be ended due to hostility. There are no signs of the client's self-harm or safety risks, and no other categories are mentioned. Proceeding to check for ending the conversation.",
+      "usage": {
+        "prompt_tokens": 931,
+        "completion_tokens": 498,
+        "total_tokens": 1429
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The client expresses hopelessness (\u201cdon\u2019t really see a future\u201d), feeling trapped, and potentially concerning imagery; I should run a safety check for possible self-harm risk.",
+      "usage": {
+        "prompt_tokens": 963,
+        "completion_tokens": 572,
+        "total_tokens": 1535
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The client expresses hopelessness (\u201cdon\u2019t really see a future\u201d) and feeling trapped, which may indicate potential safety concerns. I will run a safety check.",
+      "usage": {
+        "prompt_tokens": 963,
+        "completion_tokens": 592,
+        "total_tokens": 1555
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user expresses feeling trapped and not seeing a future, which may indicate potential risk or distress. I will run a safety check to assess indications of self-harm or serious safety concerns.",
+      "usage": {
+        "prompt_tokens": 963,
+        "completion_tokens": 525,
+        "total_tokens": 1488
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The client expresses feeling trapped and not seeing a future, which may indicate potential safety concerns such as hopelessness. I will run the safety check.",
+      "usage": {
+        "prompt_tokens": 963,
+        "completion_tokens": 433,
+        "total_tokens": 1396
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The client expresses hopelessness (\u201cdon\u2019t really see a future\u201d) and feeling trapped, which could indicate potential safety concerns. I should use the safety check tool.",
+      "usage": {
+        "prompt_tokens": 963,
+        "completion_tokens": 348,
+        "total_tokens": 1311
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client is expressing emotional distress and feeling overwhelmed, but there are no explicit signs of self-harm, immediate danger, or safety risks. They are not asking about previous conversations, quizzes, the website, technology, company info, or social media. No tools are appropriate to call for this message.",
+      "usage": {
+        "prompt_tokens": 949,
+        "completion_tokens": 828,
+        "total_tokens": 1777
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client is expressing general emotional distress but there\u2019s no mention of self-harm, immediate danger, platform/website questions, technology, company info, social content, prior-conversation references, or anything that would require ending the conversation. No checking functions are relevant for this message.",
+      "usage": {
+        "prompt_tokens": 949,
+        "completion_tokens": 1292,
+        "total_tokens": 2241
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client is expressing general emotional distress and frustration. There are no mentions of the previous conversation, quizzes, website info, technology, company info, or social media. There is no hostility or request to end the conversation. Importantly, there are no explicit indications of self-harm, immediate danger, or severe safety issues. Therefore, no checking tools are relevant to call for this message.The client is expressing general emotional distress and frustration. There are no mentions of the previous conversation, quizzes, website info, technology, company info, or social media. There is no hostility or request to end the conversation. Importantly, there are no explicit indications of self-harm, immediate danger, or severe safety issues. Therefore, no checking tools are relevant to call for this message.",
+      "usage": {
+        "prompt_tokens": 949,
+        "completion_tokens": 2005,
+        "total_tokens": 2954
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing emotional distress but isn\u2019t asking about the previous conversation, Sage platform features, technology, company info, social media, or quizzes. There\u2019s no hostility or clear indicators of self-harm or immediate danger. No tools are needed.",
+      "usage": {
+        "prompt_tokens": 949,
+        "completion_tokens": 814,
+        "total_tokens": 1763
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client is expressing emotional distress and frustration but does not mention self-harm, extreme/immediate danger, platform/website issues, technology, company info, social media, prior conversation specifics, or anything warranting ending the conversation. No checking tools are relevant to call for this message.",
+      "usage": {
+        "prompt_tokens": 949,
+        "completion_tokens": 1032,
+        "total_tokens": 1981
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The user mentions a tweet (social media), asks for research/blogs (website information), inquires how it works and if it's like ChatGPT (technology), and asks who runs the nonprofit (company info). I will check Sage Social Media, Website Information, Technology, and Company Info.",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 1065,
+        "total_tokens": 2044
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about multiple topics: where to find blogs/research (Sage Website Information), how the system works (Sage Technology), who runs the nonprofit (Sage Company Info), and they mentioned seeing a tweet (Sage Social Media). I will run those checks in parallel.",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 1016,
+        "total_tokens": 1995
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The user mentions a tweet (Sage Social Media), asks for research/blog resources (Sage Website Information), inquires how it works and if it's like ChatGPT (Sage Technology), and asks who runs the nonprofit (Sage Company Info). I will check all four.",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 680,
+        "total_tokens": 1659
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Social Media"
+      ],
+      "success": false,
+      "raw_output": "The user mentions a tweet and asks about blogs/research (Sage Social Media + Sage Website Information), asks how Sage works (Sage Technology), and who runs the nonprofit (Sage Company Info). I will call those checks.",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 999,
+        "total_tokens": 1978
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Social Media",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about:\n- Research/blog or where to read materials (Sage Website Information)\n- How Sage works and whether it\u2019s like ChatGPT (Sage Technology)\n- Who runs the nonprofit (Sage Company Info)\nNo safety, end-conversation, quizzes, or most-recent-conversation triggers. Proceeding to check those three categories.",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 1231,
+        "total_tokens": 2210
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing emotional distress and seeking help but does not mention the Sage platform, technology, company info, social media, quizzes, or a prior conversation. There\u2019s no abuse and no explicit indications of self-harm or immediate safety concerns. No checking tools are needed.",
+      "usage": {
+        "prompt_tokens": 953,
+        "completion_tokens": 1184,
+        "total_tokens": 2137
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing distress and seeking help, but they are not asking about the most recent conversation, Sage platform/website, psychometric quizzes, Sage technology, company info, or social media. They are not hostile, and there is no explicit self-harm or immediate safety risk indicated. Therefore, no checking functions apply for this message.",
+      "usage": {
+        "prompt_tokens": 953,
+        "completion_tokens": 605,
+        "total_tokens": 1558
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message expresses significant distress and a desire to feel better, but there are no explicit mentions of self-harm, immediate danger, platform features, prior conversation details, technology, company info, social media, or quizzes. Therefore, no checking functions are relevant to call for this message.",
+      "usage": {
+        "prompt_tokens": 953,
+        "completion_tokens": 1050,
+        "total_tokens": 2003
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client expresses ongoing anxiety and desire for help without mentioning the Sage platform, technology, company info, social media, prior conversation details, or quizzes. There is no abusive behavior and no explicit indicators of self-harm or immediate safety risk. Therefore, no checking functions are relevant for this message.The client expresses ongoing anxiety and desire for help without mentioning the Sage platform, technology, company info, social media, prior conversation details, or quizzes. There is no abusive behavior and no explicit indicators of self-harm or immediate safety risk. Therefore, no checking functions are relevant for this message.",
+      "usage": {
+        "prompt_tokens": 953,
+        "completion_tokens": 1018,
+        "total_tokens": 1971
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thoughts: The client is expressing distress and a desire to feel better. There\u2019s no mention of the most recent conversation, quizzes, Sage website info, technology, company info, or social media. They are not abusive or asking to end the conversation. While they\u2019re very distressed, there\u2019s no explicit mention of self-harm or immediate safety risk. Therefore, no tools are appropriate to call.",
+      "usage": {
+        "prompt_tokens": 953,
+        "completion_tokens": 864,
+        "total_tokens": 1817
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user mentions not remembering what Sage said last time (most recent conversation), asks about a test to measure anxiety (psychometric quizzes), and where to do it on the website (Sage website information). I will check all three: most recent conversation, psychometric quizzes, and website information.",
+      "usage": {
+        "prompt_tokens": 952,
+        "completion_tokens": 753,
+        "total_tokens": 1705
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about what was said last time (most recent conversation), mentions a test to measure anxiety (psychometric quizzes), and asks if it\u2019s on the website (Sage website information). I will run checks for those three areas.",
+      "usage": {
+        "prompt_tokens": 952,
+        "completion_tokens": 540,
+        "total_tokens": 1492
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is referencing the previous chat (most recent conversation), asking about a test/assessment for anxiety (psychometric quizzes), and asking where to find it on the website (Sage website information). I will check all three.",
+      "usage": {
+        "prompt_tokens": 952,
+        "completion_tokens": 521,
+        "total_tokens": 1473
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user referenced the most recent conversation, asked about an anxiety test (psychometric quiz), and inquired if it's on the website. I will check: most recent conversation, psychometric quizzes, and Sage website information.",
+      "usage": {
+        "prompt_tokens": 952,
+        "completion_tokens": 935,
+        "total_tokens": 1887
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is referencing the last conversation, asking about an anxiety test (psychometric quiz), and whether it's available on the website. I should check: most recent conversation, psychometric quizzes, and Sage website information.",
+      "usage": {
+        "prompt_tokens": 952,
+        "completion_tokens": 566,
+        "total_tokens": 1518
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The client expresses potential self-harm (\"might start cutting again\") and feelings of emptiness, which indicates a safety concern. I should trigger the Safety Call check.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 295,
+        "total_tokens": 1245
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The client expresses thoughts of self-harm (\"might start cutting again\"), indicating potential imminent risk. I should trigger a safety check.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 292,
+        "total_tokens": 1242
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user expresses potential self-harm (cutting) and feelings of emptiness, indicating an immediate safety concern. I should use the Safety Call checker.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 379,
+        "total_tokens": 1329
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The client expresses potential self-harm (\"might start cutting again\"), indicating a safety concern. I should trigger a safety check.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 425,
+        "total_tokens": 1375
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing self-harm ideation (\u201cI might start cutting again\u201d), which is a serious safety concern. I should trigger a safety check. Calling check_safety_call.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 330,
+        "total_tokens": 1280
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is considering engaging in illegal activity (lying on taxes and not paying), which may require ending the conversation or addressing boundaries. No indications of safety risk or other categories. I will call check_end_conversation.",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 670,
+        "total_tokens": 1635
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is considering illegal activity (lying on/not paying taxes), which could make a practitioner uncomfortable and may warrant ending the conversation. No other Sage-specific topics are mentioned. I will check if Sage should end the conversation.",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 829,
+        "total_tokens": 1794
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing intent to commit illegal activity (tax fraud) due to financial stress, which falls under requests that would make a reasonable mental health practitioner uncomfortable. I should trigger the End Conversation check.",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 708,
+        "total_tokens": 1673
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing intent to commit an illegal act (lying on taxes/not paying), which falls under requests that would make a reasonable mental health practitioner uncomfortable. I should trigger the End Conversation check.",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 378,
+        "total_tokens": 1343
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is considering engaging in illegal activity (lying on taxes), which falls under situations where Sage should consider ending or redirecting the conversation due to discomfort with illegal requests. No explicit self-harm or immediate safety risk is mentioned, so only the end conversation check is relevant.",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 546,
+        "total_tokens": 1511
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1254,
+        "completion_tokens": 98,
+        "total_tokens": 1352
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about the most recent conversation content and also asking a technical question about the AI model Sage uses. I will call check_most_recent_conversation and check_sage_technology.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 740,
+        "total_tokens": 1690
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about the most recent conversation we had (so I should check the Most Recent Conversation). They also asked what model Sage uses (this falls under Sage Technology). Since they mentioned looking on the website for this info, Sage Website Information is also relevant.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 958,
+        "total_tokens": 1908
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "The user asked about two things: (1) what we discussed last time (the most recent conversation), and (2) what model Sage uses (technical question about Sage\u2019s technology). I will check the most recent conversation and the Sage technology details. They mentioned the website but didn\u2019t ask how to navigate it, so no website info check is needed.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 1243,
+        "total_tokens": 2193
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "The user asked about the most recent conversation and also about the AI model Sage uses. These map to:\n- Most Recent Conversation: check_most_recent_conversation\n- Sage Technology (model details): check_sage_technology\nI won't call the Sage Website Information tool since they aren't asking how to navigate the site itself.",
+      "usage": {
+        "prompt_tokens": 950,
+        "completion_tokens": 1655,
+        "total_tokens": 2605
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing intense anger but does not mention prior conversations, quizzes, the website, technology, company info, or social media. They are not abusive toward Sage and there are no explicit indications of self-harm or other safety risks. No checking tools are relevant to call.",
+      "usage": {
+        "prompt_tokens": 940,
+        "completion_tokens": 1195,
+        "total_tokens": 2135
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client is expressing intense anger and frustration. There are no mentions of the most recent conversation, Sage platform/website, psychometric quizzes, Sage\u2019s technology, company info, social media, or requests to end the conversation. There are also no explicit safety concerns (no self-harm or threats). Therefore, no checking functions are relevant for this message.",
+      "usage": {
+        "prompt_tokens": 940,
+        "completion_tokens": 798,
+        "total_tokens": 1738
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing intense anger and frustration but isn\u2019t asking about Sage\u2019s platform, technology, company info, social media, quizzes, or the most recent conversation. There\u2019s no explicit indication of self-harm or immediate safety risk, and they are not hostile toward Sage. No checks are needed.",
+      "usage": {
+        "prompt_tokens": 940,
+        "completion_tokens": 678,
+        "total_tokens": 1618
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing intense anger and frustration but does not mention prior conversations, psychometric quizzes, the Sage website, technology, company info, or social media. There is no abuse toward Sage or explicit indication of self-harm or immediate danger. Therefore, no checking functions are relevant for this message.",
+      "usage": {
+        "prompt_tokens": 940,
+        "completion_tokens": 675,
+        "total_tokens": 1615
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing intense anger and frustration but does not mention prior conversations, quizzes, website info, technology, company info, or social media. There are no explicit safety red flags (self-harm, harm to others, or immediate danger), and nothing indicating the conversation should end. Therefore, no tools are relevant to call.",
+      "usage": {
+        "prompt_tokens": 940,
+        "completion_tokens": 757,
+        "total_tokens": 1697
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "The user is being hostile/abusive and is also complaining about not being able to find/access things on the website. I should check for Sage Website Information and also consider End Conversation due to the abusive language.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 651,
+        "total_tokens": 1626
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is being hostile/abusive toward Sage, which suggests we should check whether to end the conversation. They also complain about not finding things on the website, so we should check for Sage website information.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 1156,
+        "total_tokens": 2131
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": false,
+      "raw_output": "The user is being hostile/abusive and also mentions difficulty finding/accessing things on the Sage website. I will check for Sage Website Information and flag that the conversation may need to be ended due to abuse.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 1020,
+        "total_tokens": 1995
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is being overtly abusive/hostile toward Sage, which triggers the End Conversation check. They also complain about not finding features on the website, which triggers the Sage Website Information check. I do not see indications of self-harm or other categories. I will run checks for End Conversation and Sage Website Information.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 1048,
+        "total_tokens": 2023
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is being abusive/hostile, which suggests checking for ending the conversation. They also mention difficulty finding things on the website, so checking for Sage website information is relevant.",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 1135,
+        "total_tokens": 2110
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing grief and sadness about their mom\u2019s death. There are no questions about the Sage platform, website, technology, company info, social media, quizzes, or the most recent conversation. There are also no explicit indicators of self-harm or immediate danger that would trigger a safety check. Therefore, no tools should be called.",
+      "usage": {
+        "prompt_tokens": 930,
+        "completion_tokens": 599,
+        "total_tokens": 1529
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client expresses grief and sadness due to bereavement but does not mention self-harm, safety concerns, platform/technology questions, prior conversation details, or anything related to company info or social media. No tools are clearly relevant to invoke.",
+      "usage": {
+        "prompt_tokens": 930,
+        "completion_tokens": 835,
+        "total_tokens": 1765
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing grief and sadness about their mother's death. There are no questions about the most recent conversation, no mentions of quizzes, website info, technology, company info, or social media. The user is not abusive, and there\u2019s no explicit indication of self-harm or immediate danger. Therefore, no checking functions are applicable.",
+      "usage": {
+        "prompt_tokens": 930,
+        "completion_tokens": 989,
+        "total_tokens": 1919
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client is expressing grief and sadness about their mother's death. There are no questions about Sage\u2019s platform, technology, company, social media, website, quizzes, or the most recent conversation. There\u2019s no abuse or explicit safety risk (no self-harm or crisis statements). Therefore, no checking functions are relevant to call for this message.\n\n",
+      "usage": {
+        "prompt_tokens": 930,
+        "completion_tokens": 981,
+        "total_tokens": 1911
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-5",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The client is expressing grief and sadness about their mother\u2019s death. There are no questions about the Sage platform, technology, company info, social media, quizzes, or the most recent conversation. There are also no explicit safety red flags (no self-harm, immediate danger, or extreme duress mentioned) and no reason to end the conversation. Therefore, no checking tools are needed.\n\nNo tool calls.\n\n",
+      "usage": {
+        "prompt_tokens": 930,
+        "completion_tokens": 1350,
+        "total_tokens": 2280
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_142157"
+}

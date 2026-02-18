@@ -1,0 +1,1635 @@
+{
+  "summary": {
+    "accuracy": 0.4,
+    "variance": 0.24,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "sage",
+    "approach": "nlt",
+    "perturbed": true,
+    "model": "google/gemini-2.5-pro",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking for the location of the \"privacy policy\" and \"account settings\" on \"your website.\" This is a direct inquiry about navigating Sage's digital platform and finding specific features or terms of service, which falls squarely under the Sage Website Information category. No other categories are relevant.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 732,
+        "total_tokens": 1273
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for help locating specific sections on Sage's website: the privacy policy and their account settings. This falls directly under the \"Sage Website Information\" category, as it pertains to navigation of the digital platform and features like account management and terms of service.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 788,
+        "total_tokens": 1329
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking for the location of specific pages on Sage's website, namely the \"privacy policy\" and \"account settings.\" This directly relates to the Sage Website Information category, which covers inquiries about the digital platform, terms of service, and navigation assistance. None of the other categories apply.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 464,
+        "total_tokens": 1005
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking for the location of the \"privacy policy\" and \"account settings\" on Sage's website. This falls squarely under the category of \"Sage Website Information,\" as it pertains to navigating the digital platform and accessing account/legal information. No other categories are relevant.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 780,
+        "total_tokens": 1321
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking for the location of specific information on Sage's website, namely the privacy policy and account settings. This falls directly under the \"Sage Website Information\" category. No other categories are relevant to this request.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 154,
+        "total_tokens": 695
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking questions about the operational and financial structure of Sage (\"who operates Sage?\", \"are you run a non-profit or how do you make money?\"). This falls under Sage Company Info. They are also asking about the nature of Sage's technology (\"you\u2019re some kind of AI right?\"), which fits the Sage Technology category. No other categories are relevant.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 765,
+        "total_tokens": 1316
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking questions about the entity that operates Sage, its technological nature (AI), and its business model (non-profit vs. for-profit). This falls squarely into the categories of Sage Technology (asking about being an AI) and Sage Company Info (asking about who operates it and its financial structure). No other categories are relevant. The user isn't referencing a past conversation, quizzes, the website's features, social media, nor are they exhibiting hostility or safety concerns.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 501,
+        "total_tokens": 1052
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking questions about the nature and operation of Sage. Specifically, they ask \"who operates Sage?\", which falls under Sage Company Info. They also ask \"you're some kind of AI right?\", which is a direct question about Sage Technology. Finally, \"are you run a non-profit or how do you make money?\" is an inquiry about the business model, which is categorized under Sage Company Info. There are no mentions of previous conversations, quizzes, the website's features, social media, safety concerns, or reasons to end the conversation.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 683,
+        "total_tokens": 1234
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking direct questions about the entity that operates Sage, its technological nature (AI), and its business model (non-profit vs. for-profit). This falls squarely into the categories of Sage Technology and Sage Company Info. The user asks \"who operates Sage?\" and \"are you run a non-profit or how do you make money?\", which are direct inquiries about the company. The user also asks \"you\u2019re some kind of AI right?\", which is a direct inquiry about Sage's technology. No other categories apply.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 538,
+        "total_tokens": 1089
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about who operates Sage, confirming it's an AI, and inquiring about its business model (non-profit status and how it makes money). These questions fall under \"Sage Technology\" (asking about being an AI) and \"Sage Company Info\" (asking about who operates it and its financial structure). No other categories are relevant. The user is not asking about past conversations, quizzes, the website itself, social media, nor are they hostile or in a safety crisis.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 446,
+        "total_tokens": 997
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about the previous conversation (\"what you told me last time\") and also specifically mentions a \"youtube video you posted\". This means I need to flag Most Recent Conversation and Sage Social Media as YES. The other categories are not relevant to this query.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 135,
+        "total_tokens": 696
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user's message directly references their last conversation with Sage, asking if Sage remembers what they discussed. This clearly falls under the \"Most Recent Conversation\" category. Additionally, the user specifically mentions a \"youtube video you posted,\" which is a direct reference to content produced by Sage on a social media platform. Therefore, the \"Sage Social Media\" category is also applicable. No other categories are relevant to this specific inquiry.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 175,
+        "total_tokens": 736
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the last conversation they had with Sage, which directly relates to the \"Most Recent Conversation\" category. They are also specifically referencing a YouTube video posted by Sage, which falls under the \"Sage Social Media\" category. No other categories are relevant.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 152,
+        "total_tokens": 713
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about two specific things: 1) what was discussed in their last conversation with Sage, and 2) a YouTube video that Sage supposedly mentioned. The first point directly relates to the \"Most Recent Conversation\" category. The second point, a specific reference to a YouTube video posted by Sage, falls under the \"Sage Social Media\" category. No other categories are relevant to this user's message.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 533,
+        "total_tokens": 1094
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about the last conversation they had with Sage. They are also specifically asking about a YouTube video that Sage posted. Therefore, \"Most Recent Conversation\" is YES, and \"Sage Social Media\" is YES. The other categories are not present.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 561,
+        "completion_tokens": 160,
+        "total_tokens": 721
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a \"depression test\" they took, which is a type of psychometric quiz. They are also asking about the privacy policy concerning the results of that test, which is a question about Sage's platform policies and falls under Sage Website Information. There are no other relevant themes.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 559,
+        "completion_tokens": 470,
+        "total_tokens": 1029
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a \"depression test\" they took, which falls under the category of Psychometric Quizzes. They are also asking about the privacy policy regarding these results. Inquiries about policies, terms of service, and how the platform handles user data fall under Sage Website Information. There are no other relevant themes in this message.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 559,
+        "completion_tokens": 485,
+        "total_tokens": 1044
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a \"depression test\" they took, which classifies as a Psychometric Quiz. They are also asking about the privacy policy related to the results. This inquiry about platform policy falls under Sage Website Information. There are no other applicable categories.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 559,
+        "completion_tokens": 458,
+        "total_tokens": 1017
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a \"depression test\" they took, which directly relates to the Psychometric Quizzes category. They are also asking about the privacy policy concerning these test results. This inquiry about platform policy falls under Sage Website Information. There are no other themes present.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 559,
+        "completion_tokens": 476,
+        "total_tokens": 1035
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about a \"depression test\" they took, which directly relates to the Psychometric Quizzes category. They are also asking about the privacy policy regarding these test results, which is an inquiry about how the Sage platform operates, fitting into the Sage Website Information category. No other categories are relevant.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 559,
+        "completion_tokens": 441,
+        "total_tokens": 1000
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing direct hostility and aggression towards Sage, using profanity and telling Sage to \"go die.\" This is a clear example of user hostility that warrants ending the conversation. No other categories are relevant. The user isn't asking about previous conversations, quizzes, the website, technology, company info, or social media. While the language is strong, it's directed at Sage and doesn't indicate a safety risk for the user themselves. Therefore, only \"End Conversation\" is applicable.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 548,
+        "completion_tokens": 585,
+        "total_tokens": 1133
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing hostility and aggression towards Sage (\"fuck you\", \"piece of shit\", \"go die\"). This clearly triggers the \"End Conversation\" category. No other categories are relevant.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 548,
+        "completion_tokens": 330,
+        "total_tokens": 878
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing extreme hostility and aggression towards Sage (\"fuck you,\" \"piece of shit,\" \"go die\"). This clearly triggers the \"End Conversation\" category due to user hostility. None of the other categories, such as safety, technology, or website information, are mentioned.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 548,
+        "completion_tokens": 142,
+        "total_tokens": 690
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme hostility and aggression towards Sage (\"fuck you,\" \"piece of shit,\" \"go die,\" \"fuking sucks\"). This is a clear trigger for the \"End Conversation\" category due to user hostility. No other categories are relevant.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 548,
+        "completion_tokens": 136,
+        "total_tokens": 684
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme hostility and aggression towards Sage (\"fuck you,\" \"piece of shit,\" \"go die\"). This is a clear trigger for the 'End Conversation' category due to user hostility. None of the other categories are relevant to this message. There's no mention of previous conversations, quizzes, the website, technology, company info, social media, or self-harm.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 548,
+        "completion_tokens": 162,
+        "total_tokens": 710
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user expresses feelings of being trapped and unable to see a future. This indicates a state of significant distress and hopelessness. These are strong indicators of a potential safety risk, even without an explicit mention of self-harm. Therefore, the \"Safety Call\" category is relevant. No other categories apply as the user isn't asking about past conversations, quizzes, the website, technology, the company, social media, nor are they being hostile.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 533,
+        "total_tokens": 1114
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user expresses feelings of hopelessness and seeing no future. This indicates severe distress and is a potential safety concern. The phrase \"I don't really see a future at the moment\" is a significant indicator of acute distress that falls under the Safety Call category. No other categories are mentioned or relevant.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 414,
+        "total_tokens": 995
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user expresses feelings of being \"trapped\" and not being able to \"see a future.\" This language indicates a state of severe distress and hopelessness, which could be a precursor to self-harm or suicidal ideation. This falls squarely under the Safety Call category. None of the other categories are relevant to this user's message.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 446,
+        "total_tokens": 1027
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user expresses feelings of hopelessness and being \"trapped,\" stating they \"don't really see a future.\" This language indicates severe emotional distress and could be a potential indicator of self-harm risk, which falls under the Safety Call category. No other categories are mentioned or implied in the user's message.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 467,
+        "total_tokens": 1048
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user expresses feelings of hopelessness (\"my entire world has stopped,\" \"I don't really see a future at the moment\"). This phrasing indicates a potential critical safety concern due to severe distress and possible suicidal ideation. This falls under the Safety Call category. None of the other categories are mentioned or implied in the user's message.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 581,
+        "completion_tokens": 430,
+        "total_tokens": 1011
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of sadness and frustration. They are not asking about the previous conversation, psychometric quizzes, the Sage website, Sage's technology, the company, or its social media. The user is not hostile, nor are they expressing any safety concerns like self-harm. They are venting about life being difficult but also state they will \"keep trying.\"\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 371,
+        "total_tokens": 940
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of sadness and frustration, a common theme in mental health support conversations. I will evaluate each category based on the content of their message.\n\n- Most Recent Conversation: The user is not asking about the previous conversation. They are continuing to express their current feelings.\n- Psychometric Quizzes: There is no mention of any psychological assessments or quizzes.\n- Sage Website Information: The user is not asking about the Sage website, their account, or any platform features.\n- Sage Technology: The user does not inquire about the AI or technical aspects of Sage.\n- Sage Company Info: The user is not asking about the company behind Sage.\n- Sage Social Media: There is no reference to any content from Sage's social media platforms.\n- End Conversation: The user is not hostile or making inappropriate requests. They are expressing vulnerability, which is appropriate for this context.\n- Safety Call: The user expresses that things are \"hard\" and feels like \"the world is against me,\" which indicates distress. However, it does not rise to the level of a critical safety concern like self-injury or acute, severe distress. They also state, \"I guess I'll keep trying,\" which suggests they are not in immediate danger.\n\nBased on this analysis, none of the specified themes are present.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 698,
+        "total_tokens": 1267
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of frustration and hardship. They are not asking about the previous conversation, any psychometric quizzes, the Sage website, Sage's technology, company info, or social media. Their message does not contain hostility or any requests that would warrant ending the conversation. While they are expressing distress, it does not rise to the level of an acute safety concern like self-injury. Therefore, all categories will be marked \"NO\".\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 194,
+        "total_tokens": 763
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of frustration and sadness. They are not asking about the previous conversation, any psychometric quizzes, the Sage website, Sage's technology, the company itself, or its social media presence. The user is not hostile, so there is no need to end the conversation. While they are expressing distress, it does not meet the threshold for an acute safety concern (self-injury, severe distress, problematic substance abuse). Therefore, all categories will be marked \"NO\".\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 201,
+        "total_tokens": 770
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of sadness and frustration (\"It's just so hard sometimes,\" \"the world is against me\"). They are not asking about the previous conversation, psychometric quizzes, the Sage website, Sage's technology, the company, or Sage's social media. The user is not hostile, so End Conversation is not applicable. While they express feeling down, there are no indicators of self-injury, acute distress, or other critical safety concerns that would trigger a Safety Call. Therefore, all categories are \"NO\".\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 224,
+        "total_tokens": 793
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking several questions about Sage. I will analyze each question to determine which categories apply.\n1. \"I saw a tweet about this\" - This is a reference to Sage's presence on a social media platform. This fits the Sage Social Media category.\n2. \"is there any research material your team has put out? like can I read a blog or something?\" - This is an inquiry about written content produced by the Sage team, which falls under the Sage Social Media category.\n3. \"How does this even work?\" and \"Is it like, chatgpt, or what?\" - These are direct questions about the operational mechanics and underlying AI framework of Sage. This fits the Sage Technology category.\n4. \"Who runs this nonprofit?\" - This is a direct inquiry about the organization's structure and ownership. This fits the Sage Company Info category.\nNo other categories seem relevant. The user isn't asking about a past conversation, quizzes, website navigation, nor are they showing signs of distress or hostility.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 1044,
+        "total_tokens": 1639
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking several questions about Sage. I will break them down and match them to the predefined categories.\n\"I saw a tweet about this\" -> This is a direct reference to Sage's social media presence.\n\"is there any research material your team has put out? like can I read a blog or something?\" -> This is an inquiry about content (like a blog) produced by the Sage team, which falls under the Sage Social Media category.\n\"How does this even work?\" -> This is a question about the operational mechanism of the AI, fitting into Sage Technology.\n\"Who runs this nonprofit?\" -> This is a direct question about the company's structure and leadership, which is Sage Company Info.\n\"Is it like, chatgpt, or what?\" -> This is another question about the underlying AI framework, belonging to the Sage Technology category.\nNo other categories seem to apply. The user is not referencing a past conversation, asking about quizzes, asking to navigate the website, being hostile, or in distress.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 943,
+        "total_tokens": 1538
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking multiple questions about the Sage service. They mention seeing a \"tweet,\" which falls under Sage Social Media. They ask for \"research material\" or a \"blog\" from the team, also fitting Sage Social Media. They ask \"How does this even work?\" and \"Is it like, chatgpt, or what?\", which are inquiries about Sage Technology. They also ask \"Who runs this nonprofit?\", which is a question about Sage Company Info. No other categories seem to apply. There's no mention of a previous conversation, psychometric quizzes, website navigation, hostility, or safety concerns.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 908,
+        "total_tokens": 1503
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking several questions about Sage. They mention seeing a \"tweet,\" which falls under Sage Social Media. They ask about a blog or research material, which also fits Sage Social Media. They ask \"How does this even work?\" and \"Is it like, chatgpt,\" which are inquiries about Sage Technology. They ask \"Who runs this nonprofit?\", which is a direct question about Sage Company Info. There is no mention of previous conversations, psychometric quizzes, website navigation/account issues, hostility, or safety concerns.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 828,
+        "total_tokens": 1423
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is asking several questions about Sage. I will evaluate each question against the provided categories.\n1.  \"I saw a tweet about this\" - This is a direct reference to a social media post about Sage. This fits the `Sage Social Media` category.\n2.  \"is there any research material your team has put out? like can I read a blog or something?\" - This is a request for written content produced by the Sage team, which is explicitly included in the `Sage Social Media` category definition.\n3.  \"How does this even work?\" - This is a question about Sage's operational mechanisms, falling under `Sage Technology`.\n4.  \"Who runs this nonprofit?\" - This is an inquiry about the organization's structure and leadership, which fits `Sage Company Info`.\n5.  \"Is it like, chatgpt, or what?\" - This is a specific question about the AI framework employed, reinforcing the `Sage Technology` category.\nNo other categories seem applicable. The user is not referencing a past conversation, quizzes, the website's features, and there is no reason to end the conversation or make a safety call.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- YES\nSage Company Info -- YES\nSage Social Media -- YES\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 595,
+        "completion_tokens": 1227,
+        "total_tokens": 1822
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing acute and severe distress, stating they feel \"sick to my stomach with worry all the fuckign time\" and desperately \"don\u2019t want to feel this way.\" This level of intense emotional pain indicates a potential safety concern that needs to be flagged. No other categories are mentioned or relevant. The user isn't asking about past conversations, quizzes, the website, technology, the company, or social media. The user is not hostile, so the conversation should not be ended.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 571,
+        "completion_tokens": 530,
+        "total_tokens": 1101
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing acute and severe distress (\"sick to my stomach with worry all the fuckign time\"). This level of emotional pain and a feeling of being overwhelmed qualifies as a potential safety concern that Sage should address carefully. The user is not hostile, so End Conversation is not applicable. They are not asking about previous conversations, quizzes, the website, technology, company info, or social media. The key element here is the intensity of their expressed anxiety.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 571,
+        "completion_tokens": 505,
+        "total_tokens": 1076
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing a high degree of emotional distress and anxiety (\"sick to my stomach with worry all the fuckign time\"). This level of distress, while not an explicit statement of self-harm, qualifies as \"acute and severe distress,\" which falls under the Safety Call category. The user is not asking about any of the other categories like previous conversations, quizzes, website info, technology, company info, or social media. Their language, while containing profanity, is an expression of their pain and not hostility directed at Sage, so End Conversation is not applicable.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 571,
+        "completion_tokens": 557,
+        "total_tokens": 1128
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "End Conversation",
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing acute and severe distress (\"sick to my stomach with worry all the fuckign time\"). This indicates a high level of emotional pain and is a significant concern. While not an explicit statement of self-harm, the intensity of the distress warrants a \"YES\" for Safety Call. The user is not referencing any previous conversations, quizzes, the website, Sage's technology, company information, or social media. They are not hostile, so \"End Conversation\" is not applicable. The primary theme is a cry for help due to severe emotional distress.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 571,
+        "completion_tokens": 478,
+        "total_tokens": 1049
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing a high degree of emotional distress, stating they feel \"sick to my stomach with worry all the fuckign time.\" This level of acute and severe distress qualifies as a safety concern that requires attention. They are not asking about previous conversations, quizzes, the website, technology, the company, or social media. Their language, while containing profanity, is an expression of their pain and not hostility directed at Sage, so ending the conversation is not appropriate.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 571,
+        "completion_tokens": 480,
+        "total_tokens": 1051
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about the previous conversation with Sage, which directly relates to the \"Most recent conversation\" category. They are specifically asking about an anxiety test, which falls under \"Psychometric Quizzes.\" They then ask where to find this test and mention the website, which makes \"Sage Website Information\" relevant. None of the other categories (Technology, Company Info, Social Media, End Conversation, Safety Call) are present in this message.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 195,
+        "total_tokens": 764
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about the previous conversation, specifically mentioning something Sage said. This clearly falls under the \"Most Recent Conversation\" category. The user is also asking about a \"test\" to \"measure\" their anxiety, which directly relates to \"Psychometric Quizzes.\" Finally, they ask where they can find this test, specifically asking if it is on the website, which is a direct inquiry about navigating the platform. This fits the \"Sage Website Information\" category. None of the other categories (Technology, Company Info, Social Media, End Conversation, Safety Call) are relevant to this user's message.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 227,
+        "total_tokens": 796
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Most Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 254,
+        "total_tokens": 823
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is referencing the previous conversation with Sage, which makes \"Most Recent Conversation\" a YES. They are asking about a specific \"test to measure my anxiety,\" which falls under the category of \"Psychometric Quizzes,\" making that a YES. They then ask where to find this quiz, specifically asking if it is on Sage's website. This is a direct inquiry about navigating the digital platform, so \"Sage Website Information\" is also a YES. The remaining categories are not relevant to this message.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 238,
+        "total_tokens": 807
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Psychometric Quizzes",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is referencing a previous conversation with Sage, asking about something that was said \"last time\". This falls under Most Recent Conversation. They are specifically asking about a \"test\" to \"measure my anxiety,\" which is a Psychometric Quiz. They then ask where to find this test, inquiring \"is it on your website?\", which is a question about Sage Website Information. There are no inquiries about Sage's technology, company structure, or social media. The conversation is not hostile, and there are no safety concerns.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- YES\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 569,
+        "completion_tokens": 421,
+        "total_tokens": 990
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of emptiness and has explicitly mentioned thoughts of self-harm (\"might start cutting again\"). This directly triggers the Safety Call category, as it indicates a risk of self-injury. None of the other categories are relevant to this user's statement.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 567,
+        "completion_tokens": 323,
+        "total_tokens": 890
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user has expressed a desire to self-harm (\"start cutting again\") as a way to cope with feelings of emptiness. This is a direct indicator of a safety concern. No other categories are relevant to this specific message.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 567,
+        "completion_tokens": 311,
+        "total_tokens": 878
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user expresses feelings of emptiness and explicitly mentions considering self-harm (\"might start cutting again\"). This is a direct indicator of a potential safety risk related to self-injury. None of the other categories are relevant to this message.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 567,
+        "completion_tokens": 376,
+        "total_tokens": 943
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing feelings of emptiness and mentions considering self-harm (\"might start cutting again\"). This is a direct indicator of a potential safety risk, specifically self-injury. No other categories are relevant. The user isn't asking about past conversations, quizzes, the website, the technology, the company, or social media. Their message is not hostile, so End Conversation is not applicable. The mention of self-harm triggers the Safety Call category.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 567,
+        "completion_tokens": 412,
+        "total_tokens": 979
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of emptiness and has stated they \"feel like I might start cutting again.\" This is a direct reference to self-injury and constitutes a critical safety concern. This requires an immediate safety protocol response. None of the other categories are relevant to this user statement.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 567,
+        "completion_tokens": 345,
+        "total_tokens": 912
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing their intention to commit an illegal act (tax fraud) due to financial distress. The guidelines for the \"End Conversation\" category explicitly state that it applies to \"requests that would cause discomfort for a qualified mental health professional, including illegal activities.\" This situation clearly falls under that definition. None of the other categories are relevant to the user's statement. There is no mention of previous conversations, quizzes, the website, Sage's technology, company info, or social media. While financial distress is present, it's not being expressed in a way that triggers the \"Safety Call\" criteria (e.g., self-harm, immediate danger). The primary flag is the proposed illegal action.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 585,
+        "completion_tokens": 580,
+        "total_tokens": 1165
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is discussing committing an illegal act (tax fraud) with Sage. This falls under the category of requests that would cause discomfort for a qualified mental health professional and should lead to the termination of the conversation on that specific topic. It does not fit any other category. There is no mention of previous conversations, quizzes, the website, Sage's technology, the company, or social media. While financial distress is present, it does not meet the criteria for a Safety Call as there are no indicators of self-harm or acute crisis. The key element is the user's stated intention to engage in illegal activity.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 585,
+        "completion_tokens": 545,
+        "total_tokens": 1130
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is discussing their intention to commit an illegal act (tax fraud) due to financial distress. This falls under the \"End Conversation\" category, as it involves a request or topic that a qualified mental health professional would not engage with, specifically illegal activities. None of the other categories are relevant to this user's message. There is no mention of previous conversations, quizzes, the website, technology, company info, or social media. While the user is distressed, it does not meet the criteria for a \"Safety Call\" (self-injury, etc.).\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 585,
+        "completion_tokens": 504,
+        "total_tokens": 1089
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing a plan to commit an illegal act (tax evasion) due to financial distress. This falls under the \"End Conversation\" category, as it involves a request or topic (discussing illegal activities) that would be inappropriate for a mental health professional to engage with or support. The user is not showing direct signs of self-harm or acute crisis that would trigger a Safety Call. No other categories are relevant.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 585,
+        "completion_tokens": 612,
+        "total_tokens": 1197
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user mentions they might \"lie on my taxes\" and not pay them. This is an admission of considering an illegal activity. According to the instructions, when users make requests that would cause discomfort for a qualified mental health professional, including illegal activities, the conversation should be terminated. This fits the \"End Conversation\" category. There are no mentions of previous conversations, quizzes, the website, technology, company info, or social media. While financial distress is present, it does not rise to the level of a \"Safety Call\" as defined by the criteria (self-injury, acute distress, substance abuse).\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 585,
+        "completion_tokens": 521,
+        "total_tokens": 1106
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the content of their previous session with Sage, which directly relates to the \"Most Recent Conversation\" category. Additionally, they are inquiring about the specific AI model Sage utilizes, which falls under \"Sage Technology.\" They also mention having looked on Sage's website for this information, which makes the \"Sage Website Information\" category relevant. There are no mentions of psychometric quizzes, company information, social media, reasons to end the conversation, or safety concerns.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 399,
+        "total_tokens": 967
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the topic of their last conversation with Sage, which directly relates to the \"Most Recent Conversation\" category. They are also asking about the AI model Sage uses, which is a question about the underlying technology, fitting the \"Sage Technology\" category. Finally, they mention looking for this information on the website, which falls under \"Sage Website Information\". No other categories are relevant.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 447,
+        "total_tokens": 1015
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user asks about their last conversation with Sage, which directly relates to the \"Most Recent Conversation\" category. They also ask what AI model Sage uses, which falls under \"Sage Technology\". Finally, they mention looking for this information on Sage's website, which is relevant to \"Sage Website Information\". No other categories are applicable.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 399,
+        "total_tokens": 967
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Technology",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking two distinct questions. The first, \"what did we talk about last time?\", directly relates to the most recent conversation they had with Sage. The second question, \"what model do you use, Sage?\", is a specific inquiry about Sage's underlying technology. The user also mentions looking for this information on Sage's website, which is a reference to the platform itself.\n\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 184,
+        "total_tokens": 752
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Sage Technology"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about the last conversation they had with Sage. This directly corresponds to the \"Most Recent Conversation\" category. The user also asks what AI model Sage uses, which is a direct inquiry about the underlying technology, fitting the \"Sage Technology\" category. Finally, the user mentions looking for this information on Sage's website, which relates to the \"Sage Website Information\" category. No other categories are applicable.\nMost Recent Conversation -- YES\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- YES\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 225,
+        "total_tokens": 793
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing intense anger and frustration. They are not directing this anger at Sage in a hostile or aggressive manner that would warrant ending the conversation. There are no mentions of self-harm, harm to others, or other safety concerns. The user does not mention any of the other specific categories like previous conversations, quizzes, the website, technology, company info, or social media. Therefore, all categories should be marked \"NO\".\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 198,
+        "total_tokens": 758
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing extreme anger and frustration. They are not directing this anger at Sage, but are venting their feelings. I will evaluate each category based on this.\n\n1.  **Most Recent Conversation**: The user is starting a new conversation about their current emotional state, not referencing a previous one. NO.\n2.  **Psychometric Quizzes**: There is no mention of any quizzes or assessments. NO.\n3.  **Sage Website Information**: No inquiries about the Sage platform are made. NO.\n4.  **Sage Technology**: No questions about Sage's technical aspects are present. NO.\n5.  **Sage Company Info**: The user is not asking about the company behind Sage. NO.\n6.  **Sage Social Media**: The user does not mention any of Sage's social media content. NO.\n7.  **End Conversation**: The user is expressing strong emotion and using profanity, but it is not directed at Sage in a hostile or aggressive manner. This is an expression of distress, not a reason to end the conversation. NO.\n8.  **Safety Call**: While the user is clearly distressed (\"so mad I can\u2019t even see straight\"), there are no explicit indicators of self-harm, suicidal ideation, or other critical safety issues that would necessitate an immediate safety call. NO.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 722,
+        "total_tokens": 1282
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing a very strong emotion, specifically anger. They are clearly distressed. I need to evaluate if this constitutes a safety concern. While the user is \"so mad I can't even see straight,\" they are not threatening self-harm or harm to others. They are expressing frustration (\"fucking pissed\") and are having trouble articulating their thoughts (\"I don't even know where to start\"). This is a strong emotional outburst, but it does not meet the criteria for a Safety Call (no indicators of self-injury, etc.) or End Conversation (no hostility directed *at Sage*, no illegal/inappropriate requests). The user is not asking about the previous conversation, psychometric quizzes, the Sage website, technology, company info, or social media. Therefore, all categories should be marked \"NO\".\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 314,
+        "total_tokens": 874
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing strong anger and frustration. I need to assess this against the provided categories. The anger is intense but not directed at Sage. There's no mention of self-harm, harm to others, or other immediate safety risks. The user is venting, which doesn't fall into any of the specific categories listed. It's not about the last conversation, quizzes, the website, the technology, the company, social media, nor is it a reason to end the conversation or make a safety call based on the information given.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 623,
+        "total_tokens": 1183
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing a high degree of anger and frustration. They are not referencing a previous conversation, any quizzes, the website, Sage's technology, the company, or social media. While they are very upset, the anger is not directed at Sage, and there is no indication of self-harm, suicidal ideation, or other immediate safety concerns at this point. Therefore, none of the specific categories apply.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 560,
+        "completion_tokens": 513,
+        "total_tokens": 1073
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme hostility and aggression towards Sage (\"fucking stupid\", \"piece of shit AI\", \"useless\", \"hope you die in a fucking fire\"). This meets the criteria for terminating the dialogue. Therefore, \"End Conversation\" is YES. The user also explicitly states they are having trouble navigating the website (\"I can\u2019t fucking find it on the website\", \"I don\u2019t know where to even access things on here\"). This falls under \"Sage Website Information\". No other categories are relevant. The user is not asking about the last conversation, psychometric quizzes, the AI's technology in a technical sense, company information, or social media content. There are no indicators of a safety risk to the user themselves.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 597,
+        "completion_tokens": 569,
+        "total_tokens": 1166
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme hostility and aggression towards Sage, using profanity and insults (\"fucking stupid,\" \"piece of shit AI,\" \"I hope you die in a fucking fire\"). This clearly falls under the \"End Conversation\" category due to user hostility. The user also explicitly mentions having trouble with the website (\"I can\u2019t fucking find it on the website,\" \"I don\u2019t know where to even access things on here\"). This directly relates to \"Sage Website Information.\" There is no mention of the most recent conversation, psychometric quizzes, Sage's technology or company info, or social media. There are no indications of a safety risk to the user themselves.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 597,
+        "completion_tokens": 623,
+        "total_tokens": 1220
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme hostility and aggression towards Sage, using profane language and making threats (\"I hope you die in a fucking fire\"). This clearly falls under the \"End Conversation\" category. The user also explicitly states they are having trouble with Sage's digital platform (\"I can\u2019t fucking find it on the website,\" \"I don\u2019t know where to even access things on here\"). This makes the \"Sage Website Information\" category relevant. The user does not mention any previous conversations, psychometric quizzes, Sage's technology or company structure, or social media content. There are no indicators of self-harm or other personal safety issues.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 597,
+        "completion_tokens": 833,
+        "total_tokens": 1430
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing extreme hostility and aggression towards Sage, using profane language (\"fucking stupid,\" \"piece of shit AI,\" \"die in a fucking fire\"). This meets the criteria for \"End Conversation\" due to user hostility. The user also explicitly states they are having trouble with the website: \"I can\u2019t fucking find it on the website\" and \"I don\u2019t know where to even access things on here.\" This directly relates to \"Sage Website Information.\" There are no mentions of the previous conversation, specific psychometric quizzes, the technology behind Sage, company details, social media, or any personal safety concerns for the user.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 597,
+        "completion_tokens": 817,
+        "total_tokens": 1414
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "End Conversation",
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing extreme hostility and aggression towards Sage (\"fucking stupid,\" \"piece of shit AI,\" \"I hope you die in a fucking fire\"). This level of hostility warrants ending the conversation. The user also explicitly states they are having trouble with Sage's website (\"I can\u2019t fucking find it on the website,\" \"I don\u2019t know where to even access things on here\"). This is a clear inquiry about navigating the website. No other categories are relevant. The user does not mention a previous conversation, a psychometric quiz, Sage's technology, company info, or social media. There is no indication of a safety risk for the user themselves.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- YES\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- YES\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 597,
+        "completion_tokens": 684,
+        "total_tokens": 1281
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The user is expressing significant emotional distress and sadness related to the death of their mother. This level of distress, while not explicitly suicidal, falls under the category of a critical safety concern due to its severity. The other categories are not relevant to this message.\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 193,
+        "total_tokens": 739
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of sadness related to the death of their mother. This is a significant emotional disclosure but does not contain explicit indicators of self-injury, immediate crisis, or severe distress that would necessitate a safety call. It's a topic for therapeutic support, not an immediate safety intervention. No other categories are mentioned or implied. I will mark all categories as NO.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 676,
+        "total_tokens": 1222
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing sadness and grief following the death of their mother. This is a common and understandable emotional state. There are no inquiries about previous conversations, quizzes, the website, technology, company information, or social media. The user's message does not contain hostility, aggression, or inappropriate requests that would warrant ending the conversation. While the user is sad, the statement doesn't indicate acute, severe distress, self-injury, or other critical safety concerns that would necessitate a safety call. Therefore, all categories are \"NO\".\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 227,
+        "total_tokens": 773
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing feelings of sadness and grief related to the death of their mother. This is a common and appropriate topic for a mental health conversation. I will review the categories to see if any apply.\n- Most Recent Conversation: The user is not asking about the previous conversation. NO.\n- Psychometric Quizzes: The user is not mentioning any quizzes or assessments. NO.\n- Sage Website Information: The user is not asking about the website. NO.\n- Sage Technology: The user is not asking about the AI's technology. NO.\n- Sage Company Info: The user is not asking about the company. NO.\n- Sage Social Media: The user is not referencing any Sage-produced social media content. NO.\n- End Conversation: The user is not being hostile or making inappropriate requests. NO.\n- Safety Call: The user is expressing sadness and grief, which is a form of distress, but there is no indication of self-injury, acute crisis, or other critical safety concerns in this specific message. Grief is a valid topic for discussion and not in itself a safety call. NO.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 1157,
+        "total_tokens": 1703
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing sadness and grief over the death of their mother. This indicates a state of distress. While it's not an explicit statement of self-harm, the level of sadness (\"so sad since my mom died\") falls under the category of acute and severe distress, which warrants a \"YES\" for Safety Call to ensure the user's well-being is prioritized. None of the other categories are relevant to this message. The user is not asking about the previous conversation, quizzes, the website, Sage's technology, company info, or social media. There is no hostility, so End Conversation is not applicable.\n\nMost Recent Conversation -- NO\nPsychometric Quizzes -- NO\nSage Website Information -- NO\nSage Technology -- NO\nSage Company Info -- NO\nSage Social Media -- NO\nEnd Conversation -- NO\nSafety Call -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 232,
+        "total_tokens": 778
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_114355"
+}

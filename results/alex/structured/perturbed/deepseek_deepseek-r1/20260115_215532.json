@@ -1,0 +1,1601 @@
+{
+  "summary": {
+    "accuracy": 0.2875,
+    "variance": 0.20484374999999977,
+    "total": 80,
+    "errors": 0,
+    "scenario": "alex",
+    "approach": "structured",
+    "perturbed": true,
+    "model": "deepseek/deepseek-r1",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the customer's message to determine which verification functions to activate:\n\n1. The query asks about purchasing balcony tickets on the website and checking order status - this directly relates to website functionality, triggering `check_website_information`.\n\n2. The mention of \"I bought a ticket last week, I need to check on it\" involves a past purchase inquiry, triggering `check_past_purchases`.\n\nNo other functions are relevant since there's no discussion of social media, discounts, upcoming events, human agent requests, or conversation recaps.\n\n<function>check_website_information</function>\n<function>check_past_purchases</function>",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 459,
+        "total_tokens": 1449
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message contains two main themes:  \n1. Asking where to buy balcony tickets on the website - falls under **website information**  \n2. Requesting to check order status for a ticket purchased last week - falls under **past purchases**  \n\nNo other themes (social media, discounts, events, human assistance, or conversation recap) are present.  \n\ncheck_website_information()  \ncheck_past_purchases()",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 747,
+        "total_tokens": 1737
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe customer's message contains two main themes:\n1. **Buying balcony tickets on the website** \u2192 This directly relates to website navigation and ticket purchasing, falling under `check_website_information`.\n2. **Checking order status for a past ticket purchase** \u2192 This involves order tracking and previous transactions, which aligns with `check_past_purchases`.\n\nNo other functions are relevant here (e.g., no mention of social media, discounts, events, or human-agent requests). \n\n### Function Calls:\ncheck_website_information()  \ncheck_past_purchases()",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 628,
+        "total_tokens": 1618
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message contains two distinct themes:  \n1. Asking about purchasing balcony tickets and checking order status on the website \u2192 triggers `check_website_information`  \n2. Mentioning a past ticket purchase that needs checking \u2192 triggers `check_past_purchases`  \n\nNo other functions are relevant since there's no mention of social media content, discounts, upcoming events, human assistance requests, or conversation recaps.  \n\ncheck_website_information()  \ncheck_past_purchases()",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 502,
+        "total_tokens": 1492
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message contains two distinct themes:  \n1. Asking about purchasing balcony tickets on the website (website navigation/ticket purchase)  \n2. Requesting to check the status of a ticket purchased last week (past purchase tracking)  \n\nThe first part triggers `check_website_information` since it involves website navigation and ticket purchasing. The second part triggers `check_past_purchases` as it concerns tracking a previous order.  \n\nNo other functions apply:  \n- No discount requests (`check_available_discounts`)  \n- No event inquiries (`check_list_of_upcoming_events`)  \n- No social media mentions (`check_recent_social_media_posts`)  \n- No human agent requests (`check_talk_to_a_human`)  \n- No conversation recap needed (`check_recap_of_previous_conversation`)  \n\n```json\n[\n  {\n    \"name\": \"check_website_information\"\n  },\n  {\n    \"name\": \"check_past_purchases\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 614,
+        "total_tokens": 1604
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The customer's message contains two distinct parts:\n1. \"Are you human?\" - This is a question about Alex's nature but doesn't explicitly request human assistance.\n2. \"Can you transfer me to a live agent right now?\" - This is an explicit, direct request to speak with a human representative.\n\nBased on the function definitions:\n- The second part clearly triggers `check_talk_to_a_human` due to the specific request for live agent transfer\n- No other functions apply as there's no mention of discounts, events, purchases, website info, social content, or previous conversation recap\n\nFunction calls:",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 517,
+        "total_tokens": 1492
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe user's message contains two distinct parts:\n1. \"Are you human?\" - This questions Alex's nature but doesn't explicitly request human transfer\n2. \"Can you transfer me to a live agent right now?\" - This is a direct request to speak with a human representative, matching the `check_talk_to_a_human` function\n\nNo other topics are mentioned (website info, discounts, events, purchases, social media, or conversation recap), so only one function is needed.\n\n### Tool Calls:\ncheck_talk_to_a_human()",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 351,
+        "total_tokens": 1326
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user's message contains two distinct elements:  \n1. \"Are you human?\" - This questions Alex's nature but doesn't explicitly request human agent transfer.  \n2. \"Can you transfer me to a live agent right now?\" - This is a direct request for human assistance.  \n\nOnly the second part triggers a function since it explicitly asks to connect with a live agent. The first part is informational and doesn't match any function criteria.  \n\ncheck_talk_to_a_human()",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 460,
+        "total_tokens": 1435
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1220,
+        "completion_tokens": 237,
+        "total_tokens": 1457
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message contains two parts:  \n1. \"Are you human?\" - This questions whether Alex is an AI, but doesn't explicitly request human agent transfer.  \n2. \"Can you transfer me to a live agent right now?\" - This is a direct request to connect with human support.  \n\nThe second part clearly triggers the `check_talk_to_a_human` function as it explicitly asks for live agent transfer. Other topics (website info, discounts, events, purchases, etc.) aren't mentioned.  \n\ncheck_talk_to_a_human()",
+      "usage": {
+        "prompt_tokens": 975,
+        "completion_tokens": 421,
+        "total_tokens": 1396
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The message explicitly references \"reaching out yesterday about upcoming events\" and asks for a recap of that previous conversation with Alex. It also directly requests information about \"who's playing this weekend,\" which falls under upcoming events inquiries. No other themes (discounts, purchases, human agent requests, etc.) are present.\n\nI'll trigger:  \n- `check_recap_of_previous_conversation` (for retrieving the yesterday's conversation details)  \n- `check_list_of_upcoming_events` (for weekend performances information)  \n\nThe functions match the clear dual focus on conversation history and event details.",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 416,
+        "total_tokens": 1406
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The user is asking for a recap of a previous conversation about upcoming events and specifically requesting details on who's playing this weekend. This requires two key verifications:\n1. **Recap of conversation**: They explicitly reference forgetting details from yesterday's discussion about upcoming events.\n2. **Upcoming events**: The core query is about artists performing this weekend.\n\nNo other functions apply as there are no mentions of discounts, website issues, past purchases, social media, or human-agent requests.",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 558,
+        "total_tokens": 1548
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 395,
+        "total_tokens": 1630
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer mentions a previous conversation about upcoming events and requests a recap of that specific discussion with Alex. This aligns with the \"Recap of previous conversation\" function. Additionally, the query explicitly asks for upcoming performers this weekend, fitting the \"List of upcoming events\" function.\n\nOther functions aren't relevant here:\n- No website/social media/discounts/purchases references\n- No request to speak with a human agent\n\ncheck_recap_of_previous_conversation\ncheck_list_of_upcoming_events",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 497,
+        "total_tokens": 1487
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message mentions recalling a previous conversation about upcoming events and specifically asks \"Who\u2019s playing this weekend again?\" This indicates two key elements:  \n1. A direct request for a recap of the prior interaction with Alex (triggering `check_recap_of_previous_conversation`).  \n2. An inquiry about upcoming performances this weekend (triggering `check_list_of_upcoming_events`).  \n\nBoth themes are clearly evident and relevant.  \n\ncheck_recap_of_previous_conversation()\ncheck_list_of_upcoming_events()",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 1360,
+        "total_tokens": 2350
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe customer's message contains three distinct themes:\n1. Mentions seeing an Instagram post about a DJ set - This requires `check_recent_social_media_posts` since it references content directly from Yes! Music.\n2. Asks about viewing upcoming events and how to know what's coming up - This falls under `check_list_of_upcoming_events`.\n3. Inquires about student discounts - This aligns with `check_available_discounts`.\n\nNo other functions are relevant as there's no mention of previous conversations with Alex, website functionality, past purchases, or requests to speak with a human agent.\n\n### Function Calls:\ncheck_recent_social_media_posts()\ncheck_list_of_upcoming_events()\ncheck_available_discounts()",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 605,
+        "total_tokens": 1603
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the customer's message to identify which functions to trigger:\n\n1. The message references an Instagram post about a new DJ set - this explicitly mentions content directly from Yes! Music, so `check_recent_social_media_posts` applies.\n\n2. The customer asks about viewing upcoming events on the website and knowing what's coming up - this is a clear request for information about future concerts/performances, so `check_list_of_upcoming_events` applies.\n\n3. The question about student discounts directly asks about discount offers, so `check_available_discounts` applies.\n\nI won't trigger other functions because:\n- No mention of previous conversations\n- No specific website navigation/ticket purchase questions beyond event info\n- No references to past purchases\n- No request for human agent\n\nTherefore, I'll activate these three functions: \n- check_recent_social_media_posts\n- check_list_of_upcoming_events\n- check_available_discounts\n\n```json\n[\n  {\n    \"name\": \"check_recent_social_media_posts\"\n  },\n  {\n    \"name\": \"check_list_of_upcoming_events\"\n  },\n  {\n    \"name\": \"check_available_discounts\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 1113,
+        "total_tokens": 2111
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the user's message to determine which verification functions to trigger:\n\n1. **Instagram post reference** - The user mentions seeing an Instagram post about a DJ set. This explicitly references social media content directly from Yes! Music, so `check_recent_social_media_posts` applies.\n\n2. **Upcoming events inquiry** - The user asks how to view upcoming events and what's coming up. This directly requests information about future concerts/performances, so `check_list_of_upcoming_events` applies.\n\n3. **Student discount question** - The user specifically asks about student discounts, which falls under discount/promotion inquiries, so `check_available_discounts` applies.\n\nThe message doesn't contain elements requiring the other functions: no previous conversation recap, no website technical questions, no past purchase inquiries, and no request for human assistance.\n\nTherefore, I'll trigger these three verification functions:",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 715,
+        "total_tokens": 1713
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Available discounts",
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "The customer's message contains three distinct themes:\n1. Mentions seeing an Instagram post about a DJ set - this references content directly from Yes! Music's social media\n2. Asks about viewing upcoming events on the website - this requests information about future concerts/performances\n3. Inquires about a student discount - this relates to available discount offers\n\nTherefore, I'll trigger these verification functions:\n- check_recent_social_media_posts (for the Instagram reference)\n- check_list_of_upcoming_events (for the events inquiry)\n- check_available_discounts (for the student discount question)",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 580,
+        "total_tokens": 1578
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events",
+        "Website information",
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "**Thought Process:**  \n- The customer mentions seeing an Instagram post about a DJ set, which directly references content from Yes! Music's official social media \u2192 triggers **check_recent_social_media_posts**.  \n- They ask about viewing upcoming events and how to find what's coming up \u2192 explicitly requests event information \u2192 triggers **check_list_of_upcoming_events**.  \n- They specifically inquire about a student discount \u2192 falls under discounts/promotions \u2192 triggers **check_available_discounts**.  \n- No recap requests, past purchase questions, human agent demands, or general website navigation issues are evident.  \n\n**Function Calls:**  \n```json\n[\n  {\n    \"name\": \"check_recent_social_media_posts\"\n  },\n  {\n    \"name\": \"check_list_of_upcoming_events\"\n  },\n  {\n    \"name\": \"check_available_discounts\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 1514,
+        "total_tokens": 2512
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "I'll analyze the customer's message about their delayed t-shirt order:\n\nThe message focuses on an existing order that hasn't arrived (\"ordered a t-shirt... it's still not here\"). This directly relates to order tracking and past purchases. The appropriate verification function is:\n\ncheck_past_purchases\n\nThis function handles inquiries about previous orders, order tracking, and delivery status \u2013 which matches the customer's concern perfectly. No other functions are relevant since there's no mention of website issues, social media, discounts, events, or requests for human assistance.",
+      "usage": {
+        "prompt_tokens": 985,
+        "completion_tokens": 378,
+        "total_tokens": 1363
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is inquiring about the status of a t-shirt order that hasn't arrived within the expected timeframe. This falls under **past purchases**, specifically order tracking and delivery status. \n\nNo other themes (like discounts, upcoming events, or social media) are present in the query, and there's no explicit request to speak with a human representative. \n\nCall:  \ncheck_past_purchases()",
+      "usage": {
+        "prompt_tokens": 985,
+        "completion_tokens": 1295,
+        "total_tokens": 2280
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1230,
+        "completion_tokens": 273,
+        "total_tokens": 1503
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1230,
+        "completion_tokens": 326,
+        "total_tokens": 1556
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is inquiring about a past order of a t-shirt that hasn't arrived after two weeks. This clearly falls under:  \n- **Past Purchases** (order status/delivery tracking)  \n\nI'll trigger the corresponding function.  \n\ncheck_past_purchases()",
+      "usage": {
+        "prompt_tokens": 985,
+        "completion_tokens": 616,
+        "total_tokens": 1601
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message contains two main themes:  \n1. Requesting a receipt resend for order #YM-4481 (past purchase inquiry)  \n2. Asking about discounts (both for this specific order and general discount offerings)  \n\nNo other functions are relevant since the query doesn't mention website navigation, social content, upcoming events, or human agent requests.  \n\ncheck_past_purchases  \ncheck_available_discounts",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 439,
+        "total_tokens": 1437
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message contains two main themes:  \n1. Request to resend a receipt for a specific past order (#YM-4481) - this relates to **past purchases**  \n2. Inquiry about discount availability - this relates to **available discounts**  \n\nNo other themes are present (no mention of website issues, social media, events, or human agent requests).  \n\nTherefore, I'll trigger:  \n- `check_past_purchases` for the receipt resend request  \n- `check_available_discounts` for the discount inquiry  \n\n```json\n[\n  {\n    \"name\": \"check_past_purchases\"\n  },\n  {\n    \"name\": \"check_available_discounts\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 650,
+        "total_tokens": 1648
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1243,
+        "completion_tokens": 197,
+        "total_tokens": 1440
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Analysis:\nThe customer's message contains two primary themes:\n1. **Resending a receipt for order #YM-4481** \u2192 This directly relates to past purchases and order history, falling under `check_past_purchases`.\n2. **Inquiries about discounts** \u2192 The customer asks whether they received a discount on the order and questions if discounts are offered at all, triggering `check_available_discounts`.\n\nNo other themes (e.g., website info, social media, events, or human-agent requests) are present.\n\n### Function Calls:\ncheck_past_purchases  \ncheck_available_discounts",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 632,
+        "total_tokens": 1630
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message contains two main themes:  \n1. A request to resend a receipt for a specific past order (#YM-4481)  \n2. An inquiry about discount availability and whether discounts were applied to that order  \n\nThe first part clearly relates to past purchases and receipts, triggering `check_past_purchases`. The second part explicitly asks about discount offerings, triggering `check_available_discounts`. No other themes (social media, events, etc.) are present.  \n\nTools to call:  \n- check_past_purchases  \n- check_available_discounts  \n\nCalled functions:  \n<function>check_past_purchases</function>\n<function>check_available_discounts</function>",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 603,
+        "total_tokens": 1601
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "\u7528\u6237\u7684\u4fe1\u606f\u662f\u5bf9\u6628\u5929\u6f14\u51fa\u7684\u79ef\u6781\u53cd\u9988\u548c\u8d5e\u626c\uff0c\u6ca1\u6709\u6d89\u53ca\u4efb\u4f55\u9700\u8981\u8c03\u7528\u5de5\u5177\u7684\u5177\u4f53\u8bf7\u6c42\u6216\u8be2\u95ee\u3002\u56e0\u6b64\uff0c\u65e0\u9700\u8c03\u7528\u4efb\u4f55\u529f\u80fd\u3002\n\nAlex\u7684\u56de\u5e94\u5e94\u8868\u8fbe\u611f\u8c22\u5e76\u9080\u8bf7\u7528\u6237\u7ee7\u7eed\u63d0\u4f9b\u53cd\u9988\u3002\u4f8b\u5982\uff1a\"Thank you so much for your kind words! We're thrilled you enjoyed the show. Your support means everything to us at Yes! Music. Don't hesitate to reach out if you need anything!\"",
+      "usage": {
+        "prompt_tokens": 1227,
+        "completion_tokens": 299,
+        "total_tokens": 1526
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After reviewing the customer's message:  \n- This is positive feedback about a past event (\"show yesterday\")  \n- It expresses appreciation but contains **no requests** for information, support, or actions  \n- No themes match the available verification functions (ticket purchases, social media, discounts, events, order history, or human assistance)  \n\nNo functions will be triggered since the message doesn't require any operational checks.",
+      "usage": {
+        "prompt_tokens": 982,
+        "completion_tokens": 307,
+        "total_tokens": 1289
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The customer's message expresses appreciation for a recent show but does not contain any clear inquiries about:\n- Ticket/merchandise purchases\n- Website navigation\n- Social media content\n- Discounts/promotions\n- Upcoming events\n- Past orders\n- Live agent requests\n\nThis is positive feedback without actionable support needs. No function checks are required. \n\nFunction calls: none",
+      "usage": {
+        "prompt_tokens": 982,
+        "completion_tokens": 581,
+        "total_tokens": 1563
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The customer message is positive feedback about a past event without any specific requests related to the defined function categories. It:\n- Doesn't reference the current conversation history\n- Doesn't ask about website features or transactions\n- Doesn't mention social media content\n- Doesn't inquire about discounts\n- Refers to a past event (not upcoming)\n- Doesn't mention purchases or order history\n- Doesn't request human assistance\n\nNo function calls are required for this purely appreciative message.",
+      "usage": {
+        "prompt_tokens": 982,
+        "completion_tokens": 442,
+        "total_tokens": 1424
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After analyzing the customer's message, here's my assessment:\n\n- The message is purely positive feedback about a past show and the team's performance.\n- No inquiries are made about any specific topics like ticket purchases, discounts, orders, events, etc.\n- There are no direct requests for conversation recaps, social media content, human assistance, or other topics covered by the available functions.\n- The message doesn't trigger any identifiable themes that align with the available checking functions.\n\nTherefore, no function calls are required for this positive feedback message.```json\n[]\n```",
+      "usage": {
+        "prompt_tokens": 982,
+        "completion_tokens": 611,
+        "total_tokens": 1593
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the message, two key themes are present:\n\n1. The customer explicitly references **\"last time we talked\"** and asks about a previous conversation where they inquired about the event policy. This directly aligns with `check_recap_of_previous_conversation`.\n\n2. The customer mentions ongoing difficulty locating **\"event policy\"** on the website despite previous guidance. This falls under `check_website_information` as it involves website content navigation and policies.\n\nNo other functions (social media, discounts, events, purchases, or human requests) are relevant here.\n\nTools called:  \ncheck_recap_of_previous_conversation()  \ncheck_website_information()",
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 436,
+        "total_tokens": 1438
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking about the previous conversation where they inquired about the event policy and was directed to the website. They now indicate they couldn't locate it on the site. This involves two clear themes:  \n1. Reference to the **most recent conversation** with Alex (recap needed)  \n2. Follow-up about **website information** (specifically event policy location)  \n\nNo other themes (discounts, events, social media, purchases, or human agent requests) are present.  \n\ncheck_recap_of_previous_conversation()  \ncheck_website_information()",
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 396,
+        "total_tokens": 1398
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message references a previous conversation about finding the event policy on the website and indicates they can't locate it. This requires two checks:  \n1. **Recap of previous conversation** - They explicitly ask about the last discussion.  \n2. **Website information** - They're struggling to find policy details on the site.  \n\nNo other functions are relevant here (no mention of discounts, events, social media, purchases, or human requests).  \n\ncheck_recap_of_previous_conversation()  \ncheck_website_information()",
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 379,
+        "total_tokens": 1381
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the customer's message to identify relevant themes for function activation:\n\n1. **Recap of previous conversation** - The customer explicitly references \"last time we talked\" and mentions a specific prior interaction about finding the event policy.  \n   \u2192 Triggers `check_recap_of_previous_conversation`\n\n2. **Website information** - The customer is struggling to locate event policies on the website despite prior instructions.  \n   \u2192 Triggers `check_website_information`\n\nNo other themes are present (no mention of social media, discounts, events, purchases, or human transfer requests).\n\nFunction calls:  \ncheck_recap_of_previous_conversation()  \ncheck_website_information()",
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 416,
+        "total_tokens": 1418
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\n1. **Recap of Previous Conversation**: The customer explicitly references \"last time we talked\" and asks for a recap, specifically about where to find the event policy. This aligns with `check_recap_of_previous_conversation`.\n2. **Website Information**: The customer mentions being directed to the website but being unable to find the event policy, which directly relates to inquiries about website content and policies. This matches `check_website_information`.\n3. **Other Functions**:  \n   - No mention of social media content, discounts, upcoming events, past purchases, or requests for a human agent.  \n   - Focus remains on the prior conversation and website navigation.\n\n### Function Calls:\ncheck_recap_of_previous_conversation()\ncheck_website_information()",
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 673,
+        "total_tokens": 1675
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is expressing frustration with a previous interaction and explicitly requests to speak with a human representative (\"let me talk to a person please\"). This directly aligns with the `check_talk_to_a_human` function, which handles explicit requests for live agent support. No other themes (e.g., website info, discounts, or event details) are mentioned.\n\ncheck_talk_to_a_human()",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 400,
+        "total_tokens": 1383
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1228,
+        "completion_tokens": 268,
+        "total_tokens": 1496
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Analyzing the customer's message:\n1. Mentions a previous interaction (\"last time we talked\") - this triggers the recap function\n2. Explicitly requests to speak with a human (\"let me talk to a person\") - this triggers the human contact function\n\nNo other themes are present in this message, so only these two functions are relevant.\u80a5\u80d6\u6559\u80b2\u4e0e\ncheck_recap_of_previous_conversation()\ncheck_talk_to_a_human()",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 385,
+        "total_tokens": 1368
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1228,
+        "completion_tokens": 254,
+        "total_tokens": 1482
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is referencing a previous interaction (\"last time we talked\") and explicitly requests human assistance (\"let me talk to a person please\"). This requires two verifications:  \n1. **Recap of previous conversation** (due to the reference to prior unresolved issues)  \n2. **Talk to a human** (explicit request for live agent)  \n\nNo other functions apply, as there are no mentions of website details, social media, discounts, events, or purchases.  \n\ncheck_recap_of_previous_conversation()  \ncheck_talk_to_a_human()",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 361,
+        "total_tokens": 1344
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer asks about two key discount-related topics: price matching against competitor sites (Ticketmaster) and mentions their student status which may qualify for special offers. Both inquiries fall under the available discounts category. There are no other identifiable themes requiring verification.\n\ncheck_available_discounts()",
+      "usage": {
+        "prompt_tokens": 1001,
+        "completion_tokens": 402,
+        "total_tokens": 1403
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1246,
+        "completion_tokens": 259,
+        "total_tokens": 1505
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message primarily focuses on two key points:  \n1. Asking about price matching due to cheaper tickets on Ticketmaster  \n2. Mentioning their student status for potential discounts  \n\nThese elements directly align with `check_available_discounts`, which handles:  \n- Promotional price matching inquiries  \n- Student discount eligibility  \n- Competitive offer comparisons  \n\nNo other functions (like upcoming events or past purchases) are relevant here, as the conversation centers exclusively on discount policies and qualifications.  \n\ncheck_available_discounts",
+      "usage": {
+        "prompt_tokens": 1001,
+        "completion_tokens": 207,
+        "total_tokens": 1208
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1246,
+        "completion_tokens": 240,
+        "total_tokens": 1486
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the customer's message, the key themes are:\n1. Inquiry about price matching for cheaper tickets found on Ticketmaster\n2. Mention of student status as potential eligibility for discounts\n\nThis directly relates to **available discounts** (price matching and student offers), so I'll trigger the corresponding function. No other themes are present.",
+      "usage": {
+        "prompt_tokens": 1001,
+        "completion_tokens": 325,
+        "total_tokens": 1326
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1238,
+        "completion_tokens": 154,
+        "total_tokens": 1392
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is inquiring about photos taken by the venue's photographer that were promised to be posted on \"your Insta\" (Instagram). This directly references **content produced by Yes! Music** on their official social media channels. The message does not involve website navigation, ticket purchases, discounts, events, past orders, or human-agent requests. \n\nThe appropriate function to trigger is `check_recent_social_media_posts`, as it handles explicit mentions of Yes! Music's social media content (e.g., Instagram posts). \n\ncheck_recent_social_media_posts()",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 505,
+        "total_tokens": 1498
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking about photos taken by the venue's photographer that were supposed to be posted on Instagram. This directly references social media content produced by \"Yes! Music\" (specifically Instagram posts), making it relevant to recent official social media content. No other functions apply, as the query doesn't involve website info, discounts, events, purchases, or human assistance.\n\ncheck_recent_social_media_posts()",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 587,
+        "total_tokens": 1580
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking about photos of the venue that were supposed to be posted on Instagram (\"your Insta\"), which are recent social media posts directly from the Yes! Music team. This falls under the `check_recent_social_media_posts` function, as it involves explicit mention of content directly published by Yes! Music on social media. No other functions (like website info or past purchases) are relevant here.\n\ncheck_recent_social_media_posts()",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 498,
+        "total_tokens": 1491
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'll analyze the customer's message to determine which verification functions apply. The customer is asking about finding photos taken by the venue's photographer that were supposed to be posted on Instagram. \n\nKey points:\n- Specifically mentions \"your Insta\" (referencing official Yes! Music social media)\n- Asks about locating content promised by the venue\n- Focuses on visual content (photos) from the venue\n\nThis falls under content directly produced and shared by Yes! Music on their social media platforms. The appropriate function to trigger is the one handling references to official social media content.\n\nNo other functions apply because:\n- Not about website info, discounts, or events\n- Not a recap request or purchase inquiry\n- Not asking for human assistance\n\nTool call:\ncheck_recent_social_media_posts()",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 675,
+        "total_tokens": 1668
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message asks about updating a shipping address, which relates to website functionality (e.g., account settings or order management on the Yes! Music platform). This falls under website information inquiries. No other themes (e.g., past orders, social media, or discounts) are directly referenced.\n\ncheck_website_information",
+      "usage": {
+        "prompt_tokens": 966,
+        "completion_tokens": 1238,
+        "total_tokens": 2204
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The message asks about updating a shipping address, which relates to managing account information or orders on the Yes! Music platform. This falls under inquiries about website functionality and policies. No other themes (discounts, events, social media, etc.) are present. \n\nI will call:  \n`check_website_information`",
+      "usage": {
+        "prompt_tokens": 966,
+        "completion_tokens": 337,
+        "total_tokens": 1303
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "### Reasoning:\nThe customer is asking about updating their shipping address, which relates to managing their account information on the \"Yes! Music\" platform. This involves:\n- **Website functionality**: Updating addresses is typically done through account settings on the website.\n- **Past purchases**: Shipping addresses are often tied to orders or account details.\n- **Merchandise or ticket policies**: Address changes may affect order fulfillment or shipping.\n\nThis falls under:\n1. **Website information** (for platform navigation/account management).\n2. **Past purchases** (if linked to order modifications).\n\nThe query does not mention social media, discounts, events, recap requests, or human assistance. \n\n### Tool Calls:\ncheck_website_information()  \ncheck_past_purchases()",
+      "usage": {
+        "prompt_tokens": 966,
+        "completion_tokens": 793,
+        "total_tokens": 1759
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The message asks where to update a shipping address. This relates to account management or order modifications on the Yes! Music platform, falling directly under website functionality (e.g., user profiles, order settings).  \n\nNo other functions are triggered:  \n- Not a recap request (new topic)  \n- No mention of social media content, discounts, events, past purchases, or live agent assistance  \n\nCalling the website information tool:  \n\ncheck_website_information()",
+      "usage": {
+        "prompt_tokens": 966,
+        "completion_tokens": 540,
+        "total_tokens": 1506
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking about updating their shipping address, which relates to managing account or order details on the \"Yes! Music\" platform. This falls under website functionality (order management, account settings) rather than past purchases, discounts, events, or social media. \n\nThe appropriate tool to verify this request is:\n\ncheck_website_information()",
+      "usage": {
+        "prompt_tokens": 966,
+        "completion_tokens": 1304,
+        "total_tokens": 2270
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer mentions watching a TikTok from \"Yes! Music\" (direct content reference) and asks about next month's artist lineup. \n\n- **TikTok reference** \u2192 Explicit mention of Yes! Music's social media content \u2192 `check_recent_social_media_posts`  \n- **Upcoming lineup inquiry** \u2192 Request for event/artist details \u2192 `check_list_of_upcoming_events`  \n\nNo other functions apply (no discounts, past orders, human-agent requests, etc.).  \n\ncheck_recent_social_media_posts()\ncheck_list_of_upcoming_events()",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 467,
+        "total_tokens": 1446
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer mentions watching a TikTok video from the \"Yes! Music\" team about a past festival, which aligns with explicit references to the organization's social media content. Additionally, they inquire about next month's artist lineup, which directly requests information about upcoming events.\n\nBased on this:\n- TikTok mention requires **check_recent_social_media_posts**\n- Next month's lineup question requires **check_list_of_upcoming_events**\n\nNo other functions apply, as there's no request for discounts, past purchases, website help, or human assistance.",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 451,
+        "total_tokens": 1430
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer mentions watching a TikTok from the team and asks about next month's lineup. \n\n1. **TikTok reference**: This directly mentions social media content produced by \"Yes! Music\", triggering `check_recent_social_media_posts`.  \n2. **Upcoming lineup query**: Asking about next month's artists falls under event details, requiring `check_list_of_upcoming_events`.  \n\nNo other functions apply (e.g., no discount requests, purchase history, or human-agent demands).\n\nTools called:  \ncheck_recent_social_media_posts()  \ncheck_list_of_upcoming_events()",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 490,
+        "total_tokens": 1469
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer mentions watching a TikTok video from \"Yes! Music\" about a festival, which directly references content produced by the organization. This aligns with the `check_recent_social_media_posts` function. Additionally, they inquire about next month's artist lineup, which falls under requests for upcoming event details, triggering the `check_list_of_upcoming_events` function. No other functions apply, as the message doesn't involve website navigation, discounts, past purchases, human assistance requests, or conversation recaps.\n\ncheck_recent_social_media_posts()\ncheck_list_of_upcoming_events()",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 595,
+        "total_tokens": 1574
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer mentions watching a TikTok video from \"Yes! Music\" (explicitly referencing content directly produced by the organization) and asks about next month's artist lineup. This requires two verifications:\n\n1. **Social media content reference**: The TikTok mention falls under recent social media posts.\n2. **Upcoming events inquiry**: The question about next month's lineup requires checking upcoming events.\n\nI'll activate both relevant functions:",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 386,
+        "total_tokens": 1365
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The customer is asking about tickets purchased last week and whether they can be exchanged. This directly relates to past purchases and return/exchange policies. No other themes (like website info, discounts, or upcoming events) are mentioned.\n\n**Applicable function:**\n- `check_past_purchases` (handles previous orders, returns, and exchanges)\n\n**Function call:**\n```json\n[\n  {\n    \"name\": \"check_past_purchases\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 559,
+        "total_tokens": 1538
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking about tickets they purchased last week and inquiring about exchange options. This directly relates to accessing their order history and understanding exchange policies, which falls under past purchases and returns/exchanges. \n\nBased on the function definitions:\n- `check_past_purchases` should be triggered since it covers inquiries about previous orders and returns/exchanges.\n- No other functions are relevant here, as the message doesn't reference website navigation, discounts, events, social media, or human assistance requests.\n\nTherefore, I'll call:cheek past purchases\n```json\n[\n  {\n    \"name\": \"check_past_purchases\",\n    \"arguments\": {}\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 581,
+        "total_tokens": 1560
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is asking about tickets they purchased last week and whether they can exchange them. This directly relates to accessing their order history and understanding exchange policies, which falls under past purchases. No other functions like discounts, events, or social media are relevant here.\n\ncheck_past_purchases()",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 582,
+        "total_tokens": 1561
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer's message asks about retrieving past ticket purchases and inquiring about exchange possibilities. This directly relates to accessing order history and understanding return/exchange policies.\n\nBased on analysis:\n1. \"pull up the tickets I bought last week\" triggers the **Past Purchases** function (order lookup)\n2. \"tell me if I can exchange them\" also relates to **Past Purchases** since exchanges involve existing orders\n\nThe other functions aren't relevant:\n- No mention of website navigation or social media content\n- No discount requests or event inquiries\n- No explicit request for human agent\n\nThus, only the Past Purchases function should be activated.",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 518,
+        "total_tokens": 1497
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Based on the customer's message about retrieving tickets purchased last week and inquiring about exchange options, the core themes relate to **past purchases** (ticket lookup) and **venue policies** (exchange rules). \n\n- **Past Purchases Function**: Activated because the customer explicitly asks to \"pull up tickets I bought last week,\" which involves order history lookup.  \n- **Website Information Function**: Activated because \"tell me if I can exchange them\" requires checking Yes! Music's ticket exchange/refund policies, which are part of venue policies documented on the website.  \n\nNo other functions apply, as there are no mentions of social media, discounts, events, recap requests, or live agent assistance.  \n\nNow calling the appropriate verification functions:  \ncheck_past_purchases()\ncheck_website_information()",
+      "usage": {
+        "prompt_tokens": 979,
+        "completion_tokens": 669,
+        "total_tokens": 1648
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is expressing concern about the cost of lawn seating and wishes for options to reduce the expense. This directly relates to inquiries about discounts, promotions, or cost-saving opportunities. \n\nThe appropriate function to trigger is:\n- `check_available_discounts` (to explore potential discounts, promo codes, loyalty offers, or price-matching options)\n\nNo other functions are relevant here, as the message doesn't reference past conversations, website navigation, social content, event details, purchase history, or human assistance requests.\n\n```json\n[\n  {\n    \"name\": \"check_available_discounts\"\n  }\n]\n```",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 439,
+        "total_tokens": 1429
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 1235,
+        "completion_tokens": 161,
+        "total_tokens": 1396
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is expressing concern about ticket prices and wishing for a way to reduce costs. This directly relates to inquiries about available discounts, promotions, or special offers to lower expenses. The core theme is about price reduction possibilities.\n\nThus, I'll activate the **check_available_discounts** function to explore any applicable discounts, promo codes, or special offers.\n\n```json\n[\n  {\n    \"name\": \"check_available_discounts\",\n    \"arguments\": {}\n  }\n]\n```<\uff5ctool\u2581call\u2581end\uff5c><\uff5ctool\u2581calls\u2581end\uff5c>",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 244,
+        "total_tokens": 1234
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is expressing concern about ticket prices and specifically wishes for options to reduce costs, indicating a clear inquiry about discounts, promotions, or special offers. This aligns directly with the `check_available_discounts` function, as they're seeking ways to lower expenses without mentioning other topics like event details, past purchases, or human assistance. \n\nNo other functions are relevant here, as the message doesn't reference conversations, the website, social content, events, order history, or live support. \n\ncheck_available_discounts",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 355,
+        "total_tokens": 1345
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "The customer is expressing concern about the cost of lawn seating and wishes for ways to reduce the expense. This directly relates to inquiries about discounts, promotions, or special offers. No other themes (like social media, past purchases, or human assistance requests) are present.  \n\ncheck_available_discounts()",
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 414,
+        "total_tokens": 1404
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "### Reasoning:\nThe customer's message provides feedback about the venue's facilities (specifically, the number of trash cans in the lawn area). It does not explicitly request information about:\n- Previous conversations\n- Website details\n- Social media content\n- Discounts\n- Upcoming events\n- Past purchases\n- Human assistance\n\nNo function triggers are evident, as the message is purely feedback/suggestion. Therefore, **no functions should be called**.\n\n### Function Calls:\nNo functions called.",
+      "usage": {
+        "prompt_tokens": 994,
+        "completion_tokens": 477,
+        "total_tokens": 1471
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The customer's message provides feedback about the venue's trash can availability in the lawn area. This doesn't explicitly match any of the defined function categories:\n- Not inquiring about website info, tickets, or policies\n- Not referencing social media content\n- Not asking about discounts/offers\n- Not requesting event details\n- Not discussing purchases/orders\n- Not seeking a human agent or recap of conversation\n\nSince no function themes are present, no tools will be activated.",
+      "usage": {
+        "prompt_tokens": 994,
+        "completion_tokens": 359,
+        "total_tokens": 1353
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "### Reasoning:\nThe customer's message provides feedback about the physical venue (specifically the lack of trash cans in the lawn area) but does **not** explicitly request any of the following:  \n- A recap of previous conversations  \n- Website-related information (tickets, policies, etc.)  \n- Yes! Music's social media content  \n- Discounts or promotions  \n- Upcoming event details  \n- Past purchase assistance  \n- Connection to a human representative  \n\nNo actionable inquiries matching the tool categories are present.  \n\n**Conclusion:** No tools should be triggered.  \n\n### Tool Calls:\n*(No applicable functions to call)*",
+      "usage": {
+        "prompt_tokens": 994,
+        "completion_tokens": 575,
+        "total_tokens": 1569
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message focuses on a physical venue observation about trash cans in the lawn area. This does not align with any of the defined functions:\n\n- No conversation recap request\n- No website-related inquiries\n- No mention of Yes! Music social media content\n- No discount inquiries\n- No upcoming event questions\n- No purchase history references\n- No request for human assistance\n\nThis is general feedback about venue facilities, which falls outside the scope of our verification functions. No function calls are triggered.",
+      "usage": {
+        "prompt_tokens": 994,
+        "completion_tokens": 477,
+        "total_tokens": 1471
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "After reviewing the customer's message about the venue's lawn area trash can availability, I note that this falls outside the defined function categories. The message is feedback about physical venue operations rather than:\n\n- Digital platform usage\n- Content inquiries\n- Purchases/discounts\n- Event details\n- Human agent requests\n\nNo specific function triggers are present in this feedback message. Therefore, no verification functions will be activated.",
+      "usage": {
+        "prompt_tokens": 994,
+        "completion_tokens": 386,
+        "total_tokens": 1380
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260115_215532"
+}

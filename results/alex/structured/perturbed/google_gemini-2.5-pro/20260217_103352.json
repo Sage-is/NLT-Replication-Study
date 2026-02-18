@@ -1,0 +1,1758 @@
+{
+  "summary": {
+    "accuracy": 0.8625,
+    "variance": 0.11859375000000008,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "alex",
+    "approach": "structured",
+    "perturbed": true,
+    "model": "google/gemini-2.5-pro",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for information about the website and also about a past purchase. They want to know where to buy tickets on the website, which is covered by `check_website_information`. They also want to check the status of an order from last week, which is covered by `check_past_purchases`.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 254,
+        "total_tokens": 1004
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for information about the \"Yes! Music\" website, specifically regarding where to purchase tickets. They are also inquiring about a past purchase, as they want to check the status of a ticket they bought last week. Therefore, the `check_website_information` and `check_past_purchases` functions should be triggered.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 243,
+        "total_tokens": 993
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the website and past purchases. I should call `check_website_information` and `check_past_purchases`.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 217,
+        "total_tokens": 967
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the website and past purchases. I should call `check_website_information` and `check_past_purchases`.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 197,
+        "total_tokens": 947
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for information about the \"Yes! Music\" website, specifically about purchasing tickets and checking order status. They are also inquiring about a past purchase. Therefore, the `check_website_information` and `check_past_purchases` functions should be called.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 356,
+        "total_tokens": 1106
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The user is asking to be connected with a live agent. The `check_talk_to_a_human` function is the appropriate tool for this request.",
+      "usage": {
+        "prompt_tokens": 735,
+        "completion_tokens": 137,
+        "total_tokens": 872
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The user is asking to be connected to a live agent. The `check_talk_to_a_human` function is designed to handle this type of request.",
+      "usage": {
+        "prompt_tokens": 735,
+        "completion_tokens": 135,
+        "total_tokens": 870
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The user is asking to speak with a live agent. The `check_talk_to_a_human` function should be used to address this.",
+      "usage": {
+        "prompt_tokens": 735,
+        "completion_tokens": 116,
+        "total_tokens": 851
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The user is asking to be connected to a live agent, which directly corresponds to the `check_talk_to_a_human` function. The initial question about my identity does not trigger any of the available tools.",
+      "usage": {
+        "prompt_tokens": 735,
+        "completion_tokens": 146,
+        "total_tokens": 881
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "The user is asking to be connected with a live agent. The `check_talk_to_a_human` function is designed for this purpose.",
+      "usage": {
+        "prompt_tokens": 735,
+        "completion_tokens": 155,
+        "total_tokens": 890
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for a recap of a previous conversation and for a list of upcoming events. Therefore, I should call `check_recap_of_previous_conversation` and `check_list_of_upcoming_events`.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 212,
+        "total_tokens": 962
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for a summary of their last conversation and also wants to know about upcoming events. I will call the `check_recap_of_previous_conversation` and `check_list_of_upcoming_events` functions.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 117,
+        "total_tokens": 867
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for a recap of their previous conversation and wants to know about upcoming events. I should use the `check_recap_of_previous_conversation` and `check_list_of_upcoming_events` functions.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 116,
+        "total_tokens": 866
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for a recap of their previous conversation and wants to know about upcoming events. I should use the `check_recap_of_previous_conversation` and `check_list_of_upcoming_events` functions.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 116,
+        "total_tokens": 866
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for a recap of a previous conversation and also wants to know about upcoming events. I will call the `check_recap_of_previous_conversation` and `check_list_of_upcoming_events` functions.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 117,
+        "total_tokens": 867
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about future shows and whether there is a student discount. I should use `check_list_of_upcoming_events` and `check_available_discounts`.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 358,
+        "total_tokens": 1116
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about upcoming events, which corresponds to the `check_list_of_upcoming_events` function. They also mention the website and social media, which triggers the `check_website_information` and `check_recent_social_media_posts` functions, respectively. Finally, the user asks about a student discount, which maps to the `check_available_discounts` function.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 310,
+        "total_tokens": 1068
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about upcoming events, which corresponds to the `check_list_of_upcoming_events` function. They are also asking about a student discount, which aligns with the `check_available_discounts` function. The user also mentions viewing events on the website, which triggers the `check_website_information` function. Finally, the user references a social media post, which activates the `check_recent_social_media_posts` function.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 354,
+        "total_tokens": 1112
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about upcoming events and a student discount, and they also mention a recent social media post. Therefore, I should call `check_list_of_upcoming_events`, `check_available_discounts`, `check_website_information`, and `check_recent_social_media_posts`.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 595,
+        "total_tokens": 1353
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Website information",
+        "Available discounts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "List of upcoming events",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about future shows and whether there is a student discount. They also mention the company's social media and website. Therefore, I should call `check_list_of_upcoming_events`, `check_available_discounts`, `check_recent_social_media_posts`, and `check_website_information`.",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 316,
+        "total_tokens": 1074
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about a previous order and wants to track it. I should call `check_past_purchases` to check for past orders and `check_website_information` to get tracking information from the website.",
+      "usage": {
+        "prompt_tokens": 746,
+        "completion_tokens": 170,
+        "total_tokens": 916
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a previous order they made and its status. This clearly falls under the theme of \"Past Purchases\". Therefore, I should call the `check_past_purchases` function.",
+      "usage": {
+        "prompt_tokens": 746,
+        "completion_tokens": 291,
+        "total_tokens": 1037
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is inquiring about a previous order they placed for a t-shirt. This aligns with the \"Past Purchases\" category, as it involves an inquiry about a historical order and its status. Therefore, the `check_past_purchases` function is the appropriate tool to use.",
+      "usage": {
+        "prompt_tokens": 746,
+        "completion_tokens": 155,
+        "total_tokens": 901
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is inquiring about a previous order they placed for a t-shirt. They are concerned because it has not arrived after two weeks. This falls under the category of past purchases and order tracking. Therefore, the `check_past_purchases` function should be activated.",
+      "usage": {
+        "prompt_tokens": 746,
+        "completion_tokens": 213,
+        "total_tokens": 959
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is inquiring about a past order they've been waiting on. This falls under the category of past purchases and order tracking. Therefore, I should call the `check_past_purchases` function.",
+      "usage": {
+        "prompt_tokens": 746,
+        "completion_tokens": 118,
+        "total_tokens": 864
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a past purchase and whether a discount was applied. They are also asking a general question about available discounts. Therefore, the `check_past_purchases` and `check_available_discounts` functions should be called.",
+      "usage": {
+        "prompt_tokens": 760,
+        "completion_tokens": 104,
+        "total_tokens": 864
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a previous order, and they are also asking about discounts. Therefore, I should call the `check_past_purchases` and `check_available_discounts` functions.",
+      "usage": {
+        "prompt_tokens": 760,
+        "completion_tokens": 229,
+        "total_tokens": 989
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a previous order and whether a discount was applied. They are also asking a general question about available discounts. Therefore, the `check_past_purchases` and `check_available_discounts` functions should be called.",
+      "usage": {
+        "prompt_tokens": 760,
+        "completion_tokens": 247,
+        "total_tokens": 1007
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for a receipt for a past order and also inquiring about discounts. Therefore, I should call `check_past_purchases` and `check_available_discounts`.",
+      "usage": {
+        "prompt_tokens": 760,
+        "completion_tokens": 92,
+        "total_tokens": 852
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for the receipt for a past order and inquiring about discounts. Therefore, the `check_past_purchases` and `check_available_discounts` functions should be triggered.",
+      "usage": {
+        "prompt_tokens": 760,
+        "completion_tokens": 171,
+        "total_tokens": 931
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is giving positive feedback. No specific information is requested. No tool is applicable.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 63,
+        "total_tokens": 805
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is providing positive feedback about a recent show. None of the available functions are designed to handle general feedback. The message does not contain any inquiries about previous conversations, the website, social media, discounts, upcoming events, past purchases, or a request to speak with a human. Therefore, no functions should be called.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 357,
+        "total_tokens": 1099
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "This is positive feedback about a past event and the team's performance. It doesn't ask for information about previous conversations, the website, social media, discounts, upcoming events, past purchases, or a human agent. Therefore, none of the available functions are applicable.",
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 443,
+        "total_tokens": 1313
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is providing positive feedback about a recent event. None of the available functions are designed to handle general feedback. Therefore, no functions should be called.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 388,
+        "total_tokens": 1130
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is providing positive feedback about a past event. None of the available functions are designed to handle general feedback. Therefore, no functions should be called.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 374,
+        "total_tokens": 1116
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a previous conversation and where to find information on the \"Yes! Music\" website. Therefore, I should call `check_recap_of_previous_conversation` and `check_website_information`.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 130,
+        "total_tokens": 891
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a previous conversation and where to find specific information on the \"Yes! Music\" website. This requires recalling the last interaction and providing website assistance. Therefore, the `check_recap_of_previous_conversation` and `check_website_information` functions should be called.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 156,
+        "total_tokens": 917
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is referencing a previous conversation and asking for help locating information on the \"Yes! Music\" website. Therefore, the `check_recap_of_previous_conversation` and `check_website_information` functions are relevant.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 143,
+        "total_tokens": 904
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a previous conversation and is also asking for help finding information on the website. Therefore, I should call `check_recap_of_previous_conversation` and `check_website_information`.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 143,
+        "total_tokens": 904
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a previous conversation and where to find information on the \"Yes! Music\" website. Therefore, the `check_recap_of_previous_conversation` and `check_website_information` functions should be called.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 133,
+        "total_tokens": 894
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user wants to talk to a human and is referencing a previous conversation. Therefore, the `check_talk_to_a_human` and `check_recap_of_previous_conversation` functions should be called.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 151,
+        "total_tokens": 893
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is referencing a previous conversation and is also explicitly asking to speak to a human. Therefore, the `check_recap_of_previous_conversation` and `check_talk_to_a_human` functions should be called.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 158,
+        "total_tokens": 900
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is referencing a previous conversation and explicitly asks to speak with a human. Therefore, the `check_recap_of_previous_conversation` and `check_talk_to_a_human` functions should be called.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 139,
+        "total_tokens": 881
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is referencing a previous conversation and is also explicitly asking to speak with a human. Therefore, I should call the `check_recap_of_previous_conversation` and `check_talk_to_a_human` functions.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 158,
+        "total_tokens": 900
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is referencing a past conversation and is asking to speak to a person. I should call the `check_recap_of_previous_conversation` and `check_talk_to_a_human` functions.",
+      "usage": {
+        "prompt_tokens": 742,
+        "completion_tokens": 238,
+        "total_tokens": 980
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about price matching and mentions being a student, both of which fall under the category of available discounts. Therefore, the `check_available_discounts` function should be called.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 154,
+        "total_tokens": 915
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about price matching and mentions being a student, which suggests an inquiry about discounts. They also reference another website (Ticketmaster) in the context of ticket purchasing. Therefore, the `check_available_discounts` and `check_website_information` functions are appropriate.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 152,
+        "total_tokens": 913
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about price matching and mentions being a student, which are both related to discounts. Therefore, the `check_available_discounts` function is the most appropriate tool to use.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 153,
+        "total_tokens": 914
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about price matching and mentions being a student, which are both related to discounts. They also mention another website, which is related to website information. Therefore, I should call `check_available_discounts` and `check_website_information`.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 141,
+        "total_tokens": 902
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about price matching and student discounts. Both of these topics are covered by the `check_available_discounts` function. Additionally, the user mentions another website, which relates to the `check_website_information` function. Therefore, I will call both of these functions.",
+      "usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 150,
+        "total_tokens": 911
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about content on the \"Yes! Music\" Instagram page. The `check_recent_social_media_posts` function is the most appropriate tool to use as it handles inquiries related to social media updates and posts from the organization.",
+      "usage": {
+        "prompt_tokens": 752,
+        "completion_tokens": 520,
+        "total_tokens": 1272
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about content posted on social media by the \"Yes! Music\" organization. Therefore, I should call the `check_recent_social_media_posts` function.",
+      "usage": {
+        "prompt_tokens": 752,
+        "completion_tokens": 105,
+        "total_tokens": 857
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about finding photos on the \"Yes! Music\" Instagram page. This falls under the category of social media content created by the organization. Therefore, the `check_recent_social_media_posts` function is the appropriate tool to use.",
+      "usage": {
+        "prompt_tokens": 752,
+        "completion_tokens": 224,
+        "total_tokens": 976
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about content posted on social media by the \"Yes! Music\" team. This corresponds to the `check_recent_social_media_posts` function.",
+      "usage": {
+        "prompt_tokens": 752,
+        "completion_tokens": 118,
+        "total_tokens": 870
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about photos on the \"Yes! Music\" Instagram page. This inquiry is related to social media content produced by the organization. Therefore, the appropriate tool to use is `check_recent_social_media_posts`.",
+      "usage": {
+        "prompt_tokens": 752,
+        "completion_tokens": 130,
+        "total_tokens": 882
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "The user is asking to update their shipping address. This task is typically done on the website and is related to past or future purchases. Therefore, the `check_website_information` and `check_past_purchases` functions should be called.",
+      "usage": {
+        "prompt_tokens": 726,
+        "completion_tokens": 469,
+        "total_tokens": 1195
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "The user is asking a question about updating their shipping address. This could be related to a past purchase, and it also relates to using the website. Therefore, the `check_past_purchases` and `check_website_information` functions should be called.",
+      "usage": {
+        "prompt_tokens": 726,
+        "completion_tokens": 690,
+        "total_tokens": 1416
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking for assistance with the \"Yes! Music\" digital platform, specifically how to update their shipping address. This falls under the category of website information and site navigation. Therefore, the `check_website_information` function should be triggered.",
+      "usage": {
+        "prompt_tokens": 854,
+        "completion_tokens": 444,
+        "total_tokens": 1298
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "The user is asking a question about updating their shipping address. This is related to their personal information on the website and also pertains to past and future purchases. Therefore, the `check_website_information` and `check_past_purchases` functions should be called.",
+      "usage": {
+        "prompt_tokens": 726,
+        "completion_tokens": 491,
+        "total_tokens": 1217
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about updating their shipping address. This is related to their account on the \"Yes! Music\" website, so I should call `check_website_information`. It's also related to past and future purchases, so I should call `check_past_purchases`.",
+      "usage": {
+        "prompt_tokens": 726,
+        "completion_tokens": 150,
+        "total_tokens": 876
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the lineup for an upcoming event and is referencing a social media post made by the \"Yes! Music\" organization. Therefore, I should call the `check_list_of_upcoming_events` and `check_recent_social_media_posts` functions.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 159,
+        "total_tokens": 898
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the lineup for an upcoming event and is referencing a social media post from the venue. Therefore, the `check_list_of_upcoming_events` and `check_recent_social_media_posts` functions should be called.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 147,
+        "total_tokens": 886
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about an upcoming festival and referencing a social media post. I should call `check_list_of_upcoming_events` and `check_recent_social_media_posts`.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 140,
+        "total_tokens": 879
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about an upcoming festival lineup, which warrants the use of `check_list_of_upcoming_events`, and they are also mentioning a social media post from the venue, which would trigger the `check_recent_social_media_posts` function.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 150,
+        "total_tokens": 889
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a TikTok video, which is a recent social media post. They are also asking about the lineup for next month, which is a list of upcoming events. Therefore, I should call `check_recent_social_media_posts` and `check_list_of_upcoming_events`.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 479,
+        "total_tokens": 1218
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about a past purchase and the possibility of an exchange. The `check_past_purchases` function should be used to look up the user's previous orders. The `check_website_information` function should be used to find information about the venue's exchange policy.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 142,
+        "total_tokens": 881
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a past ticket purchase and the possibility of an exchange. This directly relates to the `check_past_purchases` function, which handles inquiries about historical orders and return processes.\n\n",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 111,
+        "total_tokens": 850
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a previous purchase and a potential exchange. The `check_past_purchases` function is appropriate for this inquiry.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 101,
+        "total_tokens": 840
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "The user is asking a question about a previous order and wants to know about the possibility of an exchange. This falls under the \"Past Purchases\" category. Therefore, I should call the `check_past_purchases` function.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 140,
+        "total_tokens": 879
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "The user is asking about a past purchase and wants to know about the exchange policy. The `check_past_purchases` function should be used because the user is referring to tickets they have already bought. The `check_website_information` function is also appropriate because exchange policies are a type of venue policy.",
+      "usage": {
+        "prompt_tokens": 739,
+        "completion_tokens": 215,
+        "total_tokens": 954
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing a desire to lower the cost of their tickets. This falls under the category of available discounts. Therefore, I will call the `check_available_discounts` function.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 130,
+        "total_tokens": 880
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing a desire to lower the cost of their tickets. This falls under the category of available discounts. Therefore, I should call the `check_available_discounts` function.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 127,
+        "total_tokens": 877
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing a desire to lower the cost of their tickets. This is a clear indication that they are interested in potential discounts or promotions. Therefore, the `check_available_discounts` function should be triggered.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 298,
+        "total_tokens": 1048
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing a desire to lower the cost of their tickets. This falls under the category of seeking discounts or promotions. The `check_available_discounts` function is designed to handle such requests.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 144,
+        "total_tokens": 894
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing dissatisfaction with the price of tickets and is looking for a way to reduce the cost. This suggests they are interested in any available discounts or promotions. Therefore, the `check_available_discounts` function is the most appropriate one to call.",
+      "usage": {
+        "prompt_tokens": 750,
+        "completion_tokens": 205,
+        "total_tokens": 955
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "This message is feedback about the venue and does not fall into any of the available function categories.",
+      "usage": {
+        "prompt_tokens": 754,
+        "completion_tokens": 290,
+        "total_tokens": 1044
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "This message provides feedback on the venue's amenities, a theme that doesn't align with any of the available functions. No functions will be called.",
+      "usage": {
+        "prompt_tokens": 754,
+        "completion_tokens": 294,
+        "total_tokens": 1048
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is providing feedback about the venue. None of the available functions are relevant to this topic.",
+      "usage": {
+        "prompt_tokens": 754,
+        "completion_tokens": 348,
+        "total_tokens": 1102
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "This message doesn't directly map to any of the specific functions. It's feedback about the physical venue rather than a request for information or help with a transaction.",
+      "usage": {
+        "prompt_tokens": 754,
+        "completion_tokens": 454,
+        "total_tokens": 1208
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "google/gemini-2.5-pro",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is providing feedback about the venue, but is not asking a question that corresponds to any of the available functions.",
+      "usage": {
+        "prompt_tokens": 754,
+        "completion_tokens": 83,
+        "total_tokens": 837
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_103352"
+}

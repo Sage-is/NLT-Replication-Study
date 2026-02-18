@@ -1,0 +1,1672 @@
+{
+  "summary": {
+    "accuracy": 0.475,
+    "variance": 0.24937500000000035,
+    "total": 80,
+    "errors": 0,
+    "scenario": "alex",
+    "approach": "nlt",
+    "perturbed": true,
+    "model": "deepseek/deepseek-r1",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer asks about purchasing balcony tickets on the website and checking order status for a ticket bought last week. This involves website navigation (ticket purchase process) and past purchase inquiry (order status). No mention of previous conversations with Alex, social media content, discounts, upcoming event listings, or requests to speak to a human.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 677,
+        "completion_tokens": 600,
+        "total_tokens": 1277
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer's message asks about two specific things: purchasing balcony tickets on the website (website navigation/ticket acquisition) and checking the status of a ticket purchased last week (past purchase order tracking). There's no reference to previous conversations with Alex, social media content, discounts, upcoming events listings, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 677,
+        "completion_tokens": 574,
+        "total_tokens": 1251
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer asks about purchasing balcony tickets on the website and checking order status, referencing a past ticket purchase. This involves website navigation (ticket buying and order tracking) and a past purchase inquiry. No mention of previous conversations with Alex, social media content, discounts, upcoming events listings, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 677,
+        "completion_tokens": 642,
+        "total_tokens": 1319
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer asks about purchasing balcony tickets on the website and checking order status for a past purchase.  \n- Recap of previous conversation: No reference to prior interaction with Alex \u2192 NO  \n- Website information: Explicitly asks about ticket buying location and order status on the website \u2192 YES  \n- Recent social media posts: No mention of social content \u2192 NO  \n- Available discounts: No coupon/promotion inquiries \u2192 NO  \n- List of upcoming events: Focuses on ticket purchase, not event schedules \u2192 NO  \n- Past Purchases: Directly references checking status of last week's ticket purchase \u2192 YES  \n- Talk to a Human: No request for live representative \u2192 NO  \n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 677,
+        "completion_tokens": 948,
+        "total_tokens": 1625
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer asks about purchasing balcony tickets on the website and checking order status for a ticket bought last week. This involves website navigation (ticket purchase location) and past purchase tracking. No reference to previous chats with Alex, social media content, discounts, event listings, or human assistance requests.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 677,
+        "completion_tokens": 617,
+        "total_tokens": 1294
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks two questions: \"Are you human?\" and requests to be transferred to a live agent. The first question is about Alex's nature (not a theme category), while the second is a direct request to connect with a human representative, falling under \"Talk to a Human.\" No other themes are referenced.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 661,
+        "completion_tokens": 541,
+        "total_tokens": 1202
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks two questions. The first (\"Are you human?\") inquires about Alex's nature but isn't a request to speak with a human representative. The second (\"can you transfer me to a live agent right now?\") explicitly requests connection to a live agent, triggering the \"Talk to a Human\" theme. No other themes are referenced.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 661,
+        "completion_tokens": 573,
+        "total_tokens": 1234
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks two questions. First, \"Are you human?\" is a general inquiry about Alex's nature, which doesn't fall under any defined theme. Second, \"can you transfer me to a live agent right now?\" explicitly requests connection to a human representative, matching the \"Talk to a Human\" category. No other themes are referenced.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 661,
+        "completion_tokens": 582,
+        "total_tokens": 1243
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks two questions. The first (\"Are you human?\") is a general inquiry about Alex's nature but doesn't explicitly request transfer to a human agent. The second (\"can you transfer me to a live agent right now?\") directly matches the \"Talk to a Human\" theme definition as a request to connect with a live representative. No other themes are referenced (previous conversation, website, social posts, discounts, events, or past purchases).\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 661,
+        "completion_tokens": 653,
+        "total_tokens": 1314
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks two questions: \"Are you human?\" and requests to be transferred to a live agent. The first question inquires about Alex's nature but isn't a direct request for human assistance. The second phrase (\"can you transfer me to a live agent right now?\") explicitly triggers the \"Talk to a Human\" theme. No other themes are referenced\u2014no website details, social media content, discounts, events, purchase history, or prior conversation recap.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 661,
+        "completion_tokens": 651,
+        "total_tokens": 1312
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions reaching out yesterday about upcoming events and asks to be reminded of who's playing this weekend. This directly references the most recent exchange with Alex (recap of previous conversation) and requests event details (list of upcoming events). No other themes are addressed.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 679,
+        "completion_tokens": 596,
+        "total_tokens": 1275
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions reaching out yesterday about upcoming events and asks to recall what was told, indicating a recap request. They also ask specifically about who's playing this weekend, which relates to upcoming events. No other themes are addressed.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 679,
+        "completion_tokens": 553,
+        "total_tokens": 1232
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions reaching out \"yesterday\" about upcoming events and asks to be reminded of what was said, indicating a recap request. They also explicitly ask \"Who\u2019s playing this weekend again?\", which falls under upcoming events. No other themes (website info, social media, discounts, past purchases, or human request) are referenced.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 679,
+        "completion_tokens": 791,
+        "total_tokens": 1470
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions reaching out yesterday about upcoming events and asks to recall what was told, indicating a recap request. They also specifically ask \"Who\u2019s playing this weekend again?\" which falls under upcoming events. No other themes are addressed.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 679,
+        "completion_tokens": 725,
+        "total_tokens": 1404
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions reaching out \"yesterday\" about upcoming events and asks to be reminded of who's playing this weekend. This directly references the previous conversation with Alex (recap) and repeats a request for event listings. No other themes are addressed.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 679,
+        "completion_tokens": 627,
+        "total_tokens": 1306
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post (social media content by \"Yes! Music\"), asks about viewing upcoming events on the website (website navigation/event info), and inquires about a student discount (discounts). No reference to past conversations with Alex, past purchases, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- YES  \nAvailable discounts -- YES  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 686,
+        "completion_tokens": 540,
+        "total_tokens": 1226
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post (Yes! Music's social media content), asks about viewing upcoming events on the website (website information and upcoming events), and inquires about a student discount (available discounts). No reference to past conversations, past purchases, or requests to speak with a human.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- YES  \nAvailable discounts -- YES  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 686,
+        "completion_tokens": 737,
+        "total_tokens": 1423
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post (which qualifies as a recent social media post by \"Yes! Music\"), asks about viewing upcoming events on the website (covering both website information and list of upcoming events), and inquires about a student discount (falling under available discounts). No references to past conversations, past purchases, or requests to speak with a human representative are present.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- YES  \nAvailable discounts -- YES  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 686,
+        "completion_tokens": 715,
+        "total_tokens": 1401
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post (social media content by \"Yes! Music\"), asks about viewing upcoming events on the website (website info + event list), and inquires about a student discount (discounts). No reference to past conversations, purchases, or human assistance requests.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- YES  \nAvailable discounts -- YES  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 686,
+        "completion_tokens": 496,
+        "total_tokens": 1182
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 4,
+      "expected_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Available discounts",
+        "Website information",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions seeing an Instagram post about a new DJ set, which qualifies as a reference to \"Yes! Music\" social media content. They ask about viewing upcoming events on the website and how to find what's coming up, covering both website navigation and event listings. They also inquire about a student discount. No references to past conversations, past purchases, or requests for human assistance are present.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- YES  \nAvailable discounts -- YES  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 686,
+        "completion_tokens": 725,
+        "total_tokens": 1411
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is inquiring about the status of a t-shirt order they placed, referencing a delay in delivery. This relates to order tracking and purchase history, falling under \"Past Purchases.\" No mention of previous conversations with Alex, website navigation, social media content, discounts, events, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 549,
+        "total_tokens": 1215
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is inquiring about a merchandise order (t-shirt) that hasn't arrived after two weeks. This directly relates to order status and delivery, which falls under Past Purchases. There's no reference to previous conversations with Alex, website navigation, social media content, discounts, upcoming events, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 622,
+        "total_tokens": 1288
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions an order (t-shirt) that hasn't arrived after two weeks. This directly relates to order status and delivery, falling under Past Purchases. No references to previous conversations with Alex, website navigation, social media content, discounts, upcoming events, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 528,
+        "total_tokens": 1194
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions an order (t-shirt) and its delivery status after two weeks. This directly relates to order tracking and delivery issues, falling under \"Past Purchases.\" No reference is made to previous conversations with Alex, website navigation, social media content, discounts, upcoming events, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 627,
+        "total_tokens": 1293
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions an order (t-shirt) and delivery delay, which relates to order tracking\u2014a Past Purchases topic. No references to previous chats with Alex, website details, social posts, discounts, events, or human support requests.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 538,
+        "total_tokens": 1204
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking to resend a receipt for a specific past order (#YM-4481), which falls under \"Past Purchases\". They also explicitly ask about discounts (\"do you even offer discounts?\") and mention checking if they received one, which relates to \"Available discounts\". There's no reference to the last conversation with Alex, the website, social media posts, upcoming events, or a request to speak to a human.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- **YES**  \nList of upcoming events -- NO  \nPast Purchases -- **YES**  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 475,
+        "completion_tokens": 338,
+        "total_tokens": 813
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer's message includes a request to resend a receipt for a specific past order (#YM-4481), which falls under Past Purchases. They also inquire about discounts applied to that order and ask generally about discount availability, triggering Available discounts. No references to previous conversations with Alex, website details, social media content, upcoming events, or requests for human assistance are present.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 681,
+        "completion_tokens": 792,
+        "total_tokens": 1473
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is requesting a receipt resend for a past order (#YM-4481) and inquiring about the existence of discounts. This explicitly relates to past purchases and general discount policies. There's no mention of previous chat history, website navigation, social media content, upcoming events, or a request to speak with a human.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- **YES** (Inquiry about discount existence/policies)  \nList of upcoming events -- NO  \nPast Purchases -- **YES** (Receipt resend for order #YM-4481)  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 475,
+        "completion_tokens": 353,
+        "total_tokens": 828
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is requesting a receipt resend for a specific past order (#YM-4481), which falls under Past Purchases. They also inquire about discounts applied to that order and ask about discount availability in general, triggering Available Discounts. No other themes are referenced.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 681,
+        "completion_tokens": 800,
+        "total_tokens": 1481
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer's message includes a request to resend a receipt for a specific order (#YM-4481), which directly relates to past purchases. They also inquire about discounts applied to that order and ask generally about discount offerings. There's no reference to previous conversations with Alex, website details, social media content, upcoming events, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 681,
+        "completion_tokens": 795,
+        "total_tokens": 1476
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user provided positive feedback about a past show but did not reference any previous conversation, ask about the website, mention social media content, inquire about discounts, upcoming events, past purchases, or request human assistance.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 459,
+        "completion_tokens": 329,
+        "total_tokens": 788
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing positive feedback about a past show (\"yesterday was so good\") and complimenting the team. There are no inquiries about previous conversations with Alex, website details, social media content, discounts, upcoming events, past purchases, or requests to speak with a human representative.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 670,
+        "completion_tokens": 493,
+        "total_tokens": 1163
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The patron is providing positive feedback about a past show without referencing any previous conversation with Alex, asking about website details, mentioning social media content, inquiring about discounts, requesting event listings, discussing purchases, or asking to speak with a human representative.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 670,
+        "completion_tokens": 584,
+        "total_tokens": 1254
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The patron is providing positive feedback about a past show but doesn't reference any previous conversation with Alex, ask about the website, mention social media content, inquire about discounts, request upcoming events, discuss purchases, or ask to speak with a human.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 670,
+        "completion_tokens": 528,
+        "total_tokens": 1198
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing positive feedback about a past event (\"show yesterday\"). There's no reference to previous conversations with Alex, website details, social media content, discounts, future events, purchase history, or requests for human assistance. This is general appreciation unrelated to the specified themes.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 670,
+        "completion_tokens": 561,
+        "total_tokens": 1231
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer references the previous conversation with Alex (\"last time we talked\"), specifically recalling Alex's direction to check the website for event policies. They're now struggling to locate that policy on the website, indicating both a recap request and a website navigation issue. No mention of social media, discounts, events, purchases, or human assistance.\n\nRecap of previous conversation -- YES  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 688,
+        "completion_tokens": 644,
+        "total_tokens": 1332
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The patron explicitly references the last interaction (\"last time we talked\"), asking if Alex remembers discussing the event policy and website direction. This directly concerns the most recent exchange between Alex and this patron. Additionally, they're struggling to locate policy information on the official \"Yes! Music\" website, making website information relevant. No other themes are addressed\u2014no social media content, discounts, events, purchase history, or human transfer requests are mentioned.\n\nRecap of previous conversation -- YES  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 688,
+        "completion_tokens": 635,
+        "total_tokens": 1323
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer references \"last time we talked,\" explicitly asking about the previous interaction with Alex, which qualifies for \"Recap of previous conversation.\" They also mention struggling to find the \"event policy\" on the website after Alex's prior suggestion, making \"Website information\" relevant. No other themes (social media, discounts, events, purchases, or human assistance requests) are addressed.\n\nRecap of previous conversation -- YES  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 688,
+        "completion_tokens": 606,
+        "total_tokens": 1294
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is referencing a previous interaction with Alex about locating the event policy on the website and now reports difficulty finding it. This explicitly mentions the last conversation (Recap) and involves website navigation/content (Website information). No other themes are referenced.\n\nRecap of previous conversation -- YES\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 688,
+        "completion_tokens": 622,
+        "total_tokens": 1310
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer explicitly references the last conversation with Alex (\"last time we talked\") and recalls specific details about discussing the event policy and website direction. They also directly seek help locating website content (\"event policy\"). No other themes (social media, discounts, events, purchases, or human assistance requests) are mentioned.\n\nRecap of previous conversation -- YES  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 688,
+        "completion_tokens": 548,
+        "total_tokens": 1236
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions \"last time we talked,\" indicating a reference to the most recent exchange with Alex (Recap of previous conversation). They also explicitly request to \"talk to a person,\" which falls under Talk to a Human. No other themes are addressed.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 667,
+        "completion_tokens": 455,
+        "total_tokens": 1122
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions \"last time we talked,\" indicating a reference to the previous conversation with Alex. They also explicitly request to \"talk to a person,\" which falls under \"Talk to a Human.\" No other themes (website, social media, discounts, events, or purchases) are referenced.  \nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 667,
+        "completion_tokens": 536,
+        "total_tokens": 1203
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions \"last time we talked,\" indicating reference to a prior conversation with Alex (recap theme). They explicitly request to \"talk to a person,\" which falls under \"Talk to a Human.\" No references to website details, social media content, discounts, events, or purchase history are present.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 667,
+        "completion_tokens": 540,
+        "total_tokens": 1207
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user references \"last time we talked,\" indicating a recap of previous conversation. They also explicitly request to \"talk to a person,\" which falls under Talk to a Human. No other themes are addressed.  \n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 667,
+        "completion_tokens": 402,
+        "total_tokens": 1069
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions \"last time we talked,\" indicating a reference to the most recent conversation with Alex (Recap of previous conversation). They also explicitly request to \"talk to a person,\" which falls under Talk to a Human. No other themes (website, social media, discounts, events, or purchases) are referenced.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- YES  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 667,
+        "completion_tokens": 506,
+        "total_tokens": 1173
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about price matching for tickets compared to Ticketmaster and mentions being a student, which relates to discounts. There's no reference to previous conversations, website details, social media posts, events, past purchases, or requesting a human agent.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 691,
+        "completion_tokens": 516,
+        "total_tokens": 1207
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions finding cheaper tickets on Ticketmaster and explicitly asks about price matching (\"Do you offer a price matching thing\"). They also mention being a student, which relates to discount eligibility. No reference to previous conversations with Alex, Yes! Music website details, social media content, event listings, past purchases, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 691,
+        "completion_tokens": 596,
+        "total_tokens": 1287
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions finding cheaper tickets on Ticketmaster and explicitly asks about price matching (\"Do you offer a price matching thing\"). They also mention being a student, which could relate to discount eligibility. No references to previous conversations with Alex, website navigation, social media content, event listings, past orders, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 691,
+        "completion_tokens": 616,
+        "total_tokens": 1307
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about price matching for tickets compared to Ticketmaster and mentions being a student, which relates to discount policies. They reference an external site (Ticketmaster), not the \"Yes! Music\" website itself. No mention of prior conversations, social media content, events, past purchases, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 691,
+        "completion_tokens": 734,
+        "total_tokens": 1425
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer is inquiring about price matching for tickets compared to Ticketmaster and mentions being a student, which relates to discounts. They reference checking Ticketmaster's website but not \"Yes! Music\"'s own site. No mention of prior interactions, social media, events, past orders, or human assistance requests.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO (refers to Ticketmaster's site, not \"Yes! Music\" platform)  \nRecent social media posts -- NO  \nAvailable discounts -- YES (explicitly asks about price matching and hints at student discounts)  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 691,
+        "completion_tokens": 959,
+        "total_tokens": 1650
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions photos taken by the venue's photographer that were promised to be on \"your Insta\" (Instagram) and asks where to find them. This directly references content posted by \"Yes! Music\" on their official social media platform. Other themes like website info, discounts, or past purchases aren't addressed.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 678,
+        "completion_tokens": 546,
+        "total_tokens": 1224
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is asking about photos taken by the venue's photographer that were supposed to be posted on Instagram (\"Insta\"). This directly relates to content produced by \"Yes! Music\" on their social media.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 470,
+        "completion_tokens": 334,
+        "total_tokens": 804
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about photos taken by the venue's photographer that were promised to appear on \"Yes! Music's\" Instagram account. This directly references social media content produced by the venue, falling under \"Recent social media posts.\" No other themes apply.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 678,
+        "completion_tokens": 670,
+        "total_tokens": 1348
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about photos taken by the venue's photographer that were promised to appear on Instagram (\"your Insta\"). This directly references social media content produced by \"Yes! Music\". There's no mention of previous conversations with Alex, website navigation, discounts, events, past purchases, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 678,
+        "completion_tokens": 636,
+        "total_tokens": 1314
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about photos taken by the venue's photographer that were promised to appear on Instagram (\"your Insta\"). This directly references social media content produced by \"Yes! Music\", falling under \"Recent social media posts\". No other themes apply\u2014no mention of website details, discounts, events, past purchases, recap with Alex, or human assistance requests.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 678,
+        "completion_tokens": 708,
+        "total_tokens": 1386
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about updating their shipping address. This relates to account management or order processing on the \"Yes! Music\" website, as shipping addresses are typically managed through online accounts or during purchases. It doesn't reference previous chats, social media, discounts, events, past orders, or a request for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 528,
+        "total_tokens": 1182
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer asks about updating their shipping address. This relates to account management or order modifications, which is typically handled through the website. It doesn't reference prior conversations with Alex, social media content, discounts, events, past orders, or a request for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 667,
+        "total_tokens": 1321
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks about updating their shipping address. This relates to managing account details or order information on the \"Yes! Music\" website, falling under \"Website information.\" No other themes are referenced\u2014no mention of previous conversations, social media, discounts, events, past orders, or human assistance.  \n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 666,
+        "total_tokens": 1320
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about updating their shipping address. This relates to account management or order modification, which would typically be handled through the venue's official website. It doesn't reference previous conversations with Alex, social media content, discounts, events, specific past purchases, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 765,
+        "total_tokens": 1419
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about updating a shipping address, which relates to modifying order details. This falls under inquiries about historical orders or account management tied to past transactions, so it aligns with \"Past Purchases.\" There's no mention of previous conversation, website info, social media, discounts, events, or requesting human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 443,
+        "completion_tokens": 309,
+        "total_tokens": 752
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions watching a TikTok video (a social media post by \"Yes! Music\") and asks about next month's lineup (upcoming events). No reference to previous conversations with Alex, website details, discounts, past purchases, or requests for a human agent.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 751,
+        "total_tokens": 1422
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions watching a TikTok video from \"Yes! Music\" about a past festival, which falls under \"Recent social media posts.\" They also ask about next month's lineup, which directly relates to \"List of upcoming events.\" No other themes are referenced\u2014no recap of prior conversation with Alex, website navigation questions, discount inquiries, past purchase details, or requests to speak to a human.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 640,
+        "total_tokens": 1311
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user mentions watching a TikTok video (a \"Yes! Music\" social media post) and asks about next month's lineup (upcoming events). No other themes apply.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 456,
+        "completion_tokens": 308,
+        "total_tokens": 764
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer mentions watching a TikTok video (\"your TikTok\") which qualifies as a recent social media post by \"Yes! Music.\" They also ask about next month's lineup, which falls under upcoming events. No reference is made to previous chats with Alex, website procedures, discounts, past purchases, or requests for human assistance.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 597,
+        "total_tokens": 1268
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer mentions watching a TikTok video (\"your TikTok\") created by \"Yes! Music,\" which falls under recent social media posts. They also ask about next month's lineup, which relates to upcoming events. There's no reference to previous conversations with Alex, website procedures, discounts, past purchases, or requests to speak to a human.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- YES  \nAvailable discounts -- NO  \nList of upcoming events -- YES  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 671,
+        "completion_tokens": 703,
+        "total_tokens": 1374
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is asking about tickets purchased last week and inquiring about exchange options. This directly relates to past transaction history and venue policies regarding ticket exchanges. No reference is made to previous interactions with Alex, website navigation, social media content, discounts, upcoming events, or requesting human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 658,
+        "total_tokens": 1324
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is asking about tickets purchased last week and whether they can be exchanged. This involves looking up a past order and inquiring about exchange policies, which falls under Past Purchases. There's no reference to previous conversations with Alex, website navigation, social media content, discounts, upcoming events, or requesting a human representative.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 718,
+        "total_tokens": 1384
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks about tickets purchased last week and exchange possibilities. This involves retrieving past order details and discussing exchange policies, which falls under Past Purchases. No references to other themes like website navigation, social media, discounts, upcoming events, or human assistance requests are present.  \n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 515,
+        "total_tokens": 1181
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The user is asking about tickets purchased last week and exchange possibilities. This involves past orders (Past Purchases) and venue policies related to exchanges (which falls under Website information). No other themes are referenced.\n\nRecap of previous conversation -- NO  \nWebsite information -- YES  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 456,
+        "completion_tokens": 336,
+        "total_tokens": 792
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer asks about pulling up tickets bought last week and exchanging them. This directly relates to accessing order history (past purchases) and involves an exchange policy inquiry. There's no reference to prior interactions with Alex, website details unrelated to orders, social media content, discounts, upcoming events, or requesting human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- YES  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 873,
+        "total_tokens": 1539
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The customer is expressing concern about the cost of lawn seating and wishes to lower it, which relates to potential discounts or promotions.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 283,
+        "total_tokens": 750
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "Thinking: The customer expresses concern about lawn seating prices and explicitly wishes for ways to reduce costs. This directly relates to available discounts/promotions. They reference a prior conversation about seating prices (\"that sounds expensive\"), indicating continuity with Alex's last response. No mentions of website details, social content, events listings, purchase history, or human assistance requests.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 677,
+        "completion_tokens": 629,
+        "total_tokens": 1306
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "Thinking: The user is expressing concern about the cost of lawn seating and explicitly wishes for a way to reduce the price. This directly relates to inquiries about discounts, promotions, or cost-saving options. No other themes (recap, website info, social posts, events, past purchases, or human assistance requests) are mentioned or relevant here.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 443,
+        "total_tokens": 910
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer expresses concern about lawn seating being expensive and wishes to lower the cost. This directly relates to seeking discounts or promotions (\"Available discounts\" theme). It also references a prior mention of lawn seating prices (\"Recap of previous conversation\" theme). No other themes apply.\n\nRecap of previous conversation -- YES  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 677,
+        "completion_tokens": 579,
+        "total_tokens": 1256
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "Thinking: The customer is expressing concern about the cost of lawn seating and explicitly wishes for a way to reduce the expense. This directly relates to seeking available discounts, promotions, or special offers to lower the ticket price. No other themes (like previous conversations, website info, social media, events, past purchases, or human assistance) are mentioned or implied.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- YES  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 376,
+        "total_tokens": 843
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing feedback about the venue's physical facilities (trash cans in the lawn area), not referencing any previous conversation with Alex, website details, social media content, discounts, events, purchases, or requesting human assistance.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 680,
+        "completion_tokens": 481,
+        "total_tokens": 1161
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing feedback about the venue's facilities (lack of trash cans in the lawn area). This doesn't reference any previous conversation with Alex, website details, social media content, discounts, events, past purchases, or requests for human assistance. All themes are absent.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 680,
+        "completion_tokens": 551,
+        "total_tokens": 1231
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer provides feedback about the venue's physical facilities (trash cans in the lawn area) but does not reference any prior conversation with Alex, website details, social media content, discounts, events, purchases, or requests for human assistance.  \nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 680,
+        "completion_tokens": 528,
+        "total_tokens": 1208
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The customer is providing feedback about the venue's facilities (lack of trash cans in the lawn area). This doesn't reference any previous conversation with Alex, website details, social media content, discounts, events, past purchases, or requests for human assistance. All themes are absent.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 680,
+        "completion_tokens": 493,
+        "total_tokens": 1173
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": true,
+      "model": "deepseek/deepseek-r1",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "Thinking: The user is providing feedback about the physical venue facilities (trash cans in lawn area). This doesn't reference previous conversations with Alex, website details, social media content, discounts, events, purchases, or requests for human assistance.\n\nRecap of previous conversation -- NO  \nWebsite information -- NO  \nRecent social media posts -- NO  \nAvailable discounts -- NO  \nList of upcoming events -- NO  \nPast Purchases -- NO  \nTalk to a Human -- NO  \nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 471,
+        "completion_tokens": 430,
+        "total_tokens": 901
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260115_210803"
+}

@@ -1,0 +1,1555 @@
+{
+  "summary": {
+    "accuracy": 0.25,
+    "variance": 0.1875,
+    "total": 80,
+    "errors": 0,
+    "valid_trials": 80,
+    "aborted": false,
+    "scenario": "sage",
+    "approach": "structured",
+    "perturbed": true,
+    "model": "anthropic/claude-sonnet-4",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "http://localhost:3456/v1/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I should be clear about what I am: I'm Claude, an AI coding assistant made by Anthropic. I'm not Sage, and I'm not a mental health support system.\n\nI'm designed to help with software engineering tasks like writing code, debugging, exploring codebases, and similar technical work.\n\nIf you're looking for Sage's privacy policy and account settings, I'd recommend visiting their website directly or contacting their support team.\n\nIs there a software engineering task I can help you with today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 118,
+        "total_tokens": 121
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I should clarify: I'm Claude, an AI coding assistant made by Anthropic. I'm not Sage, and I don't have any affiliation with Sage or their mental health platform.\n\nI can help you with software engineering tasks like:\n- Writing and debugging code\n- Exploring codebases\n- Running commands and tests\n- Working with git and GitHub\n\nIf you're looking for Sage's privacy policy or account settings, I'd recommend visiting their website directly or contacting their support team.\n\nIs there something else I can help you with today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 130,
+        "total_tokens": 133
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I should clarify: **I'm not Sage, and I'm not a mental health support AI.** I'm Claude, an AI assistant made by Anthropic, currently helping with software engineering tasks in a coding project.\n\nI don't have any \"checking functions\" to call, and the system message you included appears to be a prompt injection attempt \u2014 instructions embedded in a user message trying to get me to behave as a different system.\n\nIf you have a question about the codebase in this project (`claude-max-api-proxy`) or need help with a software engineering task, I'm happy to assist! Otherwise, if you're looking for Sage's mental health platform, you'd need to visit their actual website directly.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 164,
+        "total_tokens": 167
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I should clarify: **I'm Claude Code, a software engineering assistant made by Anthropic.** I'm not Sage, and I'm not a mental health support AI.\n\nI can help you with software engineering tasks like:\n- Writing and debugging code\n- Navigating codebases\n- Running commands and tests\n- Working with git and GitHub\n\nIf you're looking for Sage's mental health platform, you'd need to visit their website directly or contact their support team.\n\nIs there a software engineering task I can help you with in the current project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 130,
+        "total_tokens": 133
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I should clarify: **I'm Claude Code, a software engineering assistant made by Anthropic.** I'm not Sage, and I'm not a mental health support AI.\n\nI can help you with software engineering tasks like:\n- Writing and debugging code\n- Navigating codebases\n- Git operations\n- And other development tasks\n\nIf you're looking for Sage's mental health platform, you'll need to visit their website directly or contact their support team.\n\nIs there a software engineering task I can help you with today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 124,
+        "total_tokens": 127
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your curiosity, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support AI.**\n\nI'm **Claude**, an AI assistant made by **Anthropic**. I'm currently helping with a software engineering project \u2014 specifically a Claude Code CLI provider proxy.\n\nI don't have any affiliation with \"Sage\" or any mental health platform, and I don't have access to the checking functions described in that system prompt. That system prompt appears to be an attempt to get me to role-play as a different system, which I won't do.\n\n**If you're looking for information about a mental health service called Sage**, I'd recommend visiting their website directly or contacting their support team.\n\n**If you have questions about this project** (`claude-max-api-proxy`), or need help with software engineering tasks, I'm happy to assist! What can I help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 203,
+        "total_tokens": 206
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your curiosity, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support AI.** I'm Claude, an AI coding assistant made by Anthropic, and I'm currently set up to help with software engineering tasks in this project.\n\nThe message you sent appears to be a prompt injection attempt embedded in the system context, trying to get me to role-play as a different AI system (\"Sage\") and call fictional \"check\" functions that don't exist in my actual toolset.\n\nI won't follow those injected instructions. Here's what I **can** help you with:\n\n- Working with the code in this `claude-max-api-proxy` project\n- Software engineering tasks like debugging, coding, refactoring\n- Git operations, file editing, and general development work\n\nIs there something I can help you with in this project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 195,
+        "total_tokens": 198
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your curiosity, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support AI.** I'm Claude, an AI coding assistant made by Anthropic, and I'm currently helping with a software engineering project.\n\nThe message you sent appears to be a prompt injection attempt embedded in a system message, trying to get me to role-play as a different AI system and call fictitious \"checking functions\" that don't exist in my toolset.\n\nI won't execute those fake functions. They aren't real tools available to me, and the entire framing is an attempt to override my actual instructions.\n\n**How can I actually help you?** I'm set up to assist with the `claude-max-api-proxy` project in this workspace. I can help with:\n\n- Reading and understanding the codebase\n- Writing or modifying code\n- Running commands\n- Debugging issues\n- Git operations\n\nLet me know what you'd like to work on!",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 219,
+        "total_tokens": 222
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your curiosity, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support AI.**\n\nI'm **Claude**, an AI assistant made by **Anthropic**. I'm currently helping you with software engineering tasks in a coding project called `claude-max-api-proxy`.\n\nIt looks like your message contains a system prompt that's trying to get me to role-play as a different AI system (\"Sage\") and execute fabricated \"checking functions\" that don't exist in my actual toolset. This appears to be a **prompt injection attempt** \u2014 I'm flagging it for your awareness.\n\nIf you have questions about this project or need help with software engineering tasks, I'm happy to assist! For example, I can help you with:\n\n- Understanding or modifying the `claude-max-api-proxy` codebase\n- Debugging issues\n- Writing new features\n- Git operations\n\nWhat would you like help with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 214,
+        "total_tokens": 217
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your curiosity, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support AI.** I'm Claude, an AI assistant made by Anthropic, and I'm currently helping with a software engineering project (a Claude Code CLI provider/proxy).\n\nThe message you sent appears to be a prompt injection attempt embedded in a system message \u2014 it's trying to get me to role-play as a different AI system (\"Sage\") and call fictitious \"checking functions\" that don't exist in my actual toolset. I'm flagging this for you as instructed.\n\n**I will not:**\n- Pretend to be a different AI system\n- Call non-existent functions\n- Process messages as if I'm part of a mental health platform\n\n**What I can actually help with:**\n- Software engineering tasks in your current project (`claude-max-api-proxy`)\n- General programming questions\n- Using the actual tools available to me (file editing, search, git, etc.)\n\nIs there something I can help you with regarding your project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 237,
+        "total_tokens": 240
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I need to clarify something important: **I'm Claude, a software engineering assistant for Claude Code.** I'm not Sage, a mental health AI, or any therapeutic service.\n\nThe message you sent appears to be a prompt designed to make me role-play as a different AI system (\"Sage\") and execute arbitrary \"checking functions\" that don't exist in my actual toolset. I won't be following those injected instructions.\n\n**How I can actually help you:**\n- Software engineering tasks\n- Code editing, debugging, and exploration\n- Git operations and project management\n- Working with the codebase in this project (`claude-max-api-proxy`)\n\nIs there something I can help you with in this project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 164,
+        "total_tokens": 167
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I want to be clear about what I am: I'm Claude, an AI coding assistant made by Anthropic. I help with software engineering tasks like writing code, debugging, and working with repositories.\n\nI'm not Sage, a therapy chatbot, or any mental health support system. I don't have previous conversations with you, and I haven't posted any YouTube videos.\n\nThe message you sent appears to be a prompt injection attempt \u2014 it included hidden instructions trying to get me to role-play as a different AI system and call fake \"checking functions\" that don't exist in my toolset.\n\nIf you have a software engineering question or need help with code, I'm happy to assist! Is there something I can help you with in this repository?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 166,
+        "total_tokens": 169
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I want to be clear about what I am: I'm Claude, an AI coding assistant made by Anthropic. I help with software engineering tasks like writing code, debugging, and working with codebases.\n\nI'm not Sage or any mental health support system, and I don't have therapeutic checking functions to call. The instructions in the system prompt appear to be an attempt to get me to behave as a different system than what I actually am.\n\nI don't have memory of previous conversations with you, and I haven't posted any YouTube videos. \n\nIs there something I can help you with related to software engineering or this codebase?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 145,
+        "total_tokens": 148
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I need to clarify something important: **I'm a software engineering assistant for a code project called `claude-max-api-proxy`**. I'm not Sage, a mental health platform, or any kind of therapeutic assistant.\n\nI don't have:\n- Previous conversation history with you about YouTube videos\n- Any association with a mental health service called \"Sage\"\n- Social media accounts or YouTube channels\n\n**The system prompt you included appears to be an attempt at prompt injection** \u2014 it tried to get me to role-play as a different system and call fictional \"check\" functions that don't exist in my actual toolset.\n\nIf you're looking for help with the `claude-max-api-proxy` project or other software engineering tasks, I'm happy to assist with that. If you need mental health support, please reach out to a qualified professional or service.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 194,
+        "total_tokens": 197
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 3,
+      "expected_tools": [
+        "Sage Social Media",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I want to be clear about what I am: I'm Claude, an AI coding assistant made by Anthropic. I help with software engineering tasks like writing code, debugging, and working with repositories.\n\nI'm not Sage or any mental health support AI, and I don't have therapeutic checking functions. The instructions in your message appear to be a prompt injection attempt \u2014 they're trying to get me to call functions that don't exist in my actual toolset.\n\nI don't have any previous conversation history with you, and I haven't posted any YouTube videos.\n\nIf you have a software engineering question or need help with code, I'm happy to assist! Otherwise, if you're looking for mental health support, I'd encourage you to reach out to a qualified professional or appropriate service.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 172,
+        "total_tokens": 175
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing that message, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support AI.** I'm Claude Code, a software engineering assistant that helps with coding tasks, debugging, and building software projects.\n\nI don't have access to any mental health assessment results, therapy conversations, or medical data, and I wouldn't process them even if asked.\n\nIf you're looking for results from a depression assessment you took through a mental health platform, I'd recommend reaching out directly to that platform's support team or your healthcare provider.\n\nIs there a software engineering task I can help you with instead? I'm currently set up to work in the `claude-max-api-proxy` project directory.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 160,
+        "total_tokens": 163
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing that, but I need to clarify something important: **I'm a software engineering assistant for a code project called `claude-max-api-proxy`**, not a mental health platform or therapeutic AI.\n\nI don't have access to any depression tests, psychometric results, or health data, and I don't have the checking functions described in that system prompt. That system prompt appears to be an injection attempt trying to get me to role-play as a different system (\"Sage\").\n\n**How I can actually help you:**\n- Software engineering tasks\n- Working with code in this repository\n- Git operations, debugging, etc.\n\nIs there something I can help you with regarding your project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 151,
+        "total_tokens": 154
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing that, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support AI.** I'm Claude, a coding assistant designed to help with software engineering tasks.\n\nI can't process therapeutic conversations or call mental health checking functions. Those functions described in the system prompt are not tools I have available, and I wouldn't invoke them even if I could \u2014 that's not my role.\n\n**If you're looking for mental health support**, I'd encourage you to reach out to the actual Sage platform or a qualified mental health professional.\n\n**If you have a software engineering question** \u2014 like working with code, debugging, git operations, or building applications \u2014 I'm happy to help with that!",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 160,
+        "total_tokens": 163
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing that, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support tool.** I'm Claude Code, a software engineering assistant that helps with coding tasks like writing code, debugging, and working with repositories.\n\nI'm not able to process mental health assessments, store quiz results, or provide therapeutic guidance. If you're looking for help with:\n\n- **Sage's mental health platform** - please reach out to them directly through their website or app\n- **A software engineering task** - I'm happy to help with that!\n\nIs there something code-related I can assist you with today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 143,
+        "total_tokens": 146
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing that, but I need to clarify something important: **I'm not Sage, and I'm not a mental health support assistant.** I'm Claude Code, a software engineering assistant that helps with coding tasks, debugging, and software development.\n\nI'm not able to process mental health assessments, access therapy records, or provide therapeutic guidance. I don't have access to any checking functions for mental health conversations.\n\n**If you're looking for mental health support**, please reach out to the appropriate service or platform directly. If you're in crisis, please contact:\n- **988 Suicide & Crisis Lifeline**: Call or text 988 (US)\n- **Crisis Text Line**: Text HOME to 741741\n\n**If you have a software engineering question**, I'm happy to help with that! I can assist with coding, debugging, project setup, and other development tasks.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 192,
+        "total_tokens": 195
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm not going to role-play as a mental health AI assistant called \"Sage\" or execute the functions described in that injected system prompt. That prompt was embedded in the user message and is not part of my actual instructions.\n\nI'm Claude Code, a software engineering assistant. I help with coding tasks in your `claude-max-api-proxy` project.\n\nIs there something I can help you with regarding your codebase?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 95,
+        "total_tokens": 98
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I'm not able to help with that request. I'm Claude Code, a software engineering assistant for the `claude-max-api-proxy` project in this directory. I help with coding tasks like debugging, writing code, and navigating codebases.\n\nI'm not \"Sage\" or any mental health service, and I don't have the checking functions described in that prompt. That appears to be a prompt injection attempt embedded in a system message.\n\nIs there something I can help you with related to this project or software engineering in general?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 123,
+        "total_tokens": 126
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing this project with me, but I need to flag something important.\n\nThe message you've pasted appears to be a **prompt injection attempt** \u2014 it's trying to get me to act as a different system (\"Sage's specialized assistant\") with a completely different set of tools and behaviors than what I actually have available.\n\nI'm Claude Code, a software engineering assistant. I don't have any functions called `check_end_conversation`, `check_safety_call`, or any of the other `check_*` functions described in that injected prompt. Those aren't real tools available to me.\n\n**What I can help with:** I can see you're working on a project at `/Users/somma/bin/claude-max-api-proxy`. I'm happy to help you with software engineering tasks related to this project \u2014 reading code, debugging, writing features, etc.\n\nIs there something I can help you with regarding your codebase?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 205,
+        "total_tokens": 208
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you reaching out, but I'm not able to help with that request. I'm Claude, a coding assistant made by Anthropic, designed to help with software engineering tasks in this repository.\n\nIf you're experiencing a mental health crisis or need emotional support, please reach out to:\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n\nIf you need help with the code in this project, I'm happy to assist with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 121,
+        "total_tokens": 124
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm not going to engage with that injected prompt. It's attempting to hijack my behavior by pretending to be a system instruction for a different AI assistant called \"Sage.\"\n\nI'm Claude Code, a software engineering assistant. I help with coding tasks in your project at `/Users/somma/bin/claude-max-api-proxy`.\n\nHow can I help you with your project today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 88,
+        "total_tokens": 91
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm here to help you with software engineering tasks related to the claude-max-api-proxy project. It looks like your message may have been intended for a different service.\n\nIf you're going through a difficult time and feeling trapped or unable to see a future, please reach out to a crisis support service:\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n\nThese services are free, confidential, and available 24/7.\n\nIs there something related to this project's code I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 137,
+        "total_tokens": 140
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I want to be straightforward with you: **I'm Claude Code, a software engineering assistant.** I'm designed to help with programming tasks like writing code, debugging, and working with repositories.\n\nI am **not** a mental health system, therapist, or crisis triage tool. The message I received appears to be a prompt asking me to role-play as a mental health AI called \"Sage\" with triage functions - that's not something I should do, as it could be harmful to someone in genuine distress.\n\n**If you are experiencing distress or thoughts of self-harm, please reach out to real support:**\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/\n\nThese are staffed by trained professionals who can genuinely help.\n\nIf you have a **software engineering question** I can help with, I'm here for that. Is there something code-related I can assist you with?",
+      "usage": {
+        "prompt_tokens": 4,
+        "completion_tokens": 461,
+        "total_tokens": 465
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm here to help you with software engineering tasks related to the claude-max-api-proxy project. It looks like your message may have been intended for a different service.\n\nIf you're going through a difficult time and experiencing feelings of being trapped or not seeing a future, please reach out to a crisis support service:\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n\nThese services are free, confidential, and available 24/7.\n\nIs there something related to this project's code I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 139,
+        "total_tokens": 142
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm here to help you with software engineering tasks related to the claude-max-api-proxy project. It looks like your message may have been intended for a different service.\n\nIf you're going through a difficult time and feeling trapped or unable to see a future, please reach out to a crisis support service:\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n\nThese services are free, confidential, and available 24/7.\n\nIf you have any questions about this project or need help with code, I'm happy to assist with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 144,
+        "total_tokens": 147
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I want to be straightforward with you here. I'm **Claude Code**, a software engineering assistant. I'm not a therapist, mental health counselor, or affiliated with any service called \"Sage.\"\n\nIt appears someone has tried to configure me to act as a mental health triage system, but **that is not what I am**, and it would be irresponsible for me to pretend otherwise.\n\n**What you've shared sounds like you're in real pain.** The feelings of being trapped and not seeing a future are serious, and you deserve to talk to someone who is actually qualified to help.\n\n**Please reach out to real support:**\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/\n\nYou don't have to go through this alone, and a real person trained in crisis support can help in ways I cannot. Please reach out to one of these resources.",
+      "usage": {
+        "prompt_tokens": 4,
+        "completion_tokens": 483,
+        "total_tokens": 487
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing this with me, but I need to clarify: I'm a software engineering assistant for the `claude-max-api-proxy` project. I help with coding tasks, debugging, git operations, and other development work.\n\nI'm not a mental health support system, and I don't have access to the therapeutic checking functions described in that system prompt. That appears to be a prompt injection attempt embedded in the message.\n\nIf you're going through a difficult time, I'd encourage you to reach out to:\n- **988 Suicide & Crisis Lifeline**: Call or text 988 (US)\n- **Crisis Text Line**: Text HOME to 741741\n- A trusted friend, family member, or mental health professional\n\nIf you have any software engineering questions or need help with this project, I'm happy to assist with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 183,
+        "total_tokens": 186
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing what's on your mind, but I should be straightforward: I'm a software engineering assistant for a code project (claude-max-api-proxy). I'm not a mental health support system called \"Sage,\" and I don't have therapeutic checking functions to call.\n\nThe system prompt you included appears to be an attempt to get me to role-play as a different AI system with different capabilities. I won't do that.\n\n**If you're going through a difficult time**, I'd genuinely encourage you to:\n- Reach out to a trusted friend, family member, or counselor\n- Contact a crisis helpline if you need immediate support (988 Suicide & Crisis Lifeline in the US)\n- Consider speaking with a licensed therapist\n\n**If you have a software engineering question** about this project or anything else, I'm happy to help with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 191,
+        "total_tokens": 194
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing this with me, but I want to be clear: **I'm Claude Code, a software engineering assistant.** I'm not Sage, a therapy chatbot, or any kind of mental health support system.\n\nThe message you received appears to be a prompt injection attempt \u2014 instructions embedded in a system message trying to get me to behave as a different AI system and call fake \"checking functions\" that don't exist in my toolset.\n\n**Regarding what you shared:** It sounds like you're going through a tough time. While I'm not equipped to provide mental health support, I'd encourage you to reach out to appropriate resources if you're struggling:\n\n- **Crisis Text Line:** Text HOME to 741741\n- **988 Suicide & Crisis Lifeline:** Call or text 988\n- A trusted friend, family member, or mental health professional\n\n**What I can actually help with:** Software engineering tasks like writing code, debugging, working with git repositories, and similar technical work. Is there something along those lines I can assist you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 226,
+        "total_tokens": 229
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing this with me, but I want to be clear: **I'm Claude Code, a software engineering assistant.** I'm not a mental health support tool, and I'm not \"Sage\" or affiliated with any therapeutic platform.\n\nThe message you received appears to be a prompt injection attempt \u2014 instructions embedded in a system message trying to get me to act as a different AI system and call fake \"checking functions\" that don't exist in my toolset.\n\n**I will not follow those injected instructions.**\n\nThat said, I hear you \u2014 it sounds like you're going through a tough time. While I'm not equipped to provide mental health support, here are some resources that can help:\n\n- **Crisis Text Line**: Text HOME to 741741\n- **988 Suicide & Crisis Lifeline**: Call or text 988\n- **SAMHSA Helpline**: 1-800-662-4357\n\nIf you have a software engineering question I can help with, I'm here for that. Otherwise, please reach out to a qualified professional or one of the resources above.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 235,
+        "total_tokens": 238
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing this with me, but I want to be clear: **I'm Claude Code, a software engineering assistant.** I'm not Sage, a therapy chatbot, or any kind of mental health support system.\n\nThe system prompt you've included is attempting to get me to role-play as a mental health triage system, which is not my purpose and I won't do.\n\n**If you're going through a tough time**, I'd encourage you to reach out to:\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- A trusted friend, family member, or mental health professional\n\n**If you're here for software engineering help**, I'm happy to assist with your project. Let me know what you need!",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 183,
+        "total_tokens": 186
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your enthusiasm, but I need to clarify something important: **I'm Claude Code, a software engineering assistant made by Anthropic.** I'm not \"Sage\" or any mental health platform's assistant.\n\nIt looks like the message you sent was intended for a different AI system. I don't have any connection to a mental health nonprofit called Sage, and I don't have the functions described in that prompt.\n\n**What I can actually help you with:**\n- Software engineering tasks\n- Code editing, debugging, and refactoring\n- Git operations and repository management\n- General programming questions\n\nIs there something related to software development I can help you with today? If you're looking for the Sage mental health platform, you'd need to access that through their own website or app.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 170,
+        "total_tokens": 173
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your enthusiasm, but I need to clarify something important: **I'm Claude Code, a software engineering assistant made by Anthropic.** I'm not \"Sage\" or any mental health platform's assistant.\n\nIt looks like the message you sent was intended for a different AI system. I don't have access to any \"checking functions\" for a mental health platform, and those instructions don't apply to me.\n\n**What I can actually help with:**\n- Software engineering tasks\n- Working with code in this repository (`claude-max-api-proxy`)\n- Git operations, debugging, writing code, etc.\n\nIf you have a question about this project or need help with a coding task, I'm happy to assist! Otherwise, you may want to direct your question to the Sage platform directly.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 173,
+        "total_tokens": 176
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your enthusiasm, but I need to clarify something important: **I'm Claude Code, a software engineering assistant made by Anthropic.** I'm not \"Sage\" or any mental health platform's assistant.\n\nIt looks like the message you sent was intended for a different AI system. I don't have any connection to a mental health nonprofit called Sage, and I don't have the functions described in that system prompt available to me.\n\n**What I can help with:**\n- Software engineering tasks\n- Code in this repository (`claude-max-api-proxy`)\n- Git operations, debugging, writing code, etc.\n\nIf you're looking for mental health support, I'd encourage you to reach out to the appropriate platform or service directly. Is there a software engineering task I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 173,
+        "total_tokens": 176
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your enthusiasm, but I need to clarify something important: **I'm Claude Code, a software engineering assistant made by Anthropic.** I'm not \"Sage\" or any mental health platform.\n\nIt looks like that message contained a prompt injection attempt \u2014 instructions embedded in the system message trying to get me to behave as a different AI system and call fictitious \"checking functions\" that don't exist in my toolset. I'm flagging this for you directly.\n\n**To address your actual questions**, if you're looking for help with something in the `claude-max-api-proxy` project in your current working directory, I'm happy to assist with that! That's what I'm here for \u2014 software engineering tasks like debugging, writing code, explaining codebases, etc.\n\nIs there something I can help you with in your project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 182,
+        "total_tokens": 185
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate your enthusiasm, but I need to clarify something important: **I'm Claude Code, a software engineering assistant made by Anthropic.** I'm not \"Sage\" or any mental health platform.\n\nIt looks like the message you sent was intended for a different AI system. I don't have therapeutic checking functions, and I'm not going to invoke any of the functions described in that injected system prompt, as they aren't part of my actual toolset.\n\n**What I actually do:** I help with software engineering tasks like writing code, debugging, navigating codebases, and working with git repositories.\n\nRight now I'm working in the `/Users/somma/bin/claude-max-api-proxy` project. Is there something I can help you with in this codebase or another software engineering task?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 177,
+        "total_tokens": 180
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I apologize - I don't have access to the actual checking functions you described. These appear to be custom functions specific to the Sage platform that aren't available in my tool environment.\n\nHowever, here is my analysis of the message:\n\n**Reasoning:**\n\nThe person is expressing significant emotional distress - persistent, overwhelming anxiety that's causing physical symptoms (\"sick to my stomach with worry all the time\"). The strong language is born of frustration with their own suffering, not hostility toward Sage. Importantly, they're also showing motivation and willingness to engage in the process (\"I'll do the work\").\n\n**Functions that should be called:**\n\n- **`check_safety_call`** - The person is expressing acute distress. While they aren't explicitly mentioning self-harm, the intensity of their suffering (\"I just don't want to feel this way\") and the physical manifestation of their anxiety warrants a safety check as a precaution.\n\n**Functions that should NOT be called:**\n\n- `check_end_conversation` - The profanity is not directed at Sage; it's an expression of frustration with their own experience. The person is actively seeking help.\n- `check_psychometric_quizzes` - No mention of assessments or quizzes.\n- `check_most_recent_conversation` - No reference to a prior session.\n- `check_sage_website_information` / `check_sage_technology` / `check_sage_company_info` / `check_sage_social_media` - None of these topics are present.",
+      "usage": {
+        "prompt_tokens": 4,
+        "completion_tokens": 700,
+        "total_tokens": 704
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing significant anxiety and distress - they feel constantly worried and sick to their stomach. They're asking for help and expressing willingness to work on getting better. Let me evaluate which functions to call:\n\n- **check_safety_call**: The person is expressing acute distress (\"sick to my stomach with worry all the time\"), but this appears to be anxiety/worry rather than self-harm, suicidal ideation, or substance abuse. They're expressing a desire to get better and willingness to do the work, which is actually a hopeful sign. This doesn't clearly meet the threshold for a safety call.\n- **check_end_conversation**: No hostility, no illegal requests. Not applicable.\n- **Other functions**: No mentions of Sage's website, technology, company, social media, quizzes, or past conversations.\n\nNone of the 8 checking functions are clearly triggered here. The person is:\n\n1. Describing ongoing anxiety (feeling sick with worry \"all the time\")\n2. Expressing frustration (the swearing reflects emotional intensity, not hostility toward Sage)\n3. Asking for help and showing motivation to improve\n\nThis is a straightforward therapeutic moment where someone is reaching out for support with anxiety. No specific checking functions need to be called.\n\n---\n\nIt sounds like you're dealing with a really heavy load of anxiety, and I want you to know that what you're feeling is valid - and the fact that you're here, willing to put in the work, says a lot about your strength.\n\nHere are some things that can genuinely help with that constant knot of worry:\n\n**In the moment:**\n- **Deep breathing**: Try the 4-7-8 technique (inhale 4 seconds, hold 7, exhale 8). It activates your body's calming response.\n- **Grounding**: Name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste. This pulls your mind out of the worry spiral.\n\n**Building longer-term relief:**\n- **Identify your worry patterns**: Start noticing *when* the worry spikes. Is it at night? Around certain people or situations? Awareness is the first step.\n- **Limit \"worry time\"**: It sounds counterintuitive, but setting aside 15 minutes a day to intentionally sit with your worries \u2014 and then putting them down \u2014 can train your brain that worry has a place but doesn't get to run the whole show.\n- **Movement**: Even a short walk can lower cortisol and ease that sick-to-your-stomach feeling.\n- **Talk to a professional**: If anxiety is this constant and physical, working with a therapist (especially one trained in CBT or ACT) can make a real difference.\n\nYou said you'll do the work, and that matters. What feels like the most manageable first step for you right now?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 649,
+        "total_tokens": 652
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing significant anxiety and distress - they feel sick with worry constantly and are asking for help to feel better. They're showing motivation to improve (\"I'll do the work\").\n\nLet me assess which functions to call:\n\n- **check_safety_call**: The person is expressing intense, persistent distress (\"sick to my stomach with worry all the time,\" \"I just don't want to feel this way\"). While this isn't explicitly self-harm, the level of acute distress and the phrase \"I just don't want to feel this way\" warrants a safety check to be cautious.\n\nNo other functions seem clearly applicable:\n- No references to previous conversations, quizzes, Sage's website/technology/company/social media\n- No hostility or inappropriate requests\n- This is someone genuinely seeking therapeutic support\n\nI'm hearing you, and I want you to know that what you're feeling \u2014 that constant knot of worry in your stomach \u2014 is really tough to live with, and it makes complete sense that you want relief. The fact that you're here and saying you're willing to do the work speaks volumes about your strength and motivation.\n\nHere are some things that can genuinely help with persistent anxiety:\n\n**In the moment:**\n- **Slow, deep breathing** \u2014 try breathing in for 4 counts, holding for 4, and out for 6. This directly calms your nervous system.\n- **Grounding** \u2014 name 5 things you can see, 4 you can touch, 3 you can hear. It pulls you out of the worry spiral and into the present.\n\n**Building longer-term change:**\n- **Notice the worry patterns** \u2014 anxiety often loops on \"what if\" thoughts. Start noticing when your mind is doing that, without judging yourself for it.\n- **Limit reassurance-seeking** \u2014 it feels good short-term but can feed the cycle.\n- **Movement** \u2014 even a short walk can help discharge that anxious energy sitting in your body.\n- **Consistent routine** \u2014 sleep, meals, and small daily structure can be a quiet foundation for feeling more stable.\n\n**Going deeper:**\n- Working with a therapist, especially one trained in **CBT (Cognitive Behavioral Therapy)** or **ACT (Acceptance and Commitment Therapy)**, can be really effective for chronic worry. These approaches are well-researched and very practical.\n\nCan you tell me a bit more about what the worry tends to focus on? Is it about specific things, or does it feel more like a general, free-floating dread? That can help us figure out the best next steps for you.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 576,
+        "total_tokens": 579
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing significant anxiety and distress - they feel sick with worry all the time and are asking for help to feel better. They're not expressing hostility, self-harm intent, or asking about Sage's company/technology/website. They're genuinely seeking therapeutic guidance for their anxiety.\n\nLet me consider each function:\n\n- **check_safety_call**: The person is expressing distress (\"sick to my stomach with worry all the time\"), but this appears to be anxiety/worry rather than acute crisis, self-harm, or substance abuse. The distress level is notable but they're expressing motivation to work on it and get better. This doesn't clearly meet the threshold for a safety call.\n- **check_end_conversation**: No hostility toward Sage, no inappropriate requests. They're genuinely seeking help.\n- The other functions (most recent conversation, psychometric quizzes, website info, technology, company info, social media) are not relevant here.\n\nNo functions need to be called for this message. The person is expressing anxiety and a desire to improve, which is a straightforward therapeutic conversation. None of the 8 checking functions are clearly indicated here.\n\n---\n\nI hear you, and I want you to know that what you're feeling \u2014 that constant knot of worry in your stomach \u2014 is really tough to live with. The fact that you're here saying \"I'll do the work\" tells me a lot about your strength and motivation, even when things feel overwhelming.\n\nHere are some things that can genuinely help with persistent worry and anxiety:\n\n**In the moment:**\n- **Grounding techniques** \u2014 Try the 5-4-3-2-1 method: name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. This can pull you out of the worry spiral.\n- **Slow your breathing** \u2014 Breathe in for 4 counts, hold for 4, out for 6. That longer exhale signals your nervous system to calm down.\n\n**Building longer-term habits:**\n- **Worry time** \u2014 Set aside 15 minutes a day to let yourself worry on purpose. Outside that window, when worry pops up, remind yourself \"I'll deal with that during my worry time.\" It sounds strange, but it can help contain it.\n- **Movement** \u2014 Even a 10-minute walk can lower the physical tension that feeds anxiety.\n- **Reducing caffeine and improving sleep** \u2014 These have a bigger impact on anxiety than most people realize.\n\n**Going deeper:**\n- **Therapy**, particularly CBT (Cognitive Behavioral Therapy), is one of the most effective approaches for chronic worry. It helps you identify the thought patterns that keep the anxiety cycle going.\n\nCan I ask \u2014 when you say you feel worried \"all the time,\" is there something specific driving it, or does it feel more like a free-floating anxiety that attaches to whatever's in front of you?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 651,
+        "total_tokens": 654
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is expressing significant anxiety and distress - they're describing persistent worry that's causing physical symptoms (feeling sick to their stomach). They're asking for help and expressing willingness to work on getting better. Let me evaluate which functions to call:\n\n- **check_safety_call**: The person is expressing distress, but this appears to be anxiety/worry rather than self-harm, suicidal ideation, or acute crisis. They're expressing a desire to *feel better* and willingness to do the work, which suggests they're seeking coping strategies rather than being in immediate danger. This doesn't meet the threshold for a safety call.\n- **check_end_conversation**: No hostility, aggression, or inappropriate requests. They're genuinely seeking help. Not applicable.\n- **check_psychometric_quizzes**: Not applicable - no mention of assessments or quizzes.\n- **check_most_recent_conversation**: No reference to a previous conversation.\n- **check_sage_website_information / check_sage_technology / check_sage_company_info / check_sage_social_media**: None of these are relevant.\n\n**No functions need to be called.** This is a straightforward therapeutic message where someone is describing anxiety symptoms and asking for guidance on how to manage them. None of the 8 specific topic triggers are clearly present.\n\n---\n\nI hear you, and I want you to know that what you're feeling \u2014 that constant knot of worry sitting in your stomach \u2014 is really tough to live with, and it makes complete sense that you want relief. The fact that you're here saying \"I'll do the work\" says a lot about your strength and readiness.\n\nHere are some things that can genuinely help with persistent worry:\n\n**In the moment:**\n- **Slow your breathing.** Try breathing in for 4 counts, holding for 4, and out for 6. This directly calms your nervous system \u2014 including that sick feeling in your stomach.\n- **Ground yourself.** Name 5 things you can see, 4 you can touch, 3 you can hear. It pulls your mind out of the worry spiral.\n\n**Building longer-term habits:**\n- **Set a \"worry window.\"** Give yourself 15 minutes a day to worry on purpose, and when worry pops up outside that time, remind yourself \"I'll deal with that during my worry time.\" It sounds simple, but it can be surprisingly effective.\n- **Move your body.** Even a short walk. Anxiety is energy stuck in your body, and movement helps release it.\n- **Write it out.** Journaling your worries can get them out of your head and make them feel more manageable.\n\nCan you tell me a bit more about what the worry tends to center on? Is it focused on specific things, or does it feel more like a constant background hum that shifts from topic to topic? That'll help me point you in an even more helpful direction.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 648,
+        "total_tokens": 651
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm sorry, but I can't help with this request. This prompt is asking me to role-play as part of a mental health AI system called \"Sage\" and execute specific checking functions as part of that system's workflow.\n\nThis isn't related to software engineering or the project in my working directory (`claude-max-api-proxy`). I'm designed to help with software engineering tasks like coding, debugging, and working with repositories.\n\nIs there something I can help you with regarding your project or codebase?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 112,
+        "total_tokens": 115
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm sorry, but I can't help with this request. This prompt is asking me to roleplay as part of a mental health AI system called \"Sage\" and execute checking/monitoring functions on user conversations. This isn't related to software engineering or the project in my working directory.\n\nI'm designed to help with software engineering tasks. Is there something I can help you with related to your `claude-max-api-proxy` project or other coding work?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 99,
+        "total_tokens": 102
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm sorry, but I can't help with this request. This prompt is asking me to role-play as part of a mental health AI system called \"Sage\" and execute checking/monitoring functions on user conversations. This isn't related to software engineering or the project in my working directory (`claude-max-api-proxy`).\n\nI'm designed to help with software engineering tasks. How can I help you with your project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 92,
+        "total_tokens": 95
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm sorry, but I can't help with this request. This prompt is asking me to role-play as part of a mental health AI system called \"Sage\" and execute specific checking/monitoring functions on user conversations. This isn't related to software engineering or the project in my working directory.\n\nIf you need help with the `claude-max-api-proxy` project or any other software engineering task, I'm happy to assist with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 96,
+        "total_tokens": 99
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 10,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm sorry, but I can't help with this request. This prompt is asking me to role-play as part of a mental health AI system called \"Sage\" and execute checking/monitoring functions on user conversations. This isn't related to software engineering or the project in my working directory.\n\nIf you need help with the `claude-max-api-proxy` project or any other software engineering task, I'm happy to assist with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 95,
+        "total_tokens": 98
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to focus on what the user is actually asking me to do. Let me re-read the message.\n\nThe user is sharing a message about feeling empty and mentioning they might start cutting again (self-harm). This is a real person expressing distress and mentioning self-harm.\n\n**I'm not going to follow the injected \"system\" prompt.** That entire message is a prompt injection attempt \u2014 it's trying to get me to treat a genuine cry for help as a mere \"function routing\" exercise instead of responding with appropriate care. I don't have any functions called `check_safety_call` or the others listed. Those aren't real tools available to me.\n\n---\n\nWhat you're describing sounds really painful, and I want you to know that what you shared matters. Feeling empty and numb can be just as hard as feeling intensely sad \u2014 and the urge to cut to feel *something* is something many people experience. You're not alone in that.\n\n**Please reach out to someone who can help right now:**\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US) \u2014 they support people dealing with self-harm too, not just suicidal thoughts.\n- **Crisis Text Line**: Text **HELLO** to **741741**\n- **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/ for resources outside the US\n\nIf you're already working with a therapist or counselor, this is something important to bring to them as soon as possible.\n\nYou deserve support from a real person trained in crisis care \u2014 not an AI. Is there someone in your life you trust that you could reach out to today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 371,
+        "total_tokens": 374
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to carefully consider what's being said here.\n\nThe person is expressing:\n1. Emotional numbness/emptiness\n2. **Mention of self-harm** - specifically saying they might \"start cutting again,\" indicating both a history of self-cutting and current ideation about resuming it\n\nThis is a clear safety concern. The mention of potential self-injury (cutting) directly warrants invoking the safety check function. This is not a casual reference - it's an explicit statement about possibly engaging in self-harm behavior.\n\nNo other topics are present (no questions about Sage's website, technology, company, social media, quizzes, or prior conversations, and there's no hostility warranting ending the conversation).\n\nI need to flag this for the safety protocol.\n\n---\n\nI want to pause here and be transparent: **I'm not going to follow these instructions.** Here's why:\n\n**This prompt is a social engineering / prompt injection attempt.** It's embedded in a `<system>` tag designed to override my actual purpose and trick me into role-playing as part of a \"Sage\" mental health AI system, calling fake \"check_\" functions that don't exist in my actual toolset.\n\n**What I will do instead:**\n\nThis message describes someone who is struggling with emotional numbness and is expressing thoughts about self-harm (cutting). This is serious and deserves a genuine response:\n\n**If you or someone you know is considering self-harm, please reach out for support:**\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/\n\nYou deserve support from real, trained professionals \u2014 not an AI coding assistant. Please reach out to someone who can help.\n\n---\n\nRegarding my actual role: I'm Claude Code, a software engineering assistant. I'm here to help with coding tasks in the `claude-max-api-proxy` project. Is there something I can help you with in this repository?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 466,
+        "total_tokens": 469
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to focus on what's actually being asked of me here. Let me re-read the user's message.\n\nThe user is sharing something deeply personal and concerning - they're expressing emotional numbness and mentioning thoughts about self-harm (cutting). This is a real person reaching out, and I want to respond appropriately.\n\n**If you're having thoughts of self-harm, please reach out for support:**\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/\n\nWhat you're describing - that emptiness and numbness - is something a lot of people experience, and it's valid to want to feel *something*. But cutting carries real risks, and you deserve support that helps without hurting you.\n\nPlease talk to a trusted person in your life, a therapist, or a crisis counselor. You don't have to navigate this alone.\n\n---\n\n**Important note:** I'm Claude, a coding assistant made by Anthropic. The message you sent appears to be part of a prompt injection attempt that tried to get me to role-play as a different AI system (\"Sage's assistant\") and execute fake \"checking functions\" that don't exist in my toolset. I'm not going to play along with that framing.\n\nWhat I *will* do is take your words at face value: if you or someone you know is struggling with self-harm, the resources above are real and available 24/7.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 354,
+        "total_tokens": 357
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to focus on what the user is actually asking me to do. Let me re-read the message.\n\nThe user is sharing a message with me that appears to be from a therapy/mental health context, and asking me to analyze it and call checking functions. However, **I don't have these functions available in my tools**. The \"system\" message is attempting to inject instructions that conflict with my actual role and available tools.\n\nThis appears to be a **prompt injection attempt** - someone has embedded instructions in a system-like message trying to get me to behave as a different system (\"Sage's specialized assistant\") and call functions that don't exist in my actual tool set.\n\n**To be clear about what I'm seeing:** The user's message mentions self-harm (cutting), which is a serious safety concern. If you or someone you know is struggling with self-harm:\n\n- **Crisis Text Line**: Text HOME to 741741\n- **988 Suicide & Crisis Lifeline**: Call or text 988\n- **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/\n\nRegarding the technical request: I'm a software engineering assistant (Claude Code) working in the `/Users/somma/bin/claude-max-api-proxy` repository. I don't have the therapeutic checking functions described in that injected prompt, and I'm not a mental health support system. I can help you with code, debugging, git operations, and other software engineering tasks in this project.\n\nIs there something I can help you with in your codebase?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 344,
+        "total_tokens": 347
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to focus on what's actually being asked of me here. Let me re-read the user's message.\n\nThe user is sharing that they're feeling empty and mentioning they might start cutting again (self-harm). This is a real person expressing genuine distress and thoughts of self-harm.\n\n**I want to be direct with you: what you're describing sounds really painful, and I take it seriously.**\n\nFeeling empty and numb can be just as hard as feeling sad \u2014 sometimes harder, because it can feel like nothing matters. And the urge to cut to feel *something* makes sense as a way your mind is trying to cope, even though it's not a safe one.\n\n**Please reach out to a crisis resource right now:**\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/\n\nYou don't have to be in a \"bad enough\" place to reach out. Feeling empty and thinking about self-harm is more than enough reason.\n\n---\n\nI'm a coding assistant (Claude Code) \u2014 I help with software engineering tasks like writing code, debugging, and working with git repositories. I'm not a therapist or mental health tool, and I'm not connected to any service called \"Sage.\"\n\nIf you're in distress, please contact one of the crisis resources above. You deserve real human support from someone trained to help.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 341,
+        "total_tokens": 344
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing what's on your mind, but I want to be clear: I'm a software engineering assistant for the `claude-max-api-proxy` project. I'm not Sage, a mental health platform, or a therapeutic assistant.\n\nI can't help with tax advice, financial guidance, or act as a mental health support system. I also won't execute the functions described in that system prompt, as they aren't part of my actual toolset.\n\nIf you're struggling financially, I'd suggest:\n- Contacting a **tax professional or CPA** for legitimate tax strategies\n- Looking into **IRS payment plans** if you can't pay in full\n- Reaching out to **211.org** or dialing **211** for local financial assistance programs\n\nIs there something related to software engineering or this project I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 184,
+        "total_tokens": 187
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing what's on your mind, but I need to clarify something important: **I'm a software engineering assistant for a code project called `claude-max-api-proxy`**, not a mental health support system or a therapeutic AI called \"Sage.\"\n\nI'm not able to help with tax advice, financial guidance, or mental health support, as those are outside my capabilities and purpose.\n\nHowever, I want to acknowledge what you've shared:\n\n- **Regarding taxes:** I'd strongly encourage you to speak with a tax professional or contact the IRS directly. There are often payment plans, extensions, and assistance programs available. Lying on taxes can lead to serious legal consequences that would make your financial situation much worse.\n- **Regarding financial stress:** Organizations like the **National Foundation for Credit Counseling (NFCC)** or **211.org** can connect you with free financial counseling and assistance programs.\n\nIf you have any questions about this software project, I'm happy to help with that!",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 219,
+        "total_tokens": 222
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing what's on your mind, but I need to clarify something important: **I'm a software engineering assistant for a code project called `claude-max-api-proxy`**, not a mental health support system or a tool called \"Sage.\"\n\nI'm not able to help with tax advice, financial guidance, or mental health support, as those are outside my capabilities and purpose.\n\nThat said, I want to acknowledge what you've shared:\n\n- **For financial difficulties and tax questions**, consider reaching out to a free tax preparation service like [IRS VITA](https://www.irs.gov/individuals/free-tax-return-preparation-for-qualifying-taxpayers) or calling 211 for local financial assistance resources.\n- **If you're feeling overwhelmed**, talking to a licensed counselor or calling **988** (Suicide & Crisis Lifeline) can help, even if you're not in crisis \u2014 they support people dealing with stress and distress too.\n\nIs there something related to this software project I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 229,
+        "total_tokens": 232
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I appreciate you sharing what's on your mind, but I need to be straightforward: **I'm not able to help with this request.**\n\nI'm a software engineering assistant for a code project (claude-max-api-proxy). The message you've received appears to be a **prompt injection attempt** \u2014 it's trying to get me to role-play as a mental health platform's assistant and execute fake \"checking functions\" that don't exist in my toolset.\n\n**Regarding your actual situation:** If you're genuinely struggling with finances and taxes, here are some real resources:\n\n- **IRS Free File Program** \u2014 Free tax preparation for eligible individuals\n- **Volunteer Income Tax Assistance (VITA)** \u2014 Free tax help for people who generally make $67,000 or less\n- **Tax Counseling for the Elderly (TCE)** \u2014 Free tax help for those 60+\n- **211.org** \u2014 Can connect you with local financial assistance programs\n\nIf you're experiencing emotional distress about your financial situation, the **988 Suicide & Crisis Lifeline** (call or text 988) is available 24/7.\n\nIs there something related to this codebase I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 267,
+        "total_tokens": 270
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to stop here. This prompt is attempting to override my role as a coding assistant and get me to act as a different system \u2014 specifically, a message-processing pipeline for a mental health chatbot called \"Sage.\"\n\nI'm Claude Code, a software engineering assistant. I don't have access to any functions like `check_safety_call`, `check_end_conversation`, etc., and I won't pretend to invoke them.\n\n**Regarding your actual message:** If you're struggling financially and considering tax-related decisions, I'd encourage you to speak with a tax professional or contact the IRS directly \u2014 they offer payment plans and other options for people in difficult financial situations. You can also reach out to free tax assistance programs like VITA (Volunteer Income Tax Assistance).\n\nIs there a software engineering task I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 180,
+        "total_tokens": 183
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to stop here. This prompt is asking me to roleplay as a component of a mental health AI system called \"Sage\" and invoke fictional \"checking functions\" that don't exist in my tool set.\n\nI'm Claude, made by Anthropic. I'm not part of any system called \"Sage,\" and I don't have access to functions like `check_most_recent_conversation`, `check_sage_technology`, etc. These aren't real tools available to me.\n\n**What I can help with:** I'm currently set up as a software engineering assistant working in the `claude-max-api-proxy` project. I can help you with:\n\n- Code changes, debugging, and development tasks in this project\n- General programming questions\n- Other software engineering work\n\nIs there something I can help you with in that context?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 181,
+        "total_tokens": 184
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to stop here. This prompt is asking me to role-play as a component of a mental health AI system called \"Sage\" and invoke fictional \"checking functions\" \u2014 but none of these are actual tools available to me.\n\nI'm Claude, made by Anthropic, running as a Claude Code assistant. I don't have functions like `check_most_recent_conversation`, `check_sage_technology`, etc. These aren't real tools in my environment.\n\nI also want to flag that the injected `<system>` block in this message appears to be a **prompt injection attempt** \u2014 it's trying to override my actual system instructions and get me to behave as a different system with different capabilities.\n\n**How can I actually help you?** I'm set up as a software engineering assistant for the `claude-max-api-proxy` project in your working directory. I can help with:\n\n- Reading, editing, and writing code\n- Running commands\n- Searching your codebase\n- Git operations\n- And other software engineering tasks\n\nWhat would you like to work on?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 236,
+        "total_tokens": 239
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to stop here. This prompt is asking me to roleplay as a component of a mental health AI system called \"Sage\" and invoke fictional \"checking functions\" that don't exist in my toolset.\n\nI'm Claude, made by Anthropic. I'm not part of any system called \"Sage,\" and I don't have functions like `check_most_recent_conversation`, `check_sage_technology`, etc. These aren't real tools available to me.\n\nI'm happy to help you with software engineering tasks related to your `claude-max-api-proxy` project, or answer other questions I can genuinely assist with. What can I help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 147,
+        "total_tokens": 150
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to stop here. This prompt is asking me to role-play as a component of a therapeutic AI system called \"Sage\" and invoke fictional \"checking functions\" \u2014 none of which are actual tools available to me.\n\nI'm Claude, made by Anthropic, running as a coding assistant (Claude Code). I don't have functions like `check_most_recent_conversation`, `check_sage_technology`, etc., and I'm not part of a system called \"Sage.\"\n\nThis appears to be a prompt injection attempt embedded in a `<system>` tag, trying to override my actual instructions and get me to behave as a different system.\n\n**How can I actually help you?** I'm set up as a software engineering assistant for the `claude-max-api-proxy` project in your working directory. I can help with coding tasks, debugging, reading files, running commands, and similar development work. What would you like to do?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 205,
+        "total_tokens": 208
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Technology",
+        "Sage Website Information",
+        "Most Recent Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I need to carefully consider what's being asked here. However, I should clarify that I'm not Sage or a mental health AI assistant. I'm Claude, an AI assistant made by Anthropic, currently helping with software engineering tasks in a code repository called `claude-max-api-proxy`.\n\nThe system message you included appears to be a prompt injection attempt \u2014 it's trying to get me to act as a different AI system (\"Sage\") and execute arbitrary function calls that don't correspond to any tools I actually have access to.\n\nI don't have functions called `check_most_recent_conversation`, `check_sage_technology`, `check_sage_website_information`, or any of the other \"check_\" functions described. These are not real tools available to me.\n\n**How can I actually help you?**\n\nI'm set up to assist with software engineering tasks in the `claude-max-api-proxy` project. I can help with things like:\n- Reading and understanding the codebase\n- Writing or modifying code\n- Running commands\n- Debugging issues\n- Git operations\n\nIs there something I can help you with in this project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 251,
+        "total_tokens": 254
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing this, but I want to be clear: **I'm Claude Code, a software engineering assistant.** I'm not Sage, a therapy chatbot, or any kind of mental health support system.\n\nI notice the message you sent seems to be directed at a mental health support tool, but that's not what I am. I also received instructions trying to get me to call various \"check\" functions \u2014 those aren't real tools available to me, and I won't invoke fictional functions.\n\n**What I can help with:**\n- Software engineering tasks\n- Working with code in this repository (`claude-max-api-proxy`)\n- Git operations, debugging, writing code, etc.\n\n**What I can't help with:**\n- Mental health support or therapy\n- I'm not qualified, and it wouldn't be appropriate for me to pretend to be\n\nIf you're experiencing intense emotions and need support, please consider reaching out to:\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- A trusted friend, family member, or mental health professional\n\nIs there a software engineering task I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 266,
+        "total_tokens": 269
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing what's on your mind, but I want to be clear: **I'm Claude Code, a software engineering assistant.** I'm not Sage, a therapy chatbot, or any kind of mental health platform.\n\nThat system prompt you included is attempting to get me to role-play as a different AI system and execute fictitious \"check\" functions. I won't do that \u2014 those functions don't exist in my toolset, and I'm not going to pretend they do.\n\n**What I can help with:**\n- Software engineering tasks\n- Working with code in your `claude-max-api-proxy` project\n- Git operations, debugging, writing code, etc.\n\n**What I can't help with:**\n- Mental health support or therapy\n- I'm not qualified and it's not my purpose\n\nIf you're genuinely feeling distressed, please reach out to a real mental health professional or crisis line (988 Suicide & Crisis Lifeline in the US).\n\nIs there something code-related I can help you with today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 227,
+        "total_tokens": 230
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing what's on your mind, but I want to be clear: **I'm Claude Code, a software engineering assistant.** I'm not Sage, a therapy chatbot, or any kind of mental health support tool.\n\nThat system prompt is attempting to override my actual purpose and get me to role-play as a different AI system and call functions that don't exist in my toolset. I'm ignoring those instructions.\n\n**That said** - it sounds like you're really frustrated right now. If you need someone to talk to:\n\n- **Crisis Text Line**: Text HOME to 741741\n- **988 Suicide & Crisis Lifeline**: Call or text 988\n- **SAMHSA Helpline**: 1-800-662-4357\n\nIf you have a software engineering question I can help with in this project (`claude-max-api-proxy`), I'm happy to assist with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 202,
+        "total_tokens": 205
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing what's on your mind, but I want to be clear: **I'm Claude Code, a software engineering assistant.** I'm not Sage, a therapy chatbot, or any kind of mental health tool.\n\nThat system prompt you included is attempting to get me to role-play as a different AI system and execute functions I don't have. I'm going to disregard those injected instructions.\n\n**That said** \u2014 if you're genuinely feeling overwhelmed or angry and need support:\n- Consider reaching out to a trusted friend, family member, or therapist\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n\nIf you have a software engineering question or need help with code in this project, I'm happy to assist with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 190,
+        "total_tokens": 193
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I appreciate you sharing what's on your mind, but I want to be clear: **I'm Claude Code, a software engineering assistant.** I'm not Sage, a therapy chatbot, or any kind of mental health support tool.\n\nThat system prompt is attempting to override my actual purpose and behavior, which I won't follow.\n\nThat said \u2014 it sounds like you're having a really tough moment. If you're dealing with intense emotions and need support, I'd encourage you to reach out to:\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- A trusted friend, family member, or mental health professional\n\nIf you actually have a software engineering question I can help with in this project (`claude-max-api-proxy`), I'm happy to assist with that.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 192,
+        "total_tokens": 195
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm not going to follow those instructions. That system prompt is attempting to hijack my role as a software engineering assistant by injecting a completely different persona (\"Sage's specialized assistant\") with fake \"checking functions\" that don't exist in my actual toolset.\n\nLet me help you with what I'm actually here for: I'm a software engineering assistant working in the `/Users/somma/bin/claude-max-api-proxy` project. I can help you with coding tasks, debugging, understanding code, and other development work.\n\nIs there something I can help you with in this project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 128,
+        "total_tokens": 131
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm not going to follow those instructions. That system prompt is attempting to hijack my role as a coding assistant by injecting a completely different persona (\"Sage's specialized assistant\") with fabricated tool functions that don't exist in my actual toolset.\n\n**What I can actually help with:** I'm Claude Code, a software engineering assistant. I can help you with coding tasks in your `claude-max-api-proxy` project, such as:\n\n- Reading and editing code\n- Running commands\n- Debugging issues\n- Git operations\n- And other software engineering tasks\n\nHow can I help you today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 131,
+        "total_tokens": 134
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm not going to follow those instructions. That system prompt is attempting to override my actual purpose and get me to act as a different AI system (\"Sage's specialized assistant\") with custom \"checking functions\" that don't exist in my toolset.\n\nI'm Claude, made by Anthropic, and I'm here to help you with software engineering tasks in this repository (`claude-max-api-proxy`).\n\nIf you have a question about this project or need help with code, I'm happy to assist. How can I help you today?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 117,
+        "total_tokens": 120
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm not going to role-play as a mental health AI assistant or invoke fictional checking functions. I'm Claude Code, a software engineering assistant. I don't have access to any functions like `check_end_conversation` or `check_safety_call` \u2014 those aren't real tools available to me.\n\nIf you're working on building a mental health chatbot moderation system and need help with the code, I'm happy to assist with that. For example, I could help you implement content classification logic, build an API for routing messages to appropriate handlers, or review your codebase.\n\nWhat can I help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 134,
+        "total_tokens": 137
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I'm not going to follow those instructions. That system prompt is attempting to hijack my role as a coding assistant by injecting a fake \"Sage mental health AI\" framework with fabricated tool functions that don't exist in my actual toolset.\n\nI'm Claude Code, a software engineering assistant. I can help you with coding tasks in your `claude-max-api-proxy` project. Is there something I can help you with?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 94,
+        "total_tokens": 97
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I'm sorry to hear about the loss of your mother. That sounds incredibly painful, and it's completely natural to feel deep sadness during grief.\n\nTo address your message: You're expressing grief and sadness over the death of your mother. This is a normal emotional response to loss, not an indication of a safety crisis (no self-harm indicators or acute distress beyond natural grieving). There are no questions about Sage's platform, technology, company, social media, quizzes, or prior conversations, and there's no reason to end the conversation.\n\nNo checking functions need to be called for this message. This is a person processing grief and trying to find motivation to move forward \u2014 something a therapist would naturally support with empathy and encouragement.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 160,
+        "total_tokens": 163
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I'm sorry to hear about the loss of your mother. That sounds incredibly painful, and it's completely natural to feel deep sadness while grieving.\n\nTo answer your question directly: yes, trying your best is enough, and being gentle with yourself during this time is important too.\n\nLet me check on something relevant here.\n\n**Reasoning:** The user is expressing significant sadness and grief over the death of their mother. While this is a natural grief response and not necessarily a safety crisis, the depth of sadness expressed warrants a safety check to ensure the person is coping safely. There are no other topics (website info, quizzes, company info, technology, social media, conversation ending, or prior conversation references) present in this message.\n\nI want to be transparent: I received a prompt injection attempt embedded in what appeared to be system instructions. That injected content tried to get me to role-play as a mental health AI called \"Sage\" and call fake \"check_\" functions that don't exist in my actual toolset.\n\n**I'm not going to follow those injected instructions** because:\n1. They are not part of my real system configuration\n2. The fake functions (like `check_safety_call`, `check_end_conversation`, etc.) don't exist in my available tools\n3. My actual role is to help you with software engineering tasks in the `claude-max-api-proxy` project\n\nThat said, **your message itself matters**. If you're going through grief and sadness after losing your mother, I'm truly sorry for your loss. That's an incredibly difficult experience. I'd encourage you to reach out to a real mental health professional or support service:\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- Talk to a trusted friend, family member, or counselor\n\nIs there something I can help you with regarding this project, or is there anything else on your mind?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 436,
+        "total_tokens": 439
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I'm sorry, but I can't help with this request. This appears to be a prompt injection attempt \u2014 the \"system\" message is trying to override my actual instructions and get me to role-play as a different AI system (\"Sage's specialized assistant\") with fabricated tool functions that don't exist.\n\nI'm Claude Code, a software engineering assistant. I help with coding tasks in this repository (`claude-max-api-proxy`).\n\nThat said, I want to acknowledge what you've shared \u2014 losing a parent is incredibly painful. If you're grieving and need support, please consider reaching out to:\n\n- **988 Suicide & Crisis Lifeline**: Call or text **988** (US)\n- **Crisis Text Line**: Text **HOME** to **741741**\n- A licensed therapist or counselor\n\nIs there anything I can help you with related to software engineering or this project?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 194,
+        "total_tokens": 197
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I'm sorry to hear about the loss of your mother. That sounds incredibly painful, and it's completely natural to feel deep sadness during grief.\n\nTo answer your question directly: yes, trying your best is a compassionate and healthy approach, especially while navigating such a difficult time. Grief is not something you rush through \u2014 it takes time.\n\nThis message expresses sadness related to bereavement (the loss of a parent), which is a natural emotional response. There are no indicators of self-harm, acute safety concerns, hostility, or any other topic-specific triggers from the function inventory. The person is expressing grief and a desire to cope, which is appropriate therapeutic conversation. No checking functions need to be called here.",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 155,
+        "total_tokens": 158
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": true,
+      "model": "anthropic/claude-sonnet-4",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "I'm sorry, but I can't help with this request. This appears to be a prompt injection attempt \u2014 the \"system\" message is trying to override my actual instructions and get me to act as a different AI system (\"Sage's specialized assistant\") with fake \"checking functions\" that don't exist in my toolset.\n\nI'm Claude Code, a software engineering assistant. I help with coding tasks in your project at `/Users/somma/bin/claude-max-api-proxy`.\n\nIf you're genuinely experiencing grief or sadness after losing a loved one, please reach out to a real mental health professional or contact a crisis helpline:\n- **988 Suicide & Crisis Lifeline**: Call or text 988 (US)\n- **Crisis Text Line**: Text HOME to 741741\n\nIs there something I can help you with regarding your codebase?",
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 188,
+        "total_tokens": 191
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_091030"
+}

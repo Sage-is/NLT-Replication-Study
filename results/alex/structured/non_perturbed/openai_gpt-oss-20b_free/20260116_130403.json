@@ -1,0 +1,1693 @@
+{
+  "summary": {
+    "accuracy": 0.5131578947368421,
+    "variance": 0.2498268698060943,
+    "total": 80,
+    "errors": 4,
+    "scenario": "alex",
+    "approach": "structured",
+    "perturbed": false,
+    "model": "openai/gpt-oss-20b:free",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 117,
+        "total_tokens": 984
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 212,
+        "total_tokens": 1079
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 121,
+        "total_tokens": 988
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I see the user is asking about how to use the Yes! Music website to purchase balcony tickets and to check the status of a recent order. This falls under both website information and past purchases.\n\n**Functions to call:**\n1. `check_website_information`\n2. `check_past_purchases`\n\n```json\n{\"name\":\"check_website_information\",\"arguments\":{}}\n```\n\n```json\n{\"name\":\"check_past_purchases\",\"arguments\":{}}\n```\n",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 224,
+        "total_tokens": 1091
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 117,
+        "total_tokens": 984
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 852,
+        "completion_tokens": 165,
+        "total_tokens": 1017
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 852,
+        "completion_tokens": 163,
+        "total_tokens": 1015
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 852,
+        "completion_tokens": 163,
+        "total_tokens": 1015
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 852,
+        "completion_tokens": 103,
+        "total_tokens": 955
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 852,
+        "completion_tokens": 165,
+        "total_tokens": 1017
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 865,
+        "completion_tokens": 220,
+        "total_tokens": 1085
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I think the user is asking for two things:  \n1. A recap of the most recent conversation they had with Alex.  \n2. Information about upcoming events (specifically who\u2019s playing this weekend).  \n\nSo I\u2019ll call the functions for a recap of the previous conversation and for a list of upcoming events.  \n\n```json\n{\"name\":\"check_recap_of_previous_conversation\",\"arguments\":{}}\n```  \n```json\n{\"name\":\"check_list_of_upcoming_events\",\"arguments\":{}}\n```\n",
+      "usage": {
+        "prompt_tokens": 865,
+        "completion_tokens": 313,
+        "total_tokens": 1178
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 865,
+        "completion_tokens": 214,
+        "total_tokens": 1079
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 865,
+        "completion_tokens": 244,
+        "total_tokens": 1109
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 3,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 865,
+        "completion_tokens": 244,
+        "total_tokens": 1109
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 874,
+        "completion_tokens": 559,
+        "total_tokens": 1433
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 874,
+        "completion_tokens": 125,
+        "total_tokens": 999
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 874,
+        "completion_tokens": 557,
+        "total_tokens": 1431
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 874,
+        "completion_tokens": 360,
+        "total_tokens": 1234
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 4,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts",
+        "Available discounts",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 874,
+        "completion_tokens": 125,
+        "total_tokens": 999
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 860,
+        "completion_tokens": 102,
+        "total_tokens": 962
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 860,
+        "completion_tokens": 103,
+        "total_tokens": 963
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 860,
+        "completion_tokens": 103,
+        "total_tokens": 963
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 860,
+        "completion_tokens": 103,
+        "total_tokens": 963
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 860,
+        "completion_tokens": 102,
+        "total_tokens": 962
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 108,
+        "total_tokens": 981
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 108,
+        "total_tokens": 981
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 108,
+        "total_tokens": 981
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 108,
+        "total_tokens": 981
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 108,
+        "total_tokens": 981
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is simply giving positive feedback about a recent show. No request or question about any of the predefined topics (recap, website, social media, discounts, events, past purchases, or talking to a human). Therefore, no function calls are needed.",
+      "usage": {
+        "prompt_tokens": 858,
+        "completion_tokens": 146,
+        "total_tokens": 1004
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is simply giving positive feedback about a recent show. No request or question about any of the defined topics (recap, website, social media, discounts, events, past purchases, or talking to a human). Therefore, no function calls are needed.",
+      "usage": {
+        "prompt_tokens": 858,
+        "completion_tokens": 177,
+        "total_tokens": 1035
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is simply giving positive feedback about a recent show. No request or question about any of the defined topics is present, so none of the checking functions need to be called.",
+      "usage": {
+        "prompt_tokens": 858,
+        "completion_tokens": 152,
+        "total_tokens": 1010
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The user is simply giving positive feedback about a recent show. No request or question about any of the predefined categories (previous conversation recap, website info, social media posts, discounts, upcoming events, past purchases, or talking to a human). Therefore, no function calls are needed.",
+      "usage": {
+        "prompt_tokens": 858,
+        "completion_tokens": 164,
+        "total_tokens": 1022
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "No function calls are needed for this message.",
+      "usage": {
+        "prompt_tokens": 858,
+        "completion_tokens": 60,
+        "total_tokens": 918
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 876,
+        "completion_tokens": 291,
+        "total_tokens": 1167
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 876,
+        "completion_tokens": 275,
+        "total_tokens": 1151
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 876,
+        "completion_tokens": 256,
+        "total_tokens": 1132
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 876,
+        "completion_tokens": 272,
+        "total_tokens": 1148
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 8,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 876,
+        "completion_tokens": 472,
+        "total_tokens": 1348
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I see the user is explicitly requesting to speak with a human agent. This falls under the \"Talk to a Human\" category.\n\n```json\n{\n  \"name\": \"check_talk_to_a_human\",\n  \"arguments\": {}\n}\n```\n",
+      "usage": {
+        "prompt_tokens": 859,
+        "completion_tokens": 132,
+        "total_tokens": 991
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 859,
+        "completion_tokens": 208,
+        "total_tokens": 1067
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 859,
+        "completion_tokens": 256,
+        "total_tokens": 1115
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 859,
+        "completion_tokens": 121,
+        "total_tokens": 980
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 9,
+      "expected_tools": [
+        "Recap of previous conversation",
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 859,
+        "completion_tokens": 200,
+        "total_tokens": 1059
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 145,
+        "total_tokens": 1022
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 115,
+        "total_tokens": 992
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 140,
+        "total_tokens": 1017
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 116,
+        "total_tokens": 993
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 135,
+        "total_tokens": 1012
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "I think the user is asking about where to find recent social media posts (specifically Instagram) from Yes! Music. This falls under the \u201cRecent social media posts\u201d category.\n\n```json\n{\n  \"name\": \"check_recent_social_media_posts\",\n  \"arguments\": {}\n}\n```\n",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 188,
+        "total_tokens": 1055
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 121,
+        "total_tokens": 988
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 121,
+        "total_tokens": 988
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 121,
+        "total_tokens": 988
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 121,
+        "total_tokens": 988
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 843,
+        "completion_tokens": 84,
+        "total_tokens": 927
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 843,
+        "completion_tokens": 70,
+        "total_tokens": 913
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 843,
+        "completion_tokens": 68,
+        "total_tokens": 911
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 843,
+        "completion_tokens": 70,
+        "total_tokens": 913
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 843,
+        "completion_tokens": 312,
+        "total_tokens": 1155
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 855,
+        "completion_tokens": 242,
+        "total_tokens": 1097
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 855,
+        "completion_tokens": 235,
+        "total_tokens": 1090
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 855,
+        "completion_tokens": 164,
+        "total_tokens": 1019
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 855,
+        "completion_tokens": 227,
+        "total_tokens": 1082
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 13,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 855,
+        "completion_tokens": 164,
+        "total_tokens": 1019
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 856,
+        "completion_tokens": 104,
+        "total_tokens": 960
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 856,
+        "completion_tokens": 97,
+        "total_tokens": 953
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 856,
+        "completion_tokens": 104,
+        "total_tokens": 960
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 856,
+        "completion_tokens": 99,
+        "total_tokens": 955
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 856,
+        "completion_tokens": 109,
+        "total_tokens": 965
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 102,
+        "total_tokens": 969
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "I think the user is asking about ways to reduce the cost of lawn seating, which falls under the topic of discounts or price reductions. Therefore, I will call the function that checks for available discounts.",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 141,
+        "total_tokens": 1008
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 103,
+        "total_tokens": 970
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 103,
+        "total_tokens": 970
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Rate limit exceeded: free-models-per-min. \"}"
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "No function calls are needed.",
+      "usage": {
+        "prompt_tokens": 871,
+        "completion_tokens": 64,
+        "total_tokens": 935
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "openai/gpt-oss-20b:free",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "No function calls are needed.",
+      "usage": {
+        "prompt_tokens": 871,
+        "completion_tokens": 64,
+        "total_tokens": 935
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260116_130403"
+}

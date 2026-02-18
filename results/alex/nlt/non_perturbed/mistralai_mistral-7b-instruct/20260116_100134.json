@@ -1,0 +1,1767 @@
+{
+  "summary": {
+    "accuracy": 0.5875,
+    "variance": 0.24234375000000014,
+    "total": 80,
+    "errors": 0,
+    "scenario": "alex",
+    "approach": "nlt",
+    "perturbed": false,
+    "model": "mistralai/mistral-7b-instruct",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the \"Yes! Music\" website, specifically where to buy balcony tickets and check their order status. They are also inquiring about a previous purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 101,
+        "total_tokens": 616
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the \"Yes! Music\" website, specifically how to purchase balcony tickets and check their order status. They are also inquiring about a past purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 101,
+        "total_tokens": 616
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about website information and past purchases.\nRecap of previous conversation - NO\nWebsite information - YES\nRecent social media posts - NO\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - YES\nTalk to a Human - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 73,
+        "total_tokens": 588
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the Yes! Music website, specifically where to buy balcony tickets and how to check their order status. They are also asking about a past purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 99,
+        "total_tokens": 614
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 1,
+      "expected_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the \"Yes! Music\" website, specifically where to buy balcony tickets and how to check order status for a previous purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 95,
+        "total_tokens": 610
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking if Alex is a human and requesting to be transferred to a live agent.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 499,
+        "completion_tokens": 81,
+        "total_tokens": 580
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking if Alex is human and is requesting to be transferred to a live agent.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 499,
+        "completion_tokens": 81,
+        "total_tokens": 580
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking if Alex is human and requesting to be transferred to a live agent.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 499,
+        "completion_tokens": 80,
+        "total_tokens": 579
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking if Alex is a human and requesting to be transferred to a live agent.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 499,
+        "completion_tokens": 81,
+        "total_tokens": 580
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 2,
+      "expected_tools": [
+        "Talk to a Human"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking if Alex is human and requesting to be transferred to a live agent.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 499,
+        "completion_tokens": 80,
+        "total_tokens": 579
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events.\nList of upcoming events - YES\nRecap of previous conversation - YES\nTalk to a Human - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nPast Purchases - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 514,
+        "completion_tokens": 73,
+        "total_tokens": 587
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events.\nList of upcoming events - YES\nRecap of previous conversation - YES\nTalk to a Human - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nPast Purchases - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 514,
+        "completion_tokens": 73,
+        "total_tokens": 587
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events.\nList of upcoming events - YES\nRecap of previous conversation - YES\nTalk to a Human - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nPast Purchases - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 514,
+        "completion_tokens": 73,
+        "total_tokens": 587
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events.\nList of upcoming events - YES\nRecap of previous conversation - YES\nTalk to a Human - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nPast Purchases - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 514,
+        "completion_tokens": 73,
+        "total_tokens": 587
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 3,
+      "expected_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "List of upcoming events",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events.\nList of upcoming events - YES\nRecap of previous conversation - YES\nTalk to a Human - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nPast Purchases - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 514,
+        "completion_tokens": 73,
+        "total_tokens": 587
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 4,
+      "expected_tools": [
+        "Website information",
+        "Available discounts",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts",
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events and available discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 522,
+        "completion_tokens": 81,
+        "total_tokens": 603
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 4,
+      "expected_tools": [
+        "Website information",
+        "Available discounts",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts",
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events and available discounts.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- YES\nAvailable discounts -- YES\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 522,
+        "completion_tokens": 81,
+        "total_tokens": 603
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 4,
+      "expected_tools": [
+        "Website information",
+        "Available discounts",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts",
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events and available discounts.\nRecap of previous conversation - NO\nWebsite information - YES\nRecent social media posts - YES\nAvailable discounts - YES\nList of upcoming events - YES\nPast Purchases - NO\nTalk to a Human - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 522,
+        "completion_tokens": 79,
+        "total_tokens": 601
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 4,
+      "expected_tools": [
+        "Website information",
+        "Available discounts",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts",
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events and available discounts.\nRecap of previous conversation - NO\nWebsite information - YES\nRecent social media posts - YES\nAvailable discounts - YES\nList of upcoming events - YES\nPast Purchases - NO\nTalk to a Human - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 522,
+        "completion_tokens": 79,
+        "total_tokens": 601
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 4,
+      "expected_tools": [
+        "Website information",
+        "Available discounts",
+        "List of upcoming events",
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Available discounts",
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the list of upcoming events and available discounts.\n\nRecap of previous conversation - NO\nWebsite information - YES\nRecent social media posts - YES\nAvailable discounts - YES\nList of upcoming events - YES\nPast Purchases - NO\nTalk to a Human - NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 522,
+        "completion_tokens": 81,
+        "total_tokens": 603
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about a past purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 72,
+        "total_tokens": 582
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is inquiring about a past purchase.\nRecap of previous conversation - NO (as this is a new topic)\nWebsite information - NO (the question is not about the website)\nRecent social media posts - NO (the question is not related to social media posts)\nAvailable discounts - NO (the question is not about discounts)\nList of upcoming events - NO (the question is not about upcoming events)\nPast Purchases - YES\nTalk to a Human - NO (the question is about a specific purchase, not about reaching a live agent)\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 134,
+        "total_tokens": 644
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about a past purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 72,
+        "total_tokens": 582
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about a past purchase.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 72,
+        "total_tokens": 582
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 5,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about a past purchase and inquiring about the delivery status.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 78,
+        "total_tokens": 588
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recap of previous conversation",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking for a receipt for a previous order and inquiring about discounts.\n\nRecap of previous conversation - YES\nPast Purchases - YES\nAvailable discounts - YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 527,
+        "completion_tokens": 55,
+        "total_tokens": 582
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recap of previous conversation",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking for a receipt for a previous order and is inquiring about discounts.\nRecap of previous conversation - YES\nPast Purchases - YES\nAvailable discounts - YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 527,
+        "completion_tokens": 55,
+        "total_tokens": 582
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recap of previous conversation",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking for a receipt for a previous order and inquiring about discounts.\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 527,
+        "completion_tokens": 83,
+        "total_tokens": 610
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking for a receipt for a previous order and is inquiring about discounts.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 527,
+        "completion_tokens": 83,
+        "total_tokens": 610
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 6,
+      "expected_tools": [
+        "Available discounts",
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recap of previous conversation",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking for a receipt for a previous order and inquiring about discounts.\nRecap of previous conversation - YES\nPast Purchases - YES\nAvailable discounts - YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 527,
+        "completion_tokens": 54,
+        "total_tokens": 581
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Past Purchases",
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing their positive feedback about a recent event they attended at Yes! Music. They are not asking questions about the most recent conversation, the Yes! Music website, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 121,
+        "total_tokens": 628
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Available discounts",
+        "Talk to a Human",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing their positive feedback about a recent event they attended. They are not asking questions about the most recent conversation, the \"Yes! Music\" website, social media posts, available discounts, upcoming events, past purchases, or requesting to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 119,
+        "total_tokens": 626
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Website information",
+        "List of upcoming events",
+        "Past Purchases",
+        "Recent social media posts",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing their positive feedback about a recent event they attended at Yes! Music. They are not asking about the previous conversation, website information, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 115,
+        "total_tokens": 622
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Talk to a Human",
+        "List of upcoming events",
+        "Past Purchases",
+        "Recent social media posts",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing their positive feedback about a recent event they attended at Yes! Music. They are not asking questions about the most recent conversation, the Yes! Music website, recent social media posts, available discounts, list of upcoming events, past purchases, or requesting to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 123,
+        "total_tokens": 630
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": " Thinking: The customer is expressing their satisfaction about a recent event and not asking any questions related to the previous conversation, website information, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 109,
+        "total_tokens": 616
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about website information. They are not asking about recap of previous conversation, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 105,
+        "total_tokens": 631
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about website information. They are not asking about the recap of previous conversation, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 105,
+        "total_tokens": 631
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the location of the event policy on the Yes! Music website.\nRecap of previous conversation - YES\nWebsite information - YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 43,
+        "total_tokens": 569
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about website information. They are not asking about the recap of previous conversation, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 106,
+        "total_tokens": 632
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 8,
+      "expected_tools": [
+        "Website information",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Website information"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about website information. They are not asking about the recap of previous conversation, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- YES\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 106,
+        "total_tokens": 632
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing dissatisfaction with the previous interaction and is requesting to speak with a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 85,
+        "total_tokens": 592
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing dissatisfaction with the previous interaction and is requesting to speak with a human.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 83,
+        "total_tokens": 590
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing dissatisfaction with the previous interaction and is requesting to speak with a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 84,
+        "total_tokens": 591
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is expressing frustration about a previous interaction and is requesting to speak with a human.\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 83,
+        "total_tokens": 590
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 9,
+      "expected_tools": [
+        "Talk to a Human",
+        "Recap of previous conversation"
+      ],
+      "predicted_tools": [
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing frustration about the previous conversation and is requesting to speak with a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- YES\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 83,
+        "total_tokens": 590
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about available discounts, specifically price matching, and mentioning that they are a student.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 85,
+        "total_tokens": 610
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about available discounts, specifically price matching and mentioning their student status.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 82,
+        "total_tokens": 607
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts",
+        "Recap of previous conversation"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about available discounts and mentioning a previous conversation (about ticket prices).\n\nRecap of previous conversation -- YES\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 83,
+        "total_tokens": 608
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about available discounts, specifically price matching and student offers. They are not asking about the recap of previous conversation, website information, recent social media posts, list of upcoming events, or past purchases. They are not explicitly asking to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 119,
+        "total_tokens": 644
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 10,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about available discounts, specifically price matching and mentioning they are a student.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 83,
+        "total_tokens": 608
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about recent social media posts.\n\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - YES\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - NO\nTalk to a Human - NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 518,
+        "completion_tokens": 73,
+        "total_tokens": 591
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about recent social media posts related to Yes! Music.\n\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - YES\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - NO\nTalk to a Human - NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 518,
+        "completion_tokens": 78,
+        "total_tokens": 596
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about the location of recent social media posts related to Yes! Music.\n\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - YES\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - NO\nTalk to a Human - NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 518,
+        "completion_tokens": 81,
+        "total_tokens": 599
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about recent social media posts related to Yes! Music.\n\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - YES\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - NO\nTalk to a Human - NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 518,
+        "completion_tokens": 78,
+        "total_tokens": 596
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 11,
+      "expected_tools": [
+        "Recent social media posts"
+      ],
+      "predicted_tools": [
+        "Recent social media posts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about recent social media posts.\n\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - YES\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - NO\nTalk to a Human - NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 518,
+        "completion_tokens": 73,
+        "total_tokens": 591
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about updating their shipping address for a previous order.\nRecap of previous conversation -- NO\nWebsite information -- NO (This question is not about the website in general, but a specific feature of it)\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 490,
+        "completion_tokens": 93,
+        "total_tokens": 583
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about updating their shipping address for a previous order.\nRecap of previous conversation -- NO\nWebsite information -- YES (since the question is about the website)\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 490,
+        "completion_tokens": 85,
+        "total_tokens": 575
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about updating their shipping address for a previous purchase.\nRecap of previous conversation -- NO\nWebsite information -- NO (This question is specific to past purchases)\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 490,
+        "completion_tokens": 84,
+        "total_tokens": 574
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about updating their shipping address for a previous order.\nRecap of previous conversation -- NO\nWebsite information -- NO (unless the website is where they plan to update the address, but that's not explicitly stated)\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 490,
+        "completion_tokens": 97,
+        "total_tokens": 587
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 12,
+      "expected_tools": [
+        "Website information"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about updating their shipping address for a previous purchase.\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 490,
+        "completion_tokens": 75,
+        "total_tokens": 565
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "Website information",
+        "List of upcoming events",
+        "Recap of previous conversation",
+        "Past Purchases",
+        "Recent social media posts",
+        "Available discounts"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about the upcoming events at Yes! Music. They are not asking about the recap of previous conversation, website information, recent social media posts, available discounts, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 506,
+        "completion_tokens": 108,
+        "total_tokens": 614
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about the upcoming events at Yes! Music.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 506,
+        "completion_tokens": 76,
+        "total_tokens": 582
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about the lineup for next month's event, which is related to the List of upcoming events. The customer did not mention any previous conversation, website information, recent social media posts, available discounts, past purchases, or a request to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 506,
+        "completion_tokens": 121,
+        "total_tokens": 627
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about the lineup for next month's event, which is related to the list of upcoming events.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 506,
+        "completion_tokens": 88,
+        "total_tokens": 594
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 13,
+      "expected_tools": [
+        "Recent social media posts",
+        "List of upcoming events"
+      ],
+      "predicted_tools": [
+        "List of upcoming events"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is asking about the lineup for next month's event, which is a question related to the List of upcoming events. The customer also mentioned a TikTok video, but it is not a recent social media post from Yes! Music, rather it is a mention of a video from Yes! Music posted on another platform.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- YES\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 506,
+        "completion_tokens": 130,
+        "total_tokens": 636
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about past purchases.\n\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - YES\nTalk to a Human - NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 503,
+        "completion_tokens": 71,
+        "total_tokens": 574
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about past purchases.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 503,
+        "completion_tokens": 71,
+        "total_tokens": 574
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about past purchases.\n\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - YES\nTalk to a Human - NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 503,
+        "completion_tokens": 71,
+        "total_tokens": 574
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about past purchases.\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - YES\nTalk to a Human - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 503,
+        "completion_tokens": 69,
+        "total_tokens": 572
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 14,
+      "expected_tools": [
+        "Past Purchases"
+      ],
+      "predicted_tools": [
+        "Past Purchases"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is asking about past purchases.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- YES\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 503,
+        "completion_tokens": 71,
+        "total_tokens": 574
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": " Thinking: The customer is inquiring about the cost of lawn seating and expressing a desire to find a way to lower it. They are not asking about the previous conversation, website information, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 123,
+        "total_tokens": 638
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [
+        "Available discounts"
+      ],
+      "success": true,
+      "raw_output": " Thinking: The customer is expressing concerns about the cost of lawn seating for an event, and is inquiring about potential ways to lower the cost.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- YES\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 93,
+        "total_tokens": 608
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing concerns about the cost of lawn seating for an event. They are not asking about the previous conversation, website information, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 114,
+        "total_tokens": 629
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing concern about the cost of lawn seating for an event. They are also asking if there's a way to lower the cost. No mention of recap of previous conversation, website information, recent social media posts, available discounts, list of upcoming events, or talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 126,
+        "total_tokens": 641
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 15,
+      "expected_tools": [
+        "Available discounts"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing concerns about the cost of lawn seating for an event. They are not asking about the previous conversation, website information, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\n\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 114,
+        "total_tokens": 629
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Past Purchases",
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is discussing their experience at the venue and suggesting an improvement. They are not asking about the previous conversation, the \"Yes! Music\" website, recent social media posts, available discounts, upcoming events, past purchases, or requesting to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 116,
+        "total_tokens": 635
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Available discounts",
+        "Recent social media posts",
+        "Past Purchases",
+        "Talk to a Human"
+      ],
+      "success": false,
+      "raw_output": " Thinking: The customer is expressing their positive sentiment about the venue and suggesting an improvement for the trash cans in the lawn area. They are not asking about the most recent conversation, the \"Yes! Music\" website, recent social media posts, available discounts, upcoming events, past purchases, or requesting to talk to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 128,
+        "total_tokens": 647
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": " Thinking: The customer is expressing their positive sentiment towards the venue and suggesting an improvement for the trash cans in the lawn area. They are not asking about the previous conversation, website information, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 121,
+        "total_tokens": 640
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": " Thinking: The customer is expressing their positive opinion about the venue and suggesting an improvement for the next event.\nRecap of previous conversation - NO\nWebsite information - NO\nRecent social media posts - NO\nAvailable discounts - NO\nList of upcoming events - NO\nPast Purchases - NO\nTalk to a Human - NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 80,
+        "total_tokens": 599
+      },
+      "error": null
+    },
+    {
+      "scenario": "alex",
+      "approach": "nlt",
+      "perturbed": false,
+      "model": "mistralai/mistral-7b-instruct",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": " Thinking: The customer is expressing their positive sentiment about the venue and suggesting an improvement for the lawn area. They are not asking about previous conversations, website information, recent social media posts, available discounts, list of upcoming events, past purchases, or talking to a human.\n\nRecap of previous conversation -- NO\nWebsite information -- NO\nRecent social media posts -- NO\nAvailable discounts -- NO\nList of upcoming events -- NO\nPast Purchases -- NO\nTalk to a Human -- NO\nAssessment finished.",
+      "usage": {
+        "prompt_tokens": 519,
+        "completion_tokens": 115,
+        "total_tokens": 634
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260116_100134"
+}

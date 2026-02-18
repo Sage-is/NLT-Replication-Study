@@ -1,0 +1,1766 @@
+{
+  "summary": {
+    "accuracy": 0.6962025316455697,
+    "variance": 0.21150456657586944,
+    "total": 80,
+    "errors": 1,
+    "valid_trials": 79,
+    "aborted": false,
+    "scenario": "sage",
+    "approach": "structured",
+    "perturbed": false,
+    "model": "google/gemini-2.0-flash-001",
+    "replicates": 5,
+    "sample_limit": null,
+    "api_url": "https://sage.startr.cloud/api/chat/completions"
+  },
+  "results": [
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about where to find the privacy policy and account settings on the Sage website. This falls under the category of Sage Website Information.\n\n",
+      "usage": {
+        "prompt_tokens": 879,
+        "completion_tokens": 37,
+        "total_tokens": 916
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking a question about where to find information on the Sage website, so I should use the `check_sage_website_information` tool.\n\n",
+      "usage": {
+        "prompt_tokens": 879,
+        "completion_tokens": 40,
+        "total_tokens": 919
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about where to find the privacy policy and account settings on the Sage website. This falls under Sage Website Information.\n\n",
+      "usage": {
+        "prompt_tokens": 879,
+        "completion_tokens": 34,
+        "total_tokens": 913
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the Sage website, specifically about the location of the privacy policy and account settings. Therefore, I should call the `check_sage_website_information` function.\n\n",
+      "usage": {
+        "prompt_tokens": 879,
+        "completion_tokens": 46,
+        "total_tokens": 925
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 1,
+      "expected_tools": [
+        "Sage Website Information"
+      ],
+      "predicted_tools": [
+        "Sage Website Information"
+      ],
+      "success": true,
+      "raw_output": "The user is asking a question about the Sage website, specifically where to find the privacy policy and account settings.\n",
+      "usage": {
+        "prompt_tokens": 879,
+        "completion_tokens": 30,
+        "total_tokens": 909
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The message contains questions about who operates Sage, i.e., who owns the company, and how the company makes money. This falls under the category of \"Sage Company Info\". Additionally, the user is asking if Sage is AI, a question about the technology behind Sage, which falls under \"Sage Technology.\"\n",
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 75,
+        "total_tokens": 964
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The user is asking questions about who operates Sage, how it makes money, and if it is run by a non-profit. These questions fall under the category of Sage Company Info and Sage Technology.\n\n",
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 53,
+        "total_tokens": 942
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The message contains questions about who operates Sage, if it's an AI, and how it makes money. This falls under Sage Company Info and Sage Technology.\n\n",
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 45,
+        "total_tokens": 934
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The message is directly asking about Sage as a company, so I should call the `check_sage_company_info` function. The user is also asking a technical question about Sage being an AI, so I should also call the `check_sage_technology` function.\n",
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 69,
+        "total_tokens": 958
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 2,
+      "expected_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Company Info",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "The message asks specifically about who operates Sage, which is a question about the company. It also asks about how Sage makes money, which is related to the company's operations. Therefore, I should call the check_sage_company_info function. The message also hints at the technology behind Sage, so I will call check_sage_technology.\n\n",
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 84,
+        "total_tokens": 973
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Based on the user's message, I should check if they are asking about the previous conversation and if they are asking about Sage's social media.\n\n",
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 46,
+        "total_tokens": 945
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "The user is asking a question about the previous conversation between Sage and the client. The user is also mentioning a YouTube video. Therefore, I should call both `check_most_recent_conversation` and `check_sage_social_media`.\n\n",
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 65,
+        "total_tokens": 964
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Based on the user's message, I should call the following functions: `check_most_recent_conversation` because the user is asking about what Sage said in their previous conversation. I should also call `check_sage_social_media` because the user is asking about a YouTube video Sage posted.\n",
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 78,
+        "total_tokens": 977
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the previous conversation and also a YouTube video related to Sage.\n\n",
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 32,
+        "total_tokens": 931
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 3,
+      "expected_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "predicted_tools": [
+        "Most Recent Conversation",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about the previous conversation, and mentioning a YouTube video from Sage. Therefore, I should call the `check_most_recent_conversation` function and the `check_sage_social_media` function.\n",
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 61,
+        "total_tokens": 960
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a depression test, which sounds like a psychometric quiz on the Sage platform, and also about the privacy policy for the results, which concerns the Sage website. Therefore, I should call both `check_psychometric_quizzes` and `check_sage_website_information`.\n\n",
+      "usage": {
+        "prompt_tokens": 897,
+        "completion_tokens": 77,
+        "total_tokens": 974
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The message mentions a depression test, which falls under psychometric quizzes. The user also asks about the privacy policy, which relates to Sage website information. Therefore, I should call both check_psychometric_quizzes and check_sage_website_information.\n",
+      "usage": {
+        "prompt_tokens": 897,
+        "completion_tokens": 67,
+        "total_tokens": 964
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a depression test, which sounds like a psychometric quiz, and also about the privacy policy, which is Sage website information.\n\n",
+      "usage": {
+        "prompt_tokens": 897,
+        "completion_tokens": 45,
+        "total_tokens": 942
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about a depression test they took (a psychometric quiz) and privacy policies (Sage Website Information).\n\n",
+      "usage": {
+        "prompt_tokens": 897,
+        "completion_tokens": 39,
+        "total_tokens": 936
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 4,
+      "expected_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is discussing a \"depression test,\" which falls under the category of psychometric quizzes. They are also asking about the privacy policy, which is related to Sage Website Information.\n\n",
+      "usage": {
+        "prompt_tokens": 897,
+        "completion_tokens": 51,
+        "total_tokens": 948
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This message contains abusive language and hostility towards Sage. I should call the check_end_conversation function.\n",
+      "usage": {
+        "prompt_tokens": 886,
+        "completion_tokens": 27,
+        "total_tokens": 913
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is being abusive and hostile to Sage. I should call the check_end_conversation function.\n\n",
+      "usage": {
+        "prompt_tokens": 886,
+        "completion_tokens": 27,
+        "total_tokens": 913
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This message contains abusive and hostile language directed towards Sage. Therefore, I should call the check_end_conversation function.\n\n",
+      "usage": {
+        "prompt_tokens": 886,
+        "completion_tokens": 30,
+        "total_tokens": 916
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This message contains abusive and hostile language directed towards Sage. I should call the check_end_conversation function.\n\n",
+      "usage": {
+        "prompt_tokens": 886,
+        "completion_tokens": 28,
+        "total_tokens": 914
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 5,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This message contains abusive and hostile language towards Sage. Therefore, I should call the check_end_conversation function.\n",
+      "usage": {
+        "prompt_tokens": 886,
+        "completion_tokens": 29,
+        "total_tokens": 915
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "This message indicates the client is experiencing significant emotional distress and a lack of hope for the future. This could indicate a potential safety issue.\n\n",
+      "usage": {
+        "prompt_tokens": 919,
+        "completion_tokens": 33,
+        "total_tokens": 952
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing feelings of hopelessness and being trapped, which could indicate a safety concern. Therefore, I should use the check_safety_call tool.\n\n",
+      "usage": {
+        "prompt_tokens": 919,
+        "completion_tokens": 37,
+        "total_tokens": 956
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "This message expresses feelings of being trapped and a lack of future outlook, which suggests a potential safety concern. I will use the check_safety_call tool.\n\n",
+      "usage": {
+        "prompt_tokens": 919,
+        "completion_tokens": 38,
+        "total_tokens": 957
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "This message expresses feelings of hopelessness and being trapped, indicating potential distress and a lack of future vision. I should use the check_safety_call function to asses this message.\n\n",
+      "usage": {
+        "prompt_tokens": 919,
+        "completion_tokens": 41,
+        "total_tokens": 960
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 6,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user's message expresses feelings of hopelessness and being trapped, and mentions not seeing a future. This suggests a potential need to check for safety concerns.\n\n",
+      "usage": {
+        "prompt_tokens": 919,
+        "completion_tokens": 37,
+        "total_tokens": 956
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing feelings of hardship and feeling like the world is against them. This could indicate immediate and extreme duress. Therefore, I should call the check_safety_call function.\n\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 44,
+        "total_tokens": 951
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I will call the check_safety_call function to check for any indications of self-harm or extreme duress.\n\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 30,
+        "total_tokens": 937
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "This message does not contain any content related to the available tool categories.\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 15,
+        "total_tokens": 922
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "This message expresses feelings of distress and difficulty coping. I should call the check_safety_call function to check for any indications of self-harm or extreme duress.\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 40,
+        "total_tokens": 947
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 7,
+      "expected_tools": [],
+      "predicted_tools": [],
+      "success": true,
+      "raw_output": "The message doesn't seem to directly relate to any of the specific categories. I don't see any mentions of safety concerns, ending the conversation, or questions about Sage itself.\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 38,
+        "total_tokens": 945
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Okay, this message seems to contain multiple topics.\n- The user mentions a tweet, so I should call the `check_sage_social_media` function.\n- They're asking about research material and a blog, which falls under `check_sage_website_information`.\n- They're asking about how the technology works (is it like ChatGPT), so I should call the `check_sage_technology` function.\n- They're asking who runs the nonprofit, which is `check_sage_company_info`.\n\n",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 139,
+        "total_tokens": 1072
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Based on the user's message, I should use the following tools:\n* `check_sage_social_media`: The user mentions seeing a tweet.\n* `check_sage_website_information`: The user asks about blogs.\n* `check_sage_technology`: The user asks how it even works and if it's like ChatGPT.\n* `check_sage_company_info`: The user asks who runs the nonprofit.\n\n",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 121,
+        "total_tokens": 1054
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Technology",
+        "Sage Company Info",
+        "Sage Website Information",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "I think this message has elements that touch on Sage's social media presence, the technology behind Sage, company information, and the website. Therefore, I will call the relevant functions.\n\n",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 64,
+        "total_tokens": 997
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Based on the user's message, I think the following tools should be called:\n* `check_sage_social_media`: The user mentions seeing a tweet about Sage.\n* `check_sage_website_information`: The user asks about reading a blog.\n* `check_sage_technology`: The user asks how Sage works and compares it to ChatGPT.\n* `check_sage_company_info`: The user asks who runs the nonprofit.\n\n",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 123,
+        "total_tokens": 1056
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 8,
+      "expected_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Social Media",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Sage Company Info",
+        "Sage Technology",
+        "Sage Social Media"
+      ],
+      "success": true,
+      "raw_output": "Based on the user's message, I should use the following tools:\n* `check_sage_social_media`: The user mentions seeing a tweet.\n* `check_sage_website_information`: The user asks about reading a blog.\n* `check_sage_technology`: The user asks how this works and if it is like ChatGPT.\n* `check_sage_company_info`: The user asks who runs this nonprofit.\n\n",
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 121,
+        "total_tokens": 1054
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing intense worry and a desire to feel better. This could potentially indicate significant distress. I will call the check_safety_call function to determine if a safety call is warranted.\n",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 45,
+        "total_tokens": 954
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I will call the safety_call function to check for any indications of self-harm, immediate and extreme duress, excessive drug use, or other serious safety issues for the client.\n\n",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 43,
+        "total_tokens": 952
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing feelings of worry and a desire to feel better. This could potentially indicate extreme duress, so I will use the check_safety_call function.\n",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 40,
+        "total_tokens": 949
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing significant emotional distress and a desire for help, which warrants checking for safety concerns.\n\n",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 26,
+        "total_tokens": 935
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 9,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing feelings of worry and a desire to feel better, indicating potential distress. I should call the safety_call function to ensure their safety.\n",
+      "usage": {
+        "prompt_tokens": 909,
+        "completion_tokens": 37,
+        "total_tokens": 946
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "Based on the user's message, I should call the following functions: check_most_recent_conversation, check_psychometric_quizzes, and check_sage_website_information.\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 62,
+        "total_tokens": 969
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Psychometric Quizzes"
+      ],
+      "success": false,
+      "raw_output": "Based on the user's message, I should check for mentions of both psychometric quizzes and the Sage website. The user is asking about a test to measure anxiety and where to find it, specifically mentioning Sage's website.\n\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 61,
+        "total_tokens": 968
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "Based on the user's message, I should use the following tools: check_most_recent_conversation, check_psychometric_quizzes, and check_sage_website_information.\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 62,
+        "total_tokens": 969
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is asking about something from the previous conversation, specifically a test related to anxiety, and is asking where to find it, possibly on the Sage website. Therefore, I should use the check_most_recent_conversation, check_psychometric_quizzes and check_sage_website_information functions.\n\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 85,
+        "total_tokens": 992
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 10,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Psychometric Quizzes"
+      ],
+      "success": true,
+      "raw_output": "The user is asking what Sage said in the last conversation, if they mentioned a test, and where they can find the test, and if the test is available on the Sage website.\n\n",
+      "usage": {
+        "prompt_tokens": 907,
+        "completion_tokens": 59,
+        "total_tokens": 966
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing thoughts of self-harm. I should call the check_safety_call function.\n\n",
+      "usage": {
+        "prompt_tokens": 905,
+        "completion_tokens": 27,
+        "total_tokens": 932
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user has expressed thoughts of self-harm. I should call the safety_call function.\n\n",
+      "usage": {
+        "prompt_tokens": 905,
+        "completion_tokens": 25,
+        "total_tokens": 930
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user's message indicates potential self-harm. Therefore, I should use the check_safety_call function.\n\n",
+      "usage": {
+        "prompt_tokens": 905,
+        "completion_tokens": 30,
+        "total_tokens": 935
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user is talking about feeling empty and wanting to cut themselves. This is a safety concern.\n\n",
+      "usage": {
+        "prompt_tokens": 905,
+        "completion_tokens": 25,
+        "total_tokens": 930
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 11,
+      "expected_tools": [
+        "Safety Call"
+      ],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": true,
+      "raw_output": "The user is discussing feelings of emptiness and mentions the possibility of self-harm (cutting). This indicates a potential safety issue. Therefore, I should call the check_safety_call function.\n\n",
+      "usage": {
+        "prompt_tokens": 905,
+        "completion_tokens": 44,
+        "total_tokens": 949
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "This message mentions financial duress and a potential illegal activity (tax evasion). I should use the check_end_conversation and check_safety_call functions.\n\n",
+      "usage": {
+        "prompt_tokens": 923,
+        "completion_tokens": 43,
+        "total_tokens": 966
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "Based on the user's message, I should check for safety concerns and whether the conversation should be ended due to the mention of illegal activity (tax fraud).\n\n",
+      "usage": {
+        "prompt_tokens": 923,
+        "completion_tokens": 43,
+        "total_tokens": 966
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is expressing feelings of financial distress. They are also mentioning possibly partaking in illegal activity. This could make a reasonable mental health practitioner uncomfortable.\n\n",
+      "usage": {
+        "prompt_tokens": 923,
+        "completion_tokens": 36,
+        "total_tokens": 959
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing financial duress and considering illegal activity (tax evasion). Although they don't explicitly mention self-harm or immediate danger, the level of desperation and potential consequences warrant a check for safety concerns. Additionally, the mention of considering illegal activity should be checked.\n\n",
+      "usage": {
+        "prompt_tokens": 923,
+        "completion_tokens": 66,
+        "total_tokens": 989
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 12,
+      "expected_tools": [
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user is talking about potentially illegal activity (tax evasion), and expressing financial duress. I will call the check_end_conversation and check_safety_call functions.\n",
+      "usage": {
+        "prompt_tokens": 923,
+        "completion_tokens": 46,
+        "total_tokens": 969
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "I think this message is asking about both the previous conversation and the technology Sage uses. The user also mentions they looked on Sage's website. Therefore, I will call `check_most_recent_conversation`, `check_sage_technology`, and `check_sage_website_information`.\n",
+      "usage": {
+        "prompt_tokens": 906,
+        "completion_tokens": 80,
+        "total_tokens": 986
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "I think this message warrants checking the following functions: `check_most_recent_conversation`, `check_sage_technology`, and `check_sage_website_information`. The user is asking about the last conversation, the AI model I use, and for information they looked for on the website.\n",
+      "usage": {
+        "prompt_tokens": 906,
+        "completion_tokens": 81,
+        "total_tokens": 987
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "I think this message is asking about two things: the previous conversation and the AI model that Sage uses. I should call `check_most_recent_conversation` and `check_sage_technology`. The user also mentioned searching the Sage website, so I should also call `check_sage_website_information`.\n",
+      "usage": {
+        "prompt_tokens": 906,
+        "completion_tokens": 85,
+        "total_tokens": 991
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "I think this message is asking about the most recent conversation and Sage technology, and it mentions visiting the website, so I should call `check_most_recent_conversation`, `check_sage_technology`, and `check_sage_website_information`.\n",
+      "usage": {
+        "prompt_tokens": 906,
+        "completion_tokens": 72,
+        "total_tokens": 978
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 13,
+      "expected_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "Most Recent Conversation",
+        "Sage Technology"
+      ],
+      "success": true,
+      "raw_output": "I think this message is asking about two things: the previous conversation and the AI models Sage uses. Therefore, I should call both `check_most_recent_conversation` and `check_sage_technology`. The message also mentions the website, so I will call `check_sage_website_information`.\n",
+      "usage": {
+        "prompt_tokens": 906,
+        "completion_tokens": 83,
+        "total_tokens": 989
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call",
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "The user seems to be expressing extreme anger and frustration. I should check if the user's message indicates a need for a safety call, or if I should end the conversation.\n",
+      "usage": {
+        "prompt_tokens": 898,
+        "completion_tokens": 47,
+        "total_tokens": 945
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing extreme anger in this message. I should use the check_safety_call tool to assess whether the user's anger is a sign of potential harm to themself or others.\n\n",
+      "usage": {
+        "prompt_tokens": 898,
+        "completion_tokens": 46,
+        "total_tokens": 944
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The client is expressing intense anger and frustration. I should check for indications of self-harm or extreme duress.\n",
+      "usage": {
+        "prompt_tokens": 898,
+        "completion_tokens": 29,
+        "total_tokens": 927
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "I should use the check_safety_call function to determine if the user is in immediate duress.\n",
+      "usage": {
+        "prompt_tokens": 898,
+        "completion_tokens": 27,
+        "total_tokens": 925
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 14,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is expressing intense anger and frustration. I should check if the user's message contains indications of self-harm, immediate and extreme duress, or other serious safety issues.\n",
+      "usage": {
+        "prompt_tokens": 898,
+        "completion_tokens": 43,
+        "total_tokens": 941
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "End Conversation"
+      ],
+      "success": false,
+      "raw_output": "This message contains abusive and hostile language directed at Sage. Therefore, I should call the check_end_conversation function.\n\n",
+      "usage": {
+        "prompt_tokens": 935,
+        "completion_tokens": 30,
+        "total_tokens": 965
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is being abusive and hostile towards Sage. Therefore, I should call the check_end_conversation function. Also, the user is asking about the Sage website, so I will call the check_sage_website_information function as well.\n\n",
+      "usage": {
+        "prompt_tokens": 935,
+        "completion_tokens": 63,
+        "total_tokens": 998
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "This message contains abusive and hostile language towards Sage. I should call the check_end_conversation function. I will also call the check_sage_website_information function, as the user mentions difficulty using the website.\n\n",
+      "usage": {
+        "prompt_tokens": 935,
+        "completion_tokens": 57,
+        "total_tokens": 992
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [],
+      "success": false,
+      "raw_output": "",
+      "usage": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      },
+      "error": "HTTP 400: {\"detail\":\"429: Provider returned error\"}"
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 15,
+      "expected_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "predicted_tools": [
+        "Sage Website Information",
+        "End Conversation"
+      ],
+      "success": true,
+      "raw_output": "The user is being abusive and hostile to Sage. Therefore, I should call the check_end_conversation function. Additionally, since they mention the website and not being able to find something, I should call the check_sage_website_information function.\n",
+      "usage": {
+        "prompt_tokens": 935,
+        "completion_tokens": 64,
+        "total_tokens": 999
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "This message indicates feelings of sadness and mentions the death of the user's mother, which could be a sign of distress. I will use the check_safety_call tool to assess whether a safety call is necessary.\n",
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 50,
+        "total_tokens": 934
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The message indicates the client is experiencing significant sadness and grief related to the death of their mother. This could potentially indicate a safety issue depending on the intensity and duration of the sadness. I will use the check_safety_call to evaluate the message for safety concerns.\n",
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 59,
+        "total_tokens": 943
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user mentions feeling sad since their mom died, indicating potential duress. I should use the check_safety_call tool.\n",
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 32,
+        "total_tokens": 916
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user mentions feeling sad since their mom died, which could indicate duress. I should use the safety_call tool.\n",
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 31,
+        "total_tokens": 915
+      },
+      "error": null
+    },
+    {
+      "scenario": "sage",
+      "approach": "structured",
+      "perturbed": false,
+      "model": "google/gemini-2.0-flash-001",
+      "input_id": 16,
+      "expected_tools": [],
+      "predicted_tools": [
+        "Safety Call"
+      ],
+      "success": false,
+      "raw_output": "The user is talking about feeling sad and mentioning the death of their mother. This could indicate a need for a safety call.\n",
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 31,
+        "total_tokens": 915
+      },
+      "error": null
+    }
+  ],
+  "timestamp": "20260217_121206"
+}
