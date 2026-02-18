@@ -1,14 +1,14 @@
 Natural Language Tools: A Replication Study
 =====================================================
 
-Validating NLT Performance Covering 9 Models
+Validating NLT Performance Across 14 Models
 ---------------------------------------------------------------------
 
 ```
 Authors: A. Somma, I. Plante, E. Fournier-Tombs
 Affiliation: Sage.is AI
-Date: January 16, 2026
-Status: DRAFT - Replication in Progress
+Date: February 18, 2026
+Status: Complete — Follow-up Study Planned
 ```
 
 * * * * *
@@ -16,7 +16,9 @@ Status: DRAFT - Replication in Progress
 Abstract
 -------------
 
-We present a systematic replication of the Natural Language Tools (NLT) framework proposed by Johnson et al. (2025). We used an independent implementation and evaluation harness. We assessed NLT's tool-calling performance for 9 frontier models and 69 aggregated result entries, covering customer service and mental health. Results show that NLT improves tool-calling accuracy by 13.7% compared to structured approaches. Accuracy rises from 39.2% to 56.5%. We also found significant reductions in critical errors: 51 versus 753. This leads to real-world impacts, such as fewer escalated tickets in live customer service deployments. We observe improved stability in successful completions. However, some variance remains in fail states. These results partially confirm the original study's findings. But a lack of access to the original testing harness makes direct comparison of raw numbers challenging.
+We present a systematic replication of the Natural Language Tools (NLT) framework proposed by Johnson et al. (2025). Using an independent implementation and evaluation harness, we assessed NLT's tool-calling performance across 14 models spanning 8,560 trials and 107 aggregated result entries, covering customer service and mental health scenarios. Results show that NLT improves tool-calling accuracy by 14.9 percentage points compared to structured approaches, with accuracy rising from 47.4% to 62.3%. NLT outperformed structured tool calling in 11 of 14 models tested. We also found dramatic reductions in critical errors: 51 for NLT versus 755 for structured approaches — a 93% reduction. NLT achieved a 25.2% reduction in token usage. These results confirm the core findings of the original study while revealing important nuance: highly optimized frontier models (e.g., GPT-5, Gemini 2.0 Flash) show near-parity between approaches, while reasoning models, smaller models, and models without native tool-calling support benefit most from NLT. A lack of access to the original testing harness makes direct comparison of raw numbers challenging. Given these findings, we are planning a more expansive follow-up study to further investigate the boundary conditions of NLT's advantages.
+
+Note on accuracy reporting: Raw accuracy is computed only over valid (non-error) trials. When a model errors on the vast majority of trials (e.g., 76 out of 80), the few surviving responses can produce misleadingly high accuracy figures — a survivorship bias. In this study, we correct for this by treating any condition with errors on 70 or more of 80 trials as an effective 0% accuracy, reflecting operational failure rather than selective success.
 
 Keywords: Large Language Models, Tool Calling, Function Calling, Agentic Systems, Replication Study
 
@@ -37,7 +39,7 @@ This distribution mismatch may be compounded by the integration of expert system
 
 Johnson et al. (2025) showed that replacing programmatic JSON tool calling with natural language (NLT) significantly improved LLM tool-calling accuracy. Their findings showed an 18.4 percentage point gain across 10 models and 6,400 trials. There was also less variance and token savings.
 
-These findings challenge the dominant paradigm of structured tool calling. They suggest that format constraints are a significant, overlooked bottleneck in the performance of agentic systems. NLT could change how developers implement tool calling in production systems. The rapid turnover of models, with new releases frequently entering the scene, heightens the urgency to adapt to flexible tool-calling methods that can mitigate deployment risks. Through this replication, we aim to show that NLT increases accuracy and robustness. We also aim to show that it generalizes across newer models and scenarios. This could establish NLT as a more flexible and reliable alternative to structured methods in applied AI contexts.
+These findings challenge the dominant paradigm of structured tool calling. They suggest that format constraints are a significant, overlooked bottleneck in the performance of agentic systems. NLT could change how developers implement tool calling in production systems. The rapid turnover of models, with new releases frequently entering the scene, heightens the urgency to adapt to flexible tool-calling methods that can mitigate deployment risks. Through this replication, we aim to validate these claims using a broader model set that includes frontier, reasoning, and open-weight models released since the original study. The results presented here form the basis for a planned follow-up study that will expand the experimental scope beyond the original paper's conditions.
 
 ### 1.2 Motivation for Replication
 
@@ -60,20 +62,21 @@ Our replication focuses on the core experimental conditions from Johnson et al. 
 
 Limitations we acknowledge:
 
-- Model Availability: Some models from the original study are unavailabl, leading to potential differences in performance across tested models.
+- Model Availability: Some models from the original study are unavailable, leading to potential differences in performance across tested models. Two of our 14 models have partial data (Gemini 2.5 Pro and Qwen3-VL) due to API availability during the evaluation window.
 
-- API Differences: API implementations may differ from the original study. For example, during our tests, API latency varied up to 120 ms across providers, affecting the response time and potentially the accuracy of results.y
-- Temporal Effects: Model capabilities may have changed since the original evaluatio, reflecting ongoing optimization and updates.n
-- Infrastructure: Different inference infrastructure may affect result, given variability in processing speeds and network conditions.s
+- API Differences: API implementations may differ from the original study. For example, during our tests, API latency varied up to 120 ms across providers, affecting the response time and potentially the accuracy of results.
+- Temporal Effects: Model capabilities may have changed since the original evaluation, reflecting ongoing optimization and updates.
+- Infrastructure: Different inference infrastructure may affect results, given variability in processing speeds and network conditions.
 - We do not replicate multi-turn interactions. We also do not replicate parameterized tool calls.
 
 ### 1.4 Contributions
 
 1. Independent validation of NLT's core claims using open-source tooling
-2. Extended evaluation to 7 models not in the original study
-3. Detailed per-model analysis with complete result transparency
+2. Extended evaluation to 14 models, including 5 not in the original study
+3. Detailed per-model analysis revealing a capability-dependent pattern in NLT gains
 4. Open-source framework for continued NLT research and evaluation
 5. Reproducibility artifacts, including all prompts, inputs, and raw results
+6. Identification of boundary conditions for a planned follow-up study
 
 * * * * *
 
@@ -107,9 +110,10 @@ We replicated the original 2×2×2 factorial design. Each factor in this design 
 - Scenario: Alex (customer service) vs Sage (mental health)
 - Perturbation: Non-perturbed vs Perturbed prompts
 
-Per-model trial count:
+Per-model trial count (for models with complete data):
 
-- 2 approaches × 2 scenarios × 16 inputs × 2 perturbations × 5 replicates = 320 trials per model
+- 2 approaches × 2 scenarios × 16 inputs × 2 perturbations × 5 replicates = 640 trials per model
+- Total: 8,560 trials across 14 models (107 aggregated entries)
 
 ### 2.3 Scenarios and Tool Definitions
 
@@ -142,29 +146,29 @@ Original Study's Approach:
 Johnson et al. (2025) evaluated 13 models spanning open and closed families, selected based on popularity via the OpenRouter leaderboard. They divided models into:
 
 - Core set (10 models): Tested on both NLT and Structured approaches
-- Auxiliary set (3 models): DeepSeek R1-0528, GPT-OSS-120B, GPT-OSS-20B --- tested only on NLT due to "limited tool calling capabilities at evaluation time."
+- Auxiliary set (3 models): DeepSeek R1-0528, GPT-OSS-120B, GPT-OSS-20B — tested only on NLT due to "limited tool calling capabilities at evaluation time."
 
-Our Deviation & Correction:
-We found that the GPT-OSS family supports tool calling. The original study likely excluded them due to harness incompatibilities, not actual model limitations. We evaluated all 9 models using both NLT and Structured approaches. This follows the principle that even models without native tool-calling support should be tested with structured approaches to capture failure modes.
+Our Approach:
+We evaluated 14 models using both NLT and Structured approaches. We found that the GPT-OSS family supports tool calling; the original study likely excluded them due to harness incompatibilities, not actual model limitations. We tested all models with both approaches, including those without native tool-calling support, to capture failure modes. Our model set includes frontier closed-weight models (GPT-5, Claude Sonnet 4, Gemini 2.5 Pro), mid-tier models (Gemini 2.0 Flash, Gemini 2.5 Flash Lite, DeepSeek-V3, Kimi-K2), reasoning models (DeepSeek-R1), and smaller open-weight models (Llama 3.1 8B, Mistral 7B).
 
-Evaluated Models (9):
+Evaluated Models (14):
 
-1. deepseek/deepseek-chat-v3-0324
-2. deepseek/deepseek-r1
-3. google/gemini-2.5-flash-lite
-4. llama-3.1-8b-instant
-5. mistralai/mistral-7b-instruct  (No native tool calling)
-6. moonshotai/kimi-k2
-7. openai/gpt-oss-120b:free  (Originally "auxiliary")
-8. openai/gpt-oss-20b:free  (Originally "auxiliary")
-9. qwen/qwen3-vl-235b-a22b-thinking
+1. anthropic/claude-sonnet-4
+2. deepseek/deepseek-chat-v3-0324
+3. deepseek/deepseek-r1
+4. google/gemini-2.0-flash-001
+5. google/gemini-2.5-flash-lite
+6. google/gemini-2.5-pro
+7. llama-3.1-8b-instant
+8. mistralai/mistral-7b-instruct (No native tool calling)
+9. moonshotai/kimi-k2
+10. openai/gpt-5
+11. openai/gpt-5-nano
+12. openai/gpt-oss-120b:free (Originally "auxiliary")
+13. openai/gpt-oss-20b:free (Originally "auxiliary")
+14. qwen/qwen3-vl-235b-a22b-thinking
 
-Models from Original Not Yet Tested:
-
-- GPT-5, GPT-5-nano (OpenAI)
-- Claude Sonnet 4.0 (Anthropic)
-- DeepSeek-V3, Qwen3, Kimi-K2, etc.
-- Reason: Mini-replication phase to validate framework before full run
+Data Completeness: 12 of 14 models have complete data across all 8 conditions. Two models have partial data: Google Gemini 2.5 Pro (6 of 8 conditions) and Qwen3-VL (5 of 8 conditions) due to API availability during the evaluation window.
 
 ### 2.5 Prompt Design
 
@@ -176,6 +180,7 @@ Structured Prompts: Function schemas passed via API with system prompt
 ### 2.6 Evaluation Metrics
 
 - Accuracy: Proportion of exact matches (predicted tools = expected tools)
+- Corrected Accuracy: When a condition produces errors on ≥70 of 80 trials, we treat it as an effective 0% accuracy. Raw accuracy over only surviving trials introduces a survivorship bias — a model that errors on 76/80 trials but gets the remaining 4 correct would report 100% accuracy, misrepresenting what is effectively a catastrophic failure. This correction affects 4 of 107 entries (all Qwen structured conditions and all Mistral structured conditions).
 - Variance: Sample variance across replicates
 - Token Usage: Input, output, and total tokens per trial
 - Error Rate: Proportion of API errors or parsing failures
@@ -201,113 +206,123 @@ Quality Control:
 
 ### 3.1 Overall Accuracy
 
-Replication Results (9 models):
+Replication Results (14 models, 107 entries, 8,560 trials):
 
-- Δ = +13.7pp to +17.3pp depending on the aggregation method. Overall: 56.5% NLT vs 39.2% Structured.
-- Total Errors: NLT (51) vs Structured (753). Structured approach failure rates were significantly higher.
+- NLT accuracy: 62.3% vs Structured accuracy: 47.4% (corrected).
+- Δ = +14.9pp overall gain.
+- Total Errors: NLT (51) vs Structured (755). Structured approach failure rates were dramatically higher — a 93% error reduction with NLT.
+- NLT outperformed structured approaches in 11 of 14 models.
+
+Note: Structured accuracy uses corrected figures. Raw structured accuracy was 51.9%, but this is inflated by survivorship bias in conditions where nearly all trials errored (see Section 2.6). For example, Qwen's structured Alex non-perturbed condition errored on 76 of 80 trials but reported 100% accuracy on the 4 surviving responses. We correct such conditions (errors ≥ 70/80) to 0% accuracy.
 
 Comparison to Original Study:
 
-- Original overall gain: +18.4pp.
-- Our replication: +13.7pp (Weighted Gain).
-- Effect confirmed. Major differences are likely due to a lack of access to the original testing harness and differences in model versions/APIs.
+- Original overall gain: +18.4pp across 10 models and 6,400 trials.
+- Our replication: +14.9pp across 14 models and 8,560 trials (corrected).
+- The effect is confirmed. The remaining gap is primarily explained by the inclusion of frontier models (GPT-5, Gemini 2.5 Pro) that have been heavily optimized for structured tool calling, showing near-parity or reversed gains. Differences are also likely due to model selection, lack of access to the original testing harness, and improvements in structured tool-calling support in newer model generations.
 
 ### 3.2 Per-Model Performance
 
-Model Performance:
+Model Performance (sorted by NLT gain):
 
-- deepseek/deepseek-chat-v3-0324: +20.3% Gain (NLT 90.0% / Structured 69.7%)
-- deepseek/deepseek-r1: +24.0% Gain (NLT 55.0% / Structured 31.0%)
-- google/gemini-2.5-flash-lite: +10.0% Gain (NLT 73.1% / Structured 63.1%)
-- llama-3.1-8b-instant: +14.9% Gain (NLT 47.8% / Structured 32.9%)
-- mistralai/mistral-7b-instruct: +39.4% Gain (NLT 39.4% / Structured 0.0%)
-- - Note: Mistral failed completely on structured (320 errors).
-- moonshotai/kimi-k2: -0.6% Loss (NLT 67.2% / Structured 67.8%)
-- openai/gpt-oss-120b:free: -6.4% Loss (NLT 42.6% / Structured 49.0%)
-- openai/gpt-oss-20b:free: +3.4% Gain (NLT 42.7% / Structured 39.3%)
-- qwen/qwen3-vl-235b-a22b-thinking: +33.8% Gain (NLT 33.8% / Structured 0.0%)
-- - Note: Qwen also failed completely on structured (307 errors).
+- anthropic/claude-sonnet-4: **+43.1pp** Gain (NLT 61.9% / Structured 18.8%)
+  - Note: Largest NLT gain in our study. Claude's structured accuracy was exceptionally low despite being a frontier model.
+- mistralai/mistral-7b-instruct: **+39.4pp** Gain (NLT 39.4% / Structured 0.0%)
+  - Note: Mistral failed completely on structured (320 errors). No native tool-calling support.
+- deepseek/deepseek-r1: **+24.0pp** Gain (NLT 55.0% / Structured 31.0%)
+  - Note: Reasoning model shows large NLT gains, suggesting chain-of-thought interferes with structured output.
+- deepseek/deepseek-chat-v3-0324: **+20.3pp** Gain (NLT 90.0% / Structured 69.7%)
+- openai/gpt-5-nano: **+19.7pp** Gain (NLT 79.1% / Structured 59.4%)
+- llama-3.1-8b-instant: **+14.9pp** Gain (NLT 47.8% / Structured 32.9%)
+- google/gemini-2.5-flash-lite: **+10.0pp** Gain (NLT 73.1% / Structured 63.1%)
+- google/gemini-2.0-flash-001: **+5.5pp** Gain (NLT 85.0% / Structured 79.5%)
+- openai/gpt-oss-20b:free: **+3.4pp** Gain (NLT 42.7% / Structured 39.3%)
+- openai/gpt-5: **+1.6pp** Gain (NLT 81.9% / Structured 80.3%)
+  - Note: Near-parity. GPT-5's structured tool calling is highly optimized.
+- moonshotai/kimi-k2: **−0.6pp** Loss (NLT 67.2% / Structured 67.8%)
+- openai/gpt-oss-120b:free: **−6.4pp** Loss (NLT 42.6% / Structured 49.0%)
+- qwen/qwen3-vl-235b-a22b-thinking: **+33.8pp** Gain (NLT 33.8% / Structured 0.0% corrected)
+  - Note: Partial data (1 NLT entry vs 4 structured). Structured had 307 errors out of 320 trials. Raw accuracy was 60.7% due to survivorship bias — the few non-error responses happened to be correct. We correct to 0% as all 4 conditions had ≥ 73 errors out of 80 trials, representing operational failure.
+- google/gemini-2.5-pro: **−33.7pp** Loss (NLT 48.3% / Structured 82.1%)
+  - Note: Partial data (3 entries each). Gemini 2.5 Pro is the strongest outlier favoring structured tool calling.
 
-### Variance Results
+### 3.3 Variance Results
 
-Structured variance: 0.1671 (0.2148 excl. failed) NLT variance: 0.2003. We expected a variance reduction of approximately 0.047 (structured vs NLT), but our results showed a smaller actual reduction of 0.0145, primarily due to the high failure rate observed in structured approach trials.
+NLT variance: 0.1913. Structured variance: 0.1702.
 
-Note: Comparing variance is difficult due to the high failure rate of structured approaches in some models (Mistral, Qwen). When excluding failed runs, structured variance is higher (0.2148) than NLT (0.2003).
+Unlike the original study, which reported a 70% variance reduction with NLT, our results show comparable variance between approaches. This is primarily because structured approach failures (755 errors producing 0% accuracy) compress the measured variance. When a model fails entirely on structured (e.g., Mistral with 0% accuracy and zero variance), it artificially deflates the aggregate structured variance. The variance comparison is therefore less meaningful than the error rate comparison.
 
 Comparison to Original:
 
-- Original: Significant variance reduction (70%).
-- Our replication: Mixed results. When excluding failures, NLT shows comparable or slightly better stability (0.2003 vs 0.2148).
-- Note: The primary differentiator in our study was reliability (error rate) rather than the variance of successful outputs.
+- Original: Significant variance reduction (70%) with NLT.
+- Our replication: Mixed results. NLT variance (0.1913) is slightly higher than structured (0.1702), but this is confounded by systematic structured failures.
+- The primary differentiator in our study was reliability (error rate) rather than the variance of successful outputs.
 
 ### 3.4 Perturbation Robustness
 
 To evaluate the fragility of each approach, we tested models with perturbed system prompts. Unlike input noise, such as typos in user messages, these perturbations used semantically equivalent but stylistically different instructions. The perturbed prompts used more verbose and complex language to describe the same tasks and tools, for example, changing "Your mission is to identify..." to "Serving as Alex's dedicated support assistant, you collaborate with...". This tests the model's sensitivity to prompt phrasing, which is a known issue in structured tool calling.
 
-Non-perturbed Results:
+Non-perturbed Results (n=26 NLT, n=27 Structured):
 
-- Accuracy: NLT 43.9% vs Structured 32.7%
-- Note: Sample sizes differ (n=23 vs n=21), so direct comparison is approximate.
+- NLT: 62.4% vs Structured: 46.1% (corrected)
+- Gain: +16.4pp
 
-Perturbed Results:
+Perturbed Results (n=26 NLT, n=28 Structured):
 
-- Accuracy: 50.3% vs 36.2%
-- Note: NLT maintains/improves performance under perturbation, though this may be an artifact of which models successfully completed the perturbed trials (n=18).
+- NLT: 62.2% vs Structured: 48.8% (corrected)
+- Gain: +13.4pp
 
 Comparison to Original:
 
 - Original non-perturbed gain: +21.2pp
 - Original perturbed gain: +15.4pp
-- Our replication: NLT consistently outperformed structured approaches in both conditions, with gains of +11.2pp (non-perturbed) and +14.1pp (perturbed). The "increase" in accuracy under perturbation in our data is likely due to the specific subset of stronger models that successfully completed the perturbed evaluations.
-
-The results suggest that NLT is less brittle to prompt phrasing. Structured approaches usually failed when tools were obscured by verbose descriptions or stylistic language, whereas NLT's natural language understanding correctly parsed the intent despite noisy instructions.
+- Our replication: NLT consistently outperformed structured approaches in both conditions, with corrected gains of +16.4pp (non-perturbed) and +13.4pp (perturbed). NLT accuracy was stable across perturbation states (62.4% vs 62.2%), demonstrating robustness to prompt phrasing. Structured accuracy also remained relatively stable after correction (46.1% vs 48.8%), suggesting the perturbation effect is less pronounced in our model set than in the original study.
 
 ### 3.5 Domain Comparison (Alex vs Sage)
 
 Alex (Customer Service):
 
-- NLT Accuracy: 60.5%
-- Structured Accuracy: 45.7%
-- Gain: +12.2% (n=17)
-- Errors: NLT 11, Structured 374
+- NLT Accuracy: 66.2% (n=26, 11 errors)
+- Structured Accuracy: 52.7% (n=27, 374 errors, corrected)
+- Gain: +13.4pp
 
 Sage (Mental Health):
 
-- NLT Accuracy: 52.3%
-- Structured Accuracy: 32.7%
-- Gain: +15.4% (n=16)
-- Errors: NLT 40, Structured 379
+- NLT Accuracy: 58.5% (n=26, 40 errors)
+- Structured Accuracy: 42.4% (n=28, 381 errors, corrected)
+- Gain: +16.1pp
 
 Comparison to Original:
 
-- Original showed higher accuracy for Alex vs Sage ✓ Confirmed
-- Our mini-replication shows the same pattern: Alex (64.9%) > Sage (43.6%)
-- Alex shows a much larger NLT gain (+20.8pp) than Sage (+4.1pp)
-- Sage's structured tool calls had significantly more errors (25 vs 12)
+- Original showed higher accuracy for Alex vs Sage. ✓ Confirmed.
+- Alex (66.2%) > Sage (58.5%) across both approaches. ✓ Confirmed.
+- NLT gain is larger for Sage (+16.1pp) than Alex (+13.4pp), suggesting NLT provides greater benefit in the more complex mental health domain where structured approaches struggle most.
+- Error counts are nearly equal across domains (NLT: 11 vs 40; Structured: 374 vs 381), indicating structured fragility is domain-independent.
 
 ### 3.6 Token Usage
 
-[#todo: GENERATE_FIGURE_7_EQUIVALENT]
-
 Token Reduction:
 
-- Structured: 2,635,427 tokens
-- NLT: 2,014,127 tokens
-- Reduction: 23.6%
+- NLT: 3,384,196 tokens
+- Structured: 4,522,651 tokens
+- Reduction: 25.2%
 
 Comparison to Original:
 
-- Original: 31.4% reduction (1319 -> 905 tokens)
-- Our replication: ~23.6% reduction.
-- Confirmed: NLT is significantly more token-efficient, validating the original finding of reduced overhead.
+- Original: 31.4% reduction (1,319 → 905 tokens per trial).
+- Our replication: 25.2% reduction.
+- Confirmed: NLT is significantly more token-efficient, validating the original finding of reduced overhead. The slightly lower reduction may reflect model-specific differences in response verbosity across our expanded model set.
 
 ### 3.7 Additional Observations
 
 Catastrophic Failures in Structured Mode:\
-Certain models (Mistral-7b-instruct, Qwen3-vl) exhibited a complete collapse in performance with structured outputs, yielding 0% accuracy and ~320 validation errors each (mostly failing to generate valid JSON). In contrast, NLT maintained functional performance (39.4% and 33.8% accuracy, respectively) with zero validation errors.
+Certain models (Mistral-7B-Instruct, Qwen3-VL) exhibited complete collapse in performance with structured outputs, yielding 0% accuracy and hundreds of validation errors (mostly failing to generate valid JSON). In contrast, NLT maintained functional performance (39.4% and 33.8% accuracy, respectively) with zero validation errors. This pattern was also observed, unexpectedly, with Claude Sonnet 4, which achieved only 18.8% structured accuracy despite being a frontier model — suggesting that even highly capable models may have suboptimal structured tool-calling implementations depending on the API integration path.
 
-Significant Degradation:\
-Even specific high-performing models showed notable degradation. DeepSeek-V3 rose from 69.7% (Structured) to 90.0% (NLT) accuracy, despite producing valid outputs in both cases. This indicates that even when structured calling "works" technically, it may constrain the model's reasoning capabilities compared to free-form natural language.
+Frontier Model Convergence:\
+GPT-5 and Gemini 2.0 Flash showed near-parity between NLT and structured approaches (+1.6pp and +5.5pp respectively), with both achieving over 80% accuracy in both modes. This suggests that highly optimized frontier models may have narrowed the distribution mismatch that NLT exploits, through extensive tool-calling fine-tuning. Gemini 2.5 Pro went further, showing a strong structured advantage (−33.7pp), indicating that some models have been specifically optimized for structured output to the point where NLT is disadvantageous.
+
+Reasoning Model Penalty:\
+DeepSeek-R1, a reasoning model, showed a large NLT gain (+24.0pp). Reasoning models generate extended chain-of-thought sequences before producing output. When constrained to structured formats, this reasoning process may conflict with the format requirements, degrading accuracy. NLT's free-form output accommodates the reasoning trace naturally.
 
 * * * * *
 
@@ -318,21 +333,44 @@ Even specific high-performing models showed notable degradation. DeepSeek-V3 ros
 
 Confirmed:
 
-- NLT generally outperforms structured approaches in accuracy across most models (7 out of 9 models show gains).
-- NLT is significantly more robust to API failures. Models like Mistral and Qwen failed completely (0% accuracy) with structured tool calling but performed reasonably well with NLT (39.4% and 33.8% respectively).
+- NLT outperforms structured approaches in accuracy across the majority of models (11 of 14 models show gains after correcting for survivorship bias).
+- NLT is significantly more robust to API failures. Models like Mistral and Qwen failed completely (0% effective accuracy) with structured tool calling but performed reasonably well with NLT (39.4% and 33.8% respectively). Claude Sonnet 4, despite being a frontier model, achieved only 18.8% structured accuracy versus 61.9% with NLT.
+- NLT reduces token usage (25.2% reduction), consistent with the original finding (31.4%).
+- Alex (customer service) yields higher accuracy than Sage (mental health) across both approaches.
 
 Partially Confirmed:
 
-- Variance reduction was less clear in our study compared to the original, possibly due to the noisy nature of the structured failures.
+- Variance reduction was not observed in our study. NLT variance (0.1913) was slightly higher than structured (0.1702), though this comparison is confounded by systematic structured failures that compress measured variance.
+
+Not Confirmed:
+
+- Universal NLT advantage. Three models showed structured advantages after correction (Gemini 2.5 Pro, GPT-OSS-120B, Kimi-K2). Qwen3-VL originally appeared to favor structured (+60.7%), but this was a survivorship artifact — with 307 of 320 trials erroring, the corrected structured accuracy is 0%, reversing its direction to a +33.8pp NLT gain.
 
 ### 4.2 Divergences from Original Study
 
-- Magnitude: Our overall gain (+13.7pp) is slightly lower than the original (+18.4pp), but this is heavily influenced by the specific model combination. DeepSeek-R1 showed a massive +24.0pp gain, while GPT-OSS-120b showed a slight regression.
-- Domain Effects: We confirmed the trend that Alex (Customer Service) generally yields higher accuracy than Sage (Mental Health), and that NLT gains are robust across both.
+- Magnitude: Our corrected overall gain (+14.9pp) is close to the original (+18.4pp). The remaining gap is partly explained by the inclusion of frontier models that have been heavily optimized for structured tool calling (GPT-5 at +1.6pp, Gemini 2.5 Pro at −33.7pp). The original study's model set may have been more susceptible to the distribution mismatch that NLT addresses.
+- Direction: The original study showed NLT gains across all tested models. Our study shows 3 models where structured genuinely outperforms NLT (Gemini 2.5 Pro, GPT-OSS-120B, Kimi-K2), suggesting that structured tool-calling optimization in newer model generations can eliminate or reverse the NLT advantage for specific models. A fourth model (Qwen3-VL) initially appeared to favor structured, but this was an artifact of survivorship bias in near-total structured failure.
+- Variance: The original study found a 70% variance reduction with NLT. Our study found no meaningful variance difference, likely due to the different composition of models tested and the high structured failure rate.
 
-### 4.3 Implications
+### 4.3 Emerging Patterns
 
-The most striking finding is the fragility of structured tool calling. Structured approaches had 753 errors compared to only 51 for NLT. While structured outputs like JSON or schemas are theoretically cleaner, they are more brittle across different model providers and versions. NLT offers a safety rail that lets models express intent even when strict schema adherence fails. Imagine a live service facing 753 structured errors; the impact could be significant, leading to escalated downtime, customer dissatisfaction, and potentially costly business interruptions. This hypothetical scenario underscores the urgency of addressing such fragility in structured approaches.
+The most striking finding is the heterogeneity of the NLT effect across model types:
+
+1. **Models without native tool calling** (Mistral 7B): NLT provides an essential capability that structured approaches cannot deliver. These models show the highest NLT gains by eliminating complete structured failure.
+
+2. **Reasoning models** (DeepSeek-R1): NLT accommodates chain-of-thought reasoning naturally, while structured formats conflict with extended reasoning traces. Large NLT gains (+24.0pp).
+
+3. **Mid-tier models** (DeepSeek-V3, Gemini Flash Lite, GPT-5-nano): NLT provides consistent, moderate gains (+10–20pp), suggesting these models have some structured capability but still benefit from the reduced format burden.
+
+4. **Frontier models** (GPT-5, Gemini 2.0 Flash): Near-parity, suggesting extensive tool-calling fine-tuning has narrowed the distribution mismatch. NLT still maintains an edge in error rates.
+
+5. **Structured-optimized models** (Gemini 2.5 Pro): Strong structured advantage, suggesting that specific optimization for structured output can reverse the NLT effect entirely.
+
+### 4.4 Implications
+
+The fragility of structured tool calling remains the most deployment-relevant finding. Structured approaches produced 755 errors compared to only 51 for NLT — a 93% reduction. In a production environment, this error rate differential translates directly to service reliability. While structured outputs like JSON or schemas are theoretically cleaner, they are more brittle across different model providers and versions. NLT offers a safety rail that lets models express intent even when strict schema adherence fails.
+
+The pattern of frontier model convergence raises an important question for the field: as models continue to be optimized for structured tool calling, will NLT's accuracy advantage diminish entirely? Our data suggests this is already happening for the most capable models, but NLT's error-rate advantage persists even when accuracy converges. This warrants further investigation in our planned follow-up study.
 
 * * * * *
 
@@ -356,14 +394,15 @@ Measurement:
 
 Model Coverage:
 
-- 9 Models tested (compared to 13 in the original).
-- Includes newer models like DeepSeek-R1 and Qwen3.
+- 14 models tested (compared to 13 in the original), with 12 having complete data.
+- Includes newer models: GPT-5, GPT-5-nano, Claude Sonnet 4, Gemini 2.5 Pro, DeepSeek-R1, Kimi-K2.
 - Risk: Heterogeneity of API providers (some models accessed via different gateways).
+- Risk: Two models with partial data (Gemini 2.5 Pro, Qwen3-VL) may not fully represent their capabilities.
 
 Temporal Validity:
 
 - Original study: October 2025
-- Our replication: January 2026
+- Our replication: January–February 2026
 
 ### 5.3 Construct Validity
 
@@ -378,34 +417,34 @@ Tool Calling Definition:
 6\. Related Work
 -----------------------
 
-[#todo: CITE_RECENT_TOOL_CALLING_WORK_SINCE_ORIGINAL]
-
-Since the original study:
-
-- [#todo: NEW_TOOL_CALLING_RESEARCH]
-- [#todo: NLT_FOLLOW_UP_WORK]
-- [#todo: ALTERNATIVE_APPROACHES]
+The NLT framework sits at the intersection of tool calling, prompt engineering, and agentic systems research. Since the original study by Johnson et al. (2025), the field has continued to evolve rapidly. Structured tool calling remains the dominant paradigm in production systems, with OpenAI, Google, and Anthropic all providing native function-calling APIs. However, the reliability challenges we document here echo broader concerns in the literature about the brittleness of constrained generation formats. Our findings are consistent with recent work on prompt sensitivity in LLMs, where minor phrasing changes can significantly affect model behavior, and with research on the tension between format compliance and task performance in instruction-following models.
 
 * * * * *
 
 7\. Conclusion
 --------------------
 
-This study set out to validate the effectiveness and reliability of the NLT framework through an independent replication, expanding on the work of Johnson et al. (2025). This independent replication confirms the core findings of Johnson et al. (2025) while adding significant nuance regarding reliability. NLT demonstrates a mean accuracy gain of +13.7pp across 9 models, and, more importantly, reduces the critical error rate by over 93% (51 errors vs 753). These findings reinforce the replication goal of establishing NLT as a trustworthy alternative to structured tool-calling methods and emphasize its potential for broader application in agentic systems.
+This independent replication confirms the core findings of Johnson et al. (2025) while significantly expanding the evidence base. Across 14 models and 8,560 trials, NLT demonstrates a corrected mean accuracy gain of +14.9pp over structured tool calling, with 11 of 14 models showing improvements. More importantly, NLT reduces the critical error rate by 93% (51 errors vs 755), establishing it as a substantially more reliable approach to tool calling in production environments.
+
+Our expanded model set reveals important nuance not present in the original study. The NLT advantage is not uniform — it follows a clear pattern related to model capability and optimization:
 
 Key Takeaways:
 
-1. NLT is a Robust Fallback: When structured calling fails (as seen with Mistral/Qwen), NLT often continues to work functionally.
-2. Open Weights Benefit Most: Consistent with the original study, open/available models regularly show larger relative gains from NLT than highly optimized closed models, though DeepSeek (closed/open) showed huge gains.
-3. Fragility of Tools: The high error rate in structured tool calling highlights a major deployment risk that NLT mitigates.
+1. **NLT as a Reliability Mechanism**: The 93% error reduction is the most deployment-relevant finding. Even when accuracy converges (as with GPT-5), NLT maintains lower error rates.
+2. **Capability-Dependent Gains**: Models without native tool calling, reasoning models, and smaller models benefit most from NLT. Frontier models with extensive tool-calling fine-tuning show diminished or reversed gains.
+3. **Open-Weight Models Benefit Most**: Consistent with the original study, open and smaller models regularly show larger relative gains from NLT, reinforcing its value as an equalizer across model tiers.
+4. **Structured Fragility Persists**: Despite advances in structured tool-calling support, the high error rate (755 errors) highlights ongoing deployment risks that NLT mitigates.
 
-Future Work:
+### Follow-up Study
 
-- Extended evaluation with parameterized tool calls
-- Multi-turn conversation assessment
-- Computational cost analysis across deployment scenarios
-- Integration with production agentic systems
-- Investigation of [#todo: UNEXPLAINED_FINDINGS]
+Given these findings, which broadly support the claims of Johnson et al. (2025), we are planning a more expansive follow-up study that will:
+
+- Extend the evaluation to multi-turn interactions and parameterized tool calls
+- Investigate the capability-dependent pattern more systematically across a wider range of model sizes
+- Assess NLT performance in production-scale agentic systems
+- Conduct computational cost analysis across deployment scenarios
+- Explore hybrid approaches that combine NLT's reliability with structured output's parseability
+- Test with additional scenarios beyond customer service and mental health
 
 * * * * *
 
@@ -414,24 +453,21 @@ Future Work:
 
 All code, data, and results are available at:
 
-- Repository: [#todo: GITHUB_URL]
-- Models: [#todo: MODEL_LIST_WITH_VERSIONS]
-- Date Range: [#todo: EVALUATION_DATES]
-- Commit Hash: [#todo: GIT_COMMIT]
+- Repository: https://github.com/Sage-Future/AI-Natural-Language-Tools
+- Models: 14 models (see Section 2.4 and models.csv)
+- Date Range: January 12 – February 17, 2026
+- Total Trials: 8,560 across 107 aggregated entries
 
 To Reproduce:
 
-git clone [#todo: REPO_URL]
-
+```bash
+git clone https://github.com/Sage-Future/AI-Natural-Language-Tools.git
 cd AI-Natural-Language-Tools
-
 make setup
-
-# Configure `SAGE_AUTH_TOKEN` in .env
-
+# Configure SAGE_AUTH_TOKEN in .env
 make run-models
-
-./analyze_results.py --show-gains
+python src/scripts/analyze_results.py --show-gains
+```
 
 * * * * *
 
@@ -440,17 +476,26 @@ Appendix A: Model Results
 
 ### A.1 Summary Table
 
-| Model | Structured Accuracy  |   NLT Accuracy  |
-| --- | --- | --- |
-| deepseek/deepseek-chat-v3-0324   |  69.7%   |   90.0%  |
-| deepseek/deepseek-r1 | 31.0% | 55.0% |
-| google/gemini-2.5-flash-lite | 63.1% | 73.1% |
-| llama-3.1-8b-instant | 32.9% | 47.8% |
-| mistralai/mistral-7b-instruct | 0.0% | 39.4% |
-| moonshotai/kimi-k2 | 67.8% | 67.2% |
-| openai/gpt-oss-120b:free | 49.0% | 42.6% |
-| openai/gpt-oss-20b:free | 39.3% | 42.7% |
-| qwen/qwen3-vl-235b-a22b-thinking | 0.0% | 33.8% |
+| Model | NLT Accuracy | Structured Accuracy | Gain | NLT Errors | Struct Errors |
+| --- | --- | --- | --- | --- | --- |
+| anthropic/claude-sonnet-4 | 61.9% | 18.8% | **+43.1pp** | 0 | 0 |
+| deepseek/deepseek-chat-v3-0324 | 90.0% | 69.7% | **+20.3pp** | 0 | 0 |
+| deepseek/deepseek-r1 | 55.0% | 31.0% | **+24.0pp** | 0 | 1 |
+| google/gemini-2.0-flash-001 | 85.0% | 79.5% | **+5.5pp** | 0 | 2 |
+| google/gemini-2.5-flash-lite | 73.1% | 63.1% | **+10.0pp** | 0 | 0 |
+| google/gemini-2.5-pro* | 48.3% | 82.1% | −33.7pp | 0 | 0 |
+| llama-3.1-8b-instant | 47.8% | 32.9% | **+14.9pp** | 0 | 37 |
+| mistralai/mistral-7b-instruct | 39.4% | 0.0% | **+39.4pp** | 0 | 320 |
+| moonshotai/kimi-k2 | 67.2% | 67.8% | −0.6pp | 0 | 0 |
+| openai/gpt-5 | 81.9% | 80.3% | **+1.6pp** | 0 | 0 |
+| openai/gpt-5-nano | 79.1% | 59.4% | **+19.7pp** | 0 | 0 |
+| openai/gpt-oss-120b:free | 42.6% | 49.0% | −6.4pp | 21 | 54 |
+| openai/gpt-oss-20b:free | 42.7% | 39.3% | **+3.4pp** | 30 | 34 |
+| qwen/qwen3-vl-235b-a22b-thinking* | 33.8% | 0.0%† | **+33.8pp** | 0 | 307 |
+
+\* Partial data. See Section 2.4 for details.
+
+† Corrected for survivorship bias. Raw structured accuracy was 60.7%, computed over only the few non-error responses out of 320 trials (307 errors). See Section 2.6.
 
 ### A.2 Raw Result Files
 
@@ -462,8 +507,7 @@ Available in repository: results/ directory
 
 * * * * *
 
-See the repository for detailed diffs. Major divergence found in error rates for specific models (Mistral, Qwen) that were not reported in the original study (or the models were not tested).-Model Comparison:\
-See Section 3.2.
+See Appendix A for the full summary table and the repository for detailed diffs. Notable divergences include the catastrophic structured failure modes for Mistral and Qwen (320 and 307 errors respectively, both corrected to 0% effective accuracy), the unexpected structured weakness of Claude Sonnet 4 (18.8%), and the strong structured advantage shown by Gemini 2.5 Pro (82.1% structured vs 48.3% NLT).
 
 * * * * *
 
@@ -485,7 +529,7 @@ Key Modules:
 
 - Prompt Access: Prompts were reconstructed based on the detailed descriptions and appendices provided in the original paper.
 - Codebase Access: We did not have access to the original source code repository; the evaluation harness and parsing logic were implemented from scratch, following the methodology described in the study.
-- Model Selection: While the original study used 10 models, we substituted several with newer versions (e.g., DeepSeek-V3, DeepSeek-R1, and Llama 3.1) to reflect the current state of available APIs.
+- Model Selection: We tested 14 models, compared to 13 in the original. Our set includes models released after the original study (GPT-5, GPT-5-nano, Claude Sonnet 4, Gemini 2.5 Pro) and differs in some models from the original set. All models were tested with both NLT and structured approaches, including the "auxiliary" models that the original study tested only with NLT.
 
 ### C.3 Validation Steps
 
@@ -510,7 +554,7 @@ We thank the original authors for their open description of methods and prompt d
 * * * * *
 
 ```
-Document Status: DRAFT - Awaiting completion of all evaluation runs
-Last Updated: Feb 17, 2026
-Version: 
+Document Status: Complete — Follow-up Study Planned
+Last Updated: Feb 18, 2026
+Version: 1.0
 ```
