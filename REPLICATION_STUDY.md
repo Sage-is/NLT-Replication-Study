@@ -31,11 +31,11 @@ Keywords: Large Language Models, Tool Calling, Function Calling, Agentic Systems
 
 Generative AI, starting in 2020 with models like GPT-3, marked a notable shift in natural language processing. Large language models (LLMs) can now create coherent text and perform complex inference tasks. Early uses focused on text generation. Efforts soon expanded to agent-based systems, in which LLMs interact with external tools to achieve goals, such as retrieving data or executing actions. Tool calling lets LLMs invoke functions or APIs. This is now a cornerstone of these systems and is often implemented using structured formats, such as JSON schemas, for reliability and parsing.
 
-However, we theorize that structured tool calling creates a cognitive trade-off that degrades performance on domain-specific problem-solving tasks. This aligns with broader literature on format constraints in LLMs. The issue is not that LLMs cannot follow JSON schemas—modern models demonstrate strong code-generation capabilities (Chen et al., 2021). Rather, schema adherence appears to divert the model's representational resources from the primary task, creating what Reynolds & McDonell (2021) term "prompt interference," where format requirements compete with task instructions for cognitive bandwidth.
+However, we theorize that structured tool calling creates a cognitive trade-off that degrades performance on domain-specific problem-solving tasks. This aligns with broader literature on format constraints in LLMs. The issue is not that LLMs cannot follow JSON schemas—modern models demonstrate strong code-generation capabilities (Chen et al., 2021). Rather, schema adherence appears to divert the model's representational resources from the primary task, creating a form of interference where format requirements compete with task instructions for cognitive bandwidth, a phenomenon that aligns with observations about prompt sensitivity in LLMs (Reynolds & McDonell, 2021).
 
 We hypothesize this happens because schema formatting forces the model to draw from different parts of its learned distribution. JSON generation patterns are mainly trained on coding corpora. Tasks like customer service or mental wellness services come from different domains. This mismatch fragments the model's attention. It reduces its effectiveness at the core reasoning task, even when the output is syntactically valid.
 
-The cognitive load of maintaining format compliance may engage what Kahneman (2011) describes as System 2 thinking (deliberate, effortful processing) at the expense of System 1's intuitive task understanding. In LLMs, this manifests as competition between instruction following and format adherence, particularly pronounced in models not extensively fine-tuned for structured outputs (Weston et al., 2024). This distributional mismatch may be compounded by the integration of expert systems, where domain-specific knowledge must be mapped onto generic format constraints.
+The cognitive load of maintaining format compliance may engage what Kahneman (2011) describes as System 2 thinking (deliberate, effortful processing) at the expense of System 1's intuitive task understanding. In LLMs, this manifests as competition between instruction following and format adherence, particularly pronounced in models not extensively fine-tuned for structured outputs (Weston et al., 2023). This distributional mismatch may be compounded by the integration of expert systems, where domain-specific knowledge must be mapped onto generic format constraints.
 
 Johnson et al. (2025) showed that replacing programmatic JSON tool calling with natural language (NLT) significantly improved LLM tool-calling accuracy. Their findings showed an 18.4 percentage point gain across 10 models and 6,400 trials. There was also less variance and token savings.
 
@@ -503,7 +503,7 @@ Foundational work on tool use in LLMs establishes the importance of external too
 
 ### 6.2 Format Constraints and Prompt Engineering
 
-Research on prompt engineering reveals the sensitivity of LLMs to output format constraints. Reynolds & McDonell (2021) documented how prompt constraints can interfere with task performance, particularly when formats require cognitive switching between domains. Wei et al. (2022) showed that chain-of-thought prompting elicits reasoning but is sensitive to output format. Zhao et al. (2021) demonstrated the brittleness of few-shot prompting and the importance of calibration, relevant to our perturbation robustness findings.
+Research on prompt engineering reveals the sensitivity of LLMs to output format constraints. Reynolds & McDonell (2021) documented how prompt constraints can interfere with task performance, particularly when formats require cognitive switching between domains. Wei et al. (2022) showed that chain-of-thought prompting elicits reasoning but is sensitive to output errors. Zhao et al. (2021) demonstrated the brittleness of few-shot prompting and the importance of calibration, relevant to our perturbation robustness findings.
 
 ### 6.3 Agentic Systems and Reliability
 
@@ -675,12 +675,11 @@ Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., ... & Wen, J. R. (20
 
 Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E. H., Le, Q., & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. arXiv preprint arXiv:2201.11903.
 
-Weston, J., Sukhbaatar, S., & Szlam, A. (2024). System 2 attention (is something you might need too). arXiv preprint arXiv:2401.12967.
+Weston, J., Sukhbaatar, S., & Szlam, A. (2023). System 2 attention (is something you might need too). arXiv preprint arXiv:2401.12967.
 
 Zhao, Z., Wallace, E., Feng, S., Klein, D., & Singh, S. (2021). Calibrate before use: Improving few-shot performance of language models. In International 
 Conference on Machine Learning (pp. 12697-12706). PMLR.
 
-Zheng, L., Chiang, W. L., Sheng, Y., Li, T., Zhuang, S., Wu, Z., ... & Xing, E. P. (2023). Judging LLM-as-a-judge with MT-bench and chatbot arena. arXiv preprint arXiv:2306.05685.
 
 Zhou, D., Schärli, N., Hou, L., Wei, J., Scales, N., Wang, X., ... & Chi, E. H. (2023). Least-to-most prompting enables complex reasoning in large language models. arXiv preprint arXiv:2205.10625.
 
@@ -691,7 +690,7 @@ Acknowledgments
 
 We thank the original authors for their open description of methods and prompt designs, which enabled this independent replication.
 
-We would also like to thank The Study, an independent bilingual all-girls school for K-11 in Montreal, Quebec Canada, and Amalia Liogas, their Director of Information Technology, for funding and supporting our replication study.
+We would also like to thank The Study, the independent bilingual all-girls school for K-11 students in Montreal, Quebec Canada, and Amalia Liogas, their Director of Information Technology, for providing funding for this replication study, and Startr LLC for providing their AI platform, Sage.is AI-UI, for hosting this replication study. 
 
 * * * * *
 
