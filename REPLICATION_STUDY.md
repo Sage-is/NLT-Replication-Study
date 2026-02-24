@@ -124,6 +124,18 @@ Per-model trial count (for models with complete data):
 - 2 approaches × 2 scenarios × 16 inputs × 2 perturbations × 5 replicates = 640 trials per model
 - Total: 8,560 trials across 14 models (107 aggregated entries)
 
+Comparison to Original:
+
+- Key differences: Model selection (newer models), API implementations, and evaluation timeframe
+
+Per-model trial count (for models with complete data):
+
+- 2 approaches × 2 scenarios × 16 inputs × 2 perturbations × 5 replicates = 640 trials per model
+
+- Original study: 6,400 trials across 10 models 
+
+
+
 ### 2.3 Scenarios and Tool Definitions
 
 #### 2.3.1 NTL
@@ -338,6 +350,7 @@ When comparing domains (Alex and Sage), our replication study confirms the origi
 
 ### 3.6 Token Usage
 
+Across the board, NLT wass significantly more token-efficient, with a reduction of 25.2%. 
 
 Token Reduction:
 
@@ -408,7 +421,6 @@ The most striking finding is the heterogeneity of the NLT effect across model ty
 NLT provides an essential capability that structured approaches cannot deliver. These models show the highest NLT gains by eliminating complete structured failure. Without NLT, such models would be unusable for tool-calling tasks, expanding the range of deployable models for agentic systems.
 
 2. **Reasoning models** (DeepSeek-R1): NLT accommodates chain-of-thought reasoning naturally, while structured formats conflict with extended reasoning traces. Large NLT gains (+24.0pp) suggest that reasoning models are particularly sensitive to output format constraints. This extends findings by Zhou et al. (2023) that complex reasoning benefits from flexible prompting strategies.
-
 
 3. **Mid-tier models** (DeepSeek-V3, Gemini Flash Lite, GPT-5-nano): NLT provides consistent, moderate gains (+10–20pp), suggesting these models have some structured capability but still benefit from the reduced format burden. This represents the "sweet spot" for NLT deployment—models with sufficient capability to perform the task but not so optimized for structured output that NLT offers no advantage.
 
@@ -563,6 +575,7 @@ Since the original study by Johnson et al. (2025), the field has continued to ev
 This independent replication confirms and extends the findings of Johnson et al. (2025) while significantly expanding the evidence base and revealing important boundary conditions. Across 14 models and 8,560 trials, we validate NLT's core advantages: a corrected mean accuracy gain of +14.9pp over structured tool calling, a 93% reduction in critical errors (51 vs 755 errors), and 25.2% lower token usage. More importantly, our expanded model set reveals that NLT's benefits follow a clear capability-dependent pattern — a finding absent from the original study.
 
 ### 7.1 Key Contributions:
+
 1. **First Independent Validation:** We provide the first independent replication of NLT using original tooling and a broader model set, addressing reproducibility concerns in AI research (Pineau et al., 2020) and strengthening confidence in NLT's effectiveness.
 2. **Reliability as Primary Advantage:** While accuracy gains vary, NLT's error reduction is consistent and substantial (93% fewer errors). This reliability advantage persists even when accuracy converges, making NLT valuable for production systems regardless of absolute performance differences.
 3. **Capability-Dependent Pattern Discovery:** We identify that NLT's advantages vary systematically by model type: largest gains for models without native tool calling (Mistral 7B: +39.4pp) and reasoning models (DeepSeek-R1: +24.0pp), diminishing gains for mid-tier models, and near-parity or reversal for frontier models optimized for structured output (GPT-5: +1.6pp; Gemini 2.5 Pro: -33.7pp). This pattern aligns with scaling law research (Kaplan et al., 2020) and has immediate practical implications for deployment.
