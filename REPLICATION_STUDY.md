@@ -5,7 +5,7 @@ Validating NLT Performance Across 14 Models
 ---------------------------------------------------------------------
 
 ```
-Authors: A. Somma, I. Plante, E. Fournier-Tombs
+Authors: A. Somma, I. Plante, F. Premji, E. Fournier-Tombs
 Affiliation: Sage.is AI-UI
 Date: February 18, 2026
 Status: Complete. Follow-up Study Planned
