@@ -8,7 +8,7 @@ Validating NLT Performance Across 14 Models
 Authors: A. Somma, I. Plante, E. Fournier-Tombs
 Affiliation: Sage.is AI-UI
 Date: February 18, 2026
-Status: Complete — Follow-up Study Planned
+Status: Complete. Follow-up Study Planned
 ```
 
 * * * * *
@@ -16,9 +16,9 @@ Status: Complete — Follow-up Study Planned
 Abstract
 -------------
 
-We present an independent replication and extension of the Natural Language Tools (NLT) framework proposed by Johnson et al. (2025), which challenges the dominant paradigm of structured tool calling in LLM-based agentic systems. Using an original implementation and evaluation harness, we assessed NLT's tool-calling performance across 14 models spanning 8,560 trials, expanding beyond the original study's model set to include newer frontier, reasoning, and open-weight models. Our results confirm the core findings while revealing important nuance: NLT improves tool-calling accuracy by 14.9 percentage points overall (62.3% vs 47.4% structured) and dramatically reduces critical errors by 93% (51 vs 755 errors). However, we identify a clear capability-dependent pattern: while models without native tool calling, reasoning models, and smaller models show substantial NLT gains (+24.0pp to +43.1pp), highly optimized frontier models (GPT-5, Gemini 2.5 Pro) show diminished or reversed advantages, suggesting ongoing optimization for structured formats. NLT also achieves a 25.2% reduction in token usage, confirming its efficiency benefits. Beyond validating the original study, our work makes three key contributions: (1) providing the first independent validation of NLT's effectiveness with open-source tooling, (2) identifying model capability as a critical moderator of NLT's advantages, and (3) demonstrating NLT's exceptional reliability benefits (93% error reduction) as its most deployment-relevant feature. These findings establish NLT as a valuable alternative to structured tool calling, particularly for production systems prioritizing reliability over parseability.
+This study presents an independent replication and extension of the Natural Language Tools (NLT) framework introduced by Johnson et al. (2025), which challenges the prevailing paradigm of structured tool calling in large language model (LLM)-based agentic systems. Using an original implementation and evaluation harness, NLT’s tool-calling performance was assessed across 14 models and 8,560 trials, expanding the original study’s model set to include newer frontier, reasoning, and open-weight models. The results confirm the core findings and reveal additional nuance: NLT improves tool-calling accuracy by 14.9 percentage points overall (62.3% versus 47.4% structured) and reduces critical errors by 93% (51 versus 755 errors). A clear capability-dependent pattern emerges: models without native tool calling, reasoning models, and smaller models demonstrate substantial NLT gains (+24.0pp to +43.1pp), while highly optimized frontier models (GPT-5, Gemini 2.5 Pro) exhibit diminished or reversed advantages, indicating ongoing optimization for structured formats. NLT also achieves a 25.2% reduction in token usage, confirming its efficiency benefits. In addition to validating the original study, this work makes three key contributions: (1) providing the first independent validation of NLT’s effectiveness using open-source tooling, (2) identifying model capability as a critical moderator of NLT’s advantages, and (3) demonstrating NLT’s exceptional reliability benefits (93% error reduction), which is its most deployment-relevant feature. These findings establish NLT as a valuable alternative to structured tool calling, particularly for production systems that prioritize reliability over parseability.
 
-Note on accuracy reporting: Raw accuracy is computed only over valid (non-error) trials. When a model errors on the vast majority of trials (e.g., 76 out of 80), the few surviving responses can produce misleadingly high accuracy figures — a survivorship bias. In this study, we correct for this by treating any condition with errors on 70 or more of 80 trials as an effective 0% accuracy, reflecting operational failure rather than selective success.
+Note on accuracy reporting: Raw accuracy is calculated only over valid (non-error) trials. When a model produces errors on the majority of trials (for example, 76 out of 80), the few remaining responses may yield misleadingly high accuracy figures, resulting in survivorship bias. In this study, any condition with errors on 70 or more of 80 trials is treated as having 0% accuracy, reflecting operational failure rather than selective success.
 
 Keywords: Large Language Models, Tool Calling, Function Calling, Agentic Systems, Replication Study, Natural Language Interfaces
 
@@ -31,15 +31,15 @@ Keywords: Large Language Models, Tool Calling, Function Calling, Agentic Systems
 
 Generative AI, starting in 2020 with models like GPT-3, marked a notable shift in natural language processing. Large language models (LLMs) can now create coherent text and perform complex inference tasks. Early uses focused on text generation. Efforts soon expanded to agent-based systems, in which LLMs interact with external tools to achieve goals, such as retrieving data or executing actions. Tool calling lets LLMs invoke functions or APIs. This is now a cornerstone of these systems and is often implemented using structured formats, such as JSON schemas, for reliability and parsing.
 
-However, we theorize that structured tool calling creates a cognitive trade-off that degrades performance on domain-specific problem-solving tasks. This aligns with broader literature on format constraints in LLMs. The issue is not that LLMs cannot follow JSON schemas - modern models demonstrate strong code-generation capabilities (Chen et al., 2021). Rather, schema adherence appears to divert the model's representational resources from the primary task, creating a form of interference where format requirements compete with task instructions for cognitive bandwidth, a phenomenon that aligns with observations about prompt sensitivity in LLMs (Reynolds & McDonell, 2021).
+We propose that structured tool calling introduces a cognitive trade-off that impairs performance on domain-specific problem-solving tasks. This perspective is consistent with existing literature on format constraints in large language models (LLMs). The limitation is not an inability of LLMs to follow JSON schemas, as modern models exhibit strong code-generation capabilities (Chen et al., 2021). Instead, adherence to schemas appears to redirect the model’s representational resources away from the primary task, resulting in interference where format requirements compete with task instructions for cognitive bandwidth. This phenomenon is further supported by observations regarding prompt sensitivity in LLMs (Reynolds & McDonell, 2021).
 
-We hypothesize this happens because schema formatting forces the model to draw from different parts of its learned distribution. JSON generation patterns are mainly trained on coding corpora. Tasks like customer service or mental wellness services come from different domains. This mismatch fragments the model's attention. It reduces its effectiveness at the core reasoning task, even when the output is syntactically valid.
+We hypothesize that schema formatting compels the model to draw from distinct segments of its learned distribution. JSON generation patterns are primarily acquired from coding corpora, whereas tasks such as customer service or mental wellness originate from different domains. This distributional mismatch fragments the model’s attention and diminishes its effectiveness in core reasoning tasks, even when the output remains syntactically valid.
 
 The cognitive load of maintaining format compliance may engage what Kahneman (2011) describes as System 2 thinking (deliberate, effortful processing) at the expense of System 1's intuitive task understanding. In LLMs, this manifests as competition between instruction following and format adherence, particularly pronounced in models not extensively fine-tuned for structured outputs (Weston et al., 2023). This distributional mismatch may be compounded by the integration of expert systems, where domain-specific knowledge must be mapped onto generic format constraints.
 
 Johnson et al. (2025) showed that replacing programmatic JSON tool calling with natural language (NLT) significantly improved LLM tool-calling accuracy. Their findings showed an 18.4 percentage point gain across 10 models and 6,400 trials. There was also less variance and token savings.
 
-These findings challenge the dominant paradigm of structured tool calling. They suggest that format constraints are a significant, overlooked bottleneck in the performance of agentic systems. NLT could change how developers implement tool calling in production systems. The rapid turnover of models, with new releases frequently entering the scene, heightens the urgency to adapt to flexible tool-calling methods that can mitigate deployment risks. Through this replication of Johson et al. (2025), we aim to validate these claims using a broader model set that includes frontier, reasoning, and open-weight models released since the original study. The results presented here form the basis for a planned follow-up study that will expand the experimental scope beyond the original paper's conditions.
+These findings challenge the prevailing paradigm of structured tool calling by indicating that format constraints represent a significant and often overlooked bottleneck in agentic system performance. The adoption of NLT has the potential to alter how developers implement tool calling in production environments. The rapid introduction of new models further underscores the need for adaptable tool-calling methods that can reduce deployment risks. In this replication of Johnson et al. (2025), we seek to validate these claims using a broader set of models, including frontier, reasoning, and open-weight models introduced since the original study. The results presented here will inform a planned follow-up study that aims to expand the experimental scope beyond the original conditions.
 
 ### 1.2 Motivation for Replication
 
@@ -94,7 +94,7 @@ Limitations we acknowledge:
 
 ### 2.1 Implementation
 
-We developed an independent Python-based evaluation harness. This implemented the NLT framework as described in Johnson et al. (2025). Our implementation includes:
+An independent Python-based evaluation harness was developed, implementing the NLT framework as described in Johnson et al. (2025). The implementation includes:
 
 Core Components:
 
@@ -145,9 +145,9 @@ We used identical scenarios, tool descriptions and simulated user inputs from Jo
 Example Alex (Customer Service) Natural Language Tools and Scenario Description:
 
 You are an assistant to Alex, an AI customer service agent who handles bookings for a music venue called "Yes! Music". You will be given a message between Alex and a customer. They are texting one another.
-Your mission is to identify if any of the following topics have been brought up... (Futher detail can be seen in [scenarios.py line 6](https://github.com/Sage-is/NLT-Replication-Study/blob/2aa826401e18eaf5aae8bb17db34a1a09eb444f5/src/nlt/data/scenarios.py#L6))
+Your mission is to identify if any of the following topics have been brought up... (Further detail can be seen in [scenarios.py line 6](https://github.com/Sage-is/NLT-Replication-Study/blob/2aa826401e18eaf5aae8bb17db34a1a09eb444f5/src/nlt/data/scenarios.py#L6))
 
-Additionallty the Alex agent was allowed to select what tools to access by responding yes or no to the following list of tools, or explaining Thinking or stating the Assessment finished:
+Additionally, the Alex agent was allowed to select what tools to access by responding yes or no to the following list of tools, or explaining Thinking or stating the Assessment finished:
 
 Thinking: (insert_thinking)
 Recap of previous conversation -- YES/NO
@@ -164,7 +164,7 @@ Example Sage (Mental Health) Natural Language Tools and Scenario Description:
 You are an assistant to Sage, an AI mental health specialist. You will be given a message between Sage and their client. They are texting one another.
 Your mission is to identify if any of the following topics have been brought up... (further details can be seen in [scenarios.py line 92](https://github.com/Sage-is/NLT-Replication-Study/blob/2aa826401e18eaf5aae8bb17db34a1a09eb444f5/src/nlt/data/scenarios.py#L92))
 
-Additionallty the Sage agent was allowed, similar to Alex, to select what tools to access by responding yes or no to the following list of tools, or explaining Thinking or stating the Assessment finished:
+Additionally, the Sage agent was allowed, similar to Alex, to select what tools to access by responding yes or no to the following list of tools, or explaining Thinking or stating the Assessment finished:
 
 Thinking: (insert_thinking)
 Most Recent Conversation -- YES/NO
@@ -179,12 +179,12 @@ Assessment finished.
 
 #### 2.3.2 Structured
 
-We used industry standard structured tooling based on the Jonhson et al. (2025) scenarios and toolings listed in their study. An example of Alex's sturctued tool calling scenario can be seen on [line 73 of scenarios.py](https://github.com/Sage-is/NLT-Replication-Study/blob/2aa826401e18eaf5aae8bb17db34a1a09eb444f5/src/nlt/data/scenarios.py#L73). 
+We used industry-standard structured tooling based on the Johnson et al. (2025) scenarios and toolings listed in their study. An example of Alex's structured tool calling scenario can be seen on [line 73 of scenarios.py](https://github.com/Sage-is/NLT-Replication-Study/blob/2aa826401e18eaf5aae8bb17db34a1a09eb444f5/src/nlt/data/scenarios.py#L73). 
 
 ### 2.4 Model Selection
 
 Original Study's Approach:
-Johnson et al. (2025) evaluated 13 models spanning open and closed families, selected based on popularity via the OpenRouter leaderboard. They divided models into:
+Jonhson et al. (2025) evaluated 13 models spanning open and closed families, selected based on popularity via the OpenRouter leaderboard. They divided models into:
 
 - Core set (10 models): Tested on both NLT and Structured approaches
 - Auxiliary set (3 models): DeepSeek R1-0528, GPT-OSS-120B, GPT-OSS-20B — tested only on NLT due to "limited tool calling capabilities at evaluation time."
@@ -342,15 +342,15 @@ Sage (Mental Health):
 Comparison to Original:
 
 - Original NLT Accuracy: 87.5%
-_ Orgiginal Structured Accuracy: 69.1%
+_ Original Structured Accuracy: 69.1%
 - Gain: 18.4pp
 
-When comparing domains (Alex and Sage), our replication study confirms the original study's results that both domains benefit from NTL compared to structured tool calling. Additionally, accurancy overall, whether Structure of NTL, is higher with the customer service domain (Alex) over the mental health domain (Sage).
+When comparing domains (Alex and Sage), our replication study confirms the original study's results that both domains benefit from NTL compared to structured tool calling. Additionally, accuracy overall, whether Structured or NTL, is higher with the customer service domain (Alex) over the mental health domain (Sage).
 
 
 ### 3.6 Token Usage
 
-Across the board, NLT wass significantly more token-efficient, with a reduction of 25.2%. 
+Across the board, NLT was significantly more token-efficient, with a reduction of 25.2%. 
 
 Token Reduction:
 
@@ -372,13 +372,13 @@ We confirmed that NLT is significantly more token-efficient, validating the orig
 Certain models (Mistral-7B-Instruct, Qwen3-VL) exhibited complete collapse in performance with structured outputs, yielding 0% accuracy and hundreds of validation errors (mostly failing to generate valid JSON). In contrast, NLT maintained functional performance (39.4% and 33.8% accuracy, respectively) with zero validation errors. This pattern was also observed, unexpectedly, with Claude Sonnet 4, which achieved only 18.8% structured accuracy despite being a frontier model—suggesting that even highly capable models may have suboptimal structured tool-calling implementations depending on the API integration path. These findings align with research showing that format constraints can create significant performance bottlenecks, particularly for models not extensively fine-tuned for structured outputs (Reynolds & McDonell, 2021).
 
 **Frontier Model Convergence:**\
-GPT-5 and Gemini 2.0 Flash showed near-parity between NLT and structured approaches (+1.6pp and +5.5pp respectively), with both achieving over 80% accuracy in both modes. This suggests that highly optimized frontier models may have narrowed the distribution mismatch that NLT exploits, through extensive tool-calling fine-tuning. Gemini 2.5 Pro went further, showing a strong structured advantage (−33.7pp), indicating that some models have been specifically optimized for structured output to the point where NLT is disadvantageous. This convergence reflects broader trends in model development where frontier models increasingly exhibit "sparks of artificial general intelligence" including sophisticated tool use capabilities (Bubeck et al., 2023).
+GPT-5 and Gemini 2.0 Flash showed near-parity between NLT and structured approaches (+1.6pp and +5.5pp, respectively), with both achieving over 80% accuracy in both modes. This suggests that highly optimized frontier models may have narrowed the distribution mismatch that NLT exploits, through extensive tool-calling fine-tuning. Gemini 2.5 Pro went further, showing a strong structured advantage (−33.7pp), indicating that some models have been specifically optimized for structured output to the point where NLT is disadvantageous. This convergence reflects broader trends in model development where frontier models increasingly exhibit "sparks of artificial general intelligence" including sophisticated tool use capabilities (Bubeck et al., 2023).
 
 **Reasoning Model Penalty:**\
 DeepSeek-R1, a reasoning model, showed a large NLT gain (+24.0pp). Reasoning models generate extended chain-of-thought sequences before producing output. When constrained to structured formats, this reasoning process may conflict with the format requirements, degrading accuracy. NLT's free-form output accommodates the reasoning trace naturally. This finding extends research on chain-of-thought prompting, which shows that reasoning benefits from flexible output formats (Wei et al., 2022; Zhou et al., 2023). The conflict between structured output requirements and extended reasoning may explain why reasoning models benefit disproportionately from NLT.
 
 **Model Size and NLT Benefit:**\
-Smaller models (Llama 3.1 8B, Mistral 7B) showed larger relative gains from NLT (+14.9pp and +39.4pp respectively), while larger frontier models showed smaller or reversed gains. This pattern aligns with scaling law research suggesting that larger models develop more sophisticated capabilities, including better format compliance (Kaplan et al., 2020). However, even frontier models maintained NLT's error-rate advantage, suggesting that reliability improvements may be orthogonal to accuracy convergence.
+Smaller models (Llama 3.1 8B, Mistral 7B) showed larger relative gains from NLT (+14.9pp and +39.4pp, respectively), while larger frontier models showed smaller or reversed gains. This pattern aligns with scaling law research suggesting that larger models develop more sophisticated capabilities, including better format compliance (Kaplan et al., 2020). However, even frontier models maintained NLT's error-rate advantage, suggesting that reliability improvements may be orthogonal to accuracy convergence.
 
 **Domain Complexity Effects:**\
 The mental health scenario (Sage) showed larger NLT gains (+16.1pp) than the customer service scenario (+13.4pp), suggesting that NLT provides greater benefit in more complex domains where structured approaches struggle most. This aligns with findings that complex tasks benefit more from flexible output formats that don't constrain reasoning processes (Zhou et al., 2023).
@@ -446,11 +446,11 @@ The fragility of structured tool calling remains the most deployment-relevant fi
 
 **Cost Implications**
 
-The 25.2% token reduction with NLT has direct cost implications. Assuming average pricing of $0.50 per million input tokens and $1.50 per million output tokens (typical for GPT-4-class models), NLT would reduce costs by approximately 18-22% per API call. For a system processing 1 million tool calls per month, this translates to savings of $4,000-$6,000 monthly. These savings become more significant at scale and represent a compelling economic argument for NLT adoption alongside its reliability benefits.
+The 25.2% token reduction with NLT has direct cost implications. Assuming average pricing of $0.50 per million input tokens and $1.50 per million output tokens (typical for GPT-4-class models), NLT would reduce costs by approximately 18-22% per API call. For a system processing 1 million tool calls per month, this translates into savings of $4,000-$6,000 per month. These savings become more significant at scale and represent a compelling economic argument for NLT adoption alongside its reliability benefits.
 
 **Deployment Recommendations**
 
-Based on our findings, we recommend:
+Based on these findings, we recommend:
 
  - For models without native tool calling support (e.g., Mistral 7B): Use NLT exclusively, as structured approaches fail completely.
 
@@ -464,11 +464,11 @@ Based on our findings, we recommend:
 
  **System Design Implications**
 
-NLT's lower error rate simplifies system architecture by reducing the need for complex fallback mechanisms and retry logic. This aligns with Mialon et al.'s (2023) observation that reliability is often the limiting factor in augmented language model deployment. Production systems can implement simpler error handling when using NLT, as catastrophic failures (like Mistral's 320 errors) are eliminated.
+NLT’s lower error rate simplifies system architecture by reducing the need for complex fallback mechanisms and retry logic. This observation aligns with Mialon et al. (2023), who note that reliability is often the limiting factor in augmented language model deployment. Production systems can implement simpler error handling when using NLT, as catastrophic failures (such as Mistral’s 320 errors) are eliminated.
 
 **Future Model Development**
 
-The pattern of frontier model convergence raises an important question: as models continue to be optimized for structured tool calling, will NLT's accuracy advantage diminish entirely? Our data suggests this is already happening for the most capable models, but NLT's error-rate advantage persists even when accuracy converges. This suggests that future model development should focus not only on structured output accuracy but also on robustness across different invocation formats.
+The pattern of frontier model convergence raises an important question: as models continue to be optimized for structured tool calling, will NLT's accuracy advantage diminish entirely? Our data suggests this is already happening for the most capable models, but NLT's error-rate advantage persists even when accuracy converges. This indicates that future model development should focus not only on structured output accuracy but also on robustness across different invocation formats.
 
 
 * * * * *
@@ -546,19 +546,19 @@ The NLT framework sits at the intersection of tool calling, prompt engineering, 
 
 ### 6.1 Tool Calling and Tool-Augmented LLMs
 
-Foundational work on tool use in LLMs establishes the importance of external tool integration for expanding model capabilities. Schick et al. (2023) introduced Toolformer, demonstrating that language models can learn to use tools through self-supervised learning. Qin et al. (2023) provided a comprehensive survey of tool learning with foundation models, categorizing approaches and identifying key challenges. These works establish the importance of reliable tool invocation mechanisms, which NLT addresses through its natural language approach.
+Foundational work on tool use in LLMs underscores the importance of integrating external tools to expand model capabilities. Schick et al. (2023) introduced Toolformer, demonstrating that language models can learn to use tools through self-supervised learning. Qin et al. (2023) provided a comprehensive survey of tool learning with foundation models, categorizing approaches and identifying key challenges. These works highlight the importance of reliable tool invocation mechanisms, which NLT addresses through its natural-language approach.
 
 ### 6.2 Format Constraints and Prompt Engineering
 
-Research on prompt engineering reveals the sensitivity of LLMs to output format constraints. Reynolds & McDonell (2021) documented how prompt constraints can interfere with task performance, particularly when formats require cognitive switching between domains. Wei et al. (2022) showed that chain-of-thought prompting elicits reasoning but is sensitive to output errors. Zhao et al. (2021) demonstrated the brittleness of few-shot prompting and the importance of calibration, relevant to our perturbation robustness findings.
+Research on prompt engineering reveals LLMs' sensitivity to output format constraints. Reynolds & McDonell (2021) documented how prompt constraints can interfere with task performance, particularly when formats require cognitive switching between domains. Wei et al. (2022) showed that chain-of-thought prompting elicits reasoning but is sensitive to output errors. Zhao et al. (2021) demonstrated the brittleness of few-shot prompting and the importance of calibration, relevant to our perturbation robustness findings.
 
 ### 6.3 Agentic Systems and Reliability
 
-The reliability of agentic systems remains a critical concern in deployment. Wang et al. (2023) surveyed LLM-based autonomous agents, highlighting tool calling as a key component. Mialon et al. (2023) reviewed augmented language models, noting that tool integration reliability significantly impacts system performance. Our finding of 93% error reduction with NLT directly addresses these reliability concerns in production environments.
+The reliability of agentic systems remains a critical concern in deployment. Wang et al. (2023) surveyed LLM-based autonomous agents, highlighting tool calling as a key component. Mialon et al. (2023) reviewed augmented language models and noted that the reliability of tool integration significantly impacts system performance. Our finding of 93% error reduction with NLT directly addresses these reliability concerns in production environments.
 
 ### 6.4 Replication and Reproducibility in AI
 
-Replication studies are essential for scientific progress in machine learning. Gundersen et al. (2023) analyzed the reproducibility crisis in machine learning, emphasizing the need for independent validation. Pineau et al. (2020) established guidelines and Magnusson et al. (2023) created reproducibility check-list for reproducible research in ML, which informed our methodology. Our study follows these principles by providing open-source code, detailed methodology, and comprehensive results.
+Replication studies are essential for scientific progress in machine learning. Gundersen et al. (2023) analyzed the reproducibility crisis in machine learning, emphasizing the need for independent validation. Pineau et al. (2020) established guidelines, and Magnusson et al. (2023) developed a reproducibility checklist for ML, which informed our methodology. Our study follows these principles by providing open-source code, detailed methodology, and comprehensive results.
 
 ### 6.5 Model Capabilities and Scaling Laws
 
@@ -596,9 +596,8 @@ Our results challenge the assumption that structured tool calling should be the 
 Given these findings, we are planning an expansive follow-up study to investigate: (1) multi-turn interactions and parameterized tool calls, (2) capability-dependent pattern more systematically across a wider range of model sizes (3) computational cost analysis across deployment scenarios, (4) Assess NLT performance in production-scale agentic systems, (5) hybrid NLT-structured approaches, and (6) performance across additional domains beyond customer service and mental health. The clear pattern of model capability dependence warrants systematic investigation across a wider range of model sizes and architectures.
 
 
-### 7.5 Final Recommendation:**\
-For practitioners, NLT represents a valuable addition to the tool-calling toolkit—particularly for reliability-critical applications, smaller models, reasoning-focused systems, and scenarios where parseability can be traded for robustness. As the field continues to optimize both structured and natural language approaches, our findings emphasize the importance of evaluating tool-calling methods against specific model capabilities and deployment requirements rather than adopting one-size-fits-all solutions.
-
+### 7.5 Final Recommendation:
+For practitioners, NLT represents a valuable addition to the tool-calling toolkit, particularly for reliability-critical applications, smaller models, reasoning-focused systems, and scenarios where parseability can be traded for robustness. As the field continues to optimize both structured and natural language approaches, these findings emphasize the importance of evaluating tool-calling methods against specific model capabilities and deployment requirements rather than adopting one-size-fits-all solutions.
 * * * * *
 
 8\. Reproducibility
@@ -660,7 +659,7 @@ Available in repository: results/ directory
 
 * * * * *
 
-See Appendix A.1 for the full summary table and the repository for detailed diffs. Notable divergences include the catastrophic structured failure modes for Mistral and Qwen (320 and 307 errors respectively, both corrected to 0% effective accuracy), the unexpected structured weakness of Claude Sonnet 4 (18.8%), and the strong structured advantage shown by Gemini 2.5 Pro (82.1% structured vs 48.3% NLT).
+See Appendix A.1 for the full summary table and the repository for detailed diffs. Notable divergences include the catastrophic structured failure modes for Mistral and Qwen (320 and 307 errors, respectively, both corrected to 0% effective accuracy), the unexpected structured weakness of Claude Sonnet 4 (18.8%), and the strong structured advantage shown by Gemini 2.5 Pro (82.1% structured vs 48.3% NLT).
 
 * * * * *
 
@@ -738,7 +737,7 @@ Acknowledgments
 
 We thank the original authors for their open description of methods and prompt designs, which enabled this independent replication.
 
-We would also like to thank The Study, the independent bilingual all-girls school for K-11 students in Montreal, Quebec Canada, and Amalia Liogas, their Director of Information Technology, for providing funding for this replication study, and Startr LLC for providing their AI platform, Sage.is AI-UI, for hosting this replication study. 
+We would also like to thank The Study, the independent bilingual all-girls school for K-11 students in Montreal, Quebec, Canada, and Amalia Liogas, their Director of Information Technology, for providing funding for this replication study, and Startr LLC for providing their AI platform, Sage.is AI-UI, for hosting this replication study. 
 
 * * * * *
 
