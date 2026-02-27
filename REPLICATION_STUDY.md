@@ -667,64 +667,21 @@ Appendix A: Model Results
 ### A.1 Summary Table
 
 | Model | NLT Accuracy | Structured Accuracy | Gain | NLT Errors | Struct Errors |
-| Anthropic/claude-sonnet-4 | 61.9% | 18.8% |
-
-+43.1pp
-
- | 0 | 0 |
-| Deepseek/deepseek-chat-v3-0324 | 90.0% | 69.7% |
-
-+20.3pp
-
- | 0 | 0 |
-| Deepseek/deepseek-r1 | 55.0% | 31.0% |
-
-+24.0pp
-
- | 0 | 1 |
-| Google/gemini-2.0-flash-001 | 85.0% | 79.5% |
-
-+5.5pp
-
- | 0 | 2 |
-| Google/gemini-2.5-flash-lite | 73.1% | 63.1% |
-
-+10.0pp
-
- | 0 | 0 |
+| --- | --- | --- | --- | --- | --- |
+| Anthropic/claude-sonnet-4 | 61.9% | 18.8% | +43.1pp | 0 | 0 |
+| Deepseek/deepseek-chat-v3-0324 | 90.0% | 69.7% | +20.3pp | 0 | 0 |
+| Deepseek/deepseek-r1 | 55.0% | 31.0% | +24.0pp | 0 | 1 |
+| Google/gemini-2.0-flash-001 | 85.0% | 79.5% | +5.5pp | 0 | 2 |
+| Google/gemini-2.5-flash-lite | 73.1% | 63.1% | +10.0pp | 0 | 0 |
 | Google/gemini-2.5-pro* | 48.3% | 82.1% | -33.7pp | 0 | 0 |
-| Meta-llama/llama-3.1-8b-instant | 47.8% | 32.9% |
-
-+14.9pp
-
- | 0 | 37 |
-| Mistralai/mistral-7b-instruct | 39.4% | 0.0% |
-
-+39.4pp
-
- | 0 | 320 |
+| Meta-llama/llama-3.1-8b-instant | 47.8% | 32.9% | +14.9pp | 0 | 37 |
+| Mistralai/mistral-7b-instruct | 39.4% | 0.0% | +39.4pp | 0 | 320 |
 | Moonshotai/kimi-k2 | 67.2% | 67.8% | -0.6pp | 0 | 0 |
-| Openai/gpt-5 | 81.9% | 80.3% |
-
-+1.6pp
-
- | 0 | 0 |
-| Openai/gpt-5-nano | 79.1% | 59.4% |
-
-+19.7pp
-
- | 0 | 0 |
+| Openai/gpt-5 | 81.9% | 80.3% | +1.6pp | 0 | 0 |
+| Openai/gpt-5-nano | 79.1% | 59.4% | +19.7pp | 0 | 0 |
 | Openai/gpt-oss-120b:free | 42.6% | 49.0% | -6.4pp | 21 | 54 |
-| Openai/gpt-oss-20b:free | 42.7% | 39.3% |
-
-+3.4pp
-
- | 30 | 34 |
-| Qwen/qwen3-vl-235b-a22b-thinking* | 33.8% | 0.0%† |
-
-+33.8pp
-
- | 0 | 307 |
+| Openai/gpt-oss-20b:free | 42.7% | 39.3% | +3.4pp | 30 | 34 |
+| Qwen/qwen3-vl-235b-a22b-thinking* | 33.8% | 0.0%† | +33.8pp | 0 | 307 |
 
 * Partial data. See Section 2.4 for details.
 

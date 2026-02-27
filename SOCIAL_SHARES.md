@@ -36,7 +36,7 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 
 ### The Contrarian Hook
 
-> Hot take backed by 8,560 data points:
+> Hot take backed by thousands of data points:
 >
 > JSON schemas are making your AI agents worse.
 >
@@ -61,7 +61,7 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 
 ### The Claude Surprise
 
-> Claude Sonnet 4 — a frontier model — scored **18.8% accuracy** with structured tool calling.
+> Claude Sonnet 4 (a frontier model) scored **18.8% accuracy** with structured tool calling.
 >
 > Same model, same tasks, natural language tools: **61.9%**
 >
@@ -109,9 +109,9 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 >
 > Theory: JSON generation draws on coding corpora. Customer service and mental health tasks draw on different corpora. Forcing both through the same generation means the model is context-switching mid-thought.
 >
-> Natural language keeps the model in one distribution. No mental code-switching.
+> Natural language keeps the model in one concept distribution. No "mental mode-switching".
 >
-> 14 models, 8,560 trials say this theory holds.
+> 14 models and thousands of trials say this theory holds.
 
 ### The Capability Gradient
 
@@ -122,7 +122,7 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 > Models without native tool calling: NLT is a lifeline (+39pp).
 > Mid-tier models: NLT gives a solid edge (+10-20pp).
 > Frontier models: Near parity (+1-5pp).
-> Gemini 2.5 Pro: Structured actually wins (-33pp).
+> Gemini Pro: Structured actually wins (-33pp).
 >
 > The advantage shrinks as models get better at structured output. But the error rate advantage? That persists everywhere.
 
@@ -221,10 +221,10 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 >
 > Like most developers, I assumed structured JSON tool calling was the "right" way. Type safety. Schema validation. Clean parsing.
 >
-> Then we ran the numbers: 8,560 trials across 14 models.
+> Then we ran the numbers: thousands of trials across 14 models.
 >
-> JSON schemas: 755 errors, 47.4% accuracy.
-> Plain English: 51 errors, 62.3% accuracy.
+> JSON schemas: Hundreds of errors,  47.4% accuracy.
+> Plain English: dozens of errors, 62.3% accuracy.
 >
 > The thing we built for reliability was the thing making it unreliable.
 >
@@ -343,7 +343,7 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 >
 > 11 of 14 models. The biggest winner: Claude Sonnet 4 at +43 points.
 >
-> [chart]
+> ![[nlt-hero-gains.png]]
 
 ### With `nlt-error-cliff.png`
 
@@ -354,7 +354,7 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 >
 > 51 vs 755. Same models. Same tasks.
 >
-> [chart]
+> ![[nlt-error-cliff.png]]
 
 ### With `nlt-paired-accuracy.png`
 
@@ -364,7 +364,7 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 >
 > Two models literally could not do structured tool calling at all. Both worked fine with NLT.
 >
-> [chart]
+> ![[nlt-paired-accuracy.png]]
 
 ### With `nlt-capability-gradient.png`
 

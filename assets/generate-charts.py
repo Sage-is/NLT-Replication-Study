@@ -4,6 +4,8 @@ Data from REPLICATION_STUDY.md — 14 models, 8,560 trials."""
 
 import matplotlib
 matplotlib.use('Agg')
+import logging
+logging.getLogger('matplotlib.font_manager').setLevel(logging.ERROR)
 import matplotlib.pyplot as plt
 import numpy as np
 import os
