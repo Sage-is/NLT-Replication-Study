@@ -392,6 +392,9 @@ Smaller models (Llama 3.1 8B, Mistral 7B) showed larger relative gains from NLT 
 Domain Complexity Effects:\
 The mental health scenario (Sage) showed larger NLT gains (+16.1pp) than the customer service scenario (+13.4pp), suggesting that NLT provides greater benefit in more complex domains where structured approaches struggle most. This corresponds to findings that complex tasks benefit more from flexible output formats that don't constrain reasoning processes (Zhou et al., 2023).
 
+
+Our results can be reviewed in our project's [results](https://github.com/Sage-is/NLT-Replication-Study/tree/develop/results) folder, as well as a table of of our [aggregated results](https://github.com/Sage-is/NLT-Replication-Study/blob/develop/aggregated_results.csv).
+
 * * * * *
 
 4\. Analysis and Discussion
