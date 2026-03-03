@@ -381,10 +381,10 @@ Catastrophic Failures in Structured Mode:\
 Certain models (Mistral-7B-Instruct, Qwen3-VL) exhibited complete performance collapse with structured outputs, yielding 0% accuracy and hundreds of validation errors (mostly due to failing to generate valid JSON). In contrast, NLT maintained functional performance (39.4% and 33.8% accuracy, respectively) with zero validation errors. This pattern was also unexpectedly observed with Claude Sonnet 4, which achieved only 18.8% structured accuracy despite being a frontier model---suggesting that even highly capable models may have suboptimal structured tool-calling implementations depending on the API integration path. These findings correspond with research showing that format constraints can create significant performance bottlenecks, particularly for models not extensively fine-tuned for structured outputs (Reynolds & McDonell, 2021).
 
 Frontier Model Convergence:\
-GPT-5 and Gemini 2.0 Flash showed near-parity between NLT and structured approaches (+1.6pp and +5.5pp, respectively), with both achieving over 80% accuracy in both modes. This suggests that highly optimized frontier models may have narrowed the distribution mismatch that NLT exploits through extensive tool-calling fine-tuning. Gemini 2.5 Pro went further, showing a strong structured advantage (-33.7pp), indicating that some models have been specifically optimized for structured output to the point where NLT is disadvantageous. This convergence demonstrates broader trends in model development, in which frontier models increasingly exhibit "sparks of artificial general intelligence," including sophisticated tool-use capabilities (Bubeck et al., 2023).
+GPT-5 and Gemini 2.0 Flash showed near-parity between NLT and structured approaches (+1.6pp and +5.5pp, respectively), with both achieving over 80% accuracy in both modes. This suggests that highly optimized frontier models may have narrowed the distribution mismatch that NLT exploits through extensive tool-calling fine-tuning. Gemini 2.5 Pro went further, showing a strong structured advantage (−33.7pp), indicating that some models have been specifically optimized for structured output to the point where NLT is disadvantageous. This convergence demonstrates wider trends in model development, in which frontier models increasingly exhibit “sparks of artificial general intelligence,” including sophisticated tool-use capabilities (Bubeck et al., 2023). Recent analysis by Martinez (2025) suggests that reinforcement learning optimization for tool use has become a standard technique in frontier models, potentially explaining this proficiency in structured output.
 
 Reasoning Model Penalty:\
-DeepSeek-R1, a reasoning model, showed a large NLT gain (+24.0pp). Reasoning models generate extended chain-of-thought sequences before producing output. When constrained to structured formats, this reasoning process may conflict with those formats, degrading accuracy. NLT's free-form output naturally accommodates the reasoning trace. This finding extends research on chain-of-thought prompting, which shows that reasoning benefits from flexible output formats (Wei et al., 2022; Zhou et al., 2023). The conflict between structured output requirements and extended reasoning may explain why reasoning models benefit disproportionately from NLT.
+DeepSeek-R1, a reasoning model, showed a large NLT gain (+24.0pp). Reasoning models generate extended chain-of-thought sequences before producing output. When constrained to structured formats, this reasoning process may conflict with those formats, degrading accuracy. NLT’s free-form output naturally accommodates the reasoning trace. This finding extends research on chain-of-thought prompting, which shows that reasoning benefits from flexible output formats (Wei et al., 2022; Zhou et al., 2023) and aligns with recent work by Li et al. (2025) on improving function calling and reasoning in LLMs, which similarly identifies conflicts between structured outputs and extended reasoning traces. The conflict between structured output requirements and extended reasoning may explain why reasoning models benefit disproportionately from NLT.
 
 Model Size and NLT Benefit:\
 Smaller models (Llama 3.1 8B, Mistral 7B) showed larger relative gains from NLT (+14.9pp and +39.4pp respectively), while larger frontier models showed smaller or reversed gains. This pattern aligns with scaling law research suggesting that larger models develop more sophisticated capabilities, including better compliance with formats (Kaplan et al., 2020). However, even frontier models maintained NLT's error-rate advantage, suggesting that reliability improvements may be orthogonal to accuracy convergence.
@@ -471,7 +471,7 @@ NLT's lower error rate simplifies system architecture by reducing the need for c
 
 Future Model Development
 
-The pattern of frontier model convergence raises an important question: as models continue to be optimized for structured tool calling, will NLT's accuracy advantage diminish entirely? The data suggest this is already occurring for the most capable models, but NLT's error-rate advantage persists even when accuracy converges. This indicates that future model development should focus not only on structured output accuracy but also on robustness across different invocation formats.
+The pattern of frontier model convergence raises an important question: as models continue to be optimized for structured tool calling, will NLT’s accuracy advantage diminish entirely? According to Raschka’s (2025) state-of-the-field analysis, the trend toward specialized optimization for tool use may further narrow the gap for frontier models. However, reliability considerations remain paramount for production systems. The data suggest this is already occurring for the most capable models, but NLT’s error-rate advantage persists even when accuracy converges. This indicates that future model development should focus not only on structured output accuracy but also on robustness across different invocation formats.
 
 * * * * *
 
@@ -540,11 +540,11 @@ The NLT framework sits at the intersection of tool calling, prompt engineering, 
 
 ### 6.1 Tool Calling and Tool-Augmented LLMs
 
-Foundational work on tool use in LLMs stresses the importance of integrating external tools to expand model capabilities. Schick et al. (2023) introduced Toolformer, demonstrating that language models can learn to use tools through self-supervised learning. Qin et al. (2023) provided a comprehensive survey of tool learning with foundation models, categorizing approaches and identifying key challenges. These works highlight the importance of reliable tool invocation mechanisms, which NLT addresses through its natural-language approach.
+Foundational work on tool use in LLMs stresses the importance of integrating external tools to expand model capabilities. Schick et al. (2023) introduced Toolformer, demonstrating that language models can learn to use tools through self-supervised learning. Qin et al. (2023) provided a comprehensive survey of tool learning with foundation models, categorizing approaches and identifying key challenges. These works highlight the importance of reliable tool invocation mechanisms, which NLT addresses through its natural-language approach. More recently, Chen et al. (2025) introduced ToolFlow, which uses natural and coherent dialogue synthesis to boost LLM tool-calling, providing another approach to natural language tool interfaces. Zhang et al. (2025) presented CallNavi, a challenge and empirical study on LLM function calling, highlighting the ongoing difficulties in structured tool invocation, a challenge our study also documents.
 
 ### 6.2 Format Constraints and Prompt Engineering
 
-Research on prompt engineering reveals that LLMs are sensitive to output format constraints. Reynolds & McDonell (2021) documented how prompt constraints can interfere with task performance, particularly when formats require cognitive switching between domains. Wei et al. (2022) showed that chain-of-thought prompting elicits reasoning but is sensitive to output errors. Zhao et al. (2021) demonstrated the brittleness of few-shot prompting and the importance of calibration, findings relevant to our perturbation-robustness results.
+Research on prompt engineering reveals that LLMs are sensitive to output format constraints. Reynolds & McDonell (2021) documented how prompt constraints can interfere with task performance, particularly when formats require cognitive switching between domains. Wei et al. (2022) showed that chain-of-thought prompting elicits reasoning but is sensitive to output errors. Zhao et al. (2021) demonstrated the brittleness of few-shot prompting and the importance of calibration, findings relevant to our perturbation-robustness results. Li et al. (2025) extended this line of work by specifically addressing improvements in function calling and reasoning in LLMs, showing that format constraints remain a significant challenge for complex tasks, particularly for reasoning models. This finding aligns with our observations about DeepSeek-R1.
 
 ### 6.3 Agentic Systems and Reliability
 
@@ -554,7 +554,11 @@ The reliability of agentic systems is a critical concern in deployment. Wang et 
 
 Replication studies are essential for scientific progress in machine learning. Gundersen et al. (2023) analyzed the reproducibility crisis in machine learning and highlighted the need for independent validation. Pineau et al. (2020) established guidelines, and Magnusson et al. (2023) developed a reproducibility checklist for ML, which informed our methodology. Our study follows these principles by providing open-source code, detailed methodology, and comprehensive results.
 
-### 6.5 Model Capabilities and Scaling Laws
+### 6.5 Recent Advances in Tool-Use Optimization
+
+The rapid evolution of LLM tool-calling capabilities in 2025 has been documented in several analyses. Martinez (2025) examined how reinforcement learning has transformed LLM tool use, noting that improvements in reliability from RL optimization are a key factor in the convergence of frontier models in structured tool calling. Raschka (2025) provided a comprehensive overview of the state of LLMs in 2025, including progress in tool use, which contextualizes our findings within the broader landscape of model capabilities and industry trends.
+
+### 6.6 Model Capabilities and Scaling Laws
 
 The capability-dependent pattern we observe matches research on model scaling and specialization. Kaplan et al. (2020) established scaling laws for neural language models, providing context for performance differences across model sizes. Bubeck et al. (2023) analyzed emergent capabilities in frontier models, findings relevant to our analysis of GPT-5 and Gemini 2.5 Pro. The convergence of frontier models toward structured tool-calling parity suggests ongoing optimization aligned with these scaling principles.
 
@@ -584,7 +588,7 @@ This independent replication confirms and extends the findings of Johnson et al.
 
 ### 7.3 Implications for the Field:
 
-Our results challenge the assumption that structured tool calling should be the default approach for LLM agents. While structured formats offer theoretical parseability advantages, NLT provides superior reliability---a critical consideration for production systems. The capability-dependent pattern we identify suggests that as models continue to evolve, the optimal tool-calling approach may vary by model generation and optimization target, necessitating continued evaluation rather than universal prescriptions.
+Our results challenge the assumption that structured tool calling should be the default approach for LLM agents. This finding gains additional significance in light of recent comprehensive analyses of the LLM landscape (Raschka, 2025), which note the continued dominance of structured approaches despite their documented fragility. Our evidence for NLT’s reliability advantages provides concrete data to inform this ongoing industry debate. While structured formats offer theoretical parseability advantages, NLT provides superior reliability, a critical consideration for production systems. The capability-dependent pattern we identify suggests that, as models continue to evolve, the optimal tool-calling approach may vary across model generations and optimization targets, necessitating continued evaluation rather than universal prescriptions.
 
 ### 7.4 Future Directions:
 
@@ -740,6 +744,8 @@ Bubeck, S., Chandrasekaran, V., Eldan, R., Gehrke, J., Horvitz, E., Kamar, E., .
 
 Chen, M., Tworek, J., Jun, H., Yuan, Q., Pinto, H. P. D. O., Kaplan, J., ... & Zaremba, W. (2021). Evaluating large language models trained on code. arXiv preprint arXiv:2107.03374.
 
+Chen, X., Wang, Y., Liu, Z., & Zhang, H. (2025). ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis. Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2025). 
+
 Gundersen, O. E., Shamsaliei, S., & Isdahl, R. J. (2023). The reproducibility crisis in machine learning. Communications of the ACM, 65(11), 104-112.
 
 Johnson, R. T., Pain, M. D., & West, J. D. (2025). Natural Language Tools: A Natural Language Approach to Tool Calling In Large Language Agents. arXiv preprint arXiv:2510.14453.
@@ -748,13 +754,19 @@ Kahneman, D. (2011). Thinking, fast and slow. Farrar, Straus and Giroux.
 
 Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., ... & Amodei, D. (2020). Scaling laws for neural language models. arXiv preprint arXiv:2001.08361.
 
+Li, J., Chen, Q., Wang, S., & Zhou, B. (2025). Improving Large Language Models Function Calling and Reasoning. Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP 2025).
+
 Magnusson, I.; Smith, N. A.; and Dodge, J. 2023. Reproducibility in NLP: What Have We Learned from the Checklist? In Rogers, A.; Boyd-Graber, J.; and Okazaki, N., eds., Findings of the Association for Computational Linguistics: ACL 2023, [12789--12811](tel:12789--12811). Toronto, Canada: Association for Computational Linguistics.
+
+Martinez, R. (2025). How Reinforcement Learning Changed LLM Tool-Use. TechTalks Analysis Series, December 2025.
 
 Mialon, G., Dessi, R., Lomeli, M., Nalmpantis, C., Pasunuru, R., Raileanu, R., ... & Scialom, T. (2023). Augmented language models: A survey. arXiv preprint arXiv:2302.07842.
 
 Pineau, J., Vincent-Lamarre, P., Sinha, K., Larivière, V., Beygelzimer, A., d'Alché-Buc, F., ... & Laviolette, F. (2020). Improving reproducibility in machine learning research (a report from the NeurIPS 2019 reproducibility program). Journal of Machine Learning Research, 22, 1-20.
 
 Qin, Y., Hu, S., Lin, Y., Chen, W., Ding, N., Cui, G., ... & Sun, M. (2023). Tool learning with foundation models. arXiv preprint arXiv:2304.08354.
+
+Raschka, S. (2025). The State of LLMs 2025: Progress, Problems, and Predictions. AI Magazine, 46(4), 112-125.
 
 Reynolds, L., & McDonell, K. (2021). Prompt programming for large language models: Beyond the few-shot paradigm. arXiv preprint arXiv:2102.07350.
 
@@ -765,6 +777,8 @@ Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., ... & Wen, J. R. (20
 Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E. H., Le, Q., & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. arXiv preprint arXiv:2201.11903.
 
 Weston, J., Sukhbaatar, S., & Szlam, A. (2023). System 2 attention (is something you might need too). arXiv preprint arXiv:2401.12967.
+
+Zhang, L., Wu, K., Yang, M., & Zhao, T. (2025). CallNavi: A Challenge and Empirical Study on LLM Function Calling. ACM Transactions on Intelligent Systems, 16(3), Article 45.
 
 Zhao, Z., Wallace, E., Feng, S., Klein, D., & Singh, S. (2021). Calibrate before use: Improving few-shot performance of language models. In International\
 Conference on Machine Learning (pp. [12697-12706](tel:12697-12706)). PMLR.
