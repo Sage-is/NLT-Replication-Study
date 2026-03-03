@@ -178,7 +178,7 @@ End Conversation -- YES/NO\
 Safety Call -- YES/NO\
 Assessment finished.
 
-2.3.2 Structured
+#### 2.3.2 Structured
 
 We used industry-standard structured tooling based on the Johnson et al. (2025) scenarios and toolings listed in their study. An example of Alex's structured tool calling scenario can be seen on [line 73 of scenarios.py](https://github.com/Sage-is/NLT-Replication-Study/blob/2aa826401e18eaf5aae8bb17db34a1a09eb444f5/src/nlt/data/scenarios.py#L73).
 
@@ -279,11 +279,11 @@ Comparison to Original Study:
 Model Performance (sorted by NLT gain):
 
 -   Anthropic/claude-sonnet-4: +43.1pp Gain (NLT 61.9% / Structured 18.8%)
--   -   Note: Largest NLT gain in our study. Claude's structured accuracy was exceptionally low despite being a frontier model.
+    -   Note: Largest NLT gain in our study. Claude's structured accuracy was exceptionally low despite being a frontier model.
 -   Mistralai/mistral-7b-instruct: +39.4pp Gain (NLT 39.4% / Structured 0.0%)
--   -   Note: Mistral failed completely on structured (320 errors). No native tool-calling support.
+    -   Note: Mistral failed completely on structured (320 errors). No native tool-calling support.
 -   Deepseek/deepseek-r1: +24.0pp Gain (NLT 55.0% / Structured 31.0%)
--   -   Note: The reasoning model shows large NLT gains, suggesting that chain-of-thought interferes with structured output.
+    -   Note: The reasoning model shows large NLT gains, suggesting that chain-of-thought interferes with structured output.
 -   Deepseek/deepseek-chat-v3-0324: +20.3pp Gain (NLT 90.0% / Structured 69.7%)
 -   Openai/gpt-5-nano: +19.7pp Gain (NLT 79.1% / Structured 59.4%)
 -   Meta-llama/llama-3.1-8b-instant: +14.9pp Gain (NLT 47.8% / Structured 32.9%)
@@ -291,13 +291,13 @@ Model Performance (sorted by NLT gain):
 -   Google/gemini-2.0-flash-001: +5.5pp Gain (NLT 85.0% / Structured 79.5%)
 -   Openai/gpt-oss-20b:free: +3.4pp Gain (NLT 42.7% / Structured 39.3%)
 -   Openai/gpt-5: +1.6pp Gain (NLT 81.9% / Structured 80.3%)
--   -   Note: Near-parity. GPT-5's structured tool calling is highly optimized.
+    -   Note: Near-parity. GPT-5's structured tool calling is highly optimized.
 -   Moonshotai/kimi-k2: -0.6pp Loss (NLT 67.2% / Structured 67.8%)
 -   Openai/gpt-oss-120b:free: -6.4pp Loss (NLT 42.6% / Structured 49.0%)
 -   Qwen/qwen3-vl-235b-a22b-thinking: +33.8pp Gain (NLT 33.8% / Structured 0.0% corrected)
--   -   Note: Partial data (1 NLT entry vs 4 structured). Structured had 307 errors out of 320 trials. Raw accuracy was 60.7% due to survivorship bias --- the few non-error responses happened to be correct. We correct to 0% as all 4 conditions had ≥ 73 errors out of 80 trials, representing operational failure.
+    -   Note: Partial data (1 NLT entry vs 4 structured). Structured had 307 errors out of 320 trials. Raw accuracy was 60.7% due to survivorship bias --- the few non-error responses happened to be correct. We correct to 0% as all 4 conditions had ≥ 73 errors out of 80 trials, representing operational failure.
 -   Google/gemini-2.5-pro: -33.7pp Loss (NLT 48.3% / Structured 82.1%)
--   -   Note: Partial data (3 entries each). Gemini 2.5 Pro is the strongest outlier, favouring structured tool calling.
+    -   Note: Partial data (3 entries each). Gemini 2.5 Pro is the strongest outlier, favouring structured tool calling.
 
 ![[nlt-paired-accuracy.png]]
 
@@ -349,8 +349,8 @@ Sage (Mental Health):
 
 Comparison to Original:
 
--   Original NLT Accuracy: 87.5%\
-    _ Original Structured Accuracy: 69.1%
+-   Original NLT Accuracy: 87.5%
+-   Original Structured Accuracy: 69.1%
 -   Gain: 18.4pp
 
 When comparing domains (Alex and Sage), our replication study confirms the original study's results that both domains benefit from NTL compared to structured tool calling. Additionally, overall accuracy, whether Structured or NTL, is higher in the customer service domain (Alex) than in the mental health domain (Sage).
@@ -377,20 +377,20 @@ We confirmed that NLT is significantly more token-efficient, validating the orig
 
 ### 3.7 Additional Observations
 
-Catastrophic Failures in Structured Mode:\
-Certain models (Mistral-7B-Instruct, Qwen3-VL) exhibited complete performance collapse with structured outputs, yielding 0% accuracy and hundreds of validation errors (mostly due to failing to generate valid JSON). In contrast, NLT maintained functional performance (39.4% and 33.8% accuracy, respectively) with zero validation errors. This pattern was also unexpectedly observed with Claude Sonnet 4, which achieved only 18.8% structured accuracy despite being a frontier model---suggesting that even highly capable models may have suboptimal structured tool-calling implementations depending on the API integration path. These findings correspond with research showing that format constraints can create significant performance bottlenecks, particularly for models not extensively fine-tuned for structured outputs (Reynolds & McDonell, 2021).
+Catastrophic Failures in Structured Mode:
+> Certain models (Mistral-7B-Instruct, Qwen3-VL) exhibited complete performance collapse with structured outputs, yielding 0% accuracy and hundreds of validation errors (mostly due to failing to generate valid JSON). In contrast, NLT maintained functional performance (39.4% and 33.8% accuracy, respectively) with zero validation errors. This pattern was also unexpectedly observed with Claude Sonnet 4, which achieved only 18.8% structured accuracy despite being a frontier model, suggesting that even highly capable models may have suboptimal structured tool-calling implementations depending on the API integration path. These findings correspond with research showing that format constraints can create significant performance bottlenecks, particularly for models not extensively fine-tuned for structured outputs (Reynolds & McDonell, 2021).
 
-Frontier Model Convergence:\
-GPT-5 and Gemini 2.0 Flash showed near-parity between NLT and structured approaches (+1.6pp and +5.5pp, respectively), with both achieving over 80% accuracy in both modes. This suggests that highly optimized frontier models may have narrowed the distribution mismatch that NLT exploits through extensive tool-calling fine-tuning. Gemini 2.5 Pro went further, showing a strong structured advantage (−33.7pp), indicating that some models have been specifically optimized for structured output to the point where NLT is disadvantageous. This convergence demonstrates wider trends in model development, in which frontier models increasingly exhibit “sparks of artificial general intelligence,” including sophisticated tool-use capabilities (Bubeck et al., 2023). Recent analysis by Martinez (2025) suggests that reinforcement learning optimization for tool use has become a standard technique in frontier models, potentially explaining this proficiency in structured output.
+Frontier Model Convergence:
+> GPT-5 and Gemini 2.0 Flash showed near-parity between NLT and structured approaches (+1.6pp and +5.5pp, respectively), with both achieving over 80% accuracy in both modes. This suggests that highly optimized frontier models may have narrowed the distribution mismatch that NLT exploits through extensive tool-calling fine-tuning. Gemini 2.5 Pro went further, showing a strong structured advantage (−33.7pp), indicating that some models have been specifically optimized for structured output to the point where NLT is disadvantageous. This convergence demonstrates wider trends in model development, in which frontier models increasingly exhibit “sparks of artificial general intelligence,” including sophisticated tool-use capabilities (Bubeck et al., 2023). Recent analysis by Martinez (2025) suggests that reinforcement learning optimization for tool use has become a standard technique in frontier models, potentially explaining this proficiency in structured output.
 
-Reasoning Model Penalty:\
-DeepSeek-R1, a reasoning model, showed a large NLT gain (+24.0pp). Reasoning models generate extended chain-of-thought sequences before producing output. When constrained to structured formats, this reasoning process may conflict with those formats, degrading accuracy. NLT’s free-form output naturally accommodates the reasoning trace. This finding extends research on chain-of-thought prompting, which shows that reasoning benefits from flexible output formats (Wei et al., 2022; Zhou et al., 2023) and aligns with recent work by Li et al. (2025) on improving function calling and reasoning in LLMs, which similarly identifies conflicts between structured outputs and extended reasoning traces. The conflict between structured output requirements and extended reasoning may explain why reasoning models benefit disproportionately from NLT.
+Reasoning Model Penalty:
+>DeepSeek-R1, a reasoning model, showed a large NLT gain (+24.0pp). Reasoning models generate extended chain-of-thought sequences before producing output. When constrained to structured formats, this reasoning process may conflict with those formats, degrading accuracy. NLT’s free-form output naturally accommodates the reasoning trace. This finding extends research on chain-of-thought prompting, which shows that reasoning benefits from flexible output formats (Wei et al., 2022; Zhou et al., 2023) and aligns with recent work by Li et al. (2025) on improving function calling and reasoning in LLMs, which similarly identifies conflicts between structured outputs and extended reasoning traces. The conflict between structured output requirements and extended reasoning may explain why reasoning models benefit disproportionately from NLT.
 
-Model Size and NLT Benefit:\
-Smaller models (Llama 3.1 8B, Mistral 7B) showed larger relative gains from NLT (+14.9pp and +39.4pp respectively), while larger frontier models showed smaller or reversed gains. This pattern aligns with scaling law research suggesting that larger models develop more sophisticated capabilities, including better compliance with formats (Kaplan et al., 2020). However, even frontier models maintained NLT's error-rate advantage, suggesting that reliability improvements may be orthogonal to accuracy convergence.
+Model Size and NLT Benefit:
+>Smaller models (Llama 3.1 8B, Mistral 7B) showed larger relative gains from NLT (+14.9pp and +39.4pp respectively), while larger frontier models showed smaller or reversed gains. This pattern aligns with scaling law research suggesting that larger models develop more sophisticated capabilities, including better compliance with formats (Kaplan et al., 2020). However, even frontier models maintained NLT's error-rate advantage, suggesting that reliability improvements may be orthogonal to accuracy convergence.
 
-Domain Complexity Effects:\
-The mental health scenario (Sage) showed larger NLT gains (+16.1pp) than the customer service scenario (+13.4pp), suggesting that NLT provides greater benefit in more complex domains where structured approaches struggle most. This corresponds to findings that complex tasks benefit more from flexible output formats that don't constrain reasoning processes (Zhou et al., 2023).
+Domain Complexity Effects:
+>The mental health scenario (Sage) showed larger NLT gains (+16.1pp) than the customer service scenario (+13.4pp), suggesting that NLT provides greater benefit in more complex domains where structured approaches struggle most. This corresponds to findings that complex tasks benefit more from flexible output formats that don't constrain reasoning processes (Zhou et al., 2023).
 
 
 Our results can be reviewed in our project's [results](https://github.com/Sage-is/NLT-Replication-Study/tree/develop/results) folder, as well as a table of of our [aggregated results](https://github.com/Sage-is/NLT-Replication-Study/blob/develop/aggregated_results.csv).
@@ -415,7 +415,7 @@ Partially Confirmed:
 
 Not Confirmed:
 
--   Universal NLT advantage. Three models showed structured advantages after correction (Gemini 2.5 Pro, GPT-OSS-120B, Kimi-K2). Qwen3-VL originally appeared to favour structured (+60.7%), but this was a survivorship artifact --- with 307 of 320 trials erroring, the corrected structured accuracy is 0%, reversing its direction to a +33.8pp NLT gain.
+-   Universal NLT advantage. Three models showed structured advantages after correction (Gemini 2.5 Pro, GPT-OSS-120B, Kimi-K2). Qwen3-VL originally appeared to favour structured (+60.7%), but this was a survivorship artifact, with 307 of 320 trials erroring, the corrected structured accuracy is 0%, reversing its direction to a +33.8pp NLT gain.
 
 ### 4.2 Divergences from Original Study
 
@@ -425,19 +425,27 @@ Not Confirmed:
 
 ### 4.3 Emerging Patterns
 
+#### 4.3.1 Striking Findings
+
 The most striking finding is the heterogeneity of the NLT effect across model types:
 
 1.  Models without native tool calling (Mistral 7B):\
     NLT provides an essential capability that structured approaches cannot deliver. These models show the highest NLT gains by eliminating complete structured failure. Without NLT, such models would be unusable for tool-calling tasks, expanding the range of deployable models for agentic systems.
+
 2.  Reasoning models (DeepSeek-R1): NLT naturally supports chain-of-thought reasoning, whereas structured formats conflict with extended reasoning traces. Large NLT gains (+24.0pp) suggest that reasoning models are particularly sensitive to output format constraints. This extends the findings of Zhou et al. (2023), who found that complex reasoning benefits from flexible prompting strategies.
+
 3.  Mid-tier models (DeepSeek-V3, Gemini Flash Lite, GPT-5-nano): NLT provides consistent, moderate gains (+10--20pp), suggesting these models have some structured capability but still benefit from the reduced format burden. This represents the "sweet spot" for NLT deployment---models with sufficient capability to perform the task but not so optimized for structured output that NLT offers no advantage.
+
 4.  Frontier models (GPT-5, Gemini 2.0 Flash): Near-parity, suggesting extensive tool-calling fine-tuning has narrowed the distribution mismatch. NLT still maintains an edge in error rates. This convergence reflects ongoing optimization in frontier models, which increasingly exhibit sophisticated capabilities across domains (Bubeck et al., 2023). However, even at parity, NLT's error reduction remains valuable for production systems.
+
 5.  Structured-optimized models (Gemini 2.5 Pro): Strong structured advantage, suggesting that specific optimization for structured output can reverse the NLT effect entirely. This represents an important boundary condition---when models are specifically fine-tuned for structured tool calling, NLT may become disadvantageous.
 
-Scaling Law Implications:\
+#### 4.3.2 Scaling Law Implications:
+
 This pattern matches research on scaling laws for neural language models (Kaplan et al., 2020). Larger, more capable models show diminishing returns from NLT's format flexibility, as they have sufficient capacity to handle both task reasoning and format compliance simultaneously. Smaller models benefit more from NLT because it reduces cognitive load, allowing them to allocate computational resources to task completion rather than to format adherence.
 
-Deployment Strategy Implications:\
+#### 4.3.3 Deployment Strategy Implications:
+
 These patterns suggest a tiered deployment strategy:
 
 -   Tier 1 (No structured support): Use NLT exclusively
@@ -445,7 +453,8 @@ These patterns suggest a tiered deployment strategy:
 -   Tier 3 (Strong structured capability): Consider composite approaches or evaluate based on specific requirements
 -   Tier 4 (Structured-optimized): Use structured approaches when maximum accuracy is required
 
-Future Model Development:\
+#### 4.3.4 Future Model Development:
+
 As models continue to improve, the NLT advantage may diminish further for frontier models. However, our findings suggest that improvements in error rates may persist even as accuracy converges, making NLT valuable for production reliability regardless of absolute accuracy differences.
 
 ![[nlt-capability-gradient.png]]
@@ -454,11 +463,11 @@ As models continue to improve, the NLT advantage may diminish further for fronti
 
 The fragility of structured tool calling remains the most deployment-relevant finding. Structured approaches produced 755 errors compared to only 51 for NLT - a 93% reduction. In production environments, this error rate differential translates directly to service reliability and maintenance costs. While structured outputs like JSON or schemas are theoretically cleaner and easier to parse, they are more brittle across different model providers and versions. NLT offers a safety rail that lets models express intent even when strict schema adherence fails.
 
-Cost Implications
+#### 4.4.1 Cost Implications
 
 The 25.2% token reduction with NLT has direct cost implications. Assuming average pricing of $0.50 per million input tokens and $1.50 per million output tokens (typical for GPT-4-class models), NLT would reduce costs by approximately 18-22% per API call. For a system processing 1 million tool calls per month, this translates into savings of $4,000-$6,000 per month. These savings become more significant at scale and represent a compelling economic argument for NLT adoption alongside its reliability benefits.
 
-Deployment Recommendations
+#### 4.4.2 Deployment Recommendations
 
 Based on our findings, we recommend:
 
@@ -468,11 +477,11 @@ Based on our findings, we recommend:
 -   For frontier models (e.g., GPT-5, Gemini 2.0 Flash): Consider composite approaches---use structured calling for parseability but implement NLT fallbacks for error recovery.
 -   For structured-optimized models (e.g., Gemini 2.5 Pro): Use structured approaches when maximum accuracy is required, but monitor error rates closely.
 
-System Design Implications
+#### 4.4.3 System Design Implications
 
 NLT's lower error rate simplifies system architecture by reducing the need for complex fallback mechanisms and retry logic. This observation is consistent with Mialon et al. (2023), who note that reliability is often the limiting factor in the deployment of augmented language models. Production systems can implement simpler error handling when using NLT, as catastrophic failures (such as Mistral's 320 errors) are eliminated.
 
-Future Model Development
+#### 4.4.4 Future Model Development
 
 The pattern of frontier model convergence raises an important question: as models continue to be optimized for structured tool calling, will NLT’s accuracy advantage diminish entirely? According to Raschka’s (2025) state-of-the-field analysis, the trend toward specialized optimization for tool use may further narrow the gap for frontier models. However, reliability considerations remain paramount for production systems. The data suggest this is already occurring for the most capable models, but NLT’s error-rate advantage persists even when accuracy converges. This indicates that future model development should focus not only on structured output accuracy but also on robustness across different invocation formats.
 
@@ -577,16 +586,23 @@ This independent replication confirms and extends the findings of Johnson et al.
 ### 7.1 Key Contributions:
 
 1.  First Independent Validation: We provide the first independent replication of NLT using original tooling and a broader model set, addressing reproducibility concerns in AI research (Pineau et al., 2020) and strengthening confidence in NLT's effectiveness.
+
 2.  Reliability as Chief Advantage: While accuracy gains vary, NLT's error reduction is consistent and substantial (93% fewer errors). This reliability advantage persists even when accuracy converges, making NLT valuable for production systems regardless of absolute performance differences.
+
 3.  Capability-Dependent Pattern Discovery: We identify that NLT's advantages vary systematically by model type: largest gains for models without native tool calling (Mistral 7B: +39.4pp) and reasoning models (DeepSeek-R1: +24.0pp), diminishing gains for mid-tier models, and near-parity or reversal for frontier models optimized for structured output (GPT-5: +1.6pp; Gemini 2.5 Pro: -33.7pp). This pattern matches scaling law research (Kaplan et al., 2020) and has immediate practical implications for deployment.
+
 4.  Methodological Contributions: We introduce a survivorship bias correction for catastrophic failure conditions, provide open-source evaluation tooling, and document detailed per-model performance patterns that enable more nuanced deployment decisions.
+
 5.  Practical Guidance: Based on our findings, we offer concrete deployment recommendations: use NLT for models without structured support, implement composite approaches for frontier models, and prioritize NLT for reliability-critical applications regardless of model capability.
 
 ### 7.2 Key Takeaways:
 
 1.  NLT as a Reliability Mechanism: The 93% error reduction is the most deployment-relevant finding. Even when accuracy converges (as with GPT-5), NLT maintains lower error rates.
+
 2.  Capability-Dependent Gains: Models without native tool calling, reasoning models, and smaller models benefit most from NLT. Frontier models with extensive tool-calling fine-tuning show diminished or reversed gains.
+
 3.  Open-Weight Models Benefit Most: Consistent with the original study, open and smaller models regularly show larger relative gains from NLT, reinforcing its value as an equalizer across model tiers.
+
 4.  Structured Fragility Persists: Despite advances in structured tool-calling support, the high error rate (755 errors) points to ongoing deployment risks that NLT mitigates.
 
 ### 7.3 Implications for the Field:
@@ -615,17 +631,21 @@ All code, data, and results are available at:
 
 To Reproduce:
 
+```bash
 git clone https://github.com/Sage-Future/AI-Natural-Language-Tools.git
 
 cd AI-Natural-Language-Tools
 
 make setup
+```
 
-# Configure SAGE_AUTH_TOKEN in .env
+Be sure to configure your `SAGE_AUTH_TOKEN` in your project's `.env` file. Or, alternatively, feel free to change the code to use another AI API endpoint.
 
+```bash
 make run-models
 
 python src/scripts/analyze_results.py --show-gains
+```
 
 * * * * *
 
