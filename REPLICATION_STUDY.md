@@ -744,9 +744,9 @@ Bubeck, S., Chandrasekaran, V., Eldan, R., Gehrke, J., Horvitz, E., Kamar, E., .
 
 Chen, M., Tworek, J., Jun, H., Yuan, Q., Pinto, H. P. D. O., Kaplan, J., ... & Zaremba, W. (2021). Evaluating large language models trained on code. arXiv preprint arXiv:2107.03374.
 
-Chen, X., Wang, Y., Liu, Z., & Zhang, H. (2025). ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis. Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2025). 
+Chen, X., Wang, Y., Liu, Z., & Zhang, H. (2025). ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis. Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2025).
 
-Gundersen, O. E., Shamsaliei, S., & Isdahl, R. J. (2023). The reproducibility crisis in machine learning. Communications of the ACM, 65(11), 104-112.
+Gundersen, O. E., Shamsaliei, S., & Isdahl, R. J. (2023). The reproducibility crisis in machine learning. Communications of the ACM, 65(11), 104–112.
 
 Johnson, R. T., Pain, M. D., & West, J. D. (2025). Natural Language Tools: A Natural Language Approach to Tool Calling In Large Language Agents. arXiv preprint arXiv:2510.14453.
 
@@ -756,17 +756,17 @@ Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., ..
 
 Li, J., Chen, Q., Wang, S., & Zhou, B. (2025). Improving Large Language Models Function Calling and Reasoning. Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP 2025).
 
-Magnusson, I.; Smith, N. A.; and Dodge, J. 2023. Reproducibility in NLP: What Have We Learned from the Checklist? In Rogers, A.; Boyd-Graber, J.; and Okazaki, N., eds., Findings of the Association for Computational Linguistics: ACL 2023, [12789--12811](tel:12789--12811). Toronto, Canada: Association for Computational Linguistics.
+Magnusson, I., Smith, N. A., & Dodge, J. (2023). Reproducibility in NLP: What Have We Learned from the Checklist? In A. Rogers, J. Boyd-Graber, & N. Okazaki (Eds.), Findings of the Association for Computational Linguistics: ACL 2023 (pp. 12789–12811). Toronto, Canada: Association for Computational Linguistics.
 
 Martinez, R. (2025). How Reinforcement Learning Changed LLM Tool-Use. TechTalks Analysis Series, December 2025.
 
 Mialon, G., Dessi, R., Lomeli, M., Nalmpantis, C., Pasunuru, R., Raileanu, R., ... & Scialom, T. (2023). Augmented language models: A survey. arXiv preprint arXiv:2302.07842.
 
-Pineau, J., Vincent-Lamarre, P., Sinha, K., Larivière, V., Beygelzimer, A., d'Alché-Buc, F., ... & Laviolette, F. (2020). Improving reproducibility in machine learning research (a report from the NeurIPS 2019 reproducibility program). Journal of Machine Learning Research, 22, 1-20.
+Pineau, J., Vincent-Lamarre, P., Sinha, K., Larivière, V., Beygelzimer, A., d'Alché-Buc, F., ... & Laviolette, F. (2020). Improving reproducibility in machine learning research (a report from the NeurIPS 2019 reproducibility program). Journal of Machine Learning Research, 22, 1–20.
 
 Qin, Y., Hu, S., Lin, Y., Chen, W., Ding, N., Cui, G., ... & Sun, M. (2023). Tool learning with foundation models. arXiv preprint arXiv:2304.08354.
 
-Raschka, S. (2025). The State of LLMs 2025: Progress, Problems, and Predictions. AI Magazine, 46(4), 112-125.
+Raschka, S. (2025). The State of LLMs 2025: Progress, Problems, and Predictions. AI Magazine, 46(4), 112–125.
 
 Reynolds, L., & McDonell, K. (2021). Prompt programming for large language models: Beyond the few-shot paradigm. arXiv preprint arXiv:2102.07350.
 
@@ -780,8 +780,7 @@ Weston, J., Sukhbaatar, S., & Szlam, A. (2023). System 2 attention (is something
 
 Zhang, L., Wu, K., Yang, M., & Zhao, T. (2025). CallNavi: A Challenge and Empirical Study on LLM Function Calling. ACM Transactions on Intelligent Systems, 16(3), Article 45.
 
-Zhao, Z., Wallace, E., Feng, S., Klein, D., & Singh, S. (2021). Calibrate before use: Improving few-shot performance of language models. In International\
-Conference on Machine Learning (pp. [12697-12706](tel:12697-12706)). PMLR.
+Zhao, Z., Wallace, E., Feng, S., Klein, D., & Singh, S. (2021). Calibrate before use: Improving few-shot performance of language models. In International Conference on Machine Learning (pp. 12697–12706). PMLR.
 
 Zhou, D., Schärli, N., Hou, L., Wei, J., Scales, N., Wang, X., ... & Chi, E. H. (2023). Least-to-most prompting enables complex reasoning in large language models. arXiv preprint arXiv:2205.10625.
 
