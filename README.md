@@ -81,6 +81,12 @@ python src/scripts/analyze_results.py --show-gains       # Include NLT vs Struct
 python src/scripts/analyze_results.py --export summary.csv  # Export to CSV
 ```
 
+For charts (accuracy/variance distributions, per-model error and abort counts, token usage,
+NLT gains), see [notebooks/analysis_visuals.ipynb](notebooks/analysis_visuals.ipynb) —
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sage-is/NLT-Replication-Study/blob/develop/notebooks/analysis_visuals.ipynb).
+Runs locally, on Colab, or on Kaggle (falls back to downloading `aggregated_results.csv` from
+GitHub when the repo isn't checked out locally); figures save to `results/figures/`.
+
 ## Documentation
 - [REPLICATION.md](docs/REPLICATION.md) - Complete guide to replicating the full NLT study
 - [DEVELOPMENT.md](docs/DEVELOPMENT.md) - Developer guide with tools, testing, and workflow

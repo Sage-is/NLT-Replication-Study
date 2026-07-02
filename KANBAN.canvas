@@ -1,0 +1,792 @@
+{
+  "edges": [],
+  "nodes": [
+    {
+      "color": "4",
+      "height": 200,
+      "id": "col-backlog",
+      "label": "Backlog",
+      "type": "group",
+      "width": 300,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 46,
+          "tags": [],
+          "text": "Rebuild immediately before submitting (`make arxiv`) to pick up any last-minute edits to REPLICATION_STUDY.md"
+        },
+        {
+          "checked": false,
+          "line_num": 47,
+          "tags": [],
+          "text": "Confirm arXiv account/endorsement status for the submitting author"
+        },
+        {
+          "checked": false,
+          "line_num": 48,
+          "tags": [],
+          "text": "Upload `arxiv/arxiv-submission.tar.gz` via the arXiv submission portal"
+        },
+        {
+          "checked": false,
+          "line_num": 49,
+          "tags": [],
+          "text": "Select primary category (e.g. cs.CL / cs.AI) and cross-list if applicable"
+        },
+        {
+          "checked": false,
+          "line_num": 50,
+          "tags": [],
+          "text": "Fill in title, authors, and abstract (pre-validated at 1,719/1,920 chars)"
+        },
+        {
+          "checked": false,
+          "line_num": 51,
+          "tags": [],
+          "text": "Review arXiv's auto-compiled PDF and TeX log for warnings before finalizing"
+        },
+        {
+          "checked": false,
+          "line_num": 52,
+          "tags": [],
+          "text": "Submit and wait for moderation"
+        },
+        {
+          "checked": false,
+          "line_num": 53,
+          "tags": [],
+          "text": "Record the assigned arXiv ID once published"
+        },
+        {
+          "checked": false,
+          "line_num": 54,
+          "tags": [],
+          "text": "Update README.md / REPLICATION_STUDY.md citation block with the live arXiv link"
+        },
+        {
+          "checked": false,
+          "line_num": 55,
+          "tags": [],
+          "text": "Cross-post per SOCIAL_SHARES.md plan"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "36b8dbac67dade10",
+      "line_num": 45,
+      "source": "todo_md",
+      "tags": [
+        "#critical"
+      ],
+      "text": "**arXiv Submission: Upload the compile-verified package to arXiv.org and publish**\n- [ ] Rebuild immediately before submitting (`make arxiv`) to pick up any last-minute edits to REPLICATION_STUDY.md\n- [ ] Confirm arXiv account/endorsement status for the submitting author\n- [ ] Upload `arxiv/arxiv-submission.tar.gz` via the arXiv submission portal\n- [ ] Select primary category (e.g. cs.CL / cs.AI) and cross-list if applicable\n- [ ] Fill in title, authors, and abstract (pre-validated at 1,719/1,920 chars)\n- [ ] Review arXiv's auto-compiled PDF and TeX log for warnings before finalizing\n- [ ] Submit and wait for moderation\n- [ ] Record the assigned arXiv ID once published\n- [ ] Update README.md / REPLICATION_STUDY.md citation block with the live arXiv link\n- [ ] Cross-post per SOCIAL_SHARES.md plan\n\n`#critical`\n`TODO.md:L45`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 60
+    },
+    {
+      "height": 340,
+      "id": "col-todo",
+      "label": "TODO",
+      "type": "group",
+      "width": 300,
+      "x": 350,
+      "y": 0
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 31,
+          "tags": [],
+          "text": "Generate accuracy and variance box/violin plots for NLT vs structured"
+        },
+        {
+          "checked": false,
+          "line_num": 32,
+          "tags": [],
+          "text": "Plot error counts and aborted runs per model"
+        },
+        {
+          "checked": false,
+          "line_num": 33,
+          "tags": [],
+          "text": "Export charts for reports/README/REPLICATION_STUDY"
+        },
+        {
+          "checked": false,
+          "line_num": 34,
+          "tags": [],
+          "text": "Test/verify step (notebook runs cleanly)"
+        },
+        {
+          "checked": false,
+          "line_num": 35,
+          "tags": [],
+          "text": "Documentation update (link notebook in README/docs)"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "46a29d92340328a1",
+      "line_num": 30,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Add analysis notebook for visuals: Build Jupyter notebook to plot per-approach/model metrics and gains**\n- [ ] Generate accuracy and variance box/violin plots for NLT vs structured\n- [ ] Plot error counts and aborted runs per model\n- [ ] Export charts for reports/README/REPLICATION_STUDY\n- [ ] Test/verify step (notebook runs cleanly)\n- [ ] Documentation update (link notebook in README/docs)\n\n`TODO.md:L30`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 60
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 38,
+          "tags": [],
+          "text": "Restructure TODO.md to conventions"
+        },
+        {
+          "checked": true,
+          "line_num": 39,
+          "tags": [],
+          "text": "Create `.todoscope-exclude.csv` (`.venv`, `.pytest_cache`, `__pycache__`, `src/nlt.egg-info`, `arxiv`, `results`, `.obsidian`)"
+        },
+        {
+          "checked": true,
+          "line_num": 40,
+          "tags": [],
+          "text": "Run the TodoScope scanner and verify the kanban board matches expectations"
+        },
+        {
+          "checked": false,
+          "line_num": 41,
+          "tags": [],
+          "text": "Migrate inline tags to `TODO:` / `FIXME:` / `BUG:` convention as they're introduced (none found in source yet)"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "9b7fc40f0feacbe4",
+      "line_num": 37,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**TodoScope Alignment: Finish aligning this repo with TodoScope conventions**\n- [x] Restructure TODO.md to conventions\n- [x] Create `.todoscope-exclude.csv` (`.venv`, `.pytest_cache`, `__pycache__`, `src/nlt.egg-info`, `arxiv`, `results`, `.obsidian`)\n- [x] Run the TodoScope scanner and verify the kanban board matches expectations\n- [ ] Migrate inline tags to `TODO:` / `FIXME:` / `BUG:` convention as they're introduced (none found in source yet)\n\n`TODO.md:L37`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 150
+    },
+    {
+      "file_path": "docs/DEVELOPMENT_WORKFLOW.md",
+      "height": 80,
+      "id": "53ef5b777ac3f7e1",
+      "line_num": 151,
+      "source": "inline",
+      "tags": [],
+      "text": "### TODO Management\n`docs/DEVELOPMENT_WORKFLOW.md:151`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 240
+    },
+    {
+      "color": "5",
+      "height": 200,
+      "id": "col-in_progress",
+      "label": "In Progress",
+      "type": "group",
+      "width": 300,
+      "x": 700,
+      "y": 0
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 22,
+          "tags": [],
+          "text": "Create `.env` with valid `SAGE_AUTH_TOKEN`"
+        },
+        {
+          "checked": false,
+          "line_num": 23,
+          "tags": [],
+          "text": "`make demo` and `make demo-structured` (live round-trip, NLT + structured)"
+        },
+        {
+          "checked": false,
+          "line_num": 24,
+          "tags": [],
+          "text": "`make run-models-quick` (batch runner end-to-end)"
+        },
+        {
+          "checked": false,
+          "line_num": 25,
+          "tags": [],
+          "text": "Verify new results append correctly to aggregated_results.csv (15-col schema)"
+        },
+        {
+          "checked": false,
+          "line_num": 26,
+          "tags": [],
+          "text": "Monitor early-abort behavior on this first live run (last automated-only check for Issue 2, below)"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "a32bd242ae182583",
+      "line_num": 21,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**\ud83d\udd36 Re-run live API smoke test once a fresh SAGE_AUTH_TOKEN is provisioned**\n- [ ] Create `.env` with valid `SAGE_AUTH_TOKEN`\n- [ ] `make demo` and `make demo-structured` (live round-trip, NLT + structured)\n- [ ] `make run-models-quick` (batch runner end-to-end)\n- [ ] Verify new results append correctly to aggregated_results.csv (15-col schema)\n- [ ] Monitor early-abort behavior on this first live run (last automated-only check for Issue 2, below)\n\n`TODO.md:L21`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 60
+    },
+    {
+      "color": "1",
+      "height": 200,
+      "id": "col-bugs",
+      "label": "Bugs",
+      "type": "group",
+      "width": 300,
+      "x": 1050,
+      "y": 0
+    },
+    {
+      "color": "6",
+      "height": 1060,
+      "id": "col-done",
+      "label": "Done",
+      "type": "group",
+      "width": 300,
+      "x": 1400,
+      "y": 0
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 66,
+          "tags": [],
+          "text": "Rewrite tests/test_evaluator.py against current evaluator API (client-based, TrialResult dataclass) \u2014 suite green (27 passed)"
+        },
+        {
+          "checked": true,
+          "line_num": 67,
+          "tags": [],
+          "text": "Fix doc/script path mismatches (`python src/scripts/analyze_results.py`, `bash src/scripts/run_study.sh`), `$SAGE_AUTH_TOKEN`, \u00a78 clone URL, stale 10-col CSV schema \u2192 real 15-col schema"
+        },
+        {
+          "checked": true,
+          "line_num": 68,
+          "tags": [],
+          "text": "Correct REPLICATION_STUDY.md \u00a72.6 survivorship count: 4 \u2192 8 of 107 entries (2 models), verified against aggregated_results.csv"
+        },
+        {
+          "checked": true,
+          "line_num": 69,
+          "tags": [],
+          "text": ".gitignore: stop ignoring tracked `results/` reproducibility data; add .pytest_cache/, build/, dist/, *.bak"
+        },
+        {
+          "checked": true,
+          "line_num": 70,
+          "tags": [],
+          "text": "Declare chart deps as `viz` extra in pyproject.toml (`uv pip install -e \".[viz]\"`)"
+        },
+        {
+          "checked": true,
+          "line_num": 71,
+          "tags": [],
+          "text": "`chmod +x src/scripts/{clean_aborted.py,run_study.sh}`; add `src/nlt/api/__init__.py`"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "5383736afb6e66ea",
+      "line_num": 65,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Verify the study end-to-end and repair issues: Full offline verification of harness, pipeline, data, and docs**\n- [x] Rewrite tests/test_evaluator.py against current evaluator API (client-based, TrialResult dataclass) \u2014 suite green (27 passed)\n- [x] Fix doc/script path mismatches (`python src/scripts/analyze_results.py`, `bash src/scripts/run_study.sh`), `$SAGE_AUTH_TOKEN`, \u00a78 clone URL, stale 10-col CSV schema \u2192 real 15-col schema\n- [x] Correct REPLICATION_STUDY.md \u00a72.6 survivorship count: 4 \u2192 8 of 107 entries (2 models), verified against aggregated_results.csv\n- [x] .gitignore: stop ignoring tracked `results/` reproducibility data; add .pytest_cache/, build/, dist/, *.bak\n- [x] Declare chart deps as `viz` extra in pyproject.toml (`uv pip install -e \".[viz]\"`)\n- [x] `chmod +x src/scripts/{clean_aborted.py,run_study.sh}`; add `src/nlt/api/__init__.py`\n\n`TODO.md:L65`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 60
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 73,
+          "tags": [],
+          "text": "src/scripts/md_to_arxiv.py: programmatic handling of Obsidian embeds, Notion-split tables, bogus/relative links, LaTeX-hostile Unicode, metadata + abstract extraction"
+        },
+        {
+          "checked": true,
+          "line_num": 74,
+          "tags": [],
+          "text": "Compile-verified with tectonic (28-page PDF); tarball at arxiv/arxiv-submission.tar.gz"
+        },
+        {
+          "checked": true,
+          "line_num": 75,
+          "tags": [],
+          "text": "Validates arXiv's 1,920-char abstract limit (currently 1,719) and package size"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "7ecbcb4fc09e3c47",
+      "line_num": 72,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**arXiv submission pipeline: `make arxiv` converts REPLICATION_STUDY.md (Obsidian vault source of truth) to an arXiv-ready LaTeX package**\n- [x] src/scripts/md_to_arxiv.py: programmatic handling of Obsidian embeds, Notion-split tables, bogus/relative links, LaTeX-hostile Unicode, metadata + abstract extraction\n- [x] Compile-verified with tectonic (28-page PDF); tarball at arxiv/arxiv-submission.tar.gz\n- [x] Validates arXiv's 1,920-char abstract limit (currently 1,719) and package size\n\n`TODO.md:L72`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 150
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 80,
+          "tags": [],
+          "text": "Move analyze_results.py, run_models.py, backfill_tokens.py, run_study.sh to src/scripts/"
+        },
+        {
+          "checked": true,
+          "line_num": 81,
+          "tags": [],
+          "text": "Move test_cleaning.py, validate_cleaning.py to tests/"
+        },
+        {
+          "checked": true,
+          "line_num": 82,
+          "tags": [],
+          "text": "Update all scripts to use PROJECT_ROOT for path resolution"
+        },
+        {
+          "checked": true,
+          "line_num": 83,
+          "tags": [],
+          "text": "Update Makefile to reference new script locations (src/scripts/)"
+        },
+        {
+          "checked": true,
+          "line_num": 84,
+          "tags": [],
+          "text": "Test all Makefile targets work correctly"
+        },
+        {
+          "checked": true,
+          "line_num": 85,
+          "tags": [],
+          "text": "Root now contains only: Makefile, models.csv, aggregated_results.csv, CONVENTION.instructions.md, README.md, TODO.md, pyproject.toml, and core directories"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "37ac6b47ea622968",
+      "line_num": 79,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Clean up repository structure: Move scripts to src/, keep only essential files in root**\n- [x] Move analyze_results.py, run_models.py, backfill_tokens.py, run_study.sh to src/scripts/\n- [x] Move test_cleaning.py, validate_cleaning.py to tests/\n- [x] Update all scripts to use PROJECT_ROOT for path resolution\n- [x] Update Makefile to reference new script locations (src/scripts/)\n- [x] Test all Makefile targets work correctly\n- [x] Root now contains only: Makefile, models.csv, aggregated_results.csv, CONVENTION.instructions.md, README.md, TODO.md, pyproject.toml, and core directories\n\n`TODO.md:L79`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 240
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 87,
+          "tags": [],
+          "text": "When all trials error (valid_trials=0), accuracy/variance now report as `None` instead of 0.0"
+        },
+        {
+          "checked": true,
+          "line_num": 88,
+          "tags": [],
+          "text": "Added `valid_trials` and `aborted` fields to summary and aggregated results"
+        },
+        {
+          "checked": true,
+          "line_num": 89,
+          "tags": [],
+          "text": "Updated analysis scripts to handle None values correctly"
+        },
+        {
+          "checked": true,
+          "line_num": 90,
+          "tags": [],
+          "text": "Updated tests for new behavior"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "e29e3c81e7b129a8",
+      "line_num": 86,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Issue 1 - Misleading stats when all trials error: Fixed accuracy/variance reporting**\n- [x] When all trials error (valid_trials=0), accuracy/variance now report as `None` instead of 0.0\n- [x] Added `valid_trials` and `aborted` fields to summary and aggregated results\n- [x] Updated analysis scripts to handle None values correctly\n- [x] Updated tests for new behavior\n\n`TODO.md:L86`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 330
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 92,
+          "tags": [],
+          "text": "Configure Black for linting and formatting"
+        },
+        {
+          "checked": true,
+          "line_num": 93,
+          "tags": [],
+          "text": "Add pytest configuration"
+        },
+        {
+          "checked": true,
+          "line_num": 94,
+          "tags": [],
+          "text": "Write parser unit tests (NLT YES/NO extraction, structured function parsing)"
+        },
+        {
+          "checked": true,
+          "line_num": 95,
+          "tags": [],
+          "text": "Write evaluator tests (accuracy/variance calculation)"
+        },
+        {
+          "checked": true,
+          "line_num": 96,
+          "tags": [],
+          "text": "Add CLI smoke test"
+        },
+        {
+          "checked": true,
+          "line_num": 97,
+          "tags": [],
+          "text": "Test/verify step"
+        },
+        {
+          "checked": true,
+          "line_num": 98,
+          "tags": [],
+          "text": "Documentation update"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "c10eac3dcdf30ebf",
+      "line_num": 91,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**CSV Tracking System: Build model tracking and aggregated results system**\n- [x] Configure Black for linting and formatting\n- [x] Add pytest configuration\n- [x] Write parser unit tests (NLT YES/NO extraction, structured function parsing)\n- [x] Write evaluator tests (accuracy/variance calculation)\n- [x] Add CLI smoke test\n- [x] Test/verify step\n- [x] Documentation update\n\n`TODO.md:L91`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 420
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 100,
+          "tags": [],
+          "text": "Configure Black for linting and formatting"
+        },
+        {
+          "checked": true,
+          "line_num": 101,
+          "tags": [],
+          "text": "Write parser unit tests (16 tests - NLT YES/NO, tool_calls, exact match, statistics)"
+        },
+        {
+          "checked": true,
+          "line_num": 102,
+          "tags": [],
+          "text": "Write evaluator unit tests (11 tests - single trials, batch eval, error handling)"
+        },
+        {
+          "checked": true,
+          "line_num": 103,
+          "tags": [],
+          "text": "Add pytest configuration to pyproject.toml"
+        },
+        {
+          "checked": true,
+          "line_num": 104,
+          "tags": [],
+          "text": "Add test and test-coverage Makefile targets"
+        },
+        {
+          "checked": true,
+          "line_num": 105,
+          "tags": [],
+          "text": "All tests passing"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "37ad7afba69eeedd",
+      "line_num": 99,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Testing Infrastructure: Build comprehensive test suite**\n- [x] Configure Black for linting and formatting\n- [x] Write parser unit tests (16 tests - NLT YES/NO, tool_calls, exact match, statistics)\n- [x] Write evaluator unit tests (11 tests - single trials, batch eval, error handling)\n- [x] Add pytest configuration to pyproject.toml\n- [x] Add test and test-coverage Makefile targets\n- [x] All tests passing\n\n`TODO.md:L99`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 510
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 107,
+          "tags": [],
+          "text": "Update README with batch evaluation section"
+        },
+        {
+          "checked": true,
+          "line_num": 108,
+          "tags": [],
+          "text": "Update README with Makefile targets reference"
+        },
+        {
+          "checked": true,
+          "line_num": 109,
+          "tags": [],
+          "text": "Overhaul REPLICATION.md with CSV-first workflow"
+        },
+        {
+          "checked": true,
+          "line_num": 110,
+          "tags": [],
+          "text": "Add results organization section (3 CSVs + JSON files)"
+        },
+        {
+          "checked": true,
+          "line_num": 111,
+          "tags": [],
+          "text": "Create DEVELOPMENT.md with developer guide"
+        },
+        {
+          "checked": true,
+          "line_num": 112,
+          "tags": [],
+          "text": "Add troubleshooting and performance optimization guides"
+        },
+        {
+          "checked": true,
+          "line_num": 113,
+          "tags": [],
+          "text": "Document CSV tracking system thoroughly"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "30ba30146b4fbbc8",
+      "line_num": 106,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Comprehensive Documentation: Update all docs with new CSV/batch workflow**\n- [x] Update README with batch evaluation section\n- [x] Update README with Makefile targets reference\n- [x] Overhaul REPLICATION.md with CSV-first workflow\n- [x] Add results organization section (3 CSVs + JSON files)\n- [x] Create DEVELOPMENT.md with developer guide\n- [x] Add troubleshooting and performance optimization guides\n- [x] Document CSV tracking system thoroughly\n\n`TODO.md:L106`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 600
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 118,
+          "tags": [],
+          "text": "Define package layout (core modules for prompts, parsing, orchestration, and sample data)"
+        },
+        {
+          "checked": true,
+          "line_num": 119,
+          "tags": [],
+          "text": "Implement selector/parser pipeline skeleton with Alex/Sage scenarios"
+        },
+        {
+          "checked": true,
+          "line_num": 120,
+          "tags": [],
+          "text": "Add CLI demo for running a selector and parser pass"
+        },
+        {
+          "checked": true,
+          "line_num": 121,
+          "tags": [],
+          "text": "Multi-model support with organized result storage"
+        },
+        {
+          "checked": true,
+          "line_num": 122,
+          "tags": [],
+          "text": "Test/verify step - smoke tests passing"
+        },
+        {
+          "checked": true,
+          "line_num": 123,
+          "tags": [],
+          "text": "Documentation update"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "d9ed82505c23e328",
+      "line_num": 117,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**NLT MVP codebase setup: Scaffold a clean Python package for the Natural Language Tools framework and sample scenarios**\n- [x] Define package layout (core modules for prompts, parsing, orchestration, and sample data)\n- [x] Implement selector/parser pipeline skeleton with Alex/Sage scenarios\n- [x] Add CLI demo for running a selector and parser pass\n- [x] Multi-model support with organized result storage\n- [x] Test/verify step - smoke tests passing\n- [x] Documentation update\n\n`TODO.md:L117`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 690
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 125,
+          "tags": [],
+          "text": "Configure Black for linting and formatting"
+        },
+        {
+          "checked": true,
+          "line_num": 126,
+          "tags": [],
+          "text": "Add pytest configuration"
+        },
+        {
+          "checked": true,
+          "line_num": 127,
+          "tags": [],
+          "text": "Write parser unit tests (NLT YES/NO extraction, structured function parsing)"
+        },
+        {
+          "checked": true,
+          "line_num": 128,
+          "tags": [],
+          "text": "Write evaluator tests (accuracy/variance calculation)"
+        },
+        {
+          "checked": true,
+          "line_num": 129,
+          "tags": [],
+          "text": "Add CLI smoke test"
+        },
+        {
+          "checked": true,
+          "line_num": 130,
+          "tags": [],
+          "text": "Test/verify step"
+        },
+        {
+          "checked": true,
+          "line_num": 131,
+          "tags": [],
+          "text": "Documentation update"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "bdcbd006fe13599f",
+      "line_num": 124,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Linting & Testing: Add Black for linting/formatting and pytest for unit tests**\n- [x] Configure Black for linting and formatting\n- [x] Add pytest configuration\n- [x] Write parser unit tests (NLT YES/NO extraction, structured function parsing)\n- [x] Write evaluator tests (accuracy/variance calculation)\n- [x] Add CLI smoke test\n- [x] Test/verify step\n- [x] Documentation update\n\n`TODO.md:L124`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 780
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 133,
+          "tags": [],
+          "text": "Initialize uv project metadata and dependencies"
+        },
+        {
+          "checked": true,
+          "line_num": 134,
+          "tags": [],
+          "text": "Make package importable (editable install / packaging metadata)"
+        },
+        {
+          "checked": true,
+          "line_num": 135,
+          "tags": [],
+          "text": "Document autoenv integration in CONVENTION.md"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "bf2a4378eeda5389",
+      "line_num": 132,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Environment & tooling (uv): Initialize Python project with uv and add core dependencies and lint/test tooling**\n- [x] Initialize uv project metadata and dependencies\n- [x] Make package importable (editable install / packaging metadata)\n- [x] Document autoenv integration in CONVENTION.md\n\n`TODO.md:L132`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 870
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 137,
+          "tags": [],
+          "text": "Draft README with quickstart and architecture overview"
+        },
+        {
+          "checked": true,
+          "line_num": 138,
+          "tags": [],
+          "text": "Add example prompts/output formats for Alex and Sage"
+        },
+        {
+          "checked": true,
+          "line_num": 139,
+          "tags": [],
+          "text": "Create REPLICATION.md for full study methodology"
+        },
+        {
+          "checked": true,
+          "line_num": 140,
+          "tags": [],
+          "text": "Update CONVENTION.md with autoenv details"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "9fd66b7405394a7d",
+      "line_num": 136,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Docs & README: Document architecture, usage, and examples derived from the NLT paper**\n- [x] Draft README with quickstart and architecture overview\n- [x] Add example prompts/output formats for Alex and Sage\n- [x] Create REPLICATION.md for full study methodology\n- [x] Update CONVENTION.md with autoenv details\n\n`TODO.md:L136`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 960
+    }
+  ]
+}
