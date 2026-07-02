@@ -63,8 +63,9 @@ class SageClient:
 
         if self.debug:
             import time
+
             print(f"[DEBUG] Starting API request at {time.strftime('%H:%M:%S')}", file=sys.stderr)
-            
+
         try:
             with request.urlopen(req, context=context, timeout=self.timeout) as response:
                 if self.debug:

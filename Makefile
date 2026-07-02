@@ -1,4 +1,4 @@
-.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval analyze clean-results clean-aborted help clean test format
+.PHONY: setup demo demo-structured compare-approaches test-phi-4 test-deepseek-r1 test-deepseek-r1-debug run-models run-models-force run-models-quick run-models-debug eval analyze arxiv clean-results clean-aborted help clean test format
 
 # Default target
 all: help
@@ -18,6 +18,7 @@ help:
 	@echo "  make run-models-debug    - Run evaluations with verbose debug output"
 	@echo "  make eval                - Run full evaluation (custom args supported)"
 	@echo "  make analyze             - Analyze aggregated results and show NLT gains"
+	@echo "  make arxiv               - Convert REPLICATION_STUDY.md to arXiv LaTeX package"
 	@echo "  make clean-results       - Remove results for specific models (use MODELS=model1,model2)"
 	@echo "  make clean-aborted       - Remove aborted results, orphan CSV rows, empty dirs (dry-run)"
 	@echo "  make clean-aborted-apply - Actually apply cleanup (delete files)"
@@ -101,6 +102,10 @@ run-models-debug:
 analyze:
 	@echo "Analyzing results..."
 	uv run python src/scripts/analyze_results.py --show-gains
+
+arxiv:
+	@echo "Converting REPLICATION_STUDY.md to arXiv LaTeX package..."
+	uv run python src/scripts/md_to_arxiv.py
 
 clean-results:
 	@if [ -z "$(MODELS)" ]; then \

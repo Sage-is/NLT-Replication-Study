@@ -2,8 +2,16 @@
 .env
 __pycache__/
 *.egg-info/
-results/
+.pytest_cache/
+build/
+dist/
+*.bak
 
+# Generated arXiv package (rebuild with `make arxiv`)
+arxiv/
+
+# results/ is intentionally tracked: the paper (Section 8, Appendix A.2) publishes
+# the per-trial JSONs as reproducibility artifacts and aggregated_results.csv links to them.
 
 #ignore the Obsidian workspace file
 .obsidian/workspace.json

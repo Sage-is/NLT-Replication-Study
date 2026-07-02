@@ -188,8 +188,8 @@ results/
 
 `aggregated_results.csv` contains one row per (model, scenario, approach, perturbed) combination:
 ```csv
-model_id,scenario,approach,perturbed,accuracy,variance,total,errors,timestamp,result_file
-llama-3.1-8b-instant,alex,nlt,no,0.7875,0.1673,80,0,20260112_120343,results/alex/nlt/non_perturbed/llama-3.1-8b-instant/20260112_120343.json
+model_id,scenario,approach,perturbed,accuracy,variance,total,errors,valid_trials,aborted,timestamp,result_file,total_tokens,prompt_tokens,completion_tokens
+google/gemini-2.5-flash-lite,alex,nlt,no,0.825,0.144375,80,0,80,no,20260112_122107,results/alex/nlt/non_perturbed/google_gemini-2.5-flash-lite/20260112_122107.json,44008,37105,6903
 ```
 
 This file is automatically updated by `run_models.py` after each evaluation.

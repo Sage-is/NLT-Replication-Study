@@ -7,7 +7,7 @@ Validating NLT Performance Across 14 Models
 ```
 Authors: A. Somma, I. Plante, F. Premji, E. Fournier-Tombs
 Affiliation: Sage.is AI-UI
-Date: February 18, 2026
+Date: July 2, 2026
 Status: Complete. Follow-up Study Planned
 ```
 
@@ -226,7 +226,7 @@ We replicated the original scenario prompts with minimal adaptations for API com
 ### 2.6 Evaluation Metrics
 
 -   Accuracy: Proportion of exact matches (predicted tools = expected tools)
--   Corrected Accuracy: When a condition produces errors on ≥70 of 80 trials, we treat it as having an effective accuracy of 0%. Raw accuracy over only surviving trials introduces a survivorship bias --- a model that errors on 76/80 trials but gets the remaining 4 correct would report 100% accuracy, misrepresenting what is effectively a catastrophic failure. This correction affects 4 of 107 entries (all Qwen-structured conditions and all Mistral-structured conditions).
+-   Corrected Accuracy: When a condition produces errors on ≥70 of 80 trials, we treat it as having an effective accuracy of 0%. Raw accuracy over only surviving trials introduces a survivorship bias --- a model that errors on 76/80 trials but gets the remaining 4 correct would report 100% accuracy, misrepresenting what is effectively a catastrophic failure. This correction affects 8 of 107 entries (2 models: all Qwen-structured conditions and all Mistral-structured conditions, 4 each).
 -   Variance: Sample variance across replicates
 -   Token Usage: Input, output, and total tokens per trial
 -   Error Rate: Proportion of API errors or parsing failures
@@ -636,7 +636,7 @@ For practitioners, NLT is a useful addition to the tool-calling toolkit, especia
 
 All code, data, and results are available at:
 
--   Repository: <https://github.com/Sage-Future/AI-Natural-Language-Tools>
+-   Repository: <https://github.com/Sage-is/NLT-Replication-Study>
 -   Models: 14 models (see Section 2.4 and models.csv)
 -   Date Range: January 12 -- February 17, 2026
 -   Total Trials: 8,560 across 107 aggregated entries
@@ -644,9 +644,9 @@ All code, data, and results are available at:
 To Reproduce:
 
 ```bash
-git clone https://github.com/Sage-Future/AI-Natural-Language-Tools.git
+git clone https://github.com/Sage-is/NLT-Replication-Study.git
 
-cd AI-Natural-Language-Tools
+cd NLT-Replication-Study
 
 make setup
 ```
@@ -836,6 +836,6 @@ We would also like to thank The Study, the independent bilingual all-girls schoo
 
 Document Status: Complete --- Follow-up Study Planned
 
-Last Updated: Feb 18, 2026
+Last Updated: July 2, 2026
 
 Version: 1.0

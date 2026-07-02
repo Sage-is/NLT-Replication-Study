@@ -42,16 +42,16 @@ def scan_aborted_files(results_dir: Path, verbose: bool = False) -> list[Path]:
                     total = summary.get("total", "?")
                     errors = summary.get("errors", "?")
                     model = summary.get("model", "?")
-                    print(f"  ABORTED: {json_file.relative_to(results_dir)} "
-                          f"(model={model}, total={total}, errors={errors})")
+                    print(
+                        f"  ABORTED: {json_file.relative_to(results_dir)} "
+                        f"(model={model}, total={total}, errors={errors})"
+                    )
         except (json.JSONDecodeError, OSError) as e:
             print(f"  WARNING: Could not read {json_file}: {e}", file=sys.stderr)
     return aborted
 
 
-def scan_incomplete_files(
-    results_dir: Path, expected_total: int, verbose: bool = False
-) -> list[Path]:
+def scan_incomplete_files(results_dir: Path, expected_total: int, verbose: bool = False) -> list[Path]:
     """Find result JSON files with fewer trials than expected (test/smoke runs)."""
     incomplete = []
     for json_file in sorted(results_dir.rglob("*.json")):
@@ -131,9 +131,11 @@ def clean_aggregated_csv(
             counts[reason] = counts.get(reason, 0) + 1
             if verbose or dry_run:
                 tag = "WOULD REMOVE" if dry_run else "REMOVING"
-                print(f"  {tag} [{reason}] CSV row: {row['model_id']} | "
-                      f"{row['scenario']} | {row['approach']} | "
-                      f"perturbed={row['perturbed']} | total={row.get('total', '?')}")
+                print(
+                    f"  {tag} [{reason}] CSV row: {row['model_id']} | "
+                    f"{row['scenario']} | {row['approach']} | "
+                    f"perturbed={row['perturbed']} | total={row.get('total', '?')}"
+                )
         else:
             kept.append(row)
 
@@ -168,23 +170,32 @@ def main():
         epilog=__doc__,
     )
     parser.add_argument(
-        "--apply", action="store_true",
+        "--apply",
+        action="store_true",
         help="Actually delete files (default is dry-run)",
     )
     parser.add_argument(
-        "--expected-total", type=int, default=EXPECTED_TOTAL,
+        "--expected-total",
+        type=int,
+        default=EXPECTED_TOTAL,
         help=f"Expected trial count per run (default: {EXPECTED_TOTAL})",
     )
     parser.add_argument(
-        "--results-dir", type=Path, default=RESULTS_DIR,
+        "--results-dir",
+        type=Path,
+        default=RESULTS_DIR,
         help=f"Results directory (default: {RESULTS_DIR.relative_to(PROJECT_ROOT)})",
     )
     parser.add_argument(
-        "--aggregated-csv", type=Path, default=AGGREGATED_CSV,
+        "--aggregated-csv",
+        type=Path,
+        default=AGGREGATED_CSV,
         help=f"Aggregated CSV path (default: {AGGREGATED_CSV.name})",
     )
     parser.add_argument(
-        "-v", "--verbose", action="store_true",
+        "-v",
+        "--verbose",
+        action="store_true",
         help="Show detailed output",
     )
     args = parser.parse_args()
@@ -203,16 +214,13 @@ def main():
 
     # Step 2: Find incomplete/test JSON files
     print(f"\n[2/5] Scanning for incomplete result files (total < {args.expected_total})...")
-    incomplete_files = scan_incomplete_files(
-        args.results_dir, args.expected_total, verbose=args.verbose
-    )
+    incomplete_files = scan_incomplete_files(args.results_dir, args.expected_total, verbose=args.verbose)
     print(f"      Found {len(incomplete_files)} incomplete file(s)")
 
     # Step 3: Delete bad files
     all_bad_files = aborted_files + incomplete_files
     if all_bad_files:
-        print(f"\n[3/5] {'Would delete' if dry_run else 'Deleting'} "
-              f"{len(all_bad_files)} bad file(s)...")
+        print(f"\n[3/5] {'Would delete' if dry_run else 'Deleting'} " f"{len(all_bad_files)} bad file(s)...")
         for f in all_bad_files:
             if args.verbose or dry_run:
                 tag = "WOULD DELETE" if dry_run else "DELETING"
@@ -225,14 +233,14 @@ def main():
     # Step 4: Clean aggregated CSV
     deleted_set = set(all_bad_files)
     print(f"\n[4/5] Cleaning aggregated CSV...")
-    csv_counts = clean_aggregated_csv(
-        args.aggregated_csv, deleted_set, args.expected_total, dry_run, args.verbose
-    )
+    csv_counts = clean_aggregated_csv(args.aggregated_csv, deleted_set, args.expected_total, dry_run, args.verbose)
     total_csv = sum(csv_counts.values())
-    print(f"      {'Would remove' if dry_run else 'Removed'} {total_csv} row(s): "
-          f"{csv_counts['aborted']} aborted, "
-          f"{csv_counts['incomplete']} incomplete, "
-          f"{csv_counts['orphan']} orphan")
+    print(
+        f"      {'Would remove' if dry_run else 'Removed'} {total_csv} row(s): "
+        f"{csv_counts['aborted']} aborted, "
+        f"{csv_counts['incomplete']} incomplete, "
+        f"{csv_counts['orphan']} orphan"
+    )
 
     # Step 5: Prune empty directories
     print(f"\n[5/5] Pruning empty directories...")
@@ -245,8 +253,10 @@ def main():
     print(f"{'='*60}")
     print(f"  Aborted files:    {len(aborted_files)}")
     print(f"  Incomplete files: {len(incomplete_files)}")
-    print(f"  CSV rows removed: {total_csv} "
-          f"({csv_counts['aborted']}A/{csv_counts['incomplete']}I/{csv_counts['orphan']}O)")
+    print(
+        f"  CSV rows removed: {total_csv} "
+        f"({csv_counts['aborted']}A/{csv_counts['incomplete']}I/{csv_counts['orphan']}O)"
+    )
     print(f"  Empty dirs:       {pruned_dirs}")
 
     grand_total = len(all_bad_files) + total_csv + pruned_dirs

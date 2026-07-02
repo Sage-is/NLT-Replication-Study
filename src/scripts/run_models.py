@@ -18,7 +18,7 @@ def update_models_csv(csv_path: Path, model_id: str, scenario: str, approach: st
     rows = []
     with open(csv_path) as f:
         # Filter out comment lines
-        lines = [line for line in f if not line.strip().startswith('#')]
+        lines = [line for line in f if not line.strip().startswith("#")]
         reader = csv.DictReader(lines)
         fieldnames = reader.fieldnames
         for row in reader:
@@ -31,13 +31,13 @@ def update_models_csv(csv_path: Path, model_id: str, scenario: str, approach: st
     # Write back with comments preserved
     comment_lines = []
     with open(csv_path) as f:
-        comment_lines = [line for line in f if line.strip().startswith('#')]
-    
+        comment_lines = [line for line in f if line.strip().startswith("#")]
+
     with open(csv_path, "w", newline="") as f:
         # Write comments first
         for comment in comment_lines:
             f.write(comment)
-        
+
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
@@ -52,11 +52,11 @@ def update_aggregated_results(
         data = json.load(f)
 
     summary = data.get("summary", {})
-    
+
     # Handle None accuracy/variance (indicates all trials errored - not applicable)
     accuracy = summary.get("accuracy")
     variance = summary.get("variance")
-    
+
     # Store as empty string if None to indicate N/A in CSV
     accuracy_str = "" if accuracy is None else accuracy
     variance_str = "" if variance is None else variance
@@ -86,7 +86,7 @@ def update_aggregated_results(
     total_tokens = 0
     prompt_tokens = 0
     completion_tokens = 0
-    
+
     results_list = data.get("results", [])
     if results_list:
         for res in results_list:
@@ -95,7 +95,7 @@ def update_aggregated_results(
                 total_tokens += int(usage.get("total_tokens") or 0)
                 prompt_tokens += int(usage.get("prompt_tokens") or 0)
                 completion_tokens += int(usage.get("completion_tokens") or 0)
-    
+
     new_row["total_tokens"] = total_tokens
     new_row["prompt_tokens"] = prompt_tokens
     new_row["completion_tokens"] = completion_tokens
@@ -148,15 +148,17 @@ def update_aggregated_results(
         writer.writerows(rows)
 
 
-def get_latest_result_file(results_dir: Path, model_id: str, scenario: str, approach: str, perturbed: bool) -> Path | None:
+def get_latest_result_file(
+    results_dir: Path, model_id: str, scenario: str, approach: str, perturbed: bool
+) -> Path | None:
     """Find the latest result JSON file for a given configuration."""
     perturb_str = "perturbed" if perturbed else "non_perturbed"
     safe_model = model_id.replace("/", "_").replace(":", "_")
-    
+
     result_path = results_dir / scenario / approach / perturb_str / safe_model
     if not result_path.exists():
         return None
-    
+
     json_files = sorted(result_path.glob("*.json"), reverse=True)
     return json_files[0] if json_files else None
 
@@ -202,7 +204,7 @@ def run_evaluation(
     sample_limit: int | None = None,
     timeout: int | None = None,
     api_url: str | None = None,
-    args = None,
+    args=None,
 ) -> bool:
     """Run evaluation for a model/scenario/approach combination."""
     cmd = [
@@ -223,14 +225,14 @@ def run_evaluation(
         cmd.append("--perturbed")
     if sample_limit:
         cmd.extend(["--sample-limit", str(sample_limit)])
-    
+
     # Add timeout for large models
     if timeout:
         cmd.extend(["--timeout", str(timeout)])
 
     if api_url:
         cmd.extend(["--api-url", api_url])
-    
+
     # Add verbose/debug flags if present
     if args and args.verbose:
         cmd.append("--verbose")
@@ -256,27 +258,23 @@ def run_evaluation(
 def main():
     parser = argparse.ArgumentParser(description="Run evaluations from models CSV")
     parser.add_argument("--csv", default=str(PROJECT_ROOT / "models.csv"), help="Path to models CSV file")
-    parser.add_argument("--results-dir", default=str(PROJECT_ROOT / "results"), help="Results directory to check for existing runs")
-    parser.add_argument("--aggregated-csv", default=str(PROJECT_ROOT / "aggregated_results.csv"), help="Path to aggregated results CSV")
     parser.add_argument(
-        "--force", action="store_true", help="Rerun all models even if they have results"
+        "--results-dir", default=str(PROJECT_ROOT / "results"), help="Results directory to check for existing runs"
     )
+    parser.add_argument(
+        "--aggregated-csv", default=str(PROJECT_ROOT / "aggregated_results.csv"), help="Path to aggregated results CSV"
+    )
+    parser.add_argument("--force", action="store_true", help="Rerun all models even if they have results")
     parser.add_argument("--scenarios", nargs="+", default=["alex", "sage"], help="Scenarios to run")
-    parser.add_argument(
-        "--approaches", nargs="+", default=["nlt", "structured"], help="Approaches to run"
-    )
+    parser.add_argument("--approaches", nargs="+", default=["nlt", "structured"], help="Approaches to run")
     parser.add_argument("--replicates", type=int, default=5, help="Number of replicates per input")
     parser.add_argument("--sample-limit", type=int, help="Limit number of inputs (for testing)")
     parser.add_argument("--skip-perturbed", action="store_true", help="Only run non-perturbed prompts")
     parser.add_argument(
         "--timeout", type=int, default=600, help="API timeout in seconds for individual model calls (default: 600)"
     )
-    parser.add_argument(
-        "--verbose", "-v", action="store_true", help="Enable verbose output"
-    )
-    parser.add_argument(
-        "--debug", action="store_true", help="Enable debug logging (includes API requests/responses)"
-    )
+    parser.add_argument("--verbose", "-v", action="store_true", help="Enable verbose output")
+    parser.add_argument("--debug", action="store_true", help="Enable debug logging (includes API requests/responses)")
 
     args = parser.parse_args()
 
@@ -285,7 +283,7 @@ def main():
     models = []
     with open(args.csv) as f:
         # Filter out comment lines
-        lines = [line for line in f if not line.strip().startswith('#')]
+        lines = [line for line in f if not line.strip().startswith("#")]
         reader = csv.DictReader(lines)
         models = [m for m in reader if m.get("run", "yes").lower() == "yes"]
 
@@ -311,7 +309,7 @@ def main():
                 if key in completed and not args.force:
                     print(f"SKIP: {model_id} | {scenario} | {approach} | non-perturbed (already completed)")
                     skipped_runs += 1
-                    
+
                     # Still update aggregated results if file exists
                     result_file = get_latest_result_file(
                         Path(args.results_dir), model_id, scenario, approach, perturbed=False
@@ -329,14 +327,14 @@ def main():
                         perturbed=False,
                         sample_limit=args.sample_limit,
                         timeout=args.timeout,
-                            api_url=api_url,
+                        api_url=api_url,
                         args=args,
                     )
                     total_runs += 1
                     if success:
                         # Update models.csv
                         update_models_csv(Path(args.csv), model_id, scenario, approach)
-                        
+
                         # Update aggregated results
                         result_file = get_latest_result_file(
                             Path(args.results_dir), model_id, scenario, approach, perturbed=False
@@ -354,7 +352,7 @@ def main():
                     if key_perturbed in completed and not args.force:
                         print(f"SKIP: {model_id} | {scenario} | {approach} | perturbed (already completed)")
                         skipped_runs += 1
-                        
+
                         # Still update aggregated results if file exists
                         result_file = get_latest_result_file(
                             Path(args.results_dir), model_id, scenario, approach, perturbed=True
@@ -379,7 +377,7 @@ def main():
                         if success:
                             # Update models.csv (same column, just marks scenario/approach done)
                             update_models_csv(Path(args.csv), model_id, scenario, approach)
-                            
+
                             # Update aggregated results
                             result_file = get_latest_result_file(
                                 Path(args.results_dir), model_id, scenario, approach, perturbed=True

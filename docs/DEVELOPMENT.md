@@ -73,11 +73,19 @@ results/                     # Auto-generated evaluation results
 │   └── structured/
 └── sage/
 
+src/scripts/
+├── run_models.py            # Batch evaluation runner
+├── run_study.sh             # Full study execution script
+├── analyze_results.py       # Results analysis tool
+├── clean_aborted.py         # Result hygiene / cleanup
+├── backfill_tokens.py       # Backfill token counts into results
+└── md_to_arxiv.py           # Convert REPLICATION_STUDY.md to arXiv LaTeX (make arxiv)
+
+assets/
+└── generate-charts.py       # Chart generation (needs the "viz" extra)
+
 models.csv                   # Model tracking with completion status
 aggregated_results.csv       # All results in one CSV
-run_models.py                # Batch evaluation runner
-run_study.sh                 # Full study execution script
-analyze_results.py           # Results analysis tool
 ```
 
 ## Testing Workflow
@@ -188,8 +196,8 @@ yes,model-id,provider,size,yes/no,no,no,no,no,Description
 One row per (model, scenario, approach, perturbed) combination:
 
 ```csv
-model_id,scenario,approach,perturbed,accuracy,variance,total,errors,timestamp,result_file
-llama-3.1-8b-instant,alex,nlt,no,0.7875,0.1673,80,0,20260112_120343,results/...
+model_id,scenario,approach,perturbed,accuracy,variance,total,errors,valid_trials,aborted,timestamp,result_file,total_tokens,prompt_tokens,completion_tokens
+google/gemini-2.5-flash-lite,alex,nlt,no,0.825,0.144375,80,0,80,no,20260112_122107,results/alex/nlt/non_perturbed/google_gemini-2.5-flash-lite/20260112_122107.json,44008,37105,6903
 ```
 
 Auto-updated by `run_models.py` after each evaluation.

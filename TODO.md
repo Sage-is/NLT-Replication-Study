@@ -1,4 +1,26 @@
-# 🔥 This Week (January 18, 2026)
+# 🔥 This Week (July 1, 2026)
+
+### 🔥 Study Verification & Repair
+- [x] **Verify the study end-to-end and repair issues**: Full offline verification of harness, pipeline, data, and docs
+  - [x] Rewrite tests/test_evaluator.py against current evaluator API (client-based, TrialResult dataclass) — suite green (27 passed)
+  - [x] Fix doc/script path mismatches (`python src/scripts/analyze_results.py`, `bash src/scripts/run_study.sh`), `$SAGE_AUTH_TOKEN`, §8 clone URL, stale 10-col CSV schema → real 15-col schema
+  - [x] Correct REPLICATION_STUDY.md §2.6 survivorship count: 4 → 8 of 107 entries (2 models), verified against aggregated_results.csv
+  - [x] .gitignore: stop ignoring tracked `results/` reproducibility data; add .pytest_cache/, build/, dist/, *.bak
+  - [x] Declare chart deps as `viz` extra in pyproject.toml (`uv pip install -e ".[viz]"`)
+  - [x] chmod +x src/scripts/{clean_aborted.py,run_study.sh}; add src/nlt/api/__init__.py
+- [x] **arXiv submission pipeline**: `make arxiv` converts REPLICATION_STUDY.md (Obsidian vault source of truth) to an arXiv-ready LaTeX package
+  - [x] src/scripts/md_to_arxiv.py: programmatic handling of Obsidian embeds, Notion-split tables, bogus/relative links, LaTeX-hostile Unicode, metadata + abstract extraction
+  - [x] Compile-verified with tectonic (28-page PDF); tarball at arxiv/arxiv-submission.tar.gz
+  - [x] Validates arXiv's 1,920-char abstract limit (currently 1,719) and package size
+- [ ] **🔶 Re-run live API smoke test once a fresh SAGE_AUTH_TOKEN is provisioned**
+  - [ ] Create `.env` with valid `SAGE_AUTH_TOKEN`
+  - [ ] `make demo` and `make demo-structured` (live round-trip, NLT + structured)
+  - [ ] `make run-models-quick` (batch runner end-to-end)
+  - [ ] Verify new results append correctly to aggregated_results.csv (15-col schema)
+
+# Previous Weeks
+
+## 🔥 Week of January 18, 2026
 
 ### ✅ Repository Cleanup & Reorganization - COMPLETE
 - [x] **Clean up repository structure**: Move scripts to src/, keep only essential files in root

@@ -21,7 +21,7 @@ uv pip install -e .
 3) Run the CLI (token loads from .env if you use autoenv/direnv):
 ```bash
 python -m nlt.cli \
-  --auth-token "$SAGE_TOKEN" \
+  --auth-token "$SAGE_AUTH_TOKEN" \
   --model "llama-3.1-8b-instant" \
   --scenario alex \
   --approach nlt \
