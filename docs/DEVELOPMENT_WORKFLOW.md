@@ -21,10 +21,11 @@
 - **Current work goes at the top** - Always add new tasks to the current week section
 - **Use priority emojis** - 🔥 Critical, 🔶 High, 🔷 Medium, 🔹 Low, ✅ Done
 - **Move completed work down** - When tasks are done, move them to "Previous Weeks" section
-- **Keep reverse chronological order** - Newest completed work appears first in Previous WeeksCore Principles
+- **Keep reverse chronological order** - Newest completed work appears first in Previous Weeks
+
+## Core Principles
 
 Every development task follows the **Plan-Document-Execute-Verify** cycle:
-
 
 0. **DRY** **KISS** - Don't Repeat Yourself (ever in Code) and Keep It Simple, Stupid
 1. **Plan** - Add to TODO before doing any work

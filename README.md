@@ -76,9 +76,9 @@ Results are aggregated in `aggregated_results.csv` with accuracy/variance per (m
 
 View summary statistics:
 ```bash
-./analyze_results.py                    # Print summary to terminal
-./analyze_results.py --show-gains       # Include NLT vs Structured gains
-./analyze_results.py --export summary.csv  # Export to CSV
+python src/scripts/analyze_results.py                    # Print summary to terminal
+python src/scripts/analyze_results.py --show-gains       # Include NLT vs Structured gains
+python src/scripts/analyze_results.py --export summary.csv  # Export to CSV
 ```
 
 ## Documentation

@@ -75,7 +75,7 @@ Repo: https://github.com/Sage-Future/AI-Natural-Language-Tools
 >
 > That's 25.2% fewer tokens — which at API prices means 25.2% cheaper.
 >
-> You're paying more to get worse results. Let that sink in.
+> You're paying more to get worse results.
 
 ### The Model Tier Breakdown
 

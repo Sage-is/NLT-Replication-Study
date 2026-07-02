@@ -40,21 +40,13 @@ curl -s https://sage.startr.cloud/api/models \
 
 ## Running the Full Study
 
-### Quick Start with CSV Batch System
-### Manual Single Configuration
+### Quick Start with CSV Batch System (recommended)
 
-For running individual configurations (useful for debugging):
+The batch runner reads `models.csv`, runs every enabled model across all 8 conditions, and updates the result CSVs as it goes.
 
-```bash
-# NLT approach, Alex scenario, non-perturbed, 5 replicates
-.venv/bin/python -m nlt.cli \
-  --scenario alex \
-  --approach nlt \
-  --model llama-3.1-8b-instant \
-  --replicates 5
-```
+**1. Choose which models to run:**
+Set `run=yes` for the models you want in `models.csv` (and `run=no` to skip).
 
-### Legacy: Full Factorial Design Script
 **2. Run batch evaluation:**
 ```bash
 # Run all models where run=yes, skip completed evaluations
@@ -70,13 +62,13 @@ make run-models-quick
 **3. Analyze results:**
 ```bash
 # View summary statistics
-./analyze_results.py
+python src/scripts/analyze_results.py
 
 # Show NLT gains over structured approach
-./analyze_results.py --show-gains
+python src/scripts/analyze_results.py --show-gains
 
 # Export summary to CSV
-./analyze_results.py --export summary.csv
+python src/scripts/analyze_results.py --export summary.csv
 ```
 
 **4. Track progress:**
@@ -96,13 +88,13 @@ make run-models           # Re-queue cleaned conditions
 For a complete study run with automatic analysis:
 ```bash
 # Full study (5 replicates, all perturbations)
-./run_study.sh
+bash src/scripts/run_study.sh
 
 # Quick test run
-./run_study.sh --quick
+bash src/scripts/run_study.sh --quick
 
 # Force rerun everything
-./run_study.sh --force
+bash src/scripts/run_study.sh --force
 ```
 
 This script:
@@ -112,18 +104,20 @@ This script:
 4. Generates summary statistics and exports to CSV
 
 ### Manual Single Configuration
+
+For running individual configurations (useful for debugging):
 ```bash
 # NLT approach, Alex scenario, non-perturbed, 5 replicates
 .venv/bin/python -m nlt.cli \
   --scenario alex \
   --approach nlt \
-  --Legacy: Full Factorial Design Script
-
-> **Note**: The CSV batch system (above) is now the recommended approach. This manual script is provided for reference.stant \
+  --model llama-3.1-8b-instant \
   --replicates 5
 ```
 
-### Full Factorial Design
+### Legacy: Full Factorial Design Script
+
+> **Note**: The CSV batch system above is now the recommended approach. This manual script is kept for reference.
 
 Run all 8 conditions per model (2 scenarios × 2 approaches × 2 perturbations):
 
@@ -152,7 +146,7 @@ for model in "${MODELS[@]}"; do
         --model "$model" \
         --replicates $REPLICATES \
         --delay-seconds 0.5
-      
+
       # Perturbed
       .venv/bin/python -m nlt.cli \
         --scenario "$scenario" \
@@ -170,9 +164,15 @@ echo "Study complete. Results saved to results/"
 
 **Usage**:
 ```bash
-ch Results Organization
+chmod +x run_full_study.sh
+./run_full_study.sh
+```
 
-The batch system maintains three result locations:
+**Expected runtime**: ~15-30 minutes per model (depends on API latency and rate limits)
+
+## Results Organization
+
+The batch system maintains three result locations.
 
 ### 1. Individual JSON Files
 ```
@@ -204,12 +204,6 @@ yes,llama-3.1-8b-instant,meta,8b,yes,yes,yes,no,no,Llama 3.1 with tool calling
 
 Status columns automatically update to `yes` after successful completion.
 
-### Individual {approach}/        # nlt or structured
-      {perturbed}/     # perturbed or non_perturbed
-        {model}/       # sanitized model name
-          {timestamp}.json
-```
-
 ### Result File Format
 
 Each JSON file contains:
@@ -229,29 +223,33 @@ Each JSON file contains:
   "results": [
     {
       "input_id": 1,
-    Using analyze_results.py (Recommended)
-
-### Manual Analysis with CSV
-
-Use standard CSV tools to analyze `aggregated_results.csv`:
-
-```bash
-# Filter to NLT results only
-grep ",nlt," aggregated_results.csv
-
-# Calculate mean accuracy for a specific model
-grep "llama-3.1-8b-instant" aggregated_results.csv | \
-  awk -F',' '{sum+=$5; count++} END {print sum/count}'
-
-# Find all errors
-awk -F',' '$8 > 0' aggregated_results.csv
+      "expected_tools": ["Website information", "Past Purchases"],
+      "predicted_tools": ["Website information", "Past Purchases"],
+      "success": true,
+      "raw_output": "...",
+      "usage": {
+        "prompt_tokens": 500,
+        "completion_tokens": 120,
+        "total_tokens": 620
+      }
+    }
+  ]
+}
 ```
 
-### Manual Analysis with JSON Files
+## Analysis
 
-For detailed inspection of individual runs:
+### Using analyze_results.py (recommended)
+
+```bash
+# View summary statistics
+python src/scripts/analyze_results.py
+
+# Include NLT vs Structured gains
+python src/scripts/analyze_results.py --show-gains
+
 # Export to CSV for spreadsheet analysis
-./analyze_results.py --export summary.csv
+python src/scripts/analyze_results.py --export summary.csv
 ```
 
 **Output includes:**
@@ -277,43 +275,34 @@ STRUCTURED:
   Mean Accuracy: 62.5%
   Mean Variance: 0.2341
   Total Errors: 2
-Smoke Testing Before Full Run
+```
 
-Always validate setup with a quick test:
+### Manual Analysis with CSV
+
+Use standard CSV tools to analyze `aggregated_results.csv`:
 
 ```bash
-# Quick test via Makefile (recommended)
-make run-models-quick
+# Filter to NLT results only
+grep ",nlt," aggregated_results.csv
 
-# Or manual CLI test
-.venv/bin/python -m nlt.cli \
-  --scenario alex \
-  --approach nlt \
-  --model llama-3.1-8b-instant \
-  --sample-limit 2 \
-  --replicates 1
+# Calculate mean accuracy for a specific model
+grep "llama-3.1-8b-instant" aggregated_results.csv | \
+  awk -F',' '{sum+=$5; count++} END {print sum/count}'
+
+# Find all errors
+awk -F',' '$8 > 0' aggregated_results.csv
 ```
 
-**Checklist before full run:**
-- [ ] `SAGE_AUTH_TOKEN` is set in `.env`
-- [ ] Virtual environment is activated
-- [ ] Quick test runs without errors
-- [ ] Results appear in `results/` directory
-- [ ] `models.csv` has correct models with `run=yes
-```
+### Manual Analysis with JSON Files
 
-## Analysis
-
-### Aggregate Results Across Models
-
+Collect NLT accuracy scores for a single scenario:
 ```bash
 # Example: Collect all NLT accuracy scores for Alex scenario
 find results/alex/nlt/non_perturbed -name "*.json" \
   -exec jq -r '"\(.summary.model): \(.summary.accuracy)"' {} \;
 ```
 
-### Compare NLT vs Structured
-
+Compare NLT vs Structured across all runs:
 ```python
 import json
 from pathlib import Path
@@ -322,22 +311,22 @@ from collections import defaultdict
 def analyze_results(results_dir="results"):
     """Compare NLT vs Structured approaches."""
     accuracies = defaultdict(lambda: {"nlt": [], "structured": []})
-    
+
     for json_file in Path(results_dir).rglob("*.json"):
         with open(json_file) as f:
             data = json.load(f)
-        
+
         model = data["summary"]["model"]
         approach = data["summary"]["approach"]
         accuracy = data["summary"]["accuracy"]
-        
+
         accuracies[model][approach].append(accuracy)
-    
+
     for model, approaches in accuracies.items():
         nlt_mean = sum(approaches["nlt"]) / len(approaches["nlt"])
         struct_mean = sum(approaches["structured"]) / len(approaches["structured"])
         gain = nlt_mean - struct_mean
-        
+
         print(f"{model}:")
         print(f"  NLT: {nlt_mean:.2%}")
         print(f"  Structured: {struct_mean:.2%}")
@@ -357,10 +346,13 @@ If you encounter rate limits:
 
 ## Smoke Testing Before Full Run
 
-Always validate with a small sample first:
+Always validate setup with a small sample first:
 
 ```bash
-# Quick 2-input test across all conditions
+# Quick test via Makefile (recommended)
+make run-models-quick
+
+# Or manual CLI test across all conditions
 for scenario in alex sage; do
   for approach in nlt structured; do
     .venv/bin/python -m nlt.cli \
@@ -372,6 +364,13 @@ for scenario in alex sage; do
   done
 done
 ```
+
+**Checklist before full run:**
+- [ ] `SAGE_AUTH_TOKEN` is set in `.env`
+- [ ] Virtual environment is activated
+- [ ] Quick test runs without errors
+- [ ] Results appear in `results/` directory
+- [ ] `models.csv` has correct models with `run=yes`
 
 ## Expected Outcomes (Original Paper)
 
@@ -396,7 +395,24 @@ done
 
 ### Cleaning Up Failed Runs
 
-If API outages (e.g. Cloudflare blocks) or interrupted runs leave bad data:\n\n```bash\n# Preview what would be cleaned (safe, no changes)\nmake clean-aborted\n\n# Delete aborted/incomplete files, fix aggregated CSV, prune empty dirs\nmake clean-aborted-apply\n```\n\nThis detects:\n- **Aborted runs** — `summary.aborted=True` (all trials errored)\n- **Incomplete runs** — test/smoke results with `total < 80` trials\n- **Orphan CSV rows** — `aggregated_results.csv` entries with missing files\n\nAfter cleanup, `make run-models` will re-queue the cleaned conditions.\n\n### Model Not Found
+If API outages (e.g. Cloudflare blocks) or interrupted runs leave bad data:
+
+```bash
+# Preview what would be cleaned (safe, no changes)
+make clean-aborted
+
+# Delete aborted/incomplete files, fix aggregated CSV, prune empty dirs
+make clean-aborted-apply
+```
+
+This detects:
+- **Aborted runs** — `summary.aborted=True` (all trials errored)
+- **Incomplete runs** — test/smoke results with `total < 80` trials
+- **Orphan CSV rows** — `aggregated_results.csv` entries with missing files
+
+After cleanup, `make run-models` will re-queue the cleaned conditions.
+
+### Model Not Found
 - Check available models via Sage API
 - Verify model name format (provider/model-name)
 

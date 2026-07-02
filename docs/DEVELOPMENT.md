@@ -14,22 +14,22 @@ make run-models-force        # Rerun everything
 make run-models-quick        # Quick test (2 inputs, 1 replicate)
 
 # Full study with automatic analysis
-./run_study.sh               # Full 2×2×2 factorial
-./run_study.sh --quick       # Quick test
-./run_study.sh --force       # Force rerun
+bash src/scripts/run_study.sh               # Full 2×2×2 factorial
+bash src/scripts/run_study.sh --quick       # Quick test
+bash src/scripts/run_study.sh --force       # Force rerun
 ```
 
 ### Analyzing Results
 
 ```bash
 # View summary statistics
-./analyze_results.py
+python src/scripts/analyze_results.py
 
 # Include NLT vs Structured gains
-./analyze_results.py --show-gains
+python src/scripts/analyze_results.py --show-gains
 
 # Export summary to CSV
-./analyze_results.py --export summary.csv
+python src/scripts/analyze_results.py --export summary.csv
 ```
 
 ### Development Tools
@@ -143,7 +143,7 @@ make run-models              # Runs only new models
 
 4. Check results:
 ```bash
-./analyze_results.py --show-gains
+python src/scripts/analyze_results.py --show-gains
 ```
 
 ## Adding New Scenarios
@@ -227,13 +227,13 @@ Auto-updated by `run_models.py` after each evaluation.
 **Usage patterns:**
 ```bash
 # Quick terminal summary
-./analyze_results.py
+python src/scripts/analyze_results.py
 
 # Include gain analysis
-./analyze_results.py --show-gains
+python src/scripts/analyze_results.py --show-gains
 
 # Export for Excel/Google Sheets
-./analyze_results.py --export summary.csv
+python src/scripts/analyze_results.py --export summary.csv
 ```
 
 ## Study Execution
@@ -265,7 +265,7 @@ make format
 ### API errors in results
 ```bash
 # Check error count
-./analyze_results.py | grep "Total Errors"
+python src/scripts/analyze_results.py | grep "Total Errors"
 
 # Inspect individual result
 cat results/alex/nlt/non_perturbed/model-name/*.json | jq '.results[] | select(.error != null)'
