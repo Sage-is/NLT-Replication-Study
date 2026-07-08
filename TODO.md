@@ -27,6 +27,12 @@
 
 ## TODO
 
+- [ ] **NLT Program Reorg — Phase 1, NLT-1 pre-publication metadata**: Must land before the arXiv submission (Backlog below) — the paper links this repo, and publication day drives readers to HEAD. Approved plan: `~/.claude/plans/prancy-strolling-hollerith.md` #critical
+  - [ ] [WE] Rewrite FOLLOWUP_STUDY_DESIGN.md → short research-program overview (NLT-2 / NLT-3 / routing+LoRA tech-report split; one headline claim per study; rot-proof: single stable link to the Sage-is org page, no future repo URLs)
+  - [ ] [WE] Add CITATION.cff (preferred-citation: the paper; Somma, Plante, Premji; arXiv ID backfilled post-submission)
+  - [ ] [WE] README: program pointer line, freeze-policy note, "How to cite" section
+  - [ ] [MANUALLY] Review, commit, push; set repo description + topics in GitHub UI
+  - [ ] Test/verify step: `make arxiv` rebuilds clean, `make test` green, CITATION.cff validates (GitHub "Cite this repository" appears)
 - [ ] **TodoScope Alignment**: Finish aligning this repo with TodoScope conventions
   - [x] Restructure TODO.md to conventions
   - [x] Create `.todoscope-exclude.csv` (`.venv`, `.pytest_cache`, `__pycache__`, `src/nlt.egg-info`, `arxiv`, `results`, `.obsidian`)
@@ -46,6 +52,13 @@
   - [ ] Record the assigned arXiv ID once published
   - [ ] Update README.md / REPLICATION_STUDY.md citation block with the live arXiv link
   - [ ] Cross-post per SOCIAL_SHARES.md plan
+
+- [ ] **NLT Program Reorg — Phases 2–6** (post-arXiv; full sequencing, gates, and risks in `~/.claude/plans/prancy-strolling-hollerith.md`)
+  - [ ] Phase 2 — NLT-1 freeze + DOI: [MANUALLY] enable Zenodo webhook, tag v1.0.0, GitHub release; [WE] backfill arXiv ID/DOI into CITATION.cff/README; metadata/errata lane only thereafter (never GitHub-archive)
+  - [ ] Phase 3 — nlt-py birth (GATED on license decision): [WE] one-page license brief (Apache-2.0 vs AGPL vs dual vs MIT) → [MANUALLY] team decides; [WE] add LICENSE, README, NLT-A-CONVENTION.md (Status: DRAFT), CITATION.cff, CHANGELOG, scope the `_prompts.py` validation claim to Phase-1 selection; [MANUALLY] first commit, create Sage-is/nlt-py, push, tag v0.1.0, publish to PyPI (`nlt-tools` free as of 2026-07-05)
+  - [ ] Phase 4 — startr_team hardening: [WE] pin nlt-tools==0.1.x, fix `OpenCoca/nlt-py` → Sage-is pointer, add grid-contract conformance fixtures; WEB-Startr.Team convention banner + llms.txt; [MANUALLY] commits/pushes
+  - [ ] Phase 5 — NLT-2 repo seed: [WE] scaffold README + PREREGISTRATION.md (draft Phase A + the four defect fixes; single-pass vs two-phase arms decided at team review); convention freeze = nlt-py 1.0.0 in the same step as pre-registration; [MANUALLY] create repo, push, optional OSF registration
+  - [ ] Phase 6 — program hub: [WE] draft Sage-is/.github org profile README (study/claim/status/links table); [MANUALLY] create repo, push; routing+LoRA numbers land later as a tech report in library/framework docs
 
 ## Bugs
 
