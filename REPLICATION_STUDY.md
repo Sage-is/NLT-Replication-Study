@@ -1,3 +1,20 @@
+---
+type: article
+created: 2026-02-18
+project: nlt
+authors:
+  - A. Somma
+  - I. Plante
+  - F. Premji
+affiliation: Sage.is AI-UI
+tags:
+  - nlt
+  - replication-study
+  - ai
+  - research
+  - tool-calling
+---
+
 The Remarkable Effectiveness of Providing AI Agents with Natural Language Tools: A Replication Study
 =====================================================
 
