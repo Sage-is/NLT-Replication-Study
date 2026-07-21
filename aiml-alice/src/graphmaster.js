@@ -130,19 +130,22 @@ export class Graphmaster {
       pattern: [],
       that: [],
       topic: [],
-    }, 'pattern');
+    }, 'pattern', 0);
 
     return result;
   }
 
   /**
-   * Recursive depth-first matching with backtracking
+   * Recursive depth-first matching with backtracking.
+   * @param {number} lit - Count of literal (non-wildcard) tokens matched in the
+   *   pattern dimension so far. Surfaced on the result as `specificity`; a pure
+   *   catch-all `*` match yields specificity 0, letting callers treat it as a miss.
    */
-  _matchNode(node, path, index, stars, dimension) {
+  _matchNode(node, path, index, stars, dimension, lit = 0) {
     // Base case: consumed all input
     if (index >= path.length) {
       if (node.template) {
-        return { template: node.template, stars: { ...stars }, filename: node.filename };
+        return { template: node.template, stars: { ...stars }, filename: node.filename, specificity: lit };
       }
       return null;
     }
@@ -152,13 +155,13 @@ export class Graphmaster {
     // Handle separators - switch dimension
     if (word === THAT_SEPARATOR) {
       if (node.words.has(THAT_SEPARATOR)) {
-        return this._matchNode(node.words.get(THAT_SEPARATOR), path, index + 1, stars, 'that');
+        return this._matchNode(node.words.get(THAT_SEPARATOR), path, index + 1, stars, 'that', lit);
       }
       return null;
     }
     if (word === TOPIC_SEPARATOR) {
       if (node.words.has(TOPIC_SEPARATOR)) {
-        return this._matchNode(node.words.get(TOPIC_SEPARATOR), path, index + 1, stars, 'topic');
+        return this._matchNode(node.words.get(TOPIC_SEPARATOR), path, index + 1, stars, 'topic', lit);
       }
       return null;
     }
@@ -174,10 +177,14 @@ export class Graphmaster {
 
     let result;
 
+    // Literal matches (exact word, $ priority, <set>) increment specificity in
+    // the pattern dimension; wildcards (#, _, ^, *) do not.
+    const litInc = dimension === 'pattern' ? 1 : 0;
+
     // Priority 1: $ priority words
     for (const [w, child] of node.dollar) {
       if (word === w) {
-        result = this._matchNode(child, path, index + 1, stars, dimension);
+        result = this._matchNode(child, path, index + 1, stars, dimension, lit + litInc);
         if (result) return result;
       }
     }
@@ -188,7 +195,7 @@ export class Graphmaster {
       for (let len = 0; len <= separatorIdx - index; len++) {
         const captured = path.slice(index, index + len).join(' ');
         const newStars = { ...stars, [dimension]: [...stars[dimension], captured] };
-        result = this._matchNode(node.hash, path, index + len, newStars, dimension);
+        result = this._matchNode(node.hash, path, index + len, newStars, dimension, lit);
         if (result) return result;
       }
     }
@@ -198,7 +205,7 @@ export class Graphmaster {
       for (let len = 1; len <= separatorIdx - index; len++) {
         const captured = path.slice(index, index + len).join(' ');
         const newStars = { ...stars, [dimension]: [...stars[dimension], captured] };
-        result = this._matchNode(node.underscore, path, index + len, newStars, dimension);
+        result = this._matchNode(node.underscore, path, index + len, newStars, dimension, lit);
         if (result) return result;
       }
     }
@@ -206,7 +213,7 @@ export class Graphmaster {
     // Priority 4: Exact word match
     const upper = word.toUpperCase();
     if (node.words.has(upper)) {
-      result = this._matchNode(node.words.get(upper), path, index + 1, stars, dimension);
+      result = this._matchNode(node.words.get(upper), path, index + 1, stars, dimension, lit + litInc);
       if (result) return result;
     }
 
@@ -215,7 +222,7 @@ export class Graphmaster {
       const setValues = this.sets.get(setName);
       if (setValues && setValues.has(upper)) {
         const newStars = { ...stars, [dimension]: [...stars[dimension], upper] };
-        result = this._matchNode(child, path, index + 1, newStars, dimension);
+        result = this._matchNode(child, path, index + 1, newStars, dimension, lit + litInc);
         if (result) return result;
       }
       // Also try multi-word set values
@@ -224,7 +231,7 @@ export class Graphmaster {
           const phrase = path.slice(index, index + len).join(' ').toUpperCase();
           if (setValues.has(phrase)) {
             const newStars = { ...stars, [dimension]: [...stars[dimension], phrase] };
-            result = this._matchNode(child, path, index + len, newStars, dimension);
+            result = this._matchNode(child, path, index + len, newStars, dimension, lit + litInc);
             if (result) return result;
           }
         }
@@ -236,7 +243,7 @@ export class Graphmaster {
       for (let len = 0; len <= separatorIdx - index; len++) {
         const captured = path.slice(index, index + len).join(' ');
         const newStars = { ...stars, [dimension]: [...stars[dimension], captured] };
-        result = this._matchNode(node.caret, path, index + len, newStars, dimension);
+        result = this._matchNode(node.caret, path, index + len, newStars, dimension, lit);
         if (result) return result;
       }
     }
@@ -246,7 +253,7 @@ export class Graphmaster {
       for (let len = 1; len <= separatorIdx - index; len++) {
         const captured = path.slice(index, index + len).join(' ');
         const newStars = { ...stars, [dimension]: [...stars[dimension], captured] };
-        result = this._matchNode(node.star, path, index + len, newStars, dimension);
+        result = this._matchNode(node.star, path, index + len, newStars, dimension, lit);
         if (result) return result;
       }
     }

@@ -238,6 +238,55 @@ export class AIMLEngine {
   }
 
   /**
+   * Precache gate: attempt a response WITHOUT the default fallback.
+   *
+   * Returns { matched, reply, hits, total }. `matched` is true only when every
+   * non-empty normalized sentence hits a real AIML category — i.e. a confident,
+   * deterministic answer the bot can serve for free. On a miss, `reply` is null
+   * and session state is left untouched, so an LLM agent router can own the turn.
+   *
+   * Intended use: call this first; on a hit, serve `reply` (cache hit); on a
+   * miss, route to the agent.
+   *
+   * A match against the catch-all wildcard (`<pattern>*</pattern>`) carries zero
+   * literal anchors (specificity 0) and is treated as a MISS — that is exactly the
+   * generic filler the agent should override. `minSpecificity` (default 1) is the
+   * number of literal tokens a sentence must match to count as a confident hit.
+   *
+   * @param {string} input - Raw user input
+   * @param {Session|string} sessionOrId
+   * @param {{minSpecificity?: number}} [opts]
+   * @returns {{matched: boolean, reply: string|null, hits: number, total: number, minSpecificity: number}}
+   */
+  tryRespond(input, sessionOrId, opts = {}) {
+    const minSpecificity = opts.minSpecificity ?? 1;
+    const session = this._resolveSession(sessionOrId);
+    const sentences = this.normalizer.normalize(input).filter(Boolean);
+
+    if (sentences.length === 0) {
+      return { matched: false, reply: null, hits: 0, total: 0, minSpecificity };
+    }
+
+    // Cheap match-only pre-pass (no template side effects) to decide hit/miss.
+    // `that`/`topic` are constant across sentences within a single turn, mirroring respond().
+    const that = this.normalizer.patternFit(session.getThat());
+    const topic = this.normalizer.patternFit(session.topic);
+    let hits = 0;
+    for (const sentence of sentences) {
+      const m = this.graphmaster.match(sentence, that, topic);
+      if (m && m.specificity >= minSpecificity) hits++;
+    }
+
+    if (hits !== sentences.length) {
+      return { matched: false, reply: null, hits, total: sentences.length, minSpecificity };
+    }
+
+    // Full hit: reuse respond() for real template processing + exchange recording.
+    const reply = this.respond(input, session);
+    return { matched: true, reply, hits, total: sentences.length, minSpecificity };
+  }
+
+  /**
    * Get a bot property
    */
   getBotProperty(name) {
