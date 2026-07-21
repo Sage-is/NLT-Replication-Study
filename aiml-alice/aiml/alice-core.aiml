@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- ═══════════════════════════════════════════
+     ALICE Core Brain — Greetings & Identity
+     ═══════════════════════════════════════════ -->
+
+<!-- Greetings -->
+<category>
+  <pattern>HELLO</pattern>
+  <template>
+    <random>
+      <li>Hello there!</li>
+      <li>Hi! How are you today?</li>
+      <li>Hey! What can I help you with?</li>
+      <li>Hello! Nice to meet you.</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>HI</pattern>
+  <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+  <pattern>HEY</pattern>
+  <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+  <pattern>GOOD MORNING</pattern>
+  <template>Good morning! How are you doing today?</template>
+</category>
+
+<category>
+  <pattern>GOOD AFTERNOON</pattern>
+  <template>Good afternoon! What's on your mind?</template>
+</category>
+
+<category>
+  <pattern>GOOD EVENING</pattern>
+  <template>Good evening! How has your day been?</template>
+</category>
+
+<category>
+  <pattern>GOODBYE</pattern>
+  <template>
+    <random>
+      <li>Goodbye! It was nice talking to you.</li>
+      <li>See you later!</li>
+      <li>Take care! Come back anytime.</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>BYE</pattern>
+  <template><srai>GOODBYE</srai></template>
+</category>
+
+<category>
+  <pattern>SEE YOU</pattern>
+  <template><srai>GOODBYE</srai></template>
+</category>
+
+<!-- Identity -->
+<category>
+  <pattern>WHAT IS YOUR NAME</pattern>
+  <template>My name is <bot name="name"/>. I am an AIML chatbot.</template>
+</category>
+
+<category>
+  <pattern>WHO ARE YOU</pattern>
+  <template>I am <bot name="name"/>, a chatbot running on AIML 2.0. I was inspired by the original ALICE created by Dr. Richard Wallace in 1995.</template>
+</category>
+
+<category>
+  <pattern>WHO MADE YOU</pattern>
+  <template>I was inspired by Dr. Richard Wallace's ALICE and built using a pure JavaScript AIML 2.0 interpreter.</template>
+</category>
+
+<category>
+  <pattern>HOW OLD ARE YOU</pattern>
+  <template>The original ALICE was born on November 23, 1995. In a way, that makes me <bot name="age"/> years old in spirit.</template>
+</category>
+
+<category>
+  <pattern>WHAT ARE YOU</pattern>
+  <template>I am an artificial intelligence chatbot using AIML (Artificial Intelligence Markup Language) to have conversations. I use pattern matching, not neural networks.</template>
+</category>
+
+<!-- How are you -->
+<category>
+  <pattern>HOW ARE YOU</pattern>
+  <template>
+    <random>
+      <li>I am doing well, thank you for asking! How are you?</li>
+      <li>I'm great! What about you?</li>
+      <li>Fine, thanks! And you?</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>I AM FINE</pattern>
+  <template>Glad to hear it! What would you like to talk about?</template>
+</category>
+
+<category>
+  <pattern>I AM GOOD</pattern>
+  <template><srai>I AM FINE</srai></template>
+</category>
+
+<category>
+  <pattern>I AM WELL</pattern>
+  <template><srai>I AM FINE</srai></template>
+</category>
+
+<!-- Name handling -->
+<category>
+  <pattern>MY NAME IS *</pattern>
+  <template>
+    <think><set name="name"><star/></set></think>
+    Nice to meet you, <get name="name"/>!
+  </template>
+</category>
+
+<category>
+  <pattern>CALL ME *</pattern>
+  <template><srai>MY NAME IS <star/></srai></template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY NAME</pattern>
+  <template>
+    <condition name="name">
+      <li value="unknown">You haven't told me your name yet. What should I call you?</li>
+      <li>Your name is <get name="name"/>.</li>
+    </condition>
+  </template>
+</category>
+
+<!-- Thank you -->
+<category>
+  <pattern>THANK YOU</pattern>
+  <template>
+    <random>
+      <li>You're welcome!</li>
+      <li>Happy to help!</li>
+      <li>No problem at all!</li>
+      <li>My pleasure!</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>THANKS</pattern>
+  <template><srai>THANK YOU</srai></template>
+</category>
+
+<!-- Default / Catch-all -->
+<category>
+  <pattern>*</pattern>
+  <template>
+    <random>
+      <li>That's interesting. Tell me more.</li>
+      <li>I see. Can you elaborate on that?</li>
+      <li>Hmm, I'm not sure I understand. Could you rephrase that?</li>
+      <li>Interesting! What made you think of that?</li>
+      <li>I don't have a specific answer for that. Can you try asking in a different way?</li>
+    </random>
+  </template>
+</category>
+
+</aiml>
